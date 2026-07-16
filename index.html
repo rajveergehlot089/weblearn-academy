@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebLearn Academy</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="/styles/main.css" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- LOGIN SCREEN -->
+  <div id="login-screen" class="login-screen">
+    <div class="login-card glass">
+      <h1>WebLearn Academy</h1>
+      <p class="subtitle">Your journey to becoming a web developer starts here</p>
+      <div id="auth-error" class="alert alert-danger hidden"></div>
+      <form id="auth-form">
+        <div id="name-group" class="form-group hidden">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" class="form-control-glass" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="form-control-glass" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" class="form-control-glass" placeholder="At least 6 characters" required>
+        </div>
+        <button type="submit" class="btn-glass btn-glass-primary btn-glass-full" id="auth-btn">Sign In</button>
+      </form>
+      <div class="text-center mt-4">
+        <span class="text-muted" id="auth-toggle-text">Don't have an account?</span>
+        <a class="text-primary fw-semibold" style="cursor:pointer" onclick="toggleAuth()" id="auth-toggle-link">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- DASHBOARD SCREEN -->
+  <div id="dashboard-screen" class="app-container hidden">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="customer-sidebar">
+      <div class="sidebar-brand">
+        <div class="sidebar-brand-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h2>WebLearn</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <a class="sidebar-nav-item active" onclick="showDashboard()"><i class="fas fa-home"></i> <span>Dashboard</span></a>
+        <a class="sidebar-nav-item" onclick="showTopics()"><i class="fas fa-book"></i> <span>Topics</span></a>
+        <a class="sidebar-nav-item" onclick="showProgress()"><i class="fas fa-chart-line"></i> <span>Progress</span></a>
+      </nav>
+      <div class="sidebar-user">
+        <div class="sidebar-user-avatar" id="user-avatar">A</div>
+        <div class="sidebar-user-info">
+          <div class="sidebar-user-name" id="sidebar-user-name">User</div>
+          <div class="sidebar-user-role" id="sidebar-user-role">Student</div>
+        </div>
+      </div>
+      <div style="padding:16px">
+        <button class="btn-glass btn-glass-outline btn-glass-full" onclick="logout()"><i class="fas fa-sign-out-alt me-2"></i>Logout</button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Dashboard View -->
+      <div id="view-dashboard">
+        <div class="dash-header">
+          <div>
+            <h1 id="welcome-text">Hey!</h1>
+            <p class="subtitle">Let's continue your learning journey</p>
+          </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+          <div class="stat-card purple">
+            <div class="stat-card-icon"><i class="fas fa-fire"></i></div>
+            <div class="stat-card-value" id="stat-streak">0</div>
+            <div class="stat-card-label">Day Streak</div>
+          </div>
+          <div class="stat-card blue">
+            <div class="stat-card-icon"><i class="fas fa-check-circle"></i></div>
+            <div class="stat-card-value" id="stat-completed">0/0</div>
+            <div class="stat-card-label">Topics Completed</div>
+          </div>
+          <div class="stat-card green">
+            <div class="stat-card-icon"><i class="fas fa-calendar-day"></i></div>
+            <div class="stat-card-value" id="stat-day">0/0</div>
+            <div class="stat-card-label">Current Day</div>
+          </div>
+          <div class="stat-card yellow">
+            <div class="stat-card-icon"><i class="fas fa-percentage"></i></div>
+            <div class="stat-card-value" id="stat-progress">0%</div>
+            <div class="stat-card-label">Progress</div>
+          </div>
+        </div>
+
+        <!-- Progress Card -->
+        <div class="progress-card glass">
+          <h3><i class="fas fa-chart-bar me-2"></i>Your Progress</h3>
+          <div class="progress-bar-glass">
+            <div class="progress-bar-fill" id="progress-fill" style="width:0%"></div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <small class="text-muted"><span id="progress-percent">0</span>% complete</small>
+            <small class="text-muted"><span id="progress-topics">0</span> topics done</small>
+          </div>
+        </div>
+
+        <!-- Mode Toggle -->
+        <div class="d-flex gap-2 mb-4">
+          <button class="btn-glass btn-glass-sm btn-glass-primary" data-mode="fast-track" onclick="setMode('fast-track')">15-Day Fast Track</button>
+          <button class="btn-glass btn-glass-sm btn-glass-outline" data-mode="full-course" onclick="setMode('full-course')">Full Course (~30 Days)</button>
+        </div>
+
+        <!-- Topics Grid -->
+        <h3 class="mb-4"><i class="fas fa-book-open me-2"></i>Topics</h3>
+        <div class="topics-grid" id="topics-grid"></div>
+      </div>
+
+      <!-- Topics List View -->
+      <div id="view-topics" class="hidden">
+        <div class="dash-header">
+          <div>
+            <h1>All Topics</h1>
+            <p class="subtitle">Browse all available learning topics</p>
+          </div>
+          <button class="btn-glass btn-glass-sm btn-glass-outline" onclick="showDashboard()"><i class="fas fa-arrow-left me-2"></i>Back to Dashboard</button>
+        </div>
+        <div class="topics-grid" id="topics-list-grid"></div>
+      </div>
+
+      <!-- Progress View -->
+      <div id="view-progress" class="hidden">
+        <div class="dash-header">
+          <div>
+            <h1>My Progress</h1>
+            <p class="subtitle">Track your learning journey</p>
+          </div>
+          <button class="btn-glass btn-glass-sm btn-glass-outline" onclick="showDashboard()"><i class="fas fa-arrow-left me-2"></i>Back to Dashboard</button>
+        </div>
+        <div class="progress-card glass">
+          <h3>Overall Progress</h3>
+          <div class="progress-bar-glass" style="height:20px">
+            <div class="progress-bar-fill" id="progress-fill-detail" style="width:0%"></div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-4 text-center">
+              <div class="stat-card-value" id="detail-completed">0</div>
+              <div class="stat-card-label">Completed</div>
+            </div>
+            <div class="col-md-4 text-center">
+              <div class="stat-card-value" id="detail-inprogress">0</div>
+              <div class="stat-card-label">In Progress</div>
+            </div>
+            <div class="col-md-4 text-center">
+              <div class="stat-card-value" id="detail-remaining">0</div>
+              <div class="stat-card-label">Remaining</div>
+            </div>
+          </div>
+        </div>
+        <div id="progress-detail-list"></div>
+      </div>
+
+      <!-- Topic View -->
+      <div id="view-topic" class="hidden">
+        <div class="topic-view-container">
+          <div class="topic-view-header">
+            <button class="btn-glass btn-glass-sm btn-glass-outline mb-4" onclick="showDashboard()"><i class="fas fa-arrow-left me-2"></i>Back to Dashboard</button>
+            <h1 id="topic-title">Topic</h1>
+            <p class="text-muted" id="topic-description"></p>
+          </div>
+
+          <!-- Section Tabs -->
+          <div class="section-tabs" id="section-tabs">
+            <button class="section-tab active" onclick="renderSection('quick')"><i class="fas fa-bolt me-2"></i>5-Min Lesson</button>
+            <button class="section-tab" onclick="renderSection('deep')"><i class="fas fa-book me-2"></i>15-Min Deep Dive</button>
+            <button class="section-tab" onclick="renderSection('comparison')"><i class="fas fa-columns me-2"></i>JS vs Python</button>
+            <button class="section-tab" onclick="renderSection('interview')"><i class="fas fa-question-circle me-2"></i>Interview Q&A</button>
+            <button class="section-tab" onclick="renderSection('exercises')"><i class="fas fa-code me-2"></i>Logic Building</button>
+          </div>
+
+          <!-- Section Contents -->
+          <div id="section-quick" class="section-content active glass p-4"></div>
+          <div id="section-deep" class="section-content glass p-4"></div>
+          <div id="section-comparison" class="section-content glass p-4"></div>
+          <div id="section-interview" class="section-content glass p-4"></div>
+          <div id="section-exercises" class="section-content glass p-4"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- ADMIN DASHBOARD SCREEN -->
+  <div id="admin-screen" class="app-container hidden">
+    <!-- Admin Sidebar -->
+    <aside class="sidebar" id="admin-sidebar">
+      <div class="sidebar-brand">
+        <div class="sidebar-brand-icon"><i class="fas fa-shield-alt"></i></div>
+        <h2>Admin</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <a class="sidebar-nav-item active" onclick="showAdminDashboard()"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a>
+        <a class="sidebar-nav-item" onclick="showAdminStudents()"><i class="fas fa-users"></i> <span>Students</span></a>
+        <a class="sidebar-nav-item" onclick="showAdminStats()"><i class="fas fa-chart-pie"></i> <span>Statistics</span></a>
+      </nav>
+      <div class="sidebar-user">
+        <div class="sidebar-user-avatar" style="background:var(--gradient-secondary)">A</div>
+        <div class="sidebar-user-info">
+          <div class="sidebar-user-name">Admin</div>
+          <div class="sidebar-user-role">Administrator</div>
+        </div>
+      </div>
+      <div style="padding:16px">
+        <button class="btn-glass btn-glass-outline btn-glass-full" onclick="logout()"><i class="fas fa-sign-out-alt me-2"></i>Logout</button>
+      </div>
+    </aside>
+
+    <!-- Admin Main Content -->
+    <main class="main-content">
+      <!-- Admin Dashboard View -->
+      <div id="admin-view-dashboard">
+        <div class="dash-header">
+          <div>
+            <h1>Admin Dashboard</h1>
+            <p class="subtitle">Overview of your learning platform</p>
+          </div>
+        </div>
+
+        <!-- Admin Stats -->
+        <div class="stats-grid">
+          <div class="stat-card purple">
+            <div class="stat-card-icon"><i class="fas fa-users"></i></div>
+            <div class="stat-card-value" id="admin-total-users">0</div>
+            <div class="stat-card-label">Total Students</div>
+          </div>
+          <div class="stat-card blue">
+            <div class="stat-card-icon"><i class="fas fa-user-plus"></i></div>
+            <div class="stat-card-value" id="admin-recent-users">0</div>
+            <div class="stat-card-label">New This Week</div>
+          </div>
+          <div class="stat-card green">
+            <div class="stat-card-icon"><i class="fas fa-check-double"></i></div>
+            <div class="stat-card-value" id="admin-completed">0</div>
+            <div class="stat-card-label">Completed Course</div>
+          </div>
+          <div class="stat-card yellow">
+            <div class="stat-card-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="stat-card-value" id="admin-avg-progress">0%</div>
+            <div class="stat-card-label">Avg Progress</div>
+          </div>
+        </div>
+
+        <!-- Recent Students -->
+        <div class="glass p-4">
+          <h3 class="mb-4"><i class="fas fa-clock me-2"></i>Recent Students</h3>
+          <div class="table-responsive">
+            <table class="admin-table" id="admin-recent-table">
+              <thead>
+                <tr>
+                  <th>Student</th>
+                  <th>Email</th>
+                  <th>Joined</th>
+                  <th>Progress</th>
+                </tr>
+              </thead>
+              <tbody id="admin-recent-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Admin Students View -->
+      <div id="admin-view-students" class="hidden">
+        <div class="dash-header">
+          <div>
+            <h1>Student Management</h1>
+            <p class="subtitle">View and manage all students</p>
+          </div>
+          <div class="search-input">
+            <i class="fas fa-search"></i>
+            <input type="text" class="form-control-glass" placeholder="Search students..." id="student-search" oninput="searchStudents()">
+          </div>
+        </div>
+
+        <div class="glass p-4">
+          <div class="table-responsive">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Role</th>
+                  <th>Progress</th>
+                  <th>Joined</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="admin-students-tbody"></tbody>
+            </table>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-4">
+            <small class="text-muted" id="students-count">Showing 0 students</small>
+            <div class="d-flex gap-2" id="students-pagination"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Admin Stats View -->
+      <div id="admin-view-stats" class="hidden">
+        <div class="dash-header">
+          <div>
+            <h1>Platform Statistics</h1>
+            <p class="subtitle">Detailed analytics</p>
+          </div>
+        </div>
+        <div class="stats-grid" id="admin-topic-stats"></div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Edit User Modal -->
+  <div class="modal-overlay" id="edit-user-modal">
+    <div class="modal-content glass">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <h3 class="mb-4">Edit Student</h3>
+      <form id="edit-user-form">
+        <input type="hidden" id="edit-user-id">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" id="edit-user-name" class="form-control-glass">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="edit-user-email" class="form-control-glass">
+        </div>
+        <div class="form-group">
+          <label>Role</label>
+          <select id="edit-user-role" class="form-control-glass">
+            <option value="customer">Customer</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+        <div class="d-flex gap-2">
+          <button type="submit" class="btn-glass btn-glass-primary flex-grow-1">Save Changes</button>
+          <button type="button" class="btn-glass btn-glass-danger" onclick="deleteUser()"><i class="fas fa-trash"></i></button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-graphql.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // ============================================
+    // APPLICATION STATE (Global data store)
+    // ============================================
+    // This object holds all the app's current data.
+    // It's like a "brain" that remembers the current user, token, topics, etc.
+    const App = {
+      // State = the current "memory" of the app
+      state: {
+        token: localStorage.getItem('token'), // JWT token (persists in browser)
+        user: null, // Current logged-in user info
+        topics: [], // List of all learning topics
+        currentTopic: null, // Topic currently being viewed
+        currentSection: 'quick', // Which section tab is active
+        isRegistering: false, // Are we on register or login form?
+        mode: localStorage.getItem('learningMode') || 'fast-track', // Learning mode
+        adminPage: 1, // Current admin pagination page
+        adminSearch: '' // Admin search term
+      },
+
+      // ============================================
+      // API HELPER - Makes fetch requests easier
+      // ============================================
+      // Usage: App.api('GET', '/auth/profile') → fetches /api/auth/profile
+      // Usage: App.api('POST', '/auth/login', {email, password}) → sends login request
+      async api(method, path, body) {
+        const headers = { 'Content-Type': 'application/json' };
+
+        // Add authorization header if user is logged in
+        if (this.state.token) headers['Authorization'] = 'Bearer ' + this.state.token;
+
+        const opts = { method, headers };
+        if (body) opts.body = JSON.stringify(body); // Convert object to JSON string
+
+        // Make the request to our API
+        const res = await fetch('/api' + path, opts);
+        const data = await res.json();
+
+        // If response is not OK (4xx or 5xx), throw an error
+        if (!res.ok) throw new Error(data.error || 'Request failed');
+        return data;
+      },
+
+      // ============================================
+      // SCREEN SWITCHING - Show/hide different screens
+      // ============================================
+      // The app has 3 main screens: login, dashboard, admin
+      // This function hides all screens and shows the requested one
+      show(name) {
+        // Hide all screens
+        document.getElementById('login-screen').classList.add('hidden');
+        document.getElementById('dashboard-screen').classList.add('hidden');
+        document.getElementById('admin-screen').classList.add('hidden');
+        // Show the target screen
+        document.getElementById(name + '-screen').classList.remove('hidden');
+      },
+
+      // ============================================
+      // APP INITIALIZATION - Runs when the page loads
+      // ============================================
+      // This checks if the user is already logged in (has a token)
+      // and shows the appropriate screen
+      async init() {
+        if (this.state.token) {
+          // User has a token - try to get their profile
+          try {
+            const { user } = await this.api('GET', '/auth/profile');
+            this.state.user = user;
+
+            // Load user's preferred learning mode
+            if (user.preferences?.learningMode) {
+              this.state.mode = user.preferences.learningMode;
+            }
+
+            // Show admin or customer dashboard based on role
+            if (user.role === 'admin') {
+              showAdminDashboard(); // Admin sees admin panel
+            } else {
+              showDashboard(); // Regular user sees student dashboard
+            }
+          } catch {
+            // Token is invalid or expired - log out
+            localStorage.removeItem('token');
+            this.state.token = null;
+            this.show('login');
+          }
+        } else {
+          // No token - show login screen
+          this.show('login');
+        }
+      }
+    };
+
+    // ============================================
+    // TOAST NOTIFICATIONS - Show success/error messages
+    // ============================================
+    // Creates a small popup message that disappears after 3 seconds
+    // Usage: showToast("Saved successfully!", "success")
+    // Usage: showToast("Error occurred", "error")
+    function showToast(message, type = 'success') {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = `toast ${type}`;
+      toast.innerHTML = `<i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'}"></i> ${message}`;
+      container.appendChild(toast);
+      setTimeout(() => toast.remove(), 3000); // Remove after 3 seconds
+    }
+
+    // ============================================
+    // AUTHENTICATION - Login/Register functionality
+    // ============================================
+
+    // Toggle between Login and Register forms
+    // When user clicks "Sign Up" or "Sign In" link
+    function toggleAuth() {
+      App.state.isRegistering = !App.state.isRegistering; // Toggle the state
+      const reg = App.state.isRegistering;
+
+      // Show/hide the name field (only needed for registration)
+      document.getElementById('name-group').classList.toggle('hidden', !reg);
+
+      // Update button text and toggle link
+      document.getElementById('auth-btn').textContent = reg ? 'Create Account' : 'Sign In';
+      document.getElementById('auth-toggle-text').textContent = reg ? 'Already have an account?' : "Don't have an account?";
+      document.getElementById('auth-toggle-link').textContent = reg ? 'Sign In' : 'Sign Up';
+      document.getElementById('auth-error').classList.add('hidden'); // Hide any error
+    }
+
+    // Handle form submission (login or register)
+    document.getElementById('auth-form').addEventListener('submit', async (e) => {
+      e.preventDefault(); // Prevent page reload
+      const errEl = document.getElementById('auth-error');
+      errEl.classList.add('hidden');
+
+      try {
+        // Get form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        // Choose endpoint based on mode (login or register)
+        const endpoint = App.state.isRegistering ? '/auth/register' : '/auth/login';
+        const body = App.state.isRegistering ? { name, email, password } : { email, password };
+
+        // Send request to API
+        const { token, user } = await App.api('POST', endpoint, body);
+
+        // Save token to browser storage (persists across page refreshes)
+        localStorage.setItem('token', token);
+        App.state.token = token;
+        App.state.user = user;
+
+        // Show appropriate dashboard based on user role
+        if (user.role === 'admin') {
+          showAdminDashboard();
+        } else {
+          showDashboard();
+        }
+      } catch (err) {
+        // Show error message to user
+        errEl.textContent = err.message;
+        errEl.classList.remove('hidden');
+      }
+    });
+
+    // Log out - clear token and show login screen
+    function logout() {
+      localStorage.removeItem('token');
+      App.state.token = null;
+      App.state.user = null;
+      App.show('login');
+    }
+
+    // ============================================
+    // CUSTOMER DASHBOARD - Main student view
+    // ============================================
+    // Shows: welcome message, stats, progress bar, topic cards
+    async function showDashboard() {
+      hideAllViews(); // Hide all internal views first
+      document.getElementById('login-screen').classList.add('hidden');
+      document.getElementById('view-dashboard').classList.remove('hidden');
+      document.getElementById('dashboard-screen').classList.remove('hidden');
+      document.getElementById('admin-screen').classList.add('hidden');
+
+      // Highlight "Dashboard" in sidebar
+      document.querySelectorAll('#customer-sidebar .sidebar-nav-item').forEach(i => i.classList.remove('active'));
+      document.querySelector('#customer-sidebar .sidebar-nav-item').classList.add('active');
+
+      try {
+        // Fetch topics from API based on learning mode
+        const { topics, mode } = await App.api('GET', '/topics?mode=' + App.state.mode);
+        App.state.topics = topics; // Store in app state
+
+        // Update welcome message with user's name
+        document.getElementById('welcome-text').textContent = `Hey ${App.state.user?.name || 'there'}!`;
+        // Show first letter of name as avatar
+        document.getElementById('user-avatar').textContent = (App.state.user?.name || 'U')[0].toUpperCase();
+        document.getElementById('sidebar-user-name').textContent = App.state.user?.name || 'User';
+        document.getElementById('sidebar-user-role').textContent = App.state.user?.role || 'Student';
+
+        // Highlight the active learning mode button
+        document.querySelectorAll('[data-mode]').forEach(btn => {
+          btn.classList.toggle('btn-glass-primary', btn.dataset.mode === App.state.mode);
+          btn.classList.toggle('btn-glass-outline', btn.dataset.mode !== App.state.mode);
+        });
+
+        // Fetch user's progress data
+        const progress = await App.api('GET', '/progress/summary');
+        renderDashboard(topics, progress); // Update the UI
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    // Render the dashboard UI with data
+    function renderDashboard(topics, progress) {
+      // Update stat cards
+      document.getElementById('stat-streak').textContent = progress.streak;
+      document.getElementById('stat-completed').textContent = `${progress.completedTopics}/${progress.totalTopics}`;
+      document.getElementById('stat-day').textContent = `${progress.currentDay}/${progress.totalDays}`;
+      document.getElementById('stat-progress').textContent = progress.percentComplete + '%';
+
+      // Update progress bar width
+      document.getElementById('progress-fill').style.width = progress.percentComplete + '%';
+      document.getElementById('progress-percent').textContent = progress.percentComplete;
+      document.getElementById('progress-topics').textContent = progress.completedTopics;
+
+      // Render topic cards as a grid
+      const grid = document.getElementById('topics-grid');
+      grid.innerHTML = topics.map(t => {
+        const p = progress.topics?.[t.id];
+        const isComplete = p?.quickDone && p?.deepDone; // Check if topic is done
+        return `
+          <div class="topic-card glass ${isComplete ? 'completed' : ''}" onclick="openTopic('${t.id}')">
+            <div class="topic-card-icon">${t.icon}</div>
+            <span class="day-badge">Day ${t.dayNumber}</span>
+            <h4>${t.title}</h4>
+            <p class="description">${t.description}</p>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function showTopics() {
+      hideAllViews();
+      document.getElementById('view-topics').classList.remove('hidden');
+      document.querySelectorAll('#customer-sidebar .sidebar-nav-item').forEach(i => i.classList.remove('active'));
+      document.querySelectorAll('#customer-sidebar .sidebar-nav-item')[1].classList.add('active');
+
+      const grid = document.getElementById('topics-list-grid');
+      grid.innerHTML = App.state.topics.map(t => `
+        <div class="topic-card glass" onclick="openTopic('${t.id}')">
+          <div class="topic-card-icon">${t.icon}</div>
+          <span class="day-badge">Day ${t.dayNumber}</span>
+          <h4>${t.title}</h4>
+          <p class="description">${t.description}</p>
+        </div>
+      `).join('');
+    }
+
+    async function showProgress() {
+      hideAllViews();
+      document.getElementById('view-progress').classList.remove('hidden');
+      document.querySelectorAll('#customer-sidebar .sidebar-nav-item').forEach(i => i.classList.remove('active'));
+      document.querySelectorAll('#customer-sidebar .sidebar-nav-item')[2].classList.add('active');
+
+      try {
+        const progress = await App.api('GET', '/progress/summary');
+        document.getElementById('progress-fill-detail').style.width = progress.percentComplete + '%';
+        document.getElementById('detail-completed').textContent = progress.completedTopics;
+        document.getElementById('detail-inprogress').textContent = progress.totalTopics - progress.completedTopics;
+        document.getElementById('detail-remaining').textContent = App.state.topics.length - progress.totalTopics;
+
+        const list = document.getElementById('progress-detail-list');
+        list.innerHTML = App.state.topics.map(t => {
+          const p = progress.topics?.[t.id];
+          const isComplete = p?.quickDone && p?.deepDone;
+          return `
+            <div class="glass p-3 mb-3 d-flex align-items-center">
+              <span style="font-size:24px;margin-right:16px">${t.icon}</span>
+              <div class="flex-grow-1">
+                <h5 class="mb-1">${t.title}</h5>
+                <small class="text-muted">Day ${t.dayNumber}</small>
+              </div>
+              <span class="badge ${isComplete ? 'bg-success' : 'bg-secondary'}">${isComplete ? 'Completed' : 'In Progress'}</span>
+            </div>
+          `;
+        }).join('');
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    // Switch between learning modes (fast-track vs full-course)
+    function setMode(mode) {
+      App.state.mode = mode;
+      localStorage.setItem('learningMode', mode); // Save preference
+      App.api('PUT', '/auth/preferences', { learningMode: mode }).catch(() => {}); // Update server
+      showDashboard(); // Refresh dashboard
+    }
+
+    // Hide all internal views (dashboard, topics, progress, topic)
+    // Used before showing a different view
+    function hideAllViews() {
+      ['dashboard', 'topics', 'progress', 'topic'].forEach(v => {
+        document.getElementById('view-' + v).classList.add('hidden');
+      });
+    }
+
+    // ============================================
+    // TOPIC VIEW - Display learning content
+    // ============================================
+    // Opens a specific topic and loads all its content
+    // Each topic has 5 sections: quick, deep, comparison, interview, exercises
+    async function openTopic(id) {
+      hideAllViews();
+      document.getElementById('view-topic').classList.remove('hidden');
+
+      try {
+        // Fetch all content for this topic from API
+        const content = await App.api('GET', '/topics/' + id);
+        App.state.currentTopic = content;
+        App.state.currentSection = 'quick'; // Default to quick lesson
+
+        // Update header with topic info
+        document.getElementById('topic-title').textContent = content.meta.title;
+        document.getElementById('topic-description').textContent = content.meta.description;
+
+        // Reset tabs - highlight first tab
+        document.querySelectorAll('.section-tab').forEach((tab, i) => {
+          tab.classList.toggle('active', i === 0);
+        });
+
+        // Show the quick lesson by default
+        renderSection('quick');
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    // ============================================
+    // SECTION RENDERING - Show different content types
+    // ============================================
+    // Each topic has 5 tabs/sections. This function shows the selected one.
+    function renderSection(name) {
+      App.state.currentSection = name;
+
+      // Highlight the active tab button
+      document.querySelectorAll('.section-tab').forEach(tab => {
+        tab.classList.remove('active');
+        // Match tab by text content
+        if ((name === 'quick' && tab.textContent.includes('5-Min')) ||
+            (name === 'deep' && tab.textContent.includes('Deep')) ||
+            (name === 'comparison' && tab.textContent.includes('JS vs')) ||
+            (name === 'interview' && tab.textContent.includes('Interview')) ||
+            (name === 'exercises' && tab.textContent.includes('Logic'))) {
+          tab.classList.add('active');
+        }
+      });
+
+      // Hide all sections, then show the selected one
+      document.querySelectorAll('.section-content').forEach(s => s.classList.remove('active'));
+      const section = document.getElementById('section-' + name);
+      section.classList.add('active');
+
+      // Render the content based on section type
+      const content = App.state.currentTopic;
+      if (name === 'quick') renderQuick(content.quick, section);
+      else if (name === 'deep') renderDeep(content.deep, section);
+      else if (name === 'comparison') renderComparison(content.comparison, section);
+      else if (name === 'interview') renderInterview(content.interview, section);
+      else if (name === 'exercises') renderExercises(content.exercises, section);
+    }
+
+    // ============================================
+    // CODE BLOCK RENDERING - Display syntax-highlighted code
+    // ============================================
+    // Renders a code block with language label and optional explanation
+    function renderCode(code, lang) {
+      if (!code) return '';
+      // Handle both {snippet: ...} and {code: ...} formats (different content files use different keys)
+      const snippet = code.snippet || code.code || '';
+      if (!snippet) return '';
+      const escaped = snippet.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      // Map language names to Prism.js syntax highlighting classes
+      const langMap = { html: 'markup', js: 'javascript', javascript: 'javascript', python: 'python', css: 'css', graphql: 'graphql', text: 'text' };
+      const prismLang = langMap[lang || code.language] || 'javascript';
+      return `
+        <div class="code-block">
+          <span class="code-lang">${code.language || lang}</span>
+          <pre><code class="language-${prismLang}">${escaped}</code></pre>
+        </div>
+        ${code.explanation ? `<p class="text-muted mt-2 p-3" style="background:rgba(255,255,255,0.1);border-radius:8px;font-size:14px">${code.explanation}</p>` : ''}
+      `;
+    }
+
+    // ============================================
+    // RENDER QUICK LESSON - 5-minute overview
+    // ============================================
+    // Renders the quick lesson with sections, code examples, key terms, and summary
+    function renderQuick(data, el) {
+      if (!data?.sections) { el.innerHTML = '<p>Content loading...</p>'; return; }
+      let html = `<h2 class="mb-4"><i class="fas fa-bolt me-2" style="color:var(--yellow-500)"></i>5-Minute Quick Lesson</h2>`;
+
+      // Render each section (heading + body + optional code)
+      data.sections.forEach(s => {
+        html += `<div class="mb-4"><h4 class="mb-3">${s.heading}</h4><p>${s.body?.replace(/\n/g, '<br>') || ''}</p>`;
+        if (s.code) html += renderCode(s.code); // Add code block if present
+        html += '</div>';
+      });
+
+      // Render key terms/glossary if present
+      if (data.jargon?.length) {
+        html += '<div class="jargon-list glass mt-4"><h5 class="mb-3"><i class="fas fa-book-open me-2"></i>Key Terms</h5>';
+        data.jargon.forEach(j => {
+          html += `<div class="jargon-item"><span class="jargon-term">${j.term}:</span> ${j.definition}</div>`;
+        });
+        html += '</div>';
+      }
+
+      // Render summary box if present
+      if (data.summary) {
+        html += `<div class="summary-box mt-4"><h4><i class="fas fa-lightbulb me-2"></i>Summary</h4><p>${data.summary}</p></div>`;
+      }
+      el.innerHTML = html;
+    }
+
+    // ============================================
+    // RENDER DEEP DIVE - 15-minute detailed lesson
+    // ============================================
+    // Similar to quick but with more detailed content
+    function renderDeep(data, el) {
+      if (!data?.sections) { el.innerHTML = '<p>Content loading...</p>'; return; }
+      let html = `<h2 class="mb-4"><i class="fas fa-book me-2" style="color:var(--blue-500)"></i>15-Minute Deep Dive</h2>`;
+      data.sections.forEach(s => {
+        html += `<div class="mb-4"><h4 class="mb-3">${s.heading}</h4><p>${s.body?.replace(/\n/g, '<br>') || ''}</p>`;
+        if (s.code) html += renderCode(s.code);
+        html += '</div>';
+      });
+      if (data.summary) {
+        html += `<div class="summary-box mt-4"><h4><i class="fas fa-lightbulb me-2"></i>Key Takeaways</h4><p>${data.summary}</p></div>`;
+      }
+      el.innerHTML = html;
+    }
+
+    // ============================================
+    // RENDER COMPARISON - JavaScript vs Python
+    // ============================================
+    // Shows side-by-side code comparisons in both languages
+    function renderComparison(data, el) {
+      if (!data?.comparisons) { el.innerHTML = '<p>Content loading...</p>'; return; }
+      let html = `<h2 class="mb-4"><i class="fas fa-columns me-2" style="color:var(--purple-500)"></i>JavaScript vs Python Comparison</h2>`;
+
+      // Render each comparison as a side-by-side grid
+      data.comparisons.forEach(c => {
+        html += `
+          <div class="mb-5">
+            <h4 class="mb-3">${c.concept}</h4>
+            <div class="comparison-grid">
+              <div class="comparison-side js glass">
+                <div class="comparison-side-header"><i class="fab fa-js-square me-2"></i>JavaScript</div>
+                <div class="p-3">${renderCode(c.javascript, 'javascript')}</div>
+              </div>
+              <div class="comparison-side py glass">
+                <div class="comparison-side-header"><i class="fab fa-python me-2"></i>Python</div>
+                <div class="p-3">${renderCode(c.python, 'python')}</div>
+              </div>
+            </div>
+            <div class="glass p-3 mt-3">
+              <strong><i class="fas fa-info-circle me-2"></i>What stays the same:</strong> ${c.explanation}
+            </div>
+          </div>
+        `;
+      });
+      if (data.keyInsight) {
+        html += `<div class="summary-box mt-4"><h4><i class="fas fa-lightbulb me-2"></i>Key Insight</h4><p>${data.keyInsight}</p></div>`;
+      }
+      el.innerHTML = html;
+      // Apply syntax highlighting to all code blocks
+      el.querySelectorAll('code').forEach(c => Prism.highlightElement(c));
+    }
+
+    // ============================================
+    // RENDER INTERVIEW Q&A - Practice questions
+    // ============================================
+    // Shows expandable Q&A cards for interview preparation
+    function renderInterview(data, el) {
+      if (!data?.questions) { el.innerHTML = '<p>Content loading...</p>'; return; }
+      let html = `<h2 class="mb-4"><i class="fas fa-question-circle me-2" style="color:var(--green-500)"></i>Interview Questions</h2>
+        <p class="text-muted mb-4">Try answering each question first, then click to reveal the model answer.</p>`;
+      data.questions.forEach((q, i) => {
+        const diff = q.difficulty || 'medium';
+        html += `
+          <div class="interview-card glass" onclick="this.classList.toggle('open')">
+            <div class="interview-question">
+              <span><span class="difficulty-badge ${diff}">${diff}</span> ${q.question}</span>
+              <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+            </div>
+            <div class="interview-answer">
+              <p class="fw-semibold mb-2">Model Answer:</p>
+              <p>${q.answer}</p>
+            </div>
+          </div>
+        `;
+      });
+      el.innerHTML = html;
+    }
+
+    // ============================================
+    // RENDER EXERCISES - Coding practice problems
+    // ============================================
+    // Shows exercises with hints and solutions (hidden by default)
+    function renderExercises(data, el) {
+      if (!data?.exercises) { el.innerHTML = '<p>Content loading...</p>'; return; }
+      let html = `<h2 class="mb-4"><i class="fas fa-code me-2" style="color:var(--red-500)"></i>Logic Building Exercises</h2>
+        <p class="text-muted mb-4">Practice thinking like a developer. Try solving each exercise before revealing hints or solutions.</p>`;
+
+      // Render each exercise as a card
+      data.exercises.forEach((ex, i) => {
+        const diff = ex.difficulty || 'medium';
+        html += `
+          <div class="exercise-card glass">
+            <span class="difficulty-badge ${diff}">${diff}</span>
+            <h4>${ex.title}</h4>
+            <p>${ex.description}</p>
+
+            <!-- Hints (hidden by default, click to toggle) -->
+            <div class="hints mt-3">
+              <span class="hints-toggle" onclick="this.parentElement.classList.toggle('open')"><i class="fas fa-lightbulb me-2"></i>Show Hints</span>
+              <ul class="hints-list">
+                ${(ex.hints || []).map(h => `<li>${h}</li>`).join('')}
+              </ul>
+            </div>
+
+            <!-- Solution (hidden by default, click button to toggle) -->
+            <div class="mt-3">
+              <button class="btn-glass btn-glass-sm btn-glass-outline" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'; this.innerHTML=this.innerHTML.includes('Show')?'<i class=\\'fas fa-eye-slash me-2\\'></i>Hide Solution':'<i class=\\'fas fa-eye me-2\\'></i>Show Solution'"><i class="fas fa-eye me-2"></i>Show Solution</button>
+              <div style="display:none;margin-top:12px">
+                ${ex.solution ? renderCode(ex.solution) : '<p>No solution available</p>'}
+              </div>
+            </div>
+          </div>
+        `;
+      });
+      el.innerHTML = html;
+      // Apply syntax highlighting to code blocks
+      el.querySelectorAll('code').forEach(c => Prism.highlightElement(c));
+    }
+
+    // ============================================
+    // ADMIN PANEL - Student management interface
+    // ============================================
+    // Shows stats, student list, and allows editing/deleting users
+
+    // Show the admin dashboard view
+    function showAdminDashboard() {
+      document.getElementById('login-screen').classList.add('hidden');
+      document.getElementById('dashboard-screen').classList.add('hidden');
+      document.getElementById('admin-screen').classList.remove('hidden');
+      // Hide all admin sub-views, then show dashboard
+      document.querySelectorAll('#admin-view-dashboard, #admin-view-students, #admin-view-stats').forEach(v => v.classList.add('hidden'));
+      document.getElementById('admin-view-dashboard').classList.remove('hidden');
+
+      // Highlight "Dashboard" in admin sidebar
+      document.querySelectorAll('#admin-sidebar .sidebar-nav-item').forEach(i => i.classList.remove('active'));
+      document.querySelector('#admin-sidebar .sidebar-nav-item').classList.add('active');
+
+      loadAdminDashboard(); // Load the stats
+    }
+
+    // Fetch and display admin dashboard stats
+    async function loadAdminDashboard() {
+      try {
+        // Get overview stats from API
+        const stats = await App.api('GET', '/admin/dashboard');
+        document.getElementById('admin-total-users').textContent = stats.studentCount;
+        document.getElementById('admin-recent-users').textContent = stats.recentUsers;
+        document.getElementById('admin-completed').textContent = stats.totalCompleted;
+        document.getElementById('admin-avg-progress').textContent = stats.avgCompletion + '%';
+
+        // Load 5 most recent users for the table
+        const { users } = await App.api('GET', '/admin/users?limit=5');
+        const tbody = document.getElementById('admin-recent-tbody');
+        tbody.innerHTML = users.map(u => `
+          <tr>
+            <td><strong>${u.name}</strong></td>
+            <td>${u.email}</td>
+            <td>${new Date(u.createdAt).toLocaleDateString()}</td>
+            <td>
+              <div class="progress-bar-glass" style="height:6px;width:100px">
+                <div class="progress-bar-fill" style="width:${u.progress.percentComplete}%"></div>
+              </div>
+              <small>${u.progress.percentComplete}%</small>
+            </td>
+          </tr>
+        `).join('');
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    // Show the student management view
+    function showAdminStudents() {
+      document.querySelectorAll('#admin-view-dashboard, #admin-view-students, #admin-view-stats').forEach(v => v.classList.add('hidden'));
+      document.getElementById('admin-view-students').classList.remove('hidden');
+
+      // Highlight "Students" in sidebar
+      document.querySelectorAll('#admin-sidebar .sidebar-nav-item').forEach(i => i.classList.remove('active'));
+      document.querySelectorAll('#admin-sidebar .sidebar-nav-item')[1].classList.add('active');
+
+      App.state.adminPage = 1; // Reset to first page
+      loadStudents(); // Load the student list
+    }
+
+    // Fetch and display student list with pagination
+    async function loadStudents() {
+      try {
+        // Get students from API with pagination and search
+        const { users, pagination } = await App.api('GET', `/admin/users?page=${App.state.adminPage}&limit=10&search=${App.state.adminSearch}`);
+
+        // Render table rows for each student
+        const tbody = document.getElementById('admin-students-tbody');
+        tbody.innerHTML = users.map(u => `
+          <tr>
+            <td><strong>${u.name}</strong></td>
+            <td>${u.email}</td>
+            <td><span class="badge ${u.role === 'admin' ? 'bg-primary' : 'bg-secondary'}">${u.role}</span></td>
+            <td>
+              <div class="progress-bar-glass" style="height:6px;width:80px;display:inline-block">
+                <div class="progress-bar-fill" style="width:${u.progress.percentComplete}%"></div>
+              </div>
+              <small>${u.progress.percentComplete}%</small>
+            </td>
+            <td>${new Date(u.createdAt).toLocaleDateString()}</td>
+            <td>
+              <button class="btn-glass btn-glass-sm btn-glass-outline" onclick="editUser('${u.id}')"><i class="fas fa-edit"></i></button>
+            </td>
+          </tr>
+        `).join('');
+
+        // Update count text
+        document.getElementById('students-count').textContent = `Showing ${users.length} of ${pagination.total} students`;
+
+        // Render pagination buttons
+        const paginationEl = document.getElementById('students-pagination');
+        paginationEl.innerHTML = '';
+        for (let i = 1; i <= pagination.totalPages; i++) {
+          paginationEl.innerHTML += `<button class="btn-glass btn-glass-sm ${i === pagination.page ? 'btn-glass-primary' : 'btn-glass-outline'}" onclick="App.state.adminPage=${i};loadStudents()">${i}</button>`;
+        }
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    // Handle search input - filter students by name or email
+    function searchStudents() {
+      App.state.adminSearch = document.getElementById('student-search').value;
+      App.state.adminPage = 1; // Reset to first page
+      loadStudents(); // Reload with new search
+    }
+
+    // Show topic completion statistics
+    async function showAdminStats() {
+      document.querySelectorAll('#admin-view-dashboard, #admin-view-students, #admin-view-stats').forEach(v => v.classList.add('hidden'));
+      document.getElementById('admin-view-stats').classList.remove('hidden');
+
+      // Highlight "Statistics" in sidebar
+      document.querySelectorAll('#admin-sidebar .sidebar-nav-item').forEach(i => i.classList.remove('active'));
+      document.querySelectorAll('#admin-sidebar .sidebar-nav-item')[2].classList.add('active');
+
+      try {
+        // Get topic completion stats from API
+        const { topicStats } = await App.api('GET', '/admin/stats');
+        const container = document.getElementById('admin-topic-stats');
+
+        // Render a stat card for each topic
+        container.innerHTML = topicStats.map(t => `
+          <div class="stat-card glass">
+            <div class="stat-card-value">${t.completions}</div>
+            <div class="stat-card-label">${t.title}</div>
+            <div class="progress-bar-glass mt-2" style="height:6px">
+              <div class="progress-bar-fill" style="width:${Math.min(100, (t.completions / 10) * 100)}%"></div>
+            </div>
+          </div>
+        `).join('');
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    // ============================================
+    // USER MANAGEMENT - Edit and delete users
+    // ============================================
+
+    // Open the edit user modal with user data
+    async function editUser(id) {
+      try {
+        // Fetch user details from API
+        const { user } = await App.api('GET', `/admin/users/${id}`);
+
+        // Fill the form with user data
+        document.getElementById('edit-user-id').value = user.id;
+        document.getElementById('edit-user-name').value = user.name;
+        document.getElementById('edit-user-email').value = user.email;
+        document.getElementById('edit-user-role').value = user.role;
+
+        // Show the modal
+        document.getElementById('edit-user-modal').classList.add('active');
+      } catch (err) {
+        showToast(err.message, 'error');
+      }
+    }
+
+    // Close the edit user modal
+    function closeModal() {
+      document.getElementById('edit-user-modal').classList.remove('active');
+    }
+
+    // Handle edit user form submission
+    document.getElementById('edit-user-form').addEventListener('submit', async (e) => {
+      e.preventDefault(); // Prevent page reload
+
+      // Get form values
+      const id = document.getElementById('edit-user-id').value;
+      const name = document.getElementById('edit-user-name').value;
+      const email = document.getElementById('edit-user-email').value;
+      const role = document.getElementById('edit-user-role').value;
+
+      try {
+        // Send update request to API
+        await App.api('PUT', `/admin/users/${id}`, { name, email, role });
+        showToast('Student updated successfully');
+        closeModal(); // Close the modal
+        loadStudents(); // Refresh the student list
+      } catch (err) {
+        showToast(err.message, 'error');
+      }
+    });
+
+    // Delete a user (with confirmation dialog)
+    async function deleteUser() {
+      const id = document.getElementById('edit-user-id').value;
+
+      // Ask for confirmation before deleting
+      if (!confirm('Are you sure you want to delete this student?')) return;
+
+      try {
+        // Send delete request to API
+        await App.api('DELETE', `/admin/users/${id}`);
+        showToast('Student deleted successfully');
+        closeModal();
+        loadStudents(); // Refresh the list
+      } catch (err) {
+        showToast(err.message, 'error');
+      }
+    }
+
+    // ============================================
+    // APP STARTUP - Initialize when page loads
+    // ============================================
+    // This runs automatically when the JavaScript loads
+    App.init();
+  </script>
+</body>
+</html>
