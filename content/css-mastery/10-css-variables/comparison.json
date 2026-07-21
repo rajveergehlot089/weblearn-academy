@@ -1,0 +1,18 @@
+{
+  "topicId": "10-css-variables",
+  "comparisons": [
+    {
+      "concept": "CSS Variables & Custom Properties",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to CSS Variables & Custom Properties\nconst result = {\n  concept: \"CSS Variables & Custom Properties\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to CSS Variables & Custom Properties\nresult = {\n    \"concept\": \"CSS Variables & Custom Properties\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of CSS Variables & Custom Properties is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about CSS Variables & Custom Properties is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

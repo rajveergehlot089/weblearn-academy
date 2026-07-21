@@ -1,0 +1,30 @@
+{
+  "topicId": "08-empathy",
+  "questions": [
+    {
+      "question": "What is the difference between empathy and sympathy?",
+      "answer": "Empathy is feeling WITH someone — you understand and share their emotional experience. Sympathy is feeling FOR someone — you feel sorry for them from a distance. Empathy says 'I'm here with you.' Sympathy says 'That's sad.' Empathy builds connection; sympathy often creates distance. Brené Brown puts it well: 'Empathy drives connection; sympathy drives disconnection.'",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Can empathy be learned, or is it innate?",
+      "answer": "Empathy is both innate (we're born with mirror neurons that help us feel others' emotions) and learnable as a skill. Research shows empathy can be strengthened through practice: perspective-taking exercises, reading fiction, active listening, and intentionally suspending judgment. Like any skill, it improves with deliberate practice and atrophies without it.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you show empathy without being patronizing?",
+      "answer": "Key rules: (1) Ask questions instead of making statements — 'What's that like?' not 'I know how you feel.' (2) Don't minimize — avoid 'at least' or 'it could be worse.' (3) Don't rush to fix — sit with their experience first. (4) Acknowledge feelings without judgment — 'That sounds really hard' not 'You shouldn't feel that way.' (5) Be genuine — people detect fake empathy instantly.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are empathy killers and how do you avoid them?",
+      "answer": "Empathy killers are responses that shut down connection: (1) 'At least...' — minimizes pain by comparison. (2) 'I know exactly how you feel' — shifts focus to you. (3) 'You should...' — unsolicited advice feels dismissive. (4) 'Everything happens for a reason' — offers false comfort. (5) 'Don't feel that way' — invalidates their experience. Avoid by replacing them with: 'Tell me more,' 'What was that like?', and 'I'm here.'",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does empathy improve teamwork and leadership?",
+      "answer": "Empathy in teams: (1) Builds psychological safety — people share ideas without fear. (2) Reduces conflict — understanding precedes resolution. (3) Improves collaboration — diverse perspectives are valued. Empathetic leaders: (1) Retain talent — employees feel valued. (2) Make better decisions — they understand multiple viewpoints. (3) Drive performance — engaged teams outperform disengaged ones. Google's Project Aristotle found psychological safety (rooted in empathy) was the #1 predictor of team effectiveness.",
+      "difficulty": "medium"
+    }
+  ]
+}

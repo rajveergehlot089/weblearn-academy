@@ -1,0 +1,57 @@
+{
+  "topicId": "01-html-basics",
+  "type": "interview",
+  "estimatedMinutes": 10,
+  "questions": [
+    {
+      "question": "What is the purpose of the DOCTYPE declaration in HTML?",
+      "answer": "The DOCTYPE declaration tells the browser which version of HTML the document is written in. In HTML5, it's simply <!DOCTYPE html>. It ensures the browser renders the page in standards mode rather than quirks mode, which provides consistent rendering across different browsers.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the difference between the head and body elements in HTML?",
+      "answer": "The head element contains metadata about the document that isn't displayed on the page, such as the title, character set, viewport settings, and links to stylesheets or scripts. The body element contains all the visible content that users see and interact with on the web page.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What are semantic HTML elements and why are they important?",
+      "answer": "Semantic elements clearly describe their meaning to both browsers and developers. Examples include header, nav, main, article, section, aside, and footer. They're important because they improve accessibility (screen readers can better understand page structure), SEO (search engines can better index content), and code maintainability (developers can quickly understand page structure).",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Explain the difference between block-level and inline elements.",
+      "answer": "Block-level elements (like div, p, h1-h6, ul, li) start on a new line and take up the full width available. They create new blocks in the layout. Inline elements (like span, a, strong, em, img) don't start on a new line and only take up as much width as necessary. They flow within the text content without breaking the layout.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the purpose of the alt attribute in img tags?",
+      "answer": "The alt attribute provides alternative text for images. It serves multiple purposes: accessibility (screen readers read it for visually impaired users), SEO (helps search engines understand image content), and fallback (displays when images fail to load). For decorative images, use empty alt=\"\" to skip them in screen readers.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you create a hyperlink in HTML?",
+      "answer": "Use the anchor element <a> with the href attribute: <a href=\"https://example.com\">Link Text</a>. The href attribute specifies the destination URL. You can add target=\"_blank\" to open in a new tab, rel=\"noopener noreferrer\" for security when using target=\"_blank\", and title attribute for tooltip text.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What are HTML attributes and where are they placed?",
+      "answer": "Attributes provide additional information about HTML elements. They're placed inside the opening tag and come in name/value pairs. Example: <p class=\"intro\" id=\"main-text\">. Common attributes include id, class, style, title, href, src, alt, and data-* for custom data.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Explain the purpose of the viewport meta tag.",
+      "answer": "The viewport meta tag controls how the page is displayed on different devices. The standard declaration is: <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">. It ensures the page scales properly on mobile devices, prevents default zooming, and enables responsive design by setting the viewport width to the device width.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the difference between id and class attributes?",
+      "answer": "The id attribute uniquely identifies an element (only one element per id per page) and is used for specific targeting in CSS and JavaScript. The class attribute can be applied to multiple elements and is used for grouping elements that share common styles or behaviors. IDs have higher specificity in CSS than classes.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you ensure your HTML is accessible?",
+      "answer": "Key practices include: using semantic HTML elements, providing alt text for images, using proper heading hierarchy (h1-h6), ensuring sufficient color contrast, making all functionality keyboard-accessible, using ARIA attributes when needed, providing labels for form inputs, and testing with screen readers.",
+      "difficulty": "hard"
+    }
+  ]
+}

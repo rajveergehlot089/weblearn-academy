@@ -1,0 +1,25 @@
+{
+  "topicId": "05-confidence",
+  "questions": [
+    {
+      "question": "Explain Bandura's self-efficacy theory and its four sources. Which source is most powerful?",
+      "answer": "Bandura's self-efficacy theory identifies four sources of confidence: (1) Mastery Experiences — successfully completing tasks; (2) Vicarious Learning — watching others similar to you succeed; (3) Social Persuasion — others expressing confidence in you; (4) Physiological States — interpreting your body's signals. Mastery experiences are the most powerful because they provide direct evidence of your competence. Your brain's prediction system updates based on actual success, creating lasting confidence. Social persuasion and vicarious learning provide temporary boosts, but mastery experiences create permanent belief changes."
+    },
+    {
+      "question": "What is the Dunning-Kruger effect and how does it relate to confidence?",
+      "answer": "The Dunning-Kruger effect is a cognitive bias where people with low competence in a domain overestimate their ability because they lack the knowledge to recognize their deficiency. Conversely, highly competent people tend to underestimate their ability because they assume what's easy for them is easy for everyone. This creates two confidence problems: overconfidence (from low competence) and impostor syndrome (from high competence). The healthy middle is accurate self-assessment — confident enough to act, humble enough to learn."
+    },
+    {
+      "question": "How does the comfort zone model explain confidence development?",
+      "answer": "The comfort zone model describes three concentric zones: comfort zone (safe, no growth), learning zone (challenging, growth happens), and panic zone (overwhelmed, no learning). Confidence grows exclusively in the learning zone — where tasks are challenging but manageable. Staying in the comfort zone means skills atrophy; entering the panic zone means shutdown. The key is calibrating challenge level: start at the edge of your comfort zone and gradually expand outward. Each successful experience in the learning zone expands your comfort zone, allowing bigger challenges."
+    },
+    {
+      "question": "Why is 'fake it till you make it' actually effective, and what are its limitations?",
+      "answer": "The phrase works because of behavioral activation — acting confidently changes how you feel, not just the other way around. When you act with confidence (posture, voice, decisions), your brain interprets these behaviors as evidence that you ARE confident, releasing dopamine and reducing cortisol. Limitations: (1) without underlying skill development, the gap between performance and self-presentation becomes noticeable, (2) it can feel inauthentic and exhausting, (3) it doesn't address root causes of insecurity. The most effective approach is 'fake it' to get started, then 'build it' through mastery experiences for lasting confidence."
+    },
+    {
+      "question": "Describe a practical 4-week plan for someone who wants to build confidence in public speaking.",
+      "answer": "Week 1: Foundation — Record yourself speaking for 2 minutes on a familiar topic. Watch it back (exposure therapy principle). Practice power poses for 2 minutes before speaking (Amy Cuddy's research). Week 2: Micro-exposures — Share one opinion in every meeting. Ask one question in a public setting. Give a 30-second 'elevator pitch' to a friend. Week 3: Small presentations — Give a 5-minute presentation to 2-3 trusted people. Join Toastmasters or a similar group. Practice the 'anxiety reappraisal' technique (label anxiety as excitement). Week 4: Real application — Volunteer for a small work presentation. Prepare thoroughly (mastery experience). After each speaking opportunity, write down what went well and what you learned. Key principle: Confidence comes from doing, not preparing to do."
+    }
+  ]
+}

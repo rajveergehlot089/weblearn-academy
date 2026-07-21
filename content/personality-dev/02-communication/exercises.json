@@ -1,0 +1,35 @@
+{
+  "topicId": "02-communication",
+  "exercises": [
+    {
+      "title": "The Communication Style Assessment",
+      "description": "Identify your dominant communication style by completing this self-assessment. Rate each statement 1-5 (1=never, 5=always): (1) I avoid expressing disagreement. (2) I raise my voice when frustrated. (3) I use sarcasm when I'm upset. (4) I express my needs directly while respecting others. Calculate your scores for passive, aggressive, passive-aggressive, and assertive styles.",
+      "hints": ["Be honest — answer based on how you actually behave, not how you think you should behave", "Different situations may bring out different styles", "Your highest score indicates your dominant style"],
+      "solution": {
+        "language": "text",
+        "code": "Assessment scoring:\n\nPassive items: 1, 5, 9, 13, 17\nAggressive items: 2, 6, 10, 14, 18\nPassive-Aggressive items: 3, 7, 11, 15, 19\nAssertive items: 4, 8, 12, 16, 20\n\nExample results:\n- Passive: 18/25 (high)\n- Aggressive: 8/25 (low)\n- Passive-Aggressive: 12/25 (medium)\n- Assertive: 15/25 (medium)\n\nInterpretation: This person defaults to passive communication, which means they often suppress their needs. They should practice assertiveness techniques in low-stakes situations first."
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "The Active Listening Challenge",
+      "description": "For one week, practice active listening in every conversation. Use the HEAR technique: Halt (stop what you're doing), Engage (give full attention), Anticipate (expect to learn something), Replay (paraphrase back). Record how many conversations you successfully used HEAR in.",
+      "hints": ["Start with one conversation per day and build up", "Don't interrupt yourself — focus entirely on the other person", "It will feel unnatural at first — that's normal"],
+      "solution": {
+        "language": "text",
+        "code": "Active Listening Challenge - Week 1 Results:\n\nDay 1: HEAR in 1/3 conversations. Forgot to paraphrase. Hard to put phone away.\nDay 2: HEAR in 2/4 conversations. Remembered to paraphrase once. Felt more connected.\nDay 3: HEAR in 3/4 conversations. Colleague noticed I was listening more. Good.\nDay 4: HEAR in 2/3 conversations. Caught myself interrupting twice.\nDay 5: HEAR in 3/5 conversations. Used 'Can you tell me more?' successfully.\nDay 6: HEAR in 4/5 conversations. Noticed non-verbal cues better.\nDay 7: HEAR in 4/5 conversations. Habit is forming.\n\nKey insight: By day 7, conversations felt less draining and more meaningful. The biggest improvement was in relationships with colleagues."
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "The Difficult Conversation Preparation",
+      "description": "Identify a difficult conversation you need to have (with a colleague, friend, or family member). Write out your DEAR MAN script: Describe the situation factually, Express your feelings, Assert what you need, Reinforce the benefits, then plan your Mindful, Appear confident, and Negotiate approaches.",
+      "hints": ["Use 'I' statements, not 'You' statements", "Focus on specific behaviors, not character", "Anticipate their response and prepare your negotiation points"],
+      "solution": {
+        "language": "text",
+        "code": "Example: Addressing a colleague who misses deadlines\n\nD (Describe): 'The last three deliverables were submitted after the deadline.'\nE (Express): 'I feel frustrated because it delays the entire project.'\nA (Assert): 'I need us to agree on realistic timelines and stick to them.'\nR (Reinforce): 'This way, the team can plan better and we avoid last-minute rushes.'\nM (Mindful): 'Stay focused on the goal — not on past failures.'\nA (Appear confident): 'Speak clearly, maintain eye contact, don't apologize for bringing it up.'\nN (Negotiate): 'If the workload is too heavy, let's discuss prioritization. What do you think?'\n\nPractice saying this out loud 3 times before the conversation."
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

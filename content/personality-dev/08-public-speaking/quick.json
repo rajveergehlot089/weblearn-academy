@@ -1,0 +1,25 @@
+{
+  "topicId": "08-public-speaking",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Public Speaking Matters",
+      "body": "Public speaking is consistently ranked as one of the top fears — often above death. Yet it's one of the most valuable skills for career advancement. The ability to communicate ideas clearly to an audience differentiates leaders from individual contributors. Good speakers aren't born — they're made through practice and preparation."
+    },
+    {
+      "heading": "The Three Pillars of Great Speaking",
+      "body": "Every effective presentation has three elements:\n\n1. **Content**: What you say — your message, structure, and evidence\n2. **Delivery**: How you say it — tone, pace, volume, body language\n3. **Connection**: Who you say it to — reading the audience and adapting\n\nMost speakers focus only on content. The best speakers balance all three. A mediocre message delivered with passion and connection will outperform a brilliant message delivered poorly."
+    },
+    {
+      "heading": "The 10-20-30 Rule",
+      "body": "Guy Kawasaki's framework for presentations:\n- **10 slides**: Maximum for a 60-minute presentation. More slides dilute your message.\n- **20 minutes**: Maximum speaking time. Leave 40 minutes for Q&A and discussion.\n- **30-point font**: Minimum font size. If you can't fit it in 30pt, you have too much content.\n\nThis rule forces simplicity and keeps your audience engaged."
+    }
+  ],
+  "jargon": [
+    { "term": "Stage Fright", "definition": "The anxiety experienced before or during public speaking. Physical symptoms include rapid heartbeat, sweating, and trembling. It's normal — even experienced speakers feel it." },
+    { "term": "Vocal Variety", "definition": "The changes in your voice's pitch, volume, pace, and tone. Monotone speakers lose audiences; vocal variety keeps them engaged." },
+    { "term": "The Rule of Three", "definition": "A rhetorical principle: ideas presented in threes are more memorable and satisfying. 'Life, liberty, and the pursuit of happiness.' Structure your key points in threes." }
+  ],
+  "summary": "Public speaking is a learnable skill with three pillars: content (what you say), delivery (how you say it), and connection (who you say it to). Use the 10-20-30 Rule for presentations: 10 slides, 20 minutes, 30-point font. Stage fright is normal — manage it through preparation and practice."
+}

@@ -1,0 +1,18 @@
+{
+  "topicId": "08-cors-security",
+  "comparisons": [
+    {
+      "concept": "CORS & Cross-Site Attacks",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to CORS & Cross-Site Attacks\nconst result = {\n  concept: \"CORS & Cross-Site Attacks\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to CORS & Cross-Site Attacks\nresult = {\n    \"concept\": \"CORS & Cross-Site Attacks\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of CORS & Cross-Site Attacks is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about CORS & Cross-Site Attacks is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

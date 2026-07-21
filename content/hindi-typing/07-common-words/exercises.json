@@ -1,0 +1,31 @@
+{
+  "topicId": "07-common-words",
+  "exercises": [
+    {
+      "title": "Basic Practice",
+      "description": "Type these words: yah, hai, main, tum, hum, kya, achha, theek, haan, nahi, karo, jao, aao, lo, de",
+      "hints": [
+        "Keep eyes on screen",
+        "Use proper finger placement"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "yah, hai, main, tum, hum, kya, achha, theek, haan, nahi, karo, jao, aao, lo, de"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Sentence Practice",
+      "description": "Type each sentence without looking at the keyboard.",
+      "hints": [
+        "Focus on accuracy",
+        "Use all fingers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "main accha hoon\ntum kaise ho\nyah bahut achha hai\nhum sab saath mein hain\nkya tum chalte ho\nhaan main samajhta hoon\nnahi mujhe nahi chahiye\naao baithte hain\nyahan aao\ndekho yeh dekho"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

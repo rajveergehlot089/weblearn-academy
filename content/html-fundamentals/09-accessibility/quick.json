@@ -1,0 +1,34 @@
+{
+  "topicId": "09-accessibility",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Web Accessibility",
+      "body": "Web accessibility (a11y) ensures websites are usable by everyone, including people with disabilities. It's not just a nice-to-have - it's a legal requirement in many places and benefits all users."
+    },
+    {
+      "heading": "Key Accessibility Principles",
+      "body": "The four main principles (POUR):\n• Perceivable: Content must be presentable in ways all users can perceive\n• Operable: UI components must be operable by all users\n• Understandable: Information and UI must be understandable\n• Robust: Content must be interpreted reliably by assistive technologies"
+    },
+    {
+      "heading": "Quick Wins",
+      "body": "Easy accessibility improvements:\n• Add alt text to images\n• Use semantic HTML elements\n• Ensure proper heading hierarchy\n• Add labels to form inputs\n• Provide sufficient color contrast\n• Make all functionality keyboard-accessible"
+    }
+  ],
+  "jargon": [
+    {
+      "term": "A11y",
+      "definition": "Abbreviation for 'accessibility' (11 letters between 'a' and 'y')"
+    },
+    {
+      "term": "ARIA",
+      "definition": "Accessible Rich Internet Applications - attributes for enhancing accessibility"
+    },
+    {
+      "term": "Screen Reader",
+      "definition": "Software that reads web content aloud for visually impaired users"
+    }
+  ],
+  "summary": "Web accessibility ensures websites are usable by everyone. Follow POUR principles: Perceivable, Operable, Understandable, Robust. Start with semantic HTML and basic best practices."
+}

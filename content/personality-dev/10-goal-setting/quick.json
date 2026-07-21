@@ -1,0 +1,16 @@
+{
+  "topicId": "10-goal-setting",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    { "heading": "Why Most Goals Fail", "body": "92% of New Year's resolutions fail. Why?\n1. Too vague: 'Get healthier' (what does that mean?)\n2. No deadline: 'I'll do it someday'\n3. No plan: Motivation without strategy\n4. Too many: Trying to change everything at once\n5. No accountability: No one knows about your goal\n\nThe fix: SMART goals + action plan + accountability." },
+    { "heading": "SMART Goals", "body": "S - Specific: What exactly will you achieve?\n   'Run a 5K' not 'get fit'\n\nM - Measurable: How will you track progress?\n   'Read 24 books' (2 per month)\n\nA - Achievable: Is it realistic for you?\n   'Earn $10K/month' might need steps\n\nR - Relevant: Does it align with your values?\n   'Get promoted' because YOU want it\n\nT - Time-bound: When will you achieve it?\n   'By December 31, 2026'\n\nExample:\n❌ 'Learn Spanish'\n✅ 'Have a 10-minute conversation in Spanish by December 2026, studying 20 minutes daily'" },
+    { "heading": "The 90-Day Sprint", "body": "Long-term goals are overwhelming. Break them into 90-day sprints:\n\n1. Pick ONE major goal for the next 90 days\n2. Break it into weekly milestones\n3. Break each week into daily actions\n4. Review weekly (what worked, what didn't)\n5. Adjust after 90 days\n\nWhy 90 days?\n• Long enough to see real progress\n• Short enough to maintain urgency\n• Quarterly planning aligns with business cycles\n\nAfter each 90-day sprint:\n• Celebrate what you achieved\n• Learn from what didn't work\n• Set the next sprint's goal" }
+  ],
+  "jargon": [
+    { "term": "SMART Goal", "definition": "A goal framework: Specific, Measurable, Achievable, Relevant, Time-bound. Turns vague wishes into actionable objectives." },
+    { "term": "90-Day Sprint", "definition": "A focused goal-setting period. Pick one major goal, break it into weekly milestones, and execute for 90 days before reassessing." },
+    { "term": "Keystone Habit", "definition": "One habit that triggers a chain of positive changes. Example: exercising regularly often leads to better eating, sleep, and productivity." }
+  ],
+  "summary": "Goals fail when they're vague, unplanned, or unaccountable. Use SMART goals, break them into 90-day sprints with weekly milestones, and track your progress daily."
+}

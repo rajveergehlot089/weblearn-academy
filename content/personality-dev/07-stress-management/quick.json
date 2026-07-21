@@ -1,0 +1,25 @@
+{
+  "topicId": "07-stress-management",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Stress?",
+      "body": "Stress is your body's response to demands or threats. When you perceive danger — whether real or imagined — the body's defenses kick into high gear in a rapid, automatic process known as the 'fight-or-flight' response. Short-term stress can be helpful (boosting performance before a deadline), but chronic stress damages your health, relationships, and productivity."
+    },
+    {
+      "heading": "The Stress Response Cycle",
+      "body": "Your body goes through four stages:\n\n1. **Alarm**: Your brain detects a threat and releases adrenaline and cortisol\n2. **Resistance**: Your body tries to adapt to the stressor\n3. **Recovery**: Your body returns to normal (if the stressor is removed)\n4. **Exhaustion**: If stress continues without recovery, your body breaks down\n\nThe key insight: You need to complete the stress cycle — your body needs to return to baseline. Physical movement is the fastest way to complete the cycle."
+    },
+    {
+      "heading": "The 4-7-8 Breathing Technique",
+      "body": "A quick way to reduce stress in any situation:\n\n1. Breathe in through your nose for 4 seconds\n2. Hold your breath for 7 seconds\n3. Exhale slowly through your mouth for 8 seconds\n4. Repeat 3-4 times\n\nThis activates your parasympathetic nervous system (rest and digest) and calms your stress response. Use it before presentations, difficult conversations, or when you feel overwhelmed."
+    }
+  ],
+  "jargon": [
+    { "term": "Cortisol", "definition": "The 'stress hormone' — released by your adrenal glands during stress. It increases glucose in the bloodstream, enhances the brain's use of glucose, and curbs functions that would be nonessential in a fight-or-flight situation." },
+    { "term": "Burnout", "definition": "A state of chronic workplace stress that hasn't been successfully managed. Characterized by exhaustion, cynicism, and reduced professional efficacy. It's not just being tired — it's being depleted." },
+    { "term": "Resilience", "definition": "The ability to bounce back from adversity. It's not about avoiding stress — it's about recovering from it. Resilience can be developed through practice." }
+  ],
+  "summary": "Stress is your body's response to threats. The stress response cycle has four stages: alarm, resistance, recovery, exhaustion. Complete the cycle through physical movement and breathing techniques. The 4-7-8 breathing technique (in 4, hold 7, out 8) quickly reduces stress. Chronic stress leads to burnout — prioritize recovery."
+}

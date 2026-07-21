@@ -1,0 +1,18 @@
+{
+  "topicId": "02-nouns-pronouns",
+  "comparisons": [
+    {
+      "concept": "nouns pronouns",
+      "javascript": {
+        "language": "english",
+        "code": "The teacher is teaching the students."
+      },
+      "python": {
+        "language": "english",
+        "code": "I saw a movie yesterday."
+      },
+      "explanation": "English follows consistent patterns once you learn the rules."
+    }
+  ],
+  "keyInsight": "Understanding this concept is fundamental to English fluency."
+}

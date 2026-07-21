@@ -1,0 +1,62 @@
+{
+  "topicId": "03-growth-mindset",
+  "comparisons": [
+    {
+      "concept": "Fixed vs Growth Mindset Responses",
+      "fixed": {
+        "name": "Fixed Mindset",
+        "challenges": "Avoids challenges to protect image of competence.",
+        "obstacles": "Gives up easily when facing difficulty.",
+        "effort": "Sees effort as fruitless — 'If I were smart, I wouldn't need to try so hard.'",
+        "criticism": "Ignores useful feedback or becomes defensive.",
+        "success_of_others": "Feels threatened; interprets others' success as making them look worse.",
+        "result": "Stagnation — abilities plateau because they're never pushed beyond comfort zone."
+      },
+      "growth": {
+        "name": "Growth Mindset",
+        "challenges": "Embraces challenges as opportunities to learn and grow.",
+        "obstacles": "Persists through difficulty — 'This is hard, which means I'm learning.'",
+        "effort": "Sees effort as the path to mastery — 'Struggle is where growth happens.'",
+        "criticism": "Seeks feedback as valuable data for improvement.",
+        "success_of_others": "Finds inspiration and lessons in others' achievements.",
+        "result": "Continuous improvement — abilities expand through deliberate practice."
+      },
+      "explanation": "These are not fixed traits — they're habits of thought that can be changed. Everyone has both mindsets in different areas of life. The goal is to notice your fixed-mindset triggers and consciously choose growth-oriented responses."
+    },
+    {
+      "concept": "Praise Strategies",
+      "person_praise": {
+        "name": "Person Praise ('You're so smart/talented!')",
+        "effect": "Creates fixed mindset — children avoid challenges to maintain the 'smart' label.",
+        "research": "Dweck's praise study: children praised for intelligence chose easier tasks 67% of the time.",
+        "hidden_message": "Success = innate ability. If you fail, you're not smart."
+      },
+      "process_praise": {
+        "name": "Process Praise ('You worked hard on that strategy!')",
+        "effect": "Creates growth mindset — children embrace challenges as learning opportunities.",
+        "research": "Same study: children praised for effort chose harder tasks 92% of the time.",
+        "hidden_message": "Success = effort + strategy. Failure = need different approach."
+      },
+      "explanation": "The praise we give (to children, employees, ourselves) shapes mindset. Process praise focuses on controllable factors (effort, strategy, persistence), while person praise focuses on uncontrollable factors (innate talent). This applies equally to self-talk — 'I'm so stupid' (person) vs. 'I need a different approach' (process)."
+    },
+    {
+      "concept": "Approach to Learning",
+      "performance_goal": {
+        "name": "Performance Goals (Fixed Mindset)",
+        "definition": "Goals focused on proving competence ('Get an A,' 'Look smart').",
+        "response_to_failure": "Avoidance, excuses, loss of motivation.",
+        "effort": "Minimum necessary to achieve the goal.",
+        "feedback": "Threatening — reveals inadequacy."
+      },
+      "mastery_goal": {
+        "name": "Mastery Goals (Growth Mindset)",
+        "definition": "Goals focused on developing competence ('Master this skill,' 'Understand deeply').",
+        "response_to_failure": "Information about what to work on next.",
+        "effort": "Whatever is needed to improve.",
+        "feedback": "Valuable — enables growth."
+      },
+      "explanation": "Goal orientation shapes everything. When your goal is to prove you're smart (performance), challenges threaten that proof. When your goal is to become more competent (mastery), challenges are opportunities. Reframe: 'Get an A' → 'Master the material.' The first is fragile; the second is resilient."
+    }
+  ],
+  "keyInsight": "Growth mindset is not positive thinking — it's a fundamental shift in how you interpret challenges, failure, and effort. The key insight from Dweck's research is that mindset is changeable. Start by noticing your fixed-mindset triggers (criticism, comparison, challenges) and practice reframing them as learning opportunities."
+}

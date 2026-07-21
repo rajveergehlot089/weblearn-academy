@@ -1,0 +1,57 @@
+{
+  "topicId": "03-images-media",
+  "type": "interview",
+  "estimatedMinutes": 10,
+  "questions": [
+    {
+      "question": "What is the purpose of the alt attribute in img tags?",
+      "answer": "The alt attribute provides alternative text for images. It serves three main purposes: 1) Accessibility - screen readers read it for visually impaired users. 2) SEO - helps search engines understand image content. 3) Fallback - displays when images fail to load. For decorative images, use empty alt=\"\" to skip them in screen readers.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why should you provide multiple source formats for video?",
+      "answer": "Different browsers support different video formats. By providing multiple sources (like MP4, WebM, and Ogg), you ensure compatibility across all browsers. The browser will use the first format it supports. This is similar to how font-face works with multiple font formats.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is lazy loading and when should you use it?",
+      "answer": "Lazy loading defers loading of resources until they're needed (typically when they enter the viewport). Use it for below-the-fold images and videos to improve initial page load performance. Add loading=\"lazy\" to img and video elements. Don't lazy load above-the-fold content as it can hurt perceived performance.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Explain the difference between img srcset and the picture element.",
+      "answer": "srcset provides multiple image resolutions and lets the browser choose the best one based on screen size and pixel density. It's for resolution switching. The picture element provides different images based on media conditions (like viewport width) and is for art direction - serving completely different crops or compositions.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What security considerations apply to iframes?",
+      "answer": "Iframes can embed potentially malicious content. Use the sandbox attribute to restrict permissions (like scripts, forms, same-origin access). Always set a title for accessibility. Consider using loading=\"lazy\" for performance. Avoid embedding untrusted content without sandbox restrictions.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you prevent layout shift when loading images?",
+      "answer": "Always specify width and height attributes on img elements. This allows the browser to calculate the aspect ratio and reserve space before the image loads. You can also use CSS aspect-ratio property or wrapper elements with padding-bottom trick. Modern browsers use these dimensions to prevent cumulative layout shift (CLS).",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the poster attribute on video elements?",
+      "answer": "The poster attribute specifies an image to display before the video is played. It's like a thumbnail or preview image. Use a representative frame from the video. If not specified, the browser shows the first frame. Example: <video poster=\"thumbnail.jpg\">. This improves user experience by showing something before playback starts.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "When would you use an iframe instead of directly embedding content?",
+      "answer": "Use iframes when: 1) Embedding content from another domain (like YouTube, Google Maps). 2) Isolating content for security (sandboxing untrusted content). 3) Embedding third-party widgets. 4) Displaying content that requires its own browsing context. Avoid iframes for same-origin content you control directly.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you make images accessible to screen readers?",
+      "answer": "Key practices: 1) Always include meaningful alt text for informative images. 2) Use empty alt=\"\" for decorative images. 3) Keep alt text concise but descriptive. 4) Use figure/figcaption for images with captions. 5) Don't start alt text with \"Image of\" or \"Picture of\" - screen readers already announce it's an image.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are the benefits of using WebP image format?",
+      "answer": "WebP offers: 1) Better compression than JPEG/PNG (25-34% smaller). 2) Supports both lossy and lossless compression. 3) Supports transparency (alpha channel). 4) Supports animation. 5) Widely supported in modern browsers. Use <picture> or srcset to serve WebP with fallbacks for older browsers.",
+      "difficulty": "medium"
+    }
+  ]
+}

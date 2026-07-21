@@ -1,0 +1,20 @@
+{
+  "topicId": "05-sentence-structure",
+  "questions": [
+    {
+      "question": "Why is word order so important in English?",
+      "answer": "English lost most of its case endings over centuries (unlike German or Russian), so word order became the primary way to show who does what to whom. \"Dog bites man\" is completely different from \"man bites dog\" — the subject and object are determined by position, not word form.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the difference between adjectives and adverbs?",
+      "answer": "Adjectives describe nouns: \"She is a fast runner\" (describes runner). Adverbs describe verbs, adjectives, or other adverbs: \"She runs fast\" (describes runs). Many adverbs are formed by adding -ly to adjectives: quick→quickly, slow→slowly. Exceptions: fast (both adj and adv), hard→hardly (different meaning!).",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you form a question in English?",
+      "answer": "For yes/no questions: move the auxiliary verb (be, have, do, will, can, etc.) before the subject. \"She can swim\" → \"Can she swim?\" For WH-questions: add the question word at the beginning. \"She speaks French\" → \"What does she speak?\" Note: with main verbs other than be/have, add do/does/did: \"Do you like coffee?\"",
+      "difficulty": "easy"
+    }
+  ]
+}

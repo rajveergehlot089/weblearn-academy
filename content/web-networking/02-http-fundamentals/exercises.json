@@ -1,0 +1,47 @@
+{
+  "topicId": "02-http-fundamentals",
+  "exercises": [
+    {
+      "title": "Understanding HTTP Fundamentals",
+      "description": "Review the concepts in this lesson and explain HTTP Fundamentals in your own words. Write down the key points and how they connect to what you already know.",
+      "hints": [
+        "Reread the quick lesson",
+        "Write down key terms",
+        "Connect to previous topics"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Key points about HTTP Fundamentals:\n1. Requests, responses, headers, methods, and status codes.\n2. Core concept: Understanding the fundamentals\n3. Application: Use in real projects"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Hands-on Practice: HTTP Fundamentals",
+      "description": "Apply what you learned about HTTP Fundamentals in a practical exercise. Start with the basics and build up to more complex implementations.",
+      "hints": [
+        "Start with a simple example",
+        "Test each step",
+        "Don't skip the fundamentals"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Practice steps:\n1. Set up your environment\n2. Implement the basic version\n3. Add advanced features\n4. Test and debug\n5. Refactor and optimize"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Challenge: HTTP Fundamentals Mastery",
+      "description": "Push your understanding of HTTP Fundamentals by tackling a more complex scenario. This exercise combines multiple concepts from this lesson.",
+      "hints": [
+        "Review all sections of the lesson",
+        "Break the problem into smaller parts",
+        "Use the code examples as a starting point"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Challenge approach:\n1. Analyze the requirements\n2. Design your solution\n3. Implement step by step\n4. Test edge cases\n5. Document your approach"
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

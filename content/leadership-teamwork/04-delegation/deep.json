@@ -1,0 +1,28 @@
+{
+  "topicId": "04-delegation",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "What to Delegate (and What Not To)",
+      "body": "The Eisenhower Matrix helps identify what to delegate:\n\n• **Urgent + Important**: Do it yourself (crises, deadlines)\n• **Important + Not Urgent**: Schedule it yourself (strategy, development)\n• **Urgent + Not Important**: DELEGATE (routine approvals, status updates, scheduling)\n• **Neither**: Eliminate it\n\nAdditional delegation candidates:\n• Tasks that develop someone else's skills\n• Recurring tasks you've mastered (someone else needs to learn)\n• Tasks someone else could do 80% as well\n• Tasks you enjoy but shouldn't prioritize\n\nNever delegate:\n• Your core leadership responsibilities (vision, culture, performance management)\n• Confidential people matters (terminations, compensation)\n• Tasks requiring your unique expertise that no one else has"
+    },
+    {
+      "heading": "The Delegation Conversation",
+      "body": "How you delegate matters as much as what you delegate. Follow this script:\n\n1. **Context**: 'Here's why this matters and how it connects to our goals.'\n2. **Ownership**: 'You own this from start to finish.'\n3. **Boundaries**: 'Here's what success looks like. Here are the constraints (budget, timeline, scope).'\n4. **Authority**: 'You have authority to [specific powers]. Here's what you need to check with me on.'\n5. **Support**: 'I'm here if you need help, but I won't micromanage.'\n6. **Check-in**: 'Let's check in on [date]. In the meantime, flag any blockers.'\n\nCommon mistakes: delegating without context (people don't understand why), delegating without authority (people can't actually act), or delegating with vague expectations (people guess what success looks like)."
+    },
+    {
+      "heading": "Preventing Reverse Delegation",
+      "body": "Reverse delegation happens when a team member brings a problem back to you expecting you to solve it. Stop it by:\n\n1. **Asking before solving**: 'What do you think we should do?' Let them propose solutions first.\n2. **Sending them back**: 'I trust your judgment. Come back with a recommendation.'\n3. **Coaching, not rescuing**: 'What have you tried? What else could you try?'\n4. **Accepting reasonable mistakes**: If you punish every error, people will stop trying.\n5. **Being patient**: It takes 2-3 rounds before people stop bringing problems to you."
+    },
+    {
+      "heading": "Delegation for Development",
+      "body": "Use delegation as a development tool:\n\n• **Stretch assignments**: Give someone a task slightly beyond their current level. Not so far that they'll fail, but far enough to grow.\n• **Rotating responsibilities**: Let team members shadow each other's work. Builds cross-training and empathy.\n• **Project leadership**: Assign a junior person to lead a small project with your mentorship. They learn planning, coordination, and communication.\n• **Failure tolerance**: Explicitly say: 'If this doesn't go perfectly, that's okay. The learning is the goal.'\n\nTrack what each person has delegated to them. If someone isn't getting development opportunities, you're hoarding growth."
+    },
+    {
+      "heading": "Scaling Through Delegation",
+      "body": "As your team grows, delegation becomes your operating system:\n\n• **Delegate decisions**: Push decisions to the lowest level where they can be made competently. Create decision rights documentation.\n• **Delegate communication**: Don't be the bottleneck. Let people communicate directly with stakeholders.\n• **Delegate problem-solving**: Create a culture where people bring solutions, not just problems.\n• **Delegate culture**: Senior people model values. Let them mentor juniors. Culture flows through delegation.\n\nThe litmus test: If you took a two-week vacation, would your team function smoothly? If not, you haven't delegated enough."
+    }
+  ],
+  "summary": "Effective delegation requires clarity on what to delegate, a structured conversation to transfer ownership, prevention of reverse delegation, and using delegation deliberately as a team development tool."
+}

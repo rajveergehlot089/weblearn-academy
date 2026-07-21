@@ -1,0 +1,30 @@
+{
+  "topicId": "01-self-awareness",
+  "questions": [
+    {
+      "question": "What percentage of people are actually self-aware, according to research by Tasha Eurich?",
+      "answer": "Only about 10-15% of people are truly self-aware, despite 95% believing they are. This 'self-awareness gap' exists because introspection alone doesn't guarantee accuracy — people often confuse confidence with correctness. Eurich's research found that asking 'what' questions ('What do I feel?') is more effective than 'why' questions ('Why do I feel this way?') because 'why' questions can lead to rumination and false narratives.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Explain the Johari Window and how it can be used to improve self-awareness.",
+      "answer": "The Johari Window, developed by Joseph Luft and Harrington Ingham, is a framework with four quadrants: (1) Open Area — known to both self and others, (2) Blind Spot — unknown to self but known to others, (3) Hidden Area — known to self but hidden from others, (4) Unknown Area — unknown to both. To improve self-awareness, expand the Open Area through two processes: seeking feedback (reducing Blind Spot) and appropriate self-disclosure (reducing Hidden Area). This creates a virtuous cycle where better self-understanding leads to better relationships and more accurate self-perception.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the difference between internal and external self-awareness? Why does it matter?",
+      "answer": "Internal self-awareness is understanding your own values, emotions, strengths, and weaknesses. External self-awareness is understanding how others perceive you. Research shows these are independent dimensions — you can be high in one and low in the other. For example, a person might have deep insight into their own values (high internal) but be completely unaware of how their directness comes across as rude (low external). Both types are necessary: internal awareness prevents living inauthentically, while external awareness prevents relational blind spots that damage trust and effectiveness.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How can cognitive biases undermine self-awareness? Give three specific examples.",
+      "answer": "Cognitive biases systematically distort self-perception: (1) Confirmation Bias — we seek information confirming our existing self-view while ignoring contradictory evidence. If you see yourself as 'easygoing,' you'll notice instances when you're patient but overlook moments of irritability. (2) Self-Serving Bias — attributing successes to internal factors ('I'm talented') but failures to external factors ('the test was unfair'), creating an inflated self-image. (3) The Dunning-Kruger Effect — people with low ability in a domain often overestimate their competence because they lack the knowledge to recognize their deficiency. These biases create an inaccurate self-concept that limits growth.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Describe three practical exercises someone can do to improve their self-awareness this week.",
+      "answer": "Three actionable exercises: (1) Energy Audit — For 7 days, track every activity on a +3 to -3 scale (+3 = energized, -3 = drained). Patterns will reveal authentic interests and tolerances you might not be consciously aware of. (2) The 3-Question Check-in — Three times daily, pause and ask: 'What am I feeling right now? What triggered this feeling? Is my response aligned with my values?' This builds the habit of real-time self-observation. (3) Feedback Request — Ask 3 trusted people: 'What is one thing I could do differently to be more effective?' Listen without defending, then reflect on what you hear. This directly reduces your blind spot area in the Johari Window.",
+      "difficulty": "easy"
+    }
+  ]
+}

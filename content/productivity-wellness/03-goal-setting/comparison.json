@@ -1,0 +1,52 @@
+{
+  "topicId": "03-goal-setting",
+  "comparisons": [
+    {
+      "concept": "Goal-Setting Frameworks",
+      "items": [
+        {
+          "name": "SMART Goals",
+          "description": "Specific, Measurable, Achievable, Relevant, Time-bound",
+          "best_for": "Clear, concrete goals with obvious success criteria",
+          "pros": "Easy to understand, forces specificity, widely known",
+          "cons": "Can feel rigid, doesn't capture ambitious stretch goals well",
+          "example": "Exercise: 'Run 3x/week for 30 min, Mon/Wed/Fri, tracked in Strava, for 8 weeks'"
+        },
+        {
+          "name": "OKRs (Objectives & Key Results)",
+          "description": "Inspiring Objective + 2-4 quantitative Key Results",
+          "best_for": "Ambitious goals that need measurable milestones",
+          "pros": "Separates vision from metrics, encourages stretch goals, standard scoring",
+          "cons": "More complex to set up, requires quarterly review discipline",
+          "example": "Objective: Become confident system designer. KR1: Complete 15 practice problems. KR2: Read 3 architecture books."
+        },
+        {
+          "name": "Habit Stacking (Atomic Habits)",
+          "description": "Link new habits to existing routines using 'After I X, I will Y'",
+          "best_for": "Building consistent daily behaviors",
+          "pros": "Leverages existing neural pathways, requires no motivation, automatic",
+          "cons": "Takes time to establish, doesn't work for one-time goals",
+          "example": "After I pour coffee, I will review today's 3 priorities."
+        },
+        {
+          "name": "1-3-5 Rule",
+          "description": "1 big goal, 3 medium goals, 5 small goals — prevents overload",
+          "best_for": "Prioritizing when you have many goals competing for attention",
+          "pros": "Forces prioritization, prevents goal overload, clear hierarchy",
+          "cons": "Can feel limiting if you have genuinely important goals in all areas",
+          "example": "Big: Get promoted. Medium: Learn system design, lead 2 projects, mentor 1 junior. Small: Weekly tasks."
+        },
+        {
+          "name": "WOOP (Wish, Outcome, Obstacle, Plan)",
+          "description": "Identify your wish, best outcome, worst obstacles, and if-then plans",
+          "best_for": "Goals where you know the obstacles are significant",
+          "pros": "Mental contrasting increases follow-through, proactive obstacle planning",
+          "cons": "Can feel pessimistic, requires honest obstacle assessment",
+          "example": "Wish: Learn Rust. Outcome: Build CLI tool. Obstacle: Time pressure. Plan: If tired after work, study 15 min instead of skipping."
+        }
+      ],
+      "insight": "These frameworks aren't mutually exclusive. Combine them: use SMART for clarity, OKRs for ambition, Habit Stacking for execution, and 1-3-5 for prioritization. Pick the 1-2 that resonate and use them consistently."
+    }
+  ],
+  "keyInsight": "The best goal framework is the one you'll actually use. Start with SMART goals for clarity, add OKRs for ambition, and use Habit Stacking for daily execution. Review and adjust quarterly — goals are tools, not sacred vows."
+}

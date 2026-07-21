@@ -1,0 +1,38 @@
+{
+  "topicId": "07-auth",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Authentication?",
+      "body": "Authentication is proving who you are. When you log in with email and password, you're authenticating. Think of it like showing your ID at a nightclub — the bouncer verifies you're who you say you are."
+    },
+    {
+      "heading": "Sessions vs JWT vs OAuth",
+      "body": "There are three main ways to handle auth:\n1. Sessions: Server remembers you (like a hotel key card the front desk tracks)\n2. JWT: You carry a signed ID card (like a passport you show everywhere)\n3. OAuth: Let someone else verify you (like logging in with Google)"
+    },
+    {
+      "heading": "The Login Flow",
+      "body": "1. You enter email + password\n2. Server checks credentials\n3. Server gives you a 'token' (like a wristband at a concert)\n4. You show the token on every request\n5. Server checks the token and knows it's you"
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Authentication",
+      "definition": "Verifying who a user is (login)."
+    },
+    {
+      "term": "Authorization",
+      "definition": "Determining what a logged-in user is allowed to do (permissions)."
+    },
+    {
+      "term": "Token",
+      "definition": "A piece of data given to a user after login that proves their identity on future requests."
+    },
+    {
+      "term": "JWT",
+      "definition": "JSON Web Token — a self-contained token that stores user info and can be verified without asking the server."
+    }
+  ],
+  "summary": "Authentication proves who you are. Sessions store state on the server, JWTs store state on the client, OAuth delegates verification to a third party."
+}

@@ -1,0 +1,48 @@
+{
+  "topicId": "01-communication-basics",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The Communication Process Model",
+      "body": "Communication follows a predictable cycle. Understanding each step helps you diagnose where breakdowns happen.",
+      "bulletPoints": [
+        "Sender has an idea or feeling they want to share",
+        "Encoding: The sender translates the idea into words, gestures, or symbols",
+        "Channel: The message travels through a medium (speech, text, email)",
+        "Decoding: The receiver interprets the message using their own context",
+        "Feedback: The receiver responds, completing the loop"
+      ]
+    },
+    {
+      "heading": "Common Barriers to Communication",
+      "body": "Breakdowns happen at every stage. Here are the most common barriers:",
+      "bulletPoints": [
+        "Assumptions — 'They should know what I mean' leads to vague messages",
+        "Emotional noise — Anger, stress, or anxiety distort how we send and receive",
+        "Information overload — Too much data causes the receiver to tune out",
+        "Differing contexts — Generational, cultural, or professional gaps create different interpretations",
+        "Poor channel choice — Delivering sensitive feedback via text instead of in person"
+      ]
+    },
+    {
+      "heading": "Verbal vs. Nonverbal Communication",
+      "body": "Verbal communication uses words (spoken or written). Nonverbal includes everything else: facial expressions, posture, gestures, eye contact, proximity, tone of voice, and even silence. Research shows nonverbal signals carry more emotional weight than words.",
+      "code": {
+        "language": "example",
+        "snippet": "Scenario: A manager says 'Great job on the report' with a flat tone, no eye contact, while looking at their phone.\n\nVerbal message: Praise\nNonverbal message: Disinterest\nReceiver's interpretation: They don't actually care.\n\nThe same sentence delivered with eye contact, a smile, and genuine tone would feel completely different.",
+        "explanation": "When verbal and nonverbal messages conflict, people trust the nonverbal signal. Always check that your body language matches your words."
+      }
+    },
+    {
+      "heading": "The Role of Context in Communication",
+      "body": "No message exists in a vacuum. Context shapes meaning. The phrase 'We need to talk' means something different from your partner, your boss, or a friend. Context includes: the relationship between speakers, the setting, cultural norms, prior conversations, and current emotions.",
+      "code": {
+        "language": "example",
+        "snippet": "Same phrase, different contexts:\n\n'We need to talk' from your partner → anxiety, potential conflict\n'We need to talk' from your boss → likely a meeting about work\n'We need to talk' from a friend → probably casual catch-up\n\nEffective communicators adjust their message based on context.",
+        "explanation": "Before speaking or writing, consider: What does the other person already know? What is their emotional state? What channel am I using? What cultural norms apply?"
+      }
+    }
+  ],
+  "summary": "Communication is a cycle of encoding, transmitting, and decoding — and breakdowns happen at every stage. Barriers include assumptions, emotions, overload, and poor channel choice. Nonverbal signals often carry more weight than words. Always consider context before delivering a message."
+}

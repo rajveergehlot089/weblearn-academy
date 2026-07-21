@@ -1,0 +1,47 @@
+{
+  "topicId": "07-motivation",
+  "exercises": [
+    {
+      "title": "Motivation Diagnosis",
+      "description": "Assess each team member's motivation level on autonomy, competence, and relatedness. Identify where each person needs the most support.",
+      "hints": [
+        "Ask people directly: 'What would make your work more fulfilling?'",
+        "Look for patterns — is the whole team missing one element?",
+        "Compare their self-assessment to your observation"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Motivation Diagnosis Template:\n\nFor each team member:\n\nName: ___________\n\nAutonomy (1-5): How much control do they have over their work?\n- Signs of low autonomy: asks permission for everything, waits for direction\n- Action: ___________\n\nCompetence (1-5): Do they feel effective and growing?\n- Signs of low competence: avoids challenges, asks for help frequently\n- Action: ___________\n\nRelatedness (1-5): Do they feel connected to the team?\n- Signs of low relatedness: isolated, doesn't participate socially\n- Action: ___________\n\nOverall motivation level: ___________\nOne action this month: ___________"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Recognition Audit",
+      "description": "Track your recognition behaviors for one week. How many times did you recognize each team member? Was it specific or generic? Public or private?",
+      "hints": [
+        "Log every recognition instance in a spreadsheet",
+        "Note whether it was specific or generic",
+        "Look for who you're NOT recognizing — they may need it most"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Recognition Tracking Log:\n\nDate | Person | Recognition Given | Specific? | Public/Private | Value Connected\n\nExample:\nMon | Alice | 'Your presentation was excellent' | Generic | Public | No\nWed | Bob | 'Your code review caught a critical bug' | Specific | Private | Quality\nFri | Carol | 'Thanks for helping the new hire' | Specific | Public | Teamwork\n\nAnalysis after 1 week:\n- Who received most/least recognition? ___________\n- How much was specific vs. generic? ___________\n- Did you connect recognition to team values? ___________\n- Action: Increase specific recognition by 50% next week"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Purpose Connection Plan",
+      "description": "For each major project your team is working on, identify how it connects to a larger purpose. Then communicate that connection to the team.",
+      "hints": [
+        "Ask: 'Who benefits from this work? How?'",
+        "Find real customer or end-user stories",
+        "Connect daily tasks to team and organizational outcomes"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Purpose Connection Map:\n\nProject: ___________\nTeam task: ___________\nDirect outcome: ___________\nWho benefits: ___________\nHow they benefit: ___________\n\nCommunication plan:\n- Share a customer story: ___________\n- Link task to team goal: ___________\n- Show the impact metric: ___________\n\nExample:\nProject: Customer onboarding redesign\nTeam task: Build new welcome email sequence\nDirect outcome: 20% faster onboarding\nWho benefits: New customers\nHow they benefit: Less confusion, faster time-to-value\n\nCommunication: 'Here's a message from a new customer saying our onboarding was confusing. Your work directly fixes this for the next 500 customers.'"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

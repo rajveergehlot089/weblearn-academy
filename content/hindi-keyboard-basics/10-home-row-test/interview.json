@@ -1,0 +1,25 @@
+{
+  "topicId": "10-home-row-test",
+  "questions": [
+    {
+      "question": "What is Home Row Speed Test and why is it important?",
+      "answer": "Home Row Speed Test is a fundamental concept that Timed test to verify home row mastery before advancing. It's important because it forms the foundation for building robust and efficient applications. Understanding Home Row Speed Test allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Home Row Speed Test in a real project?",
+      "answer": "In practice, Home Row Speed Test is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Home Row Speed Test?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Home Row Speed Test to a beginner?",
+      "answer": "Home Row Speed Test is essentially about timed test to verify home row mastery before advancing. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

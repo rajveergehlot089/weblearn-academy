@@ -1,0 +1,15 @@
+{
+  "topicId": "12-deployment",
+  "questions": [
+    {
+      "question": "What is the difference between frontend and backend deployment?",
+      "answer": "Frontend deployment hosts static files (HTML, CSS, JS) — no server needed. Backend deployment hosts a running server that processes requests, connects to databases, and runs business logic. They're deployed independently and communicate via API calls.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why use environment variables instead of hardcoding secrets?",
+      "answer": "Hardcoded secrets in code get committed to git — anyone with repo access sees them. Environment variables are set in the deployment platform, separate from code. They prevent secret exposure, allow different values for dev/staging/production, and enable easy secret rotation.",
+      "difficulty": "medium"
+    }
+  ]
+}

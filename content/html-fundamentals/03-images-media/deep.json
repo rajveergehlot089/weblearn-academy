@@ -1,0 +1,61 @@
+{
+  "topicId": "03-images-media",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The img Element in Detail",
+      "body": "The img element is a void element (no closing tag) that embeds images. Essential attributes include src (image URL), alt (description), width, height, and loading. The alt attribute is required for accessibility.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Basic image -->\n<img src=\"photo.jpg\" alt=\"A sunset over the mountains\" width=\"800\" height=\"600\">\n\n<!-- Image with lazy loading -->\n<img src=\"large-image.jpg\" alt=\"Product photo\" loading=\"lazy\">\n\n<!-- Image with fallback -->\n<img src=\"image.webp\" alt=\"Team photo\" onerror=\"this.src='fallback.jpg'\">\n\n<!-- Image with figure caption -->\n<figure>\n    <img src=\"chart.png\" alt=\"Sales chart showing growth\">\n    <figcaption>Figure 1: Quarterly sales data</figcaption>\n</figure>",
+        "explanation": "Always include alt text. Lazy loading improves performance for below-the-fold images. The figure/figcaption combination provides semantic meaning for images with captions."
+      }
+    },
+    {
+      "heading": "Video Element",
+      "body": "The video element embeds video content with built-in controls. Use source elements to provide multiple formats for browser compatibility. Common attributes include controls, autoplay, loop, muted, and poster.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Basic video with controls -->\n<video controls width=\"640\" height=\"360\">\n    <source src=\"movie.mp4\" type=\"video/mp4\">\n    <source src=\"movie.webm\" type=\"video/webm\">\n    Your browser does not support the video tag.\n</video>\n\n<!-- Video with poster image -->\n<video controls poster=\"poster.jpg\" width=\"640\">\n    <source src=\"tutorial.mp4\" type=\"video/mp4\">\n    <track kind=\"subtitles\" src=\"subtitles.vtt\" srclang=\"en\" label=\"English\">\n</video>\n\n<!-- Autoplay muted video (for backgrounds) -->\n<video autoplay muted loop playsinline width=\"100%\">\n    <source src=\"background.mp4\" type=\"video/mp4\">\n</video>",
+        "explanation": "Provide multiple source formats for compatibility. The track element adds subtitles/captions. Autoplay requires muted attribute. Always include fallback text."
+      }
+    },
+    {
+      "heading": "Audio Element",
+      "body": "The audio element embeds sound content. Similar to video, it supports multiple sources and provides playback controls. Use for podcasts, music, sound effects, and audio narrations.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Basic audio player -->\naudio controls>\n    <source src=\"podcast.mp3\" type=\"audio/mpeg\">\n    <source src=\"podcast.ogg\" type=\"audio/ogg\">\n    Your browser does not support the audio element.\n</audio>\n\n<!-- Audio with preload hint -->\naudio controls preload=\"metadata\">\n    <source src=\"song.mp3\" type=\"audio/mpeg\">\n</audio>\n\n<!-- Background audio (no controls) -->\naudio autoplay loop hidden>\n    <source src=\"ambient.mp3\" type=\"audio/mpeg\">\naudio>",
+        "explanation": "Audio works like video but is 1-dimensional. Preload hints help browsers decide whether to buffer the entire file. Hidden audio is useful for background sounds."
+      }
+    },
+    {
+      "heading": "Responsive Images",
+      "body": "Responsive images adapt to different screen sizes and resolutions. HTML provides several mechanisms for this.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- srcset for resolution switching -->\nimg src=\"photo-800.jpg\"\n     srcset=\"photo-400.jpg 400w,\n             photo-800.jpg 800w,\n             photo-1200.jpg 1200w\"\n     sizes=\"(max-width: 600px) 400px,\n             (max-width: 1000px) 800px,\n             1200px\"\n     alt=\"Responsive image example\">\n\n<!-- picture for art direction -->\npicture>\n    <source media=\"(min-width: 800px)\" srcset=\"wide.jpg\">\n    <source media=\"(min-width: 400px)\" srcset=\"medium.jpg\">\n    <img src=\"small.jpg\" alt=\"Art directed image\">\n/picture>\n\n<!-- CSS responsive images -->\nstyle>\nimg {\n    max-width: 100%;\n    height: auto;\n}\n/style>\n<img src=\"photo.jpg\" alt=\"Responsive with CSS\" style=\"width: 100%; max-width: 600px;\">",
+        "explanation": "srcset lets browsers choose the best resolution. The picture element serves different images based on viewport width. CSS max-width ensures images don't overflow their containers."
+      }
+    },
+    {
+      "heading": "IFrames for Embedded Content",
+      "body": "The iframe element embeds external content like maps, videos from other sites, or other web pages. Use the sandbox attribute for security.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Embedded map -->\n<iframe\n    src=\"https://www.openstreetmap.org/export/embed.html\"\n    width=\"600\"\n    height=\"400\"\n    style=\"border: 0;\"\n    loading=\"lazy\"\n    title=\"Location map\"\n    allowfullscreen>\n</iframe>\n\n<!-- Embedded video -->\n<iframe\n    width=\"560\"\n    height=\"315\"\n    src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\"\n    title=\"YouTube video player\"\n    frameborder=\"0\"\n    allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n    allowfullscreen>\n</iframe>",
+        "explanation": "Iframes embed external content. Always include a title for accessibility. Use sandbox to restrict permissions. Loading=\"lazy\" improves page performance."
+      }
+    },
+    {
+      "heading": "Best Practices",
+      "body": "Key guidelines for media elements:\n\n1. Always provide alt text for images\n2. Use multiple video/audio formats for compatibility\n3. Include captions/subtitles for accessibility\n4. Use lazy loading for below-the-fold images\n5. Set explicit width/height to prevent layout shift\n6. Optimize file sizes for performance\n7. Use responsive techniques for different devices"
+    },
+    {
+      "heading": "Practice Task",
+      "body": "Create a media-rich page that includes:\n• At least 3 images with proper alt text\n• A video player with multiple source formats\n• An audio player for a podcast\n• Responsive images that adapt to screen size\n• An iframe embedding external content"
+    }
+  ],
+  "summary": "Master HTML media elements: img for images, video for video content, audio for sound. Always include alt text, provide multiple formats for compatibility, and use responsive techniques for different devices."
+}

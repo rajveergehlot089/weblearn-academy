@@ -1,0 +1,30 @@
+{
+  "topicId": "01-communication-basics",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What Is Communication?",
+      "body": "Communication is the transfer of information from one person to another. It sounds simple, but miscommunication is one of the biggest sources of conflict in workplaces and relationships. Every day you communicate hundreds of times — through words, tone of voice, facial expressions, and even silence."
+    },
+    {
+      "heading": "The 7-38-55 Rule",
+      "body": "Psychologist Albert Mehrabian discovered that when conveying feelings and attitudes, people interpret messages as follows:",
+      "bulletPoints": [
+        "7% Words — The actual words you say matter less than you think",
+        "38% Tone — How you say it (pitch, pace, volume, warmth)",
+        "55% Body Language — Facial expressions, posture, gestures, eye contact"
+      ]
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "If your words say 'I'm fine' but your tone is sharp and your arms are crossed, the listener will believe your body language, not your words. Congruence — when words, tone, and body language align — is the foundation of clear communication."
+    }
+  ],
+  "jargon": [
+    { "term": "Congruence", "definition": "When your words, tone, and body language all send the same message. Incongruence creates distrust." },
+    { "term": "Feedback Loop", "definition": "The process where the receiver responds, and the sender adjusts. Without feedback, communication is just broadcasting." },
+    { "term": "Channel", "definition": "The medium used to communicate: face-to-face, phone, email, text, video call, etc." }
+  ],
+  "summary": "Communication is more than words — it's a blend of what you say (7%), how you say it (38%), and what your body says (55%). Effective communicators ensure all three signals align. The feedback loop completes communication by confirming the message was understood."
+}

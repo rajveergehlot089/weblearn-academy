@@ -1,0 +1,30 @@
+{
+  "topicId": "06-domains-ssl",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Domains, DNS & SSL Certificates?",
+      "body": "Buy domains, configure DNS, and set up HTTPS with free SSL. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "Domains, DNS & SSL Certificates is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind Domains, DNS & SSL Certificates is understanding how different components work together.\n\n2. Application: In practice, you'll use Domains, DNS & SSL Certificates every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most Domains, DNS & SSL Certificates implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding Domains, DNS & SSL Certificates is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Domains,",
+      "definition": "A key concept in Domains, DNS & SSL Certificates. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Certificates",
+      "definition": "A key concept in Domains, DNS & SSL Certificates. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "Domains, DNS & SSL Certificates is a core concept in devops. Buy domains, configure DNS, and set up HTTPS with free SSL. Focus on understanding the fundamentals first, then practice applying them."
+}

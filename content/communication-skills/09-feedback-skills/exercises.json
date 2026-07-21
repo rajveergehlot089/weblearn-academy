@@ -1,0 +1,51 @@
+{
+  "topicId": "09-feedback-skills",
+  "exercises": [
+    {
+      "title": "SBI Feedback Practice",
+      "description": "Write three pieces of SBI feedback for real situations from your week. Use the Situation-Behavior-Impact formula. Focus on facts, not feelings.",
+      "hints": [
+        "Be specific about WHEN and WHERE (Situation)",
+        "Describe WHAT the person did, not WHO they are (Behavior)",
+        "Explain the EFFECT it had (Impact)"
+      ],
+      "scenarios": [
+        "A colleague who dominates team meetings",
+        "A team member who consistently misses deadlines",
+        "A friend who gives unsolicited advice"
+      ],
+      "solution": "Example 1: [S] In today's standup meeting... [B] ...you spoke for 5 minutes about your progress without pausing for others... [I] ...which meant two people didn't get to share their blockers, and the meeting ran 10 minutes over. Example 2: [S] The last two project reports... [B] ...were submitted after the Friday deadline... [I] ...which delayed the Monday review and required weekend work from the team. Example 3: [S] When I shared my relationship issue last night... [B] ...you immediately jumped to solutions and advice... [I] ...which made me feel like my feelings weren't being heard.",
+      "difficulty": "medium"
+    },
+    {
+      "title": "The Feedback Receipt Challenge",
+      "description": "Ask three people (colleague, friend, family member) for one piece of feedback about you. Use this exact question: 'What's one thing I could do differently to be a better [colleague/friend/partner]?' Then practice receiving it without defending.",
+      "hints": [
+        "Don't explain or justify — just listen",
+        "Say 'Thank you for telling me that'",
+        "Ask 'Can you give me a specific example?'",
+        "Wait 24 hours before deciding what to do with it"
+      ],
+      "solution": "Most people are surprised by the feedback they receive — it's usually different from what they expected. The exercise proves two things: (1) People have observations about you that they've never shared. (2) Receiving feedback is a skill that improves with practice. After receiving feedback from 3 people, you'll be better equipped to handle feedback in professional settings.",
+      "difficulty": "hard"
+    },
+    {
+      "title": "The Feedback Role Reversal",
+      "description": "With a partner, practice giving and receiving feedback using SBI. One person gives feedback; the other practices receiving it. Then switch. After each round, discuss: What felt good about how the feedback was given? How did the receiver respond?",
+      "hints": [
+        "Start with positive feedback to build comfort",
+        "Give real, constructive feedback — not just nice things",
+        "The receiver should practice: pause, listen, ask, thank"
+      ],
+      "practiceSteps": [
+        "Round 1: Person A gives Person B one piece of SBI feedback. Person B practices receiving.",
+        "Debrief: Person B — 'What worked about how that was delivered?' Person A — 'How did it feel to give that?'",
+        "Round 2: Switch roles. Same process.",
+        "Debrief: What did you learn about giving and receiving feedback?",
+        "Challenge Round: Give slightly harder feedback. Practice staying calm."
+      ],
+      "solution": "After 3 rounds, most participants report: (1) Giving feedback feels less scary than they expected. (2) Receiving feedback is harder than they thought. (3) The SBI format makes feedback feel factual, not personal. (4) Asking for examples makes feedback more actionable. This exercise normalizes feedback as a conversation, not a confrontation.",
+      "difficulty": "hard"
+    }
+  ]
+}

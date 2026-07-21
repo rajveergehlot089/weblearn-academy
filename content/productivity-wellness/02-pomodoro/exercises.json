@@ -1,0 +1,47 @@
+{
+  "topicId": "02-pomodoro",
+  "exercises": [
+    {
+      "title": "Pomodoro Sprint Week",
+      "description": "Complete one full work week using the Pomodoro Technique. Track every session in a simple log: task name, duration, interruptions, and completion status. At the end of the week, calculate your average pomodoros per day and identify which tasks work best with 25-minute sessions versus longer blocks.",
+      "hints": [
+        "Use Pomofocus.io or a simple spreadsheet to track",
+        "Be honest about interruptions — log them even if you 'recovered'",
+        "Note which tasks you consistently finish within 25 minutes vs. which need multiple sessions"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "POMODORO TRACKING LOG:\n\nMonday:\n1. Code review (PR #142) - 25 min ✓ (1 pomodoro)\n2. Fix auth bug - 50 min ✓ (2 pomodoros) \n3. Write API docs - 25 min - (interrupted at 15 min)\n4. Refactor user module - 75 min ✓ (3 pomodoros)\n5. Team standup - 15 min (not a pomodoro)\n6. Email + Slack - 25 min (1 pomodoro)\nTotal: 7 pomodoros, 1 interrupted\n\nTuesday:\n[Continue tracking...]\n\nWEEKLY SUMMARY:\n• Total pomodoros completed: 38\n• Average per day: 7.6\n• Most productive: Tuesday (10 pomodoros)\n• Least productive: Wednesday (5 pomodoros, long meetings)\n• Best for 25-min: Code reviews, documentation, small fixes\n• Best for 50-min: Feature development, debugging\n• Top interruption source: Slack DMs (42% of interruptions)"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Interruption Defense System",
+      "description": "Design and implement a personal interruption defense system. Create a set of Slack statuses, email auto-responders, and physical signals (headphones, desk signs) that protect your pomodoro time. Test them for one week and track which ones actually reduce interruptions.",
+      "hints": [
+        "Prepare your defense BEFORE starting your first pomodoro",
+        "Test different Slack statuses and see which get the most respect",
+        "Physical signals (headphones) work surprisingly well for in-office interruptions"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "INTERRUPTION DEFENSE TOOLKIT:\n\nSLACK STATUSES (rotate these):\n• '🍅 In focus mode — back at [time]'\n• '⚡ Deep work — DM me if urgent, otherwise I'll respond at break'\n• '🔒 Heads down on [task] — will check Slack at [time]'\n\nEMAIL AUTO-RESPONSE (for deep work hours):\n'Thanks for your email. I check email at 11 AM and 4 PM daily. If this is urgent, please call me at [number].'\n\nPHYSICAL SIGNALS:\n• Headphones ON = do not disturb (even if not playing music)\n• Desk sign: 'Focus block in progress — questions welcome after 2 PM'\n• Second monitor OFF during pomodoros (reduces visual distraction)\n\nWEBSITE BLOCKERS:\n• Cold Turkey: Block social media, news, and non-work sites during pomodoros\n• Freedom: Cross-device blocking (phone + laptop)\n• Forest: Gamified focus — grow a virtual tree while you work\n\nRESULTS TRACKER:\n| Week | Avg interruptions/day | Defense used | Improvement |\n| 1    | 8.2                   | None         | Baseline    |\n| 2    | 5.1                   | Slack status | -38%        |\n| 3    | 2.8                   | All tools    | -66%        |"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Flow State Experiment",
+      "description": "Run a controlled experiment to find your optimal pomodoro duration. Week 1: Use 25/5 (classic). Week 2: Use 50/10 (extended). Week 3: Use 90/20 (deep). Track your output quality and quantity for each duration. Determine which works best for different task types.",
+      "hints": [
+        "Keep all other variables constant (same tasks, same time of day, same environment)",
+        "Measure both QUANTITY (tasks completed) and QUALITY (bugs found in review, satisfaction)",
+        "Your optimal duration may differ for different task types — that's valuable data"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "FLOW STATE EXPERIMENT RESULTS:\n\nWEEK 1 - 25/5 Pomodoros:\n• Pomodoros completed: 42\n• Tasks completed: 18 (small-medium)\n• Deep work hours: 10.5\n• Quality score: 7/10 (some half-finished context switches)\n• Notes: Great for code reviews and docs, frustrating for debugging\n\nWEEK 2 - 50/10 Pomodoros:\n• Pomodoros completed: 28\n• Tasks completed: 12 (medium-large)\n• Deep work hours: 14\n• Quality score: 8/10 (better flow, fewer context switches)\n• Notes: Sweet spot for feature development, still good for reviews\n\nWEEK 3 - 90/20 Pomodoros:\n• Pomodoros completed: 14\n• Tasks completed: 6 (large, complex)\n• Deep work hours: 14\n• Quality score: 9/10 (deepest focus, best code quality)\n• Notes: Best for architecture and complex debugging, exhausting\n\nCONCLUSION:\n• Code reviews + docs → 25/5\n• Feature development → 50/10\n• Architecture + complex debugging → 90/20\n• Recommended: Mix 50/10 and 90/20 based on task complexity"
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

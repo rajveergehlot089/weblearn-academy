@@ -1,0 +1,34 @@
+{
+  "topicId": "06-code-typing",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Code & Technical Typing?",
+      "body": "Type programming code, symbols, and technical text. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "Code & Technical Typing is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind Code & Technical Typing is understanding how different components work together.\n\n2. Application: In practice, you'll use Code & Technical Typing every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most Code & Technical Typing implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding Code & Technical Typing is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Code",
+      "definition": "A key concept in Code & Technical Typing. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Technical",
+      "definition": "A key concept in Code & Technical Typing. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Typing",
+      "definition": "A key concept in Code & Technical Typing. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "Code & Technical Typing is a core concept in specialized. Type programming code, symbols, and technical text. Focus on understanding the fundamentals first, then practice applying them."
+}

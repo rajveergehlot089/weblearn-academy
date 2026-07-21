@@ -1,0 +1,38 @@
+{
+  "topicId": "11-loading-caching",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Loading States Matter",
+      "body": "When your app fetches data, there's a delay. Without feedback, users think the app is broken. Loading states tell users 'I'm working on it!' — like a progress bar at a restaurant."
+    },
+    {
+      "heading": "What is Caching?",
+      "body": "Caching stores data temporarily so you don't have to fetch it again. Think of it like keeping frequently-used dishes on the counter instead of in the basement — faster to grab."
+    },
+    {
+      "heading": "Common Loading Patterns",
+      "body": "1. Spinner: Simple rotating icon for short waits\n2. Skeleton screen: Placeholder shapes matching the layout\n3. Progress bar: Shows percentage for long operations\n4. Optimistic updates: Show result immediately, reconcile later"
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Loading State",
+      "definition": "Visual feedback shown while data is being fetched or processed."
+    },
+    {
+      "term": "Cache",
+      "definition": "Temporary storage of data to speed up future access."
+    },
+    {
+      "term": "Skeleton Screen",
+      "definition": "A placeholder UI that shows the layout shape while real data loads."
+    },
+    {
+      "term": "Optimistic Update",
+      "definition": "Showing the expected result immediately before the server confirms it."
+    }
+  ],
+  "summary": "Loading states keep users informed. Caching speeds up repeat visits. Use spinners for short waits, skeleton screens for content-heavy loads."
+}

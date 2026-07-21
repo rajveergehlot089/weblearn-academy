@@ -1,0 +1,25 @@
+{
+  "topicId": "01-common-words",
+  "questions": [
+    {
+      "question": "What is Most Common English Words and why is it important?",
+      "answer": "Most Common English Words is a fundamental concept that The 100 most frequently used English words for fast typing. It's important because it forms the foundation for building robust and efficient applications. Understanding Most Common English Words allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Most Common English Words in a real project?",
+      "answer": "In practice, Most Common English Words is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Most Common English Words?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Most Common English Words to a beginner?",
+      "answer": "Most Common English Words is essentially about the 100 most frequently used english words for fast typing. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

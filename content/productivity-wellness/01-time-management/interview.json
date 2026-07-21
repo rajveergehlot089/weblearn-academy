@@ -1,0 +1,30 @@
+{
+  "topicId": "01-time-management",
+  "questions": [
+    {
+      "question": "How do you decide which task to work on first when everything seems urgent?",
+      "answer": "Use the Eisenhower Matrix: split tasks by urgency AND importance. A task being urgent doesn't mean it's important. Ask: 'Will this matter in a week? In a month?' If yes, it's important. If no, it's just noise. Always handle important+urgent first, then block time for important+not-urgent. Delegate important+urgent if possible. Ignore not-important+not-urgent entirely. The key insight: most 'urgent' tasks are actually Quadrant 3 (important to someone else, not to your goals).",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you protect deep work time when your team expects instant Slack responses?",
+      "answer": "Communicate clearly: set your Slack status to 'Deep focus — will respond at [time]' and honor it. Most Slack messages aren't actually urgent — people can wait 2 hours. If your role genuinely requires real-time availability (on-call, incident response), batch your deep work around on-call rotations. The data is clear: the best code is written in uninterrupted 2-4 hour blocks. Protecting this time isn't selfish — it's your job.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's the biggest time management mistake developers make?",
+      "answer": "Confusing being busy with being productive. Developers often spend entire days in meetings, code reviews, and Slack conversations while never touching the code that actually ships value. Track your time for one week — you'll be shocked how little of it is spent on high-impact work. The fix: identify your 1-2 highest-impact tasks each day and do those first, before opening email or Slack.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you handle time management when working on multiple projects simultaneously?",
+      "answer": "Use context switching minimally. Assign specific days to specific projects (e.g., Mon/Wed for Project A, Tue/Thu for Project B) rather than switching within a day. If you must switch, do it at natural breakpoints (after a commit, not mid-function). Keep a 'parking lot' notebook — when Project A thoughts intrude during Project B time, jot them down and return to them later. This reduces the cognitive overhead of maintaining multiple contexts.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "How do you balance learning new technologies with completing current tasks?",
+      "answer": "Dedicate 20% of your work week to learning — this is Google's famous 20% time, and it works because learning compounds. Block it on your calendar just like a meeting. Prioritize learning that directly helps your current tasks (learning React to improve your team's frontend). For other learning, keep a 'learning backlog' and tackle items during low-energy periods. Never sacrifice delivery commitments for learning — it damages trust.",
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "topicId": "03-home-row-jkl",
+  "exercises": [
+    {
+      "title": "Basic Practice",
+      "description": "Type these words: all ask sad fall shall half hall lash salt",
+      "hints": [
+        "Keep eyes on screen",
+        "Use proper finger placement"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "all ask sad fall shall half hall lash salt"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Sentence Practice",
+      "description": "Type each sentence without looking at the keyboard.",
+      "hints": [
+        "Focus on accuracy",
+        "Use all fingers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "A shall fall.\nHalf a hall has a lash.\nSalt all falls."
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

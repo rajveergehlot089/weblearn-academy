@@ -1,0 +1,28 @@
+{
+  "topicId": "06-conflict-resolution",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Why Conflict Escalates",
+      "body": "Conflict rarely starts as a big fight. It follows a predictable escalation pattern:\n\n1. **Disagreement**: Two people see a situation differently.\n2. **Debate**: They argue their positions, still focused on the issue.\n3. **Polarization**: They dig in. 'I'm right, you're wrong.' Positions harden.\n4. **Personalization**: The issue becomes personal. 'You always...' 'You never...'\n5. **Escalation**: They recruit allies, avoid each other, or sabotage.\n6. **Crisis**: The conflict becomes public, toxic, and damages the team.\n\nThe intervention window: Steps 1-2 are healthy. Step 3 is the critical point — intervene here before it becomes personal. After step 4, mediation is usually needed."
+    },
+    {
+      "heading": "The Leader's Role in Team Conflict",
+      "body": "When two team members conflict, your role depends on the severity:\n\n**For task conflict (healthy debate):**\n• Let them work it out — don't mediate unless asked\n• Ensure the debate stays respectful\n• Referee if it gets heated: 'Let's focus on the issue, not each other'\n\n**For relationship conflict (personal friction):**\n• Meet with each person separately first\n• Use the PEACE framework in the joint conversation\n• Focus on interests, not positions\n• Document agreements and follow up\n\n**When to escalate:**\n• Harassment, discrimination, or bullying — HR immediately\n• Repeated patterns despite intervention\n• When the conflict threatens team safety or performance"
+    },
+    {
+      "heading": "The Interest-Based Relational Approach",
+      "body": "The most effective conflict resolution focuses on interests, not positions:\n\n**Position**: 'I want to use React for the frontend.' (What they say they want)\n**Interest**: 'I want a framework with strong community support and easy hiring.' (Why they want it)\n\nWhen you understand interests, creative solutions emerge. Maybe Vue satisfies the same interests, or a different compromise works.\n\n**How to uncover interests:**\n1. Ask 'Why is this important to you?'\n2. Ask 'What would happen if you got what you want?'\n3. Ask 'What would be unacceptable to you?'\n4. Listen for the underlying needs: security, recognition, autonomy, growth"
+    },
+    {
+      "heading": "Giving Feedback That Doesn't Create Conflict",
+      "body": "The best conflict prevention is clear, kind feedback given early:\n\n**SBI Model (Situation-Behavior-Impact):**\n• **Situation**: 'In yesterday's meeting...'\n• **Behavior**: '...when you interrupted Sarah three times...'\n• **Impact**: '...it shut down her input and the team missed her perspective.'\n\n**Rules for effective feedback:**\n• Give it within 24 hours (don't let resentment build)\n• Be specific, not general ('You interrupted Sarah' not 'You're disrespectful')\n• Focus on behavior, not character\n• Offer a path forward: 'In future meetings, I'd like you to wait for pauses before jumping in.'\n• Ask for their perspective: 'What was going on for you in that moment?'"
+    },
+    {
+      "heading": "Cultural Differences in Conflict",
+      "body": "Conflict norms vary dramatically across cultures:\n\n• **Direct cultures** (US, Germany, Netherlands): Open disagreement is expected and respected.\n• **Indirect cultures** (Japan, China, many Middle Eastern countries): Harmony is valued; disagreement is expressed through intermediaries or silence.\n• **High-context cultures**: Much communication is implicit; reading between the lines is essential.\n• **Low-context cultures**: Communication is explicit; say what you mean.\n\n**As a leader:**\n• Don't assume your conflict style is universal\n• Create safe channels for dissent (anonymous feedback, structured input)\n• When in doubt, ask: 'How do you prefer to handle disagreements?'\n• Respect that silence may mean disagreement, not agreement"
+    }
+  ],
+  "summary": "Conflict follows a predictable escalation pattern. Leaders intervene early by focusing on interests over positions, using structured feedback (SBI), and respecting cultural differences. The goal is healthy debate that improves decisions, not conflict avoidance."
+}

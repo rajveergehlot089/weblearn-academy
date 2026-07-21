@@ -1,0 +1,18 @@
+{
+  "topicId": "10-daily-english",
+  "comparisons": [
+    {
+      "concept": "daily english",
+      "javascript": {
+        "language": "english",
+        "code": "Hi, how are you doing today?"
+      },
+      "python": {
+        "language": "english",
+        "code": "Could you help me find the nearest hospital?"
+      },
+      "explanation": "English follows consistent patterns once you learn the rules."
+    }
+  ],
+  "keyInsight": "Understanding this concept is fundamental to English fluency."
+}

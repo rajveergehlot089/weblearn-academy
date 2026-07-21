@@ -1,0 +1,25 @@
+{
+  "topicId": "06-transition-words",
+  "questions": [
+    {
+      "question": "What is Transition Words & Flow and why is it important?",
+      "answer": "Transition Words & Flow is a fundamental concept that However, moreover, furthermore, and creating smooth text. It's important because it forms the foundation for building robust and efficient applications. Understanding Transition Words & Flow allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Transition Words & Flow in a real project?",
+      "answer": "In practice, Transition Words & Flow is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Transition Words & Flow?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Transition Words & Flow to a beginner?",
+      "answer": "Transition Words & Flow is essentially about however, moreover, furthermore, and creating smooth text. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

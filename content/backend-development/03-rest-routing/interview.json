@@ -1,0 +1,27 @@
+{
+  "topicId": "03-rest-routing",
+  "type": "interview",
+  "questions": [
+    {
+      "question": "What are the principles of RESTful API design?",
+      "answer": "REST (Representational State Transfer) is an architectural style with six key principles: 1) Client-Server: Separation of concerns between UI and data storage. 2) Stateless: Each request contains all information needed to process it; the server stores no client context. 3) Cacheable: Responses must define themselves as cacheable or not to improve performance. 4) Uniform Interface: Consistent way to interact with resources using standard HTTP methods and URIs. 5) Layered System: Architecture can have multiple layers (load balancers, proxies) without the client knowing. 6) Code on Demand (optional): Servers can temporarily extend client functionality by transferring executable code."
+    },
+    {
+      "question": "How do you design a RESTful API for a blogging platform?",
+      "answer": "For a blogging platform, identify the core resources: Users, Posts, Comments, Categories, Tags. Design routes following REST conventions: Users: /api/users, /api/users/:id, Posts: /api/posts, /api/posts/:id, /api/posts/:id/comments, Comments: /api/comments, /api/comments/:id. Use HTTP methods appropriately: GET to retrieve, POST to create, PUT/PATCH to update, DELETE to remove. Include pagination (page, limit), filtering (by author, category, date), and sorting (sortBy, order). Version your API (/api/v1/) and use proper status codes. Consider nested resources for relationships, but keep URLs shallow."
+    },
+    {
+      "question": "What's the difference between PUT and PATCH in REST?",
+      "answer": "PUT replaces an entire resource with the provided data. If you send a PUT request to /api/users/123 with {name: 'Alice'}, you must include ALL required fields because PUT overwrites the entire resource. PATCH performs a partial update. You can send {email: 'new@email.com'} to update just the email field without affecting other properties. PUT is idempotent (calling it multiple times gives the same result), PATCH may not be idempotent depending on implementation. Use PUT when you have the complete resource representation, PATCH when you only want to change specific fields."
+    },
+    {
+      "question": "How do you handle API versioning?",
+      "answer": "API versioning prevents breaking changes from affecting existing clients. Common approaches: 1) URL Path Versioning (/api/v1/users, /api/v2/users) - most common, easy to implement. 2) Header Versioning (Accept: application/vnd.api.v1+json) - keeps URLs clean but harder to test. 3) Query Parameter Versioning (/api/users?version=1) - simple but less elegant. Best practices: version when making breaking changes (changing response structure, removing endpoints), document version differences, support multiple versions during migration periods, and deprecate old versions gracefully. Always start with versioning in mind, even if you begin with v1."
+    },
+    {
+      "question": "How do you implement pagination in a REST API?",
+      "answer": "Pagination is essential for large datasets. Implement it using query parameters: page (current page), limit (items per page), offset (alternative to page). Return metadata: total items, current page, total pages, has_next/has_prev flags. Example: GET /api/products?page=2&limit=20. Use cursor-based pagination for real-time data (more efficient than offset). In your controller: count total documents, calculate skip value (page-1 * limit), fetch the page, and include pagination metadata in response. Consider providing multiple page sizes and default limits. For large datasets, consider keyset pagination for better performance."
+    }
+  ],
+  "summary": "REST API design questions focus on principles, resource modeling, HTTP methods, versioning, and pagination. Understanding these concepts helps design clean, maintainable, and scalable APIs."
+}

@@ -1,0 +1,18 @@
+{
+  "topicId": "13-modern-html-css",
+  "comparisons": [
+    {
+      "concept": "Layout systems",
+      "javascript": {
+        "language": "html",
+        "code": "<!-- CSS Flexbox -->\n<div style='display: flex; gap: 10px;'>\n  <div>Item 1</div>\n  <div>Item 2</div>\n  <div>Item 3</div>\n</div>"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python (Tkinter GUI)\nimport tkinter as tk\nroot = tk.Tk()\nframe = tk.Frame(root)\nframe.pack()\nfor i in range(3):\n    tk.Label(frame, text=f'Item {i+1}').pack(side='left', padx=5)"
+      },
+      "explanation": "CSS Flexbox is for web layout only. The CONCEPT of flexible layout is universal; the implementation is platform-specific."
+    }
+  ],
+  "keyInsight": "CSS Flexbox and Grid are WEB-SPECIFIC. But the CONCEPT of flexible layouts exists everywhere — Flutter has Flex widgets, Android has LinearLayout, iOS has StackView."
+}

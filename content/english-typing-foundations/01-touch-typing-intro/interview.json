@@ -1,0 +1,25 @@
+{
+  "topicId": "01-touch-typing-intro",
+  "questions": [
+    {
+      "question": "What is Introduction to Touch Typing and why is it important?",
+      "answer": "Introduction to Touch Typing is a fundamental concept that What is touch typing, why it matters, and setting up your posture. It's important because it forms the foundation for building robust and efficient applications. Understanding Introduction to Touch Typing allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Introduction to Touch Typing in a real project?",
+      "answer": "In practice, Introduction to Touch Typing is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Introduction to Touch Typing?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Introduction to Touch Typing to a beginner?",
+      "answer": "Introduction to Touch Typing is essentially about what is touch typing, why it matters, and setting up your posture. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

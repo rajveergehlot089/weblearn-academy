@@ -1,0 +1,41 @@
+{
+  "topicId": "02-express-basics",
+  "type": "comparison",
+  "tables": [
+    {
+      "title": "Express vs Other Node.js Frameworks",
+      "headers": ["Feature", "Express", "Koa", "Fastify", "Hapi"],
+      "rows": [
+        ["Architecture", "Middleware-based", "Middleware (async/await)", "Plugin-based", "Plugin-based"],
+        ["Performance", "Good", "Good", "Excellent", "Good"],
+        ["Learning Curve", "Low", "Medium", "Medium", "Medium"],
+        ["Ecosystem", "Largest", "Small but growing", "Growing rapidly", "Moderate"],
+        ["Async Support", "Callbacks/promises", "Native async/await", "Native async/await", "Native async/await"],
+        ["Best For", "General web apps", "Modern APIs", "High-performance APIs", "Enterprise applications"]
+      ]
+    },
+    {
+      "title": "Express Middleware Comparison",
+      "headers": ["Middleware", "Purpose", "Use Case"],
+      "rows": [
+        ["express.json()", "Parse JSON request bodies", "API endpoints receiving JSON data"],
+        ["express.urlencoded()", "Parse URL-encoded form data", "HTML form submissions"],
+        ["express.static()", "Serve static files", "Images, CSS, JS files"],
+        ["cors()", "Enable Cross-Origin Resource Sharing", "Allow frontend to access API from different domain"],
+        ["morgan()", "HTTP request logging", "Debugging and monitoring"],
+        ["helmet()", "Set security headers", "Protecting against common web vulnerabilities"]
+      ]
+    },
+    {
+      "title": "Template Engines for Express",
+      "headers": ["Engine", "Syntax", "Features", "Use Case"],
+      "rows": [
+        ["EJS", "Embedded JavaScript (<%= %>)", "Simple, familiar JS syntax", "Quick prototypes, simple pages"],
+        ["Pug (Jade)", "Indentation-based", "Clean HTML output, powerful features", "Complex templates, maintainability"],
+        ["Handlebars", "Mustache-style ({{ }})", "Logic-less templates, partials", "Large projects, separation of concerns"],
+        ["Nunjucks", "Jinja2-like ({{ }})", "Template inheritance, async support", "Python developers, complex layouts"]
+      ]
+    }
+  ],
+  "summary": "Express is the most popular Node.js framework due to its simplicity and large ecosystem. For modern applications, consider Fastify for performance or Koa for async/await support. Choose middleware based on your specific needs."
+}

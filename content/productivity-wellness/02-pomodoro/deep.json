@@ -1,0 +1,38 @@
+{
+  "topicId": "02-pomodoro",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The Neuroscience Behind Pomodoro",
+      "body": "Your prefrontal cortex — the brain region responsible for focus and decision-making — has limited glucose. After 25-50 minutes of intense cognitive work, it fatigues. The Pomodoro break isn't a reward; it's a biological necessity. During breaks, your brain switches to 'default mode network' activity, which consolidates learning and solves problems in the background. This is why solutions often appear when you stop actively thinking about them. The 5-minute break allows your prefrontal cortex to recover glucose while your brain continues processing subconsciously."
+    },
+    {
+      "heading": "Customizing Pomodoro for Development Work",
+      "body": "The standard 25-minute interval works for general tasks, but developers often need longer blocks for complex debugging or architecture work. Here's how to adapt:",
+      "code": {
+        "language": "text",
+        "snippet": "POMODORO VARIANTS FOR DEVELOPERS:\n\nStandard: 25 min work / 5 min break\n  → Good for: code reviews, documentation, small fixes\n\nExtended: 50 min work / 10 min break  \n  → Good for: debugging, feature development, learning new tech\n\nUltra: 90 min work / 20 min break\n  → Good for: deep architecture work, writing RFCs, complex refactors\n\nNote: Research shows most people hit diminishing returns after 90 minutes without a break. Never go longer than 90 minutes.\n\nHYBRID APPROACH (Recommended for devs):\n• Morning (peak energy): 2-3 extended pomodoros (50/10) for deep work\n• Afternoon (lower energy): 3-4 standard pomodoros (25/5) for lighter tasks\n• Track which durations work best for YOUR tasks",
+        "explanation": "The key insight: the duration matters less than the STRUCTURE. Any forced break system is better than no break system."
+      }
+    },
+    {
+      "heading": "Handling Interruptions Like a Pro",
+      "body": "Interruptions kill pomodoros. For each type, have a strategy: (1) Slack messages: Set status to 'In a pomodoro until [time]' and batch-respond during breaks. (2) Colleague questions: Say 'Can this wait 15 minutes?' or 'Ping me in Slack and I'll respond at my next break.' (3) Urgent bugs: If truly urgent (production down), abandon the pomodoro and start fresh after. (4) Your own thoughts: Keep a 'parking lot' — jot the thought on paper and return to your task. Never act on internal interrupts during a pomodoro."
+    },
+    {
+      "heading": "Tracking and Improving",
+      "body": "Track your completed pomodoros daily. After a week, you'll discover your capacity: most developers complete 10-12 pomodoros per day (4-6 hours of actual deep work). This is normal — the rest of your time goes to meetings, communication, and breaks. Don't try to push past your capacity; instead, optimize how you use those focused hours. Use tools like Toggl, Pomofocus.io, or a simple tally sheet to track your sessions."
+    },
+    {
+      "heading": "Practice Task",
+      "body": "For one week, try the extended pomodoro variant (50/10). Track your completed sessions and note which tasks you accomplish most effectively in each block. At the end of the week, compare your output to your typical week. Most developers report 30-50% more deep work output using structured pomodoros versus unstructured work days."
+    }
+  ],
+  "keyInsights": [
+    "The prefrontal cortex fatigues after 25-50 minutes — breaks are biological necessities, not rewards",
+    "Default mode network activity during breaks helps solve problems subconsciously",
+    "Most developers can sustain 10-12 pomodoros per day (4-6 hours of deep work)",
+    "Customize the duration: 25/5 for light tasks, 50/10 for complex work, 90/20 max for architecture"
+  ]
+}

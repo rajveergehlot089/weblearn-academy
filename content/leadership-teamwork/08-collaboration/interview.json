@@ -1,0 +1,30 @@
+{
+  "topicId": "08-collaboration",
+  "questions": [
+    {
+      "question": "How do you foster collaboration between teams that don't naturally work together?",
+      "answer": "I start with shared goals. When two teams have aligned objectives, collaboration follows naturally. I create cross-functional projects, rotate people across teams, and establish shared rituals like joint standups. I also address the root cause: usually silos exist because of misaligned incentives. When I make 'helping other teams succeed' part of each team's goals, collaboration increases immediately.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you handle a team member who doesn't collaborate well?",
+      "answer": "I first understand why. Is it introversion (need different collaboration methods?), skill gaps (they don't know how?), or attitude (they don't want to?). For introverts, I provide written collaboration channels. For skill gaps, I pair them with a collaborative mentor. For attitude, I have a direct conversation: 'Collaboration is a core expectation. Here's what that looks like.' If it persists, it becomes a performance issue.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you maintain collaboration in a remote or hybrid environment?",
+      "answer": "Remote collaboration requires more structure and intentionality. I establish async-first communication, create a team handbook documenting processes, schedule regular sync meetings with clear agendas, and invest in relationship-building through virtual coffee chats. The key is making information accessible by default — shared documents, open channels, recorded decisions. When people can find what they need without asking, collaboration happens naturally.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you measure collaboration effectiveness?",
+      "answer": "I look at leading indicators: cross-team project participation, help-seeking frequency in channels, meeting effectiveness scores, and information sharing patterns. I also track lagging indicators: time-to-decision, project delays caused by misalignment, and employee engagement scores around 'I feel supported by other teams.' Quarterly team health checks capture qualitative signals. The best measure: do people bring problems to each other before bringing them to me?",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Describe a successful cross-functional collaboration you led.",
+      "answer": "I led a product launch requiring engineering, design, marketing, and sales alignment. I started by creating a shared document with the goal, timeline, and each team's role. We had weekly 30-minute cross-functional standups. I assigned a 'point person' from each team who could make decisions. When conflicts arose, I facilitated interest-based resolution. The result: we launched on time with 40% higher adoption than the previous launch. The key was structure and clear ownership.",
+      "difficulty": "hard"
+    }
+  ]
+}

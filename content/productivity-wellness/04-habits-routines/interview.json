@@ -1,0 +1,30 @@
+{
+  "topicId": "04-habits-routines",
+  "questions": [
+    {
+      "question": "How long does it really take to build a new habit?",
+      "answer": "The '21 days' myth is wrong. Research from University College London found it takes an average of 66 days for a behavior to become automatic — and the range is 18 to 254 days depending on the person and habit. Simple habits (drinking water) become automatic in weeks; complex ones (exercising daily) take months. The key metric isn't days — it's consistency. If you're above 80% completion rate for 2+ months, the habit is likely established. Don't count days; count streaks.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "I keep starting habits but quitting after a week. What am I doing wrong?",
+      "answer": "You're probably starting too big. The most common mistake is going from zero to an ambitious habit overnight. Apply the Two-Minute Rule: scale your habit to 2 minutes or less. Instead of 'exercise 30 minutes daily,' start with 'put on workout clothes.' Instead of 'read every day,' start with 'read one page.' Once the habit is automatic (2-3 weeks), gradually increase duration. You're building the neural pathway first, then strengthening it.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I maintain habits when my schedule is unpredictable (on-call, travel, meetings)?",
+      "answer": "Design 'minimum viable habits' — scaled-down versions that work even on chaotic days. For example: full exercise = 30 min workout; minimum viable = 5 min stretch. Full reading = 1 hour; minimum viable = 1 page. Full meditation = 20 min; minimum viable = 3 deep breaths. The goal on bad days isn't productivity — it's maintaining the streak. A tiny habit done daily beats a perfect habit done occasionally. Never miss twice in a row.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Should I build all my habits at once or one at a time?",
+      "answer": "One at a time for the first month, then add one new habit every 2-3 weeks. Your willpower is a finite resource (decision fatigue is real). Trying to build 5 habits simultaneously means none get the attention they need. Start with the habit that has the highest impact on your life. Once it's automatic (80%+ completion for 4+ weeks), add the next one. This is slow but sustainable — and sustainable beats ambitious every time.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I know if a habit is actually working for me?",
+      "answer": "Track both completion rate AND outcomes. If you're completing the habit but not seeing results, the habit might be wrong (exercising without adjusting diet won't improve health). If you're not completing it consistently, the habit might be too big or poorly designed. Review monthly: Is my completion rate above 80%? Am I seeing the outcomes I expected? If yes to both, keep going. If no, adjust the habit's size, timing, or trigger. Habits are tools — if they're not working, redesign them.",
+      "difficulty": "hard"
+    }
+  ]
+}

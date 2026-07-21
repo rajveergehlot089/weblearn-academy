@@ -1,0 +1,20 @@
+{
+  "topicId": "05-api-gateway",
+  "questions": [
+    {
+      "question": "What is an API Gateway and why is it used?",
+      "answer": "An API Gateway is a single entry point for all client requests to a backend system. It's used for: (1) Routing — directing requests to the right service, (2) Authentication — verifying user identity, (3) Rate limiting — preventing abuse, (4) Logging and monitoring, (5) Load balancing. It simplifies client code (one URL instead of many) and centralizes security concerns.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What HTTP status code is returned when rate limited?",
+      "answer": "429 Too Many Requests. A good API also includes headers: X-RateLimit-Limit (max allowed), X-RateLimit-Remaining (how many left), X-RateLimit-Reset (when the window resets), and Retry-After (seconds to wait before retrying).",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you implement rate limiting in a Node.js/Express app?",
+      "answer": "Use a middleware that tracks requests per IP. Store counts in memory (Map object) or Redis (for distributed systems). On each request: check if the count exceeds the limit within the time window. If yes, return 429. If no, increment the counter and call next(). Reset counters when the window expires.",
+      "difficulty": "hard"
+    }
+  ]
+}

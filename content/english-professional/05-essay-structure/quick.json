@@ -1,0 +1,34 @@
+{
+  "topicId": "05-essay-structure",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Essay Structure & Writing?",
+      "body": "Introduction, body paragraphs, and conclusion structure. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "Essay Structure & Writing is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind Essay Structure & Writing is understanding how different components work together.\n\n2. Application: In practice, you'll use Essay Structure & Writing every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most Essay Structure & Writing implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding Essay Structure & Writing is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Essay",
+      "definition": "A key concept in Essay Structure & Writing. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Structure",
+      "definition": "A key concept in Essay Structure & Writing. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Writing",
+      "definition": "A key concept in Essay Structure & Writing. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "Essay Structure & Writing is a core concept in writing. Introduction, body paragraphs, and conclusion structure. Focus on understanding the fundamentals first, then practice applying them."
+}

@@ -1,0 +1,41 @@
+{
+  "topicId": "09-team-building",
+  "comparisons": [
+    {
+      "concept": "Team Building Activity Types",
+      "rows": [
+        { "dimension": "Focus", "social": "Building personal relationships", "communication": "Improving how team talks", "problem_solving": "Collaborating on real challenges", "reflection": "Learning from shared experience" },
+        { "dimension": "Time required", "social": "30-60 minutes", "communication": "1-2 hours", "problem_solving": "2-8 hours", "reflection": "30-60 minutes" },
+        { "dimension": "Best for", "social": "New teams, remote teams", "communication": "Teams with misunderstandings", "problem_solving": "Cross-functional projects", "reflection": "Post-project, quarterly reviews" },
+        { "dimension": "Trust impact", "social": "High — builds personal bonds", "communication": "Medium — builds skills", "problem_solving": "High — builds shared success", "reflection": "Medium — builds self-awareness" },
+        { "dimension": "Frequency", "social": "Monthly", "communication": "Quarterly", "problem_solving": "As needed", "reflection": "Weekly (retrospectives)" }
+      ],
+      "explanation": "Combine all four types for a balanced team building program. Don't over-index on social activities at the expense of real work."
+    },
+    {
+      "concept": "Virtual vs. In-Person Team Building",
+      "rows": [
+        { "dimension": "Advantages", "virtual": "No travel, global teams, async options", "in_person": "Deeper bonding, body language, spontaneous" },
+        { "dimension": "Trust building", "virtual": "Harder — requires more intentional effort", "in_person": "Easier — shared physical experience" },
+        { "dimension": "Best activities", "virtual": "Online games, virtual coffee, async sharing", "in_person": "Outdoor activities, shared meals, workshops" },
+        { "dimension": "Cost", "virtual": "Low — no travel or venue", "in_person": "Higher — venues, food, activities" },
+        { "dimension": "Inclusion", "virtual": "Better for introverts, remote workers", "in_person": "Better for extroverts, those in-office" },
+        { "dimension": "Engagement", "virtual": "Harder to sustain attention", "in_person": "Naturally more engaging" }
+      ],
+      "explanation": "Virtual team building is harder but necessary for remote teams. Invest in more frequent, shorter sessions to maintain engagement."
+    },
+    {
+      "concept": "Effective vs. Ineffective Team Building",
+      "rows": [
+        { "dimension": "Approach", "effective": "Connected to real work goals", "ineffective": "Random, unconnected activities" },
+        { "dimension": "Follow-up", "effective": "Actions and commitments tracked", "ineffective": "One-time event, no follow-through" },
+        { "dimension": "Inclusion", "effective": "All personality types can participate", "ineffective": "Favors extroverts or specific interests" },
+        { "dimension": "Measurement", "effective": "Track behavior changes over time", "ineffective": "Measure satisfaction scores only" },
+        { "dimension": "Leader role", "effective": "Leader participates and models", "ineffective": "Leader organizes but doesn't engage" },
+        { "dimension": "Frequency", "effective": "Regular, ongoing, embedded in culture", "ineffective": "One-off annual event" }
+      ],
+      "explanation": "The best team building isn't an event — it's a set of behaviors embedded in how the team works every day."
+    }
+  ],
+  "keyInsight": "Team building fails when it's an event. It succeeds when it's a behavior — consistent, embedded in daily work, and modeled by the leader."
+}

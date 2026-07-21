@@ -1,0 +1,44 @@
+{
+  "topicId": "03-javascript",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Conditionals — Making Decisions",
+      "body": "Programs make decisions based on conditions — just like you decide what to wear based on weather:",
+      "code": {
+        "language": "javascript",
+        "snippet": "let weather = 'rainy';\n\nif (weather === 'sunny') {\n  console.log('Wear sunglasses!');\n} else if (weather === 'rainy') {\n  console.log('Bring an umbrella!');\n} else {\n  console.log('Dress normally.');\n}\n\n// Comparison operators: === (equal), !== (not equal), > < >= <=",
+        "explanation": "if/else if/else lets your code choose different paths. === checks equality (always use ===, not ==)."
+      }
+    },
+    {
+      "heading": "Loops — Repeating Things",
+      "body": "Loops do the same thing multiple times — like washing each dish in a pile:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// For loop — when you know how many times\nfor (let i = 0; i < 5; i++) {\n  console.log('Iteration ' + i);\n}\n\n// For...of — when looping through a list\nlet fruits = ['apple', 'banana', 'cherry'];\nfor (let fruit of fruits) {\n  console.log(fruit);\n}\n\n// While loop — when you don't know when to stop\nlet count = 0;\nwhile (count < 3) {\n  console.log(count);\n  count++;\n}",
+        "explanation": "for loops run a set number of times. for...of loops through each item in a list. while loops keep going until a condition is false."
+      }
+    },
+    {
+      "heading": "DOM Manipulation — Changing the Page",
+      "body": "JavaScript can find HTML elements and change them:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Find an element\nlet title = document.getElementById('my-title');\nlet buttons = document.querySelectorAll('.btn');\n\n// Change content\ntitle.textContent = 'New Title!';\ntitle.style.color = 'blue';\n\n// Add a click handler\ndocument.getElementById('my-btn').addEventListener('click', function() {\n  alert('Button was clicked!');\n});\n\n// Create new elements\nlet newParagraph = document.createElement('p');\nnewParagraph.textContent = 'I was added by JavaScript!';\ndocument.body.appendChild(newParagraph);",
+        "explanation": "document.getElementById() finds one element. querySelectorAll finds multiple. textContent changes text. style changes CSS. addEventListener waits for user actions."
+      }
+    },
+    {
+      "heading": "Practice Task: Interactive To-Do List",
+      "body": "Build a simple to-do list: an input field, an 'Add' button, and a list. When you click Add, the item appears in the list. Write the JavaScript yourself!",
+      "code": {
+        "language": "javascript",
+        "snippet": "document.getElementById('add-btn').addEventListener('click', function() {\n  let input = document.getElementById('todo-input');\n  let text = input.value.trim();\n\n  if (text === '') return;\n\n  let li = document.createElement('li');\n  li.textContent = text;\n  document.getElementById('todo-list').appendChild(li);\n  input.value = '';  // Clear the input\n});",
+        "explanation": "We wait for the click, get the input value, create a new <li>, add it to the list, and clear the input. This pattern (listen → read → create → append → reset) is the foundation of interactive web apps."
+      }
+    }
+  ],
+  "summary": "JavaScript adds interactivity. Variables store data, conditionals make decisions, loops repeat actions, and DOM manipulation changes the page in response to users."
+}

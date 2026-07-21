@@ -1,0 +1,34 @@
+{
+  "topicId": "05-shift-caps",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Shift Keys & Capital Letters?",
+      "body": "Using shift for capitals and the Caps Lock key. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "Shift Keys & Capital Letters is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind Shift Keys & Capital Letters is understanding how different components work together.\n\n2. Application: In practice, you'll use Shift Keys & Capital Letters every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most Shift Keys & Capital Letters implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding Shift Keys & Capital Letters is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Shift",
+      "definition": "A key concept in Shift Keys & Capital Letters. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Keys",
+      "definition": "A key concept in Shift Keys & Capital Letters. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Capital",
+      "definition": "A key concept in Shift Keys & Capital Letters. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "Shift Keys & Capital Letters is a core concept in rows. Using shift for capitals and the Caps Lock key. Focus on understanding the fundamentals first, then practice applying them."
+}

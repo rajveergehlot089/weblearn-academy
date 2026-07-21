@@ -1,0 +1,44 @@
+{
+  "topicId": "04-lists-tables",
+  "type": "exercises",
+  "estimatedMinutes": 20,
+  "exercises": [
+    {
+      "title": "Create a Navigation Menu",
+      "description": "Build a multi-level navigation menu using nested unordered lists.",
+      "tasks": [
+        "Create a main ul element",
+        "Add 3 main navigation items",
+        "Nest a submenu under one item",
+        "Add another level of nesting",
+        "Use proper semantic structure"
+      ],
+      "solution": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Navigation Menu</title>\n    <style>\n        nav ul {\n            list-style: none;\n            padding: 0;\n            margin: 0;\n            background: #333;\n        }\n        nav li {\n            position: relative;\n        }\n        nav a {\n            display: block;\n            padding: 10px 20px;\n            color: white;\n            text-decoration: none;\n        }\n        nav a:hover {\n            background: #555;\n        }\n        ul ul {\n            display: none;\n            position: absolute;\n            left: 100%;\n            top: 0;\n            background: #444;\n        }\n        li:hover > ul {\n            display: block;\n        }\n    </style>\n</head>\n<body>\n    <nav>\n        <ul>\n            <li><a href=\"/\">Home</a></li>\n            <li><a href=\"/courses\">Courses</a>\n                <ul>\n                    <li><a href=\"/web\">Web Development</a>\n                        <ul>\n                            <li><a href=\"/html\">HTML</a></li>\n                            <li><a href=\"/css\">CSS</a></li>\n                            <li><a href=\"/js\">JavaScript</a></li>\n                        </ul>\n                    </li>\n                    <li><a href=\"/typing\">Typing</a></li>\n                </ul>\n            </li>\n            <li><a href=\"/about\">About</a></li>\n        </ul>\n    </nav>\n</body>\n</html>"
+    },
+    {
+      "title": "Build a Product Comparison Table",
+      "description": "Create a data table comparing products with proper headers and styling.",
+      "tasks": [
+        "Create a table with caption",
+        "Add thead with column headers",
+        "Add tbody with product data",
+        "Add tfoot with summary",
+        "Use scope attributes",
+        "Style with CSS for readability"
+      ],
+      "solution": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Product Comparison</title>\n    <style>\n        table {\n            border-collapse: collapse;\n            width: 100%;\n            max-width: 800px;\n            margin: 20px auto;\n        }\n        th, td {\n            border: 1px solid #ddd;\n            padding: 12px;\n            text-align: left;\n        }\n        th {\n            background-color: #4CAF50;\n            color: white;\n        }\n        caption {\n            font-size: 1.2em;\n            font-weight: bold;\n            margin-bottom: 10px;\n        }\n        tbody tr:nth-child(even) {\n            background-color: #f2f2f2;\n        }\n        tfoot {\n            font-weight: bold;\n            background-color: #ddd;\n        }\n    </style>\n</head>\n<body>\n    <table>\n        <caption>Laptop Comparison</caption>\n        <thead>\n            <tr>\n                <th scope=\"col\">Model</th>\n                <th scope=\"col\">Processor</th>\n                <th scope=\"col\">RAM</th>\n                <th scope=\"col\">Price</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr>\n                <th scope=\"row\">ProBook 14</th>\n                <td>Intel i5</td>\n                <td>8GB</td>\n                <td>$899</td>\n            </tr>\n            <tr>\n                <th scope=\"row\">UltraBook 15</th>\n                <td>Intel i7</td>\n                <td>16GB</td>\n                <td>$1,299</td>\n            </tr>\n            <tr>\n                <th scope=\"row\">GamingBook 17</th>\n                <td>Intel i9</td>\n                <td>32GB</td>\n                <td>$1,999</td>\n            </tr>\n        </tbody>\n        <tfoot>\n            <tr>\n                <td colspan=\"3\">Average Price</td>\n                <td>$1,399</td>\n            </tr>\n        </tfoot>\n    </table>\n</body>\n</html>"
+    },
+    {
+      "title": "Create a Glossary Page",
+      "description": "Build a glossary of terms using a description list.",
+      "tasks": [
+        "Create a dl element",
+        "Add at least 6 terms with definitions",
+        "Style the description list",
+        "Add a title and introduction",
+        "Make it responsive"
+      ],
+      "solution": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Web Development Glossary</title>\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n            max-width: 800px;\n            margin: 0 auto;\n            padding: 20px;\n        }\n        dl {\n            margin: 20px 0;\n        }\n        dt {\n            font-weight: bold;\n            color: #2c3e50;\n            margin-top: 15px;\n            font-size: 1.1em;\n        }\n        dd {\n            margin-left: 20px;\n            color: #555;\n            border-left: 3px solid #3498db;\n            padding-left: 10px;\n        }\n    </style>\n</head>\n<body>\n    <h1>Web Development Glossary</h1>\n    <p>Essential terms every web developer should know.</p>\n    \n    <dl>\n        <dt>HTML</dt>\n        <dd>HyperText Markup Language - the standard language for creating web pages. It defines the structure and content of documents.</dd>\n        \n        <dt>CSS</dt>\n        <dd>Cascading Style Sheets - a stylesheet language used to describe the presentation of HTML documents. Controls layout, colors, fonts, and responsive design.</dd>\n        \n        <dt>JavaScript</dt>\n        <dd>A high-level programming language that enables interactive web pages. Used for client-side scripting, server-side development, and mobile apps.</dd>\n        \n        <dt>DOM</dt>\n        <dd>Document Object Model - a programming interface for HTML documents. It represents the page as a tree of objects that can be manipulated with JavaScript.</dd>\n        \n        <dt>API</dt>\n        <dd>Application Programming Interface - a set of rules that allows different software applications to communicate with each other.</dd>\n        \n        <dt>Responsive Design</dt>\n        <dd>An approach to web design that makes pages render well on all devices and screen sizes. Uses flexible layouts, images, and CSS media queries.</dd>\n    </dl>\n</body>\n</html>"
+    }
+  ]
+}

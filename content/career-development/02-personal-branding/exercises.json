@@ -1,0 +1,47 @@
+{
+  "topicId": "02-personal-branding",
+  "exercises": [
+    {
+      "title": "Brand Audit",
+      "description": "Google yourself and audit every result on the first page. Check your LinkedIn, GitHub, any personal sites, and social profiles. Write down: (1) Does the first impression match your desired brand? (2) What's missing? (3) What's outdated? List 3 specific changes to make this week.",
+      "hints": [
+        "Search in incognito mode to see unbiased results",
+        "Check if your LinkedIn headline reflects your niche",
+        "Look at your GitHub contribution graph — is it empty?"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Common fixes: (1) Update LinkedIn headline from 'Software Developer' to 'React Developer | Building Accessible Web Apps', (2) Pin your best repository on GitHub and add a README, (3) Remove or update outdated profiles that don't reflect your current focus, (4) Add a professional photo to all profiles for consistency."
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Define Your Brand Statement",
+      "description": "Write a 2-sentence brand statement: Sentence 1 = who you are and what you specialize in. Sentence 2 = what result you create or what problem you solve. Use this statement on your LinkedIn 'About' section, your personal website, and your GitHub bio.",
+      "hints": [
+        "Be specific: 'React developer' not 'developer'",
+        "Include a measurable impact or clear value proposition",
+        "Read it aloud — does it sound natural or forced?"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Example: 'I'm a frontend engineer specializing in React performance optimization and accessibility. I help SaaS companies cut load times by 50%+ and build interfaces that work for everyone — including screen reader users and keyboard navigators.'"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Content Calendar Sprint",
+      "description": "Create a 4-week content calendar with 2 posts per week. For each post, write: the topic, the platform (LinkedIn, blog, Twitter), and a one-sentence hook. Topics should mix: technical tips, lessons learned, career reflections, and something you're currently learning. Draft the first post in full.",
+      "hints": [
+        "Use the 4-1-1 ratio: mostly useful content, some personal, minimal self-promo",
+        "Write about what you know, not what you think people want to hear",
+        "Save a running list of 'things I could write about' on your phone"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Week 1:\n- LinkedIn: '3 React performance tricks I wish I knew earlier' (technical tip)\n- Blog: 'Why I switched from JavaScript to TypeScript' (personal story)\n\nWeek 2:\n- LinkedIn: 'The best free tool I found for debugging CSS' (useful resource)\n- Twitter: Thread on a mistake you made in production (vulnerability + lesson)\n\nWeek 3:\n- Blog: 'How I built a portfolio site in 2 hours with Next.js' (tutorial)\n- LinkedIn: 'What I learned from my first code review rejection' (career reflection)\n\nWeek 4:\n- LinkedIn: 'React 19 features I'm excited about' (current learning)\n- Blog: 'My 6-month career roadmap' (forward-looking)"
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "topicId": "04-linkedin",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why LinkedIn Matters",
+      "body": "LinkedIn is where recruiters search for candidates, where hiring managers evaluate you before interviews, and where professional opportunities find you. Over 87% of recruiters use LinkedIn as their primary sourcing tool. An optimized profile isn't optional — it's a career asset that works 24/7."
+    },
+    {
+      "heading": "The 5-Minute Profile Overhaul",
+      "body": "If you only have 5 minutes, fix these five things:\n\n1. **Photo**: Professional headshot (or a clear, friendly photo with a plain background). Profiles with photos get 21x more views.\n\n2. **Headline**: Don't just write your job title. Use: 'Role | Specialty | Value'. Example: 'Frontend Developer | React & TypeScript | Building accessible web apps'.\n\n3. **About section**: 3-5 sentences about what you do, what you're passionate about, and what you're looking for. Write in first person.\n\n4. **Experience**: Add bullet points with measurable results, not just responsibilities.\n\n5. **Skills**: Add at least 5 relevant skills — these are how recruiters find you."
+    },
+    {
+      "heading": "The Headline Formula",
+      "body": "Your headline is the single most important field on your profile. It appears in search results, messages, and comments. Use this formula:\n\n**[Role] | [Key Technologies/Skills] | [What You Help With]**\n\nExamples:\n- 'Backend Engineer | Go & Kubernetes | Scaling microservices'\n- 'Data Scientist | Python & ML | Turning data into business decisions'\n- 'DevOps Engineer | AWS & Terraform | Automating infrastructure'"
+    },
+    {
+      "heading": "One Habit That Changes Everything",
+      "body": "Spend 10 minutes per week engaging on LinkedIn: comment thoughtfully on 3 posts in your field. This keeps your profile visible in your network's feeds and positions you as active and engaged. Quality comments — adding your perspective, experience, or a thoughtful question — are worth more than 100 'Great post!' reactions."
+    }
+  ],
+  "jargon": [
+    { "term": "LinkedIn Optimization", "definition": "The process of improving your LinkedIn profile to increase visibility to recruiters, hiring managers, and professional connections." },
+    { "term": "Profile SSI (Social Selling Index)", "definition": "LinkedIn's metric for how effectively you build your brand, find the right people, engage with insights, and build relationships. Higher SSI = more visibility." },
+    { "term": "Recruiter Boolean Search", "definition": "How recruiters search LinkedIn using keywords and operators (e.g., 'React AND Node AND NOT junior'). Your headline, skills, and experience text determine whether you appear in these searches." }
+  ],
+  "summary": "LinkedIn is where 87% of recruiters source candidates. Fix the basics in 5 minutes: professional photo, keyword-rich headline (Role | Specialty | Value), first-person About section, results-focused experience bullets, and at least 5 relevant skills. Spend 10 minutes weekly engaging with thoughtful comments."
+}

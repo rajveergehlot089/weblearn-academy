@@ -1,0 +1,32 @@
+{
+  "topicId": "02-personal-branding",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Why Branding Matters for Developers",
+      "body": "Many developers think branding is 'marketing fluff' — something only extroverts or freelancers need. But personal branding directly impacts your career in concrete ways:\n\n- **Salary**: Professionals with strong personal brands command 10-20% higher salaries because they're perceived as in-demand experts.\n- **Opportunities**: Recruiters, conference organizers, and collaborators find you instead of the other way around.\n- **Career options**: When you're known for something specific, you have choices — you can pick roles, projects, and clients rather than competing for whatever's available."
+    },
+    {
+      "heading": "Finding Your Niche",
+      "body": "The most powerful brands are specific, not broad. Instead of 'full-stack developer,' try 'full-stack developer who specializes in real-time collaboration tools' or 'frontend engineer focused on accessibility for enterprise apps.'\n\nTo find your niche:\n1. What problems do you enjoy solving?\n2. What do colleagues come to you for help with?\n3. What projects have you been most proud of?\n4. What intersection of skills is rare? (e.g., 'developer + data visualization' or 'backend + security')\n\nThe narrower your niche, the easier it is to stand out."
+    },
+    {
+      "heading": "Building Your Brand Ecosystem",
+      "body": "Your brand lives across multiple touchpoints. They should all tell a consistent story:\n\n- **LinkedIn**: Your professional face. Keep headline, summary, and experience aligned with your niche.\n- **GitHub**: Your technical proof. Contribute to relevant open-source projects. Keep your profile active.\n- **Blog/portfolio**: Your thinking made visible. Write about problems you've solved.\n- **Twitter/X or Bluesky**: Real-time engagement with your community.\n- **Conference talks/meetups**: High-trust, high-visibility. Even lightning talks count.\n\nYou don't need all of these — pick 2-3 where your audience already spends time."
+    },
+    {
+      "heading": "Content Strategy: What to Share",
+      "body": "You don't need to be a prolific content creator. Follow the 4-1-1 rule:\n\n- **4 useful posts** (tips, tutorials, resources, lessons learned)\n- **1 personal story** (career journey, mistake you learned from, why you love your work)\n- **1 promotional post** (your project, your availability, your achievement)\n\nTypes of content that work well for developers:\n- 'Here's how I solved X' (technical walkthroughs)\n- '3 things I wish I knew about Y' (retrospective advice)\n- 'I compared X vs Y for Z use case' (comparison posts)\n- Code snippets, architecture diagrams, and before/after screenshots"
+    },
+    {
+      "heading": "Measuring Your Brand",
+      "body": "Track these metrics monthly to know if your brand is growing:\n- LinkedIn profile views and search appearances\n- GitHub followers and contribution streak\n- DMs or emails from recruiters or collaborators\n- Invitations to speak, write, or collaborate\n- Number of people who recognize your name in your niche\n\nIf none of these are moving, you need more visibility — write more, share more, or show up at more events."
+    },
+    {
+      "heading": "Practice Task: Define Your Brand",
+      "body": "Complete this exercise: (1) Write 3 keywords that describe your professional focus. (2) Write one sentence that explains what you do and who you help. (3) Audit your LinkedIn headline and GitHub bio — do they reflect these keywords? If not, update them today."
+    }
+  ],
+  "summary": "Personal branding directly impacts salary, opportunities, and career control. Find your niche by being specific — narrow is powerful. Build a consistent brand across 2-3 platforms, follow the 4-1-1 content rule (4 useful, 1 personal, 1 promotional), and track metrics monthly to measure growth."
+}

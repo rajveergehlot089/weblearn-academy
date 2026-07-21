@@ -1,0 +1,36 @@
+{
+  "topicId": "05-public-speaking",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Why Speaking Skills Matter for Developers",
+      "body": "Technical skills get you hired. Communication skills get you promoted. As you advance in your career, the gap between a senior and a staff/principal engineer often isn't technical — it's the ability to explain complex ideas clearly, influence decisions, and present work to stakeholders. Public speaking is the concentrated form of all these skills."
+    },
+    {
+      "heading": "Preparing Your Talk: Audience Research",
+      "body": "Before writing a single slide, answer these questions:\n\n- **Who is in the room?** Juniors? Seniors? Mixed? Non-technical stakeholders?\n- **What do they already know?** Don't explain basics to experts or skip fundamentals for beginners.\n- **What do they care about?** Solve THEIR problem, not just showcase YOUR work.\n- **What should they leave with?** One clear takeaway they can apply immediately.\n\nAsk the event organizer these questions in advance. Most organizers are happy to share audience demographics."
+    },
+    {
+      "heading": "Structuring Your Talk: The Story Arc",
+      "body": "Every great talk is really a story. Use this arc:\n\n1. **Hook** (first 60 seconds): Start with a surprising fact, a relatable problem, or a bold claim. Never start with 'Hi, my name is...' — earn that introduction.\n\n2. **Context**: Give the audience just enough background to understand the problem. Don't over-explain.\n\n3. **Tension**: What went wrong? What was the challenge? This is where you build engagement.\n\n4. **Resolution**: How you solved it. Walk through your approach step by step.\n\n5. **Lesson**: What did you learn? What should the audience take away?\n\n6. **Close**: End with a memorable statement, a call to action, or a question that lingers."
+    },
+    {
+      "heading": "Slide Design for Developers",
+      "body": "Good slides support your talk. Bad slides distract from it.\n\n**Do:**\n- Use one idea per slide\n- Use large font (24pt minimum)\n- Use code snippets with syntax highlighting\n- Use images/diagrams over walls of text\n- Leave white space\n\n**Don't:**\n- Read your slides word-for-word (the audience can read faster than you speak)\n- Put your entire script on slides\n- Use more than 6 lines of code per slide\n- Use small fonts or cluttered layouts\n- Transition-heavy animations\n\nTools: reveal.js for developer-friendly slides, Google Slides for simplicity, Keynote for polish."
+    },
+    {
+      "heading": "Delivery Techniques",
+      "body": "- **Slow down**: Nervous speakers talk 2-3x faster than normal. Deliberately slow your pace.\n- **Pause**: Silence is powerful. Pause after key points to let them sink in.\n- **Eye contact**: Don't stare at one spot. Gently sweep the room, making brief eye contact with individuals.\n- **Move with purpose**: Don't pace nervously. Move to one spot when making a point, another for the next section.\n- **Voice variation**: Vary your tone and volume. Monotone puts people to sleep.\n- **Hands**: Keep them visible (builds trust). Use gestures to emphasize points."
+    },
+    {
+      "heading": "Handling Q&A",
+      "body": "- **Listen fully**: Don't interrupt the question. Let them finish.\n- **Repeat the question**: This ensures everyone heard it and gives you time to think.\n- **Be honest**: If you don't know, say 'I don't know, but I'd love to look into that — can we connect after?'\n- **Keep answers brief**: 30-60 seconds max. Offer to continue the conversation offline.\n- **Have a backup**: Prepare answers for 5 likely questions before you go on stage."
+    },
+    {
+      "heading": "Practice Task: Prepare a 5-Minute Talk",
+      "body": "Choose a technical topic you know well. Write a talk using the Problem → Solution → Demo → Takeaway structure. Create 5-8 slides. Practice out loud at least 3 times, timing yourself. Record at least one practice run and watch it back — note where you rush, pause too long, or lose your place."
+    }
+  ],
+  "summary": "Public speaking is a career multiplier for developers. Research your audience before writing slides. Use a story arc: hook, context, tension, resolution, lesson, close. Design clean slides (one idea per slide, large font, code snippets). Practice delivery techniques — slow down, use pauses, make eye contact. Handle Q&A by listening fully, repeating questions, and being honest when you don't know."
+}

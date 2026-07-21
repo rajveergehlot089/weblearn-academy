@@ -1,0 +1,38 @@
+{
+  "topicId": "05-sentence-structure",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Subject + Verb + Object (SVO)",
+      "body": "English follows the SVO word order:\n\nSubject (who?) + Verb (does what?) + Object (to what?)\n\n• Ali (S) reads (V) books (O).\n• She (S) eats (V) an apple (O).\n• They (S) play (V) football (O).\n\nThis is the basic building block of every English sentence."
+    },
+    {
+      "heading": "Adding More Information",
+      "body": "Extend your sentences with:\n\nAdjective + Noun: \"The tall man reads books.\"\nAdverb + Verb: \"She quickly eats lunch.\"\nPreposition + Noun: \"He works at a bank.\"\nTime expression: \"We study every day.\"\n\nFull sentence: \"The tall man quickly reads many books at the library every evening.\""
+    },
+    {
+      "heading": "Common Mistakes",
+      "body": "Wrong: \"Ali books reads\" → Right: \"Ali reads books\"\nWrong: \"She to school goes\" → Right: \"She goes to school\"\nWrong: \"They English speak\" → Right: \"They speak English\"\n\nRemember: English word order is SVO, always. Adverbs go after the verb or at the end. Prepositions come before their noun."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Subject",
+      "definition": "Who or what does the action. Always comes before the verb in English. \"The cat\" in \"The cat sat on the mat.\""
+    },
+    {
+      "term": "Verb",
+      "definition": "The action or state. The core of every sentence. \"sat\" in \"The cat sat on the mat.\""
+    },
+    {
+      "term": "Object",
+      "definition": "Who or what receives the action. Comes after the verb. \"the mat\" (indirect object via preposition) in \"The cat sat on the mat.\""
+    },
+    {
+      "term": "SVO Order",
+      "definition": "Subject-Verb-Object — the fixed word order in English. Unlike Hindi or Japanese, you cannot rearrange these without changing meaning."
+    }
+  ],
+  "summary": "English is an SVO language — Subject, Verb, Object. This order is fixed. Build every sentence using this pattern and add details with adjectives, adverbs, and prepositions."
+}

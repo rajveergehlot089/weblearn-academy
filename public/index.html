@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebLearn Academy</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="/styles/main.css" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- LOGIN SCREEN -->
+  <div id="login-screen" class="login-screen">
+    <canvas id="three-bg"></canvas>
+    <div class="login-card glass">
+      <h1>WebLearn Academy</h1>
+      <p class="subtitle">Your journey to becoming a web developer starts here</p>
+      <div id="auth-error" class="alert alert-danger hidden"></div>
+      <form id="auth-form">
+        <div id="name-group" class="form-group hidden">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" class="form-control-glass" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="form-control-glass" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" class="form-control-glass" placeholder="8+ chars, upper, lower, number, special" required>
+        </div>
+        <button type="submit" class="btn-glass btn-glass-primary btn-glass-full" id="auth-btn">Sign In</button>
+      </form>
+      <div class="text-center mt-4">
+        <span class="text-muted" id="auth-toggle-text">Don't have an account?</span>
+        <a class="text-primary fw-semibold" style="cursor:pointer" onclick="toggleAuth()" id="auth-toggle-link">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar Overlay (mobile) -->
+  <div class="sidebar-overlay" id="sidebar-overlay" onclick="toggleMobileSidebar()"></div>
+
+  <!-- COURSE SELECTION SCREEN -->
+  <div id="course-select-screen" class="course-select-screen hidden">
+    <div class="course-select-header">
+      <h1>Choose a Course</h1>
+      <p>Select a course to start learning, or continue where you left off</p>
+    </div>
+    <div class="course-select-grid" id="course-select-grid"></div>
+    <div style="margin-top:24px">
+      <button class="btn-glass btn-glass-outline" onclick="logout()"><i class="fas fa-sign-out-alt me-2"></i>Logout</button>
+    </div>
+  </div>
+
+  <!-- DASHBOARD SCREEN -->
+  <div id="dashboard-screen" class="app-container hidden">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="customer-sidebar">
+      <div class="sidebar-brand">
+        <div class="sidebar-brand-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h2>WebLearn</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <a class="sidebar-nav-item active" onclick="showDashboard()"><i class="fas fa-home"></i> <span>Dashboard</span></a>
+        <a class="sidebar-nav-item" onclick="showCourses()"><i class="fas fa-th-large"></i> <span>Courses</span></a>
+        <a class="sidebar-nav-item" onclick="showTopics()"><i class="fas fa-book"></i> <span>Topics</span></a>
+        <a class="sidebar-nav-item" onclick="showProgress()"><i class="fas fa-chart-line"></i> <span>Progress</span></a>
+        <a class="sidebar-nav-item" href="/analysis"><i class="fas fa-brain"></i> <span>AI Analysis</span></a>
+      </nav>
+      <div class="sidebar-user">
+        <div class="sidebar-user-avatar" id="user-avatar">A</div>
+        <div class="sidebar-user-info">
+          <div class="sidebar-user-name" id="sidebar-user-name">User</div>
+          <div class="sidebar-user-role" id="sidebar-user-role">Student</div>
+        </div>
+      </div>
+      <div style="padding:16px">
+        <button class="btn-glass btn-glass-outline btn-glass-full" onclick="logout()"><i class="fas fa-sign-out-alt me-2"></i>Logout</button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Mobile Hamburger -->
+      <button class="mobile-menu-btn" id="mobile-menu-btn" onclick="toggleMobileSidebar()"><i class="fas fa-bars"></i></button>
+      <!-- Dashboard View -->
+      <div id="view-dashboard">
+        <div class="dash-header">
+          <div>
+            <h1 id="welcome-text">Hey!</h1>
+            <p class="subtitle">Let's continue your learning journey</p>
+          </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+          <div class="stat-card purple">
+            <div class="stat-card-icon"><i class="fas fa-fire"></i></div>
+            <div class="stat-card-value" id="stat-streak">0</div>
+            <div class="stat-card-label">Day Streak</div>
+          </div>
+          <div class="stat-card blue">
+            <div class="stat-card-icon"><i class="fas fa-check-circle"></i></div>
+            <div class="stat-card-value" id="stat-completed">0/0</div>
+            <div class="stat-card-label">Topics Completed</div>
+          </div>
+          <div class="stat-card green">
+            <div class="stat-card-icon"><i class="fas fa-calendar-day"></i></div>
+            <div class="stat-card-value" id="stat-day">0/0</div>
+            <div class="stat-card-label">Current Day</div>
+          </div>
+          <div class="stat-card yellow">
+            <div class="stat-card-icon"><i class="fas fa-percentage"></i></div>
+            <div class="stat-card-value" id="stat-progress">0%</div>
+            <div class="stat-card-label">Progress</div>
+          </div>
+        </div>
+
+        <!-- Progress Card -->
+        <div class="progress-card glass">
+          <h3><i class="fas fa-chart-bar me-2"></i>Your Progress</h3>
+          <div class="progress-bar-glass">
+            <div class="progress-bar-fill" id="progress-fill" style="width:0%"></div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <small class="text-muted"><span id="progress-percent">0</span>% complete</small>
+            <small class="text-muted"><span id="progress-topics">0</span> topics done</small>
+          </div>
+        </div>
+
+        <!-- Mode Toggle -->
+        <div class="d-flex gap-2 mb-4">
+          <button class="btn-glass btn-glass-sm btn-glass-primary" data-mode="fast-track" onclick="setMode('fast-track')">15-Day Fast Track</button>
+          <button class="btn-glass btn-glass-sm btn-glass-outline" data-mode="full-course" onclick="setMode('full-course')">Full Course (~30 Days)</button>
+        </div>
+
+        <!-- Topics Grid -->
+        <h3 class="mb-4"><i class="fas fa-book-open me-2"></i>Topics</h3>
+        <div class="topics-grid" id="topics-grid"></div>
+      </div>
+
+      <!-- Courses View -->
+      <div id="view-courses" class="hidden">
+        <div class="dash-header">
+          <div>
+            <h1>All Courses</h1>
+            <p class="subtitle">Browse and switch between available courses</p>
+          </div>
+        </div>
+        <div class="course-select-grid" id="courses-view-grid"></div>
+      </div>
+
+      <!-- Topics List View -->
+      <div id="view-topics" class="hidden">
+        <div class="dash-header">
+          <div>
+            <h1>All Topics</h1>
+            <p class="subtitle">Browse all available learning topics</p>
+          </div>
+          <button class="btn-glass btn-glass-sm btn-glass-outline" onclick="showDashboard()"><i class="fas fa-arrow-left me-2"></i>Back to Dashboard</button>
+        </div>
+        <div class="topics-grid" id="topics-list-grid"></div>
+      </div>
+
+      <!-- Progress View -->
+      <div id="view-progress" class="hidden">
+        <div class="dash-header">
+          <div>
+            <h1>My Progress</h1>
+            <p class="subtitle">Track your learning journey</p>
+          </div>
+          <button class="btn-glass btn-glass-sm btn-glass-outline" onclick="showDashboard()"><i class="fas fa-arrow-left me-2"></i>Back to Dashboard</button>
+        </div>
+        <div class="progress-card glass">
+          <h3>Overall Progress</h3>
+          <div class="progress-bar-glass" style="height:20px">
+            <div class="progress-bar-fill" id="progress-fill-detail" style="width:0%"></div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-4 text-center">
+              <div class="stat-card-value" id="detail-completed">0</div>
+              <div class="stat-card-label">Completed</div>
+            </div>
+            <div class="col-md-4 text-center">
+              <div class="stat-card-value" id="detail-inprogress">0</div>
+              <div class="stat-card-label">In Progress</div>
+            </div>
+            <div class="col-md-4 text-center">
+              <div class="stat-card-value" id="detail-remaining">0</div>
+              <div class="stat-card-label">Remaining</div>
+            </div>
+          </div>
+        </div>
+        <div id="progress-detail-list"></div>
+      </div>
+
+      <!-- Topic View -->
+      <div id="view-topic" class="hidden">
+        <div class="topic-view-container">
+          <div class="topic-view-header">
+            <button class="btn-glass btn-glass-sm btn-glass-outline mb-4" onclick="showDashboard()"><i class="fas fa-arrow-left me-2"></i>Back to Dashboard</button>
+            <h1 id="topic-title">Topic</h1>
+            <p class="text-muted" id="topic-description"></p>
+          </div>
+
+          <!-- Section Tabs -->
+          <div class="section-tabs" id="section-tabs">
+            <button class="section-tab active" data-section="quick" onclick="renderSection('quick')"><i class="fas fa-bolt me-2"></i>5-Min Lesson</button>
+            <button class="section-tab" data-section="deep" onclick="renderSection('deep')"><i class="fas fa-book me-2"></i>15-Min Deep Dive</button>
+            <button class="section-tab" data-section="comparison" onclick="renderSection('comparison')"><i class="fas fa-columns me-2"></i>JS vs Python</button>
+            <button class="section-tab" data-section="interview" onclick="renderSection('interview')"><i class="fas fa-question-circle me-2"></i>Interview Q&A</button>
+            <button class="section-tab" data-section="exercises" onclick="renderSection('exercises')"><i class="fas fa-code me-2"></i>Exercises</button>
+            <button class="section-tab" data-section="practice" onclick="startTypingPractice()" style="display:none"><i class="fas fa-keyboard me-2"></i>Typing Practice</button>
+          </div>
+
+          <!-- Section Contents -->
+          <div id="section-quick" class="section-content active glass p-4"></div>
+          <div id="section-deep" class="section-content glass p-4"></div>
+          <div id="section-comparison" class="section-content glass p-4"></div>
+          <div id="section-interview" class="section-content glass p-4"></div>
+          <div id="section-exercises" class="section-content glass p-4"></div>
+        </div>
+      </div>
+
+      <!-- Typing Practice View -->
+      <div id="view-typing" class="hidden">
+        <div class="typing-practice-container">
+          <div class="typing-header">
+            <div>
+              <button class="btn-glass btn-glass-sm btn-glass-outline mb-4" onclick="showDashboard()"><i class="fas fa-arrow-left me-2"></i>Back</button>
+              <h1 id="typing-topic-title">Typing Practice</h1>
+            </div>
+            <div class="typing-stats-bar">
+              <div class="typing-stat">
+                <div class="typing-stat-value" id="typing-wpm">0</div>
+                <div class="typing-stat-label">WPM</div>
+              </div>
+              <div class="typing-stat">
+                <div class="typing-stat-value" id="typing-accuracy">100</div>
+                <div class="typing-stat-label">Accuracy %</div>
+              </div>
+              <div class="typing-stat">
+                <div class="typing-stat-value" id="typing-time">60</div>
+                <div class="typing-stat-label">Seconds</div>
+              </div>
+            </div>
+          </div>
+          <div class="typing-timer-bar"><div class="typing-timer-fill" id="typing-timer-fill" style="width:100%"></div></div>
+          <div class="typing-text-display" id="typing-text-display"></div>
+          <div class="typing-input-area">
+            <input type="text" class="typing-input" id="typing-input" placeholder="Start typing here..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+          </div>
+
+          <!-- Interactive Virtual Keyboard -->
+          <div id="virtual-keyboard" class="virtual-keyboard">
+            <div class="keyboard-hands">
+              <!-- Left Hand -->
+              <svg class="hand-svg hand-left" viewBox="0 0 180 220" fill="none">
+                <path id="hand-left-path" d="M140 200 C140 200 135 140 130 120 C125 100 115 80 110 70 C105 60 100 55 95 60 C90 65 88 80 86 100 C84 120 80 160 78 200" stroke="#94a3b8" stroke-width="2" fill="rgba(148,163,184,0.1)"/>
+                <path id="left-pinky" d="M130 120 C128 100 120 85 115 80" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+                <path id="left-ring" d="M120 110 C118 90 112 75 108 70" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+                <path id="left-middle" d="M110 105 C108 85 103 72 100 68" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+                <path id="left-index" d="M100 100 C98 82 95 70 93 65" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+              </svg>
+              <!-- Right Hand -->
+              <svg class="hand-svg hand-right" viewBox="0 0 180 220" fill="none">
+                <path id="hand-right-path" d="M40 200 C40 200 45 140 50 120 C55 100 65 80 70 70 C75 60 80 55 85 60 C90 65 92 80 94 100 C96 120 100 160 102 200" stroke="#94a3b8" stroke-width="2" fill="rgba(148,163,184,0.1)"/>
+                <path id="right-pinky" d="M50 120 C52 100 60 85 65 80" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+                <path id="right-ring" d="M60 110 C62 90 68 75 72 70" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+                <path id="right-middle" d="M70 105 C72 85 77 72 80 68" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+                <path id="right-index" d="M80 100 C82 82 85 70 87 65" stroke="#94a3b8" stroke-width="1.5" fill="none"/>
+              </svg>
+            </div>
+            <div class="keyboard-rows" id="keyboard-rows">
+              <!-- Row 1: Number row -->
+              <div class="keyboard-row">
+                <div class="key" data-key="`" data-hindi=""><span class="key-label">`</span><span class="key-sub">~</span></div>
+                <div class="key" data-key="1" data-hindi=""><span class="key-label">1</span><span class="key-sub">!</span></div>
+                <div class="key" data-key="2" data-hindi=""><span class="key-label">2</span><span class="key-sub">@</span></div>
+                <div class="key" data-key="3" data-hindi=""><span class="key-label">3</span><span class="key-sub">#</span></div>
+                <div class="key" data-key="4" data-hindi=""><span class="key-label">4</span><span class="key-sub">$</span></div>
+                <div class="key" data-key="5" data-hindi=""><span class="key-label">5</span><span class="key-sub">%</span></div>
+                <div class="key" data-key="6" data-hindi=""><span class="key-label">6</span><span class="key-sub">^</span></div>
+                <div class="key" data-key="7" data-hindi=""><span class="key-label">7</span><span class="key-sub">&amp;</span></div>
+                <div class="key" data-key="8" data-hindi=""><span class="key-label">8</span><span class="key-sub">*</span></div>
+                <div class="key" data-key="9" data-hindi=""><span class="key-label">9</span><span class="key-sub">(</span></div>
+                <div class="key" data-key="0" data-hindi=""><span class="key-label">0</span><span class="key-sub">)</span></div>
+                <div class="key" data-key="-" data-hindi=""><span class="key-label">-</span><span class="key-sub">_</span></div>
+                <div class="key" data-key="=" data-hindi=""><span class="key-label">=</span><span class="key-sub">+</span></div>
+                <div class="key key-wide" data-key="Backspace" data-hindi=""><span class="key-label">←</span></div>
+              </div>
+              <!-- Row 2: QWERTY -->
+              <div class="keyboard-row">
+                <div class="key key-wide" data-key="Tab" data-hindi=""><span class="key-label">Tab</span></div>
+                <div class="key" data-key="q" data-hindi=""><span class="key-label">q</span><span class="key-sub">Q</span></div>
+                <div class="key" data-key="w" data-hindi=""><span class="key-label">w</span><span class="key-sub">W</span></div>
+                <div class="key" data-key="e" data-hindi=""><span class="key-label">e</span><span class="key-sub">E</span></div>
+                <div class="key" data-key="r" data-hindi=""><span class="key-label">r</span><span class="key-sub">R</span></div>
+                <div class="key" data-key="t" data-hindi=""><span class="key-label">t</span><span class="key-sub">T</span></div>
+                <div class="key" data-key="y" data-hindi=""><span class="key-label">y</span><span class="key-sub">Y</span></div>
+                <div class="key" data-key="u" data-hindi=""><span class="key-label">u</span><span class="key-sub">U</span></div>
+                <div class="key" data-key="i" data-hindi=""><span class="key-label">i</span><span class="key-sub">I</span></div>
+                <div class="key" data-key="o" data-hindi=""><span class="key-label">o</span><span class="key-sub">O</span></div>
+                <div class="key" data-key="p" data-hindi=""><span class="key-label">p</span><span class="key-sub">P</span></div>
+                <div class="key" data-key="[" data-hindi=""><span class="key-label">[</span><span class="key-sub">{</span></div>
+                <div class="key" data-key="]" data-hindi=""><span class="key-label">]</span><span class="key-sub">}</span></div>
+                <div class="key" data-key="\\" data-hindi=""><span class="key-label">\</span><span class="key-sub">|</span></div>
+              </div>
+              <!-- Row 3: Home row -->
+              <div class="keyboard-row">
+                <div class="key key-wide" data-key="CapsLock" data-hindi=""><span class="key-label">Caps</span></div>
+                <div class="key" data-key="a" data-hindi="फ"><span class="key-label">a</span><span class="key-sub">फ</span></div>
+                <div class="key" data-key="s" data-hindi="ख"><span class="key-label">s</span><span class="key-sub">ख</span></div>
+                <div class="key" data-key="d" data-hindi="घ"><span class="key-label">d</span><span class="key-sub">घ</span></div>
+                <div class="key" data-key="f" data-hindi="थ"><span class="key-label">f</span><span class="key-sub">थ</span></div>
+                <div class="key" data-key="g" data-hindi="छ"><span class="key-label">g</span><span class="key-sub">छ</span></div>
+                <div class="key" data-key="h" data-hindi="ज"><span class="key-label">h</span><span class="key-sub">ज</span></div>
+                <div class="key" data-key="j" data-hindi="द"><span class="key-label">j</span><span class="key-sub">द</span></div>
+                <div class="key" data-key="k" data-hindi="ग"><span class="key-label">k</span><span class="key-sub">ग</span></div>
+                <div class="key" data-key="l" data-hindi="म"><span class="key-label">l</span><span class="key-sub">म</span></div>
+                <div class="key" data-key=";" data-hindi="न"><span class="key-label">;</span><span class="key-sub">न</span></div>
+                <div class="key" data-key="'" data-hindi=""><span class="key-label">'</span><span class="key-sub">"</span></div>
+                <div class="key key-wide" data-key="Enter" data-hindi=""><span class="key-label">Enter</span></div>
+              </div>
+              <!-- Row 4: Bottom row -->
+              <div class="keyboard-row">
+                <div class="key key-wide" data-key="Shift" data-hindi=""><span class="key-label">Shift</span></div>
+                <div class="key" data-key="z" data-hindi="़"><span class="key-label">z</span><span class="key-sub">़</span></div>
+                <div class="key" data-key="x" data-hindi="य"><span class="key-label">x</span><span class="key-sub">य</span></div>
+                <div class="key" data-key="c" data-hindi="व"><span class="key-label">c</span><span class="key-sub">व</span></div>
+                <div class="key" data-key="v" data-hindi="ट"><span class="key-label">v</span><span class="key-sub">ट</span></div>
+                <div class="key" data-key="b" data-hindi="ड"><span class="key-label">b</span><span class="key-sub">ड</span></div>
+                <div class="key" data-key="n" data-hindi="ष"><span class="key-label">n</span><span class="key-sub">ष</span></div>
+                <div class="key" data-key="m" data-hindi="ण"><span class="key-label">m</span><span class="key-sub">ण</span></div>
+                <div class="key" data-key="," data-hindi=","><span class="key-label">,</span><span class="key-sub">,</span></div>
+                <div class="key" data-key="." data-hindi="."><span class="key-label">.</span><span class="key-sub">.</span></div>
+                <div class="key" data-key="/" data-hindi=""><span class="key-label">/</span><span class="key-sub">?</span></div>
+                <div class="key key-wide" data-key="Shift" data-hindi=""><span class="key-label">Shift</span></div>
+              </div>
+              <!-- Row 5: Space bar -->
+              <div class="keyboard-row">
+                <div class="key key-wide" data-key="Control" data-hindi=""><span class="key-label">Ctrl</span></div>
+                <div class="key" data-key="Alt" data-hindi=""><span class="key-label">Alt</span></div>
+                <div class="key key-space" data-key=" " data-hindi=" "><span class="key-label">Space</span></div>
+                <div class="key" data-key="Alt" data-hindi=""><span class="key-label">Alt</span></div>
+                <div class="key key-wide" data-key="Control" data-hindi=""><span class="key-label">Ctrl</span></div>
+              </div>
+            </div>
+            <!-- Finger hint label -->
+            <div class="keyboard-finger-hint" id="keyboard-finger-hint">
+              <span id="finger-hint-text">Press any key to start</span>
+            </div>
+          </div>
+          <div class="typing-controls">
+            <div class="typing-time-selector">
+              <button class="typing-time-btn" onclick="setTypingTime(15, event)">15s</button>
+              <button class="typing-time-btn active" onclick="setTypingTime(60, event)">60s</button>
+              <button class="typing-time-btn" onclick="setTypingTime(120, event)">2min</button>
+              <button class="typing-time-btn" onclick="setTypingTime(300, event)">5min</button>
+            </div>
+            <button class="btn-glass btn-glass-primary" onclick="restartTyping()"><i class="fas fa-redo me-2"></i>Restart</button>
+            <button class="btn-glass btn-glass-outline" onclick="showDashboard()"><i class="fas fa-home me-2"></i>Dashboard</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Typing Results Overlay -->
+  <div id="typing-results" class="typing-results-overlay hidden">
+    <div class="typing-results-card glass">
+      <h2><i class="fas fa-trophy me-2" style="color:#eab308"></i>Test Complete!</h2>
+      <div class="typing-results-stats">
+        <div class="typing-results-stat">
+          <div class="value" id="result-wpm" style="color:var(--blue-500)">0</div>
+          <div class="label">Words Per Minute</div>
+        </div>
+        <div class="typing-results-stat">
+          <div class="value" id="result-accuracy" style="color:var(--green-500)">0%</div>
+          <div class="label">Accuracy</div>
+        </div>
+        <div class="typing-results-stat">
+          <div class="value" id="result-correct" style="color:var(--purple-500)">0</div>
+          <div class="label">Correct Chars</div>
+        </div>
+        <div class="typing-results-stat">
+          <div class="value" id="result-total" style="color:var(--yellow-500)">0</div>
+          <div class="label">Total Chars</div>
+        </div>
+      </div>
+      <div class="d-flex gap-2 justify-content-center">
+        <button class="btn-glass btn-glass-primary" onclick="restartTyping()"><i class="fas fa-redo me-2"></i>Try Again</button>
+        <button class="btn-glass btn-glass-outline" onclick="closeTypingResults()"><i class="fas fa-arrow-left me-2"></i>Back to Topics</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADMIN DASHBOARD SCREEN -->
+  <div id="admin-screen" class="app-container hidden">
+    <!-- Admin Sidebar -->
+    <aside class="sidebar" id="admin-sidebar">
+      <div class="sidebar-brand">
+        <div class="sidebar-brand-icon"><i class="fas fa-shield-alt"></i></div>
+        <h2>Admin</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <a class="sidebar-nav-item active" onclick="showAdminDashboard()"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a>
+        <a class="sidebar-nav-item" onclick="showAdminCourses()"><i class="fas fa-book-open"></i> <span>Courses</span></a>
+        <a class="sidebar-nav-item" onclick="showAdminStudents()"><i class="fas fa-users"></i> <span>Students</span></a>
+        <a class="sidebar-nav-item" onclick="showAdminStats()"><i class="fas fa-chart-pie"></i> <span>Statistics</span></a>
+      </nav>
+      <div class="sidebar-user">
+        <div class="sidebar-user-avatar" style="background:var(--gradient-secondary)">A</div>
+        <div class="sidebar-user-info">
+          <div class="sidebar-user-name">Admin</div>
+          <div class="sidebar-user-role">Administrator</div>
+        </div>
+      </div>
+      <div style="padding:16px">
+        <button class="btn-glass btn-glass-outline btn-glass-full" onclick="logout()"><i class="fas fa-sign-out-alt me-2"></i>Logout</button>
+      </div>
+    </aside>
+
+    <!-- Admin Main Content -->
+    <main class="main-content">
+      <!-- Mobile Hamburger -->
+      <button class="mobile-menu-btn" id="admin-mobile-menu-btn" onclick="toggleMobileSidebar()"><i class="fas fa-bars"></i></button>
+      <!-- Admin Dashboard View -->
+      <div id="admin-view-dashboard">
+        <div class="dash-header">
+          <div>
+            <h1>Admin Dashboard</h1>
+            <p class="subtitle">Overview of your learning platform</p>
+          </div>
+        </div>
+
+        <!-- Admin Stats -->
+        <div class="stats-grid">
+          <div class="stat-card purple">
+            <div class="stat-card-icon"><i class="fas fa-users"></i></div>
+            <div class="stat-card-value" id="admin-total-users">0</div>
+            <div class="stat-card-label">Total Students</div>
+          </div>
+          <div class="stat-card blue">
+            <div class="stat-card-icon"><i class="fas fa-user-plus"></i></div>
+            <div class="stat-card-value" id="admin-recent-users">0</div>
+            <div class="stat-card-label">New This Week</div>
+          </div>
+          <div class="stat-card green">
+            <div class="stat-card-icon"><i class="fas fa-check-double"></i></div>
+            <div class="stat-card-value" id="admin-completed">0</div>
+            <div class="stat-card-label">Completed Course</div>
+          </div>
+          <div class="stat-card yellow">
+            <div class="stat-card-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="stat-card-value" id="admin-avg-progress">0%</div>
+            <div class="stat-card-label">Avg Progress</div>
+          </div>
+        </div>
+
+        <!-- Recent Students -->
+        <div class="glass p-4">
+          <h3 class="mb-4"><i class="fas fa-clock me-2"></i>Recent Students</h3>
+          <div class="table-responsive">
+            <table class="admin-table" id="admin-recent-table">
+              <thead>
+                <tr>
+                  <th>Student</th>
+                  <th>Email</th>
+                  <th>Joined</th>
+                  <th>Progress</th>
+                </tr>
+              </thead>
+              <tbody id="admin-recent-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Admin Students View -->
+      <div id="admin-view-students" class="hidden">
+        <div class="dash-header">
+          <div>
+            <h1>Student Management</h1>
+            <p class="subtitle">View and manage all students</p>
+          </div>
+          <div class="search-input">
+            <i class="fas fa-search"></i>
+            <input type="text" class="form-control-glass" placeholder="Search students..." id="student-search" oninput="searchStudents()">
+          </div>
+        </div>
+
+        <div class="glass p-4">
+          <div class="table-responsive">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Role</th>
+                  <th>Progress</th>
+                  <th>Joined</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="admin-students-tbody"></tbody>
+            </table>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mt-4">
+            <small class="text-muted" id="students-count">Showing 0 students</small>
+            <div class="d-flex gap-2" id="students-pagination"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Admin Stats View -->
+      <div id="admin-view-stats" class="hidden">
+        <div class="dash-header">
+          <div>
+            <h1>Platform Statistics</h1>
+            <p class="subtitle">Detailed analytics</p>
+          </div>
+        </div>
+        <div class="stats-grid" id="admin-topic-stats"></div>
+      </div>
+
+      <!-- Admin Courses View -->
+      <div id="admin-view-courses" class="hidden">
+        <div class="dash-header">
+          <div>
+            <h1>Course Management</h1>
+            <p class="subtitle">Manage all courses and their content</p>
+          </div>
+          <button class="btn-glass btn-glass-primary" onclick="showCreateCourseModal()"><i class="fas fa-plus me-2"></i>Create Course</button>
+        </div>
+        <div class="glass p-4">
+          <div class="table-responsive">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Course</th>
+                  <th>Category</th>
+                  <th>Difficulty</th>
+                  <th>Topics</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="admin-courses-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Edit User Modal -->
+  <div class="modal-overlay" id="edit-user-modal">
+    <div class="modal-content glass">
+      <button class="modal-close" onclick="closeModal('edit-user-modal')">&times;</button>
+      <h3 class="mb-4">Edit Student</h3>
+      <form id="edit-user-form">
+        <input type="hidden" id="edit-user-id">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" id="edit-user-name" class="form-control-glass">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="edit-user-email" class="form-control-glass">
+        </div>
+        <div class="form-group">
+          <label>Role</label>
+          <select id="edit-user-role" class="form-control-glass">
+            <option value="customer">Customer</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+        <div class="d-flex gap-2">
+          <button type="submit" class="btn-glass btn-glass-primary flex-grow-1">Save Changes</button>
+          <button type="button" class="btn-glass btn-glass-danger" onclick="deleteUser()"><i class="fas fa-trash"></i></button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Create Course Modal -->
+  <div class="modal-overlay" id="create-course-modal">
+    <div class="modal-content glass">
+      <button class="modal-close" onclick="closeModal('create-course-modal')">&times;</button>
+      <h3 class="mb-4">Create New Course</h3>
+      <form id="create-course-form">
+        <div class="form-group">
+          <label>Course ID (no spaces, lowercase)</label>
+          <input type="text" id="new-course-id" class="form-control-glass" placeholder="e.g. python-basics" required>
+        </div>
+        <div class="form-group">
+          <label>Title</label>
+          <input type="text" id="new-course-title" class="form-control-glass" placeholder="e.g. Python Programming" required>
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <textarea id="new-course-desc" class="form-control-glass" rows="2" placeholder="Course description..."></textarea>
+        </div>
+        <div class="row">
+          <div class="col-6 form-group">
+            <label>Category</label>
+            <select id="new-course-category" class="form-control-glass">
+              <option value="technology">Technology</option>
+              <option value="typing">Typing</option>
+              <option value="language">Language</option>
+              <option value="soft-skills">Soft Skills</option>
+              <option value="general">General</option>
+            </select>
+          </div>
+          <div class="col-6 form-group">
+            <label>Difficulty</label>
+            <select id="new-course-difficulty" class="form-control-glass">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Icon (emoji)</label>
+          <input type="text" id="new-course-emoji" class="form-control-glass" placeholder="e.g. 🐍" maxlength="4">
+        </div>
+        <button type="submit" class="btn-glass btn-glass-primary btn-glass-full">Create Course</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Edit Course Modal -->
+  <div class="modal-overlay" id="edit-course-modal">
+    <div class="modal-content glass">
+      <button class="modal-close" onclick="closeModal('edit-course-modal')">&times;</button>
+      <h3 class="mb-4">Edit Course</h3>
+      <form id="edit-course-form">
+        <input type="hidden" id="edit-course-id">
+        <div class="form-group">
+          <label>Title</label>
+          <input type="text" id="edit-course-title" class="form-control-glass" required>
+        </div>
+        <div class="form-group">
+          <label>Description</label>
+          <textarea id="edit-course-desc" class="form-control-glass" rows="2"></textarea>
+        </div>
+        <div class="row">
+          <div class="col-6 form-group">
+            <label>Category</label>
+            <select id="edit-course-category" class="form-control-glass">
+              <option value="technology">Technology</option>
+              <option value="typing">Typing</option>
+              <option value="language">Language</option>
+              <option value="soft-skills">Soft Skills</option>
+              <option value="general">General</option>
+            </select>
+          </div>
+          <div class="col-6 form-group">
+            <label>Difficulty</label>
+            <select id="edit-course-difficulty" class="form-control-glass">
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+        </div>
+        <div class="d-flex gap-2">
+          <button type="submit" class="btn-glass btn-glass-primary flex-grow-1">Save Changes</button>
+          <button type="button" class="btn-glass btn-glass-danger" onclick="deleteCourseConfirm()"><i class="fas fa-trash"></i></button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-graphql.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

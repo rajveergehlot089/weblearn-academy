@@ -1,0 +1,34 @@
+{
+  "topicId": "10-css-variables",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is CSS Variables & Custom Properties?",
+      "body": "Reusable values, theming, and dynamic styles with custom properties. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "CSS Variables & Custom Properties is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind CSS Variables & Custom Properties is understanding how different components work together.\n\n2. Application: In practice, you'll use CSS Variables & Custom Properties every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most CSS Variables & Custom Properties implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding CSS Variables & Custom Properties is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Variables",
+      "definition": "A key concept in CSS Variables & Custom Properties. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Custom",
+      "definition": "A key concept in CSS Variables & Custom Properties. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Properties",
+      "definition": "A key concept in CSS Variables & Custom Properties. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "CSS Variables & Custom Properties is a core concept in modern. Reusable values, theming, and dynamic styles with custom properties. Focus on understanding the fundamentals first, then practice applying them."
+}

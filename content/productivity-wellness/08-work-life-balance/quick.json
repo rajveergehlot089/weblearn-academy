@@ -1,0 +1,31 @@
+{
+  "topicId": "08-work-life-balance",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What Work-Life Balance Actually Means",
+      "body": "Work-life balance isn't a 50/50 split between work and personal time. It's a sustainable rhythm where neither work nor personal life consistently dominates. For developers, the biggest threat is the 'always-on' culture: remote work blurring boundaries, Slack on your phone, and the guilt of 'not doing enough.' True balance means you can fully engage at work AND fully disengage afterward."
+    },
+    {
+      "heading": "Setting Boundaries That Stick",
+      "body": "Boundaries aren't selfish — they're professional. Here are the specific boundaries developers need:",
+      "code": {
+        "language": "text",
+        "snippet": "DEVELOPER BOUNDARY TOOLKIT:\n\nTIME BOUNDARIES:\n• Fixed work hours (e.g., 9 AM - 5:30 PM)\n• No Slack/email after shutdown ritual\n• Calendar blocks for personal time (exercise, family)\n• 'No meeting' mornings for deep work\n\nCOMMUNICATION BOUNDARIES:\n• Slack status: 'Offline after 5 PM, will respond at 9 AM'\n• Email auto-response after hours\n• Phone on Do Not Disturb during personal time\n• On-call boundaries (max 1 week/month, with compensation)\n\nPSYCHOLOGICAL BOUNDARIES:\n• Don't check 'just one thing' after hours\n• Don't take work guilt into personal time\n• Don't take personal stress into work time\n• Shutdown ritual creates the mental boundary\n\nSOCIAL BOUNDARIES:\n• Don't apologize for having a life\n• Don't let others' hustle guilt affect you\n• Say no to non-essential commitments\n• Protect weekend time fiercely",
+        "explanation": "Boundaries require communication AND consistency. Tell your team your hours, then actually stick to them. The first few weeks are hardest — after that, people respect your boundaries."
+      }
+    },
+    {
+      "heading": "The Disconnection Protocol",
+      "body": "Disconnecting from work isn't automatic — you need a protocol. The shutdown ritual (from the Habits module) is your primary tool. Additional strategies: change your physical environment (move to a different room), change your clothes (remove work attire), and engage in a completely different activity (cooking, exercise, gaming). The goal: signal to your brain that work is OVER."
+    }
+  ],
+  "jargon": [
+    { "term": "Work-Life Balance", "definition": "A sustainable rhythm where neither work nor personal life consistently dominates. It's not 50/50 — it's what's sustainable for YOU." },
+    { "term": "Boundary", "definition": "A clear line between work and personal time. Requires communication AND consistency to maintain." },
+    { "term": "Shutdown Ritual", "definition": "A consistent end-of-work routine that signals to your brain that work is done, enabling mental disconnection." },
+    { "term": "Always-On Culture", "definition": "The expectation that developers are available 24/7 via Slack, email, and on-call. The primary threat to work-life balance in tech." }
+  ],
+  "summary": "Work-life balance is a sustainable rhythm, not a 50/50 split. Set time, communication, and psychological boundaries. Use the shutdown ritual to disconnect. The biggest threat is always-on culture — combat it with fixed work hours, Do Not Disturb, and protecting personal time fiercely."
+}

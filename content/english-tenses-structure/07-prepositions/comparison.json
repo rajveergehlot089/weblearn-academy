@@ -1,0 +1,18 @@
+{
+  "topicId": "07-prepositions",
+  "comparisons": [
+    {
+      "concept": "Prepositions of Time & Place",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Prepositions of Time & Place\nconst result = {\n  concept: \"Prepositions of Time & Place\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Prepositions of Time & Place\nresult = {\n    \"concept\": \"Prepositions of Time & Place\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Prepositions of Time & Place is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Prepositions of Time & Place is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

@@ -1,0 +1,44 @@
+{
+  "topicId": "01-html",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Document Structure Deep Dive",
+      "body": "Let's understand every part of an HTML document:",
+      "code": {
+        "language": "html",
+        "snippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>My Website</title>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n  <header>\n    <nav>\n      <a href=\"/\">Home</a>\n      <a href=\"/about\">About</a>\n    </nav>\n  </header>\n  <main>\n    <h1>Welcome</h1>\n    <p>This is the main content.</p>\n  </main>\n  <footer>\n    <p>&copy; 2026 My Website</p>\n  </footer>\n</body>\n</html>",
+        "explanation": "<meta charset> ensures special characters display correctly. The viewport meta tag makes your site work on mobile. <header>, <nav>, <main>, <footer> are semantic tags that describe content meaning."
+      }
+    },
+    {
+      "heading": "Forms — How Users Send Data",
+      "body": "Forms are how users interact with your website — signing up, searching, leaving comments.",
+      "code": {
+        "language": "html",
+        "snippet": "<form action=\"/submit\" method=\"POST\">\n  <label for=\"name\">Name:</label>\n  <input type=\"text\" id=\"name\" name=\"name\" required>\n\n  <label for=\"email\">Email:</label>\n  <input type=\"email\" id=\"email\" name=\"email\" required>\n\n  <label for=\"message\">Message:</label>\n  <textarea id=\"message\" name=\"message\"></textarea>\n\n  <button type=\"submit\">Send</button>\n</form>",
+        "explanation": "action tells the form WHERE to send data. method=POST means 'send data to the server'. <label> connects to <input> via the 'for'/'id' pair — this is crucial for accessibility. 'required' prevents empty submissions."
+      }
+    },
+    {
+      "heading": "Semantic HTML — Writing Meaningful Code",
+      "body": "Semantic tags describe the MEANING of content, not just its appearance:",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Bad: Everything is a div -->\n<div class=\"header\">\n  <div class=\"nav\">...</div>\n</div>\n<div class=\"content\">...</div>\n\n<!-- Good: Semantic tags -->\n<header>\n  <nav>...</nav>\n</header>\n<main>\n  <article>\n    <h2>Blog Post</h2>\n    <p>Content here...</p>\n    <aside>Related info</aside>\n  </article>\n</main>",
+        "explanation": "Semantic HTML matters for: (1) Accessibility — screen readers understand page structure, (2) SEO — search engines rank semantic pages higher, (3) Readability — developers understand code faster."
+      }
+    },
+    {
+      "heading": "Practice Task: Build a Profile Card",
+      "body": "Create an HTML page with a profile card containing: name, job title, profile image, email link, and a short bio. Use semantic tags (article, header, etc.). Try it yourself before looking at the solution below.",
+      "code": {
+        "language": "html",
+        "snippet": "<article>\n  <img src=\"photo.jpg\" alt=\"Profile photo of Jane\">\n  <h2>Jane Smith</h2>\n  <p><em>Frontend Developer</em></p>\n  <p>Building beautiful things for the web.</p>\n  <a href=\"mailto:jane@example.com\">Email Jane</a>\n</article>",
+        "explanation": "Notice: <article> wraps the card (it's self-contained content), <img> has alt text (accessibility), <a href='mailto:'> creates a clickable email link."
+      }
+    }
+  ],
+  "summary": "HTML documents have a clear structure: <!DOCTYPE html> → <html> → <head> (metadata) + <body> (visible content). Use semantic tags like <header>, <nav>, <main>, <article>, <footer> for accessibility and SEO. Forms collect user input via <input>, <textarea>, and <select>."
+}

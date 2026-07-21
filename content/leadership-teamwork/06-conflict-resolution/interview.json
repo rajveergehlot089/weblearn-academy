@@ -1,0 +1,30 @@
+{
+  "topicId": "06-conflict-resolution",
+  "questions": [
+    {
+      "question": "How do you handle a conflict between two team members?",
+      "answer": "First, I assess: is this task conflict (healthy) or relationship conflict (toxic)? If task conflict, I let them work it out and intervene only if it gets heated. If relationship conflict, I meet with each person separately to understand their perspective, then facilitate a joint conversation using the PEACE framework. I focus on interests, not positions, and help them find common ground. If the conflict involves harassment or discrimination, I escalate to HR immediately.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Give an example of turning a conflict into a positive outcome.",
+      "answer": "Two senior engineers had a technical disagreement that was becoming personal. Instead of choosing a side, I facilitated a structured debate: each presented their approach with data, then I assigned a team member to argue the opposite case. The result was a hybrid solution neither had considered. The key was keeping it focused on data and outcomes, not personal preferences. Both engineers later said the process changed how they approach disagreements.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "How do you give negative feedback without creating conflict?",
+      "answer": "I use the SBI model: describe the Situation, the specific Behavior, and the Impact. 'In yesterday's meeting, when you dismissed the junior's idea without discussion, it shut down participation from the team.' Then I ask for their perspective: 'What was going on for you?' This opens dialogue rather than triggering defensiveness. I give feedback within 24 hours, in private, and always offer a path forward.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you handle conflict in remote teams?",
+      "answer": "Remote conflict is harder because you can't read body language. I address it faster — don't let misalignment fester in async channels. I move from text to video: 'Let's hop on a call to discuss this.' I use structured check-ins to surface tension early. And I document agreements explicitly since there's no hallway conversation to align afterward. Prevention matters more remotely — regular 1-on-1s catch issues before they escalate.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's the biggest mistake leaders make in conflict resolution?",
+      "answer": "Avoidance. Most leaders hope conflict will resolve itself. It never does — it only escalates. The second biggest mistake is taking sides before hearing both perspectives. The leader's role is to facilitate resolution, not to judge who's right. By staying neutral and focusing on interests, you help people find their own solution — which they're far more likely to commit to than one imposed by authority.",
+      "difficulty": "easy"
+    }
+  ]
+}

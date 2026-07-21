@@ -1,0 +1,38 @@
+{
+  "topicId": "08-work-life-balance",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The Burnout Epidemic in Tech",
+      "body": "Tech has one of the highest burnout rates of any industry. Studies show 58% of developers experience burnout, with the primary causes being: unclear requirements, heavy workload, unfair compensation, and lack of appreciation. Burnout isn't just being tired — it's emotional exhaustion, cynicism about your work, and declining performance. The fix isn't vacation (which treats symptoms, not causes) — it's systemic change in boundaries, workload, and environment."
+    },
+    {
+      "heading": "Recovery: More Than Just Rest",
+      "body": "Recovery from burnout requires active strategies, not just passive rest. True recovery happens when you engage in activities that are the OPPOSITE of what caused the burnout:",
+      "code": {
+        "language": "text",
+        "snippet": "RECOVERY ACTIVITIES BY BURNOUT CAUSE:\n\nIf burnout is from MENTAL OVERLOAD:\n→ Do PHYSICAL activities (hiking, cooking, gardening)\n→ Avoid: more screen time, reading, podcasts\n\nIf burnout is from LACK OF AUTONOMY:\n→ Do SELF-DIRECTED activities (personal projects, hobbies)\n→ Avoid: structured activities, group obligations\n\nIf burnout is from LACK OF CONNECTION:\n→ Do SOCIAL activities (dinner with friends, team sports)\n→ Avoid: isolation, solo activities\n\nIf burnout is from LACK OF MEANING:\n→ Do PURPOSE-DRIVEN activities (volunteering, teaching)\n→ Avoid: more work, productivity optimization\n\nIf burnout is from PHYSICAL EXHAUSTION:\n→ Do RESTORATIVE activities (sleep, gentle yoga, nature)\n→ Avoid: intense exercise, demanding activities\n\nTHE KEY: Match the recovery to the CAUSE, not the symptom.\nVacation helps temporarily, but if you return to the same\nconditions, burnout will return within weeks.",
+        "explanation": "Burnout recovery isn't one-size-fits-all. Identifying the specific cause helps you choose the right recovery strategy. If you don't address the root cause, the burnout will return."
+      }
+    },
+    {
+      "heading": "Sustainable Productivity vs. Hustle Culture",
+      "body": "Hustle culture glorifies overwork as a virtue. Sustainable productivity recognizes that rest IS productivity — it's what makes high performance possible long-term. The math is simple: working 60 hours/week for 3 months produces less output than working 40 hours/week for 6 months, because the 60-hour worker burns out while the 40-hour worker maintains quality and creativity. Protect your evenings, weekends, and vacations. They're not laziness — they're recovery infrastructure."
+    },
+    {
+      "heading": "When to Consider Leaving",
+      "body": "Sometimes the environment is the problem, not you. Consider leaving when: (1) You've set boundaries and they're consistently violated. (2) You've addressed workload concerns and nothing changed. (3) You dread Monday morning more than 3 weeks in a row. (4) Your health is suffering despite good habits. (5) You've lost all interest in the work itself. The sunk cost fallacy ('I've been here 3 years') isn't a reason to stay in a toxic environment. Your health and wellbeing are worth more than any job."
+    },
+    {
+      "heading": "Practice Task",
+      "body": "Audit your current work-life balance. For one week, track: (1) When you start and stop working each day. (2) How many times you check work after hours. (3) How many weekends you work. (4) How you feel at the end of each day (1-10 energy level). Then identify one boundary to set and communicate it to your team this week."
+    }
+  ],
+  "keyInsights": [
+    "58% of developers experience burnout — it's an industry-wide problem, not a personal failing",
+    "Recovery must match the CAUSE of burnout — physical exhaustion needs rest, not more activity",
+    "Sustainable productivity > hustle culture: rest IS productivity, not its opposite",
+    "Sometimes the environment is the problem — if boundaries are consistently violated, consider leaving"
+  ]
+}

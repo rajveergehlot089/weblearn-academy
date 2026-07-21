@@ -1,0 +1,42 @@
+{
+  "topicId": "01-english-basics",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "The English Alphabet",
+      "body": "English has 26 letters, divided into two groups:\n\nVowels (5): A, E, I, O, U — these are the core sounds of English. Every word needs at least one vowel.\n\nConsonants (21): B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z"
+    },
+    {
+      "heading": "Short Vowel Sounds",
+      "body": "Short vowels are quick, clipped sounds:\n\n• A as in \"cat\", \"bat\", \"hat\"\n• E as in \"bed\", \"red\", \"pen\"\n• I as in \"sit\", \"hit\", \"bit\"\n• O as in \"hot\", \"pot\", \"dot\"\n• U as in \"cup\", \"bus\", \"run\""
+    },
+    {
+      "heading": "Long Vowel Sounds",
+      "body": "Long vowels say their own name:\n\n• A as in \"cake\", \"make\", \"lake\"\n• E as in \"these\", \"tree\", \"free\"\n• I as in \"bike\", \"kite\", \"time\"\n• O as in \"home\", \"bone\", \"tone\"\n• U as in \"cute\", \"huge\", \"use\""
+    },
+    {
+      "heading": "Basic Greetings",
+      "body": "Hello! / Hi! — Informal greeting\nGood morning! — Before noon\nGood afternoon! — 12pm to 5pm\nGood evening! — After 5pm\nHow are you? — Asking about well-being\nI'm fine, thank you. — Standard reply"
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Vowel",
+      "definition": "A letter (A, E, I, O, U) that represents an open sound. Every English word has at least one vowel."
+    },
+    {
+      "term": "Consonant",
+      "definition": "A letter that is not a vowel. Consonants are made by blocking or restricting airflow."
+    },
+    {
+      "term": "Syllable",
+      "definition": "A unit of pronunciation with one vowel sound. \"Hello\" = hel-lo (2 syllables). \"Cat\" = 1 syllable."
+    },
+    {
+      "term": "Pronunciation",
+      "definition": "The way a word sounds when spoken. Same spelling can have different pronunciations."
+    }
+  ],
+  "summary": "Master the 26 letters and their sounds before moving on. Practice saying each vowel pair (short and long) out loud for 5 minutes daily."
+}

@@ -1,0 +1,17 @@
+{
+  "topicId": "10-daily-english",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    { "heading": "Greetings and Introductions", "body": "Formal:\nGood morning/afternoon/evening.\nHow do you do? (very formal, first meeting)\nIt's a pleasure to meet you.\n\nInformal:\nHi! / Hey! / What's up?\nHow's it going?\nNice to meet you!\n\nIntroducing yourself:\nI'm [name]. I work at [company].\nI'm from [country]. I'm a [job].\nI'm studying [subject]." },
+    { "heading": "At a Restaurant", "body": "Arriving:\nA table for two, please.\nDo you have a menu?\n\nOrdering:\nI'd like the chicken, please.\nCan I have the pasta?\nWhat do you recommend?\nI'll have the soup and a salad.\n\nDuring the meal:\nThis is delicious!\nCould I have some water, please?\n\nPaying:\nCheck/bill, please.\nCan I pay by card?\nIs service included?\nDo you take cash?" },
+    { "heading": "Shopping", "body": "At a shop:\nHow much is this?\nDo you have this in a different size/color?\nCan I try this on?\nWhere are the fitting rooms?\n\nBargaining (where appropriate):\nIs there any discount?\nCan you make it cheaper?\n\nAt the cashier:\nI'll take this one.\nDo you accept credit cards?\nCan I get a receipt?" }
+  ],
+  "jargon": [
+    { "term": "Bill/Check", "definition": "The amount you owe at a restaurant. 'Bill' is British English, 'check' is American English. Both are correct." },
+    { "term": "Receipt", "definition": "A paper or digital proof of purchase. 'Can I get a receipt?' — ask for it after paying." },
+    { "term": "Order", "definition": "To request food at a restaurant or goods at a shop. 'I'd like to order the chicken' or 'I'll take this.' " },
+    { "term": "Appointment", "definition": "A scheduled meeting. 'I have a doctor's appointment at 3pm.' You 'make' an appointment (not 'do')." }
+  ],
+  "summary": "Daily English is about functional conversations: greetings, restaurants, shopping, phone calls. Memorize key phrases for each situation — fluency comes from knowing what to say."
+}

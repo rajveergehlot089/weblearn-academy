@@ -1,0 +1,47 @@
+{
+  "topicId": "08-career-planning",
+  "exercises": [
+    {
+      "title": "Skills Gap Analysis",
+      "description": "Find a job posting for your dream role (2-3 years from now). List all required and preferred skills. Rate yourself 1-5 on each. Identify your top 3 gaps. For each gap, write one specific action: a course, a project, a book, or an experience that will close it. Prioritize by impact and interest.",
+      "hints": [
+        "Use job boards (LinkedIn, Indeed) to find real postings for your target role",
+        "Be honest about your ratings — no one sees this but you",
+        "Focus on skills that appear in multiple postings — those are the real gaps"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Target role: Senior Frontend Engineer\n\nRequired skills from 5 job postings:\n- React (5/5) - Strong\n- TypeScript (4/5) - Growing\n- Accessibility (2/5) - Gap ⚠️\n- Performance optimization (2/5) - Gap ⚠️\n- Testing (3/5) - Growing\n- System design (2/5) - Gap ⚠️\n\nAction plan:\n1. Accessibility: Complete axe-core certification, audit one open-source project\n2. Performance: Build a project measuring Core Web Vitals, write a blog post about findings\n3. System design: Read 'System Design Interview' book, practice with 5 architectures"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Career Roadmap Creation",
+      "description": "Create a visual or written career roadmap with three sections: (1) Where am I now — current role, skills, satisfaction (1-10), (2) Where I want to be — target role in 2-3 years, what success looks like, (3) The path — 3-5 milestones between now and then, with timelines. Share it with a mentor or trusted colleague for feedback.",
+      "hints": [
+        "Include both skill development AND relationship/networking milestones",
+        "Make milestones specific and time-bound — not 'learn more' but 'complete X course by Y date'",
+        "Leave room for adjustment — this is a living document"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Career Roadmap:\n\nNOW: Mid-level frontend developer, 3 years experience, satisfaction: 6/10\nTARGET: Senior frontend engineer at a product company, leading accessibility initiatives\n\nMilestones:\nQ1: Complete accessibility certification, lead one accessibility project at work\nQ2: Give a talk on accessibility at a local meetup, start contributing to an a11y open-source project\nQ3: Apply for senior roles, negotiate for a tech lead opportunity at current company\nQ4: Transition into senior role, begin mentoring a junior developer\n\nReview date: End of Q1 — adjust based on progress and opportunities."
+      },
+      "difficulty": "hard"
+    },
+    {
+      "title": "Weekly Career Reflection",
+      "description": "Set a recurring 30-minute Friday calendar event called 'Career Review.' Each week, answer these 3 questions: (1) What did I learn or practice this week toward my career goal? (2) What opportunity did I create or take advantage of? (3) What's one specific thing I'll do next week to move forward? Track your answers for 4 weeks and look for patterns.",
+      "hints": [
+        "Be specific — 'learned about React Server Components' not 'learned some stuff'",
+        "If you can't answer question 1, you need to be more intentional with your learning time",
+        "After 4 weeks, review: are you making progress toward your roadmap milestones?"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Week 1:\n1. Learned: Completed 2 accessibility modules in my course\n2. Opportunity: Offered to audit our dashboard for a11y issues\n3. Next week: Set up axe-core in our CI pipeline\n\nWeek 2:\n1. Learned: Practiced keyboard navigation testing\n2. Opportunity: Shared a11y tips in team Slack, got positive feedback\n3. Next week: Write documentation for a11y testing workflow\n\nWeek 3:\n1. Learned: Read 3 articles on WCAG 2.1 AA requirements\n2. Opportunity: Colleague asked for help with a11y — mentored them\n3. Next week: Start contributing to an open-source a11y tool\n\nWeek 4:\n1. Learned: Submitted first PR to axe-core repository\n2. Opportunity: Manager noticed my a11y work, suggested I present to the team\n3. Next week: Prepare a 10-minute a11y talk for the team meeting"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

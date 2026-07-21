@@ -1,0 +1,34 @@
+{
+  "topicId": "04-home-row-jkl",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Home Row?",
+      "body": "Master right hand home row keys with drills. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "Home Row is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind Home Row is understanding how different components work together.\n\n2. Application: In practice, you'll use Home Row every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most Home Row implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding Home Row is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Home",
+      "definition": "A key concept in Home Row. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "(Right",
+      "definition": "A key concept in Home Row. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Hand)",
+      "definition": "A key concept in Home Row. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "Home Row is a core concept in home-row. Master right hand home row keys with drills. Focus on understanding the fundamentals first, then practice applying them."
+}

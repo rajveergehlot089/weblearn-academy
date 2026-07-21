@@ -1,0 +1,34 @@
+{
+  "topicId": "03-lower-row-intro",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Lower Row?",
+      "body": "Learn keys below the home row: Z, X, C, V, B, N, M. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "Lower Row is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind Lower Row is understanding how different components work together.\n\n2. Application: In practice, you'll use Lower Row every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most Lower Row implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding Lower Row is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Lower",
+      "definition": "A key concept in Lower Row. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "ZXCVB",
+      "definition": "A key concept in Lower Row. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Keys",
+      "definition": "A key concept in Lower Row. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "Lower Row is a core concept in rows. Learn keys below the home row: Z, X, C, V, B, N, M. Focus on understanding the fundamentals first, then practice applying them."
+}

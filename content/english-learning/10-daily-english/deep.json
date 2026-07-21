@@ -1,0 +1,12 @@
+{
+  "topicId": "10-daily-english",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    { "heading": "Phone Conversations", "body": "Answering:\nHello? / Hello, [name] speaking.\nWho's calling, please?\n\nLeaving a message:\nThis is [name] calling for [person].\nCould you ask them to call me back?\nMy number is [number].\n\nAsking to hold:\nCould you hold for a moment, please?\nI'll put you through.\n\nEnding:\nI'll let you go. Talk to you later.\nHave a good day! / Take care!" },
+    { "heading": "Doctor's Appointments", "body": "Making an appointment:\nI'd like to make an appointment with Dr. [name].\nI have an earache / headache / stomachache.\n\nAt the doctor:\nWhat seems to be the problem?\nI've had this pain for two days.\nIt started yesterday morning.\nIt hurts when I move my arm.\nI feel dizzy / tired / nauseous.\n\nUnderstanding instructions:\nTake this medicine twice a day.\nYou should rest for a few days.\nCome back if it doesn't improve.\nAvoid heavy exercise this week." },
+    { "heading": "Asking for Directions", "body": "Basic phrases:\nExcuse me, where is the nearest...?\nHow do I get to [place]?\nIs there a [bank/pharmacy/hospital] near here?\n\nUnderstanding directions:\nGo straight for two blocks.\nTurn left/right at the traffic light.\nIt's on your left/right.\nIt's next to the supermarket.\nIt's opposite the park.\nIt's about a 10-minute walk.\n\nFollow-up:\nHow far is it from here?\nCan I take a bus/taxi there?\nIs it walking distance?\nCould you show me on the map?" },
+    { "heading": "Making Plans with Friends", "body": "Suggesting:\nDo you want to grab lunch?\nHow about going to the cinema?\nShall we meet at 6?\nI was thinking we could try that new restaurant.\n\nAccepting:\nSounds great! / Sure, I'm in.\nThat works for me.\nLet's do it!\n\nDeclining politely:\nI'm sorry, I can't make it.\nI have other plans. Can we reschedule?\nI'd love to, but I'm busy that day.\nRain check? (Can we do it another time?)\n\nConfirming:\nSo we're meeting at 7, right?\nSee you there! / Don't be late!" }
+  ],
+  "summary": "Daily English is functional — know the key phrases for each situation (restaurant, doctor, directions, phone, plans). Practice through role-play to build confidence."
+}

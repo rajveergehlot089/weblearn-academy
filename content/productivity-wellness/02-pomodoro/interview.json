@@ -1,0 +1,30 @@
+{
+  "topicId": "02-pomodoro",
+  "questions": [
+    {
+      "question": "What do I do when my pomodoro gets interrupted by a Slack message that seems urgent?",
+      "answer": "First, assess: is it truly urgent (production down, security breach) or just feels urgent? For truly urgent issues, abandon the pomodoro and handle it — you'll restart after. For everything else, note the message and respond during your break. Set your Slack status to 'In a focus block until [time]' proactively. The key insight: most Slack messages aren't actually urgent. People can wait 25 minutes. If they can't, they'll call you or escalate appropriately.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "I keep losing focus before the 25 minutes are up. Is the technique broken?",
+      "answer": "No, but you might need to build up gradually. Start with 15-minute pomodoros and work your way up. Also, check your environment: close all unnecessary tabs, put your phone in another room, and use website blockers (like Cold Turkey or Freedom) during pomodoros. The most common reason for losing focus is notification addiction — your brain is conditioned to check things every few minutes. It takes 1-2 weeks to break this habit.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Should I use pomodoros for meetings and collaborative work too?",
+      "answer": "Not typically — Pomodoro works best for individual focused tasks. However, you CAN use modified pomodoros for meetings: set a 25-minute timer and agree with the group that the meeting ends when it rings, forcing focused discussion. For collaborative work like pair programming, use the Extended Pomodoro (50/10) since context switching between pairs is costly. The key rule: if you can't control the start/stop times, don't force a pomodoro structure.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How many pomodoros should I aim for per day as a developer?",
+      "answer": "Most developers complete 10-12 pomodoros (25-minute) per day, which equals 4-6 hours of deep work. This is NORMAL and healthy. The remaining hours go to meetings, communication, breaks, and admin. Don't try to push beyond this — it leads to burnout and lower quality work. Track your pomodoros for a week to find YOUR baseline, then optimize from there. Some days you might hit 14; others only 6. Both are fine.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What tools do you recommend for tracking pomodoros?",
+      "answer": "For simplicity: Pomofocus.io (web-based, free, tracks sessions). For integration: Toggl Track (tracks time across projects, gives detailed reports). For minimalists: a simple kitchen timer and a tally sheet on paper — the act of physically writing down each completed pomodoro is surprisingly motivating. For developers who want data: RescueTime (automatically tracks computer usage and shows how many focused hours you actually log). Avoid over-tooling — the timer matters more than the app.",
+      "difficulty": "easy"
+    }
+  ]
+}

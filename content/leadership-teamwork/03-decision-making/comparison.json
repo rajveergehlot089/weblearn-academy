@@ -1,0 +1,40 @@
+{
+  "topicId": "03-decision-making",
+  "comparisons": [
+    {
+      "concept": "Decision-Making Frameworks",
+      "rows": [
+        { "dimension": "Focus", "rapid": "Who decides what", "ooda": "How fast to decide", "six_hats": "What angles to consider", "pros_cons": "What to choose between" },
+        { "dimension": "Best for", "rapid": "Complex org decisions with many stakeholders", "ooda": "Time-pressured situations", "six_hats": "Group decisions needing diverse perspectives", "pros_cons": "Simple binary choices" },
+        { "dimension": "Speed", "rapid": "Moderate (clarifies roles first)", "ooda": "Fast (designed for speed)", "six_hats": "Slow (thorough but comprehensive)", "pros_cons": "Fast (simple comparison)" },
+        { "dimension": "Complexity", "rapid": "High (maps organizational roles)", "ooda": "Low (4 steps)", "six_hats": "Medium (6 perspectives)", "pros_cons": "Low (2 lists)" },
+        { "dimension": "Key benefit", "rapid": "Eliminates decision bottlenecks", "ooda": "Reduces reaction time", "six_hats": "Prevents groupthink", "pros_cons": "Clarity of tradeoffs" }
+      ],
+      "explanation": "Use RAPID for important org decisions, OODA for fast-moving situations, Six Thinking Hats for team deliberation, and pros/cons for straightforward choices."
+    },
+    {
+      "concept": "Individual vs. Group Decision-Making",
+      "rows": [
+        { "dimension": "Speed", "individual": "Fast — one person decides", "group": "Slow — requires discussion and alignment" },
+        { "dimension": "Quality", "individual": "Depends on individual expertise", "group": "Higher — diverse perspectives improve accuracy" },
+        { "dimension": "Buy-in", "individual": "Low — team may resist", "group": "High — people support what they helped create" },
+        { "dimension": "Accountability", "individual": "Clear — one person owns it", "group": "Difficult — diffusion of responsibility" },
+        { "dimension": "Risk", "individual": "Groupthink avoided (single viewpoint)", "group": "Groupthink risk if not managed" },
+        { "dimension": "Best for", "individual": "Crisis, routine, time-sensitive", "group": "Complex problems, strategic changes, cross-functional" }
+      ],
+      "explanation": "Use individual decisions for speed and crises. Use group decisions for complex problems requiring diverse input and team buy-in."
+    },
+    {
+      "concept": "Reversible vs. Irreversible Decisions",
+      "rows": [
+        { "dimension": "Also called", "reversible": "Two-way doors", "irreversible": "One-way doors" },
+        { "dimension": "Speed", "reversible": "Decide fast, correct later", "irreversible": "Take time, gather more data" },
+        { "dimension": "Information needed", "reversible": "70% is sufficient", "irreversible": "80-90% preferred" },
+        { "dimension": "Examples", "reversible": "Hiring a contractor, trying a new tool, launching a pilot", "irreversible": "Layoffs, entering a new market, shutting down a product" },
+        { "dimension": "Risk management", "reversible": "Plan the rollback", "irreversible": "Pre-mortem, extensive analysis" }
+      ],
+      "explanation": "Most operational decisions are reversible. Treat them as experiments — make the call, learn, and adjust. Only slow down for truly irreversible commitments."
+    }
+  ],
+  "keyInsight": "The biggest decision-making failure isn't making the wrong choice — it's not deciding at all. Indecision is itself a decision, and usually the worst one."
+}

@@ -1,0 +1,30 @@
+{
+  "topicId": "10-comm-assessment",
+  "questions": [
+    {
+      "question": "How do you identify your communication blind spots?",
+      "answer": "Three reliable methods: (1) Ask for feedback — 'What's one thing I could do differently to communicate better?' People will tell you what you can't see. (2) Self-assessment — Rate yourself honestly across speaking, listening, writing, nonverbal, and feedback skills. Low scores reveal gaps. (3) Record yourself — Video a presentation or meeting. Watch your body language, filler words, and pacing. The gap between how you think you communicate and how you actually communicate is your blind spot.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the most common communication weakness?",
+      "answer": "Research consistently shows: listening. Most people rate themselves as good listeners, but others rate them much lower. The gap is huge. Common listening failures: interrupting, planning responses while the other person talks, zoning out, and giving advice when someone needs empathy. Active listening is the highest-leverage communication skill because it improves every relationship.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How often should you reassess your communication skills?",
+      "answer": "Three frequencies: (1) Weekly — Quick check-in: 'How did my communication go this week? What went well? What could improve?' (2) Monthly — Review your growth plan: 'Am I practicing my focus skill? Is it improving?' (3) Quarterly — Full audit: Retake the assessment, ask for external feedback, adjust your growth plan. Annual reassessment is too infrequent; daily is overwhelming.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Should you try to improve all communication skills at once?",
+      "answer": "No — that's the fastest way to improve nothing. Pick ONE skill to focus on for 30 days. Choose based on: (1) Which dimension scored lowest in your audit, (2) Which skill would have the biggest impact on your relationships or career, (3) Which skill you're most motivated to improve. Once that skill becomes habitual, move to the next. Focused improvement beats scattered effort every time.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you measure communication improvement?",
+      "answer": "Three measurement methods: (1) Behavioral tracking — count specific behaviors (How many times did I paraphrase today? How many filler words?). (2) External feedback — ask a trusted person: 'Have you noticed any change?' (3) Outcome tracking — are your emails getting faster responses? Are your meetings more productive? Are your difficult conversations going better? Improvement is visible in results, not just effort.",
+      "difficulty": "medium"
+    }
+  ]
+}

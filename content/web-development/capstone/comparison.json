@@ -1,0 +1,30 @@
+{
+  "topicId": "capstone",
+  "comparisons": [
+    {
+      "concept": "Building a REST API endpoint",
+      "javascript": {
+        "language": "javascript",
+        "code": "// Node.js + Express\napp.get('/api/posts', auth, async (req, res) => {\n  try {\n    const posts = await db.getAll('posts');\n    res.json(posts);\n  } catch (err) {\n    res.status(500).json({ error: 'Server error' });\n  }\n});"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python + Flask\n@app.route('/api/posts')\n@auth_required\ndef get_posts():\n    try:\n        posts = db.get_all('posts')\n        return jsonify(posts)\n    except Exception as e:\n        return jsonify({'error': 'Server error'}), 500"
+      },
+      "explanation": "The pattern is identical: route definition → auth check → try/catch → fetch data → return JSON → handle errors. Only the syntax differs. Express uses callbacks; Flask uses decorators. Both use try/catch for error handling."
+    },
+    {
+      "concept": "Full-stack data flow",
+      "javascript": {
+        "language": "javascript",
+        "code": "// Frontend (browser)\nconst token = localStorage.getItem('token');\nconst res = await fetch('/api/posts', {\n  headers: { 'Authorization': 'Bearer ' + token }\n});\nconst posts = await res.json();\nrenderPosts(posts);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Backend processing (either language)\n// The HTTP request/response cycle:\n// 1. Client sends request with JWT token\n// 2. Server verifies token\n// 3. Server processes request\n// 4. Server returns JSON response\n// This flow is IDENTICAL regardless of language"
+      },
+      "explanation": "The full-stack data flow — frontend sends request, backend processes, backend responds — is the same pattern in every language and framework. The HTTP protocol itself is language-agnostic."
+    }
+  ],
+  "keyInsight": "The capstone proves the universal truth of web development: the PATTERNS are the same everywhere. Request → Process → Respond. Frontend → API → Database. Auth → CRUD → Error handling. Once you internalize these patterns, picking up any new framework or language is just learning new syntax for the same ideas."
+}

@@ -1,0 +1,42 @@
+{
+  "topicId": "04-linkedin",
+  "comparisons": [
+    {
+      "concept": "LinkedIn headline",
+      "generic": {
+        "label": "Generic Headline",
+        "code": "Software Developer at TechCorp"
+      },
+      "optimized": {
+        "label": "Optimized Headline",
+        "code": "Full-Stack Developer | React, Node.js, PostgreSQL | Building scalable SaaS platforms | Open to senior frontend roles"
+      },
+      "explanation": "The generic headline wastes the most important field on your profile. The optimized headline is keyword-rich (recruiters search for 'React', 'Node', 'senior frontend'), tells visitors exactly what you do, and signals availability for new opportunities."
+    },
+    {
+      "concept": "Experience bullet points",
+      "responsibilities": {
+        "label": "Responsibilities-Focused",
+        "code": "• Responsible for developing and maintaining frontend components\n• Worked with React and TypeScript\n• Collaborated with design team\n• Participated in code reviews"
+      },
+      "results": {
+        "label": "Results-Focused",
+        "code": "• Rebuilt the checkout flow in React/TypeScript, reducing cart abandonment by 18% and increasing revenue by $120K quarterly\n• Led accessibility audit and remediation, bringing the platform to WCAG 2.1 AA compliance\n• Mentored 2 junior developers, both promoted within 12 months"
+      },
+      "explanation": "Responsibilities describe your job description — every person in that role does the same things. Results describe YOUR impact — specific, measurable, and memorable. Recruiters remember results."
+    },
+    {
+      "concept": "Engagement style",
+      "passive": {
+        "label": "Passive User",
+        "code": "Never posts. Occasionally likes posts. No comments. Profile last updated 2 years ago."
+      },
+      "active": {
+        "label": "Active User",
+        "code": "Posts 2x/week. Comments thoughtfully on 5+ posts daily. Shares industry insights. Profile updated monthly."
+      },
+      "explanation": "LinkedIn's algorithm rewards active profiles — they appear more in search results and feed recommendations. Passive profiles become invisible over time, even to recruiters actively searching."
+    }
+  ],
+  "keyInsight": "An optimized LinkedIn profile is keyword-rich, results-focused, and regularly engaged. The headline is your most important asset — use it to tell recruiters exactly what you do and what you're looking for. Transform responsibility-based bullets into impact-based ones with measurable results."
+}

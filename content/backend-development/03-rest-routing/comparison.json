@@ -1,0 +1,44 @@
+{
+  "topicId": "03-rest-routing",
+  "type": "comparison",
+  "tables": [
+    {
+      "title": "REST vs Other API Architectural Styles",
+      "headers": ["Feature", "REST", "GraphQL", "gRPC", "SOAP"],
+      "rows": [
+        ["Protocol", "HTTP/HTTPS", "HTTP", "HTTP/2", "HTTP/SMTP"],
+        ["Data Format", "JSON, XML", "JSON", "Protocol Buffers", "XML"],
+        ["Flexibility", "Fixed endpoints", "Query-based", "Contract-first", "Contract-first"],
+        ["Learning Curve", "Low", "Medium", "High", "High"],
+        ["Use Case", "CRUD applications", "Complex data needs", "Microservices", "Enterprise systems"],
+        ["Performance", "Good", "Can be better", "Excellent", "Moderate"],
+        ["Tooling", "Excellent", "Good", "Good", "Mature"]
+      ]
+    },
+    {
+      "title": "HTTP Methods in REST",
+      "headers": ["Method", "Purpose", "Idempotent", "Safe", "Request Body", "Typical Response"],
+      "rows": [
+        ["GET", "Retrieve resources", "Yes", "Yes", "No", "200 OK"],
+        ["POST", "Create new resource", "No", "No", "Yes", "201 Created"],
+        ["PUT", "Replace entire resource", "Yes", "No", "Yes", "200 OK"],
+        ["PATCH", "Partial update", "No*", "No", "Yes", "200 OK"],
+        ["DELETE", "Remove resource", "Yes", "No", "Optional", "204 No Content"],
+        ["HEAD", "Get headers only", "Yes", "Yes", "No", "200 OK"],
+        ["OPTIONS", "Get allowed methods", "Yes", "Yes", "No", "200 OK"]
+      ]
+    },
+    {
+      "title": "REST Status Code Categories",
+      "headers": ["Status Range", "Category", "Examples", "When to Use"],
+      "rows": [
+        ["1xx", "Informational", "100 Continue", "Rarely used in APIs"],
+        ["2xx", "Success", "200 OK, 201 Created, 204 No Content", "Request succeeded"],
+        ["3xx", "Redirection", "301 Moved Permanently, 304 Not Modified", "Resource moved or cached"],
+        ["4xx", "Client Error", "400 Bad Request, 401 Unauthorized, 404 Not Found", "Client sent invalid request"],
+        ["5xx", "Server Error", "500 Internal Server Error, 503 Service Unavailable", "Server failed to process request"]
+      ]
+    }
+  ],
+  "summary": "REST provides a simple, standardized approach to API design using HTTP methods and status codes. While alternatives like GraphQL offer more flexibility, REST remains the most widely adopted API architecture due to its simplicity and broad tooling support."
+}

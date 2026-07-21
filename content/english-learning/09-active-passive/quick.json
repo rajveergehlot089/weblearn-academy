@@ -1,0 +1,18 @@
+{
+  "topicId": "09-active-passive",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    { "heading": "Active Voice", "body": "The subject does the action:\n\nAli (S) writes (V) a letter (O).\nShe (S) cooks (V) dinner (O).\nThey (S) built (V) the house (O).\n\nActive voice is direct, clear, and preferred in most writing."
+    },
+    { "heading": "Passive Voice", "body": "The subject receives the action:\n\nA letter (S) is written (V) by Ali.\nDinner (S) is cooked (V) by her.\nThe house (S) was built (V) by them.\n\nFormula: Subject + be + past participle (+ by agent)\n\nUse passive when:\n• The doer is unknown: 'My bike was stolen.'\n• The action matters more: 'The vaccine was developed in 2020.'\n• Formal/scientific writing: 'The experiment was conducted.'"
+    },
+    { "heading": "Forming Passive in All Tenses", "body": "Present Simple: is/are + past participle\n'The book is read by many students.'\n\nPresent Continuous: is/are being + past participle\n'The road is being repaired.'\n\nPast Simple: was/were + past participle\n'The letter was sent yesterday.'\n\nPresent Perfect: has/have been + past participle\n'The project has been completed.'\n\nFuture: will be + past participle\n'The results will be announced tomorrow.'\n\nModal: can/must/should be + past participle\n'This form must be signed.'" }
+  ],
+  "jargon": [
+    { "term": "Active Voice", "definition": "The subject performs the action. 'Ali writes a letter.' — Ali is doing the writing. Clear and direct." },
+    { "term": "Passive Voice", "definition": "The subject receives the action. 'A letter is written by Ali.' — The letter is the focus, not Ali. Used when the doer is unknown or unimportant." },
+    { "term": "Past Participle", "definition": "The third form of a verb (V3). Regular: -ed (worked, played). Irregular: written, spoken, taken, done. Used in passive voice and perfect tenses." }
+  ],
+  "summary": "Active = subject does the action (Ali writes). Passive = subject receives the action (The letter is written). Use passive when the doer is unknown or the action matters more than the actor."
+}

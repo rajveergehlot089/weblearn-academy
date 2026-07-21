@@ -1,0 +1,18 @@
+{
+  "topicId": "06-present-tense",
+  "comparisons": [
+    {
+      "concept": "Present Tense",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Present Tense\nconst result = {\n  concept: \"Present Tense\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Present Tense\nresult = {\n    \"concept\": \"Present Tense\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Present Tense is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Present Tense is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

@@ -1,0 +1,53 @@
+{
+  "topicId": "05-written-communication",
+  "exercises": [
+    {
+      "title": "Rewrite the Bad Email",
+      "description": "Rewrite this poorly written email using the 4 C's (Clear, Concise, Correct, Courteous).",
+      "hints": [
+        "Start with a specific subject line",
+        "State the purpose in the first sentence",
+        "Use bullet points for multiple items",
+        "End with a clear call to action and deadline"
+      ],
+      "original": "Subject: Hi\nHey, so I was just thinking about the project and wanted to reach out to see how things are going and maybe we could set up a time to chat about the budget stuff because there are some things I need to go over and I think it would be good to connect soon if possible, no rush though. Also, the designs are looking pretty good I guess but there are some changes that need to be made but I'll tell you about those when we talk. Thanks!",
+      "solution": "Subject: Project Budget Review — Meeting Request\n\nHi [Name],\n\nI'd like to schedule 30 minutes to review the Q3 budget allocations.\n\nKey topics:\n• Budget reallocation between marketing and engineering\n• Design feedback (3 specific changes needed)\n• Timeline for final approval\n\nAre you available Tuesday or Wednesday afternoon? Please let me know what works.\n\nThanks,\n[Your name]\n\nWhat changed: Specific subject, purpose in the first line, organized topics, clear call to action with options.",
+      "difficulty": "medium"
+    },
+    {
+      "title": "The Professional 'No' Draft",
+      "description": "Write a professional email declining each of these requests. Be direct but courteous.",
+      "hints": [
+        "Start with appreciation or acknowledgment",
+        "Give a clear, brief reason (not an excuse)",
+        "Offer an alternative if possible",
+        "Don't apologize excessively — one 'sorry' is enough"
+      ],
+      "scenarios": [
+        "A colleague asks you to join a committee that would take 5 hours/week",
+        "A client asks for a 30% discount on your standard pricing",
+        "Your manager asks you to work on a weekend project"
+      ],
+      "solution": "Example 1: 'Thanks for thinking of me for the committee. Unfortunately, I can't commit to 5 hours weekly right now — my current project load doesn't allow it. I'd be happy to contribute to specific topics as needed, or recommend a colleague who might be a good fit.' Example 2: 'Thank you for your interest in our services. Our pricing reflects the value and support we provide. I'd be happy to discuss a scaled package that fits your budget.' Example 3: 'I understand the urgency. I have a family commitment this weekend. I can prioritize this first thing Monday morning, or [colleague] could assist Saturday. Which works better?'",
+      "difficulty": "medium"
+    },
+    {
+      "title": "The Email Audit",
+      "description": "Review your last 5 sent emails. Score each one on these criteria (1-5 scale):",
+      "hints": [
+        "Be honest — most of us score lower than we think",
+        "Look for patterns across your emails",
+        "Pick your lowest-scoring area and focus on improving it this week"
+      ],
+      "criteria": [
+        "Subject line: Does it tell the reader what's needed and by when?",
+        "Opening: Does the first sentence state the purpose?",
+        "Structure: Is it scannable (bullet points, short paragraphs)?",
+        "Call to action: Is there a clear next step with a deadline?",
+        "Tone: Does it sound professional and warm?"
+      ],
+      "solution": "After scoring, most people find their weakest area is either the subject line (too vague) or the call to action (missing or unclear). This week, focus on adding a specific deadline and action to every email you send. Small improvements compound — after 2 weeks, structured writing becomes automatic.",
+      "difficulty": "hard"
+    }
+  ]
+}

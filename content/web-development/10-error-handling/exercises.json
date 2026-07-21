@@ -1,0 +1,19 @@
+{
+  "topicId": "10-error-handling",
+  "exercises": [
+    {
+      "title": "Build a Validation Function",
+      "description": "Write a function validateUser(data) that checks: name is at least 2 chars, email contains @, password is at least 8 chars. Return an array of error messages.",
+      "hints": [
+        "Check each condition separately",
+        "Push error messages to an array",
+        "Return the array (empty = valid)"
+      ],
+      "solution": {
+        "language": "javascript",
+        "code": "function validateUser(data) {\n  const errors = [];\n  if (!data.name || data.name.length < 2) {\n    errors.push('Name must be at least 2 characters');\n  }\n  if (!data.email || !data.email.includes('@')) {\n    errors.push('Email must be valid');\n  }\n  if (!data.password || data.password.length < 8) {\n    errors.push('Password must be at least 8 characters');\n  }\n  return errors;\n}"
+      },
+      "difficulty": "easy"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "topicId": "13-modern-html-css",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Modern CSS Layouts",
+      "body": "Old CSS layouts used floats and hacks. Modern CSS gives you Flexbox and Grid — powerful tools that make layouts easy. Flexbox handles one-dimensional layouts (a row or column). Grid handles two-dimensional layouts (rows AND columns)."
+    },
+    {
+      "heading": "CSS Variables",
+      "body": "Variables let you reuse values across your stylesheet. Instead of writing '#3b82f6' everywhere, define it once as --primary-color and reference it everywhere."
+    },
+    {
+      "heading": "Flexbox in 30 Seconds",
+      "body": "Add display: flex to a container. Its children align in a row. Use justify-content for horizontal alignment, align-items for vertical. Use gap for spacing between items."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Flexbox",
+      "definition": "A CSS layout system for arranging items in a single row or column."
+    },
+    {
+      "term": "Grid",
+      "definition": "A CSS layout system for creating two-dimensional layouts (rows and columns)."
+    },
+    {
+      "term": "CSS Variables",
+      "definition": "Reusable values defined with --prefix that can be referenced throughout a stylesheet."
+    }
+  ],
+  "summary": "Modern CSS uses Flexbox (1D) and Grid (2D) for layouts, CSS variables for reusability, and media queries for responsiveness."
+}

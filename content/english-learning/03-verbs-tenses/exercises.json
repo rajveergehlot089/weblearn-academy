@@ -1,0 +1,31 @@
+{
+  "topicId": "03-verbs-tenses",
+  "exercises": [
+    {
+      "title": "Verb Conjugation",
+      "description": "Write the correct form:\n1. She ___ (work) at a hospital.\n2. They ___ (not/play) football today.\n3. ___ he ___ (study) English?\n4. The children ___ (run) in the park right now.\n5. Water ___ (boil) at 100 degrees.",
+      "hints": [
+        "Check: is it a habit (simple present) or happening now (continuous)?",
+        "For he/she/it, add -s in simple present"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "1. works (habit)\n2. are not playing (now)\n3. Does...study (question)\n4. are running (now)\n5. boils (fact)"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Stative vs Action Verbs",
+      "description": "Decide: should these be simple present or present continuous?\n1. I ___ (know) the answer.\n2. She ___ (eat) lunch right now.\n3. We ___ (love) our country.\n4. He ___ (think) about the problem.\n5. They ___ (seem) happy today.",
+      "hints": [
+        "Know, love, seem are stative — always simple present",
+        "Eat, think (as mental activity) can be both"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "1. know (stative — never continuous)\n2. is eating (action — happening now)\n3. love (stative — permanent feeling)\n4. is thinking (action — considering now)\n5. seem (stative — describing state)"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

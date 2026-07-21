@@ -1,0 +1,34 @@
+{
+  "topicId": "05-forms-inputs",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "HTML Forms",
+      "body": "Forms collect user input and send it to a server. The form element wraps all form controls and defines where and how data is submitted."
+    },
+    {
+      "heading": "Input Elements",
+      "body": "HTML provides many input types:\n• text: Single-line text input\n• email: Email validation\n• password: Hidden text\n• number: Numeric input\n• date: Date picker\n• checkbox: Multiple selections\n• radio: Single selection from options\n• file: File upload"
+    },
+    {
+      "heading": "Other Form Controls",
+      "body": "Beyond inputs:\n• textarea: Multi-line text\n• select/option: Dropdown menus\n• button: Clickable buttons\n• label: Associates text with controls\n• fieldset/group: Groups related controls"
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Form",
+      "definition": "A container for user input elements that collects and submits data"
+    },
+    {
+      "term": "Input",
+      "definition": "A form control that accepts user data in various formats"
+    },
+    {
+      "term": "Label",
+      "definition": "Text that identifies a form control and improves accessibility"
+    }
+  ],
+  "summary": "HTML forms collect user input using elements like input, textarea, select, and button. Always use labels for accessibility and proper input types for validation."
+}

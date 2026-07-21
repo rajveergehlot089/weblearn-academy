@@ -1,0 +1,19 @@
+{
+  "topicId": "05-api-gateway",
+  "exercises": [
+    {
+      "title": "Build a Simple Rate Limiter",
+      "description": "Write a JavaScript function that tracks requests per IP address. Allow max 5 requests per 60-second window. Return true if allowed, false if rate limited.",
+      "hints": [
+        "Use a Map to store { ip: { count, windowStart } }",
+        "Check if windowStart + 60000 < Date.now() to reset",
+        "Increment count on each call"
+      ],
+      "solution": {
+        "language": "javascript",
+        "code": "const requests = new Map();\n\nfunction isAllowed(ip, max = 5, windowMs = 60000) {\n  const now = Date.now();\n  const record = requests.get(ip);\n\n  if (!record || now - record.start > windowMs) {\n    requests.set(ip, { count: 1, start: now });\n    return true;\n  }\n\n  if (record.count >= max) return false;\n  record.count++;\n  return true;\n}"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

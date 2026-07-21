@@ -1,0 +1,25 @@
+{
+  "topicId": "07-fetch-api",
+  "questions": [
+    {
+      "question": "What is Fetch API & AJAX and why is it important?",
+      "answer": "Fetch API & AJAX is a fundamental concept that Making HTTP requests from JavaScript with fetch() and async/await. It's important because it forms the foundation for building robust and efficient applications. Understanding Fetch API & AJAX allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Fetch API & AJAX in a real project?",
+      "answer": "In practice, Fetch API & AJAX is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Fetch API & AJAX?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Fetch API & AJAX to a beginner?",
+      "answer": "Fetch API & AJAX is essentially about making http requests from javascript with fetch() and async/await. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

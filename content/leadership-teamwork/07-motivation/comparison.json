@@ -1,0 +1,37 @@
+{
+  "topicId": "07-motivation",
+  "comparisons": [
+    {
+      "concept": "Intrinsic vs. Extrinsic Motivation",
+      "rows": [
+        { "dimension": "Source", "intrinsic": "Internal — satisfaction, curiosity, purpose", "extrinsic": "External — money, grades, praise, deadlines" },
+        { "dimension": "Duration", "intrinsic": "Long-lasting, sustainable", "extrinsic": "Short-term, fades when reward removed" },
+        { "dimension": "Quality of work", "intrinsic": "Higher creativity and engagement", "extrinsic": "Meets minimum requirements for reward" },
+        { "dimension": "Best for", "intrinsic": "Complex, creative, knowledge work", "extrinsic": "Simple, routine, short-term tasks" },
+        { "dimension": "Risk of overuse", "intrinsic": "May neglect structure and accountability", "extrinsic": "Undermines intrinsic motivation (undermining effect)" },
+        { "dimension": "Leader influence", "intrinsic": "Create conditions (autonomy, mastery, purpose)", "extrinsic": "Design reward systems and incentives" }
+      ],
+      "explanation": "For most knowledge work, invest in intrinsic motivation. Extrinsic rewards should be fair and adequate but not the primary driver."
+    },
+    {
+      "concept": "Motivation Approaches",
+      "rows": [
+        { "dimension": "Approach", "carrot": "Reward desired behavior", "stick": "Punish undesired behavior", "autonomy": "Give people control", "purpose": "Connect work to meaning" },
+        { "dimension": "Works for", "carrot": "Simple, measurable tasks", "stick": "Compliance, urgent crises", "autonomy": "Creative, complex work", "purpose": "Long-term commitment" },
+        { "dimension": "Limitation", "carrot": "Reward dependency, gaming the system", "stick": "Fear, resentment, avoidance", "autonomy": "Requires self-discipline", "purpose": "Needs authentic connection to mission" },
+        { "dimension": "Research finding", "carrot": "Works for mechanical tasks", "stick": "Decreases long-term performance", "autonomy": "Increases creativity 2-3x", "purpose": "Increases retention and engagement" }
+      ],
+      "explanation": "Combine approaches: use autonomy for daily work, purpose for direction, fair extrinsic rewards for baseline, and sticks only for genuine policy violations."
+    },
+    {
+      "concept": "Recognition Styles",
+      "rows": [
+        { "dimension": "Style", "public": "Shout-outs in meetings, company-wide", "private": "1-on-1 praise, personal note", "peer": "Team recognition tools, kudos", "growth": "Assignments and opportunities as reward" },
+        { "dimension": "Best for", "public": "Extroverts, team morale, culture building", "private": "Introverts, sensitive situations", "peer": "Culture of mutual appreciation", "growth": "High performers seeking development" },
+        { "dimension": "Risk", "public": "Embarrassment for some, performative culture", "private": "Others don't see it", "peer": "Popularity contests if not structured", "growth": "Overloading top performers" }
+      ],
+      "explanation": "Ask people how they prefer to be recognized. Not everyone wants public praise — some prefer a private thank-you or a growth opportunity."
+    }
+  ],
+  "keyInsight": "The most powerful motivator isn't rewards or punishment — it's meaning. People who understand why their work matters outperform those who are only compensated well."
+}

@@ -1,0 +1,26 @@
+{
+  "topicId": "05-team-dynamics",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Tuckman's Four Stages of Team Development",
+      "body": "Bruce Tuckman identified four stages every team goes through:\n\n1. **Forming**: Everyone is polite and tentative. People test the waters — 'Who's in charge? What are the rules?' Conflict is avoided. Energy is positive but unfocused.\n\n2. **Storming**: Disagreements emerge. People push back on roles, ideas, and authority. This is uncomfortable but necessary — it's where real ideas get tested.\n\n3. **Norming**: The team establishes working agreements, processes, and shared expectations. Conflict becomes productive. People start trusting each other.\n\n4. **Performing**: The team operates at high velocity with minimal friction. Roles are flexible, decisions are quick, and people cover for each other naturally."
+    },
+    {
+      "heading": "Why Teams Get Stuck",
+      "body": "Most teams never reach performing. They get stuck in storming because:\n\n• Leaders avoid conflict instead of facilitating it\n• No one establishes clear norms or working agreements\n• Trust isn't built through shared experiences\n• Roles and responsibilities are unclear\n• The team never reflects on how they work together\n\nThe key insight: storming is not a problem — it's a phase. Skipping it produces artificial harmony that collapses under pressure."
+    },
+    {
+      "heading": "The Team Health Check",
+      "body": "Regular team health checks prevent getting stuck. Every 4-6 weeks, assess:\n\n• Do we trust each other?\n• Can we disagree productively?\n• Are roles clear?\n• Do we communicate openly?\n• Are we aligned on goals?\n• Do we deliver on commitments?\n\nUse a simple 1-5 scale. Anything below 3 gets an action item."
+    }
+  ],
+  "jargon": [
+    { "term": "Forming-Storming-Norming-Performing", "definition": "Tuckman's four stages of team development. Every team goes through them, though not always in order." },
+    { "term": "Team Norms", "definition": "Implicit or explicit agreements about how the team works — communication, meetings, decision-making, conflict resolution." },
+    { "term": "Psychological Safety", "definition": "The belief that you won't be punished for making mistakes or speaking up. Critical for high-performing teams." },
+    { "term": "Social Loafing", "definition": "When individuals contribute less in a group than they would working alone. Mitigated by clear roles and accountability." }
+  ],
+  "summary": "Teams develop through four stages: forming, storming, norming, and performing. Storming is healthy and necessary. Most teams stall because they avoid conflict and skip building norms."
+}

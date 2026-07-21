@@ -1,0 +1,33 @@
+{
+  "topicId": "07-difficult-conversations",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What Makes a Conversation 'Difficult'?",
+      "body": "A conversation is difficult when emotions run high, stakes are significant, or opinions differ sharply. Examples: giving critical feedback, discussing performance issues, addressing hurt feelings, negotiating with someone who disagrees, or saying no to a friend. The difficulty isn't the topic — it's the emotional charge around it."
+    },
+    {
+      "heading": "The Three Elements of Every Difficult Conversation",
+      "bulletPoints": [
+        "The 'What Happened' Conversation — What each person thinks happened and why. Usually, both sides have different stories.",
+        "The Feelings Conversation — The emotions underneath (fear, frustration, hurt, anger). Often unspoken but always present.",
+        "The Identity Conversation — What this situation means about you. 'Am I a good person? Am I competent? Am I being fair?'"
+      ]
+    },
+    {
+      "heading": "The Golden Rule: Use I-Statements",
+      "bulletPoints": [
+        "Instead of 'You always...' → Say 'I feel... when... because...'",
+        "Instead of 'You never...' → Say 'I need...' or 'I would appreciate...'",
+        "I-statements own your experience without attacking the other person"
+      ]
+    }
+  ],
+  "jargon": [
+    { "term": "I-Statement", "definition": "A communication technique that expresses your feelings without blaming. Format: 'I feel [emotion] when [specific situation] because [impact on me].'" },
+    { "term": "De-escalation", "definition": "Techniques to reduce emotional intensity in a conversation: lowering your voice, acknowledging feelings, slowing down, finding common ground." },
+    { "term": "Common Ground", "definition": "Shared goals or values that both parties agree on. Starting from common ground reduces defensiveness." }
+  ],
+  "summary": "Difficult conversations have three layers: what happened, the emotions, and identity concerns. Use I-statements to express feelings without blame. Start from common ground. Remember: the goal isn't to win — it's to understand and be understood."
+}

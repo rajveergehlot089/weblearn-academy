@@ -1,0 +1,29 @@
+{
+  "topicId": "02-leadership-styles",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Servant Leadership: The Anti-Hierarchy Model",
+      "body": "Greenleaf's servant leadership has 10 characteristics: listening, empathy, healing, awareness, persuasion, conceptualization, foresight, stewardship, commitment to growth, and building community.\n\n**How to practice it daily:**\n• Start meetings by asking about blockers, not status updates\n• When someone fails, ask 'what support was missing?' instead of 'what went wrong?'\n• Dedicate time each week to mentoring — even 15 minutes of focused coaching matters\n• Share credit publicly, absorb blame privately\n\n**Case study:** Southwest Airlines under Herb Kelleher. By prioritizing employee satisfaction (servant approach), they achieved industry-leading customer satisfaction and profitability for decades."
+    },
+    {
+      "heading": "Transformational Leadership: The Four I's",
+      "body": "Bass and Avolio identified four components:\n\n1. **Idealized Influence**: You model the behavior you expect. Walk the talk. If you demand work-life balance but send emails at midnight, you're modeling the opposite.\n\n2. **Inspirational Motivation**: Paint a vivid picture of the future. \"We're going to revolutionize how people learn\" is more motivating than \"we need to hit our quarterly targets.\"\n\n3. **Intellectual Stimulation**: Challenge assumptions. Ask 'why do we do it this way?' and reward unconventional thinking.\n\n4. **Individualized Consideration**: Treat each person as unique. Understand their career aspirations, learning style, and personal context."
+    },
+    {
+      "heading": "Situational Leadership: The Hersey-Blanchard Model",
+      "body": "This model prescribes four styles based on the follower's development level:\n\n| Development Level | Leader Style | Behavior |\n|---|---|---|
+| D1: Enthusiastic Beginner | Directing (S1) | High directive, low supportive |\n| D2: Disillusioned Learner | Coaching (S2) | High directive, high supportive |\n| D3: Capable but Cautious | Supporting (S3) | Low directive, high supportive |\n| D4: Self-Reliant Achiever | Delegating (S4) | Low directive, low supportive |\n\n**Common mistake**: Using S4 (delegating) too early with new hires, or S1 (directing) too long with experienced people. Both destroy motivation."
+    },
+    {
+      "heading": "Building Your Leadership Style Toolkit",
+      "body": "Step 1: Identify your default style. Most people default to one of the four. Ask yourself: when stressed, do I serve, inspire, involve, or adapt?\n\nStep 2: Identify your weakest style. That's where you'll be most tested.\n\nStep 3: Practice deliberately. If you're naturally a servant leader, try being more directive when a team member is struggling. If you're transformational, practice stepping back and letting democratic processes work.\n\nStep 4: Get feedback. Ask your team: 'When have I been most effective? When have I been least effective?' Their answers will reveal your style gaps."
+    },
+    {
+      "heading": "When Styles Fail",
+      "body": "Every style has a failure mode:\n• Servant → leader becomes a doormat, avoids hard decisions\n• Transformational → vision without execution, burnout from constant change\n• Democratic → analysis paralysis, slow decisions in crises\n• Situational → perceived as inconsistent or inauthentic\n\nThe antidote is self-awareness: know your default, know the failure mode, and build a habit of checking yourself."
+    }
+  ],
+  "summary": "Mastery of leadership styles means knowing all four approaches, recognizing which context demands which style, and developing your non-dominant styles through deliberate practice and feedback."
+}

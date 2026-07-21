@@ -1,0 +1,31 @@
+{
+  "topicId": "02-home-row-left",
+  "exercises": [
+    {
+      "title": "Basic Practice",
+      "description": "Type these words: fa, ka, gha, tha, cha, fak, kag, ghat, thach",
+      "hints": [
+        "Keep eyes on screen",
+        "Use proper finger placement"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "fa, ka, gha, tha, cha, fak, kag, ghat, thach"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Sentence Practice",
+      "description": "Type each sentence without looking at the keyboard.",
+      "hints": [
+        "Focus on accuracy",
+        "Use all fingers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "fak ghat thach\nkag cha tha"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

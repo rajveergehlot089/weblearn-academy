@@ -1,0 +1,39 @@
+{
+  "topicId": "02-css",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is CSS?",
+      "body": "CSS stands for Cascading Style Sheets. If HTML is the skeleton of a webpage, CSS is the clothes, makeup, and decoration. It controls colors, fonts, spacing, layout — everything that makes a page look good."
+    },
+    {
+      "heading": "How CSS Works",
+      "body": "CSS uses 'selectors' to pick HTML elements and 'properties' to style them. Think of it like giving instructions: 'Make all paragraphs blue and big.'",
+      "code": {
+        "language": "css",
+        "snippet": "p {\n  color: blue;\n  font-size: 18px;\n  margin: 10px;\n}\n\nh1 {\n  color: #333;\n  font-family: Arial;\n}",
+        "explanation": "'p' is the selector (targets all <p> elements). 'color: blue' is a property-value pair. The curly braces {} contain all the styles for that selector."
+      }
+    },
+    {
+      "heading": "Three Ways to Add CSS",
+      "body": "1. Inline: style='color: red' (on the element itself)\n2. Internal: <style> tag in <head> (for one page)\n3. External: <link> to a .css file (best practice — separate styling from content)"
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Selector",
+      "definition": "The part before the curly braces that tells CSS which HTML elements to style."
+    },
+    {
+      "term": "Property",
+      "definition": "What you want to change (color, size, spacing, etc.)."
+    },
+    {
+      "term": "Value",
+      "definition": "The setting for a property (blue, 18px, 10px, etc.)."
+    }
+  ],
+  "summary": "CSS makes HTML beautiful. It uses selectors to target elements and properties to style them. The best practice is external CSS files linked from your HTML."
+}

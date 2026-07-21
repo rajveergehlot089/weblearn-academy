@@ -1,0 +1,29 @@
+{
+  "topicId": "08-career-planning",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Career Planning Matters",
+      "body": "Without a plan, you drift. You take whatever job comes along, work on whatever's assigned, and wake up 5 years later wondering how you ended up somewhere you never intended. Career planning isn't about predicting the future — it's about making intentional choices that move you toward a direction you've chosen."
+    },
+    {
+      "heading": "The 3-Question Framework",
+      "body": "Answer these three questions to start:\n\n1. **Where am I now?** What are your current skills, experience level, and satisfaction? Be honest.\n\n2. **Where do I want to be?** In 2-3 years, what role, company type, or impact do you want to have? It doesn't need to be specific — 'I want to lead a frontend team at a mid-size product company' is enough.\n\n3. **What's the gap?** What skills, experiences, or connections do you need to get from here to there?"
+    },
+    {
+      "heading": "The Skills Inventory",
+      "body": "List your skills in three categories:\n\n- **Strong skills**: Things you're good at and enjoy doing\n- **Growing skills**: Things you're developing but not yet expert in\n- **Missing skills**: Things you need for your target role but don't have\n\nThis inventory tells you exactly what to focus on. Invest your learning time in the 'missing' category."
+    },
+    {
+      "heading": "One Habit for Career Growth",
+      "body": "Spend 30 minutes every Friday reviewing: (1) What did I learn this week? (2) What skill from my 'missing' list did I practice? (3) What's one thing I'll do differently next week? This weekly reflection compounds into massive career growth over months and years."
+    }
+  ],
+  "jargon": [
+    { "term": "Career Roadmap", "definition": "A visual or written plan outlining the skills, experiences, and milestones needed to reach your career goal over a specific timeframe." },
+    { "term": "Skills Gap Analysis", "definition": "The process of identifying the difference between your current skills and the skills required for your target role." },
+    { "term": "Individual Development Plan (IDP)", "definition": "A personal plan that outlines your career goals, the skills you need to develop, and the actions you'll take to get there." }
+  ],
+  "summary": "Career planning prevents drift. Use the 3-question framework: Where am I? Where do I want to be? What's the gap? Do a skills inventory (strong, growing, missing) to focus your learning. Reflect weekly for 30 minutes — this small habit compounds into massive growth."
+}

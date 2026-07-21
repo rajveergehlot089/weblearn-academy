@@ -1,0 +1,18 @@
+{
+  "topicId": "01-internet-basics",
+  "comparisons": [
+    {
+      "concept": "How the Internet Works",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to How the Internet Works\nconst result = {\n  concept: \"How the Internet Works\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to How the Internet Works\nresult = {\n    \"concept\": \"How the Internet Works\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of How the Internet Works is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about How the Internet Works is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

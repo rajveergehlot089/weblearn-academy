@@ -1,0 +1,15 @@
+{
+  "topicId": "11-loading-caching",
+  "questions": [
+    {
+      "question": "What is the difference between cache-control and ETag?",
+      "answer": "Cache-Control tells the browser to store a resource for a specific time (max-age=300 means 5 minutes). ETag is a content hash — the browser sends it back to check if the resource changed. If unchanged, the server returns 304 (Not Modified). Cache-Control = time-based; ETag = content-based.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is an optimistic update?",
+      "answer": "An optimistic update shows the expected result immediately (before the server confirms). For example, when a user likes a post, you instantly increment the like count, then send the request. If the request fails, you roll back. This makes the UI feel instant.",
+      "difficulty": "medium"
+    }
+  ]
+}

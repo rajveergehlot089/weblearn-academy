@@ -1,0 +1,52 @@
+{
+  "topicId": "02-pomodoro",
+  "comparisons": [
+    {
+      "concept": "Focus Techniques",
+      "items": [
+        {
+          "name": "Classic Pomodoro (25/5)",
+          "description": "25 minutes of work, 5-minute break, longer break after 4 sessions",
+          "best_for": "Getting started with focus techniques, tasks you tend to procrastinate on",
+          "pros": "Low barrier to entry, creates urgency, easy to track",
+          "cons": "Can interrupt flow states, too short for complex debugging",
+          "best_for_devs": "Code reviews, documentation, small bug fixes"
+        },
+        {
+          "name": "Extended Pomodoro (50/10)",
+          "description": "50 minutes of work, 10-minute break",
+          "best_for": "Medium-complexity tasks that need sustained focus",
+          "pros": "Longer flow states, fewer interruptions from breaks",
+          "cons": "Harder to maintain discipline, requires stronger focus habits",
+          "best_for_devs": "Feature development, debugging, writing tests"
+        },
+        {
+          "name": "Flowmodoro (Flow Time)",
+          "description": "Work until you naturally lose focus, then take a break proportional to work duration",
+          "best_for": "Experienced developers who can self-regulate focus",
+          "pros": "Respects natural flow states, no forced interruptions",
+          "cons": "Easy to skip breaks, harder to track, requires self-awareness",
+          "best_for_devs": "Architecture work, deep debugging, creative problem-solving"
+        },
+        {
+          "name": "Deep Work Blocks (90 min)",
+          "description": "90-minute focused sessions with 20-minute breaks (based on ultradian rhythms)",
+          "best_for": "Complex, high-value work that benefits from extended concentration",
+          "pros": "Maximum flow depth, produces highest-quality output",
+          "cons": "Requires strong focus habits, very demanding, can't sustain all day",
+          "best_for_devs": "System design, performance optimization, writing RFCs"
+        },
+        {
+          "name": "Timeboxing",
+          "description": "Set a fixed time limit for a task and stop when time expires, regardless of completion",
+          "best_for": "Preventing perfectionism, ensuring balanced time allocation",
+          "pros": "Prevents scope creep, creates accountability, forces prioritization",
+          "cons": "May produce incomplete work, requires follow-up sessions",
+          "best_for_devs": "Prototyping, exploring new technologies, sprint tasks"
+        }
+      ],
+      "insight": "The best focus technique is the one you'll actually use consistently. Start with classic Pomodoro, then experiment with longer durations as your focus stamina improves."
+    }
+  ],
+  "keyInsight": "Pomodoro is a starting point, not a destination. As your focus stamina improves, graduate to longer sessions. The real value is having ANY structured break system — the specific duration matters less than consistency."
+}

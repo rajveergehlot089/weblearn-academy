@@ -1,0 +1,45 @@
+{
+  "topicId": "05-written-communication",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The Anatomy of a Perfect Professional Email",
+      "body": "Every professional email should follow this structure. Think of it as a blueprint you can use for any situation:",
+      "code": {
+        "language": "example",
+        "snippet": "SUBJECT: Q3 Budget Review — Decision Needed by Friday\n\nHi Sarah,\n\n[OPENING — State purpose]\nI need your input on the Q3 budget allocation before our Friday meeting.\n\n[BODY — Provide context]\nTotal budget: $240K (up from $200K in Q2)\nMarketing requesting 40% increase ($84K)\nEngineering requesting 15% increase ($42K)\n\n[KEY QUESTION]\nShould we approve both increases, or prioritize one department?\n\n[ACTION — Clear next step]\nPlease review the attached breakdown and reply with your recommendation by Thursday EOD.\n\nThanks,\n[Your name]",
+        "explanation": "Notice: the subject line tells the reader exactly what's needed and by when. The email opens with purpose, provides data, asks a specific question, and closes with a deadline."
+      }
+    },
+    {
+      "heading": "Writing Difficult Messages",
+      "body": "Delivering bad news, giving criticism, or saying no requires extra care. The SBI framework (Situation-Behavior-Impact) works in writing too:",
+      "code": {
+        "language": "example",
+        "snippet": "REJECTING A PROPOSAL:\n\nPoor: 'We've decided to go in a different direction. Thanks for your time.'\n\nBetter:\nHi Marcus,\n\nThank you for the detailed proposal. The team reviewed it thoroughly.\n\n[Situation] We're evaluating three options for the website redesign.\n[Behavior] Your proposal covers the design and development phases well.\n[Impact] However, it doesn't include ongoing maintenance, which is a key requirement for our team.\n\nWe've decided to move forward with another vendor for this project. We'd love to keep you in mind for future opportunities.\n\nBest,\n[Your name]\n\nWhy this works: It acknowledges effort, gives a specific reason (not a vague brush-off), and leaves the door open."
+      }
+    },
+    {
+      "heading": "Tone in Written Communication",
+      "body": "Without vocal cues, written tone is easy to misread. Here's how to avoid accidental coldness or aggression:",
+      "code": {
+        "language": "example",
+        "snippet": "ACCIDENTALLY COLD:\n'Do this by Friday.'\n'Per my last email...'\n'As I already explained...'\n\nWARMER REWRITE:\n'Can you have this done by Friday?'\n'Going back to my earlier message — here's the key point...'\n'I want to make sure this is clear — here's the main takeaway...'\n\nACCIDENTALLY AGGRESSIVE:\n'Why wasn't this done?'\n'You should have told me.'\n\nWARMER REWRITE:\n'Help me understand — what happened with the deadline?'\n'In the future, please flag delays early so we can adjust.'",
+        "explanation": "When writing, read your message aloud. If it sounds cold or accusatory, add context, soften the opening, and focus on solutions instead of blame."
+      }
+    },
+    {
+      "heading": "Long-Form Writing: Reports and Proposals",
+      "body": "For longer documents, structure is everything. Use the Pyramid Principle: start with the conclusion, then provide supporting evidence:",
+      "bulletPoints": [
+        "Executive Summary (2-3 sentences): State your recommendation or conclusion upfront",
+        "Context (1 paragraph): What problem are you addressing?",
+        "Analysis (2-3 sections): Data and evidence supporting your conclusion",
+        "Recommendation (1-2 sentences): What should the reader do?",
+        "Next Steps (bullet points): Specific actions, owners, deadlines"
+      ]
+    }
+  ],
+  "summary": "Professional writing follows a structure: subject line with purpose, opening with the main point, body with context, and a clear call to action. For difficult messages, use SBI (Situation-Behavior-Impact). Watch your tone — written words lack vocal warmth. For long documents, use the Pyramid Principle: conclusion first, evidence second."
+}

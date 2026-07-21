@@ -1,0 +1,31 @@
+{
+  "topicId": "07-shift-keys",
+  "exercises": [
+    {
+      "title": "Basic Practice",
+      "description": "Type these words: The Quick Brown Fox JavaScript Python Hello World GitHub Server",
+      "hints": [
+        "Keep eyes on screen",
+        "Use proper finger placement"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "The Quick Brown Fox JavaScript Python Hello World GitHub Server"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Sentence Practice",
+      "description": "Type each sentence without looking at the keyboard.",
+      "hints": [
+        "Focus on accuracy",
+        "Use all fingers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "The Quick Brown Fox Jumps Over The Lazy Dog.\nHello World From JavaScript!\nGitHub Is The Best Server For Code."
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

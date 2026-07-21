@@ -1,0 +1,38 @@
+{
+  "topicId": "06-think-framework",
+  "exercises": [
+    {
+      "title": "Filter Your Last Message",
+      "description": "Think of the last message (email, text, or conversation) you wish you hadn't sent. Run it through the THINK framework and identify which filters it failed. Then rewrite it to pass at least 4 of 5.",
+      "hints": [
+        "Be honest — everyone has sent messages they regret",
+        "Identify which filter it MOST failed (usually Kind or Necessary)",
+        "Don't just make it softer — make it genuinely better"
+      ],
+      "solution": "After filtering, you'll likely find: (1) It failed 'True' because you stated opinions as facts. (2) It failed 'Helpful' because it criticized without offering solutions. (3) It failed 'Kind' because it attacked the person, not the problem. Rewrite rule: State facts, offer solutions, focus on the issue not the person. Example: 'You always forget things' → 'I noticed the last two deadlines were missed. Can we set up reminders?'",
+      "difficulty": "medium"
+    },
+    {
+      "title": "The Social Media THINK Pause",
+      "description": "Before posting anything on social media this week, stop and run it through the THINK filter. Write down your score for each filter. If it scores below 3/5, either revise or don't post.",
+      "hints": [
+        "Social media posts are permanent — this is where THINK matters most",
+        "Ask: Would I say this to the person's face?",
+        "If the post is reactive (you're angry or emotional), wait 24 hours"
+      ],
+      "solution": "Most people find that 50%+ of their drafted social media posts fail the THINK filter — usually on 'Helpful' (adds nothing to the conversation) or 'Kind' (is sarcastic or dismissive). The 24-hour rule prevents regrettable posts. If you still want to post it tomorrow, it's probably worth saying.",
+      "difficulty": "hard"
+    },
+    {
+      "title": "THINK in Real-Time",
+      "description": "For one full day, apply the THINK filter to every significant statement before you make it. Track: How many times did you catch yourself about to say something that failed the filter? What did you say instead?",
+      "hints": [
+        "You don't need to filter small talk — focus on opinions, feedback, and disagreements",
+        "It's okay to stay silent if nothing passes the filter",
+        "Notice how the pause changes the quality of your conversations"
+      ],
+      "solution": "After one day, most people discover they catch 3-5 statements that would have failed the filter. The most common failure: 'Necessary' — we say many things that don't need to be said. The second most common: 'Kind' — we're blunter than we realize. After a week of practice, the filter becomes automatic and your communication quality measurably improves.",
+      "difficulty": "hard"
+    }
+  ]
+}

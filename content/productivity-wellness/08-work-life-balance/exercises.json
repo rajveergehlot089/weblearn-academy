@@ -1,0 +1,47 @@
+{
+  "topicId": "08-work-life-balance",
+  "exercises": [
+    {
+      "title": "Work-Life Balance Audit",
+      "description": "For one week, track: (1) when you start and stop working, (2) how many times you check work after hours, (3) weekend work hours, (4) end-of-day energy level (1-10). Then analyze: where are your biggest boundary violations?",
+      "hints": [
+        "Be honest — 'I checked Slack once' counts as a violation",
+        "Use phone screen time data to verify your self-report",
+        "Look for patterns: certain days or situations trigger boundary violations"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "WORK-LIFE BALANCE AUDIT:\n\n| Day | Start | Stop  | After-hours checks | Weekend work | Energy |\n|-----|-------|-------|-------------------|--------------|--------|\n| Mon | 8:45  | 5:30  | 2 (Slack at 7 PM) | -            | 5/10   |\n| Tue | 8:30  | 6:15  | 3 (email, Slack)   | -            | 4/10   |\n| Wed | 8:50  | 5:45  | 1 (Slack)          | -            | 5/10   |\n| Thu | 8:40  | 5:30  | 0                  | -            | 6/10   |\n| Fri | 8:45  | 5:15  | 0                  | -            | 6/10   |\n| Sat | -     | -     | 1 (email)          | 2 hours      | 4/10   |\n| Sun | -     | -     | 0                  | 1 hour       | 5/10   |\n\nANALYSIS:\n• Average after-hours checks: 1/day (weekdays), 0.5/day (weekend)\n• Weekend work: 3 hours total\n• Average energy: 5.0/10\n• Biggest violations: Tuesday (3 checks), Saturday (2 hours work)\n• Pattern: Stressful deadlines trigger after-hours checking\n\nPRIORITY FIXES:\n1. Delete Slack from personal phone (eliminates after-hours checks)\n2. No weekend work unless production emergency\n3. Communicate 9-5:30 boundary to team"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Boundary Communication Script",
+      "description": "Write and deliver a message to your team/manager communicating one new boundary. Use a framing that connects the boundary to work quality, not personal preference. Practice the conversation beforehand and note how people respond.",
+      "hints": [
+        "Frame as 'I'll produce better work if...' not 'I don't want to...'",
+        "Be specific about the boundary (times, channels, exceptions)",
+        "Expect some pushback initially — consistency wins over time"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "BOUNDARY COMMUNICATION SCRIPTS:\n\nTO MANAGER:\n'Hey [name], I've been thinking about how to do my best work. I've noticed\nI'm more focused and creative when I have uninterrupted morning blocks.\nWould it be okay if I protect 9-11 AM as deep work time? I'll be\navailable for meetings and Slack after 11 AM. I think this will help\nme deliver higher-quality code on the projects I'm working on.'\n\nTO TEAM (Slack message):\n'Hi team — I'm setting up some focus time to improve my output. I'll be\nin deep work mode 9-11 AM on weekdays. I'll check Slack at 11 AM and\nbe fully available after that. If something is truly urgent during\nthose hours, feel free to call me. Otherwise, I'll respond at 11.'\n\nTO FAMILY:\n'I'm going to start disconnecting from work at 5:30 PM every day. That\nmeans no checking email or Slack after that time. If you notice me\nchecking my phone after 5:30, please remind me — it helps me stick\nto the boundary.'\n\nEXPECTED RESPONSES:\n• Manager: Usually supportive (better output = better for them)\n• Team: May need 1-2 weeks to adjust, then they respect it\n• Family: Usually relieved (they've been wanting you to disconnect)"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Design Your Disconnection Protocol",
+      "description": "Create a detailed end-of-day disconnection protocol that includes: a shutdown ritual, a transition activity, and rules for after-hours communication. Practice for 2 weeks and track how your evenings and sleep quality change.",
+      "hints": [
+        "The shutdown ritual should be specific and consistent (same steps, same time)",
+        "The transition activity should be physically different from work (change rooms, change clothes)",
+        "Write the rules down and share them with your household for accountability"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "DISCONNECTION PROTOCOL:\n\nSHUTDOWN RITUAL (5:15-5:30 PM daily):\n1. Review task list, check off completed items\n2. Quick email/Slack scan (5 min max)\n3. Write tomorrow's 3 priorities\n4. Close all work applications\n5. Say out loud: 'Shutdown complete'\n\nTRANSITION ACTIVITY (5:30-6:00 PM):\n• Change out of work clothes\n• Walk around the block (10 min)\n• OR: Cook dinner (hands-on activity)\n• OR: Exercise (30 min workout)\n\nAFTER-HOURS RULES:\n1. No Slack/email on personal phone (apps deleted)\n2. Work phone in drawer from 5:30 PM\n3. If truly urgent (production down), team will call\n4. No 'just checking one thing' — ever\n5. Weekend rule: no work unless production emergency\n\nHOUSEHOLD COMMUNICATION:\n'Hey, I'm going to be completely offline from 5:30 PM onward.\nIf you see me checking my phone after that, please remind me.\nI'm doing this to be more present at home and sleep better.'\n\nTRACKING (2 weeks):\n| Week | Shutdown done | After-hours checks | Sleep quality | Evening mood |\n|------|--------------|-------------------|---------------|-------------|\n| 1    | 4/5 weekdays | 1 (Wed: had to)   | 7/10          | 7/10        |\n| 2    | 5/5 weekdays | 0                 | 8/10          | 8/10        |\n\nFINDINGS:\n• Sleep improved noticeably (less rumination)\n• Evenings feel longer and more restful\n• Work anxiety decreased (trust the system)\n• Colleagues adjusted quickly to new availability"
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "topicId": "08-cookies-localstorage",
+  "exercises": [
+    {
+      "title": "Theme Switcher with Persistence",
+      "description": "Build a theme switcher (dark/light mode) that remembers the user choice using localStorage. Create a button that toggles themes and persists the selection.",
+      "hints": [
+        "Use localStorage.setItem() when saving",
+        "Use localStorage.getItem() on page load",
+        "Apply the theme class to document.body"
+      ],
+      "solution": {
+        "language": "javascript",
+        "code": "function toggleTheme() {\n  const current = document.body.dataset.theme;\n  const next = current === 'dark' ? 'light' : 'dark';\n  document.body.dataset.theme = next;\n  localStorage.setItem('theme', next);\n}\n\nconst saved = localStorage.getItem('theme');\nif (saved) document.body.dataset.theme = saved;"
+      },
+      "difficulty": "easy"
+    }
+  ]
+}

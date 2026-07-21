@@ -1,0 +1,49 @@
+{
+  "topicId": "08-empathy",
+  "exercises": [
+    {
+      "title": "The Perspective-Taking Exercise",
+      "description": "Choose someone you interacted with today (colleague, partner, stranger, service worker). Spend 3 minutes writing answers to these three questions from THEIR perspective.",
+      "hints": [
+        "Don't judge their answers — this is about understanding, not evaluating",
+        "Consider their context: What pressures are they under? What's their background?",
+        "Be honest about what you don't know about their experience"
+      ],
+      "questions": [
+        "What might their day have been like before they interacted with me?",
+        "What emotions might they be carrying right now?",
+        "What do they need from this interaction that they might not say out loud?"
+      ],
+      "solution": "After 3 minutes of perspective-taking, you'll likely realize: (1) You know less about their experience than you assumed. (2) They might be dealing with pressures you can't see. (3) Your default assumption (usually self-focused) may be wrong. Practice this daily and your empathetic responses will become more natural.",
+      "difficulty": "easy"
+    },
+    {
+      "title": "The Empathy Response Rewrite",
+      "description": "Rewrite these sympathy responses as empathetic responses. Focus on understanding, not fixing or minimizing.",
+      "hints": [
+        "Replace 'at least' with acknowledgment",
+        "Replace advice with questions",
+        "Replace 'I know how you feel' with curiosity"
+      ],
+      "scenarios": [
+        "Friend: 'I failed my exam.'\nSympathetic response: 'At least you tried. You'll get it next time.'",
+        "Partner: 'I had a terrible day at work.'\nSympathetic response: 'Just quit that job. You deserve better.'",
+        "Colleague: 'I'm overwhelmed with this project.'\nSympathetic response: 'I know how you feel. Just make a to-do list.'",
+        "Family member: 'I'm so lonely since the move.'\nSympathetic response: 'Everything happens for a reason. You'll make friends soon.'"
+      ],
+      "solution": "Empathetic rewrites: (1) 'That's tough. What part was hardest?' (2) 'That sounds draining. What happened?' (3) 'I can see why — there's a lot on your plate. What's the heaviest piece?' (4) 'Moving is really hard. What do you miss most?' Notice: empathetic responses ask questions, acknowledge feelings, and don't rush to fix.",
+      "difficulty": "medium"
+    },
+    {
+      "title": "The 'What's That Like?' Challenge",
+      "description": "For one week, use the phrase 'What's that like?' at least once per day in a conversation. Notice how it changes the depth of the conversation.",
+      "hints": [
+        "Use it after someone shares an experience, opinion, or feeling",
+        "Follow up with genuine curiosity — not just polite interest",
+        "Notice how people respond when you ask this vs. when you give advice"
+      ],
+      "solution": "'What's that like?' is the most empathetic question because it says: 'Your experience matters to me. I want to understand.' After a week, you'll notice: (1) People share more openly. (2) Conversations go deeper. (3) You learn things you never would have known. (4) Relationships strengthen. This single question can transform your communication.",
+      "difficulty": "medium"
+    }
+  ]
+}

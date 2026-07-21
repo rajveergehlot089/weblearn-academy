@@ -1,0 +1,14 @@
+module.exports = [
+  { id: "01-english-basics", title: "English Basics - Alphabet and Pronunciation", group: "grammar", day_fast_track: 1, day_full_course: 1, icon: "🔤", description: "Master the 26 letters, vowel sounds, and basic pronunciation.", prerequisites: [] },
+  { id: "02-nouns-pronouns", title: "Nouns Pronouns and Articles", group: "grammar", day_fast_track: 2, day_full_course: 3, icon: "📝", description: "The building blocks of English sentences.", prerequisites: ["01-english-basics"] },
+  { id: "03-verbs-tenses", title: "Verbs and Present Tense", group: "grammar", day_fast_track: 3, day_full_course: 5, icon: "⚙️", description: "Action words and how they work in the present.", prerequisites: ["02-nouns-pronouns"] },
+  { id: "04-past-future", title: "Past and Future Tenses", group: "grammar", day_fast_track: 4, day_full_course: 7, icon: "⏭️", description: "Talk about what happened and what will happen.", prerequisites: ["03-verbs-tenses"] },
+  { id: "05-sentence-structure", title: "Sentence Structure SVO", group: "grammar", day_fast_track: 5, day_full_course: 9, icon: "📦", description: "Subject-Verb-Object: the backbone of English.", prerequisites: ["03-verbs-tenses"] },
+  { id: "06-questions-negation", title: "Questions and Negation", group: "grammar", day_fast_track: 6, day_full_course: 11, icon: "❓", description: "How to ask questions and make negative statements.", prerequisites: ["05-sentence-structure"] },
+  { id: "07-vocabulary-builder", title: "Vocabulary Building Techniques", group: "vocabulary", day_fast_track: 7, day_full_course: 13, icon: "💢", description: "Strategies to learn and remember new words.", prerequisites: ["01-english-basics"] },
+  { id: "08-prepositions", title: "Prepositions and Conjunctions", group: "grammar", day_fast_track: 8, day_full_course: 15, icon: "🔗", description: "Connecting words that give context.", prerequisites: ["05-sentence-structure"] },
+  { id: "09-active-passive", title: "Active and Passive Voice", group: "grammar", day_fast_track: 9, day_full_course: 17, icon: "🔄", description: "Two ways to express the same action.", prerequisites: ["04-past-future"] },
+  { id: "10-daily-english", title: "Daily Use English Conversations", group: "conversation", day_fast_track: 10, day_full_course: 19, icon: "🗣️", description: "Common phrases for everyday life.", prerequisites: ["05-sentence-structure"] },
+  { id: "11-essay-writing", title: "Paragraph and Essay Writing", group: "writing", day_fast_track: 11, day_full_course: 21, icon: "✍️", description: "Structure your thoughts into clear writing.", prerequisites: ["10-daily-english"] },
+  { id: "12-interview-english", title: "Interview English and Professional Communication", group: "professional", day_fast_track: 12, day_full_course: 24, icon: "💼", description: "Speak confidently in interviews and work.", prerequisites: ["10-daily-english"] }
+];

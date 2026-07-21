@@ -1,0 +1,30 @@
+{
+  "topicId": "01-html",
+  "comparisons": [
+    {
+      "concept": "Displaying content to the user",
+      "javascript": {
+        "language": "html",
+        "code": "<h1>Hello World</h1>\n<p>Welcome to my site</p>"
+      },
+      "python": {
+        "language": "python",
+        "code": "print('Hello World')\nprint('Welcome to my site')"
+      },
+      "explanation": "HTML describes WHAT to show and HOW it's structured. Python's print() just dumps text to a terminal. HTML is for visual display in a browser; Python is for logic on a server."
+    },
+    {
+      "concept": "Creating a list",
+      "javascript": {
+        "language": "html",
+        "code": "<ul>\n  <li>Apple</li>\n  <li>Banana</li>\n  <li>Cherry</li>\n</ul>"
+      },
+      "python": {
+        "language": "python",
+        "code": "fruits = ['Apple', 'Banana', 'Cherry']\nfor fruit in fruits:\n    print(fruit)"
+      },
+      "explanation": "HTML lists are visual structure shown to users. Python lists hold data in memory for processing. The CONCEPT of a list is identical; the SYNTAX differs because they serve different purposes."
+    }
+  ],
+  "keyInsight": "HTML is a markup language (describes structure), not a programming language (doesn't compute). It's the same concept across all web development — whether you write it by hand or generate it with React, Vue, or any framework, the HTML output is always the same."
+}

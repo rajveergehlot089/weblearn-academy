@@ -1,0 +1,30 @@
+{
+  "topicId": "14-modern-javascript",
+  "comparisons": [
+    {
+      "concept": "Arrow functions vs lambdas",
+      "javascript": {
+        "language": "javascript",
+        "code": "const add = (a, b) => a + b;\n[1, 2, 3].map(x => x * 2);"
+      },
+      "python": {
+        "language": "python",
+        "code": "add = lambda a, b: a + b\nlist(map(lambda x: x * 2, [1, 2, 3]))"
+      },
+      "explanation": "Both languages have concise function syntax. Arrow in JS, lambda in Python. Same concept, different syntax."
+    },
+    {
+      "concept": "Async/await",
+      "javascript": {
+        "language": "javascript",
+        "code": "async function getData() {\n  try {\n    const res = await fetch('/api/data');\n    const data = await res.json();\n    return data;\n  } catch (err) {\n    console.error(err);\n  }\n}"
+      },
+      "python": {
+        "language": "python",
+        "code": "import asyncio\nimport aiohttp\n\nasync def get_data():\n    try:\n        async with aiohttp.ClientSession() as session:\n            async with session.get('/api/data') as res:\n                data = await res.json()\n                return data\n    except Exception as e:\n        print(e)"
+      },
+      "explanation": "async/await is the same concept in both languages! The pattern (async function -> await -> try/catch) is universal."
+    }
+  ],
+  "keyInsight": "Modern JavaScript features often have Python equivalents. Arrow functions ~ lambdas. Destructuring ~ unpacking. async/await is identical. The CONCEPTS are portable across languages."
+}

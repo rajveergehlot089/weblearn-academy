@@ -1,0 +1,42 @@
+{
+  "topicId": "06-think-framework",
+  "comparisons": [
+    {
+      "concept": "Reactive vs. THUNK-Filtered Speech",
+      "before": {
+        "label": "Reactive (No Filter)",
+        "code": "Colleague makes an error in the report.\n\nYou: 'How could you miss this? It's right there in the data. This is basic stuff.'\n\nScore: True? Partially. Helpful? No. Inspiring? No. Necessary? Yes. Kind? No.\nResult: 1.5/5 — Damages relationship, doesn't fix the problem."
+      },
+      "after": {
+        "label": "THINK-Filtered",
+        "code": "Colleague makes an error in the report.\n\nYou: 'I noticed a discrepancy in the Q3 numbers on page 4. Can you double-check the source data? I want to make sure we're accurate before the client sees it.'\n\nScore: True? Yes. Helpful? Yes. Inspiring? Neutral. Necessary? Yes. Kind? Yes.\nResult: 4/5 — Addresses the issue, preserves the relationship."
+      },
+      "explanation": "The THINK filter doesn't prevent you from addressing problems — it changes how you address them. Same issue, vastly different outcome."
+    },
+    {
+      "concept": "Honest vs. Honest AND Kind",
+      "before": {
+        "label": "Honest but Unkind",
+        "code": "Friend asks: 'How did I do in the presentation?'\n\nYou: 'Honestly? It was rough. You stumbled a lot, the slides were cluttered, and you went 10 minutes over.'\n\nHonest? Yes. Kind? No.\nFriend feels: Embarrassed, demotivated."
+      },
+      "after": {
+        "label": "Honest AND Kind",
+        "code": "Friend asks: 'How did I do in the presentation?'\n\nYou: 'Your opening was strong — the hook grabbed everyone. A couple of areas to polish: the slides had a lot of text, so the audience might have been reading instead of listening. And you had great material but ran over — trimming the middle section would help. Overall, solid foundation.'\n\nHonest? Yes. Kind? Yes.\nFriend feels: Supported, motivated to improve."
+      },
+      "explanation": "Kindness isn't lying — it's delivering truth in a way the listener can actually hear and use. Lead with what worked, then address what to improve."
+    },
+    {
+      "concept": "Necessary vs. Unnecessary Commentary",
+      "before": {
+        "label": "Unnecessary",
+        "code": "A coworker's idea gets rejected in a meeting.\n\nLater, you say: 'I knew that wouldn't work. I could have told them.'\n\nTrue? Maybe. Helpful? No. Inspiring? No. Necessary? Absolutely not. Kind? No.\nResult: 0/5 — Pure ego, zero value."
+      },
+      "after": {
+        "label": "Necessary",
+        "code": "A coworker's idea gets rejected in a meeting.\n\nLater, you say: 'That was a tough meeting. If you want, we could brainstorm some adjustments together.'\n\nTrue? Yes. Helpful? Yes. Inspiring? Yes. Necessary? Yes. Kind? Yes.\nResult: 5/5 — Supportive, actionable, respectful."
+      },
+      "explanation": "The 'Necessary' filter asks: Does this NEED to be said? By me? Right now? If the answer to any of those is no, stay silent or find a more helpful contribution."
+    }
+  ],
+  "keyInsight": "The THINK framework isn't about censoring yourself — it's about upgrading your communication. It takes 3 seconds to filter, but it prevents hours of damage repair."
+}

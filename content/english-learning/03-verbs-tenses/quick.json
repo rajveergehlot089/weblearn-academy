@@ -1,0 +1,38 @@
+{
+  "topicId": "03-verbs-tenses",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is a Verb?",
+      "body": "A verb is an action word or state of being.\n\nAction: run, eat, write, think, study\nState: is, am, are, was, were, have, seem\n\nEvery sentence needs a verb:\n• \"She runs.\" (action)\n• \"He is happy.\" (state)\n• \"They study English.\" (action)"
+    },
+    {
+      "heading": "Simple Present Tense",
+      "body": "Used for: habits, facts, routines, general truths\n\nI/You/We/They: base form\n• I work. They play. We study.\n\nHe/She/It: add -s or -es\n• He works. She plays. It rains.\n\nNegatives: don't / doesn't + base form\n• I don't work. He doesn't work.\n\nQuestions: Do/Does + subject + base form\n• Do you work? Does he work?"
+    },
+    {
+      "heading": "Present Continuous Tense",
+      "body": "Used for: actions happening right now, temporary situations, future plans\n\nFormula: am/is/are + verb-ing\n• I am working. She is studying.\n• They are playing football.\n\nSpelling rules for -ing:\n• work → working (just add -ing)\n• run → running (double last consonant)\n• make → making (drop the e)\n• study → studying (change y to i)"
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Verb",
+      "definition": "An action word or state of being. Every sentence needs at least one verb. Examples: run, eat, is, seem, think."
+    },
+    {
+      "term": "Tense",
+      "definition": "The time form of a verb. English has 3 main tenses: past, present, future. Each has simple, continuous, and perfect forms."
+    },
+    {
+      "term": "Subject",
+      "definition": "The person or thing doing the action. In \"She runs\", \"she\" is the subject."
+    },
+    {
+      "term": "Conjugation",
+      "definition": "Changing a verb form to match tense, person, or number. \"go\" → \"goes\" (3rd person present)."
+    }
+  ],
+  "summary": "Start with Simple Present for habits and Present Continuous for now. Master the -s/-es rule for he/she/it — it's the most common beginner mistake."
+}

@@ -1,0 +1,53 @@
+{
+  "topicId": "14-modern-javascript",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Destructuring",
+      "body": "Extract values from objects and arrays:",
+      "code": {
+        "language": "javascript",
+        "snippet": "const user = { name: 'Raj', age: 25, email: 'raj@example.com' };\n\nconst { name, age, email } = user;\nconsole.log(name);  // Raj\n\nconst { name: userName, age: userAge } = user;\nconsole.log(userName);  // Raj\n\nconst { name, role = 'user' } = user;\nconsole.log(role);  // user (default)\n\nconst [first, second, ...rest] = [1, 2, 3, 4, 5];\nconsole.log(first);   // 1\nconsole.log(rest);    // [3, 4, 5]",
+        "explanation": "Destructuring makes code shorter. Instead of accessing properties one by one, extract them in one line."
+      }
+    },
+    {
+      "heading": "Template Literals",
+      "body": "Easy string building:",
+      "code": {
+        "language": "javascript",
+        "snippet": "const name = 'Raj';\nconst age = 25;\n\nconst modern = `Hello ${name}, you are ${age} years old`;\n\nconst price = 100;\nconst tax = 0.1;\nconsole.log(`Total: $${price * (1 + tax)}`);  // Total: $110",
+        "explanation": "Template literals use backticks and ${} for interpolation. Much cleaner than string concatenation."
+      }
+    },
+    {
+      "heading": "Async/Await",
+      "body": "Clean asynchronous code:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Promise chains (old way)\nfetch('/api/users')\n  .then(res => res.json())\n  .then(users => console.log(users))\n  .catch(err => console.error(err));\n\n// Async/await (modern way)\nasync function getUsers() {\n  try {\n    const res = await fetch('/api/users');\n    if (!res.ok) throw new Error('HTTP ' + res.status);\n    const users = await res.json();\n    console.log(users);\n  } catch (err) {\n    console.error(err);\n  }\n}",
+        "explanation": "async/await makes async code look synchronous. Put async before function, await before Promises."
+      }
+    },
+    {
+      "heading": "Fetch API",
+      "body": "The modern way to make HTTP requests:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// GET\nconst res = await fetch('https://api.example.com/users');\nconst users = await res.json();\n\n// POST\nconst res = await fetch('https://api.example.com/users', {\n  method: 'POST',\n  headers: { 'Content-Type': 'application/json' },\n  body: JSON.stringify({ name: 'Raj' })\n});",
+        "explanation": "fetch() returns a Promise. Always check res.ok before parsing JSON."
+      }
+    },
+    {
+      "heading": "Spread Operator",
+      "body": "Flexible data handling:",
+      "code": {
+        "language": "javascript",
+        "snippet": "const arr1 = [1, 2, 3];\nconst arr2 = [...arr1, 4, 5];  // [1, 2, 3, 4, 5]\n\nconst obj1 = { a: 1, b: 2 };\nconst obj2 = { ...obj1, c: 3 };  // { a: 1, b: 2, c: 3 }\n\nfunction sum(...numbers) {\n  return numbers.reduce((total, n) => total + n, 0);\n}\nconsole.log(sum(1, 2, 3, 4));  // 10",
+        "explanation": "'...' is the Swiss Army knife of JavaScript. Spread expands, rest collects."
+      }
+    }
+  ],
+  "summary": "Modern JS: arrow functions, destructuring, template literals, async/await, fetch, spread/rest. These features make code shorter and more readable."
+}

@@ -1,0 +1,38 @@
+{
+  "topicId": "08-divs-layout",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Div and Span Elements",
+      "body": "The div and span elements are generic containers:\n• div: Block-level container for grouping content\n• span: Inline container for wrapping text\n\nUse them when no semantic element fits your needs."
+    },
+    {
+      "heading": "CSS Layout Techniques",
+      "body": "Modern CSS provides powerful layout tools:\n• Flexbox: One-dimensional layout (row or column)\n• Grid: Two-dimensional layout (rows and columns)\n• Floats: Legacy technique (still used occasionally)\n• Position: Precise placement of elements"
+    },
+    {
+      "heading": "When to Use Divs",
+      "body": "Use divs for:\n• Wrapping content for styling\n• Creating layout containers\n• Grouping related elements\n• When no semantic element fits\n\nAvoid divs when semantic elements (header, nav, main, article, section) are appropriate."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Block-level",
+      "definition": "Elements that start on a new line and take full width"
+    },
+    {
+      "term": "Inline",
+      "definition": "Elements that flow within text without breaking the line"
+    },
+    {
+      "term": "Flexbox",
+      "definition": "CSS layout mode for one-dimensional layouts"
+    },
+    {
+      "term": "Grid",
+      "definition": "CSS layout mode for two-dimensional layouts"
+    }
+  ],
+  "summary": "Div and span are generic containers. Use CSS Flexbox and Grid for modern layouts. Prefer semantic elements over divs when possible."
+}

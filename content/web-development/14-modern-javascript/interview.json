@@ -1,0 +1,20 @@
+{
+  "topicId": "14-modern-javascript",
+  "questions": [
+    {
+      "question": "What is the difference between var, let, and const?",
+      "answer": "var is function-scoped and can be redeclared (causes bugs). let is block-scoped and can be reassigned but not redeclared. const is block-scoped and cannot be reassigned at all. Use const by default, let when you need to reassign, never use var.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is destructuring and when would you use it?",
+      "answer": "Destructuring extracts values from objects/arrays into variables in one line. Use it when: (1) Extracting API response fields, (2) Passing options objects to functions, (3) Working with nested data. It makes code shorter and more readable.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the difference between fetch and XMLHttpRequest?",
+      "answer": "fetch is the modern API (ES6+) — it uses Promises, has a cleaner syntax, and supports async/await. XMLHttpRequest is the old way — callback-based, verbose, and harder to read. Always use fetch in modern code.",
+      "difficulty": "medium"
+    }
+  ]
+}

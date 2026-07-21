@@ -1,0 +1,25 @@
+{
+  "topicId": "06-domains-ssl",
+  "questions": [
+    {
+      "question": "What is Domains, DNS & SSL Certificates and why is it important?",
+      "answer": "Domains, DNS & SSL Certificates is a fundamental concept that Buy domains, configure DNS, and set up HTTPS with free SSL. It's important because it forms the foundation for building robust and efficient applications. Understanding Domains, DNS & SSL Certificates allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Domains, DNS & SSL Certificates in a real project?",
+      "answer": "In practice, Domains, DNS & SSL Certificates is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Domains, DNS & SSL Certificates?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Domains, DNS & SSL Certificates to a beginner?",
+      "answer": "Domains, DNS & SSL Certificates is essentially about buy domains, configure dns, and set up https with free ssl. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+module.exports = [
+  { id: "01-self-awareness", title: "Self-Awareness and Emotional Intelligence", group: "foundation", day_fast_track: 1, day_full_course: 1, icon: "🧠", description: "Understand yourself, your emotions, and how others perceive you.", prerequisites: [] },
+  { id: "02-communication", title: "Effective Communication Skills", group: "communication", day_fast_track: 2, day_full_course: 3, icon: "🗣️", description: "Express yourself clearly in speaking, writing, and listening.", prerequisites: ["01-self-awareness"] },
+  { id: "03-body-language", title: "Body Language and Non-Verbal Communication", group: "communication", day_fast_track: 3, day_full_course: 5, icon: "👤", description: "Master the art of unspoken signals.", prerequisites: ["02-communication"] },
+  { id: "04-confidence", title: "Confidence Building and Self-Esteem", group: "mindset", day_fast_track: 4, day_full_course: 7, icon: "💪", description: "Build unshakeable confidence and overcome self-doubt.", prerequisites: ["01-self-awareness"] },
+  { id: "05-time-management", title: "Time Management and Productivity", group: "productivity", day_fast_track: 5, day_full_course: 9, icon: "⏰", description: "Master your time, priorities, and daily habits.", prerequisites: [] },
+  { id: "06-leadership", title: "Leadership and Team Management", group: "professional", day_fast_track: 6, day_full_course: 11, icon: "🛡️", description: "Lead teams, make decisions, and inspire others.", prerequisites: ["02-communication", "04-confidence"] },
+  { id: "07-stress-management", title: "Stress Management and Mental Health", group: "wellness", day_fast_track: 7, day_full_course: 13, icon: "🌿", description: "Handle pressure, reduce stress, and maintain well-being.", prerequisites: ["01-self-awareness"] },
+  { id: "08-public-speaking", title: "Public Speaking and Presentation Skills", group: "communication", day_fast_track: 8, day_full_course: 15, icon: "🎙️", description: "Speak confidently to any audience.", prerequisites: ["02-communication", "03-body-language"] },
+  { id: "09-networking", title: "Professional Networking and Personal Branding", group: "professional", day_fast_track: 9, day_full_course: 17, icon: "🔗", description: "Build meaningful professional relationships.", prerequisites: ["02-communication"] },
+  { id: "10-goal-setting", title: "Goal Setting and Career Planning", group: "career", day_fast_track: 10, day_full_course: 20, icon: "🎯", description: "Set meaningful goals and create actionable plans.", prerequisites: ["05-time-management", "04-confidence"] }
+];

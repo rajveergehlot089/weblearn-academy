@@ -1,0 +1,25 @@
+{
+  "topicId": "05-essay-structure",
+  "questions": [
+    {
+      "question": "What is Essay Structure & Writing and why is it important?",
+      "answer": "Essay Structure & Writing is a fundamental concept that Introduction, body paragraphs, and conclusion structure. It's important because it forms the foundation for building robust and efficient applications. Understanding Essay Structure & Writing allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Essay Structure & Writing in a real project?",
+      "answer": "In practice, Essay Structure & Writing is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Essay Structure & Writing?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Essay Structure & Writing to a beginner?",
+      "answer": "Essay Structure & Writing is essentially about introduction, body paragraphs, and conclusion structure. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

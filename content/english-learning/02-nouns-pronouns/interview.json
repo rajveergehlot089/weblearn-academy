@@ -1,0 +1,20 @@
+{
+  "topicId": "02-nouns-pronouns",
+  "questions": [
+    {
+      "question": "What is the difference between \"who\" and \"whom\"?",
+      "answer": "\"Who\" is a subject pronoun — used when the person is doing the action: \"Who called you?\" \"Whom\" is an object pronoun — used when the person receives the action: \"To whom should I address this?\" Quick test: replace with he/him. If \"he\" fits, use \"who\". If \"him\" fits, use \"whom\".",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why is \"information\" uncountable?",
+      "answer": "Information is an abstract noun representing a concept, not individual items. You can't say \"an information\" or \"three informations\". Instead: \"some information\", \"a piece of information\", \"much information\". Similar uncountable nouns: advice, news, furniture, equipment, knowledge.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "When do we use \"a\" vs \"an\"?",
+      "answer": "Use \"an\" before words starting with a vowel SOUND (not letter). \"An hour\" (silent h), \"a university\" (sounds like \"you\"), \"an MBA\" (sounds like \"em\"), \"a European\" (sounds like \"yer\"). The key is the sound, not the spelling.",
+      "difficulty": "easy"
+    }
+  ]
+}

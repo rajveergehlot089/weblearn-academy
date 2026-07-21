@@ -1,0 +1,57 @@
+{
+  "topicId": "08-divs-layout",
+  "type": "interview",
+  "estimatedMinutes": 10,
+  "questions": [
+    {
+      "question": "When should you use div vs semantic elements?",
+      "answer": "Use semantic elements (header, nav, main, article, section, aside, footer) when they match the content's purpose. Use div only when: 1) No semantic element fits. 2) You need a generic container for CSS styling. 3) You're grouping content that doesn't fit other categories. Always prefer semantic elements for accessibility and SEO.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the difference between Flexbox and Grid?",
+      "answer": "Flexbox is one-dimensional - it handles layout in a single direction (row OR column). Grid is two-dimensional - it handles rows AND columns simultaneously. Use Flexbox for navigation bars, card rows, centering. Use Grid for page layouts, image galleries, dashboards. They complement each other.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you center an element with CSS?",
+      "answer": "Multiple methods: 1) Flexbox: display:flex; justify-content:center; align-items:center. 2) Grid: display:grid; place-items:center. 3) Margin auto: margin:0 auto with fixed width. 4) Position: position:absolute; top:50%; left:50%; transform:translate(-50%,-50%). Flexbox or Grid are preferred modern approaches.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the difference between em and rem units?",
+      "answer": "em is relative to the parent element's font size. rem is relative to the root (html) element's font size. rem is more predictable for sizing because it's consistent across the page. Use rem for font sizes, padding, and margins. Use em for component-level sizing where inheritance matters.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you create a responsive layout?",
+      "answer": "Key techniques: 1) Use relative units (%, rem, vw) instead of fixed px. 2) Use CSS Grid/Flexbox with auto-fit/auto-fill. 3) Mobile-first media queries. 4) Responsive images with max-width:100%. 5) Fluid typography with clamp(). 6) Container queries for component-level responsiveness.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is the difference between display:none and visibility:hidden?",
+      "answer": "display:none removes the element from layout entirely - it doesn't take space. visibility:hidden hides the element but preserves its space in the layout. Use display:none to completely remove elements. Use visibility:hidden when you want to hide but maintain layout space (like for transitions).",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you handle overflow in CSS?",
+      "answer": "Use the overflow property: visible (default, content flows out), hidden (clips content), scroll (adds scrollbar), auto (scrollbar only when needed). Use overflow-x/overflow-y for horizontal/vertical control. For text overflow, use text-overflow:ellipsis with white-space:nowrap and overflow:hidden.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the box model and why does box-sizing matter?",
+      "answer": "The box model consists of content, padding, border, and margin. By default, width/height only includes content. With box-sizing:border-box, width/height includes content+padding+border. border-box is preferred because it makes sizing more intuitive. Set it globally: * { box-sizing: border-box; }.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you create a sticky header?",
+      "answer": "Use position:sticky with top:0. The header must be inside a scrollable container. Example: header { position:sticky; top:0; z-index:100; background:white; }. The header stays fixed when scrolling. Ensure sufficient z-index to overlap content. Add background color to prevent content showing through.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the difference between gap and margin for spacing?",
+      "answer": "Gap is applied between items in flex/grid containers. It doesn't affect the first/last items. Margin is applied to individual elements. Gap is cleaner for layouts because: 1) No margin collapse issues. 2) Consistent spacing. 3) No extra margin on first/last items. Use gap for flex/grid, margin for individual spacing.",
+      "difficulty": "medium"
+    }
+  ]
+}

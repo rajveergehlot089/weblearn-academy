@@ -1,0 +1,18 @@
+{
+  "topicId": "05-shift-caps",
+  "comparisons": [
+    {
+      "concept": "Shift Keys & Capital Letters",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Shift Keys & Capital Letters\nconst result = {\n  concept: \"Shift Keys & Capital Letters\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Shift Keys & Capital Letters\nresult = {\n    \"concept\": \"Shift Keys & Capital Letters\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Shift Keys & Capital Letters is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Shift Keys & Capital Letters is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

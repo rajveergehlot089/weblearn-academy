@@ -1,0 +1,19 @@
+{
+  "topicId": "12-deployment",
+  "exercises": [
+    {
+      "title": "Create a Production Checklist",
+      "description": "You're about to deploy a Node.js app. Write a checklist of 5 things you must do before deploying.",
+      "hints": [
+        "Think about secrets",
+        "Think about security",
+        "Think about monitoring"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "1. Move all secrets to environment variables\n2. Enable HTTPS\n3. Add rate limiting to prevent abuse\n4. Set up error logging\n5. Test all API endpoints"
+      },
+      "difficulty": "easy"
+    }
+  ]
+}

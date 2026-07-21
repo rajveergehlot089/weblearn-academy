@@ -1,0 +1,37 @@
+{
+  "topicId": "10-comm-assessment",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Assess Your Communication Skills?",
+      "body": "You can't improve what you don't measure. A communication skills assessment helps you identify your strengths to leverage and your blind spots to address. Most people have 1-2 dominant communication styles and 1-2 areas they neglect."
+    },
+    {
+      "heading": "The Four Communication Dimensions",
+      "bulletPoints": [
+        "Speaking — Do you speak clearly, confidently, and concisely?",
+        "Listening — Do you actively listen, or do you wait for your turn to talk?",
+        "Writing — Is your written communication clear, professional, and actionable?",
+        "Nonverbal — Does your body language match and reinforce your verbal message?"
+      ]
+    },
+    {
+      "heading": "Quick Self-Assessment (1-10 Scale)",
+      "bulletPoints": [
+        "Speaking: How clear and confident am I in meetings and conversations?",
+        "Listening: How often do I paraphrase, ask clarifying questions, and resist interrupting?",
+        "Writing: Are my emails and messages scannable, specific, and actionable?",
+        "Nonverbal: Does my body language project confidence and openness?",
+        "Feedback: How comfortable am I giving and receiving honest feedback?",
+        "Empathy: How often do I seek to understand before being understood?"
+      ]
+    }
+  ],
+  "jargon": [
+    { "term": "Communication Audit", "definition": "A systematic review of your communication habits across all channels (speaking, listening, writing, nonverbal) to identify strengths and gaps." },
+    { "term": "Blind Spot", "definition": "A communication weakness you're unaware of. Blind spots are only visible through feedback from others or self-assessment tools." },
+    { "term": "Growth Plan", "definition": "A focused development plan that targets 1-2 specific communication skills for improvement over 30-90 days." }
+  ],
+  "summary": "Assess your communication across four dimensions: speaking, listening, writing, and nonverbal. Rate yourself honestly on a 1-10 scale. Identify your top strength to leverage and your biggest gap to address. Focus on 1-2 areas at a time — trying to improve everything at once changes nothing."
+}

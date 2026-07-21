@@ -1,0 +1,42 @@
+{
+  "topicId": "01-communication-basics",
+  "comparisons": [
+    {
+      "concept": "Ineffective vs. Effective Communication",
+      "before": {
+        "label": "Ineffective",
+        "code": "Sender: 'I need that thing done soon.'\nReceiver: 'What thing? What does soon mean?'\nSender: 'You know what I mean.'\n\nResult: Task unclear, resentment builds."
+      },
+      "after": {
+        "label": "Effective",
+        "code": "Sender: 'Can you finish the Q2 budget report by Thursday 3pm? Let me know if the deadline is tight.'\nReceiver: 'Thursday 3pm works. Do you want the summary tab included too?'\nSender: 'Yes, summary tab too. Thanks.'\n\nResult: Clear task, clear deadline, open to questions."
+      },
+      "explanation": "Effective communication is specific, actionable, and invites feedback. The first example assumes shared knowledge; the second removes ambiguity."
+    },
+    {
+      "concept": "One-Way vs. Two-Way Communication",
+      "before": {
+        "label": "One-Way (Broadcasting)",
+        "code": "Lecturer talks for 60 minutes.\nNo questions allowed.\nNo check-ins.\nAssumes everyone understood.\n\nResult: Low retention, no feedback."
+      },
+      "after": {
+        "label": "Two-Way (Dialogue)",
+        "code": "Lecturer explains concept → pauses → asks 'What questions do you have?'\nUses examples → checks comprehension → adjusts pace.\n\nResult: Higher retention, active engagement."
+      },
+      "explanation": "Two-way communication creates a feedback loop. It takes more time upfront but prevents costly misunderstandings downstream."
+    },
+    {
+      "concept": "Formal vs. Informal Communication",
+      "before": {
+        "label": "Formal",
+        "code": "Context: Team meeting with CEO\nLanguage: Professional, structured\nFormat: Agenda, presentation, minutes\nChannel: In-person or video call\n\nExample: 'Per the Q3 objectives, we will reallocate 15% of the marketing budget to digital channels.'"
+      },
+      "after": {
+        "label": "Informal",
+        "code": "Context: Quick chat with teammate\nLanguage: Casual, conversational\nFormat: No agenda needed\nChannel: Slack, hallway, coffee break\n\nExample: 'Hey, looks like we're shifting some budget to digital. Want to grab coffee and brainstorm?'"
+      },
+      "explanation": "Neither is better — the key is matching your communication style to the situation. Using formal language with friends feels stiff; using slang with your CEO feels unprofessional."
+    }
+  ],
+  "keyInsight": "The gap between ineffective and effective communication is almost always: specificity, feedback loops, and context-awareness. Most communication failures aren't about WHAT is said — they're about missing clarity and missing confirmation."
+}

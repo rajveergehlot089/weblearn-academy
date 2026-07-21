@@ -1,0 +1,30 @@
+{
+  "topicId": "09-sleep-health",
+  "questions": [
+    {
+      "question": "I can't fall asleep because I keep thinking about code. What do I do?",
+      "answer": "This is extremely common for developers. Your brain hasn't transitioned from 'problem-solving mode' to 'rest mode.' Solutions: (1) Keep a notepad by your bed — write down the problem and your next step, then let it go. (2) Do a 5-minute body scan or 4-7-8 breathing before bed. (3) Stop coding at least 1 hour before bed (your brain needs transition time). (4) If you're still awake after 20 minutes, get up and do something boring (read a paper book) until you're drowsy. Never lie in bed frustrated — it trains your brain to associate bed with anxiety.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How much sleep do I actually need as a developer?",
+      "answer": "Most adults need 7-9 hours, but the specific amount varies. The best test: for 2 weeks, go to bed when you're tired and wake up without an alarm. Track how much sleep you naturally get — that's your biological need. Most developers who think they 'function fine on 6 hours' are actually chronically impaired and don't realize it (like a drunk person thinking they drive fine). Performance peaks at 7-8 hours for most people. Below 6 hours, cognitive impairment is measurable and significant.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Is sitting all day really that bad for me?",
+      "answer": "Yes. Studies show that sitting for more than 8 hours daily increases your risk of cardiovascular disease, diabetes, and premature death by 40% — comparable to smoking. For developers specifically: prolonged sitting causes lower back pain, tight hip flexors, RSI (repetitive strain injury), and eye strain. The fix: stand-up desk (alternate 30 min sitting/standing), hourly movement reminders (stand and stretch for 2 minutes), and daily exercise. The 20-20-20 rule for eyes: every 20 minutes, look at something 20 feet away for 20 seconds.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's the best exercise for someone who sits all day?",
+      "answer": "The best exercise is one you'll actually do. But for developers specifically: (1) Walking — 30 minutes morning walk improves focus for 2-3 hours, costs nothing, requires no equipment. (2) Yoga — counteracts sitting posture, reduces back pain, improves flexibility. (3) Swimming — full-body, low-impact, great for RSI recovery. (4) Strength training — builds muscle that supports better posture. Start with walking (easiest to maintain), then add 1-2 other activities. Morning exercise is ideal because it improves focus during your peak work hours.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I eat healthier when I'm busy coding?",
+      "answer": "Start with the highest-impact changes: (1) Eat protein at breakfast (eggs, yogurt, nuts) instead of cereal or pastries — it sustains focus. (2) Keep a water bottle on your desk and drink throughout the day — dehydration reduces cognition by 25%. (3) Prep snacks on Sunday (cut vegetables, portion nuts, hard-boil eggs) so healthy options are easy during the week. (4) Avoid sugar crashes — skip the candy, choose complex carbs. (5) Caffeine cutoff at 2 PM (half-life is 5-6 hours, disrupts sleep). Meal prep doesn't have to be elaborate — even 30 minutes on Sunday makes a difference.",
+      "difficulty": "easy"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "topicId": "06-think-framework",
+  "questions": [
+    {
+      "question": "What is the THINK framework?",
+      "answer": "THINK is a pre-speech filter with five questions: Is it True? Is it Helpful? Is it Inspiring? Is it Necessary? Is it Kind? Before speaking (or writing), run your words through these five filters. If they pass at least 3 of 5, proceed. If not, reconsider your approach. It creates a crucial pause between emotional impulse and actual speech.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Do you need to pass ALL five filters before speaking?",
+      "answer": "No — the benchmark is 3 out of 5. Some situations require truth without inspiration (correcting a safety hazard). Some require kindness without necessity (comforting a grieving friend). The framework isn't a rigid gate — it's a guidance system. The minimum: your words should always be True and Kind. If they fail both of those, definitely reconsider.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you apply THINK in a heated disagreement?",
+      "answer": "In the heat of the moment, your brain wants to react. The THINK filter forces a pause. Quick application: (1) Take a breath. (2) Ask yourself: 'Is what I'm about to say True? Helpful? Necessary?' (3) If the answer is no to most, say: 'I need a moment to think about this.' (4) Once calmer, reframe using the filters. The pause itself is valuable — it signals you're being thoughtful, not reactive.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Can the THINK framework be used for written communication?",
+      "answer": "Absolutely — and it's especially useful for emails and social media. Before hitting send, ask: Is this True? Helpful? Inspiring? Necessary? Kind? Many email disasters (the angry reply-all, the regrettable tweet) happen because the sender didn't pause. The THINK filter is your pre-send checkpoint. If an email fails the filter, save it as a draft and revisit when calmer.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Isn't this just about being nice? Doesn't honesty sometimes require bluntness?",
+      "answer": "THINK isn't about being nice — it's about being effective. Bluntness without kindness often triggers defensiveness, which means the message isn't received. You can be honest AND kind: 'The report has three accuracy issues that need fixing' is both truthful and respectful. 'You messed up the report' is blunt but unkind — and less likely to produce a good result. The goal isn't to avoid hard truths; it's to deliver them in a way that actually creates change.",
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "topicId": "01-elevator-pitch",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What Is an Elevator Pitch?",
+      "body": "An elevator pitch is a 30-60 second verbal summary of who you are, what you do, and why it matters. It's called 'elevator' because it should be short enough to deliver during a ride in an elevator. The goal isn't to explain everything — it's to spark curiosity and start a conversation."
+    },
+    {
+      "heading": "The 3-Part Formula",
+      "body": "A strong pitch follows three beats:\n\n1. **Who you are**: Your name and current role or focus area. Keep it specific — 'I'm a full-stack developer specializing in React and Node' beats 'I work in tech.'\n\n2. **What you do / have done**: One concrete accomplishment or capability. Use numbers when possible — 'I built an internal dashboard that cut weekly reporting time from 4 hours to 20 minutes.'\n\n3. **Why it matters / what you're looking for**: Connect your work to the listener's world or state your goal — 'I'm now looking for a role where I can lead a frontend team' or 'I'd love to learn how your company approaches that problem.'"
+    },
+    {
+      "heading": "Common Mistakes to Avoid",
+      "body": "- **Being too vague**: 'I'm passionate about technology' tells the listener nothing useful.\n- **Reciting your resume**: Nobody wants a 2-minute life story in a conversation.\n- **Sounding rehearsed**: Practice until it's natural, but don't memorize word-for-word — it'll sound robotic.\n- **Forgetting the ask**: Always end with a hook — a question, a request, or a connection point."
+    },
+    {
+      "heading": "When to Use It",
+      "body": "Use your pitch at networking events, job fairs, conferences, meetups, in LinkedIn messages, during interviews when asked 'tell me about yourself,' and even in casual introductions when someone asks 'what do you do?'"
+    }
+  ],
+  "jargon": [
+    { "term": "Elevator Pitch", "definition": "A brief 30-60 second summary of who you are professionally, designed to spark interest and start a conversation." },
+    { "term": "Unique Value Proposition (UVP)", "definition": "The specific combination of skills and experience that makes you different from other candidates or professionals in your field." },
+    { "term": "Hook", "definition": "An attention-grabbing statement or question at the end of your pitch that encourages the other person to continue the conversation." }
+  ],
+  "summary": "An elevator pitch is a 30-60 second summary using three beats: who you are, what you've done (with specifics), and why it matters or what you're seeking. Practice it until natural, avoid vague language, and always end with a hook to keep the conversation going."
+}

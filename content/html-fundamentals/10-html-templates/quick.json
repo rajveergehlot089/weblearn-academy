@@ -1,0 +1,34 @@
+{
+  "topicId": "10-html-templates",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "HTML Templates",
+      "body": "The template element holds HTML content that isn't rendered when the page loads. It's used as a JavaScript template for creating dynamic content."
+    },
+    {
+      "heading": "Meta Tags",
+      "body": "Meta tags provide metadata about the HTML document. They go in the head element and control:\n• Character encoding\n• Viewport settings for responsive design\n• Page description for SEO\n• Social media sharing\n• Theme color"
+    },
+    {
+      "heading": "Open Graph & Social Media",
+      "body": "Open Graph meta tags control how your page appears when shared on social media:\n• og:title - Page title\n• og:description - Page description\n• og:image - Preview image\n• og:url - Page URL"
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Template",
+      "definition": "An HTML element that holds content not rendered until activated by JavaScript"
+    },
+    {
+      "term": "Meta Tag",
+      "definition": "HTML tags that provide metadata about the document"
+    },
+    {
+      "term": "Open Graph",
+      "definition": "Protocol for controlling how content appears on social media platforms"
+    }
+  ],
+  "summary": "HTML templates hold dormant content for JavaScript. Meta tags control character encoding, viewport, SEO, and social media sharing."
+}

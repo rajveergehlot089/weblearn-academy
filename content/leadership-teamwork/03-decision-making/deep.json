@@ -1,0 +1,28 @@
+{
+  "topicId": "03-decision-making",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The RAPID Decision Framework",
+      "body": "Bain & Company's RAPID framework clarifies who does what in any decision:\n\n• **R — Recommend**: Who gathers data and proposes options? Usually one person or small group.\n• **A — Agree**: Who must agree before proceeding? Legal, compliance, finance — the 'veto' roles.\n• **P — Perform**: Who executes the decision? The teams who will live with the outcome.\n• **I — Input**: Who provides expertise but doesn't decide? Subject matter experts, advisors.\n• **D — Decide**: Who makes the final call? One person. Not a committee. One name.\n\nThe #1 failure mode: unclear D. When no one owns the final decision, things stall or get decided by default."
+    },
+    {
+      "heading": "Cognitive Biases That Derail Decisions",
+      "body": "Every leader is subject to systematic thinking errors:\n\n1. **Confirmation Bias**: Seeking information that supports your existing belief. Counter: actively seek disconfirming evidence. Assign someone to argue the opposing view.\n\n2. **Anchoring**: The first number you hear shapes your judgment. Counter: start with your own estimate before hearing others.\n\n3. **Sunk Cost Fallacy**: Continuing a bad project because you've already invested. Counter: ask 'if we were starting from scratch, would we invest in this today?'\n\n4. **Groupthink**: Everyone agrees too quickly. Counter: use anonymous voting, rotate devil's advocate, or bring in external perspectives.\n\n5. **Overconfidence**: Believing your odds of success are higher than they are. Counter: use pre-mortems — imagine the decision failed and work backward to identify risks."
+    },
+    {
+      "heading": "The Six Thinking Hats (Edward de Bono)",
+      "body": "A structured approach to examine decisions from multiple angles:\n\n• **White Hat**: Facts and data. What do we know objectively?\n• **Red Hat**: Emotions and intuition. What does our gut say?\n• **Black Hat**: Risks and problems. What could go wrong?\n• **Yellow Hat**: Benefits and optimism. What's the upside?\n• **Green Hat**: Creativity and alternatives. Are there options we haven't considered?\n• **Blue Hat**: Process and next steps. How do we move forward?\n\nUse this in meetings by asking everyone to 'put on' the same hat at the same time. It prevents the loudest voice from dominating and ensures all perspectives are heard."
+    },
+    {
+      "heading": "Decision-Making Under Pressure",
+      "body": "When time is limited, simplify:\n\n1. **Identify the critical constraint**: What's the ONE thing that matters most right now?\n2. **Set a deadline**: Even 5 minutes of focused thinking is better than 30 minutes of scattered thinking.\n3. **Use the minimum viable decision**: What's the smallest decision you can make now that keeps options open?\n4. **Communicate the 'why'**: People accept imperfect decisions faster when they understand the reasoning.\n5. **Schedule a review**: Make it explicit that you'll revisit the decision in 24 hours / 1 week / after the first data point."
+    },
+    {
+      "heading": "Building a Decision Culture",
+      "body": "Great organizations don't just make good decisions — they create systems for consistent decision quality:\n\n• **Decision journals**: Record key decisions, expected outcomes, and reasoning. Review quarterly to calibrate judgment.\n• **Decision reviews**: After significant decisions, hold a blameless post-mortem. What did we get right? What did we miss?\n• **Clear ownership**: Every decision has a named owner. No shared ownership.\n• **Escalation norms**: Define when and how decisions escalate. Don't let everything reach the top.\n• **Speed metrics**: Track how long decisions take. If average decision time exceeds 48 hours for operational decisions, you have a bottleneck."
+    }
+  ],
+  "summary": "Effective decision-making requires clarity on who decides (RAPID), awareness of cognitive biases, structured thinking (Six Thinking Hats), and systems for continuous improvement through decision journals and reviews."
+}

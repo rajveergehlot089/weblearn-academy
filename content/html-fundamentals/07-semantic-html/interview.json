@@ -1,0 +1,57 @@
+{
+  "topicId": "07-semantic-html",
+  "type": "interview",
+  "estimatedMinutes": 10,
+  "questions": [
+    {
+      "question": "What is the difference between article and section elements?",
+      "answer": "Article is for self-contained content that makes sense independently (blog post, news story, forum post). Section is for thematic groupings of content (chapters, tabbed content, feature sections). An article might contain multiple sections, and a section might contain multiple articles.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why should you use semantic HTML instead of divs?",
+      "answer": "Semantic HTML provides: 1) Accessibility - screen readers can navigate structure. 2) SEO - search engines understand content. 3) Maintainability - developers understand code faster. 4) Standards compliance - follows web standards. 5) Better semantics for CSS and JavaScript targeting.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "When should you use the nav element?",
+      "answer": "Use nav for major navigation blocks - primary menu, footer navigation, breadcrumbs. Not every list of links needs nav. Use aria-label when you have multiple nav elements to distinguish them for screen readers.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What are landmark regions in HTML?",
+      "answer": "Landmark regions are semantic elements that define page sections for assistive technologies: header (banner), nav (navigation), main (main content), aside (complementary), footer (contentinfo). Screen readers can jump between landmarks. Use role attributes for older browsers.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does semantic HTML improve SEO?",
+      "answer": "Search engines use semantic elements to understand content hierarchy and importance: h1-h6 for headings, article for content, nav for navigation, main for primary content. This helps search engines index pages accurately and can improve rankings for relevant queries.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the purpose of the time element?",
+      "answer": "The time element represents dates and times in machine-readable format using the datetime attribute. It helps screen readers announce dates properly, enables search engines to understand content freshness, and allows browsers to display localized date formats.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "When would you use the aside element?",
+      "answer": "Use aside for content tangentially related to the main content: sidebars, pull quotes, advertising, related links, author bio. It should make sense independently but be related to the surrounding content. Use role=\"complementary\" for older browser support.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you create a skip navigation link?",
+      "answer": "Add a link at the top of the page that jumps to the main content: <a href=\"#main-content\" class=\"skip-link\">Skip to main content</a>. Style it to be visually hidden until focused: .skip-link { position: absolute; left: -9999px; } .skip-link:focus { left: 0; }. This helps keyboard users bypass repetitive navigation.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the difference between div and section?",
+      "answer": "Div is a generic container with no semantic meaning - use only when no other element fits. Section is for thematic groupings of content that should have a heading. If you're grouping content by theme, use section. If you need a generic wrapper for styling, use div.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you handle multiple navigation landmarks?",
+      "answer": "Use multiple nav elements with aria-label attributes to distinguish them: <nav aria-label=\"Main\"> for primary navigation, <nav aria-label=\"Footer\"> for footer links, <nav aria-label=\"Breadcrumb\"> for breadcrumbs. Screen readers can list landmarks and announce their labels.",
+      "difficulty": "medium"
+    }
+  ]
+}

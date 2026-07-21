@@ -1,0 +1,31 @@
+{
+  "topicId": "05-upper-row",
+  "exercises": [
+    {
+      "title": "Basic Practice",
+      "description": "Type these words: ha, ta, ka, ra, tha, hat, tak, kar, thak",
+      "hints": [
+        "Keep eyes on screen",
+        "Use proper finger placement"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "ha, ta, ka, ra, tha, hat, tak, kar, thak"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Sentence Practice",
+      "description": "Type each sentence without looking at the keyboard.",
+      "hints": [
+        "Focus on accuracy",
+        "Use all fingers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "hum roj kaam karte hain\ntum kya karte ho"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

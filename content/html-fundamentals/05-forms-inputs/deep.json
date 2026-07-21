@@ -1,0 +1,75 @@
+{
+  "topicId": "05-forms-inputs",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Form Element Basics",
+      "body": "The form element wraps all form controls. Key attributes include action (where to send data), method (GET or POST), and enctype (encoding type for file uploads).",
+      "code": {
+        "language": "html",
+        "snippet": "<form action=\"/submit\" method=\"POST\">\n    <!-- Form controls go here -->\n</form>\n\n<!-- GET method (data in URL) -->\n<form action=\"/search\" method=\"GET\">\n    <input type=\"text\" name=\"q\">\n    <button type=\"submit\">Search</button>\n</form>\n\n<!-- POST method (data in body) -->\n<form action=\"/register\" method=\"POST\">\n    <input type=\"email\" name=\"email\" required>\n    <button type=\"submit\">Register</button>\n</form>",
+        "explanation": "GET appends data to the URL (use for search forms). POST sends data in the request body (use for sensitive or large data). Always use POST for form submissions that modify data."
+      }
+    },
+    {
+      "heading": "Text Input Types",
+      "body": "HTML5 provides many specialized input types that provide built-in validation and appropriate mobile keyboards.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Basic text input -->\n<input type=\"text\" name=\"username\" placeholder=\"Enter username\" required>\n\n<!-- Email with validation -->\n<input type=\"email\" name=\"email\" placeholder=\"you@example.com\" required>\n\n<!-- Password (masked) -->\n<input type=\"password\" name=\"password\" minlength=\"8\" required>\n\n<!-- Number with constraints -->\n<input type=\"number\" name=\"age\" min=\"18\" max=\"120\" step=\"1\">\n\n<!-- Date picker -->\n<input type=\"date\" name=\"birthday\" min=\"1900-01-01\" max=\"2008-12-31\">\n\n<!-- URL -->\n<input type=\"url\" name=\"website\" placeholder=\"https://example.com\">\n\n<!-- Phone -->\n<input type=\"tel\" name=\"phone\" pattern=\"[0-9]{3}-[0-9]{3}-[0-9]{4}\">\n\n<!-- Search -->\n<input type=\"search\" name=\"query\" placeholder=\"Search...\">\n\n<!-- Color picker -->\n<input type=\"color\" name=\"favcolor\" value=\"#ff0000\">",
+        "explanation": "Each input type provides appropriate validation and mobile keyboard. Use the right type for better user experience and built-in validation."
+      }
+    },
+    {
+      "heading": "Selection Controls",
+      "body": "For selecting options, use checkboxes (multiple selections) and radio buttons (single selection). Group radios with the same name attribute.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Checkboxes (multiple selection) -->\n<fieldset>\n    <legend>Interests</legend>\n    <label>\n        <input type=\"checkbox\" name=\"interests\" value=\"html\"> HTML\n    </label>\n    <label>\n        <input type=\"checkbox\" name=\"interests\" value=\"css\"> CSS\n    </label>\n    <label>\n        <input type=\"checkbox\" name=\"interests\" value=\"js\" checked> JavaScript\n    </label>\n</fieldset>\n\n<!-- Radio buttons (single selection) -->\n<fieldset>\n    <legend>Experience Level</legend>\n    <label>\n        <input type=\"radio\" name=\"level\" value=\"beginner\" checked> Beginner\n    </label>\n    <label>\n        <input type=\"radio\" name=\"level\" value=\"intermediate\"> Intermediate\n    </label>\n    <label>\n        <input type=\"radio\" name=\"level\" value=\"advanced\"> Advanced\n    </label>\n</fieldset>",
+        "explanation": "Checkboxes allow multiple selections. Radio buttons with the same name allow only one selection. Use fieldset and legend to group related controls."
+      }
+    },
+    {
+      "heading": "Dropdown Menus and Text Areas",
+      "body": "Use select/option for dropdown menus and textarea for multi-line text input.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Basic dropdown -->\n<label for=\"country\">Country:</label>\n<select id=\"country\" name=\"country\" required>\n    <option value=\"\" disabled selected>Select a country</option>\n    <option value=\"us\">United States</option>\n    <option value=\"uk\">United Kingdom</option>\n    <option value=\"ca\">Canada</option>\n    <option value=\"au\">Australia</option>\n</select>\n\n<!-- Multiple selection -->\n<label for=\"skills\">Skills:</label>\n<select id=\"skills\" name=\"skills\" multiple size=\"4\">\n    <option value=\"html\">HTML</option>\n    <option value=\"css\">CSS</option>\n    <option value=\"js\">JavaScript</option>\n    <option value=\"python\">Python</option>\n</select>\n\n<!-- Textarea -->\n<label for=\"bio\">Bio:</label>\n<textarea id=\"bio\" name=\"bio\" rows=\"4\" cols=\"50\" placeholder=\"Tell us about yourself...\" maxlength=\"500\"></textarea>",
+        "explanation": "Select creates dropdowns. Add multiple for multi-select. Textarea allows multi-line input with rows/cols for initial size."
+      }
+    },
+    {
+      "heading": "Labels and Accessibility",
+      "body": "Always associate labels with form controls using the for/id pattern. This improves accessibility and makes labels clickable.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Label with for attribute -->\n<label for=\"email\">Email:</label>\n<input type=\"email\" id=\"email\" name=\"email\" required>\n\n<!-- Wrapped label (implicit association) -->\n<label>\n    <input type=\"checkbox\" name=\"agree\" required>\n    I agree to the terms and conditions\n</label>\n\n<!-- Grouping with fieldset -->\n<fieldset>\n    <legend>Personal Information</legend>\n    \n    <div>\n        <label for=\"firstname\">First Name:</label>\n        <input type=\"text\" id=\"firstname\" name=\"firstname\" required>\n    </div>\n    \n    <div>\n        <label for=\"lastname\">Last Name:</label>\n        <input type=\"text\" id=\"lastname\" name=\"lastname\" required>\n    </div>\n</fieldset>",
+        "explanation": "Labels improve accessibility by associating text with controls. Screen readers announce labels when controls receive focus. Clicking a label focuses its associated control."
+      }
+    },
+    {
+      "heading": "HTML5 Validation",
+      "body": "HTML5 provides built-in form validation with attributes like required, pattern, min, max, minlength, and maxlength.",
+      "code": {
+        "language": "html",
+        "snippet": "<form action=\"/register\" method=\"POST\">\n    <!-- Required field -->\n    <input type=\"text\" name=\"username\" required minlength=\"3\" maxlength=\"20\">\n    \n    <!-- Email validation -->\n    <input type=\"email\" name=\"email\" required>\n    \n    <!-- Pattern matching (regex) -->\n    <input type=\"text\" name=\"phone\" pattern=\"[0-9]{3}-[0-9]{3}-[0-9]{4}\" placeholder=\"123-456-7890\">\n    \n    <!-- Number constraints -->\n    <input type=\"number\" name=\"age\" min=\"18\" max=\"120\">\n    \n    <!-- Custom validation message -->\n    <input type=\"text\" name=\"code\" required oninvalid=\"this.setCustomValidity('Please enter a valid code')\">\n    \n    <button type=\"submit\">Submit</button>\n</form>",
+        "explanation": "Browser validation prevents invalid submissions. Use required for mandatory fields, pattern for regex validation, and min/max for number ranges. Style invalid inputs with CSS :invalid selector."
+      }
+    },
+    {
+      "heading": "Buttons and Actions",
+      "body": "Form buttons trigger different actions. Use type attribute to specify button behavior.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Submit button (sends form) -->\n<button type=\"submit\">Submit</button>\n\n<!-- Reset button (clears form) -->\n<button type=\"reset\">Reset</button>\n\n<!-- Button (no default action) -->\n<button type=\"button\" onclick=\"alert('Clicked!')\">Click Me</button>\n\n<!-- Input-based buttons -->\n<input type=\"submit\" value=\"Submit\">\n<input type=\"reset\" value=\"Reset\">\n\n<!-- Image button -->\n<input type=\"image\" src=\"submit.png\" alt=\"Submit\">\n\n<!-- Disabled button -->\n<button type=\"submit\" disabled>Submit</button>",
+        "explanation": "type=\"submit\" sends the form. type=\"reset\" clears all fields. type=\"button\" has no default behavior. Always specify type to avoid unexpected behavior."
+      }
+    },
+    {
+      "heading": "Practice Task",
+      "body": "Create a complete registration form with:\n• Proper form element with action and method\n• Text inputs for name and email\n• Password input with validation\n• Date input for birthday\n• Radio buttons for experience level\n• Checkbox for terms agreement\n• Select dropdown for country\n• Textarea for bio\n• Submit and reset buttons\n• Proper labels and fieldsets"
+    }
+  ],
+  "summary": "Master HTML forms with input types (text, email, password, number, date, checkbox, radio), selection controls (select, textarea), labels for accessibility, and HTML5 validation. Always use proper labels and input types."
+}

@@ -1,0 +1,30 @@
+{
+  "topicId": "02-personal-branding",
+  "questions": [
+    {
+      "question": "I'm a junior developer with no notable achievements. How do I build a personal brand?",
+      "answer": "Start by sharing what you're learning, not what you've mastered. Write 'today I learned' posts, share helpful resources with context, document your learning journey on a blog or GitHub, and contribute to beginner-friendly open-source projects (look for 'good first issue' labels). Consistency matters more than expertise at this stage — showing up regularly builds credibility over time.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How often should I post or share content?",
+      "answer": "Aim for 1-2 posts per week. Consistency matters more than frequency. It's better to post one thoughtful insight weekly than to spam daily low-effort content. Batch-create content when you're feeling inspired — write 3-4 posts in one sitting and schedule them throughout the week.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Should I have a personal website or blog?",
+      "answer": "It's highly recommended. A personal website is the one platform you fully control — no algorithm changes, no account suspensions. At minimum, include: a short bio, links to your best projects, a blog section (even with just 5 posts), and your contact info. Use a simple static site (GitHub Pages, Netlify) — it doesn't need to be fancy.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What if I make a mistake publicly — like posting incorrect technical information?",
+      "answer": "Own it immediately and visibly. Edit the post to note the correction, or post a follow-up with what you learned. People respect honesty and humility far more than perfection. 'I was wrong about X, here's what I learned' is one of the most trust-building types of content you can share.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I brand myself if I want to switch careers or industries?",
+      "answer": "Focus on transferable skills and bridge them to your new target. For example, moving from marketing to data engineering: 'Former marketing analyst turned data engineer — I bring deep understanding of business metrics to every pipeline I build.' Your previous experience becomes a differentiator, not a liability. Create content that demonstrates your new skills while drawing on your unique perspective.",
+      "difficulty": "hard"
+    }
+  ]
+}

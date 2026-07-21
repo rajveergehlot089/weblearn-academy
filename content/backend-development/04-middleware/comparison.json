@@ -1,0 +1,43 @@
+{
+  "topicId": "04-middleware",
+  "type": "comparison",
+  "tables": [
+    {
+      "title": "Types of Express Middleware",
+      "headers": ["Type", "Definition", "Example", "Use Case"],
+      "rows": [
+        ["Application-level", "Attached to the app instance using app.use()", "app.use(express.json())", "Global functionality like parsing, logging"],
+        ["Router-level", "Attached to a router instance using router.use()", "router.use(authMiddleware)", "Route-specific functionality"],
+        ["Built-in", "Shipped with Express", "express.json(), express.static()", "Common tasks like parsing, serving files"],
+        ["Third-party", "Installed via npm", "cors(), helmet(), morgan()", "Security, logging, compression"],
+        ["Error-handling", "4-parameter function (err, req, res, next)", "app.use((err, req, res, next) => {})", "Catch and handle errors"]
+      ]
+    },
+    {
+      "title": "Popular Express Middleware Packages",
+      "headers": ["Package", "Purpose", "Weekly Downloads", "Key Features"],
+      "rows": [
+        ["cors", "Enable CORS", "25M+", "Simple configuration, supports preflight"],
+        ["helmet", "Set security headers", "12M+", "Protects against common vulnerabilities"],
+        ["morgan", "HTTP request logging", "8M+", "Various log formats, stream support"],
+        ["express-rate-limit", "Rate limiting", "5M+", "In-memory or Redis store, configurable windows"],
+        ["multer", "File uploads", "6M+", "Multiple file types, storage options"],
+        ["express-validator", "Input validation", "4M+", "Chainable validators, sanitization"],
+        ["compression", "Gzip compression", "3M+", "Automatic compression, configurable"],
+        ["passport", "Authentication", "2M+", "Multiple strategies (local, JWT, OAuth)"]
+      ]
+    },
+    {
+      "title": "Middleware Execution Order Rules",
+      "headers": ["Rule", "Description", "Example"],
+      "rows": [
+        ["Order matters", "Middleware runs in the order defined", "Define logging before routes"],
+        ["next() required", "Must call next() to continue chain", "Omitting next() causes request to hang"],
+        ["Error middleware last", "Error handlers must come after all routes", "app.use((err, req, res, next) => {})"],
+        ["Short-circuit", "Res.send() or res.json() ends the cycle", "Use for authentication failures"],
+        ["Path-specific", "app.use('/path', middleware) only runs for that path", "app.use('/api', apiMiddleware)"]
+      ]
+    }
+  ],
+  "summary": "Express middleware comes in various types: application-level, router-level, built-in, third-party, and error-handling. Choose middleware based on your needs and understand execution order for predictable behavior."
+}

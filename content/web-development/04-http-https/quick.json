@@ -1,0 +1,38 @@
+{
+  "topicId": "04-http-https",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is HTTP?",
+      "body": "HTTP (HyperText Transfer Protocol) is the language computers use to talk on the internet. When you visit a website, your browser sends a REQUEST to a server, and the server sends back a RESPONSE. Think of it like ordering food: you tell the waiter what you want (request), and they bring it to you (response)."
+    },
+    {
+      "heading": "Client vs Server",
+      "body": "The CLIENT is your browser (Chrome, Firefox). It makes requests. The SERVER is a powerful computer somewhere that stores websites and sends back responses. Every website you visit is stored on a server."
+    },
+    {
+      "heading": "HTTPS = HTTP + Security",
+      "body": "HTTPS is the same as HTTP but encrypted. The 'S' stands for Secure. When you see the padlock icon in your browser, that means HTTPS — your data is encrypted so hackers can't read it."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "HTTP",
+      "definition": "HyperText Transfer Protocol — the set of rules for how browsers and servers exchange data."
+    },
+    {
+      "term": "Request",
+      "definition": "A message from the client (browser) asking the server for something — a page, an image, data."
+    },
+    {
+      "term": "Response",
+      "definition": "The server's reply to a request — it includes a status code, headers, and the data you asked for."
+    },
+    {
+      "term": "Status Code",
+      "definition": "A number that tells you what happened: 200 = success, 404 = not found, 500 = server error."
+    }
+  ],
+  "summary": "HTTP is how browsers and servers communicate via requests and responses. HTTPS adds encryption for security. Status codes (200, 404, 500) tell you the outcome."
+}

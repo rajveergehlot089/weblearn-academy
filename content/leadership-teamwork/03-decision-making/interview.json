@@ -1,0 +1,30 @@
+{
+  "topicId": "03-decision-making",
+  "questions": [
+    {
+      "question": "How do you make decisions with incomplete information?",
+      "answer": "I apply the 70% rule: if I have 70% of the information I wish I had, I make the decision. I assess whether it's reversible or irreversible. Reversible decisions get made fast — I can course-correct later. Irreversible decisions get more analysis. I also identify what information would change my decision and focus on getting only that. Perfect information is a myth; speed and learning matter more than perfection.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Describe a time you made a bad decision. What did you learn?",
+      "answer": "I once approved a project expansion without validating the market assumptions. The team was excited, the numbers looked good on paper, and I didn't push hard enough on the risks. We wasted three months. The lesson: I now require a pre-mortem for any decision above a certain impact threshold. I also mandate that someone on the team argues the opposing case before we commit. The goal isn't to slow down — it's to think adversarially before acting.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "How do you balance speed with thoroughness in decisions?",
+      "answer": "I use a decision matrix: speed matters more for operational decisions and reversible choices, while thoroughness matters more for strategic and irreversible ones. I also set explicit deadlines — 'we will decide by Thursday at 5pm' — to prevent endless analysis. For team decisions, I allocate thinking time upfront but enforce a decision point. Analysis beyond a certain point produces diminishing returns and erodes momentum.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's your approach to group decision-making?",
+      "answer": "First, I clarify who recommends, who decides, and who needs to be informed — using the RAPID framework. Then I ensure diverse perspectives by inviting dissent and using structured techniques like Six Thinking Hats. I prevent groupthink by having someone argue the opposite case. I set time limits for discussion. And I make the final decision clear — one person owns it, even after hearing from the group. Consensus is valuable but shouldn't become paralysis.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you handle decisions you regret?",
+      "answer": "I separate regret from learning. Every decision was the best I could make with the information I had at the time. I journal what I learned, update my decision-making framework, and move on. Rumination wastes energy. Instead, I ask: 'What signal did I miss?' and 'What process change prevents this in the future?' Regret is useful only if it improves your next decision."
+      , "difficulty": "easy"
+    }
+  ]
+}

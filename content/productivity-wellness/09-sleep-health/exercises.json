@@ -1,0 +1,47 @@
+{
+  "topicId": "09-sleep-health",
+  "exercises": [
+    {
+      "title": "Sleep Quality Audit",
+      "description": "Track your sleep for 1 week using a simple log: bedtime, wake time, sleep quality (1-10), and factors that affected sleep (caffeine, screens, stress). Then implement 3 sleep hygiene changes and track for another week. Compare the results.",
+      "hints": [
+        "Use a sleep tracker app or simple notebook by your bed",
+        "Be honest about factors — did you check your phone at 1 AM?",
+        "Implement changes gradually (don't overhaul everything at once)"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "SLEEP TRACKING LOG:\n\nWEEK 1 (BEFORE CHANGES):\n| Day | Bedtime | Wake  | Quality | Factors               |\n|-----|---------|-------|---------|-----------------------|\n| Mon | 11:30 PM| 7:00  | 5/10    | Phone in bed, coffee 3 PM |\n| Tue | 12:00 AM| 7:00  | 4/10    | Late coding, anxiety   |\n| Wed | 11:00 PM| 6:45  | 6/10    | Better, still phone    |\n| Thu | 11:45 PM| 7:00  | 5/10    | Coffee 4 PM, screens   |\n| Fri | 12:15 AM| 7:30  | 4/10    | Late night, alcohol    |\n| Sat | 1:00 AM | 9:00  | 5/10    | Weekend, inconsistent  |\n| Sun | 10:30 PM| 6:30  | 7/10    | Early bed, better      |\n\nAverage: 5.1/10\n\nCHANGES IMPLEMENTED:\n1. No caffeine after 2 PM\n2. Phone in drawer after 9:30 PM\n3. Consistent 10:30 PM bedtime\n\nWEEK 2 (AFTER CHANGES):\n| Day | Bedtime | Wake  | Quality | Factors               |\n|-----|---------|-------|---------|-----------------------|\n| Mon | 10:30 PM| 6:30  | 7/10    | Followed routine       |\n| Tue | 10:30 PM| 6:30  | 8/10    | Felt great             |\n| Wed | 10:45 PM| 6:30  | 7/10    | Slight deviation       |\n| Thu | 10:30 PM| 6:30  | 8/10    | Deep sleep noted       |\n| Fri | 10:30 PM| 6:30  | 8/10    | Best night yet         |\n| Sat | 11:00 PM| 7:00  | 7/10    | Weekend, slightly late |\n| Sun | 10:30 PM| 6:30  | 8/10    | Ready for week         |\n\nAverage: 7.6/10 (+49% improvement)\n\nKEY FINDINGS:\n• Caffeine cutoff at 2 PM was the biggest single improvement\n• Phone in drawer removed the 'one last check' habit\n• Consistent bedtime regulated circadian rhythm\n• Sleep debt from Week 1 took ~3 days to recover"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Workspace Ergonomics Setup",
+      "description": "Audit your current workspace against the ergonomics guide. Take a photo, identify the top 3 issues, and fix them. Common fixes: raise monitor to eye level (use books if needed), adjust chair height, position keyboard so elbows are at 90 degrees. Set an hourly reminder to check your posture.",
+      "hints": [
+        "Take a photo from the side — it reveals posture issues you don't feel",
+        "The monitor height is the most common issue — top of screen should be at eye level",
+        "Use the 20-20-20 rule for eye strain: every 20 min, look 20 feet away for 20 sec"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "ERGONOMICS AUDIT RESULTS:\n\nBEFORE FIXES (from photo analysis):\n❌ Monitor too low (looking down — neck strain)\n❌ Chair too high (feet dangling — back pain)\n❌ Keyboard too far forward (reaching — shoulder tension)\n✓ Mouse position: OK\n✓ Room lighting: OK\n\nFIXES IMPLEMENTED:\n1. Monitor: Raised 4 inches using monitor stand ($25)\n   → Eye level now, neck angle improved\n2. Chair: Lowered seat, added footrest ($15)\n   → Feet flat, back supported\n3. Keyboard: Pulled closer, elbows at 90 degrees\n   → Shoulders relaxed, wrists straight\n\nHOURLY POSTURE REMINDER (phone alarm):\n□ Shoulders relaxed? (drop them away from ears)\n□ Back against chair? (don't lean forward)\n□ Feet flat on floor? (or footrest)\n□ Eyes level with screen? (not looking up/down)\n□ Wrists straight on keyboard? (not bent)\n\nRESULTS (after 1 week):\n• Neck pain: Reduced from daily to 0/week\n• Shoulder tension: Reduced significantly\n• Eye strain: Improved (20-20-20 rule helped)\n• Lower back pain: Reduced from 3/week to 1/week\n• Overall comfort: Much improved"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Build a Morning Movement Routine",
+      "description": "Design a 20-minute morning exercise routine that fits before work. Include: 5 minutes of dynamic stretching, 10 minutes of moderate exercise (walking, jogging, yoga), and 5 minutes of cooldown. Track completion and energy levels for 2 weeks.",
+      "hints": [
+        "Morning exercise is ideal — it improves focus during peak work hours",
+        "Start with walking if you're not exercising regularly — it's sustainable",
+        "Prep workout clothes the night before (reduce activation energy)"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "MORNING MOVEMENT ROUTINE:\n\nPREP (night before):\n• Lay out workout clothes by bed\n• Set alarm 20 min earlier than usual\n• Fill water bottle\n\nROUTINE (20 minutes):\n5 MIN - DYNAMIC STRETCHING:\n• Neck rolls (30 sec each direction)\n• Arm circles (30 sec forward, 30 sec backward)\n• Hip circles (30 sec each direction)\n• Leg swings (30 sec each leg)\n• Cat-cow stretches (1 min)\n\n10 MIN - MODERATE EXERCISE (choose one):\n• Option A: Brisk walk around neighborhood\n• Option B: Yoga flow (sun salutations)\n• Option C: Bodyweight circuit (push-ups, squats, planks)\n• Option D: Jump rope or dancing\n\n5 MIN - COOLDOWN:\n• Deep breathing (1 min)\n• Hamstring stretch (1 min)\n• Shoulder stretch (1 min)\n• Hip flexor stretch (1 min)\n• Final deep breath (1 min)\n\nTRACKING (2 weeks):\n| Week | Completed | Energy at 10 AM | Focus (1-10) | Notes        |\n|------|-----------|-----------------|-------------|-------------|\n| 1    | 4/5 days  | 7/10            | 7/10        | Hard to wake |\n| 1    | 3/5 days  | 6/10            | 6/10        | Missed 2 days|\n| 2    | 5/5 days  | 8/10            | 8/10        | Getting easier|\n| 2    | 4/5 days  | 7/10            | 8/10        | Consistent   |\n\nRESULTS:\n• Average completion: 80% (target: 80%+)\n• Energy improvement: +1.5 points at 10 AM\n• Focus improvement: +1.5 points\n• Sleep quality: Improved (exhaustion helps)\n• Conclusion: Morning exercise is worth the 20 minutes"
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

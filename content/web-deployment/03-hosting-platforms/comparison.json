@@ -1,0 +1,18 @@
+{
+  "topicId": "03-hosting-platforms",
+  "comparisons": [
+    {
+      "concept": "Hosting Platforms Overview",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Hosting Platforms Overview\nconst result = {\n  concept: \"Hosting Platforms Overview\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Hosting Platforms Overview\nresult = {\n    \"concept\": \"Hosting Platforms Overview\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Hosting Platforms Overview is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Hosting Platforms Overview is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

@@ -1,0 +1,47 @@
+{
+  "topicId": "01-time-management",
+  "comparisons": [
+    {
+      "concept": "Time Management Frameworks",
+      "items": [
+        {
+          "name": "Eisenhower Matrix",
+          "description": "Categorizes tasks by urgency and importance into 4 quadrants",
+          "best_for": "Decision-making about what to work on",
+          "complexity": "Simple 2x2 grid, easy to learn",
+          "example": "A production bug is urgent + important (do first). Learning Rust is important but not urgent (schedule time)."
+        },
+        {
+          "name": "Time Blocking",
+          "description": "Assigns specific time periods to specific tasks on your calendar",
+          "best_for": "Protecting deep work from interruptions",
+          "complexity": "Requires calendar discipline and flexibility",
+          "example": "Block 9-11 AM every day for deep coding. Batch all meetings into 2-4 PM."
+        },
+        {
+          "name": "Getting Things Done (GTD)",
+          "description": "Captures everything in an inbox, then organizes by context, energy, and time available",
+          "best_for": "People with many projects and contexts (freelancers, tech leads)",
+          "complexity": "High — requires inbox processing and weekly reviews",
+          "example": "Capture 'fix API bug' in inbox, then organize to 'Office/High Energy' list for later."
+        },
+        {
+          "name": "Pomodoro Technique",
+          "description": "Work in 25-minute focused intervals with 5-minute breaks",
+          "best_for": "Overcoming procrastination and maintaining focus",
+          "complexity": "Very simple — just a timer and discipline",
+          "example": "Set timer for 25 min, code without checking Slack. After 4 pomodoros, take a 20 min break."
+        },
+        {
+          "name": "Eat the Frog",
+          "description": "Do your hardest, most dreaded task first thing in the morning",
+          "best_for": "Breaking procrastination on difficult tasks",
+          "complexity": "Minimal — just requires morning discipline",
+          "example": "Write that documentation you've been avoiding before checking email."
+        }
+      ],
+      "insight": "No single framework works for everyone. Most productive developers combine 2-3 methods: Eisenhower Matrix for prioritization, Time Blocking for scheduling, and Pomodoro for execution. Experiment and keep what works for your brain."
+    }
+  ],
+  "keyInsight": "Time management isn't about doing more — it's about doing the right things. The Eisenhower Matrix helps you decide WHAT, time blocking decides WHEN, and Pomodoro helps you EXECUTE. Layer these together for a complete system."
+}

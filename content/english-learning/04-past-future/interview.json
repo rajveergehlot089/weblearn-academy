@@ -1,0 +1,20 @@
+{
+  "topicId": "04-past-future",
+  "questions": [
+    {
+      "question": "What's the difference between \"I will go\" and \"I'm going to go\"?",
+      "answer": "\"I will go\" suggests a spontaneous decision — you just decided. \"I'm going to go\" means you already planned it. If someone asks \"Want to go to the movies?\" you'd say \"Sure, I'll go!\" (just decided). If you bought tickets yesterday, you'd say \"I'm going to go to the movies tonight.\" (planned).",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why are irregular verbs irregular?",
+      "answer": "Irregular verbs come from Old English (Germanic roots) where verb conjugation followed different patterns. When Norman French influenced English after 1066, the language simplified but kept these old verb forms. They're the most frequently used verbs (be, have, go, do), so they survived while regular -ed took over for newer/less common verbs.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "When do we use \"used to\"?",
+      "answer": "\"Used to\" describes past habits or states that are no longer true. \"I used to play football\" (I don't play now). \"She used to live in Delhi\" (she doesn't live there anymore). Form: subject + used to + base verb. Negative: \"didn't use to\". Question: \"Did you use to?\" Note: \"used to\" is ONLY for past — never for present habits.",
+      "difficulty": "medium"
+    }
+  ]
+}

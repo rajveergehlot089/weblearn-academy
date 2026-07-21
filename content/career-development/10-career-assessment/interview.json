@@ -1,0 +1,30 @@
+{
+  "topicId": "10-career-assessment",
+  "questions": [
+    {
+      "question": "How often should I do a career assessment?",
+      "answer": "Quarterly (every 3 months) is ideal for most people. It's frequent enough to catch stagnation early but not so frequent that it feels like busywork. Each assessment takes about 30-60 minutes. Pair it with a broader annual review where you evaluate your overall career direction and goals. The quarterly cadence builds a habit of intentional growth.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What if my assessment reveals I'm weak in everything?",
+      "answer": "That's actually useful information — you now know exactly where to focus. Don't try to fix everything at once. Pick the 1-2 areas that would have the biggest impact on your career goals and focus there for the next quarter. Small, consistent improvements compound. Also, remember: you're probably better than you think. Be honest but not harsh — assessments are for growth, not self-criticism.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I stay motivated when progress is slow?",
+      "answer": "Track small wins. Career growth is often invisible day-to-day but visible over months. Keep a 'wins journal' — write down every accomplishment, every positive piece of feedback, every skill you've learned. Review it when you feel stuck. Also, compare yourself to where YOU were 6 months ago, not to where others are. Progress is personal.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What if my assessment says I'm strong everywhere but I still feel stuck?",
+      "answer": "Your assessment might be measuring the wrong things. Expand your criteria to include: visibility (are the right people aware of your work?), influence (are you shaping decisions?), and impact (are your contributions creating measurable results?). Feeling stuck despite high self-ratings often means you need more visibility or a bigger stage — not more skills.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "How do I use my assessment results in a performance review?",
+      "answer": "Bring your self-assessment to the review. It demonstrates self-awareness and proactive growth. Say: 'Here's how I've evaluated my own development this quarter. I've grown in X and identified Y as my focus area for next quarter. What support or opportunities can you offer to help me develop there?' This turns the performance review from a passive evaluation into a collaborative career planning conversation.",
+      "difficulty": "medium"
+    }
+  ]
+}

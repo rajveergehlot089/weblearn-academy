@@ -1,0 +1,30 @@
+{
+  "topicId": "07-difficult-conversations",
+  "questions": [
+    {
+      "question": "What makes a conversation 'difficult'?",
+      "answer": "A conversation becomes difficult when: (1) Emotions run high — anger, fear, hurt, or frustration are present. (2) Stakes are significant — the outcome matters to both parties. (3) Opinions differ sharply — there's genuine disagreement. (4) Identity is threatened — someone feels their competence or character is being questioned. The difficulty usually isn't the topic itself — it's the emotional charge. A facts-only approach fails because emotions are always part of the equation.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you use I-statements effectively?",
+      "answer": "The formula: 'I feel [emotion] when [specific, observable behavior] because [impact on you].' Key rules: (1) Use emotion words (frustrated, worried, concerned) not thoughts (I think you're wrong). (2) Describe specific behaviors, not character traits ('when the report is late' not 'when you're irresponsible'). (3) Explain the impact on you. (4) Don't follow with 'but' — it negates everything before it. (5) Practice until it feels natural.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What do you do when someone gets defensive during a difficult conversation?",
+      "answer": "Defensiveness means the person feels attacked. To de-escalate: (1) Acknowledge their feelings: 'I can see this is hard to hear.' (2) Lower your volume and slow down. (3) Find agreement: 'We both want this to work.' (4) Ask questions instead of making statements: 'What's your perspective on this?' (5) Take a break if needed: 'Let's take 10 minutes and come back.' Never push harder when someone is defensive — it only makes it worse.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you prepare for a difficult conversation?",
+      "answer": "Prepare with four questions: (1) What is the specific behavior I need to address? (Be factual, not judgmental.) (2) What impact does it have? (Focus on facts and feelings.) (3) What outcome do I want? (Be specific.) (4) What might they be thinking or feeling? (Their perspective matters too.) Write your answers down. This preparation keeps you focused on the issue instead of spiraling into blame during the actual conversation.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "When should you NOT have a difficult conversation in person?",
+      "answer": "Avoid in-person difficult conversations when: (1) You're too emotional to be constructive — wait until you can be calm. (2) The other person is intoxicated or in crisis. (3) The setting is public and could embarrass them. (4) You haven't prepared — winging it usually goes badly. (5) The issue is better handled in writing (for documentation purposes). In these cases, write your thoughts down first, cool off, and schedule a time to talk when both parties are calm and prepared.",
+      "difficulty": "hard"
+    }
+  ]
+}

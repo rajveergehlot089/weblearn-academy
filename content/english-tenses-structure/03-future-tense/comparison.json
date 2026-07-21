@@ -1,0 +1,18 @@
+{
+  "topicId": "03-future-tense",
+  "comparisons": [
+    {
+      "concept": "Future Tenses",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Future Tenses\nconst result = {\n  concept: \"Future Tenses\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Future Tenses\nresult = {\n    \"concept\": \"Future Tenses\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Future Tenses is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Future Tenses is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

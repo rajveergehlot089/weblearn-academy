@@ -1,0 +1,34 @@
+{
+  "topicId": "06-eyes-on-screen",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Typing Without Looking?",
+      "body": "Build muscle memory and stop looking at the keyboard. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "Typing Without Looking is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind Typing Without Looking is understanding how different components work together.\n\n2. Application: In practice, you'll use Typing Without Looking every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most Typing Without Looking implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding Typing Without Looking is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Typing",
+      "definition": "A key concept in Typing Without Looking. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Without",
+      "definition": "A key concept in Typing Without Looking. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Looking",
+      "definition": "A key concept in Typing Without Looking. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "Typing Without Looking is a core concept in technique. Build muscle memory and stop looking at the keyboard. Focus on understanding the fundamentals first, then practice applying them."
+}

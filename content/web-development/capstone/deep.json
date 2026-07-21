@@ -1,0 +1,39 @@
+{
+  "topicId": "capstone",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Milestone 1: Backend Setup",
+      "body": "Set up the Express server with routes for auth and posts:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// server.js\nconst express = require('express');\nconst jwt = require('jsonwebtoken');\nconst app = express();\n\napp.use(express.json());\n\n// In-memory 'database' (use JSON files in production)\nlet posts = [];\nlet users = [];\nlet nextId = 1;\n\n// Auth middleware\nfunction auth(req, res, next) {\n  const token = req.headers.authorization?.split(' ')[1];\n  if (!token) return res.status(401).json({ error: 'No token' });\n  try {\n    req.user = jwt.verify(token, 'secret-key');\n    next();\n  } catch {\n    res.status(401).json({ error: 'Invalid token' });\n  }\n}\n\n// POST /api/auth/register\napp.post('/api/auth/register', (req, res) => {\n  const { name, email, password } = req.body;\n  if (users.find(u => u.email === email)) {\n    return res.status(400).json({ error: 'Email taken' });\n  }\n  const user = { id: users.length + 1, name, email, password };\n  users.push(user);\n  const token = jwt.sign({ id: user.id, name, email }, 'secret-key');\n  res.json({ token, user: { id: user.id, name, email } });\n});",
+        "explanation": "This sets up the basic server with JWT auth middleware and a registration endpoint. The auth middleware extracts and verifies the token on protected routes."
+      }
+    },
+    {
+      "heading": "Milestone 2: Post CRUD API",
+      "body": "Create, read, update, and delete blog posts:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// GET all posts (public)\napp.get('/api/posts', (req, res) => {\n  res.json(posts.map(p => ({ ...p, author: undefined, authorId: undefined })));\n});\n\n// GET single post\napp.get('/api/posts/:id', (req, res) => {\n  const post = posts.find(p => p.id === parseInt(req.params.id));\n  if (!post) return res.status(404).json({ error: 'Post not found' });\n  res.json(post);\n});\n\n// CREATE post (authenticated)\napp.post('/api/posts', auth, (req, res) => {\n  const { title, content } = req.body;\n  if (!title || !content) {\n    return res.status(400).json({ error: 'Title and content required' });\n  }\n  const post = {\n    id: nextId++,\n    title,\n    content,\n    author: req.user.name,\n    authorId: req.user.id,\n    likes: 0,\n    createdAt: new Date().toISOString()\n  };\n  posts.push(post);\n  res.status(201).json(post);\n});\n\n// UPDATE post (owner only)\napp.put('/api/posts/:id', auth, (req, res) => {\n  const post = posts.find(p => p.id === parseInt(req.params.id));\n  if (!post) return res.status(404).json({ error: 'Not found' });\n  if (post.authorId !== req.user.id) {\n    return res.status(403).json({ error: 'Not your post' });\n  }\n  Object.assign(post, req.body, { updatedAt: new Date().toISOString() });\n  res.json(post);\n});\n\n// DELETE post (owner only)\napp.delete('/api/posts/:id', auth, (req, res) => {\n  const index = posts.findIndex(p => p.id === parseInt(req.params.id));\n  if (index === -1) return res.status(404).json({ error: 'Not found' });\n  if (posts[index].authorId !== req.user.id) {\n    return res.status(403).json({ error: 'Not your post' });\n  }\n  posts.splice(index, 1);\n  res.json({ ok: true });\n});",
+        "explanation": "Each endpoint follows REST conventions: GET for reading, POST for creating, PUT for updating, DELETE for removing. The auth middleware protects write operations. Authorization checks ensure only the post owner can edit/delete."
+      }
+    },
+    {
+      "heading": "Milestone 3: Frontend — Feed & Auth",
+      "body": "Build the frontend with login, registration, and a post feed:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Frontend: Fetch and display posts\nasync function loadPosts() {\n  const spinner = document.getElementById('spinner');\n  spinner.style.display = 'block';\n  \n  try {\n    const response = await fetch('/api/posts');\n    if (!response.ok) throw new Error('Failed to load posts');\n    const posts = await response.json();\n    \n    const feed = document.getElementById('feed');\n    feed.innerHTML = posts.map(post => `\n      <div class=\"post-card\">\n        <h2>${post.title}</h2>\n        <p>${post.content.substring(0, 200)}...</p>\n        <small>By ${post.author} | ${new Date(post.createdAt).toLocaleDateString()}</small>\n        <button onclick=\"likePost(${post.id})\">❤ ${post.likes}</button>\n      </div>\n    `).join('');\n  } catch (error) {\n    document.getElementById('feed').innerHTML = \n      '<p class=\"error\">Failed to load posts. Please try again.</p>';\n  } finally {\n    spinner.style.display = 'none';\n  }\n}\n\n// Login handler\nasync function login(email, password) {\n  const response = await fetch('/api/auth/login', {\n    method: 'POST',\n    headers: { 'Content-Type': 'application/json' },\n    body: JSON.stringify({ email, password })\n  });\n  const data = await response.json();\n  if (!response.ok) throw new Error(data.error);\n  localStorage.setItem('token', data.token);\n  showDashboard();\n}",
+        "explanation": "The frontend uses fetch() to communicate with the backend. The spinner shows during loading, errors are caught and displayed, and JWT tokens are stored in localStorage for authenticated requests."
+      }
+    },
+    {
+      "heading": "Key Patterns to Remember",
+      "body": "Throughout this capstone, you'll use these patterns repeatedly:\n\n1. Request → Auth Check → Process → Response\n2. Show spinner → Fetch data → Hide spinner → Render\n3. Try → Do risky operation → Catch errors → Show friendly message\n4. Store token → Attach to headers → Send request → Verify response\n\nThese 4 patterns cover 90% of what real web apps do."
+    }
+  ],
+  "summary": "The capstone builds a complete blog app in 3 milestones: (1) Backend setup with auth, (2) CRUD API for posts, (3) Frontend with feed, login, and error handling. Every pattern used here is directly applicable to real-world development."
+}

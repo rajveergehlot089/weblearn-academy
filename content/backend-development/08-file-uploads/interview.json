@@ -1,0 +1,25 @@
+{
+  "topicId": "08-file-uploads",
+  "questions": [
+    {
+      "question": "What is File Uploads & Storage and why is it important?",
+      "answer": "File Uploads & Storage is a fundamental concept that Handle file uploads with Multer, store files, and serve them back. It's important because it forms the foundation for building robust and efficient applications. Understanding File Uploads & Storage allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply File Uploads & Storage in a real project?",
+      "answer": "In practice, File Uploads & Storage is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with File Uploads & Storage?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain File Uploads & Storage to a beginner?",
+      "answer": "File Uploads & Storage is essentially about handle file uploads with multer, store files, and serve them back. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

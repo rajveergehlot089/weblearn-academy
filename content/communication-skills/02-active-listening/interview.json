@@ -1,0 +1,30 @@
+{
+  "topicId": "02-active-listening",
+  "questions": [
+    {
+      "question": "What are the three levels of listening?",
+      "answer": "Level 1: Internal Listening — you hear words but your mind is focused on your own thoughts, judgments, or planning your next response. Level 2: Focused Listening — you give full attention to the speaker, observing not just words but tone, pace, and body language. Level 3: Global Listening — you pick up on emotions, unspoken concerns, and what's NOT being said. Most conversations happen at Level 1; effective communicators intentionally operate at Levels 2 and 3.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you paraphrase without sounding robotic?",
+      "answer": "Use natural language and vary your phrasing. Instead of always saying 'So what you're saying is...', try: 'It sounds like...', 'If I'm hearing you right...', 'Let me make sure I understand — you're feeling...' The key is to restate in YOUR words, not just repeat theirs. And always leave room for them to correct you: 'Is that right?' This shows humility and invites clarification.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the HEAR model?",
+      "answer": "HEAR is a four-step active listening framework: Halt — stop what you're doing and give full attention (put down devices, face the person). Empathize — try to understand their perspective and emotions, not just their words. Anticipate — stay curious, don't assume you know what they'll say. Respond — give a thoughtful, relevant response that shows you were truly listening. It's a simple structure for turning passive hearing into active engagement.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why do people struggle with active listening?",
+      "answer": "Three main reasons: (1) The brain processes speech at 400-800 wpm but we speak at 125-175 wpm — the extra capacity fills with distraction. (2) We're culturally trained to respond, not to listen. (3) Emotional content triggers our own reactions, pulling focus from the speaker. The fix is intentional practice: put down devices, focus on understanding before responding, and notice when your mind wanders.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "When someone is venting, how do you know whether to give advice or just listen?",
+      "answer": "Ask them directly. 'Do you want me to help problem-solve, or do you just need to get this off your chest?' This simple question prevents the most common listening failure — jumping to solutions when someone needs empathy. If you're unsure, default to listening first. People rarely solve problems they don't feel heard about. Once they feel understood, they'll often ask for advice themselves.",
+      "difficulty": "medium"
+    }
+  ]
+}

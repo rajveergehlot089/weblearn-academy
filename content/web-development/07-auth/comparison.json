@@ -1,0 +1,18 @@
+{
+  "topicId": "07-auth",
+  "comparisons": [
+    {
+      "concept": "JWT creation and verification",
+      "javascript": {
+        "language": "javascript",
+        "code": "const jwt = require('jsonwebtoken');\n\n// Create\nconst token = jwt.sign({ id: 1 }, 'secret', { expiresIn: '1h' });\n\n// Verify\nconst decoded = jwt.verify(token, 'secret');\nconsole.log(decoded.id);  // 1"
+      },
+      "python": {
+        "language": "python",
+        "code": "import jwt\n\n# Create\ntoken = jwt.encode({'id': 1}, 'secret', algorithm='HS256')\n\n# Verify\ndecoded = jwt.decode(token, 'secret', algorithms=['HS256'])\nprint(decoded['id'])  # 1"
+      },
+      "explanation": "Same concept: sign data with a secret to create a token, verify with the same secret to decode. The JWT standard is identical across all languages."
+    }
+  ],
+  "keyInsight": "Authentication is a UNIVERSAL concept. JWTs are standardized (RFC 7519) so tokens created in Python can be verified in JavaScript and vice versa."
+}

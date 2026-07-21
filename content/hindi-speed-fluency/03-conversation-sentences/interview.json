@@ -1,0 +1,25 @@
+{
+  "topicId": "03-conversation-sentences",
+  "questions": [
+    {
+      "question": "What is Conversation Sentences and why is it important?",
+      "answer": "Conversation Sentences is a fundamental concept that Common Hindi conversation phrases and sentences. It's important because it forms the foundation for building robust and efficient applications. Understanding Conversation Sentences allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Conversation Sentences in a real project?",
+      "answer": "In practice, Conversation Sentences is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Conversation Sentences?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Conversation Sentences to a beginner?",
+      "answer": "Conversation Sentences is essentially about common hindi conversation phrases and sentences. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

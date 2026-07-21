@@ -1,0 +1,18 @@
+{
+  "topicId": "06-active-passive-convert",
+  "comparisons": [
+    {
+      "concept": "Converting Active to Passive",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Converting Active to Passive\nconst result = {\n  concept: \"Converting Active to Passive\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Converting Active to Passive\nresult = {\n    \"concept\": \"Converting Active to Passive\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Converting Active to Passive is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Converting Active to Passive is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

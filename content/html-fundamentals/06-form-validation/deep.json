@@ -1,0 +1,79 @@
+{
+  "topicId": "06-form-validation",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Required Fields",
+      "body": "The required attribute makes a field mandatory. The browser prevents form submission if the field is empty and displays an error message.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Required text input -->\n<input type=\"text\" name=\"username\" required>\n\n<!-- Required email -->\n<input type=\"email\" name=\"email\" required>\n\n<!-- Required select -->\n<select name=\"country\" required>\n    <option value=\"\" disabled selected>Select country</option>\n    <option value=\"us\">USA</option>\n</select>\n\n<!-- Required checkbox -->\n<label>\n    <input type=\"checkbox\" name=\"terms\" required>\n    I agree to terms\n</label>",
+        "explanation": "The required attribute triggers browser validation. Empty fields prevent submission and show error messages. Works with all form controls."
+      }
+    },
+    {
+      "heading": "Text Length Validation",
+      "body": "Control text length with minlength and maxlength attributes. These work on text, password, email, textarea, and search inputs.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Username: 3-20 characters -->\n<input type=\"text\" name=\"username\" minlength=\"3\" maxlength=\"20\" required>\n\n<!-- Password: minimum 8 characters -->\n<input type=\"password\" name=\"password\" minlength=\"8\" required>\n\n<!-- Bio: 10-500 characters -->\n<textarea name=\"bio\" minlength=\"10\" maxlength=\"500\" required></textarea>\n\n<!-- Search: max 100 characters -->\n<input type=\"search\" name=\"query\" maxlength=\"100\">",
+        "explanation": "Minlength ensures minimum required length. Maxlength prevents exceeding maximum. Both provide immediate feedback when violated."
+      }
+    },
+    {
+      "heading": "Number and Date Constraints",
+      "body": "For number and date inputs, use min, max, and step attributes to define valid ranges.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Age: 18-120 -->\n<input type=\"number\" name=\"age\" min=\"18\" max=\"120\" required>\n\n<!-- Quantity: 1-100, steps of 5 -->\n<input type=\"number\" name=\"quantity\" min=\"1\" max=\"100\" step=\"5\" value=\"10\">\n\n<!-- Price: 0.01-999.99, 2 decimal places -->\n<input type=\"number\" name=\"price\" min=\"0.01\" max=\"999.99\" step=\"0.01\">\n\n<!-- Date: future dates only -->\n<input type=\"date\" name=\"appointment\" min=\"2026-01-01\">\n\n<!-- Time: business hours only -->\n<input type=\"time\" name=\"time\" min=\"09:00\" max=\"17:00\">",
+        "explanation": "Min/max define valid ranges. Step defines increment size. These attributes prevent invalid numbers/dates and show appropriate errors."
+      }
+    },
+    {
+      "heading": "Pattern Matching with Regex",
+      "body": "The pattern attribute uses regular expressions to validate input format. Common patterns include phone numbers, postal codes, and custom formats.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Phone: 123-456-7890 -->\n<input type=\"tel\" name=\"phone\" pattern=\"[0-9]{3}-[0-9]{3}-[0-9]{4}\" required>\n\n<!-- Postal code: 12345 or 12345-6789 -->\n<input type=\"text\" name=\"zip\" pattern=\"[0-9]{5}(-[0-9]{4})?\" required>\n\n<!-- Username: letters and numbers, 3-16 chars -->\n<input type=\"text\" name=\"username\" pattern=\"[a-zA-Z0-9]{3,16}\" required>\n\n<!-- Custom format: ABC-123 -->\n<input type=\"text\" name=\"code\" pattern=\"[A-Z]{3}-[0-9]{3}\" required>\n\n<!-- Credit card: 16 digits -->\n<input type=\"text\" name=\"card\" pattern=\"[0-9]{16}\" maxlength=\"16\">",
+        "explanation": "Pattern uses regex syntax. The browser checks if input matches the pattern. Provide title attribute for custom error messages."
+      }
+    },
+    {
+      "heading": "Type-Based Validation",
+      "body": "HTML5 input types provide built-in validation: email checks for @ and domain, url checks for protocol, number checks for numeric value.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Email validation -->\n<input type=\"email\" name=\"email\" required>\n<!-- Browser checks for @ and valid domain -->\n\n<!-- URL validation -->\n<input type=\"url\" name=\"website\" required>\n<!-- Browser checks for http:// or https:// -->\n\n<!-- Number validation -->\n<input type=\"number\" name=\"quantity\" required>\n<!-- Browser only allows numeric input -->\n\n<!-- Range slider -->\n<input type=\"range\" name=\"rating\" min=\"1\" max=\"10\" value=\"5\">",
+        "explanation": "Type-based validation is automatic and locale-aware. Email checks format, URL checks protocol, number prevents non-numeric input."
+      }
+    },
+    {
+      "heading": "Custom Validation Messages",
+      "body": "Override default browser messages with setCustomValidity() and the Constraint Validation API.",
+      "code": {
+        "language": "html",
+        "snippet": "<form id=\"myForm\">\n    <input type=\"text\" id=\"username\" name=\"username\" required minlength=\"3\">\n    <button type=\"submit\">Submit</button>\n</form>\n\n<script>\nconst username = document.getElementById('username');\n\n// Custom validation message\nusername.addEventListener('input', function() {\n    if (this.validity.tooShort) {\n        this.setCustomValidity('Username must be at least 3 characters');\n    } else if (this.validity.valueMissing) {\n        this.setCustomValidity('Please enter a username');\n    } else {\n        this.setCustomValidity(''); // Clear custom message\n    }\n});\n\n// Custom validation on submit\ndocument.getElementById('myForm').addEventListener('submit', function(e) {\n    if (!username.checkValidity()) {\n        e.preventDefault();\n        // Show custom error\n    }\n});\n</script>",
+        "explanation": "setCustomValidity() overrides default messages. checkValidity() returns true/false. validity object has properties like tooShort, valueMissing, patternMismatch."
+      }
+    },
+    {
+      "heading": "Styling Validation States",
+      "body": "Use CSS pseudo-classes to style valid and invalid inputs. Provide visual feedback for users.",
+      "code": {
+        "language": "html",
+        "snippet": "<style>\n/* Default input styles */\ninput, textarea, select {\n    padding: 8px;\n    border: 2px solid #ccc;\n    border-radius: 4px;\n    transition: border-color 0.3s;\n}\n\n/* Invalid input */\ninput:invalid, textarea:invalid {\n    border-color: #ff4444;\n    background-color: #fff5f5;\n}\n\n/* Valid input */\ninput:valid, textarea:valid {\n    border-color: #4CAF50;\n    background-color: #f5fff5;\n}\n\n/* Focus state */\ninput:focus:invalid {\n    border-color: #ff0000;\n    outline: none;\n    box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);\n}\n\n/* Required field indicator */\ninput:required {\n    border-left: 4px solid #2196F3;\n}\n\n/* Placeholder styling */\ninput::placeholder {\n    color: #999;\n    font-style: italic;\n}\n</style>\n\n<form>\n    <input type=\"email\" name=\"email\" required placeholder=\"you@example.com\">\n    <input type=\"text\" name=\"username\" required minlength=\"3\" placeholder=\"Username (3+ chars)\">\n</form>",
+        "explanation": "CSS pseudo-classes provide instant visual feedback. :invalid and :valid style based on current validation state. :required highlights mandatory fields."
+      }
+    },
+    {
+      "heading": "Best Practices",
+      "body": "Form validation best practices:\n\n1. Always validate on both client and server side\n2. Use appropriate input types for automatic validation\n3. Provide clear, helpful error messages\n4. Style invalid/valid states with CSS\n5. Don't rely only on client-side validation\n6. Test with keyboard navigation\n7. Use aria-describedby for error messages"
+    },
+    {
+      "heading": "Practice Task",
+      "body": "Create a form with comprehensive validation:\n• Required fields with different input types\n• Pattern validation for phone and postal code\n• Number constraints for age\n• Text length limits\n• Custom validation messages\n• Visual feedback with CSS"
+    }
+  ],
+  "summary": "Master HTML5 form validation with required, pattern, min/max, minlength/maxlength, and type attributes. Customize messages with JavaScript and style with CSS pseudo-classes."
+}

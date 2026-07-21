@@ -1,0 +1,31 @@
+{
+  "topicId": "13-modern-html-css",
+  "exercises": [
+    {
+      "title": "Build a Flexbox Navbar",
+      "description": "Create a navigation bar with Flexbox: logo on the left, nav links in the center, and a CTA button on the right.",
+      "hints": [
+        "Use display: flex on the nav",
+        "Use justify-content: space-between"
+      ],
+      "solution": {
+        "language": "css",
+        "code": "nav {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  padding: 16px 24px;\n  background: #1a1a2e;\n}\n\n.logo { font-size: 24px; font-weight: bold; color: white; }\n\n.nav-links {\n  display: flex;\n  gap: 20px;\n  list-style: none;\n}\n\n.cta-button {\n  background: #3b82f6;\n  color: white;\n  padding: 8px 16px;\n  border-radius: 6px;\n}"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Create a Responsive Card Grid",
+      "description": "Build a grid of cards using CSS Grid that shows: 4 columns on wide screens, 2 on medium, 1 on small.",
+      "hints": [
+        "Use grid-template-columns with repeat/auto-fit",
+        "Set minmax(250px, 1fr)"
+      ],
+      "solution": {
+        "language": "css",
+        "code": ".card-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\n  gap: 20px;\n  padding: 20px;\n}\n\n.card {\n  background: white;\n  border-radius: 12px;\n  padding: 24px;\n  box-shadow: 0 2px 8px rgba(0,0,0,0.1);\n}"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

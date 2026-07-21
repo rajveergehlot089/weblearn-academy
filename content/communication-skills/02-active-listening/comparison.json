@@ -1,0 +1,42 @@
+{
+  "topicId": "02-active-listening",
+  "comparisons": [
+    {
+      "concept": "Passive Hearing vs. Active Listening",
+      "before": {
+        "label": "Passive Hearing",
+        "code": "Speaker: 'I had a really tough meeting today.'\nListener: *nods while scrolling phone*\nListener: 'Yeah.'\n\nTime spent thinking about speaker's words: ~0%\nEngagement level: Minimal"
+      },
+      "after": {
+        "label": "Active Listening",
+        "code": "Speaker: 'I had a really tough meeting today.'\nListener: *puts phone down, faces speaker*\nListener: 'That sounds rough. What happened?'\nSpeaker: 'The client pushed back on everything.'\nListener: 'What kind of pushback?'\n\nTime spent thinking about speaker's words: ~100%\nEngagement level: Full"
+      },
+      "explanation": "Passive hearing is effortless but unreliable. Active listening requires intentional effort but builds trust and understanding."
+    },
+    {
+      "concept": "Listening to Respond vs. Listening to Understand",
+      "before": {
+        "label": "Listening to Respond",
+        "code": "Speaker: 'I'm thinking about switching to a smaller company.'\nListener (already planning their response): 'You should totally do it. I switched last year and it was great.'\n\nSpeaker's experience: Not heard. Listener made it about themselves."
+      },
+      "after": {
+        "label": "Listening to Understand",
+        "code": "Speaker: 'I'm thinking about switching to a smaller company.'\nListener: 'What's driving that thought?'\nSpeaker: 'I feel like a number at my current job.'\nListener: 'That makes sense. What would a smaller company give you that you're missing?'\n\nSpeaker's experience: Fully heard. Listener stayed curious."
+      },
+      "explanation": "Listening to understand keeps the focus on the speaker. Listening to respond shifts focus to yourself and what you'll say next."
+    },
+    {
+      "concept": "Solving vs. Supporting",
+      "before": {
+        "label": "Jumping to Solutions",
+        "code": "Friend: 'My boss keeps assigning me extra work without checking my capacity.'\nYou: 'Just tell them no. Set boundaries.'\nFriend: '...' (feels dismissed)\n\nProblem: You skipped understanding the emotional experience."
+      },
+      "after": {
+        "label": "Supporting First",
+        "code": "Friend: 'My boss keeps assigning me extra work without checking my capacity.'\nYou: 'That sounds exhausting. How long has this been going on?'\nFriend: 'Three months. I'm burned out.'\nYou: 'That makes sense. Would it help to talk through some options, or do you just need to vent?'\n\nProblem solved: You honored their emotional experience AND offered support."
+      },
+      "explanation": "People often need to feel understood before they can solve problems. Ask: 'Do you want advice, or do you want me to listen?'"
+    }
+  ],
+  "keyInsight": "The shift from passive hearing to active listening is the single most impactful communication upgrade you can make. It costs nothing, requires no special skill, and builds trust faster than any technique."
+}

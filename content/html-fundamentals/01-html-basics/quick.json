@@ -1,0 +1,38 @@
+{
+  "topicId": "01-html-basics",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is HTML?",
+      "body": "HTML (HyperText Markup Language) is the standard language for creating web pages. It describes the structure of a web page using a system of tags and attributes. Every website you visit is built with HTML at its core."
+    },
+    {
+      "heading": "The Basic Structure",
+      "body": "Every HTML document follows a standard structure:\n\n1. DOCTYPE declaration: Tells the browser this is an HTML5 document\n2. html element: The root element that wraps all content\n3. head element: Contains metadata, title, and links to stylesheets\n4. body element: Contains all visible content on the page"
+    },
+    {
+      "heading": "Your First HTML Page",
+      "body": "Here's a minimal HTML document:\n\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>My First Page</title>\n</head>\n<body>\n    <h1>Hello, World!</h1>\n    <p>This is my first web page.</p>\n</body>\n</html>"
+    }
+  ],
+  "jargon": [
+    {
+      "term": "HTML",
+      "definition": "HyperText Markup Language - the standard language for creating web pages"
+    },
+    {
+      "term": "DOCTYPE",
+      "definition": "A declaration that tells the browser which version of HTML the document uses"
+    },
+    {
+      "term": "Tag",
+      "definition": "A special code element that defines the structure and content of a web page (e.g., <h1>, <p>, <div>)"
+    },
+    {
+      "term": "Element",
+      "definition": "A complete HTML component consisting of an opening tag, content, and closing tag"
+    }
+  ],
+  "summary": "HTML is the foundation of every web page. Learn the basic structure including DOCTYPE, html, head, and body elements. Practice creating your first HTML document with proper structure."
+}

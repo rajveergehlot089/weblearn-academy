@@ -1,0 +1,18 @@
+{
+  "topicId": "08-word-typing",
+  "comparisons": [
+    {
+      "concept": "Typing Real Words",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Typing Real Words\nconst result = {\n  concept: \"Typing Real Words\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Typing Real Words\nresult = {\n    \"concept\": \"Typing Real Words\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Typing Real Words is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Typing Real Words is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

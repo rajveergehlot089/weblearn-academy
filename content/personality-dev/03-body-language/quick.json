@@ -1,0 +1,25 @@
+{
+  "topicId": "03-body-language",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Body Language Matters",
+      "body": "Research shows that 55% of communication is non-verbal. Your body language can reinforce or contradict your words. When they conflict, people believe the body language, not the words. Understanding non-verbal cues helps you project confidence, build trust, and read others accurately."
+    },
+    {
+      "heading": "The Five Universal Emotions",
+      "body": "Paul Ekman's research identified seven universal facial expressions recognized across all cultures:\n\n1. **Happiness**: Genuine smiles (Duchenne) engage both mouth and eyes\n2. **Sadness**: Drooping eyelids, downturned mouth\n3. **Anger**: Flared nostrils, tightened jaw, furrowed brow\n4. **Fear**: Wide eyes, raised eyebrows, tense body\n5. **Surprise**: Raised eyebrows, open mouth\n6. **Disgust**: Wrinkled nose, raised upper lip\n7. **Contempt**: One corner of the mouth raised (the most telling expression)\n\nLearning to read these expressions helps you understand what people are really feeling."
+    },
+    {
+      "heading": "Power Posing vs. Anxiety Signals",
+      "body": "Your body affects your mind. Standing tall with open posture reduces cortisol (stress hormone) and increases testosterone (confidence hormone). Conversely, slouching, crossed arms, and avoiding eye contact signal insecurity. Before important meetings, spend 2 minutes in a 'power pose' — hands on hips, chest out, chin up — to boost confidence."
+    }
+  ],
+  "jargon": [
+    { "term": "Mirroring", "definition": "Unconsciously copying someone's body language to build rapport. When people are comfortable with each other, they naturally mirror posture, gestures, and expressions." },
+    { "term": "Proxemics", "definition": "The study of personal space. Different cultures have different comfort zones, but generally: intimate (0-18 inches), personal (18 inches-4 feet), social (4-12 feet), public (12+ feet)." },
+    { "term": "Kinesics", "definition": "The study of body movement, including gestures, posture, and facial expressions. It's the largest category of non-verbal communication." }
+  ],
+  "summary": "55% of communication is non-verbal. Learn to read universal facial expressions (happiness, sadness, anger, fear, surprise, disgust, contempt). Use open posture and power posing to project confidence. Mirror others to build rapport, and be aware of personal space boundaries."
+}

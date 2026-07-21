@@ -1,0 +1,15 @@
+{
+  "topicId": "13-modern-html-css",
+  "questions": [
+    {
+      "question": "What is the difference between Flexbox and CSS Grid?",
+      "answer": "Flexbox is one-dimensional — it handles layout in a single direction (row OR column). Grid is two-dimensional — it handles rows AND columns simultaneously. Use Flexbox for navbars, card rows, centering. Use Grid for page layouts, dashboards. They work great together.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are CSS custom properties (variables)?",
+      "answer": "CSS custom properties let you define reusable values with -- prefix in :root. Reference them with var(--name). Benefits: (1) Change a value once, update everywhere, (2) Theme switching, (3) Fallback values: var(--color, blue). Unlike preprocessors, CSS variables work in the browser.",
+      "difficulty": "medium"
+    }
+  ]
+}

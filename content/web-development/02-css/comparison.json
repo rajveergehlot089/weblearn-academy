@@ -1,0 +1,18 @@
+{
+  "topicId": "02-css",
+  "comparisons": [
+    {
+      "concept": "Changing text color",
+      "javascript": {
+        "language": "html",
+        "code": "<style>\n  p { color: blue; }\n</style>\n<p>This is blue</p>"
+      },
+      "python": {
+        "language": "python",
+        "code": "# In a terminal, there's no 'color' concept.\n# In Python GUI (tkinter):\nfrom tkinter import *\nroot = Tk()\nlabel = Label(root, fg='blue', text='Blue text')\nlabel.pack()"
+      },
+      "explanation": "CSS styling is unique to web development. In Python, you'd need a GUI library to get colored text. The concept of 'styling' exists everywhere, but the tools differ by platform."
+    }
+  ],
+  "keyInsight": "CSS is specific to web browsers — Python and other languages don't have CSS. But the CONCEPT of separating presentation from logic is universal. In mobile apps, you use XML (Android) or SwiftUI (iOS) instead. The principle is always: structure (HTML/XML) + style (CSS/attributes) + logic (JS/Python)."
+}

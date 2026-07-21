@@ -1,0 +1,37 @@
+{
+  "topicId": "02-leadership-styles",
+  "comparisons": [
+    {
+      "concept": "Leadership Styles at a Glance",
+      "rows": [
+        { "dimension": "Core philosophy", "servant": "Leader exists to serve the team", "transformational": "Leader inspires extraordinary outcomes", "situational": "Leader adapts to each person's needs", "democratic": "Leader involves the team in decisions" },
+        { "dimension": "Best for", "servant": "Knowledge workers, culture building", "transformational": "Change initiatives, vision-driven orgs", "situational": "Mixed-skill teams, evolving projects", "democratic": "Complex problems, experienced teams" },
+        { "dimension": "Key strength", "servant": "Deep trust and loyalty", "transformational": "High energy and commitment", "situational": "Flexibility and precision", "democratic": "Diverse perspectives, buy-in" },
+        { "dimension": "Key risk", "servant": "Indecision, avoidance of hard calls", "transformational": "Vision without execution, burnout", "situational": "Perceived inconsistency", "democratic": "Slow, analysis paralysis" },
+        { "dimension": "Communication style", "servant": "Listening-first, empathetic", "transformational": "Visionary, challenging, inspiring", "situational": "Adaptive — direct, coach, or delegate", "democratic": "Inclusive, facilitative" },
+        { "dimension": "Decision speed", "servant": "Slower (consensus-oriented)", "transformational": "Fast (vision-driven)", "situational": "Variable (depends on context)", "democratic": "Slower (group input)" }
+      ],
+      "explanation": "No single style wins in every situation. The best leaders develop fluency across all four and switch between them as circumstances change."
+    },
+    {
+      "concept": "Generational Perspectives on Leadership",
+      "rows": [
+        { "dimension": "What they value", "baby_boomers": "Loyalty, hierarchy, face time", "gen_x": "Autonomy, work-life balance, results", "millennials": "Purpose, feedback, growth opportunities", "gen_z": "Flexibility, inclusion, mental health awareness" },
+        { "dimension": "Leadership style preference", "baby_boomers": "Authoritative with clear structure", "gen_x": "Hands-off, trust-based", "millennials": "Collaborative, coaching-oriented", "gen_z": "Transparent, values-driven" },
+        { "dimension": "Motivation lever", "baby_boomers": "Recognition and stability", "gen_x": "Freedom and responsibility", "millennials": "Purpose and development", "gen_z": "Impact and authenticity" }
+      ],
+      "explanation": "Understanding generational preferences helps leaders adapt their style. A one-size-fits-all approach frustrates every generation."
+    },
+    {
+      "concept": "Leader vs. Manager Behavior Comparison",
+      "rows": [
+        { "dimension": "On a Monday morning", "leader": "Asks 'what are we excited about this week?'", "manager": "Asks 'what are the deliverables due?'" },
+        { "dimension": "When a team member fails", "leader": "Coaches and asks what support was needed", "manager": "Documents the failure and implements process fix" },
+        { "dimension": "In meetings", "leader": "Asks questions and listens", "manager": "Provides answers and assigns tasks" },
+        { "dimension": "When planning", "leader": "Challenges assumptions, envisions possibilities", "manager": "Creates schedules, assigns resources" }
+      ],
+      "explanation": "These are tendencies, not rules. Effective professionals blend both behaviors depending on the situation."
+    }
+  ],
+  "keyInsight": "Leadership style is not a personality trait — it's a choice. The most effective leaders consciously choose their approach based on the situation, not their comfort zone."
+}

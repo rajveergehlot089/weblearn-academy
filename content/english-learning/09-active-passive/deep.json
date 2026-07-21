@@ -1,0 +1,14 @@
+{
+  "topicId": "09-active-passive",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    { "heading": "When to Use Passive Voice", "body": "Use passive when:\n1. Unknown doer: 'The window was broken.' (we don't know who did it)\n2. Unimportant doer: 'The road was built in 1990.' (we don't care who built it)\n3. Formal/scientific: 'The samples were analyzed.' (focus on process, not people)\n4. Diplomatic: 'Mistakes were made.' (avoids naming who made them)\n5. Emphasis on receiver: 'The President was awarded the prize.'\n\nAvoid passive when:\n• It makes sentences vague or wordy\n• Active voice is more direct and engaging\n• You're writing casually (emails, stories, conversations)\n\nComparison:\nActive: 'I broke the window.' (clear, direct)\nPassive: 'The window was broken.' (by whom? unclear)" },
+    { "heading": "Passive with Two Objects", "body": "Some verbs take two objects (indirect + direct):\n\nActive: She gave me a gift.\nPassive 1: I was given a gift (by her). ← More natural\nPassive 2: A gift was given to me (by her).\n\nActive: They sent him an email.\nPassive 1: He was sent an email.\nPassive 2: An email was sent to him.\n\nRule: The indirect object (person) usually becomes the subject in passive."
+    },
+    { "heading": "Common Passive Mistakes", "body": "1. Missing 'be':\n❌ 'The letter written yesterday.'\n✅ 'The letter was written yesterday.'\n\n2. Wrong preposition:\n❌ 'The book was wrote by her.'\n✅ 'The book was written by her.'\n\n3. Unnecessary 'by' for general agents:\n❌ 'Mistakes are made by people.'\n✅ 'Mistakes are made.' (obvious agent)\n\n4. Passive + passive (double passive):\n❌ 'The work was planned to be done by them.'\n✅ 'They planned to do the work.'\n\n5. Using passive with intransitive verbs:\n❌ 'The accident was happened.' (happen has no object)\n✅ 'The accident happened.'"
+    },
+    { "heading": "Practice Conversion", "body": "Convert active to passive:\n1. The teacher explains the lesson.\n2. Someone stole my phone.\n3. They will build a new hospital.\n4. People speak English worldwide.\n5. The company has launched a new product.\n\nConvert passive to active:\n1. The window was broken by the children.\n2. English is spoken in many countries.\n3. The project will be completed next week.\n4. A new law was passed by the government.\n5. The song has been downloaded millions of times." }
+  ],
+  "summary": "Passive voice shifts focus from the doer to the receiver. Use it strategically for emphasis, formality, or when the doer is unknown. Overusing passive makes writing weak and vague."
+}

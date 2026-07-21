@@ -1,0 +1,60 @@
+{
+  "topicId": "01-self-awareness",
+  "comparisons": [
+    {
+      "concept": "Types of Self-Awareness",
+      "internal": {
+        "name": "Internal Self-Awareness",
+        "description": "Understanding your own values, passions, aspirations, fit with environment, reactions, and impact on others.",
+        "indicators": "You can articulate why you feel certain emotions, what you truly value vs. what you say you value, and how your behavior affects those around you.",
+        "benefits": "Greater confidence, stronger relationships, higher life satisfaction, better decision-making aligned with authentic values."
+      },
+      "external": {
+        "name": "External Self-Awareness",
+        "description": "Understanding how others view you in terms of your fit with the environment, reactions, and impact.",
+        "indicators": "You accurately predict how others will react to your behavior, you seek and integrate feedback without defensiveness, and you adjust your approach based on others' needs.",
+        "benefits": "Improved teamwork, better leadership, stronger interpersonal skills, reduced conflict."
+      },
+      "explanation": "Tasha Eurich's research shows these two types are independent — you can be high in one and low in the other. Most people develop one more than the other. The most effective leaders and communicators develop both."
+    },
+    {
+      "concept": "Self-Awareness Assessment Methods",
+      "journaling": {
+        "name": "Journaling & Introspection",
+        "description": "Writing about thoughts, feelings, and experiences to identify patterns.",
+        "best_for": "Internal self-awareness, tracking emotional patterns, clarifying values.",
+        "limitations": "Can become ruminative if overused; introspection without structure sometimes reduces accuracy."
+      },
+      "feedback": {
+        "name": "Structured Feedback (360°)",
+        "description": "Gathering input from colleagues, friends, and family using standardized questions.",
+        "best_for": "External self-awareness, identifying blind spots, understanding impact on others.",
+        "limitations": "Depends on honesty of respondents; can be affected by relationship dynamics."
+      },
+      "assessment": {
+        "name": "Psychometric Assessments",
+        "description": "Using validated tools like MBTI, Enneagram, DISC, or VIA Strengths.",
+        "best_for": "Getting a structured framework for self-understanding, identifying personality patterns.",
+        "limitations": "Self-report bias; should be interpreted by a trained facilitator; not deterministic."
+      },
+      "explanation": "No single method is sufficient. Combine introspective methods (journaling) with external input (feedback, assessments) for the most accurate self-picture."
+    },
+    {
+      "concept": "Self-Awareness vs Self-Consciousness",
+      "self_awareness": {
+        "name": "Self-Awareness",
+        "description": "Objective observation of your internal states and their impact. Characterized by curiosity and acceptance.",
+        "approach": "What am I feeling? Why? How does this affect my behavior?",
+        "outcome": "Better decisions, emotional regulation, authentic relationships."
+      },
+      "self_consciousness": {
+        "name": "Self-Consciousness",
+        "description": "Excessive focus on how you're being perceived, often with anxiety and self-criticism.",
+        "approach": "What do they think of me? Am I good enough? Everyone is judging me.",
+        "outcome": "Anxiety, avoidance, social inhibition, reduced performance."
+      },
+      "explanation": "Self-awareness is non-judgmental observation; self-consciousness is judgmental evaluation. The goal is curious observation ('I notice I'm anxious') rather than anxious rumination ('I'm so anxious, something is wrong with me')."
+    }
+  ],
+  "keyInsight": "Self-awareness is a skill that can be developed through deliberate practice. The most effective approach combines internal reflection (journaling, mindfulness) with external feedback (360° assessments, trusted advisors). Avoid the trap of excessive self-consciousness — aim for curious, non-judgmental observation of your inner world."
+}

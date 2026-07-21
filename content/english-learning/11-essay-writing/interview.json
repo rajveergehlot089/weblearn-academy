@@ -1,0 +1,8 @@
+{
+  "topicId": "11-essay-writing",
+  "questions": [
+    { "question": "What makes a strong thesis statement?", "answer": "A strong thesis is specific, arguable, and previews your supporting points. Instead of 'Social media is bad' (too vague), write 'Social media harms teenage mental health by increasing anxiety, reducing sleep, and promoting unrealistic standards.' It takes a clear position that someone could disagree with, and lists 3 specific reasons you'll argue.", "difficulty": "easy" },
+    { "question": "How do you write a good introduction?", "answer": "Start with a hook (surprising fact, question, or quote), provide brief context, then end with your thesis statement. The introduction should answer: 'What am I writing about?' and 'What is my main argument?' Keep it 3-5 sentences. Save the detailed evidence for the body paragraphs.", "difficulty": "medium" },
+    { "question": "What is the P.E.E.L structure?", "answer": "P.E.E.L is a paragraph framework: Point (topic sentence stating the main idea), Evidence (facts, data, or examples), Explanation (how the evidence supports your point), Link (transition to the next paragraph). This ensures every paragraph is well-developed and connected to the overall argument.", "difficulty": "easy" }
+  ]
+}

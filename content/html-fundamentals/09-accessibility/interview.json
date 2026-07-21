@@ -1,0 +1,57 @@
+{
+  "topicId": "09-accessibility",
+  "type": "interview",
+  "estimatedMinutes": 10,
+  "questions": [
+    {
+      "question": "What is ARIA and when should you use it?",
+      "answer": "ARIA (Accessible Rich Internet Applications) provides attributes that enhance accessibility when HTML semantics aren't sufficient. Use ARIA only when native HTML elements can't provide the needed semantics. Example: aria-label for labeling elements without visible text, aria-live for dynamic content updates. Always prefer semantic HTML first.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you make a custom modal dialog accessible?",
+      "answer": "Key requirements: 1) Use role=\"dialog\" and aria-modal=\"true\". 2) Provide aria-labelledby for title. 3) Trap focus inside modal. 4) Close on Escape key. 5) Return focus to trigger element on close. 6) Hide background content with aria-hidden. 7) Ensure sufficient color contrast.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What are the WCAG color contrast requirements?",
+      "answer": "WCAG 2.1 requires: 1) 4.5:1 contrast ratio for normal text (under 18pt). 2) 3:1 contrast ratio for large text (18pt+ or 14pt bold). 3) 3:1 for UI components and graphical objects. Use contrast checking tools to verify. Respect user preferences with prefers-contrast media query.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you handle form validation errors accessibly?",
+      "answer": "Key practices: 1) Associate error messages with inputs using aria-describedby. 2) Use aria-invalid on invalid fields. 3) Announce errors with aria-live=\"assertive\". 4) Provide error summary at top of form. 5) Use role=\"alert\" for immediate announcements. 6) Ensure error messages are specific and helpful.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What is the purpose of skip navigation links?",
+      "answer": "Skip links allow keyboard users to bypass repetitive navigation and jump directly to main content. Place at top of page: <a href=\"#main\" class=\"skip-link\">Skip to main content</a>. Visually hidden until focused. Essential for screen reader and keyboard-only users.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you make animations accessible?",
+      "answer": "Key practices: 1) Respect prefers-reduced-motion media query. 2) Provide pause/stop controls. 3) Avoid flashing content (3 flashes per second limit). 4) Don't auto-play animations. 5) Ensure animations don't cause vestibular disorders. 6) Provide alternatives for users who disable animations.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the difference between aria-label and aria-labelledby?",
+      "answer": "aria-label provides an invisible label for screen readers: <button aria-label=\"Close\">X</button>. aria-labelledby references another element's text as label: <button aria-labelledby=\"close-text\"><span id=\"close-text\">Close</span></button>. Use aria-labelledby when label text is visible on page.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you test web accessibility?",
+      "answer": "Testing methods: 1) Automated tools (axe, WAVE, Lighthouse) catch ~30% of issues. 2) Keyboard-only navigation testing. 3) Screen reader testing (NVDA, VoiceOver, JAWS). 4) Color contrast checking. 5) Manual code review. 6) User testing with people with disabilities. 7) Mobile testing.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are landmark regions and why are they important?",
+      "answer": "Landmark regions are semantic HTML elements that define page sections: header (banner), nav (navigation), main (main content), aside (complementary), footer (contentinfo). Screen readers can jump between landmarks, making navigation faster. Use aria-label to distinguish multiple landmarks of same type.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you make custom dropdown menus accessible?",
+      "answer": "Key requirements: 1) Use role=\"listbox\" and role=\"option\" or native <select>. 2) Keyboard navigation (arrow keys, Enter, Escape). 3) Focus management. 4) aria-expanded state. 5) aria-selected for current option. 6) Screen reader announcements. Consider native <select> for simpler cases.",
+      "difficulty": "hard"
+    }
+  ]
+}

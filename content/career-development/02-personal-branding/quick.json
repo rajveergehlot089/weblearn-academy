@@ -1,0 +1,29 @@
+{
+  "topicId": "02-personal-branding",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What Is Personal Branding?",
+      "body": "Your personal brand is what people say about you when you're not in the room. It's the intersection of your skills, your reputation, and the story you tell about your work. Everyone already has a brand — the question is whether you're shaping it intentionally or letting it happen by accident."
+    },
+    {
+      "heading": "The Brand Triangle",
+      "body": "A strong personal brand rests on three pillars:\n\n1. **Expertise**: What are you genuinely good at? Pick 2-3 skills you want to be known for — not everything you've ever done.\n\n2. **Visibility**: Do the right people know about your expertise? You can be brilliant but invisible. Visibility comes from content, conversations, and showing up consistently.\n\n3. **Trust**: Do people believe you can deliver? Trust builds through consistent quality, helpfulness, and following through on commitments."
+    },
+    {
+      "heading": "Starting From Zero",
+      "body": "If you're early in your career, start with these basics:\n- Choose 2-3 keywords that describe your professional focus (e.g., 'React,' 'accessibility,' 'design systems')\n- Make sure those keywords appear in your LinkedIn headline, GitHub bio, and any profiles you maintain\n- Share one useful thing per week — a tip, a lesson learned, a resource you found helpful"
+    },
+    {
+      "heading": "The 1% Rule",
+      "body": "You don't need to be the world's leading expert. You just need to be slightly ahead of the person you're helping. Share what you learn as you learn it — this is the fastest way to build credibility while growing your skills."
+    }
+  ],
+  "jargon": [
+    { "term": "Personal Brand", "definition": "The unique combination of skills, experience, and personality that you present to the professional world. It's how others perceive and remember you." },
+    { "term": "Visibility", "definition": "The degree to which your work and expertise are known by the people who matter for your career goals — recruiters, hiring managers, peers, and collaborators." },
+    { "term": "Thought Leadership", "definition": "Establishing yourself as a go-to authority in a specific domain by consistently sharing insights, opinions, and valuable content." }
+  ],
+  "summary": "Personal branding is the intentional shaping of your professional reputation. It rests on three pillars: expertise (what you're good at), visibility (do the right people know), and trust (can you deliver). Start by choosing 2-3 focus keywords and sharing one useful thing per week."
+}

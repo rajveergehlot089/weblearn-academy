@@ -1,0 +1,31 @@
+{
+  "topicId": "01-touch-typing-intro",
+  "exercises": [
+    {
+      "title": "Basic Practice",
+      "description": "Type these words: the quick brown fox jumps over lazy dog",
+      "hints": [
+        "Keep eyes on screen",
+        "Use proper finger placement"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "the quick brown fox jumps over lazy dog"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Sentence Practice",
+      "description": "Type each sentence without looking at the keyboard.",
+      "hints": [
+        "Focus on accuracy",
+        "Use all fingers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "The quick brown fox jumps over the lazy dog.\nPack my box with five dozen liquor jugs.\nHow vexingly quick daft zebras jump!"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

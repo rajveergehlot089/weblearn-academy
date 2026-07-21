@@ -1,0 +1,25 @@
+{
+  "topicId": "capstone",
+  "questions": [
+    {
+      "question": "Walk me through the architecture of a full-stack blog application.",
+      "answer": "A full-stack blog app has three layers: (1) Frontend — HTML/CSS/JS running in the browser, handles UI rendering and user interaction, (2) Backend — Node.js/Express server that handles routing, authentication, validation, and business logic, (3) Database — stores users and posts permanently. The frontend communicates with the backend via REST API calls (fetch). The backend talks to the database for CRUD operations. JWT tokens handle authentication across the request/response cycle.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you handle a situation where the API is slow?",
+      "answer": "Several strategies: (1) Frontend — show loading spinners and skeleton screens so users know something is happening, (2) Caching — store API responses in localStorage or a service worker to avoid repeated calls, (3) Backend — add pagination to limit data per request, use database indexing for faster queries, (4) Rate limiting — prevent too many requests from overwhelming the server, (5) CDN — serve static assets from edge servers closer to users. Start with the simplest: pagination and loading states.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What security considerations are important in a blog app?",
+      "answer": "Key security measures: (1) Always hash passwords with bcrypt — never store plain text, (2) Use HTTPS to encrypt all data in transit, (3) Validate and sanitize all user input to prevent XSS, (4) Use JWT with expiration tokens, (5) Implement rate limiting to prevent brute force attacks, (6) Authorization checks — only post owners can edit/delete their posts, (7) Use helmet.js for HTTP security headers. The biggest mistake beginners make is skipping authorization — just because someone is logged in doesn't mean they should access everything.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "How would you improve this blog app for production use?",
+      "answer": "Production improvements: (1) Replace JSON files with a real database (PostgreSQL/MongoDB), (2) Add input validation library (Joi/Zod), (3) Implement proper error logging (Winston/Loggly), (4) Add image upload for blog posts (S3/Cloudinary), (5) Implement search and pagination, (6) Add rate limiting per user, (7) Set up CI/CD pipeline, (8) Add automated tests (unit + integration), (9) Use environment variables for secrets, (10) Add monitoring and alerting.",
+      "difficulty": "hard"
+    }
+  ]
+}

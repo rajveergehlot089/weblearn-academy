@@ -1,0 +1,18 @@
+{
+  "topicId": "06-basic-letters",
+  "comparisons": [
+    {
+      "concept": "Basic Hindi Letters & Sounds",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Basic Hindi Letters & Sounds\nconst result = {\n  concept: \"Basic Hindi Letters & Sounds\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Basic Hindi Letters & Sounds\nresult = {\n    \"concept\": \"Basic Hindi Letters & Sounds\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Basic Hindi Letters & Sounds is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Basic Hindi Letters & Sounds is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

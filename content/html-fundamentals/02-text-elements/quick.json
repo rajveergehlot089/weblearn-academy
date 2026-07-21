@@ -1,0 +1,34 @@
+{
+  "topicId": "02-text-elements",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "HTML Text Elements",
+      "body": "HTML provides many elements for formatting and structuring text content. Understanding these elements is essential for creating readable, well-structured web pages."
+    },
+    {
+      "heading": "Headings and Paragraphs",
+      "body": "Headings (h1-h6) create hierarchy and structure. h1 is the most important, h6 the least. Paragraphs (p) contain blocks of text and automatically add spacing between them."
+    },
+    {
+      "heading": "Text Formatting",
+      "body": "HTML offers several elements for emphasizing and formatting text:\n• strong: Important text (bold)\n• em: Emphasized text (italic)\n• mark: Highlighted text\n• small: Smaller text\n• del: Deleted text (strikethrough)\n• ins: Inserted text (underlined)\n• sub/sup: Subscript and superscript"
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Heading",
+      "definition": "HTML elements (h1-h6) that define section titles and create document hierarchy"
+    },
+    {
+      "term": "Paragraph",
+      "definition": "The p element that contains blocks of text content"
+    },
+    {
+      "term": "Semantic",
+      "definition": "Elements that convey meaning about their content (like strong vs just bold)"
+    }
+  ],
+  "summary": "HTML text elements include headings (h1-h6), paragraphs, and formatting elements like strong, em, mark, and more. Use these to create well-structured, readable content."
+}

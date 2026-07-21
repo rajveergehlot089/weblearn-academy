@@ -1,0 +1,26 @@
+{
+  "topicId": "08-collaboration",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What Makes Collaboration Work",
+      "body": "Collaboration isn't just working in the same room. True collaboration means combining different skills, perspectives, and experiences to produce something none of you could create alone. It requires three things: shared goals, clear roles, and mutual accountability. Without these, 'collaboration' becomes parallel individual work with extra meetings."
+    },
+    {
+      "heading": "The Five Dysfunctions That Kill Collaboration",
+      "body": "Teams fail to collaborate when:\n\n1. **No shared purpose**: People don't know why they're working together\n2. **Unclear roles**: 'I thought you were doing that' leads to duplicated work or dropped tasks\n3. **Low trust**: People hoard information instead of sharing it\n4. **No accountability**: 'Someone else will handle it'\n5. **Conflict avoidance**: Disagreements go underground instead of being resolved\n\nThe fix starts with the leader: create clarity, build trust, and model collaborative behavior."
+    },
+    {
+      "heading": "Collaboration Tools and Rituals",
+      "body": "Effective collaboration needs structure:\n\n• **Shared documents**: Single source of truth for plans, decisions, and status\n• **Regular standups**: 15-minute daily syncs to stay aligned\n• **Retrospectives**: Weekly reflection on what worked and what didn't\n• **Cross-functional projects**: Break silos by mixing people from different teams\n• **Pair work**: Two people tackling a problem together (pair programming, co-writing)\n\nStructure enables freedom — when people know how collaboration works, they can focus on the work."
+    }
+  ],
+  "jargon": [
+    { "term": "Collaboration", "definition": "Working jointly with others to produce something. Effective collaboration produces outcomes greater than what individuals could achieve alone." },
+    { "term": "Silos", "definition": "Organizational barriers where teams don't share information or work together. Silos breed duplication, conflict, and inefficiency." },
+    { "term": "Cross-functional Team", "definition": "A team composed of members from different functional areas (engineering, design, marketing) working toward a shared goal." },
+    { "term": "Shared Mental Model", "definition": "When all team members have a common understanding of the goal, their roles, and how they'll work together. Essential for seamless collaboration." }
+  ],
+  "summary": "Effective collaboration requires shared goals, clear roles, and mutual accountability. The leader creates conditions for collaboration through structure (rituals, tools) and culture (trust, transparency)."
+}

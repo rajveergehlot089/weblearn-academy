@@ -1,0 +1,8 @@
+{
+  "topicId": "08-public-speaking",
+  "questions": [
+    { "question": "How do you overcome fear of public speaking?", "answer": "The fear never fully goes away — even experienced speakers get nervous. The key is preparation and practice. Know your material cold, practice out loud 5-10 times, and focus on your message not yourself. Start small (present to 2-3 friends), use deep breathing before going on, and remember: the audience wants you to succeed. Most stage fright is invisible to the audience.", "difficulty": "easy" },
+    { "question": "What makes a presentation engaging?", "answer": "Three elements: (1) A strong opening hook — surprising fact, question, or story that grabs attention immediately. (2) Stories and examples — make abstract ideas concrete and relatable. (3) Vocal variety — change your pace, volume, and pitch to maintain interest. Also: interact with the audience (questions, polls), use pauses for emphasis, and keep slides minimal.", "difficulty": "medium" },
+    { "question": "How do you handle nervousness during a presentation?", "answer": "Pause and breathe — the audience won't notice a 2-second pause. Focus on friendly faces in the audience. Move with purpose (walking releases nervous energy). Remember: the audience doesn't know your script, so mistakes are invisible. If you lose your place, summarize what you just said — it gives you time to find your spot. After the presentation, focus on what went well, not what didn't.", "difficulty": "medium" }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "topicId": "05-stress-intro",
+  "comparisons": [
+    {
+      "concept": "Types of Developer Stress",
+      "items": [
+        {
+          "name": "Imposter Syndrome",
+          "description": "Feeling like you don't deserve your role despite evidence of competence",
+          "symptoms": "Attributing success to luck, fear of being 'found out,' avoiding challenges",
+          "common_triggers": "New job, code review feedback, comparing to senior devs",
+          "intervention": "Track your accomplishments, seek mentorship, remember everyone feels this way"
+        },
+        {
+          "name": "Always-On Stress",
+          "description": "Inability to disconnect from work due to Slack, email, and on-call",
+          "symptoms": "Checking Slack on weekends, anxiety when phone buzzes, working during dinner",
+          "common_triggers": "On-call rotations, remote work blurring boundaries, FOMO on messages",
+          "intervention": "Set communication boundaries, use Do Not Disturb, schedule 'off' hours"
+        },
+        {
+          "name": "Technical Overwhelm",
+          "description": "Feeling behind on technologies, frameworks, and industry trends",
+          "symptoms": "Tutorial hell, anxiety about new frameworks, feeling outdated",
+          "common_triggers": "Seeing new tech announcements, LinkedIn posts, job postings listing unfamiliar tools",
+          "intervention": "Focus on fundamentals (they transfer), ignore hype cycles, learn one thing deeply"
+        },
+        {
+          "name": "Burnout",
+          "description": "Chronic workplace stress characterized by exhaustion, cynicism, and reduced efficacy",
+          "symptoms": "Dreading work, emotional numbness, declining performance, physical exhaustion",
+          "common_triggers": "Prolonged overwork, lack of autonomy, misaligned values, toxic environment",
+          "intervention": "Take time off, address root causes, set boundaries, consider role change if needed"
+        },
+        {
+          "name": "Deadline Pressure",
+          "description": "Acute stress from time-sensitive deliverables",
+          "symptoms": "Racing heart, difficulty sleeping before deadline, rushing through code",
+          "common_triggers": "Sprint deadlines, launch dates, client commitments",
+          "intervention": "Break work into smaller milestones, communicate early about delays, prioritize ruthlessly"
+        }
+      ],
+      "insight": "Not all stress is the same. Imposter syndrome requires mindset work. Always-on stress requires boundary-setting. Technical overwhelm requires focus on fundamentals. Burnout requires systemic change. Identify your stress TYPE before choosing an intervention."
+    }
+  ],
+  "keyInsight": "Developer stress comes from specific sources (imposter syndrome, always-on culture, technical overwhelm, burnout, deadline pressure). Each requires a different intervention. Before trying stress reduction techniques, identify WHERE your stress comes from."
+}

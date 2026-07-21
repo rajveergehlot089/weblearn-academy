@@ -1,0 +1,79 @@
+{
+  "topicId": "09-accessibility",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Semantic HTML for Accessibility",
+      "body": "Semantic HTML is the foundation of accessible web pages. Screen readers and other assistive technologies use HTML elements to understand page structure.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Semantic structure -->\n<header>\n    <h1>Page Title</h1>\n    <nav aria-label=\"Main\">\n        <ul>\n            <li><a href=\"/\">Home</a></li>\n            <li><a href=\"/about\">About</a></li>\n        </ul>\n    </nav>\n</header>\n\n<main>\n    <article>\n        <h2>Article Title</h2>\n        <section>\n            <h3>Section Title</h3>\n            <p>Content with <strong>important text</strong> and <em>emphasized text</em>.</p>\n        </section>\n    </article>\n</main>\n\n<!-- Skip navigation link -->\n<a href=\"#main-content\" class=\"skip-link\">Skip to main content</a>",
+        "explanation": "Semantic elements create landmark regions. Skip links help keyboard users bypass repetitive navigation. Headings provide document structure for screen readers."
+      }
+    },
+    {
+      "heading": "Image Accessibility",
+      "body": "Proper image accessibility requires meaningful alt text and understanding when to use empty alt.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Informative image -->\n<img src=\"chart.png\" alt=\"Bar chart showing 40% increase in sales\">\n\n<!-- Decorative image -->\n<img src=\"decoration.svg\" alt=\"\">\n\n<!-- Complex image with description -->\n<figure>\n    <img src=\"infographic.png\" alt=\"Company growth infographic\" aria-describedby=\"desc1\">\n    <figcaption id=\"desc1\">Infographic showing company growth from 2020-2025</figcaption>\n</figure>\n\n<!-- Image link -->\n<a href=\"/profile\">\n    <img src=\"avatar.jpg\" alt=\"User profile\">\n</a>\n\n<!-- Image with text alternative -->\n<img src=\"logo.png\" alt=\"WebLearn Academy\">\n<span class=\"visually-hidden\">WebLearn Academy</span>",
+        "explanation": "Alt text should describe the image's purpose. Empty alt=\"\" skips decorative images. Use aria-describedby for complex images. Visually hidden text provides context."
+      }
+    },
+    {
+      "heading": "Form Accessibility",
+      "body": "Accessible forms require proper labels, error handling, and ARIA attributes.",
+      "code": {
+        "language": "html",
+        "snippet": "<form>\n    <!-- Label association -->\n    <label for=\"email\">Email address:</label>\n    <input type=\"email\" id=\"email\" name=\"email\" required aria-describedby=\"email-help email-error\">\n    <span id=\"email-help\">We'll never share your email.</span>\n    <span id=\"email-error\" role=\"alert\" aria-live=\"assertive\"></span>\n    \n    <!-- Required field -->\n    <label for=\"name\">Name <span aria-hidden=\"true\">*</span> <span class=\"visually-hidden\">(required)</span>:</label>\n    <input type=\"text\" id=\"name\" name=\"name\" required>\n    \n    <!-- Error handling -->\n    <div role=\"group\" aria-labelledby=\"error-summary\">\n        <h2 id=\"error-summary\">There are errors in the form</h2>\n        <ul>\n            <li><a href=\"#email\">Email is required</a></li>\n        </ul>\n    </div>\n</form>\n\n<style>\n.visually-hidden {\n    position: absolute;\n    width: 1px;\n    height: 1px;\n    padding: 0;\n    margin: -1px;\n    overflow: hidden;\n    clip: rect(0, 0, 0, 0);\n    white-space: nowrap;\n    border: 0;\n}\n</style>",
+        "explanation": "Labels must be associated with inputs using for/id. aria-describedby provides additional context. Error messages should be announced with aria-live."
+      }
+    },
+    {
+      "heading": "Keyboard Navigation",
+      "body": "All functionality must be accessible via keyboard. Use tabindex, focus management, and skip links.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Skip link -->\n<a href=\"#main\" class=\"skip-link\">Skip to main content</a>\n\n<!-- Focus management -->\n<div role=\"dialog\" aria-modal=\"true\" aria-labelledby=\"dialog-title\">\n    <h2 id=\"dialog-title\">Modal Dialog</h2>\n    <p>Dialog content here...</p>\n    <button>Close</button>\n</div>\n\n<!-- Custom keyboard interaction -->\n<div role=\"tablist\" aria-label=\"Course tabs\">\n    <button role=\"tab\" aria-selected=\"true\" aria-controls=\"panel1\" id=\"tab1\">Tab 1</button>\n    <button role=\"tab\" aria-selected=\"false\" aria-controls=\"panel2\" id=\"tab2\">Tab 2</button>\n</div>\n<div role=\"tabpanel\" id=\"panel1\" aria-labelledby=\"tab1\">\n    <p>Panel 1 content</p>\n</div>\n\n<style>\n.skip-link {\n    position: absolute;\n    left: -9999px;\n}\n\n.skip-link:focus {\n    left: 0;\n    top: 0;\n    background: #000;\n    color: #fff;\n    padding: 10px;\n    z-index: 1000;\n}\n\n:focus {\n    outline: 3px solid #4CAF50;\n    outline-offset: 2px;\n}</style>",
+        "explanation": "Skip links help keyboard users bypass navigation. Focus must be visible. Custom components need keyboard interaction patterns (arrow keys, Enter, Escape)."
+      }
+    },
+    {
+      "heading": "ARIA Roles and Properties",
+      "body": "ARIA enhances accessibility when HTML semantics aren't sufficient. Use native HTML first, ARIA second.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Landmark roles -->\n<header role=\"banner\">...</header>\n<nav role=\"navigation\">...</nav>\n<main role=\"main\">...</main>\n<aside role=\"complementary\">...</aside>\n<footer role=\"contentinfo\">...</footer>\n\n<!-- Live regions -->\n<div aria-live=\"polite\" aria-atomic=\"true\">\n    Status: Form saved successfully\n</div>\n\n<!-- Progress indicator -->\n<div role=\"progressbar\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\">\n    75% complete\n</div>\n\n<!-- Alert -->\n<div role=\"alert\">\n    Error: Please fix the errors before submitting\n</div>\n\n<!-- Labeling -->\n<button aria-label=\"Close dialog\">X</button>\n<img src=\"icon.png\" alt=\"\" role=\"presentation\">\n<nav aria-label=\"Main\">...</nav>\n<nav aria-label=\"Footer\">...</nav>",
+        "explanation": "Use ARIA only when native HTML isn't sufficient. Live regions announce dynamic content changes. Roles enhance semantics for older browsers."
+      }
+    },
+    {
+      "heading": "Color and Contrast",
+      "body": "Ensure sufficient color contrast and don't rely on color alone to convey information.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Good contrast example -->\n<p style=\"color: #333; background: #fff;\">Dark text on light background</p>\n\n<!-- Don't rely on color alone -->\n<p style=\"color: red;\">Error: Invalid email</p>\n<p style=\"color: red;\">Error: Invalid email</p>\n\n<!-- Better: combine color with icon/text -->\n<p>\n    <span aria-hidden=\"true\">X</span>\n    <span style=\"color: red;\">Error: Invalid email</span>\n</p>\n\n<!-- Status with icon -->\n<div>\n    <span aria-hidden=\"true\">✓</span>\n    <span style=\"color: green;\">Success!</span>\n</div>\n\n<style>\n/* Minimum contrast ratio: 4.5:1 for normal text, 3:1 for large text */\n.text {\n    color: #333; /* Dark gray */\n    background: #fff; /* White */\n    /* Contrast ratio: 12.63:1 */\n}\n\n/* High contrast mode support */\n@media (prefers-contrast: high) {\n    body {\n        background: #000;\n        color: #fff;\n    }\n}\n\n/* Reduced motion */\n@media (prefers-reduced-motion: reduce) {\n    * {\n        animation: none !important;\n        transition: none !important;\n    }\n}</style>",
+        "explanation": "WCAG requires 4.5:1 contrast for normal text, 3:1 for large text. Don't rely solely on color - use icons, text, or patterns. Respect user preferences for contrast and motion."
+      }
+    },
+    {
+      "heading": "Testing Accessibility",
+      "body": "Test with multiple methods: automated tools, manual testing, and screen readers.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Testing checklist -->\n<!-- 1. Keyboard-only navigation -->\n<!-- 2. Screen reader testing (NVDA, VoiceOver, JAWS) -->\n<!-- 3. Automated tools (axe, WAVE, Lighthouse) -->\n<!-- 4. Color contrast checking -->\n<!-- 5. Zoom to 200% -->\n<!-- 6. Mobile testing -->\n\n<!-- Example accessible component -->\n<nav aria-label=\"Pagination\">\n    <ul>\n        <li>\n            <a href=\"?page=1\" aria-label=\"Go to page 1\">1</a>\n        </li>\n        <li>\n            <a href=\"?page=2\" aria-current=\"page\" aria-label=\"Page 2, current page\">2</a>\n        </li>\n        <li>\n            <a href=\"?page=3\" aria-label=\"Go to page 3\">3</a>\n        </li>\n        <li>\n            <a href=\"?page=4\" aria-label=\"Go to next page\">Next</a>\n        </li>\n    </ul>\n</nav>",
+        "explanation": "Test with real assistive technologies. Automated tools catch ~30% of issues. Manual testing is essential. Test with keyboard only and screen readers."
+      }
+    },
+    {
+      "heading": "Best Practices",
+      "body": "Accessibility guidelines:\n\n1. Use semantic HTML first, ARIA second\n2. Provide alt text for informative images\n3. Ensure all functionality is keyboard accessible\n4. Maintain proper heading hierarchy\n5. Use sufficient color contrast (4.5:1 minimum)\n6. Provide error messages that are perceivable\n7. Test with screen readers and keyboard only"
+    },
+    {
+      "heading": "Practice Task",
+      "body": "Create an accessible form that includes:\n• Proper label associations\n• Error handling with aria-live\n• Keyboard navigation\n• Skip navigation link\n• Sufficient color contrast\n• Screen reader testing"
+    }
+  ],
+  "summary": "Web accessibility ensures content is usable by everyone. Use semantic HTML, provide alt text, ensure keyboard accessibility, maintain color contrast, and test with assistive technologies."
+}

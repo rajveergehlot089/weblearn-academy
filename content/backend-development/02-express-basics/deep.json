@@ -1,0 +1,59 @@
+{
+  "topicId": "02-express-basics",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Express Application Structure",
+      "body": "A typical Express app follows a structured pattern. Let's build a more complete server with multiple routes and middleware:",
+      "code": {
+        "language": "javascript",
+        "snippet": "const express = require('express');\nconst app = express();\nconst port = process.env.PORT || 3000;\n\n// Built-in middleware\napp.use(express.json());\napp.use(express.urlencoded({ extended: true }));\n\n// Custom middleware\napp.use((req, res, next) => {\n  console.log(`${new Date().toISOString()} - ${req.method} ${req.url}`);\n  next();\n});\n\n// Routes\napp.get('/', (req, res) => {\n  res.json({ message: 'Welcome to Express!' });\n});\n\napp.get('/users', (req, res) => {\n  res.json({ users: ['Alice', 'Bob', 'Charlie'] });\n});\n\napp.post('/users', (req, res) => {\n  const newUser = req.body;\n  res.status(201).json({ message: 'User created', user: newUser });\n});\n\n// Error handling middleware\napp.use((err, req, res, next) => {\n  console.error(err.stack);\n  res.status(500).json({ error: 'Something went wrong!' });\n});\n\napp.listen(port, () => {\n  console.log(`Express server running on port ${port}`);\n});",
+        "explanation": "This shows a complete Express app with middleware, routes, and error handling. The JSON middleware parses request bodies, and the logging middleware tracks requests."
+      }
+    },
+    {
+      "heading": "Route Parameters and Query Strings",
+      "body": "Express makes it easy to work with dynamic URLs. Route parameters capture values from the URL path, while query strings provide additional data after the '?' character.",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Route parameters\napp.get('/users/:id', (req, res) => {\n  const userId = req.params.id;\n  res.json({ userId, message: `Fetching user ${userId}` });\n});\n\n// Multiple parameters\napp.get('/users/:userId/posts/:postId', (req, res) => {\n  const { userId, postId } = req.params;\n  res.json({ userId, postId });\n});\n\n// Query strings\napp.get('/search', (req, res) => {\n  const { q, page = 1, limit = 10 } = req.query;\n  res.json({ query: q, page: parseInt(page), limit: parseInt(limit) });\n});",
+        "explanation": "req.params contains route parameters, req.query contains query string values. Express automatically parses these for you."
+      }
+    },
+    {
+      "heading": "Request and Response Objects",
+      "body": "Express enhances Node.js's req and res objects with helpful methods and properties:",
+      "code": {
+        "language": "javascript",
+        "snippet": "app.get('/request-info', (req, res) => {\n  const requestInfo = {\n    method: req.method,\n    url: req.url,\n    path: req.path,\n    query: req.query,\n    params: req.params,\n    headers: req.headers,\n    ip: req.ip,\n    body: req.body\n  };\n\n  res.json(requestInfo);\n});\n\n// Response methods\napp.get('/response-examples', (req, res) => {\n  // Different response methods\n  res.send('Hello World!');           // Send text\n  res.json({ key: 'value' });        // Send JSON\n  res.status(201).send('Created');   // Set status code\n  res.redirect('/other-page');        // Redirect\n  res.sendFile('path/to/file.html'); // Send file\n  res.render('template', { data });  // Render template\n});",
+        "explanation": "The request object contains all information about the incoming request. The response object provides methods to send different types of responses back to the client."
+      }
+    },
+    {
+      "heading": "Static Files and Template Engines",
+      "body": "Express can serve static files and use template engines for dynamic HTML pages:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Serve static files from 'public' directory\napp.use(express.static('public'));\n\n// With cache control\napp.use(express.static('public', {\n  maxAge: '1d',\n  etag: true,\n  lastModified: true\n}));\n\n// Template engine setup (using EJS as example)\napp.set('view engine', 'ejs');\napp.set('views', './views');\n\napp.get('/profile', (req, res) => {\n  const user = {\n    name: 'Alice',\n    age: 28,\n    email: 'alice@example.com'\n  };\n  res.render('profile', { user });\n});",
+        "explanation": "express.static serves files from a directory. Template engines like EJS let you create dynamic HTML pages with variables and logic."
+      }
+    },
+    {
+      "heading": "Router Modules",
+      "body": "For larger applications, you can organize routes into separate modules using Express Router:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// routes/users.js\nconst express = require('express');\nconst router = express.Router();\n\nrouter.get('/', (req, res) => {\n  res.json({ users: [] });\n});\n\nrouter.get('/:id', (req, res) => {\n  res.json({ userId: req.params.id });\n});\n\nrouter.post('/', (req, res) => {\n  res.status(201).json({ message: 'User created' });\n});\n\nmodule.exports = router;\n\n// app.js\nconst userRoutes = require('./routes/users');\napp.use('/api/users', userRoutes);",
+        "explanation": "Router helps organize your code by grouping related routes. You can mount routers at different paths in your main app."
+      }
+    }
+  ],
+  "jargon": [
+    { "term": "Route Handler", "definition": "A function that handles requests to a specific route. It receives req, res, and next parameters." },
+    { "term": "Middleware Stack", "definition": "The sequence of middleware functions that process requests. Express executes them in order." },
+    { "term": "Status Codes", "definition": "Three-digit numbers that indicate the result of a request (200 = OK, 404 = Not Found, 500 = Server Error)." },
+    { "term": "Router", "definition": "An isolated instance of middleware and routes. Think of it as a mini-application that only handles routing." }
+  ],
+  "summary": "Express.js provides a clean, efficient way to build web applications. Key features include routing, middleware, static file serving, and template engines. Use Router modules to organize larger applications."
+}

@@ -1,0 +1,42 @@
+{
+  "topicId": "05-written-communication",
+  "comparisons": [
+    {
+      "concept": "Vague vs. Actionable Subject Lines",
+      "before": {
+        "label": "Vague",
+        "code": "Subject: Quick question\nSubject: Update\nSubject: Meeting\nSubject: Hi\nSubject: Fwd: Fwd: Re: Document"
+      },
+      "after": {
+        "label": "Actionable",
+        "code": "Subject: Q3 Budget Review — Decision Needed by Friday\nSubject: Meeting Moved to Thursday 2pm\nSubject: Action Required: Approve Vendor Contract\nSubject: Question About the Website Redesign Timeline\nSubject: Final Version: Client Proposal (v3)"
+      },
+      "explanation": "A good subject line tells the reader: what it's about, what they need to do, and by when. It also makes the email searchable months later."
+    },
+    {
+      "concept": "Wall of Text vs. Structured Email",
+      "before": {
+        "label": "Wall of Text",
+        "code": "Hi team, I wanted to let you know that we've been working on the Q3 budget and there have been some changes to the allocations that I think you should be aware of, specifically marketing has requested a significant increase and engineering has also asked for more funding and finance is reviewing both requests and we need to decide by Friday which to prioritize so please review the attached and let me know your thoughts."
+      },
+      "after": {
+        "label": "Structured",
+        "code": "Hi team,\n\nQ3 budget update — decision needed by Friday.\n\nChanges:\n• Marketing requesting 40% increase ($84K)\n• Engineering requesting 15% increase ($42K)\n• Finance reviewing both requests\n\nAction needed:\nPlease review the attached breakdown and reply with your priority by Thursday EOD.\n\nThanks,\n[Name]"
+      },
+      "explanation": "Structured emails are 3x faster to read. Bullet points, short paragraphs, and white space make information scannable. Your reader will thank you."
+    },
+    {
+      "concept": "Hedging vs. Direct Professional Writing",
+      "before": {
+        "label": "Hedging",
+        "code": "'I just wanted to check in and see if maybe you've had a chance to look at the thing I sent over, and if so, I was wondering if perhaps you could let me know your thoughts when you get a chance, no rush.'"
+      },
+      "after": {
+        "label": "Direct",
+        "code": "'Have you reviewed the proposal? I'd appreciate your feedback by Wednesday so I can incorporate it before the client meeting.'"
+      },
+      "explanation": "Hedging makes you sound uncertain and wastes the reader's time. Direct writing is respectful — it gives the reader clear information and a specific deadline."
+    }
+  ],
+  "keyInsight": "The difference between forgettable and effective written communication is structure. Subject lines that tell, emails that scan, and calls to action that specify."
+}

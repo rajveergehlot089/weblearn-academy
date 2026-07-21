@@ -1,0 +1,18 @@
+{
+  "topicId": "12-deployment",
+  "comparisons": [
+    {
+      "concept": "Deployment platform differences",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript/Node.js\n// Frontend: Vercel\n// Backend: Render\n// Database: PostgreSQL on Render\n// git push -> auto deploy"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python\n# Frontend: Vercel or Netlify\n# Backend: Render (Python runtime)\n# Database: PostgreSQL on Render\n# Same git-push-to-deploy workflow"
+      },
+      "explanation": "Deployment is LANGUAGE-AGNOSTIC. The platforms support multiple languages. The workflow is the same: push code, build, deploy, get URL."
+    }
+  ],
+  "keyInsight": "Deployment is a PROCESS, not a language feature. Whether you use JavaScript, Python, Go, or Java, the workflow is identical."
+}

@@ -1,0 +1,26 @@
+{
+  "topicId": "07-motivation",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Intrinsic vs. Extrinsic Motivation",
+      "body": "Motivation drives performance. There are two types:\n\n• **Intrinsic motivation**: Doing something because it's inherently satisfying. Learning a new skill, solving a puzzle, helping a colleague. This produces sustainable, high-quality work.\n\n• **Extrinsic motivation**: Doing something for external rewards — money, promotions, praise. This works for short-term tasks but can backfire for creative or complex work.\n\nDaniel Pink's research shows that for knowledge work, intrinsic motivation matters more. Autonomy, mastery, and purpose beat carrots and sticks."
+    },
+    {
+      "heading": "The Three Pillars of Intrinsic Motivation",
+      "body": "Daniel Pink identified three elements that drive people at their best:\n\n• **Autonomy**: The desire to direct your own life. Give people control over how they work, not just what they work on.\n• **Mastery**: The urge to get better at something that matters. Provide learning opportunities and stretch assignments.\n• **Purpose**: The yearning to do what we do in the service of something larger. Connect daily work to a bigger mission."
+    },
+    {
+      "heading": "Quick Motivation Boosters",
+      "body": "Leaders can boost motivation immediately with:\n\n1. **Recognition**: Specific, timely acknowledgment of good work. 'Your analysis of the market data was excellent — the competitive insights were exactly what we needed.'\n2. **Choice**: Offer options instead of directives. 'Would you prefer to lead the API project or the frontend refactor?'\n3. **Progress**: Show people how their work moves the needle. Share metrics, customer feedback, and team wins."
+    }
+  ],
+  "jargon": [
+    { "term": "Intrinsic Motivation", "definition": "Doing something because it's inherently interesting or enjoyable, not for external rewards." },
+    { "term": "Extrinsic Motivation", "definition": "Doing something for separable outcomes like money, grades, or recognition." },
+    { "term": "Self-Determination Theory", "definition": "A theory of motivation emphasizing autonomy, competence, and relatedness as fundamental human needs." },
+    { "term": "Flow State", "definition": "A state of complete absorption in an activity, where challenge matches skill level. Peak motivation and performance occur in flow." }
+  ],
+  "summary": "Sustainable motivation comes from intrinsic factors: autonomy, mastery, and purpose. Extrinsic rewards work for simple tasks but can undermine motivation for complex, creative work."
+}

@@ -1,0 +1,44 @@
+{
+  "topicId": "03-verbal-communication",
+  "exercises": [
+    {
+      "title": "The 60-Second BLUF Challenge",
+      "description": "Pick a topic you know well (your job, a hobby, a recent experience). Explain it in exactly 60 seconds using BLUF — start with the main point, then add supporting details. Record yourself and count: (1) How many seconds to get to the main point? (2) How many filler words? (3) Did you stay under 60 seconds?",
+      "hints": [
+        "Start with: 'The key point is...' or 'What matters most is...'",
+        "If you go over 60 seconds, cut supporting details — they're less important than you think",
+        "Replace 'um' with a 1-second pause"
+      ],
+      "solution": "A strong BLUF delivery gets to the main point within 10-15 seconds. If you're still explaining context at second 30, you've buried the lead. Aim for: 15 seconds main point, 30 seconds supporting evidence, 15 seconds call to action or next steps. Most people need 3-5 attempts to get comfortable with this format.",
+      "difficulty": "medium"
+    },
+    {
+      "title": "Filler Word Detox",
+      "description": "For one full day, track every filler word you use. Keep a tally on your phone or a piece of paper. At the end of the day, review: What situations triggered the most fillers? (Meetings? Phone calls? New people?) Then pick your top 3 filler words and practice replacing each one with a pause.",
+      "hints": [
+        "Common fillers: um, uh, like, you know, basically, so, kind of, I mean",
+        "Don't judge yourself — just notice",
+        "A pause feels long to you but sounds confident to others"
+      ],
+      "solution": "Most people use 50-100+ filler words per day without realizing it. High-stress situations (presentations, new people) typically spike the count. After one day of tracking, you'll be aware of your patterns. The next step: in your next conversation, replace just ONE filler with a pause. Notice how it changes the dynamic. Gradually increase.",
+      "difficulty": "hard"
+    },
+    {
+      "title": "Reframe the Negative",
+      "description": "Rewrite these negative or passive statements as positive, assertive alternatives. Focus on what TO do, not what NOT to do.",
+      "hints": [
+        "Replace 'Don't' with a positive instruction",
+        "Remove qualifiers like 'just', 'maybe', 'I think'",
+        "State the action you want, with a reason"
+      ],
+      "scenarios": [
+        "Original: 'Don't submit the report late again.'",
+        "Original: 'Sorry to bother you, but could you maybe help me with this?'",
+        "Original: 'I don't think this is a good idea, but...'",
+        "Original: 'Don't use that color — it looks bad.'"
+      ],
+      "solution": "Rewritten: (1) 'Please submit reports by Friday 5pm so I can review before Monday.' (2) 'Can you review this proposal by Thursday? I need your input on the budget section.' (3) 'I recommend a different approach — here's my reasoning.' (4) 'Try the navy palette — it reads better for a corporate audience.' Each version gives the listener a clear action instead of a vague prohibition.",
+      "difficulty": "medium"
+    }
+  ]
+}

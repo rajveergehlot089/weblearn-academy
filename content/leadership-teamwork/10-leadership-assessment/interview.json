@@ -1,0 +1,30 @@
+{
+  "topicId": "10-leadership-assessment",
+  "questions": [
+    {
+      "question": "How do you assess your own leadership effectiveness?",
+      "answer": "I use three methods: (1) self-reflection — journaling weekly about what worked and what didn't, (2) external feedback — quarterly 1-on-1s with my manager, peers, and reports asking specific questions about my effectiveness, and (3) outcome tracking — measuring team engagement scores, retention, and delivery results. The gap between self-perception and external feedback reveals my biggest blind spots. I focus development on one area at a time for 90 days.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's the most valuable leadership skill you've developed?",
+      "answer": "Active listening. I used to be a problem-solver — someone would bring an issue and I'd jump to solutions. Now I listen first, ask questions, and help people find their own solutions. It was hard to change because my instinct was to help immediately. The result: my team is more self-sufficient, I make better-informed decisions, and trust has increased because people feel heard.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you handle feedback about your leadership weaknesses?",
+      "answer": "I treat feedback as data, not attacks. When I receive critical feedback, I thank the person genuinely, write it down, and sit with it for 24 hours before responding. If it's a pattern (multiple people say the same thing), I take it seriously and add it to my development plan. If it's a one-off, I consider context. The hardest part is not getting defensive — but that's exactly what blocks growth.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "How do you balance strengths-based development with fixing weaknesses?",
+      "answer": "I use a triage approach. If a weakness is blocking my effectiveness (like poor communication skills), I fix it immediately — it's a critical gap. If it's a moderate weakness that doesn't block me, I accept it and work around it. I then invest most of my development energy in amplifying my strengths — things like strategic thinking or mentoring that differentiate me. The goal isn't to be average at everything; it's to be exceptional at what matters most.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does continuous leadership development look like in practice?",
+      "answer": "It's a cycle: assess → learn → practice → feedback → reassess. I read one leadership book per quarter and apply one concept immediately. I have a monthly mentor meeting. I journal weekly. I get 360 feedback annually. I take on stretch assignments that push my growth edges. And I track my progress in a leadership journal so I can see how far I've come. The key is consistency — small investments compounded over time produce dramatic results.",
+      "difficulty": "easy"
+    }
+  ]
+}

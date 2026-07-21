@@ -1,0 +1,58 @@
+{
+  "topicId": "05-forms-inputs",
+  "type": "comparison",
+  "estimatedMinutes": 10,
+  "comparisons": [
+    {
+      "title": "Form Structure",
+      "before": {
+        "code": "<div>Name: <input type=\"text\"></div>\n<div>Email: <input type=\"text\"></div>\n<div><input type=\"submit\" value=\"Send\"></div>",
+        "description": "No labels, no input types, no validation, no accessibility"
+      },
+      "after": {
+        "code": "<form action=\"/submit\" method=\"POST\">\n    <div>\n        <label for=\"name\">Name:</label>\n        <input type=\"text\" id=\"name\" name=\"name\" required placeholder=\"Enter your name\">\n    </div>\n    <div>\n        <label for=\"email\">Email:</label>\n        <input type=\"email\" id=\"email\" name=\"email\" required placeholder=\"you@example.com\">\n    </div>\n    <button type=\"submit\">Send</button>\n</form>",
+        "description": "Proper labels, correct input types, validation attributes, accessible markup"
+      }
+    },
+    {
+      "title": "Input Type Usage",
+      "before": {
+        "code": "<input type=\"text\" name=\"email\">\n<input type=\"text\" name=\"password\">\n<input type=\"text\" name=\"age\">\n<input type=\"text\" name=\"date\">",
+        "description": "All inputs use text type - no validation, wrong keyboards on mobile"
+      },
+      "after": {
+        "code": "<input type=\"email\" name=\"email\" required placeholder=\"you@example.com\">\n<input type=\"password\" name=\"password\" minlength=\"8\" required>\n<input type=\"number\" name=\"age\" min=\"18\" max=\"120\">\n<input type=\"date\" name=\"date\" min=\"2024-01-01\">",
+        "description": "Proper input types with validation and appropriate mobile keyboards"
+      }
+    },
+    {
+      "title": "Label Association",
+      "before": {
+        "code": "<p>Username:</p>\n<input type=\"text\" name=\"username\">\n\n<p>Password:</p>\n<input type=\"password\" name=\"password\">",
+        "description": "No labels - poor accessibility, not clickable"
+      },
+      "after": {
+        "code": "<label for=\"username\">Username:</label>\n<input type=\"text\" id=\"username\" name=\"username\" required>\n\n<label for=\"password\">Password:</label>\n<input type=\"password\" id=\"password\" name=\"password\" required minlength=\"8\">",
+        "description": "Proper label association with for/id pattern"
+      }
+    },
+    {
+      "title": "Radio Button Grouping",
+      "before": {
+        "code": "<p>Select size:</p>\n<input type=\"radio\" name=\"size\" value=\"small\"> Small\n<input type=\"radio\" name=\"size\" value=\"medium\"> Medium\n<input type=\"radio\" name=\"size\" value=\"large\"> Large",
+        "description": "No labels, no fieldset, no legend"
+      },
+      "after": {
+        "code": "<fieldset>\n    <legend>Select size:</legend>\n    <label>\n        <input type=\"radio\" name=\"size\" value=\"small\"> Small\n    </label>\n    <label>\n        <input type=\"radio\" name=\"size\" value=\"medium\"> Medium\n    </label>\n    <label>\n        <input type=\"radio\" name=\"size\" value=\"large\"> Large\n    </label>\n</fieldset>",
+        "description": "Proper grouping with fieldset/legend and labels"
+      }
+    }
+  ],
+  "insights": [
+    "Always use labels with for/id association for accessibility",
+    "Use appropriate input types (email, password, number, date) for validation and UX",
+    "Group related controls with fieldset and legend",
+    "Use required attribute for mandatory fields",
+    "Provide placeholder text as examples, not labels"
+  ]
+}

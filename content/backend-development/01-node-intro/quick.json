@@ -1,0 +1,34 @@
+{
+  "topicId": "01-node-intro",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Node.js?",
+      "body": "Node.js is a JavaScript runtime built on Chrome's V8 engine. It lets you run JavaScript outside the browser, on your server. Think of it as bringing JavaScript from the frontend to the backend."
+    },
+    {
+      "heading": "Why Use Node.js?",
+      "body": "Node.js is great for building fast, scalable network applications. It uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Perfect for real-time apps like chat servers or streaming services."
+    },
+    {
+      "heading": "Your First Node.js Server",
+      "body": "Here's a simple HTTP server that responds with 'Hello World':",
+      "code": {
+        "language": "javascript",
+        "snippet": "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  res.writeHead(200, {'Content-Type': 'text/plain'});\n  res.end('Hello World!\\n');\n});\n\nserver.listen(3000, () => {\n  console.log('Server running at http://localhost:3000/');\n});",
+        "explanation": "We import the http module, create a server that handles requests, and listen on port 3000. When you visit localhost:3000, you'll see 'Hello World!'."
+      }
+    },
+    {
+      "heading": "Node.js File Structure",
+      "body": "A typical Node.js project has a package.json file that tracks dependencies and scripts. You can create one with 'npm init'. Your main server file is usually called index.js or server.js."
+    }
+  ],
+  "jargon": [
+    { "term": "Runtime", "definition": "The environment where your code executes. Node.js provides a JavaScript runtime outside the browser." },
+    { "term": "V8 Engine", "definition": "Google's JavaScript engine that compiles JavaScript to machine code. Node.js uses V8 to run JavaScript on the server." },
+    { "term": "npm", "definition": "Node Package Manager. It helps you install and manage JavaScript packages for your project." }
+  ],
+  "summary": "Node.js lets you run JavaScript on the server. It's fast, scalable, and uses an event-driven model. Start by creating a simple HTTP server with the http module, then use npm to manage packages."
+}

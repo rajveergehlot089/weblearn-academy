@@ -1,0 +1,44 @@
+{
+  "topicId": "03-javascript",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is JavaScript?",
+      "body": "JavaScript is the programming language of the web. If HTML is the skeleton and CSS is the clothes, JavaScript is the BRAIN — it makes things happen. When you click a button and a popup appears, when a form validates your email, when a menu slides open — that's all JavaScript."
+    },
+    {
+      "heading": "Your First Script",
+      "body": "You can add JavaScript directly in your HTML using <script> tags:",
+      "code": {
+        "language": "javascript",
+        "snippet": "<button onclick=\"sayHello()\">Click Me</button>\n\n<script>\n  function sayHello() {\n    alert('Hello! You clicked the button!');\n  }\n</script>",
+        "explanation": "function sayHello() defines a reusable block of code. onclick='sayHello()' tells the button to run that code when clicked. alert() pops up a message box."
+      }
+    },
+    {
+      "heading": "Variables — Storing Information",
+      "body": "Variables are like labeled boxes that hold data:",
+      "code": {
+        "language": "javascript",
+        "snippet": "let name = 'Rajveer';       // Text (string)\nlet age = 25;                // Number\nlet isStudent = true;        // Boolean (true/false)\nlet items = ['a', 'b', 'c']; // Array (list)\n\nconsole.log(name);  // Prints: Rajveer",
+        "explanation": "'let' creates a variable. = assigns a value. Use console.log() to see output in the browser's developer console (press F12)."
+      }
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Variable",
+      "definition": "A named container that stores a value. You give it a name and can change what's inside."
+    },
+    {
+      "term": "Function",
+      "definition": "A reusable block of code that performs a specific task. Like a recipe — you write it once, use it many times."
+    },
+    {
+      "term": "Console",
+      "definition": "A debugging tool in the browser (press F12). Developers use console.log() to see what their code is doing."
+    }
+  ],
+  "summary": "JavaScript is the brain of web pages. Variables store data, functions perform actions, and events respond to user clicks/typing. It runs in the browser and makes pages interactive."
+}

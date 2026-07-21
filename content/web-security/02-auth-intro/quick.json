@@ -1,0 +1,30 @@
+{
+  "topicId": "02-auth-intro",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Authentication Fundamentals?",
+      "body": "What is authentication, why it matters, and different approaches. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "Authentication Fundamentals is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind Authentication Fundamentals is understanding how different components work together.\n\n2. Application: In practice, you'll use Authentication Fundamentals every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most Authentication Fundamentals implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding Authentication Fundamentals is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Authentication",
+      "definition": "A key concept in Authentication Fundamentals. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Fundamentals",
+      "definition": "A key concept in Authentication Fundamentals. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "Authentication Fundamentals is a core concept in auth. What is authentication, why it matters, and different approaches. Focus on understanding the fundamentals first, then practice applying them."
+}

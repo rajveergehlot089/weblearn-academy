@@ -1,0 +1,18 @@
+{
+  "topicId": "04-http-https",
+  "comparisons": [
+    {
+      "concept": "Making an HTTP request",
+      "javascript": {
+        "language": "javascript",
+        "code": "const response = await fetch('https://api.example.com/users');\nconst data = await response.json();\nconsole.log(data);"
+      },
+      "python": {
+        "language": "python",
+        "code": "import requests\n\nresponse = requests.get('https://api.example.com/users')\ndata = response.json()\nprint(data)"
+      },
+      "explanation": "Same concept: send a GET request, receive JSON data. JavaScript uses fetch() (built-in), Python uses the requests library. Both return a response object you parse with .json(). The HTTP protocol is the same regardless of language."
+    }
+  ],
+  "keyInsight": "HTTP is a PROTOCOL — a set of rules independent of any programming language. Whether you use JavaScript, Python, Go, or Java, the request/response pattern, status codes, and methods are IDENTICAL. The only difference is the syntax for making the call in each language."
+}

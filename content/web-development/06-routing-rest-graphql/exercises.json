@@ -1,0 +1,19 @@
+{
+  "topicId": "06-routing-rest-graphql",
+  "exercises": [
+    {
+      "title": "Design a REST API for a Library",
+      "description": "Design REST endpoints for a library system with: books, authors, and borrowing. Include CRUD for books, list books by author, and track who borrowed which book.",
+      "hints": [
+        "Use /api/books for the book resource",
+        "Nest borrowing under books: /api/books/:id/borrowers",
+        "Use POST for borrowing, DELETE for returning"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "GET    /api/books              -> List all books\nGET    /api/books/:id          -> Get one book\nPOST   /api/books              -> Add a book\nPUT    /api/books/:id          -> Update a book\nDELETE /api/books/:id          -> Remove a book\n\nGET    /api/authors/:id/books  -> Books by author\n\nPOST   /api/books/:id/borrow   -> Borrow a book\nDELETE /api/books/:id/borrow   -> Return a book"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "topicId": "03-decision-making",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Decision-Making Is a Leadership Skill",
+      "body": "Leaders are paid to make decisions. The quality of your decisions directly determines your team's outcomes. But here's the uncomfortable truth: most leaders make decisions too slowly, with too little information, or without enough input. Great decision-making is a discipline, not intuition."
+    },
+    {
+      "heading": "The OODA Loop",
+      "body": "Developed by military strategist John Boyd, OODA is a rapid decision framework:\n\n• **Observe**: Gather facts. What do you actually know vs. assume?\n• **Orient**: What's the context? What constraints exist? What's the worst-case scenario?\n• **Decide**: Choose the best option given available information.\n• **Act**: Execute decisively. A good plan executed now beats a perfect plan executed later.\n\nThe key insight: speed matters. The person who cycles through OODA fastest gains an advantage."
+    },
+    {
+      "heading": "The 70% Rule",
+      "body": "Jeff Bezos popularized this: if you have 70% of the information you wish you had, make the decision. Waiting for 90%+ usually means you waited too long. Bad decisions can be corrected; missed opportunities cannot. Ask yourself: 'Is this reversible or irreversible?' Reversible decisions should be made fast. Irversible ones deserve more deliberation."
+    }
+  ],
+  "jargon": [
+    { "term": "OODA Loop", "definition": "Observe-Orient-Decide-Act: a rapid decision framework from military strategy, emphasizing speed and iteration." },
+    { "term": "One-Way vs. Two-Way Door", "definition": "Reversible decisions (two-way doors) should be made quickly. Irreversible decisions (one-way doors) deserve more analysis." },
+    { "term": "Decision Fatigue", "definition": "The declining quality of decisions after a long session of decision-making. Mitigate by making important decisions early in the day." },
+    { "term": "Analysis Paralysis", "definition": "Overthinking a decision to the point of inaction. Often caused by fear of making the wrong choice." }
+  ],
+  "summary": "Great leaders make decisions faster by gathering sufficient (not perfect) information, acting decisively, and treating most decisions as reversible experiments rather than permanent commitments."
+}

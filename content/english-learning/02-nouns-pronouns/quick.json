@@ -1,0 +1,42 @@
+{
+  "topicId": "02-nouns-pronouns",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is a Noun?",
+      "body": "A noun is a word that names a person, place, thing, or idea.\n\nPerson: teacher, doctor, Ali, Sarah\nPlace: school, city, London, kitchen\nThing: book, phone, car, computer\nIdea: love, freedom, happiness, truth\n\nTypes of nouns:\n• Common noun: teacher (general)\n• Proper noun: Mr. Khan (specific — always capitalized)\n• Countable: books, chairs, ideas\n• Uncountable: water, rice, information"
+    },
+    {
+      "heading": "What is a Pronoun?",
+      "body": "A pronoun replaces a noun to avoid repetition.\n\nInstead of: \"Ali is a student. Ali studies hard.\"\nWrite: \"Ali is a student. He studies hard.\"\n\nPersonal pronouns:\n• I, you, he, she, it, we, they (subject)\n• me, you, him, her, it, us, them (object)\n• my, your, his, her, its, our, their (possessive)"
+    },
+    {
+      "heading": "Articles: a, an, the",
+      "body": "\"A\" before consonant sounds: a book, a car, a university (sounds like \"you\")\n\"An\" before vowel sounds: an apple, an egg, an hour (silent h)\n\"The\" for specific things: the book on the table, the sun\n\nNo article for general plural: Dogs are loyal.\nThe article for specific plural: The dogs in the park are friendly."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Noun",
+      "definition": "A word that names a person, place, thing, or idea. Examples: book, London, happiness, teacher."
+    },
+    {
+      "term": "Pronoun",
+      "definition": "A word used in place of a noun. Examples: he, she, it, they, we. Prevents repetition."
+    },
+    {
+      "term": "Article",
+      "definition": "A small word placed before a noun: \"a\" (indefinite, one of many), \"an\" (before vowel sounds), \"the\" (definite, specific)."
+    },
+    {
+      "term": "Countable",
+      "definition": "Nouns that can be counted: one book, two books. They have singular and plural forms."
+    },
+    {
+      "term": "Uncountable",
+      "definition": "Nouns that cannot be counted individually: water, information, advice. No plural form, use \"much\" not \"many\"."
+    }
+  ],
+  "summary": "Every English sentence needs nouns and usually pronouns. Master articles early — \"a/an/the\" mistakes are the most common for non-native speakers."
+}

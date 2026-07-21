@@ -1,0 +1,18 @@
+{
+  "topicId": "08-public-speaking",
+  "comparisons": [
+    {
+      "concept": "public speaking",
+      "javascript": {
+        "language": "text",
+        "code": "Before: Avoiding challenges due to fear\nAfter: Taking action despite discomfort"
+      },
+      "python": {
+        "language": "text",
+        "code": "Before: Reacting impulsively to stress\nAfter: Responding thoughtfully with strategies"
+      },
+      "explanation": "Growth in personality development is about shifting from reactive to proactive behavior."
+    }
+  ],
+  "keyInsight": "All great speakers were bad speakers at first. - Ralph Waldo Emerson"
+}

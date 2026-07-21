@@ -1,0 +1,47 @@
+{
+  "topicId": "04-linkedin",
+  "exercises": [
+    {
+      "title": "Headline Rewrite Challenge",
+      "description": "Rewrite your LinkedIn headline using the formula: Role | Key Technologies/Skills | What You Help With. Write 3 versions and pick the strongest. Test by asking a friend: 'Based on this headline, what kind of work do I do?' If they can't answer clearly, revise.",
+      "hints": [
+        "Include at least 2 specific technologies recruiters search for",
+        "Add what makes you different (specialty, industry, unique skill)",
+        "Keep it under 120 characters if possible"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Version 1: 'Frontend Developer | React, TypeScript | Building accessible web apps'\nVersion 2: 'React Developer | Performance Optimization & Accessibility | Making the web work for everyone'\nVersion 3: 'Senior Frontend Engineer | React | Accessibility Expert | Open to remote roles'\n\nBest: Version 2 — it's specific, memorable, and tells a story about what you care about."
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "About Section Overhaul",
+      "description": "Rewrite your LinkedIn About section using the 5-part structure: Opening Hook → What You Do → Proof (accomplishment) → What You're Looking For → Call to Action. Write it in first person. Keep it under 300 words. Read it aloud to check that it sounds natural.",
+      "hints": [
+        "Start with something interesting — not 'I am a developer'",
+        "Include at least one measurable accomplishment",
+        "End with an invitation to connect or a specific ask"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Example:\n'I build web applications that people actually enjoy using.\n\nAs a frontend engineer with 4 years of experience, I specialize in React performance optimization and accessibility. I believe great UX means making apps fast AND inclusive.\n\nRecently, I led a project that cut our application's bundle size by 45% and brought our WCAG compliance from Level A to Level AA — improving load times for 50K+ users and making the platform accessible to screen reader users.\n\nI'm currently looking for a senior frontend role at a company that values accessibility and performance. Remote or hybrid preferred.\n\nLet's connect — I love talking about React, design systems, and making the web better for everyone.'"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Weekly Engagement Challenge",
+      "description": "For one full week, engage on LinkedIn every working day: (1) Leave 3 thoughtful comments on posts in your field — add your perspective, not just 'Great post!', (2) Share 1 post (original content or a curated resource with your take), (3) Accept or send 2 personalized connection requests. Track your profile views and search appearances daily.",
+      "hints": [
+        "Comment on posts from people at companies you want to work at",
+        "A thoughtful comment is 2-3 sentences adding your experience or a question",
+        "Post in the morning (8-10 AM) when engagement is highest"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Day 1: Commented on 3 React performance posts, sent 2 connection requests with personalized notes\nDay 2: Shared a post about a debugging technique I learned, received 3 comments and 15 likes\nDay 3: Commented on a hiring manager's post about team culture\nDay 4: Shared a curated resource list for React developers\nDay 5: Commented on 3 posts, sent 2 more connection requests\n\nResults: Profile views increased 3x, received 2 inbound messages, 1 recruiter reached out about a role."
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

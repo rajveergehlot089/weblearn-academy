@@ -1,0 +1,34 @@
+{
+  "topicId": "03-images-media",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Images in HTML",
+      "body": "The img element embeds images into web pages. It's a self-closing tag that requires src (source) and alt (alternative text) attributes. Images can be in formats like JPEG, PNG, GIF, SVG, or WebP."
+    },
+    {
+      "heading": "Video and Audio",
+      "body": "HTML5 provides native video and audio elements:\n• video: Embeds video content with controls\n• audio: Embeds audio content with controls\n• source: Specifies multiple media sources for compatibility"
+    },
+    {
+      "heading": "Responsive Images",
+      "body": "Make images adapt to different screen sizes using:\n• width/height attributes for aspect ratio\n• CSS for responsive sizing\n• picture element for art direction\n• srcset for resolution switching"
+    }
+  ],
+  "jargon": [
+    {
+      "term": "src",
+      "definition": "Source attribute - specifies the path to the image file"
+    },
+    {
+      "term": "alt",
+      "definition": "Alternative text - describes the image for accessibility and when images fail to load"
+    },
+    {
+      "term": "Responsive",
+      "definition": "Design that adapts to different screen sizes and devices"
+    }
+  ],
+  "summary": "HTML provides img for images, video for video content, and audio for sound. Always include alt text for images and use responsive techniques for different screen sizes."
+}

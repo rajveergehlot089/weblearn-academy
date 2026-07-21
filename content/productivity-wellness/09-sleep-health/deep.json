@@ -1,0 +1,38 @@
+{
+  "topicId": "09-sleep-health",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The Neuroscience of Sleep",
+      "body": "During sleep, your brain does critical maintenance work: (1) Memory consolidation — your hippocampus transfers short-term memories to long-term storage. This is why studying before sleep is more effective than studying in the morning. (2) Glymphatic system activation — your brain's waste clearance system removes metabolic byproducts (including beta-amyloid, linked to Alzheimer's). This only happens during deep sleep. (3) Synaptic pruning — your brain strengthens important neural connections and weakens unused ones. Sleep literally rewires your brain to be more efficient. Skipping sleep means skipping all three processes."
+    },
+    {
+      "heading": "Ergonomics for Developer Health",
+      "body": "Developers spend 8+ hours sitting at a computer. Poor ergonomics causes chronic pain that degrades performance and quality of life. Here's the evidence-based setup:",
+      "code": {
+        "language": "text",
+        "snippet": "DEVELOPER ERGONOMICS GUIDE:\n\nMONITOR:\n• Height: Top of screen at eye level\n• Distance: Arm's length away (50-70 cm)\n• Tilt: Slightly tilted back (10-20 degrees)\n• Position: Directly in front of you (not angled)\n• Size: 24-27 inch (reduces eye strain)\n\nKEYBOARD & MOUSE:\n• Keyboard height: Elbows at 90 degrees, wrists straight\n• Mouse: Same height as keyboard, close to body\n• Wrist rest: Use only when resting, not while typing\n• Split keyboard: Consider for RSI prevention\n\nCHAIR:\n• Height: Feet flat on floor, thighs parallel to ground\n• Backrest: Supports natural curve of lower back\n• Armrests: Support elbows at 90 degrees\n• Seat depth: 2-3 finger widths between seat edge and knees\n\nDESK:\n• Height: Elbows at 90 degrees when typing\n• Standing desk: Alternate 30 min sitting / 30 min standing\n• Under-desk space: Room for legs to move freely\n\nPOSTURE CHECKS (set hourly timer):\n□ Shoulders relaxed (not shrugged)\n□ Back supported by chair\n□ Feet flat on floor\n□ Screen at eye level\n□ Wrists straight on keyboard",
+        "explanation": "Ergonomic issues accumulate slowly. You won't notice problems until they become chronic pain. Set up your workspace correctly NOW to prevent issues later."
+      }
+    },
+    {
+      "heading": "Exercise for Developers",
+      "body": "Exercise isn't optional for developers — it's essential infrastructure for cognitive performance. Research shows: (1) 30 minutes of moderate exercise improves focus for 2-3 hours afterward. (2) Regular exercise increases BDNF (brain-derived neurotrophic factor), which grows new brain cells. (3) Exercise reduces cortisol and increases endorphins, directly counteracting work stress. (4) Sitting all day increases risk of cardiovascular disease, diabetes, and early death by 40%. The minimum effective dose: 150 minutes of moderate exercise per week (30 minutes, 5 days). For developers, morning exercise is ideal — it improves focus during your peak work hours."
+    },
+    {
+      "heading": "Nutrition for Cognitive Performance",
+      "body": "What you eat directly affects how you think. Key principles for developers: (1) Eat protein at breakfast (eggs, yogurt, nuts) — it sustains focus better than carbs. (2) Avoid sugar crashes — skip the donuts, eat complex carbs. (3) Stay hydrated — dehydration reduces cognitive performance by 25%. Drink water throughout the day, not just when thirsty. (4) Omega-3 fatty acids (fish, walnuts, flaxseed) support brain function. (5) Caffeine timing: no caffeine after 2 PM (half-life is 5-6 hours). Morning caffeine is fine; afternoon caffeine disrupts sleep."
+    },
+    {
+      "heading": "Practice Task",
+      "body": "Audit your current setup: (1) Take a photo of your workspace — does it match the ergonomics guide? (2) Track your sleep for 1 week (bedtime, wake time, quality). (3) Log your exercise for 1 week. Then make ONE change in each area: fix your monitor height, establish a consistent bedtime, and add 20 minutes of morning movement."
+    }
+  ],
+  "keyInsights": [
+    "Sleep does critical brain maintenance: memory consolidation, waste clearance, and synaptic pruning",
+    "Poor ergonomics causes cumulative damage — set up correctly NOW to prevent chronic pain",
+    "30 minutes of exercise improves focus for 2-3 hours — morning exercise is ideal for developers",
+    "Dehydration reduces cognitive performance by 25% — drink water throughout the day"
+  ]
+}

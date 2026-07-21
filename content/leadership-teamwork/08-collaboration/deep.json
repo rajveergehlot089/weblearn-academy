@@ -1,0 +1,24 @@
+{
+  "topicId": "08-collaboration",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Cross-Functional Collaboration",
+      "body": "The hardest and most valuable collaboration happens across functions — engineering with design, marketing with product, sales with customer success.\n\n**Why it's hard:**\n• Different vocabularies (engineers say 'latency,' marketers say 'page load time')\n• Different priorities (engineering optimizes for scalability, sales optimizes for closing speed)\n• Different timelines (marketing thinks in campaigns, engineering thinks in sprints)\n\n**How to make it work:**\n• Create a shared glossary and shared metrics\n• Rotate people across functions for short assignments\n• Use cross-functional standups (weekly, 30 min)\n• Assign a 'boundary spanner' — someone who speaks both languages\n• Celebrate cross-functional wins specifically"
+    },
+    {
+      "heading": "Collaboration Patterns for Remote Teams",
+      "body": "Remote collaboration requires more intentional design:\n\n**Async-first collaboration:**\n• Write decisions, don't just discuss them\n• Use threaded discussions (not chat messages) for decisions\n• Record video updates instead of meetings when possible\n• Create a 'team handbook' documenting processes and norms\n\n**Sync collaboration (for when real-time matters):**\n• Designate core overlap hours (e.g., 10am-2pm)\n• Use video for any conversation with emotion or complexity\n• Rotate meeting times to share the timezone burden\n• End every sync meeting with clear action items and owners\n\n**Trust-building in remote teams:**\n• Virtual coffee chats (15 min, no agenda)\n• Share personal stories (what did you do this weekend?)\n• Celebrate publicly in shared channels\n• Assume positive intent in text communication"
+    },
+    {
+      "heading": "The Leader's Role in Collaboration",
+      "body": "Leaders don't just participate in collaboration — they architect it:\n\n1. **Set the context**: Why are we collaborating? What's the shared goal?\n2. **Create the structure**: What rituals, tools, and norms will make it work?\n3. **Model the behavior**: Share information openly, admit mistakes, ask for help\n4. **Remove obstacles**: Break silos, resolve conflicts, provide resources\n5. **Recognize collaboration**: Specifically praise people who help others succeed\n6. **Protect the team**: Shield from unnecessary external interruptions\n\nThe litmus test: Do people bring problems to each other before bringing them to you? If yes, collaboration is working."
+    },
+    {
+      "heading": "Building a Collaborative Culture",
+      "body": "Culture is what people do when no one is watching. To build collaboration into culture:\n\n• **Hire for collaboration**: Ask interview questions about cross-team work\n• **Onboard for collaboration**: Introduce new hires to people across the org, not just their team\n• **Reward collaboration**: Make 'helping other teams succeed' part of performance reviews\n• **Share information by default**: Open calendars, open documents, open decisions\n• **Make it safe to ask for help**: Normalize saying 'I don't know' and 'I need help'\n• **Address anti-collaborative behavior directly**: Silo-hoarding, blame-shifting, or political behavior must be confronted\n\nCollaboration is a leadership behavior — it flows from the top."
+    }
+  ],
+  "summary": "Collaboration is architected, not accidental. Leaders create shared mental models, design cross-functional rituals, build remote collaboration norms, and model the behavior they expect from their teams."
+}

@@ -1,0 +1,18 @@
+{
+  "topicId": "01-upper-row-intro",
+  "comparisons": [
+    {
+      "concept": "Upper Row Introduction",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Upper Row Introduction\nconst result = {\n  concept: \"Upper Row Introduction\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Upper Row Introduction\nresult = {\n    \"concept\": \"Upper Row Introduction\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Upper Row Introduction is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Upper Row Introduction is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

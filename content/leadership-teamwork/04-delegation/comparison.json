@@ -1,0 +1,42 @@
+{
+  "topicId": "04-delegation",
+  "comparisons": [
+    {
+      "concept": "Delegation Levels Comparison",
+      "rows": [
+        { "dimension": "Leader involvement", "level_1_investigate": "High — you decide", "level_2_recommend": "High — you decide based on their input", "level_3_report": "Medium — they decide, you monitor", "level_4_act_report": "Low — they decide and act", "level_5_own": "None — full ownership" },
+        { "dimension": "Best for", "level_1_investigate": "Critical or sensitive tasks", "level_2_recommend": "New team members learning judgment", "level_3_report": "Competent team members with good judgment", "level_4_act_report": "Experienced team members on routine tasks", "level_5_own": "Senior experts, trusted long-term" },
+        { "dimension": "Development value", "level_1_investigate": "Low — no decision-making practice", "level_2_recommend": "Medium — practice analyzing options", "level_3_report": "High — practice decision-making", "level_4_act_report": "High — practice judgment and execution", "level_5_own": "Highest — full ownership and accountability" },
+        { "dimension": "Risk level", "level_1_investigate": "Low — you control outcome", "level_2_recommend": "Low — you still decide", "level_3_report": "Medium — they decide but you know", "level_4_act_report": "Medium-high — you learn after the fact", "level_5_own": "High — you trust them fully" }
+      ],
+      "explanation": "Match the delegation level to the person's capability and the task's stakes. Start lower and increase as trust and competence grow."
+    },
+    {
+      "concept": "What to Delegate vs. What to Keep",
+      "rows": [
+        { "dimension": "Delegate", "action": "Routine status updates", "reason": "Recurring, doesn't require your judgment" },
+        { "dimension": "Delegate", "action": "Research and option generation", "reason": "Develops analytical skills in others" },
+        { "dimension": "Delegate", "action": "Cross-team coordination", "reason": "Builds relationships and communication skills" },
+        { "dimension": "Delegate", "action": "Process improvements", "reason": "People closest to the work know best" },
+        { "dimension": "Keep", "action": "Vision and strategy setting", "reason": "Your core leadership responsibility" },
+        { "dimension": "Keep", "action": "Performance conversations", "reason": "Direct relationship and accountability" },
+        { "dimension": "Keep", "action": "Crisis decisions under pressure", "reason": "Requires your authority and context" },
+        { "dimension": "Keep", "action": "Team culture and values", "reason": "Model what you expect from others" }
+      ],
+      "explanation": "The rule: delegate tasks that develop others; keep tasks that require your unique authority or relationship."
+    },
+    {
+      "concept": "Micro-management vs. Effective Delegation",
+      "rows": [
+        { "dimension": "Approach", "micromanagement": "Check on every detail, demand constant updates", "delegation": "Set clear expectations, check in at milestones" },
+        { "dimension": "Trust", "micromanagement": "Low — assumes people will fail", "delegation": "High — assumes people will succeed" },
+        { "dimension": "Communication", "micromanagement": "Frequent, often unsolicited", "delegation": "Structured, milestone-based" },
+        { "dimension": "Outcome", "micromanagement": "Leader burns out, team feels untrusted", "delegation": "Leader freed for strategy, team grows" },
+        { "dimension": "Team growth", "micromanagement": "Stunted — people don't develop judgment", "delegation": "Accelerated — people learn by doing" },
+        { "dimension": "Quality", "micromanagement": "Consistent but dependent on leader", "delegation": "Variable but increasingly excellent" }
+      ],
+      "explanation": "Micro-management feels safe but creates a fragile team that can't function without you. Effective delegation feels risky but builds a resilient team."
+    }
+  ],
+  "keyInsight": "The real question isn't 'can I do this better?' It's 'should I be doing this at all?' If the answer is no, delegate — even if it takes longer initially."
+}

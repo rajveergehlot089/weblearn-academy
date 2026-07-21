@@ -1,0 +1,18 @@
+{
+  "topicId": "01-english-basics",
+  "comparisons": [
+    {
+      "concept": "english basics",
+      "javascript": {
+        "language": "english",
+        "code": "Hello, my name is Ali."
+      },
+      "python": {
+        "language": "english",
+        "code": "I am learning English."
+      },
+      "explanation": "English follows consistent patterns once you learn the rules."
+    }
+  ],
+  "keyInsight": "Understanding this concept is fundamental to English fluency."
+}

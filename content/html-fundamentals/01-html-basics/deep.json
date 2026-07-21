@@ -1,0 +1,43 @@
+{
+  "topicId": "01-html-basics",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Understanding HTML Document Structure",
+      "body": "HTML documents follow a hierarchical structure. Every document starts with a DOCTYPE declaration, followed by the html root element. Inside the html element, you'll find two main sections: head and body. The head contains metadata that isn't displayed on the page, while the body contains all visible content.",
+      "code": {
+        "language": "html",
+        "snippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Document Structure Example</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n    <header>\n        <h1>Welcome to My Website</h1>\n        <nav>\n            <ul>\n                <li><a href=\"#home\">Home</a></li>\n                <li><a href=\"#about\">About</a></li>\n                <li><a href=\"#contact\">Contact</a></li>\n            </ul>\n        </nav>\n    </header>\n    \n    <main>\n        <section id=\"home\">\n            <h2>Home Section</h2>\n            <p>This is the main content area.</p>\n        </section>\n    </main>\n    \n    <footer>\n        <p>&copy; 2026 My Website</p>\n    </footer>\n</body>\n</html>",
+        "explanation": "This example shows a complete HTML5 document with proper structure. Notice the DOCTYPE declaration, semantic elements (header, nav, main, section, footer), and proper nesting."
+      }
+    },
+    {
+      "heading": "Essential HTML Elements",
+      "body": "HTML provides many elements for different purposes. Here are the most commonly used ones:\n\n• Headings: h1 through h6 (h1 is the largest, h6 is the smallest)\n• Paragraphs: p element for text blocks\n• Links: a element with href attribute\n• Images: img element with src and alt attributes\n• Divisions: div element for grouping content\n• Spans: span element for inline content",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Headings -->\n<h1>Main Title</h1>\n<h2>Subtitle</h2>\n<h3>Section Title</h3>\n\n<!-- Paragraph with formatting -->\n<p>This is a <strong>bold</strong> word and this is <em>italic</em>.</p>\n\n<!-- Links -->\n<a href=\"https://example.com\" target=\"_blank\">Visit Example</a>\n<a href=\"mailto:user@example.com\">Send Email</a>\n\n<!-- Images -->\n<img src=\"photo.jpg\" alt=\"Description of image\" width=\"300\" height=\"200\">\n\n<!-- Divisions and Spans -->\n<div class=\"container\">\n    <p>This paragraph contains a <span class=\"highlight\">highlighted word</span>.</p>\n</div>",
+        "explanation": "These are the building blocks of HTML. Headings create hierarchy, paragraphs contain text, links connect pages, images display visuals, and divs/spans organize content."
+      }
+    },
+    {
+      "heading": "HTML Attributes",
+      "body": "Attributes provide additional information about HTML elements. They're placed inside the opening tag and usually come in name/value pairs.\n\nCommon attributes include:\n• id: Unique identifier for an element\n• class: CSS class name(s) for styling\n• style: Inline CSS styles\n• title: Tooltip text on hover\n• data-*: Custom data attributes",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Element with multiple attributes -->\n<div id=\"main-content\" class=\"container\" data-section=\"home\">\n    <h1 class=\"title\" style=\"color: blue;\">Page Title</h1>\n    \n    <p title=\"This is a tooltip\">Hover over this text to see the tooltip.</p>\n    \n    <!-- Form elements with attributes -->\n    <input type=\"text\" name=\"username\" placeholder=\"Enter username\" required>\n    <button type=\"submit\" disabled>Submit</button>\n</div>",
+        "explanation": "Attributes customize how elements look and behave. The id attribute uniquely identifies an element, while class allows multiple elements to share styles. Data attributes store custom information."
+      }
+    },
+    {
+      "heading": "Best Practices",
+      "body": "Follow these guidelines for clean, maintainable HTML:\n\n1. Always declare DOCTYPE at the beginning\n2. Use semantic elements (header, nav, main, article, section, footer)\n3. Nest elements properly - never overlap tags\n4. Include alt text for all images\n5. Use lowercase for tag names and attributes\n6. Quote all attribute values\n7. Close all elements that require closing tags"
+    },
+    {
+      "heading": "Practice Task",
+      "body": "Create a complete HTML page about your favorite hobby. Include:\n• Proper DOCTYPE and html structure\n• A header with navigation\n• At least 3 sections with different content\n• An image with alt text\n• A footer with copyright information\n• Use semantic elements throughout"
+    }
+  ],
+  "summary": "HTML documents follow a structured format with DOCTYPE, html, head, and body elements. Master essential elements like headings, paragraphs, links, and images. Practice using attributes and semantic HTML to create well-structured, accessible web pages."
+}

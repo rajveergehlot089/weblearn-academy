@@ -1,0 +1,35 @@
+{
+  "topicId": "03-rest-routing",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is REST?",
+      "body": "REST (Representational State Transfer) is an architectural style for designing networked applications. It uses standard HTTP methods and status codes to create a consistent interface for clients to interact with resources."
+    },
+    {
+      "heading": "RESTful Routing Principles",
+      "body": "REST routes are organized around resources (nouns), not actions. Each resource has a unique URL, and you use HTTP methods to perform actions on them:",
+      "code": {
+        "language": "text",
+        "snippet": "GET    /api/users      - Get all users\nGET    /api/users/123  - Get user with ID 123\nPOST   /api/users      - Create a new user\nPUT    /api/users/123  - Update user 123\nDELETE /api/users/123  - Delete user 123",
+        "explanation": "Notice how the same URL (/api/users) is used with different HTTP methods to perform different operations."
+      }
+    },
+    {
+      "heading": "HTTP Methods and Status Codes",
+      "body": "Each HTTP method has a specific purpose: GET reads data, POST creates data, PUT updates data, DELETE removes data. Status codes tell the client what happened: 200 OK, 201 Created, 404 Not Found, 500 Server Error.",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Express routes following REST principles\napp.get('/api/products', (req, res) => {\n  // Return all products\n  res.json(products);\n});\n\napp.post('/api/products', (req, res) => {\n  // Create new product\n  const product = createProduct(req.body);\n  res.status(201).json(product);\n});",
+        "explanation": "These routes follow REST conventions: GET returns data, POST creates and returns 201 status."
+      }
+    }
+  ],
+  "jargon": [
+    { "term": "REST", "definition": "Representational State Transfer - an architectural style for designing web APIs using standard HTTP methods." },
+    { "term": "Resource", "definition": "An entity that can be accessed and manipulated via the API, like users, products, or orders." },
+    { "term": "Endpoint", "definition": "A specific URL where an API can be accessed, combined with an HTTP method." }
+  ],
+  "summary": "REST uses standard HTTP methods and URLs to create predictable, scalable APIs. Resources are nouns, HTTP methods are verbs. Always use appropriate status codes to indicate success or failure."
+}

@@ -1,0 +1,16 @@
+{
+  "topicId": "08-prepositions",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    { "heading": "Prepositions of Place", "body": "in — inside something: in the room, in the box, in Delhi\non — on a surface: on the table, on the wall, on the bus\nat — specific point: at school, at home, at the door\nbetween — in the middle of two: between A and B\namong — in the middle of many: among friends\nnext to — beside: next to the library\nin front of — before: in front of the building\nbehind — at the back: behind the house" },
+    { "heading": "Prepositions of Time", "body": "at — specific time: at 3pm, at noon, at night, at the weekend\non — days/dates: on Monday, on July 17th, on my birthday\nin — longer periods: in the morning, in July, in 2026, in summer\nfor — duration: for 3 hours, for a week, for many years\nsince — starting point: since Monday, since 2020, since I was a child\nuntil/till — up to: until Friday, till tomorrow\nbefore/after — sequence: before lunch, after work" },
+    { "heading": "Conjunctions", "body": "Coordinating (connect equal parts):\nand, but, or, so, yet\n'I like tea and coffee.' / 'It's small but powerful.'\n\nSubordinating (connect unequal parts):\nbecause, although, when, while, if, unless, until\n'I stayed home because it rained.'\n'Although it was cold, we went outside.'\n\nCorrelative (come in pairs):\nboth...and, either...or, neither...nor, not only...but also\n'Both Ali and Sara passed the test.'" }
+  ],
+  "jargon": [
+    { "term": "Preposition", "definition": "A word showing the relationship between a noun and other words. Examples: in, on, at, by, for, with, to." },
+    { "term": "Conjunction", "definition": "A word that connects words, phrases, or clauses. Examples: and, but, because, although, while." },
+    { "term": "Prepositional Phrase", "definition": "A preposition + its object. Example: 'in the morning' (preposition: in, object: the morning). Functions as an adjective or adverb." }
+  ],
+  "summary": "Prepositions show time, place, and relationships. 'In' for enclosed spaces and longer periods, 'on' for surfaces and days, 'at' for specific points and times. Practice with real examples."
+}

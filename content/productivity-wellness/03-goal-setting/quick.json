@@ -1,0 +1,31 @@
+{
+  "topicId": "03-goal-setting",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Most Goals Fail",
+      "body": "Every January, millions of developers set goals like 'learn a new framework' or 'get healthier.' By February, most have abandoned them. The problem isn't willpower — it's vagueness. Goals like 'be more productive' give your brain nothing concrete to work toward. SMART goals fix this by making every goal Specific, Measurable, Achievable, Relevant, and Time-bound."
+    },
+    {
+      "heading": "The SMART Framework",
+      "body": "SMART goals transform vague intentions into actionable commitments:",
+      "code": {
+        "language": "text",
+        "snippet": "SMART GOAL EXAMPLES:\n\n❌ VAGUE: 'Learn TypeScript'\n✅ SMART: 'Complete the TypeScript tutorial on official docs and build\n          one small project using TypeScript by March 15'\n\n❌ VAGUE: 'Get better at system design'\n✅ SMART: 'Read \"Designing Data-Intensive Applications\" and write a\n          summary of each chapter, completing 1 chapter per week\n          for 12 weeks'\n\n❌ VAGUE: 'Exercise more'\n✅ SMART: 'Run 3 times per week (Mon/Wed/Fri) for 30 minutes\n          before work, tracked in Strava, for the next 8 weeks'\n\nTHE SMART CHECKLIST:\nS - Specific: What exactly will you do?\nM - Measurable: How will you know when it's done?\nA - Achievable: Is this realistic given your constraints?\nR - Relevant: Does this align with your career/life goals?\nT - Time-bound: What's the deadline?",
+        "explanation": "Notice how each SMART goal answers WHO, WHAT, WHEN, and HOW. If you can't answer these, the goal is too vague."
+      }
+    },
+    {
+      "heading": "The 1-3-5 Rule",
+      "body": "Don't set 20 goals — you'll achieve none. Use the 1-3-5 rule: 1 big goal, 3 medium goals, 5 small goals. The big goal is your 'mountain top' — where you want to be in 6-12 months. Medium goals are quarterly milestones. Small goals are weekly actions that move you toward the medium ones. This creates a clear line of sight from today's actions to your long-term vision."
+    }
+  ],
+  "jargon": [
+    { "term": "SMART Goals", "definition": "A goal-setting framework: Specific, Measurable, Achievable, Relevant, Time-bound. Makes vague intentions into concrete commitments." },
+    { "term": "1-3-5 Rule", "definition": "A prioritization method: 1 big goal, 3 medium goals, 5 small goals. Prevents goal overload." },
+    { "term": "Outcome Goal", "definition": "What you want to achieve (e.g., 'get promoted to senior'). Focus on this, but control it through process goals." },
+    { "term": "Process Goal", "definition": "What you do daily/weekly to reach the outcome (e.g., 'code 2 hours daily on the promotion project'). You fully control this." }
+  ],
+  "summary": "SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound) transform vague intentions into actionable commitments. Use the 1-3-5 rule: 1 big goal, 3 medium goals, 5 small goals. Focus on process goals (daily actions) rather than just outcome goals (desired results) — you control the process, not the outcome."
+}

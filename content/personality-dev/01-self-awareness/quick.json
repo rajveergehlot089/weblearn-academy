@@ -1,0 +1,25 @@
+{
+  "topicId": "01-self-awareness",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Self-Awareness?",
+      "body": "Self-awareness is your ability to recognize and understand your own emotions, thoughts, strengths, weaknesses, and values. It's the foundation of emotional intelligence — the skill that separates average performers from exceptional ones. When you're self-aware, you can accurately assess your impact on others and make better decisions."
+    },
+    {
+      "heading": "The Two Types of Self-Awareness",
+      "body": "Research by organizational psychologist Tasha Eurich identifies two distinct types:\n\n1. **Internal Self-Awareness**: How clearly you see your own values, passions, reactions, strengths, weaknesses, and impact on others.\n\n2. **External Self-Awareness**: How clearly you understand how OTHER people view you in terms of those same factors.\n\nMost people think they're self-aware, but only 10-15% actually are. The gap between how we see ourselves and how others see us is often enormous."
+    },
+    {
+      "heading": "Why It Matters for Your Career",
+      "body": "Self-aware people are:\n- 36% more likely to be satisfied with their jobs\n- 33% more likely to report strong relationships at work\n- 20% more likely to report high performance\n\nWhen you know your strengths, you can leverage them. When you know your blind spots, you can address them before they damage your relationships and career."
+    }
+  ],
+  "jargon": [
+    { "term": "Blind Spot", "definition": "A quality or behavior that others see in you but you don't see in yourself. Everyone has them, and they're the biggest obstacle to self-awareness." },
+    { "term": "Emotional Intelligence (EQ)", "definition": "The ability to recognize, understand, and manage your own emotions while recognizing, understanding, and influencing the emotions of others." },
+    { "term": "Introspection", "definition": "The process of examining your own thoughts, feelings, and motivations. It's not just thinking about yourself — it's asking 'why' you feel or act a certain way." }
+  ],
+  "summary": "Self-awareness is the ability to honestly understand your emotions, strengths, weaknesses, and impact on others. It comes in two forms: internal (how you see yourself) and external (how others see you). Only 10-15% of people are truly self-aware, but those who develop this skill see better performance, stronger relationships, and greater job satisfaction."
+}

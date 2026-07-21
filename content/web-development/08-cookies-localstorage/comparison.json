@@ -1,0 +1,18 @@
+{
+  "topicId": "08-cookies-localstorage",
+  "comparisons": [
+    {
+      "concept": "Storing user preferences",
+      "javascript": {
+        "language": "javascript",
+        "code": "localStorage.setItem('theme', 'dark');\nconst theme = localStorage.getItem('theme');"
+      },
+      "python": {
+        "language": "python",
+        "code": "import json\n\n# Save\nwith open('preferences.json', 'w') as f:\n    json.dump({'theme': 'dark'}, f)\n\n# Load\nwith open('preferences.json') as f:\n    prefs = json.load(f)\n    print(prefs['theme'])"
+      },
+      "explanation": "Browser storage (cookies, localStorage) is a CLIENT-SIDE concept. Python running on a server doesn't have access to browser storage — it uses databases or files instead."
+    }
+  ],
+  "keyInsight": "Cookies and localStorage are BROWSER-SPECIFIC concepts. Server-side languages (Python, Node.js, Java) don't have direct access to them. The concept of 'client-side storage' exists in all platforms but with different implementations."
+}

@@ -1,0 +1,25 @@
+{
+  "topicId": "06-leadership",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Leadership?",
+      "body": "Leadership isn't about titles or positions — it's about influence. A leader is anyone who helps a group achieve a common goal. You don't need a 'manager' title to lead. The best leaders inspire others to do their best work, make decisions that benefit the team, and create environments where people want to contribute."
+    },
+    {
+      "heading": "The Leadership Equation",
+      "body": "Leadership = Vision + Influence + Execution\n\n**Vision**: Knowing where you're going and why it matters\n**Influence**: Getting others to believe in and work toward that vision\n**Execution**: Turning ideas into results through others\n\nA leader without vision is just a boss. A leader without influence is just a dreamer. A leader without execution is just a talker. You need all three."
+    },
+    {
+      "heading": "Servant Leadership: The Modern Approach",
+      "body": "Robert Greenleaf's servant leadership model flips the traditional hierarchy:\n\n**Traditional**: Leader at top, team below. Leader directs, team follows.\n**Servant**: Leader supports, team leads. Leader removes obstacles, team delivers.\n\nServant leaders ask: 'How can I help you succeed?' instead of 'How can you help me succeed?' This builds loyalty, trust, and high performance."
+    }
+  ],
+  "jargon": [
+    { "term": "Emotional Intelligence (EQ)", "definition": "The ability to understand and manage your own emotions while understanding and influencing others' emotions. EQ is a stronger predictor of leadership success than IQ." },
+    { "term": "Psychological Safety", "definition": "Amy Edmondson's concept: the belief that you won't be punished for speaking up with ideas, questions, concerns, or mistakes. High-performing teams have psychological safety." },
+    { "term": "Situational Leadership", "definition": "Adapting your leadership style to the person and situation. New employees need more direction; experienced employees need more autonomy." }
+  ],
+  "summary": "Leadership is influence, not authority. It requires vision (knowing where to go), influence (getting others to follow), and execution (making it happen). Modern leadership is servant leadership — supporting your team to succeed, not directing them. Build psychological safety so people speak up and take risks."
+}

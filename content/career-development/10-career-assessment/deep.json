@@ -1,0 +1,36 @@
+{
+  "topicId": "10-career-assessment",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The Complete Career Assessment",
+      "body": "Rate yourself 1-5 in each sub-area. Be honest — this is for your growth, not for show.\n\n**Personal Branding:**\n- My LinkedIn profile is optimized and keyword-rich: ___/5\n- I have a clear professional focus (niche): ___/5\n- I regularly share content or engage on professional platforms: ___/5\n- People in my field can describe what I do: ___/5\n\n**Networking:**\n- I have 10+ genuine professional relationships: ___/5\n- I follow up with new contacts within 48 hours: ___/5\n- I give value to my network regularly: ___/5\n- I attend 1+ professional events per quarter: ___/5\n\n**Communication & Speaking:**\n- I can deliver a clear 5-minute presentation: ___/5\n- I use storytelling in my presentations: ___/5\n- I can handle Q&A confidently: ___/5\n- I manage speaking anxiety effectively: ___/5\n\n**Career Planning:**\n- I have a written career roadmap: ___/5\n- I know the skills gap between me and my target role: ___/5\n- I actively develop new skills: ___/5\n- I have regular career conversations with my manager: ___/5"
+    },
+    {
+      "heading": "Interpreting Your Scores",
+      "body": "**1-2 (Developing)**: This is a growth area. Prioritize it in your next quarter.\n**3 (Competent)**: Solid foundation. Focus on consistency and depth.\n**4 (Strong)**: You're doing well. Look for ways to level up or help others.\n**5 (Expert)**: You've mastered this area. Maintain it and consider mentoring.\n\nOverall scores:\n- **Below 40**: Focus on 1-2 areas this quarter — don't try to fix everything at once\n- **40-55**: Balanced development — pick your weakest area for focused improvement\n- **Above 55**: Advanced — consider mentoring others and tackling stretch goals"
+    },
+    {
+      "heading": "Creating Your Action Plan",
+      "body": "From your assessment, choose your BOTTOM 2 scoring areas. For each, write:\n\n1. **Current state**: Where am I now? (Be specific)\n2. **Target state**: Where do I want to be in 3 months?\n3. **Actions**: What specific things will I do?\n4. **Metrics**: How will I measure progress?\n5. **Accountability**: Who will check in with me?\n\nExample:\nArea: Public Speaking (Scored 2/5)\nCurrent: I've never given a talk beyond team meetings\nTarget: Give a 10-minute talk at a local meetup\nActions: Join Toastmasters, prepare a lightning talk, practice 5 times\nMetrics: Number of talks given, feedback scores from practice\nAccountability: Ask a colleague to be my practice audience"
+    },
+    {
+      "heading": "Quarterly Review Process",
+      "body": "Set a recurring quarterly calendar event for a 60-minute career review:\n\n1. **(15 min) Retake the assessment**: Rate yourself again. Note changes.\n2. **(15 min) Review last quarter**: What did you accomplish? What didn't get done? Why?\n3. **(15 min) Update your roadmap**: Adjust goals based on what you've learned.\n4. **(15 min) Set next quarter's focus**: Pick 1-2 areas and specific actions.\n\nThis 4x-per-year habit is one of the highest-ROI career investments you can make."
+    },
+    {
+      "heading": "Leveraging Feedback",
+      "body": "Self-assessment has blind spots. Supplement it with external feedback:\n\n- **Manager**: Ask 'What's one thing I should start, stop, or continue doing?'\n- **Peers**: 'What do you think I'm best at? Where could I improve?'\n- **Mentors**: 'From your perspective, what's my biggest growth area?'\n- **360 reviews**: If your company offers them, take them seriously.\n\nCombine self-assessment with external feedback for a complete picture."
+    },
+    {
+      "heading": "Building a Career Portfolio",
+      "body": "Create a living document (Google Doc, Notion page, or GitHub repo) that tracks:\n\n- **Projects**: Key accomplishments with metrics\n- **Skills**: What you've learned and demonstrated\n- **Feedback**: Quotes and insights from colleagues and managers\n- **Goals**: Your roadmap and progress toward it\n- **Reflections**: What you've learned about yourself\n\nUpdate this quarterly. It becomes invaluable for performance reviews, job searches, and personal motivation."
+    },
+    {
+      "heading": "Practice Task: Complete Your Assessment",
+      "body": "Take the full self-assessment now. Calculate your total score. Identify your 2 lowest-scoring areas. For each, write one specific action you'll take in the next 30 days. Set a calendar reminder to revisit this assessment in 3 months. Share your goals with a trusted colleague or mentor for accountability."
+    }
+  ],
+  "summary": "The complete assessment covers 16 sub-areas across branding, networking, communication, and career planning. Score each 1-5 and calculate your total. Focus on your 2 lowest-scoring areas with specific, measurable actions. Supplement self-assessment with feedback from managers, peers, and mentors. Review quarterly — this 4x-per-year habit compounds into significant career growth."
+}

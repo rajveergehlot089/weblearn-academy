@@ -1,0 +1,18 @@
+{
+  "topicId": "01-keyboard-overview",
+  "comparisons": [
+    {
+      "concept": "Hindi Keyboard Layout Overview",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Hindi Keyboard Layout Overview\nconst result = {\n  concept: \"Hindi Keyboard Layout Overview\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Hindi Keyboard Layout Overview\nresult = {\n    \"concept\": \"Hindi Keyboard Layout Overview\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Hindi Keyboard Layout Overview is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Hindi Keyboard Layout Overview is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

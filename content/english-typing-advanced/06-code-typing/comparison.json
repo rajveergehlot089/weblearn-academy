@@ -1,0 +1,18 @@
+{
+  "topicId": "06-code-typing",
+  "comparisons": [
+    {
+      "concept": "Code & Technical Typing",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Code & Technical Typing\nconst result = {\n  concept: \"Code & Technical Typing\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Code & Technical Typing\nresult = {\n    \"concept\": \"Code & Technical Typing\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Code & Technical Typing is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Code & Technical Typing is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

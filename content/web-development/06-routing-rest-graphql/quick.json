@@ -1,0 +1,38 @@
+{
+  "topicId": "06-routing-rest-graphql",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Routing?",
+      "body": "Routing is how a server decides what to do with each request. Think of it like a post office: different addresses go to different rooms. When you visit /about, the server sends the About page. When you visit /api/users, it sends user data."
+    },
+    {
+      "heading": "REST APIs — The Standard Way",
+      "body": "REST (Representational State Transfer) is a set of rules for building APIs. It uses URLs as addresses and HTTP methods (GET, POST, PUT, DELETE) as actions. It's like a well-organized library: every book (resource) has a shelf address (URL)."
+    },
+    {
+      "heading": "GraphQL — The Flexible Alternative",
+      "body": "GraphQL lets clients ask for EXACTLY the data they need — no more, no less. Think of it like ordering at a restaurant: REST gives you the whole menu, GraphQL lets you say 'I want the pasta but skip the soup.'"
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Route",
+      "definition": "A URL pattern that maps to a specific handler function on the server."
+    },
+    {
+      "term": "REST",
+      "definition": "An architectural style for APIs using URLs as resource identifiers and HTTP methods as operations."
+    },
+    {
+      "term": "GraphQL",
+      "definition": "A query language for APIs that lets clients request exactly the data they need in a single request."
+    },
+    {
+      "term": "Endpoint",
+      "definition": "A specific URL + HTTP method combination, like GET /api/users or POST /api/orders."
+    }
+  ],
+  "summary": "Routing maps URLs to handlers. REST uses standard URLs + HTTP methods. GraphQL lets clients specify exactly what data they want. Both are ways to build APIs."
+}

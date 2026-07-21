@@ -1,0 +1,47 @@
+{
+  "topicId": "05-public-speaking",
+  "exercises": [
+    {
+      "title": "5-Minute Lightning Talk",
+      "description": "Prepare and deliver a 5-minute lightning talk on a technical topic you know well. Use the Problem → Solution → Demo → Takeaway structure. Create 5-8 slides. Practice out loud at least 3 times. Present it to a colleague or record yourself.",
+      "hints": [
+        "Pick a topic you can explain without notes — confidence comes from mastery",
+        "Start with a hook, not 'Hi, I'm...'",
+        "One idea per slide, large font, minimal text"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Example topic: 'How I cut our build time from 10 minutes to 2 minutes'\n\nSlide 1: Hook — 'Our CI pipeline took 10 minutes. Developers stopped running builds locally.'\nSlide 2: Problem — slow builds killing productivity (show metrics)\nSlide 3: Investigation — profiling the build, finding the bottleneck\nSlide 4: Solution — specific optimization (e.g., webpack caching, parallel builds)\nSlide 5: Result — 2-minute builds, 80% faster CI\nSlide 6: Takeaway — 'Profile before optimizing. The bottleneck is rarely where you think.'\nSlide 7: Links and contact info\n\nPractice: Record yourself 3 times. Cut anything that runs long. Target 4:30 to leave room for the audience."
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Slide Design Audit",
+      "description": "Find a slide deck you've previously created (or create a 10-slide deck on any topic). Audit it against these rules: (1) No more than 6 lines of text per slide, (2) Font is at least 24pt, (3) Each slide has one clear idea, (4) Code snippets use syntax highlighting, (5) No slide is just bullet points of full sentences. Rewrite the weakest 3 slides.",
+      "hints": [
+        "If a slide has more than 6 lines, split it into two slides",
+        "Replace bullet-point text with diagrams or code snippets where possible",
+        "Ask: 'Could the audience read this slide in 5 seconds?' If not, simplify"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Before (bad): Slide with 10 bullet points explaining React hooks\nAfter: Split into 3 slides:\n- Slide 1: 'What are Hooks?' + one code snippet showing useState\n- Slide 2: 'When to use custom Hooks' + diagram of logic extraction\n- Slide 3: 'Common patterns' + 2-3 code examples\n\nEach slide now has one idea, visual support, and is scannable in 5 seconds."
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Presentation Recording Review",
+      "description": "Record yourself giving your lightning talk (phone camera is fine). Watch the recording and evaluate: (1) Pace — are you rushing or speaking at a natural speed? (2) Filler words — how many 'um,' 'uh,' 'like' do you catch? (3) Body language — are you making eye contact with the camera? (4) Slide transitions — do they feel smooth? (5) Energy — do you sound engaged or monotone? Do one more practice run addressing the top 2 issues.",
+      "hints": [
+        "Watch with sound off first to check body language and slide readability",
+        "Watch with eyes closed to focus on voice and pacing",
+        "Time yourself — did you stay within the time limit?"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Self-evaluation checklist:\n- Pace: Am I speaking too fast? (Aim for 150 words per minute)\n- Fillers: Count 'um' and 'uh' — aim for fewer than 5 per minute\n- Eye contact: Am I looking at the camera or at my notes?\n- Energy: Does my voice sound engaged or flat?\n- Timing: Did I finish within the time limit?\n- Pauses: Am I pausing after key points?\n\nRecord, evaluate, fix the top 2 issues, and record again."
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "topicId": "12-interview-english",
+  "comparisons": [
+    {
+      "concept": "interview english",
+      "javascript": {
+        "language": "english",
+        "code": "I am a software developer with 3 years of experience."
+      },
+      "python": {
+        "language": "english",
+        "code": "I am passionate about building user-friendly applications."
+      },
+      "explanation": "English follows consistent patterns once you learn the rules."
+    }
+  ],
+  "keyInsight": "Understanding this concept is fundamental to English fluency."
+}

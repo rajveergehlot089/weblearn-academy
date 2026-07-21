@@ -1,0 +1,31 @@
+{
+  "topicId": "06-lower-row",
+  "exercises": [
+    {
+      "title": "Basic Practice",
+      "description": "Type these words: can vinyl box van cube ban zinc cave vine",
+      "hints": [
+        "Keep eyes on screen",
+        "Use proper finger placement"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "can vinyl box van cube ban zinc cave vine"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Sentence Practice",
+      "description": "Type each sentence without looking at the keyboard.",
+      "hints": [
+        "Focus on accuracy",
+        "Use all fingers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Can you fix the box?\nThe van has a big cube.\nZinc cave van."
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

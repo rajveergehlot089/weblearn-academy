@@ -1,0 +1,70 @@
+{
+  "topicId": "08-divs-layout",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Understanding Div and Span",
+      "body": "The div element is a block-level container that groups content for styling. The span element is an inline container for wrapping text. Both are generic and should be used when no semantic element fits.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Div as block container -->\n<div class=\"card\">\n    <h3>Card Title</h3>\n    <p>Card content goes here.</p>\n</div>\n\n<!-- Span as inline container -->\n<p>This is a <span class=\"highlight\">highlighted word</span> in a sentence.</p>\n\n<!-- Div for layout grouping -->\n<div class=\"container\">\n    <div class=\"header\">Header Content</div>\n    <div class=\"content\">Main Content</div>\n    <div class=\"footer\">Footer Content</div>\n</div>\n\n<!-- Nested divs -->\n<div class=\"parent\">\n    <div class=\"child\">\n        <div class=\"grandchild\">Nested content</div>\n    </div>\n</div>",
+        "explanation": "Divs create block-level containers that stack vertically. Spans wrap inline content without breaking the flow. Use classes to target elements with CSS."
+      }
+    },
+    {
+      "heading": "CSS Flexbox Layout",
+      "body": "Flexbox provides efficient layout for one-dimensional arrangements. Use display: flex on a container to enable flex layout for its children.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Flexbox container -->\n<div class=\"flex-container\">\n    <div class=\"item\">Item 1</div>\n    <div class=\"item\">Item 2</div>\n    <div class=\"item\">Item 3</div>\n</div>\n\n<style>\n.flex-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    gap: 20px;\n    padding: 20px;\n    background: #f0f0f0;\n}\n\n.item {\n    background: white;\n    padding: 20px;\n    border-radius: 8px;\n    flex: 1;\n}\n\n/* Center content */\n.center-container {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    min-height: 100vh;\n}\n\n/* Responsive row/column */\n.responsive-row {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 20px;\n}\n\n.responsive-row > div {\n    flex: 1 1 300px;\n}</style>",
+        "explanation": "Flexbox aligns items along one axis (horizontal or vertical). Use justify-content for main axis alignment and align-items for cross axis alignment."
+      }
+    },
+    {
+      "heading": "CSS Grid Layout",
+      "body": "CSS Grid provides two-dimensional layout for rows and columns simultaneously. Use display: grid on a container.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Grid container -->\n<div class=\"grid-container\">\n    <div class=\"item\">Item 1</div>\n    <div class=\"item\">Item 2</div>\n    <div class=\"item\">Item 3</div>\n    <div class=\"item\">Item 4</div>\n    <div class=\"item\">Item 5</div>\n    <div class=\"item\">Item 6</div>\n</div>\n\n<style>\n.grid-container {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 20px;\n    padding: 20px;\n}\n\n/* Responsive grid */\n.responsive-grid {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\n    gap: 20px;\n}\n\n/* Grid with named areas */\n.layout {\n    display: grid;\n    grid-template-areas:\n        \"header header\"\n        \"sidebar main\"\n        \"footer footer\";\n    grid-template-columns: 250px 1fr;\n    min-height: 100vh;\n}\n\n.header { grid-area: header; }\n.sidebar { grid-area: sidebar; }\n.main { grid-area: main; }\n.footer { grid-area: footer; }\n\n/* Span multiple columns */\n.wide-item {\n    grid-column: span 2;\n}</style>",
+        "explanation": "Grid creates two-dimensional layouts with rows and columns. Use grid-template-columns to define columns. Grid areas create named layout regions."
+      }
+    },
+    {
+      "heading": "Classic Page Layout Patterns",
+      "body": "Common layout patterns using CSS. These are the building blocks of web page layouts.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Holy Grail Layout -->\n<div class=\"holy-grail\">\n    <header>Header</header>\n    <div class=\"content\">\n        <nav>Navigation</nav>\n        <main>Main Content</main>\n        <aside>Sidebar</aside>\n    </div>\n    <footer>Footer</footer>\n</div>\n\n<style>\n.holy-grail {\n    display: grid;\n    grid-template-rows: auto 1fr auto;\n    min-height: 100vh;\n}\n\n.holy-grail .content {\n    display: grid;\n    grid-template-columns: 200px 1fr 200px;\n    gap: 20px;\n}\n\n/* Responsive version */\n@media (max-width: 768px) {\n    .holy-grail .content {\n        grid-template-columns: 1fr;\n    }\n}\n\n/* Card Grid Layout */\n.card-grid {\n    display: grid;\n    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));\n    gap: 20px;\n    padding: 20px;\n}\n\n.card {\n    border: 1px solid #ddd;\n    border-radius: 8px;\n    padding: 20px;\n    box-shadow: 0 2px 4px rgba(0,0,0,0.1);\n}</style>",
+        "explanation": "The Holy Grail layout is a classic pattern with header, navigation, main content, sidebar, and footer. Grid makes this easy with named areas."
+      }
+    },
+    {
+      "heading": "Responsive Design Basics",
+      "body": "Responsive design ensures your layout works on all screen sizes. Use media queries and flexible units.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Responsive container -->\n<div class=\"responsive-container\">\n    <div class=\"item\">Item 1</div>\n    <div class=\"item\">Item 2</div>\n    <div class=\"item\">Item 3</div>\n</div>\n\n<style>\n.responsive-container {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 20px;\n    padding: 20px;\n}\n\n.responsive-container > div {\n    flex: 1 1 250px;\n    background: white;\n    padding: 20px;\n    border-radius: 8px;\n}\n\n/* Mobile-first approach */\n.mobile-first {\n    padding: 10px;\n}\n\n@media (min-width: 768px) {\n    .mobile-first {\n        padding: 20px;\n        max-width: 1200px;\n        margin: 0 auto;\n    }\n}\n\n/* Responsive typography */\n.responsive-text {\n    font-size: clamp(1rem, 2.5vw, 2rem);\n    line-height: 1.5;\n}\n\n/* Responsive images */\n.responsive-image {\n    max-width: 100%;\n    height: auto;\n}</style>",
+        "explanation": "Mobile-first approach starts with mobile styles and adds complexity for larger screens. Use clamp() for responsive typography. Flexbox and Grid handle most responsive needs."
+      }
+    },
+    {
+      "heading": "CSS Units for Layout",
+      "body": "Choose the right units for different layout needs:\n• px: Fixed pixels (borders, small elements)\n• %: Percentage of parent width\n• vw/vh: Viewport width/height\n• rem: Root font size (accessibility)\n• em: Parent font size\n• fr: Grid fractional units",
+      "code": {
+        "language": "html",
+        "snippet": "<style>\n/* Fixed units */\n.fixed-width {\n    width: 300px;\n    border: 2px solid #333;\n}\n\n/* Percentage */\n.percentage-width {\n    width: 50%;\n    margin: 0 auto;\n}\n\n/* Viewport units */\n.full-height {\n    min-height: 100vh;\n}\n\n/* rem units */\n.rem-based {\n    font-size: 1.5rem;\n    padding: 2rem;\n    margin-bottom: 1rem;\n}\n\n/* Grid fractional units */\n.grid-layout {\n    display: grid;\n    grid-template-columns: 1fr 2fr 1fr;\n    gap: 1rem;\n}\n\n/* Responsive container */\n.responsive-container {\n    width: min(100% - 2rem, 1200px);\n    margin: 0 auto;\n    padding: 1rem;\n}</style>",
+        "explanation": "Use rem for consistent spacing and typography. Use fr for grid layouts. Use min() for responsive containers with max-width. Viewport units are great for full-screen sections."
+      }
+    },
+    {
+      "heading": "Best Practices",
+      "body": "Layout guidelines:\n\n1. Use semantic elements first, divs only when needed\n2. Prefer CSS Grid for two-dimensional layouts\n3. Use Flexbox for one-dimensional alignment\n4. Mobile-first responsive design\n5. Use rem for consistent sizing\n6. Avoid fixed widths when possible\n7. Test on multiple screen sizes"
+    },
+    {
+      "heading": "Practice Task",
+      "body": "Create a responsive page layout with:\n• A header with navigation\n• A main content area with cards\n• A sidebar with widgets\n• A footer\n• Responsive behavior on mobile\n• Use CSS Grid or Flexbox"
+    }
+  ],
+  "summary": "Master div/span containers, CSS Flexbox for one-dimensional layouts, and CSS Grid for two-dimensional layouts. Use responsive design techniques for all screen sizes."
+}

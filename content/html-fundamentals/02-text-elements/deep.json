@@ -1,0 +1,66 @@
+{
+  "topicId": "02-text-elements",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Heading Hierarchy",
+      "body": "HTML provides six levels of headings, from h1 (most important) to h6 (least important). A well-structured document should have exactly one h1 per page, followed by h2 for main sections, h3 for subsections, and so on. Never skip heading levels (e.g., don't jump from h1 to h3).",
+      "code": {
+        "language": "html",
+        "snippet": "<h1>Main Page Title</h1>\n<h2>First Major Section</h2>\n<h3>Subsection of First Section</h3>\n<h3>Another Subsection</h3>\n<h4>Detail within Subsection</h4>\n<h2>Second Major Section</h2>\n<h3>Content under Second Section</h3>",
+        "explanation": "This heading structure creates a clear document outline. Search engines and screen readers use this hierarchy to navigate the page."
+      }
+    },
+    {
+      "heading": "Paragraphs and Line Breaks",
+      "body": "The p element wraps blocks of text. Browsers add spacing before and after paragraphs. For line breaks within a paragraph, use br (but use sparingly). For thematic breaks, use hr.",
+      "code": {
+        "language": "html",
+        "snippet": "<p>This is the first paragraph. It contains multiple sentences that form a complete thought.</p>\n\n<p>This is the second paragraph. Notice the spacing between paragraphs.</p>\n\n<p>This paragraph has a<br>line break in the middle of it.</p>\n\n<hr>\n\n<p>Content after the thematic break.</p>",
+        "explanation": "Paragraphs are the building blocks of text content. Use br only for line breaks within a paragraph (like poetry or addresses), not for spacing between paragraphs."
+      }
+    },
+    {
+      "heading": "Text Emphasis and Formatting",
+      "body": "HTML provides semantic elements for text formatting. Always prefer semantic elements over visual-only ones:\n• strong: Indicates serious importance (renders as bold)\n• em: Indicates stress emphasis (renders as italic)\n• mark: Highlights text for reference\n• small: Side comments, legal text\n• del/ins: Shows document edits\n• sub/sup: For footnotes, math,化学 formulas",
+      "code": {
+        "language": "html",
+        "snippet": "<p>This is <strong>very important</strong> information.</p>\n<p>This word is <em>emphasized</em> for stress.</p>\n<p>The <mark>highlighted text</mark> is noteworthy.</p>\n<p><small>This is fine print or a disclaimer.</small></p>\n\n<p>The price was <del>$99</del> <ins>$79</ins> (20% off).</p>\n\n<p>Water is H<sub>2</sub>O and E = mc<sup>2</sup>.</p>\n\n<p>The chemical formula for sulfuric acid is H<sub>2</sub>SO<sub>4</sub>.</p>",
+        "explanation": "These elements add meaning to your content. Screen readers can announce emphasis, and search engines understand the relative importance of text."
+      }
+    },
+    {
+      "heading": "Blockquotes and Citations",
+      "body": "Use blockquote for extended quotations and q for short inline quotations. The cite element marks up the title of a creative work, while the cite attribute on blockquote identifies the source.",
+      "code": {
+        "language": "html",
+        "snippet": "<blockquote cite=\"https://example.com/source\">\n    <p>The only way to do great work is to love what you do.</p>\n</blockquote>\n\n<p>As Steve Jobs said, <q>Innovation distinguishes between a leader and a follower.</q></p>\n\n<p>His latest book, <cite>The Innovation Mindset</cite>, was published in 2025.</p>",
+        "explanation": "Blockquotes are displayed as indented content. The cite attribute and element provide machine-readable citation information."
+      }
+    },
+    {
+      "heading": "Lists: Ordered, Unordered, and Description",
+      "body": "HTML supports three types of lists:\n• ul: Unordered list (bullet points)\n• ol: Ordered list (numbered)\n• dl: Description list (term/definition pairs)\n\nNest lists by placing a new list inside a list item (li).",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Unordered List -->\n<ul>\n    <li>HTML</li>\n    <li>CSS</li>\n    <li>JavaScript</li>\n</ul>\n\n<!-- Ordered List -->\n<ol>\n    <li>Learn HTML basics</li>\n    <li>Master CSS styling</li>\n    <li>Build with JavaScript</li>\n</ol>\n\n<!-- Nested List -->\n<ul>\n    <li>Frontend\n        <ul>\n            <li>HTML</li>\n            <li>CSS</li>\n            <li>JavaScript</li>\n        </ul>\n    </li>\n    <li>Backend\n        <ul>\n            <li>Node.js</li>\n            <li>Python</li>\n        </ul>\n    </li>\n</ul>\n\n<!-- Description List -->\n<dl>\n    <dt>HTML</dt>\n    <dd>HyperText Markup Language - structures web content</dd>\n    \n    <dt>CSS</dt>\n    <dd>Cascading Style Sheets - styles web content</dd>\n    \n    <dt>JavaScript</dt>\n    <dd>Programming language for web interactivity</dd>\n</dl>",
+        "explanation": "Lists organize content logically. Use ol for sequential steps, ul for non-sequential items, and dl for key-value pairs like glossaries."
+      }
+    },
+    {
+      "heading": "Preformatted Text and Code",
+      "body": "The pre element preserves whitespace and line breaks. The code element marks up computer code. Use them together for displaying code snippets.",
+      "code": {
+        "language": "html",
+        "snippet": "<pre><code>function greet(name) {\n    console.log(`Hello, ${name}!`);\n    return true;\n}</code></pre>\n\n<p>Use the <code>console.log()</code> function for debugging.</p>",
+        "explanation": "The pre element maintains formatting exactly as written. The code element semantically marks inline code. Together they're ideal for displaying code examples."
+      }
+    },
+    {
+      "heading": "Practice Task",
+      "body": "Create a blog post HTML page that uses:\n• Proper heading hierarchy (h1 for title, h2 for sections, h3 for subsections)\n• Multiple paragraphs with appropriate text formatting\n• At least one blockquote with citation\n• An ordered list of steps\n• An unordered list of features\n• A description list for a glossary section\n• Preformatted code example"
+    }
+  ],
+  "summary": "Master HTML text elements including headings (h1-h6), paragraphs, emphasis (strong, em), lists (ul, ol, dl), blockquotes, and preformatted text. Use semantic elements to convey meaning, not just appearance."
+}

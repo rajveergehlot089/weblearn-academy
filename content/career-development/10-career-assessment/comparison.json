@@ -1,0 +1,42 @@
+{
+  "topicId": "10-career-assessment",
+  "comparisons": [
+    {
+      "concept": "Career growth approach",
+      "no_assessment": {
+        "label": "Without Assessment",
+        "code": "Work hard, hope for the best. Never measure progress. React to problems instead of preventing them. Wake up in 2 years feeling stuck."
+      },
+      "regular_assessment": {
+        "label": "With Regular Assessment",
+        "code": "Rate skills quarterly. Identify gaps. Set specific goals. Track progress. Adjust course. Celebrate wins. Stay intentional."
+      },
+      "explanation": "Without assessment, career growth is random and slow. With regular assessment, growth is focused and measurable. The difference compounds — after 2 years, the assessed developer is significantly ahead of the drifting one."
+    },
+    {
+      "concept": "Handling career stagnation",
+      "complaining": {
+        "label": "Passive Response",
+        "code": "I'm bored. Nothing ever changes here. I don't know what to do next."
+      },
+      "assessing": {
+        "label": "Active Assessment",
+        "code": "Let me evaluate: What skills am I missing for the next level? What projects could I take on? Who can I ask for feedback? What's one thing I'll change this month?"
+      },
+      "explanation": "Stagnation often means you've stopped assessing and adjusting. A structured assessment reveals whether the issue is your environment, your skills, your direction, or your visibility — and each has different solutions."
+    },
+    {
+      "concept": "Career conversations with managers",
+      "generic_check_in": {
+        "label": "Generic Check-In",
+        "code": "'How am I doing?' 'Good.' 'Thanks.'"
+      },
+      "data_driven_review": {
+        "label": "Data-Driven Review",
+        "code": "'Here's my self-assessment — I scored 4/5 in technical skills but 2/5 in communication. I'd like to work on that this quarter. What opportunities exist to present more or lead cross-team discussions?'"
+      },
+      "explanation": "Generic check-ins lead to generic feedback. Data-driven reviews give your manager specific ways to help you grow. It also shows self-awareness and initiative — qualities that get you promoted."
+    }
+  ],
+  "keyInsight": "Regular career assessment is the difference between intentional growth and random drifting. Quarterly self-assessment combined with external feedback creates a powerful growth engine. Use data in career conversations with managers — specific self-awareness leads to specific support."
+}

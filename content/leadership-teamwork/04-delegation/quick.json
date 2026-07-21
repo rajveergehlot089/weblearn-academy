@@ -1,0 +1,26 @@
+{
+  "topicId": "04-delegation",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Leaders Must Delegate",
+      "body": "If you're doing everything yourself, you're not leading — you're just a busy individual contributor with a title. Delegation multiplies your impact. It's not about offloading work; it's about developing your team while freeing yourself for higher-value leadership work. The best leaders ask: 'Am I the only person who can do this?' If the answer is no, delegate."
+    },
+    {
+      "heading": "The Delegation Spectrum",
+      "body": "Delegation isn't binary. There are levels:\n\n1. **Tell**: 'Do exactly this, exactly how I say.' (lowest autonomy)\n2. **Sell**: 'Here's what I want. Let me convince you it's the right approach.'\n3. **Consult**: 'Here's the goal. What do you think?'\n4. **Agree**: 'Let's decide together how to approach this.'\n5. **Advise**: 'You decide. I'll give my perspective if asked.'\n6. **Inquire**: 'You decide. Just tell me what you decided.'\n7. **Act**: 'Do whatever you think is right. No need to check in.' (highest autonomy)\n\nMatch the level to the person's experience and the task's stakes."
+    },
+    {
+      "heading": "The 5 Levels of Delegation",
+      "body": "A simpler framework for daily use:\n\n• **Level 1 — Investigate**: Tell me the situation, I'll decide\n• **Level 2 — Recommend**: Give me options, I'll choose\n• **Level 3 — Report**: Decide and tell me what you decided\n• **Level 4 — Act and report**: Decide, act, and tell me how it went\n• **Level 5 — Full ownership**: Handle it entirely, no need to report\n\nStart at Level 2-3 and move people toward Level 5 as they prove capability."
+    }
+  ],
+  "jargon": [
+    { "term": "Delegation", "definition": "Assigning responsibility and authority to someone else to carry out specific activities while remaining accountable for outcomes." },
+    { "term": "Reverse Delegation", "definition": "When a team member returns a delegated task back to the leader, usually because the leader took it back when things got hard." },
+    { "term": "Accountability vs. Authority", "definition": "You can delegate authority (power to decide) and accountability (responsibility for outcomes), but you retain ultimate responsibility as the leader." },
+    { "term": "Eisenhower Matrix", "definition": "Prioritization tool: Urgent/Important, Important/Not Urgent, Urgent/Not Important, Neither. Delegate items in the 'Urgent/Not Important' quadrant." }
+  ],
+  "summary": "Delegation is a leadership multiplier. Match your delegation level to the person's experience and the task's stakes. Start people at Level 2-3 and grow them toward full ownership."
+}

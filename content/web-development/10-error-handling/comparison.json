@@ -1,0 +1,18 @@
+{
+  "topicId": "10-error-handling",
+  "comparisons": [
+    {
+      "concept": "Try/catch error handling",
+      "javascript": {
+        "language": "javascript",
+        "code": "try {\n  const data = JSON.parse(input);\n} catch (error) {\n  console.log('Error:', error.message);\n}"
+      },
+      "python": {
+        "language": "python",
+        "code": "try:\n    data = json.loads(input)\nexcept json.JSONDecodeError as e:\n    print(f'Error: {e}')"
+      },
+      "explanation": "Same concept: attempt risky code, catch specific exceptions. JavaScript uses 'catch (error)', Python uses 'except ExceptionType as e'. The pattern is universal."
+    }
+  ],
+  "keyInsight": "Error handling is a FUNDAMENTAL programming concept. Every language has try/catch (or try/except). The logic is always: attempt -> catch -> handle -> continue."
+}

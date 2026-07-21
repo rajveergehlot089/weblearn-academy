@@ -1,0 +1,30 @@
+{
+  "topicId": "01-communication-basics",
+  "questions": [
+    {
+      "question": "What is the 7-38-55 rule and why does it matter?",
+      "answer": "The 7-38-55 rule, from Albert Mehrabian's research, states that when conveying feelings and attitudes, only 7% of the message is carried by words, 38% by tone of voice, and 55% by body language. It matters because if your words contradict your body language, people believe the nonverbal signal. Congruence between all three channels is essential for credible, clear communication.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What are the most common barriers to effective communication?",
+      "answer": "The top barriers include: (1) Assumptions — assuming the other person knows what you mean, (2) Emotional noise — letting stress or anger distort your message, (3) Information overload — sending too much at once, (4) Channel mismatch — choosing text for a sensitive conversation, (5) Differing contexts — different backgrounds leading to different interpretations. Awareness of these barriers is the first step to overcoming them.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Explain the communication process from start to finish.",
+      "answer": "The communication process has six steps: (1) Sender has an idea, (2) Encoding — translating the idea into words/symbols, (3) Channel selection — choosing how to deliver it (speech, text, email), (4) Transmission — the message travels, (5) Decoding — the receiver interprets it, (6) Feedback — the receiver responds, completing the loop. Breakdowns can happen at any stage, which is why clarifying and confirming understanding is critical.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does context affect communication?",
+      "answer": "Context includes the relationship between speakers, cultural norms, the setting, prior conversations, and current emotional state. The same words can mean completely different things depending on context. For example, 'We need to talk' from a partner feels different than from a boss. Effective communicators adjust their tone, word choice, and channel based on who they're talking to and the situation.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the difference between verbal and nonverbal communication?",
+      "answer": "Verbal communication uses words — spoken or written. Nonverbal communication includes everything else: facial expressions, body posture, gestures, eye contact, tone of voice, proximity, and even silence. Research consistently shows that nonverbal signals carry more emotional information than words. When the two conflict (saying 'I'm happy' while frowning), receivers trust the nonverbal signal.",
+      "difficulty": "easy"
+    }
+  ]
+}

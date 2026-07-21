@@ -1,0 +1,42 @@
+{
+  "topicId": "10-comm-assessment",
+  "comparisons": [
+    {
+      "concept": "Communication Style Profiles",
+      "before": {
+        "label": "The Analyst (High Writing, Low Spontaneous Speech)",
+        "code": "Strengths: Well-structured emails, thoughtful written responses, thorough documentation\nBlind spots: Struggles in fast-paced meetings, may seem quiet in brainstorming, slow to respond verbally\nGrowth area: Practice speaking up in meetings, use BLUF for verbal communication\n\nScore pattern: Writing 8+, Speaking 5 or below"
+      },
+      "after": {
+        "label": "The Talker (High Speaking, Low Listening/Writing)",
+        "code": "Strengths: Engaging in conversation, confident presenter, persuasive speaker\nBlind spots: Dominates conversations, interrupts, emails are rambling and unfocused\nGrowth area: Practice the 80/20 listening rule, structure written communication\n\nScore pattern: Speaking 8+, Listening 5 or below, Writing 5 or below"
+      },
+      "explanation": "Most people lean toward one communication channel. The goal isn't to be balanced across all four — it's to develop minimum competence everywhere while leveraging your strengths."
+    },
+    {
+      "concept": "Growth Mindset vs. Fixed Mindset in Communication",
+      "before": {
+        "label": "Fixed Mindset",
+        "code": "'I'm just not a good listener.'\n'I've always been bad at public speaking.'\n'Writing isn't my thing.'\n\nBelief: Communication skills are innate — you either have them or you don't.\nResult: No improvement. Avoidance of challenges."
+      },
+      "after": {
+        "label": "Growth Mindset",
+        "code": "'I'm working on being a better listener — here's my practice plan.'\n'I used to fear public speaking, but I'm getting more comfortable.'\n'Writing is a skill I'm developing — my emails are getting clearer.'\n\nBelief: Communication skills are learnable — they improve with practice.\nResult: Continuous growth. Embracing challenges."
+      },
+      "explanation": "Research by Carol Dweck shows that people who believe skills can be developed outperform those who believe they're fixed. Communication is a skill, not a talent."
+    },
+    {
+      "concept": "Reactive vs. Proactive Communication Development",
+      "before": {
+        "label": "Reactive (Wait for Problems)",
+        "code": "Scenario: You get negative feedback about your communication.\nResponse: Panic. Scramble to fix. Apply temporary patches.\nResult: Stress, inconsistency, no lasting improvement.\n\nPattern: Learn only from failures, not from success."
+      },
+      "after": {
+        "label": "Proactive (Continuous Improvement)",
+        "code": "Scenario: You audit your skills quarterly.\nResponse: Identify gaps before they become problems. Practice targeted skills.\nResult: Steady improvement. Confidence in any situation.\n\nPattern: Learn from successes AND failures. Build skills before you need them."
+      },
+      "explanation": "Proactive communication development means building skills during calm periods so they're available during high-stakes moments. Don't wait for a crisis to learn how to handle difficult conversations."
+    }
+  ],
+  "keyInsight": "Self-assessment isn't about judgment — it's about awareness. Know your strengths to leverage, your gaps to address, and your patterns to break. Focus on one skill at a time for 30 days. The compound effect of small, consistent improvements is transformational."
+}

@@ -1,0 +1,31 @@
+{
+  "topicId": "02-pomodoro",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is the Pomodoro Technique?",
+      "body": "Created by Francesco Cirillo in the late 1980s, the Pomodoro Technique uses timed intervals (typically 25 minutes) of focused work followed by short breaks. The name comes from the tomato-shaped kitchen timer Cirillo used as a university student. The core idea: your brain works best in short, intense sprints rather than marathon sessions."
+    },
+    {
+      "heading": "The Basic Cycle",
+      "body": "The standard Pomodoro cycle is simple:",
+      "code": {
+        "language": "text",
+        "snippet": "POMODORO CYCLE:\n\n1. Choose ONE task to work on\n2. Set timer for 25 minutes\n3. Work with ZERO distractions\n   (close Slack, email, notifications)\n4. When timer rings, take a 5-minute break\n   (stand up, stretch, look away from screen)\n5. After 4 pomodoros, take a 15-30 min break\n\nTotal focused work: ~2 hours\nTotal breaks: ~30 minutes\n\nTHE RULES:\n• If interrupted during a pomodoro, it doesn't count\n• If you finish early, use remaining time to review\n• Track completed pomodoros to see your capacity\n• Never skip breaks — they prevent burnout",
+        "explanation": "The 25/5 split is the default, but you can adjust. Some developers prefer 50/10 for longer flow states. The key is having ANY structured break system."
+      }
+    },
+    {
+      "heading": "Why It Works for Developers",
+      "body": "Programming requires sustained concentration. The Pomodoro Technique works because it creates artificial urgency (the timer), prevents perfectionism (you only have 25 minutes), and builds awareness of how long tasks actually take. Most developers overestimate how much they can do in a day and underestimate how much they can do in a focused hour."
+    }
+  ],
+  "jargon": [
+    { "term": "Pomodoro", "definition": "A 25-minute focused work session, the basic unit of the Pomodoro Technique." },
+    { "term": "Flow State", "definition": "A mental state of complete absorption in an activity. The Pomodoro Technique helps trigger flow by removing distractions." },
+    { "term": "Internal Interrupt", "definition": "When YOUR OWN thoughts pull you off task ('I should check that PR'). Note these and return after the pomodoro." },
+    { "term": "External Interrupt", "definition": "When something outside pulls you off task (Slack message, someone tapping your shoulder). Handle or defer these." }
+  ],
+  "summary": "The Pomodoro Technique uses 25-minute focused work sessions with 5-minute breaks, and a longer 15-30 minute break after every 4 sessions. It works because it creates urgency, prevents perfectionism, and builds awareness of how long tasks actually take. Start with 25/5 splits and adjust based on your flow patterns."
+}

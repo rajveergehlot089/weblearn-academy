@@ -1,0 +1,18 @@
+{
+  "topicId": "03-verbs-tenses",
+  "comparisons": [
+    {
+      "concept": "verbs tenses",
+      "javascript": {
+        "language": "english",
+        "code": "I study English every day."
+      },
+      "python": {
+        "language": "english",
+        "code": "She works at a bank."
+      },
+      "explanation": "English follows consistent patterns once you learn the rules."
+    }
+  ],
+  "keyInsight": "Understanding this concept is fundamental to English fluency."
+}

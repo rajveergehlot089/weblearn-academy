@@ -1,0 +1,33 @@
+{
+  "topicId": "04-http-https",
+  "exercises": [
+    {
+      "title": "Status Code Identifier",
+      "description": "Match each scenario to the correct status code: (A) User successfully registered → ?, (B) User tries to access admin page without admin role → ?, (C) API endpoint doesn't exist → ?, (D) Server crashed while processing → ?, (E) User submits a form with missing required fields → ?",
+      "hints": [
+        "2xx = success, 4xx = client error, 5xx = server error",
+        "401 = not logged in, 403 = logged in but no permission",
+        "400 = bad input, 404 = not found"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "A = 201 Created\nB = 403 Forbidden\nC = 404 Not Found\nD = 500 Internal Server Error\nE = 400 Bad Request"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Build a Fetch Wrapper",
+      "description": "Write a JavaScript function called apiCall that takes a URL and returns the JSON response. Handle both success AND error cases (if the server returns a non-200 status, throw an error with the status code).",
+      "hints": [
+        "Use fetch() with await",
+        "Check response.ok or response.status",
+        "Use try/catch for error handling"
+      ],
+      "solution": {
+        "language": "javascript",
+        "code": "async function apiCall(url) {\n  try {\n    const response = await fetch(url);\n    if (!response.ok) {\n      throw new Error('HTTP ' + response.status);\n    }\n    return await response.json();\n  } catch (error) {\n    console.error('API call failed:', error.message);\n    throw error;\n  }\n}"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

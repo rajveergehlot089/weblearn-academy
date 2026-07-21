@@ -1,0 +1,25 @@
+{
+  "topicId": "08-environment-config",
+  "questions": [
+    {
+      "question": "What is Environment Variables & Config and why is it important?",
+      "answer": "Environment Variables & Config is a fundamental concept that Manage secrets, configs for dev/staging/production, and .env files. It's important because it forms the foundation for building robust and efficient applications. Understanding Environment Variables & Config allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Environment Variables & Config in a real project?",
+      "answer": "In practice, Environment Variables & Config is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Environment Variables & Config?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Environment Variables & Config to a beginner?",
+      "answer": "Environment Variables & Config is essentially about manage secrets, configs for dev/staging/production, and .env files. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "topicId": "07-auth",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Session-Based Auth",
+      "body": "The server stores session data and gives the client a session ID:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Server-side session\nconst sessions = {};\n\n// Login: create session\napp.post('/login', (req, res) => {\n  const user = authenticate(req.body.email, req.body.password);\n  if (!user) return res.status(401).json({ error: 'Bad credentials' });\n\n  const sessionId = generateId();\n  sessions[sessionId] = { userId: user.id, name: user.name };\n\n  // Set cookie\n  res.cookie('sessionId', sessionId, { httpOnly: true });\n  res.json({ message: 'Logged in' });\n});",
+        "explanation": "Sessions are simple: server stores user data, client stores only the session ID in a cookie. The downside: sessions don't scale well across multiple servers."
+      }
+    },
+    {
+      "heading": "JWT (JSON Web Tokens)",
+      "body": "JWTs are self-contained tokens — no server-side storage needed:",
+      "code": {
+        "language": "javascript",
+        "snippet": "const jwt = require('jsonwebtoken');\nconst SECRET = 'your-secret-key';\n\n// Login: create JWT\napp.post('/login', async (req, res) => {\n  const user = await authenticate(req.body.email, req.body.password);\n  if (!user) return res.status(401).json({ error: 'Bad credentials' });\n\n  const token = jwt.sign(\n    { id: user.id, name: user.name },\n    SECRET,\n    { expiresIn: '7d' }\n  );\n\n  res.json({ token });\n});\n\n// Middleware: verify JWT\nfunction auth(req, res, next) {\n  const token = req.headers.authorization?.split(' ')[1];\n  if (!token) return res.status(401).json({ error: 'No token' });\n\n  try {\n    const decoded = jwt.verify(token, SECRET);\n    req.user = decoded;\n    next();\n  } catch {\n    res.status(401).json({ error: 'Invalid token' });\n  }\n}",
+        "explanation": "JWT has 3 parts: header (algorithm), payload (user data), signature (tamper-proof seal). The server signs it with a secret. Any server with the secret can verify it."
+      }
+    },
+    {
+      "heading": "JWT vs Sessions",
+      "body": "Decision guide:",
+      "code": {
+        "language": "javascript",
+        "snippet": "/*\n  Sessions:\n  + Simple to implement\n  + Easy to revoke\n  + Good for server-rendered apps\n  - Doesn't scale across servers\n  - Doesn't work well with mobile apps\n\n  JWT:\n  + Stateless (no server-side storage)\n  + Scales horizontally\n  + Works great with mobile + SPA\n  - Harder to revoke\n  - Token size grows with user data\n\n  Rule of thumb:\n  - Traditional websites -> Sessions\n  - SPAs + Mobile apps -> JWT\n  - Microservices -> JWT\n*/",
+        "explanation": "Most modern apps use JWT because they work across servers and mobile apps. Sessions are simpler for small, server-rendered apps."
+      }
+    }
+  ],
+  "summary": "Sessions store data on the server (simple, revocable). JWTs store data on the client (scalable, stateless). OAuth delegates auth to a third party (secure, convenient)."
+}

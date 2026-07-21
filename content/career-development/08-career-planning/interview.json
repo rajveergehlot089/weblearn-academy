@@ -1,0 +1,29 @@
+{
+  "topicId": "08-career-planning",
+  "questions": [
+    {
+      "question": "How do I decide between the IC (individual contributor) and management tracks?",
+      "answer": "Ask yourself: Do I get more energy from solving hard technical problems (IC) or from helping other people grow and succeed (management)? IC track rewards depth and technical excellence. Management rewards communication, delegation, and organizational thinking. You can switch tracks early on, but it gets harder later. Try a tech lead role first — it lets you test both without fully committing.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What if I don't know what I want to do in 5 years?",
+      "answer": "That's completely fine — most people don't. Focus on the next 1-2 years instead. Experiment: take on different types of projects, talk to people in roles you're curious about, try side projects in new areas. Career clarity comes from action, not thinking. The more experiences you collect, the clearer your preferences become.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do I develop skills when my job doesn't give me opportunities?",
+      "answer": "Create your own opportunities: (1) Volunteer for projects outside your usual scope, (2) Build personal projects that practice the skills you want, (3) Contribute to open source projects in your target area, (4) Write about what you're learning (blog, LinkedIn), (5) Find a mentor who works in your target area. The most career-driven developers don't wait for permission to learn — they learn and then apply it.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Should I specialize early or stay general?",
+      "answer": "Early career (0-3 years): Stay broad. Explore different technologies, domains, and problem types. You need breadth to know what you enjoy and what you're good at. Mid-career (3+ years): Start specializing based on what you've discovered. Choose a niche where your interests, skills, and market demand intersect. The 'T-shaped' developer — broad base, deep expertise — is the most valuable profile.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I have a career conversation with my manager?",
+      "answer": "Schedule a dedicated meeting (not a 1-on-1 add-on). Come prepared with: (1) Your career goals for the next 1-2 years, (2) Specific skills you want to develop, (3) What kind of projects or responsibilities interest you, (4) What you need from them (mentoring, stretch assignments, training budget). Be direct: 'I want to grow toward [X]. Can we discuss how to make that happen here?' Most managers appreciate this — it shows initiative and helps them support you."
+    }
+  ]
+}

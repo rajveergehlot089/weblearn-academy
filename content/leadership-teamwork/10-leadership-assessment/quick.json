@@ -1,0 +1,26 @@
+{
+  "topicId": "10-leadership-assessment",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Assess Your Leadership Skills",
+      "body": "You can't improve what you don't measure. Leadership assessment isn't about getting a score — it's about gaining self-awareness. The best leaders regularly evaluate their strengths and blind spots, seek feedback from others, and create specific development plans. This assessment brings together everything from the course to give you a clear picture of where you are and where to focus next."
+    },
+    {
+      "heading": "What You'll Assess",
+      "body": "This assessment covers the five core leadership competencies:\n\n1. **Self-awareness**: Do you understand your strengths, weaknesses, and impact on others?\n2. **Communication**: Can you listen actively, give clear feedback, and adapt your style?\n3. **Decision-making**: Can you make timely decisions with incomplete information?\n4. **People development**: Can you delegate, motivate, and grow your team members?\n5. **Team building**: Can you create psychological safety and build a collaborative culture?"
+    },
+    {
+      "heading": "How to Use This Assessment",
+      "body": "Be honest. Rate yourself 1-5 on each area, then compare your ratings to feedback from others. The gaps between self-perception and others' perception reveal your biggest blind spots. Pick one area to focus on for the next 90 days. Leadership growth happens through focused practice, not scattered effort."
+    }
+  ],
+  "jargon": [
+    { "term": "360-Degree Feedback", "definition": "Gathering feedback from all directions — managers, peers, direct reports, and self-assessment — to get a complete picture of leadership effectiveness." },
+    { "term": "Blind Spot", "definition": "A leadership weakness or pattern you're unaware of. Blind spots are revealed through feedback from others, not self-reflection alone." },
+    { "term": "Leadership Development Plan", "definition": "A structured plan identifying specific leadership competencies to develop, actions to take, and milestones to track progress." },
+    { "term": "Strengths-Based Development", "definition": "Focusing development effort on maximizing strengths rather than fixing weaknesses. Research shows this produces better outcomes than weakness-fixing." }
+  ],
+  "summary": "Leadership assessment is a self-awareness tool, not a grade. Assess honestly, compare self-perception to external feedback, and focus development on one area for 90 days."
+}

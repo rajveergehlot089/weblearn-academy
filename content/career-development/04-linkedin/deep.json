@@ -1,0 +1,36 @@
+{
+  "topicId": "04-linkedin",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "How LinkedIn Search Actually Works",
+      "body": "LinkedIn's search algorithm ranks profiles based on:\n\n1. **Keyword relevance**: Does your profile contain the words recruiters are searching for?\n2. **Profile completeness**: A 'All-Star' profile gets 5x more views than an incomplete one.\n3. **Activity level**: Profiles that post and engage regularly rank higher.\n4. **Connection degree**: 1st and 2nd-degree connections appear first.\n5. **Recency**: Recently updated profiles get a temporary boost.\n\nThe practical takeaway: use the exact keywords recruiters search for in your headline, About section, experience descriptions, and skills."
+    },
+    {
+      "heading": "Writing a Magnetic About Section",
+      "body": "Your About section is your elevator pitch in text form. Structure it like this:\n\n**Opening hook** (1-2 sentences): Who you are and what makes you unique.\n\n**What you do** (2-3 sentences): Your key skills and what kind of problems you solve.\n\n**Proof** (1-2 sentences): A key accomplishment or metric.\n\n**What you're looking for** (1-2 sentences): Your current goal.\n\n**Call to action** (1 sentence): How to reach you.\n\nExample: 'I'm a frontend engineer who believes every web app should work for everyone. I specialize in React and accessibility, and recently led a redesign that improved WCAG compliance from Level A to Level AA across a 200-page application. I'm looking for a role where I can lead accessibility initiatives. Let's connect — I'm always happy to chat about inclusive design.'"
+    },
+    {
+      "heading": "Experience Section: Responsibilities vs. Results",
+      "body": "Most people list responsibilities. Winners list results.\n\nWeak: 'Responsible for developing frontend features using React.'\nStrong: 'Built a real-time dashboard using React and WebSockets that reduced data latency from 30 seconds to under 2 seconds, saving the operations team 5 hours of manual refresh work per day.'\n\nUse the formula: **Action verb + What you built/did + Technology used + Measurable result**.\n\nStart each bullet with: Built, Designed, Led, Implemented, Reduced, Increased, Automated, Migrated, Launched, Optimized."
+    },
+    {
+      "heading": "Skills, Endorsements, and Recommendations",
+      "body": "**Skills**: Add at least 10 relevant skills. Pin your top 3 — these are what appear first. Skills are how recruiters filter search results. Use both broad terms ('JavaScript') and specific ones ('React Query').\n\n**Endorsements**: Endorse 5-10 people you genuinely respect. Many will reciprocate. Endorsements signal to the algorithm that your skills are validated.\n\n**Recommendations**: Request recommendations from managers, teammates, or clients who can speak to specific qualities. Give them a prompt: 'Could you write about our work on [project] and how I contributed to [result]?' A recommendation with specific examples is worth 10 generic ones."
+    },
+    {
+      "heading": "Content Strategy on LinkedIn",
+      "body": "LinkedIn rewards regular engagement. Here's a sustainable strategy:\n\n**Frequency**: 2-3 posts per week, 5-10 comments daily.\n\n**Post types that perform well**:\n- Personal career stories with lessons learned\n- Technical insights with practical takeaways\n- Industry observations with a clear opinion\n- Contrarian takes (respectfully delivered)\n- Before/after examples (code, architecture, process)\n\n**Engagement tips**: Comment on posts from people in your target industry. Add value, not just agreement. Ask questions. This puts you in front of decision-makers."
+    },
+    {
+      "heading": "Common LinkedIn Mistakes",
+      "body": "- **No photo**: Profiles without photos are skipped — it signals low effort.\n- **Generic headline**: 'Software Developer at Company' wastes your most visible real estate.\n- **No keywords**: If your profile doesn't contain the terms recruiters search for, you won't appear in results.\n- **Never engaging**: Posting without commenting means you're shouting into the void.\n- **Job-hopping narrative**: Frame each role as growth, not instability.\n- **Connection spam**: Sending generic connection requests with no personalization gets ignored."
+    },
+    {
+      "heading": "Practice Task: Profile Optimization Sprint",
+      "body": "Set a timer for 30 minutes and optimize your LinkedIn profile: (1) Update your headline using the formula, (2) Rewrite your About section using the hook-proof-CTA structure, (3) Add measurable results to your 2 most recent roles, (4) Add or update 5 skills, (5) Request one recommendation from a colleague. Check your profile strength meter — aim for 'All-Star'."
+    }
+  ],
+  "summary": "LinkedIn's search algorithm prioritizes keyword relevance, profile completeness, and activity. Write a magnetic About section with a hook, proof, and call to action. Transform experience bullets from responsibilities to results using the action-what-technology-result formula. Engage regularly — 2-3 posts and 5-10 comments weekly — and optimize for recruiter search keywords."
+}

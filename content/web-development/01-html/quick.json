@@ -1,0 +1,30 @@
+{
+  "topicId": "01-html",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is HTML?",
+      "body": "HTML stands for HyperText Markup Language. Think of it as the skeleton of every website — just like a skeleton gives shape to your body, HTML gives structure to a webpage. When you visit any website, HTML is the code that tells the browser: this is a heading, this is a paragraph, this is an image."
+    },
+    {
+      "heading": "Your First HTML Page",
+      "body": "Every HTML page follows the same pattern. Here's the simplest possible page:",
+      "code": {
+        "language": "html",
+        "snippet": "<!DOCTYPE html>\n<html>\n<head>\n  <title>My First Page</title>\n</head>\n<body>\n  <h1>Hello World!</h1>\n  <p>This is my first webpage.</p>\n</body>\n</html>",
+        "explanation": "<!DOCTYPE html> tells the browser this is an HTML5 page. <html> wraps everything. <head> holds info about the page (like the title). <body> holds what users actually see."
+      }
+    },
+    {
+      "heading": "Key Tags to Remember",
+      "body": "HTML uses 'tags' — keywords in angle brackets — to mark up content. Here are the ones you'll use most:"
+    }
+  ],
+  "jargon": [
+    { "term": "Tag", "definition": "A keyword wrapped in angle brackets like <p> or <h1>. Tags tell the browser what each piece of content is." },
+    { "term": "Element", "definition": "A tag plus its content. For example, <p>Hello</p> is a paragraph element." },
+    { "term": "Attribute", "definition": "Extra info added to a tag, like href in <a href='...'>. Attributes customize how a tag works." }
+  ],
+  "summary": "HTML is the skeleton of every website. Tags like <h1>, <p>, <a>, <div>, and <img> define what content IS. Every page starts with <!DOCTYPE html> and wraps content in <html> containing <head> and <body>."
+}

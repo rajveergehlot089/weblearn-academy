@@ -1,0 +1,29 @@
+{
+  "topicId": "03-networking-basics",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What Is Professional Networking?",
+      "body": "Networking is building genuine professional relationships — not collecting business cards or LinkedIn connections. It's about creating a web of people who know your work, trust your abilities, and think of you when opportunities arise. The best networkers give value first and ask for help second."
+    },
+    {
+      "heading": "The Give-First Principle",
+      "body": "The most effective networking strategy is simple: give before you ask. Offer help, share resources, make introductions, or simply provide encouragement. When you're known as someone who adds value, people naturally want to reciprocate. This is not manipulation — it's how healthy professional relationships work."
+    },
+    {
+      "heading": "Where to Network",
+      "body": "Effective networking happens in three places:\n\n1. **Online**: LinkedIn, Twitter/X, Discord communities, GitHub, Slack groups\n2. **In-person**: Meetups, conferences, coworking spaces, workshops\n3. **At work**: Cross-team projects, internal presentations, coffee chats with colleagues\n\nYou don't need to attend every event — pick 1-2 recurring ones and show up consistently."
+    },
+    {
+      "heading": "The Follow-Up Rule",
+      "body": "The real networking happens AFTER the initial meeting. Within 24-48 hours, send a brief follow-up message: 'Great meeting you at [event]. I especially liked your point about [topic]. Would love to stay in touch.' This simple step puts you ahead of 90% of people who never follow up."
+    }
+  ],
+  "jargon": [
+    { "term": "Weak Ties", "definition": "Acquaintances and distant connections. Research shows weak ties often provide more career opportunities than close friends because they bridge different social circles and industries." },
+    { "term": "Informational Interview", "definition": "A 20-30 minute conversation with someone in a role or company you're interested in, where you ask about their experience — not ask for a job." },
+    { "term": "Networking Stack", "definition": "The combination of platforms, events, and channels you use regularly to maintain professional relationships." }
+  ],
+  "summary": "Professional networking is about building genuine relationships, not collecting contacts. Follow the give-first principle: offer value before asking for help. Network in 2-3 consistent places (online, in-person, or at work) and always follow up within 48 hours of meeting someone new."
+}

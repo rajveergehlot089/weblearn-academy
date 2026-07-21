@@ -1,0 +1,38 @@
+{
+  "topicId": "07-mindfulness",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The Neuroscience of Meditation",
+      "body": "Meditation physically changes your brain. Research from Harvard, Stanford, and other institutions shows that regular meditation (8 weeks of daily practice) produces measurable changes: (1) Increased gray matter in the prefrontal cortex — better focus and decision-making. (2) Reduced amygdala volume — less emotional reactivity. (3) Strengthened anterior cingulate cortex — better self-regulation. (4) Increased connectivity between brain regions — better information processing. These aren't subtle changes — they're visible on brain scans. And they happen with just 10-15 minutes of daily practice."
+    },
+    {
+      "heading": "Mindfulness for Coding: Practical Techniques",
+      "body": "You don't need to meditate separately from work. Here are ways to bring mindfulness INTO your coding practice:",
+      "code": {
+        "language": "text",
+        "snippet": "MINDFUL CODING PRACTICES:\n\n1. MINDFUL CODE REVIEW (3 min before reviewing code):\n   • Take 3 deep breaths\n   • Set intention: 'I will review with curiosity, not criticism'\n   • Notice any emotional reactions (frustration, judgment)\n   • Respond with curiosity: 'Why did they write it this way?'\n\n2. MINDFUL DEBUGGING (when stuck):\n   • Notice frustration arising\n   • Take 3 breaths before searching Stack Overflow\n   • Ask: 'What do I actually know vs. what am I assuming?'\n   • Write down what you've tried (externalizes anxiety)\n\n3. MINDFUL TRANSITIONS (between tasks):\n   • Close your eyes for 10 seconds\n   • Take 3 deep breaths\n   • Ask: 'What is the single most important thing I should do now?'\n   • Open your eyes and start that one thing\n\n4. MINDFUL CODE WRITING:\n   • Before writing code, pause for 2 seconds\n   • Ask: 'What is the simplest solution?'\n   • Write with intention, not autopilot\n   • After each function, take 1 breath and review what you wrote\n\n5. MINDFUL BREAKS (during pomodoro breaks):\n   • Stand up and stretch for 30 seconds\n   • Look out a window (distant focus relaxes eye muscles)\n   • Take 3 deep breaths\n   • Return to work with fresh attention",
+        "explanation": "Mindfulness in coding isn't separate from your work — it's HOW you do your work. The goal is to bring full attention to each coding activity, reducing errors and increasing quality."
+      }
+    },
+    {
+      "heading": "Body Scan for Developers",
+      "body": "Developers accumulate physical tension from hours of sitting. A body scan makes this tension conscious so you can release it. Lie down or sit comfortably, then slowly move your attention from your feet to the top of your head, noticing sensations in each body part. Don't try to change anything — just notice. Common tension spots for developers: jaw (from concentration), shoulders (from desk posture), hands (from typing), and lower back (from sitting). Do a 5-minute body scan at lunch to reset for the afternoon."
+    },
+    {
+      "heading": "Mindful Walking",
+      "body": "Walking meditation is perfect for developers who find sitting meditation difficult. Walk slowly for 5-10 minutes, focusing entirely on the sensation of your feet touching the ground. Notice the weight shift, the pressure, the temperature. When your mind wanders (it will), gently return to your feet. This is especially effective as a break during long coding sessions — it combines physical movement with mindfulness practice."
+    },
+    {
+      "heading": "Practice Task",
+      "body": "Practice a 5-minute body scan at lunch every day for one week. Notice which body parts hold the most tension. Then try one mindful coding practice during your next coding session. Track how your focus and stress levels compare to your typical un-mindful sessions."
+    }
+  ],
+  "keyInsights": [
+    "Meditation physically changes your brain in 8 weeks — increased focus, reduced reactivity, better self-regulation",
+    "Mindfulness in coding: pause before code review, breathe before debugging, transition mindfully between tasks",
+    "The wandering-and-returning IS the practice — every return strengthens your focus muscle",
+    "Walking meditation is a great entry point for developers who find sitting meditation difficult"
+  ]
+}

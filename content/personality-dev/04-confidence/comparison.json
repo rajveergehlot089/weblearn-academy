@@ -1,0 +1,24 @@
+{
+  "topicId": "04-confidence",
+  "comparisons": [
+    {
+      "concept": "Confidence vs Arrogance",
+      "confidence": "Root: Based on evidence of your abilities. Behavior: Listens to others, admits mistakes, asks for help. Effect on others: Inspires trust, makes people feel valued. Internal state: Secure, comfortable with uncertainty.",
+      "arrogance": "Root: Mask for deep insecurity. Behavior: Dismisses others' input, never admits mistakes, refuses to ask for help. Effect on others: Alienates people, creates resentment. Internal state: Fragile, threatened by criticism.",
+      "explanation": "Confident people don't need to prove themselves; arrogant people constantly do. The key difference: confident people are secure enough to be vulnerable."
+    },
+    {
+      "concept": "Confidence vs Courage",
+      "confidence": "Timing: Comes after action (you feel confident because you've done it before). Feeling: Calm assurance, trust in your abilities. Risk: Lower — you've assessed your capability. Growth: Stays within your competence zone.",
+      "courage": "Timing: Comes before confidence (you act despite fear). Feeling: Fear + determination, heart racing but moving forward. Risk: Higher — you're entering unknown territory. Growth: Pushes beyond your competence zone.",
+      "explanation": "Courage is acting without confidence; confidence is built by acting courageously. You don't need to feel confident to start — you need to be courageous."
+    },
+    {
+      "concept": "Internal vs External Confidence",
+      "internal": "Source: Based on your values, self-knowledge, and growth mindset. Stability: Unshaken by criticism or failure. Impact: Consistent across situations. Example: 'I know my worth regardless of this outcome.'",
+      "external": "Source: Based on validation, achievements, or others' approval. Stability: Fluctuates with success/failure. Impact: Varies by situation. Example: 'I feel good because I got praised today.'",
+      "explanation": "Internal confidence is sustainable; external confidence is fragile. Build internal confidence through self-knowledge, values alignment, and personal growth — not through external validation."
+    }
+  ],
+  "keyInsight": "True confidence isn't about being fearless — it's about acting despite fear. It's built through mastery (doing), not waiting (thinking). The most confident people aren't those who never doubt themselves; they're the ones who doubt themselves and act anyway."
+}

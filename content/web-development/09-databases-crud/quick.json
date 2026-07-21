@@ -1,0 +1,38 @@
+{
+  "topicId": "09-databases-crud",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is a Database?",
+      "body": "A database is a structured place to store data permanently. Think of it like a filing cabinet: you can add files (Create), look them up (Read), update them (Update), and throw them away (Delete). These four operations are called CRUD."
+    },
+    {
+      "heading": "Types of Databases",
+      "body": "There are two main types:\n1. SQL (relational): Data in tables with rows and columns, like Excel. Examples: MySQL, PostgreSQL.\n2. NoSQL: Data in flexible formats (JSON, documents). Examples: MongoDB, Firebase."
+    },
+    {
+      "heading": "CRUD = The 4 Basics",
+      "body": "Every app that stores data does exactly 4 things:\n- Create: Add new data\n- Read: Get existing data\n- Update: Change existing data\n- Delete: Remove data\nIf you understand CRUD, you understand 90% of backend development."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Database",
+      "definition": "An organized collection of data that can be easily accessed, managed, and updated."
+    },
+    {
+      "term": "CRUD",
+      "definition": "Create, Read, Update, Delete — the four basic operations for managing data."
+    },
+    {
+      "term": "Schema",
+      "definition": "The structure of your database: what tables/collections exist and what fields they have."
+    },
+    {
+      "term": "Query",
+      "definition": "A request to the database to get, add, change, or delete data."
+    }
+  ],
+  "summary": "A database stores data permanently. CRUD (Create, Read, Update, Delete) are the 4 operations you always need. SQL databases use tables; NoSQL databases use flexible documents."
+}

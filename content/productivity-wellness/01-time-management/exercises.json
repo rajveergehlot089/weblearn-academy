@@ -1,0 +1,48 @@
+{
+  "topicId": "01-time-management",
+  "exercises": [
+    {
+      "title": "Build Your Eisenhower Matrix",
+      "description": "Create an Eisenhower Matrix for your current work week. List every task you need to accomplish and place each one in the correct quadrant. Then identify which Quadrant 3 tasks you can delegate and which Quadrant 4 tasks you should eliminate entirely.",
+      "hints": [
+        "Be honest about what's truly urgent vs. what just feels urgent",
+        "Ask: 'Will this matter in 30 days?' to distinguish important from not-important",
+        "Most developers have too many items in Quadrant 1 — look for ways to move tasks to Quadrant 2"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "EISENHOWER MATRIX EXAMPLE:\n\nDO FIRST (Urgent + Important):\n• Fix production login bug (deadline: today)\n• Complete code review for tomorrow's deploy\n• Respond to client escalation email\n\nSCHEDULE (Not Urgent + Important):\n• Refactor authentication module (scheduled for Thursday)\n• Write documentation for new API\n• Learn TypeScript advanced patterns\n• Exercise 3x this week\n\nDELEGATE (Urgent + Not Important):\n• Status report to management (use async update tool)\n• Onboarding help for new dev (pair with senior dev)\n• Meeting that could be an email (send async update)\n\nELIMINATE (Not Urgent + Not Important):\n• Optimizing a page nobody visits\n• Attending optional all-hands meetings\n• Reading every Slack thread in #random"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Time Audit Challenge",
+      "description": "For 3 consecutive work days, log what you do in 30-minute blocks. At the end, categorize each block into Eisenhower quadrants. Calculate the percentage of time in each quadrant. Your goal: spend at least 40% of your time in Quadrant 2 within two weeks.",
+      "hints": [
+        "Use a spreadsheet, Notion table, or simple notebook",
+        "Be honest — if you spent 30 minutes on Twitter, log it as Quadrant 4",
+        "Don't try to change your behavior during the audit — just observe"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "TIME AUDIT TEMPLATE:\n\n| Time    | Task                    | Quadrant | Notes              |\n|---------|-------------------------|----------|--------------------|\n| 9:00 AM | Code review             | Q1       | Blocking deploy    |\n| 9:30 AM | Slack messages          | Q4       | Wasted time        |\n| 10:00 AM| Deep coding             | Q2       | API refactor       |\n| 10:30 AM| Deep coding             | Q2       | API refactor       |\n| 11:00 AM| Meeting (could email)   | Q3       | Should delegate    |\n| 11:30 AM| Meeting                 | Q3       | Status update      |\n| 12:00 PM| Lunch                   | -        |                    |\n| 12:30 PM| Email/Slack             | Q4       | Low value          |\n| 1:00 PM | Bug fix                 | Q1       | Customer reported  |\n| 1:30 PM | Documentation           | Q2       | Learning benefit   |\n\nQUARTERLY SUMMARY:\nQ1: 25% | Q2: 35% | Q3: 25% | Q4: 15%\n\nACTION: Reduce Q3 by batching meetings, reduce Q4 by disabling non-essential notifications."
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Design Your Ideal Week Template",
+      "description": "Create a weekly calendar template that protects your peak energy hours for deep work. Include time blocks for: deep coding, meetings, email/communication, learning, exercise, and buffer time for unexpected issues.",
+      "hints": [
+        "Identify your peak energy hours (for most devs: 9-11 AM)",
+        "Batch all meetings into 1-2 afternoon slots",
+        "Leave 30-minute buffers between blocks for transitions",
+        "Include exercise — it's not optional, it's productivity infrastructure"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "IDEAL WEEK TEMPLATE:\n\nMONDAY-THURSDAY:\n7:30 AM  - Morning routine + commute\n9:00 AM  - Deep work block 1 (highest energy task)\n11:00 AM - Code reviews / pair programming\n12:00 PM - Lunch + walk\n1:00 PM  - Meetings / collaboration (batched)\n3:00 PM  - Deep work block 2 (moderate energy task)\n4:30 PM  - Email, Slack, admin\n5:00 PM  - End of day review + plan tomorrow\n\nFRIDAY:\n9:00 AM  - Weekly review + planning\n10:00 AM - Learning / experimentation\n12:00 PM - Lunch\n1:00 PM  - Low-stakes work / documentation\n3:00 PM  - Week wrap-up + celebration\n\nKEY RULES:\n1. No meetings before 1 PM on coding days\n2. Deep work blocks = phone on silent, Slack closed\n3. 30 min buffer between every block\n4. Friday afternoon = no meetings, ever"
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "topicId": "08-cors-security",
+  "exercises": [
+    {
+      "title": "Understanding CORS & Cross-Site Attacks",
+      "description": "Review the concepts in this lesson and explain CORS & Cross-Site Attacks in your own words. Write down the key points and how they connect to what you already know.",
+      "hints": [
+        "Reread the quick lesson",
+        "Write down key terms",
+        "Connect to previous topics"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Key points about CORS & Cross-Site Attacks:\n1. CORS configuration, CSRF, XSS, and preventing cross-site attacks.\n2. Core concept: Understanding the fundamentals\n3. Application: Use in real projects"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Hands-on Practice: CORS & Cross-Site Attacks",
+      "description": "Apply what you learned about CORS & Cross-Site Attacks in a practical exercise. Start with the basics and build up to more complex implementations.",
+      "hints": [
+        "Start with a simple example",
+        "Test each step",
+        "Don't skip the fundamentals"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Practice steps:\n1. Set up your environment\n2. Implement the basic version\n3. Add advanced features\n4. Test and debug\n5. Refactor and optimize"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Challenge: CORS & Cross-Site Attacks Mastery",
+      "description": "Push your understanding of CORS & Cross-Site Attacks by tackling a more complex scenario. This exercise combines multiple concepts from this lesson.",
+      "hints": [
+        "Review all sections of the lesson",
+        "Break the problem into smaller parts",
+        "Use the code examples as a starting point"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Challenge approach:\n1. Analyze the requirements\n2. Design your solution\n3. Implement step by step\n4. Test edge cases\n5. Document your approach"
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

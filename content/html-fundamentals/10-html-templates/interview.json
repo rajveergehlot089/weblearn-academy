@@ -1,0 +1,57 @@
+{
+  "topicId": "10-html-templates",
+  "type": "interview",
+  "estimatedMinutes": 10,
+  "questions": [
+    {
+      "question": "What is the difference between template element and display:none?",
+      "answer": "Template content is inert - not rendered, not in DOM, not interactive. It's cloned with JavaScript when needed. Display:none content is in the DOM but hidden - it still takes up space in the document structure and can be accessed by CSS and JavaScript. Templates are more efficient for dynamic content creation.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why is the charset meta tag placed first?",
+      "answer": "The charset meta tag must be within the first 1024 bytes of the document. If placed later, the browser might misinterpret character encoding, causing garbled text. Always place <meta charset=\"UTF-8\"> as the first tag in the head element.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What Open Graph tags are essential for social sharing?",
+      "answer": "Essential OG tags: og:type (website, article), og:title, og:description, og:image (1200x630px recommended), og:url. Optional but recommended: og:site_name, og:locale. For Twitter, use twitter:card, twitter:title, twitter:description, twitter:image.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you create responsive meta tags?",
+      "answer": "The viewport meta tag is essential: <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">. This tells browsers to set viewport width to device width and disable initial zoom. Without it, mobile browsers render pages at desktop width.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the purpose of resource hints?",
+      "answer": "Resource hints tell browsers about upcoming resource needs: dns-prefetch (DNS lookup), preconnect (connection), preload (critical resource), prefetch (next navigation). They improve performance by starting resource loading earlier than normal discovery would allow.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you structure data for SEO?",
+      "answer": "Use JSON-LD format in a script tag with type=\"application/ld+json\". Define schema.org types like Course, Article, Organization, BreadcrumbList. Include relevant properties. Test with Google's Rich Results Test. Structured data enables rich snippets in search results.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What favicons should you provide?",
+      "answer": "Provide: favicon.ico (32x32) for legacy browsers, PNG favicons (16x16, 32x32, 192x192, 512x512), apple-touch-icon.png (180x180) for iOS, safari-pinned-tab.svg for Safari. Use realfavicongenerator.net to generate all sizes. Include theme-color for mobile browsers.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you optimize meta descriptions for SEO?",
+      "answer": "Best practices: 1) Keep under 160 characters. 2) Include target keywords. 3) Write compelling, action-oriented text. 4) Make each page unique. 5) Include value proposition. 6) Use natural language. Avoid keyword stuffing or duplicating across pages.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the difference between preload and prefetch?",
+      "answer": "Preload loads critical resources needed immediately (current page). Prefetch loads resources for future navigation (next page). Preload has high priority, prefetch has low priority. Use preload for above-the-fold content, prefetch for likely next pages.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you test meta tags and social sharing?",
+      "answer": "Testing tools: 1) Facebook Sharing Debugger for OG tags. 2) Twitter Card Validator. 3) Google's Rich Results Test for structured data. 4) Browser developer tools for viewport. 5) SEO tools like Screaming Frog. 6) Mobile device testing for theme-color and icons.",
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "topicId": "04-home-row-combined",
+  "exercises": [
+    {
+      "title": "Basic Practice",
+      "description": "Type these words: fak, jag, dam, gam, than, cha, man, da, ga",
+      "hints": [
+        "Keep eyes on screen",
+        "Use proper finger placement"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "fak, jag, dam, gam, than, cha, man, da, ga"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Sentence Practice",
+      "description": "Type each sentence without looking at the keyboard.",
+      "hints": [
+        "Focus on accuracy",
+        "Use all fingers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "fak jag dam gam\nthan cha man da"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

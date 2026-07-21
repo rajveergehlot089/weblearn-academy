@@ -1,0 +1,18 @@
+{
+  "topicId": "08-prepositions",
+  "comparisons": [
+    {
+      "concept": "prepositions",
+      "javascript": {
+        "language": "english",
+        "code": "I work at a bank."
+      },
+      "python": {
+        "language": "english",
+        "code": "The book is on the table."
+      },
+      "explanation": "English follows consistent patterns once you learn the rules."
+    }
+  ],
+  "keyInsight": "Understanding this concept is fundamental to English fluency."
+}

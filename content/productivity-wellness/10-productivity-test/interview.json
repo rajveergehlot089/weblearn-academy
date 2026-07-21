@@ -1,0 +1,30 @@
+{
+  "topicId": "10-productivity-test",
+  "questions": [
+    {
+      "question": "What's the single most impactful thing I can do to improve my productivity?",
+      "answer": "Protect your morning for deep work. Most developers waste their peak cognitive hours (9-11 AM) on email, Slack, and meetings. If you time-block 2 hours every morning for your most important task — no email, no Slack, no meetings — you'll accomplish more in those 2 hours than in the remaining 6. This one change often improves productivity by 30-50%. The data is clear: your brain is sharpest in the morning; don't waste it on other people's priorities.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How long does it take to see real results from these techniques?",
+      "answer": "Immediate benefits (breathing techniques, time blocking): 1-3 days. Habit formation (Pomodoro, shutdown ritual): 2-4 weeks. Measurable productivity gains: 4-8 weeks. Wellness improvements (sleep, stress): 2-6 weeks. System-level transformation: 3-6 months. The key insight: don't wait for results before continuing — consistency IS the result. Most people quit in week 2-3 because they don't see dramatic change yet. Trust the process; the compound effect is real.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "I've tried productivity systems before and they never stick. Why?",
+      "answer": "Three common reasons: (1) Too much too fast — you tried to change everything at once. Start with ONE habit. (2) Wrong habit for your situation — if you're burned out, don't add Pomodoro; fix your sleep first. (3) No tracking — you can't improve what you don't measure. Track completion and outcomes for every habit. The fix: pick ONE thing from your lowest-scoring diagnostic section, scale it to 2 minutes, track it for 4 weeks, then add the next thing. Slow is smooth, smooth is fast.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Should I focus more on productivity or wellness?",
+      "answer": "Wellness first, always. Productivity without wellness is burnout waiting to happen. If your sleep, stress, or work-life balance are struggling, fix those FIRST — they're the foundation that makes productivity possible. A well-rested developer with average time management outperforms an exhausted developer with perfect systems. Think of it like a building: wellness is the foundation, productivity is the structure. You can't build a strong structure on a weak foundation.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I stay motivated to keep improving after the course ends?",
+      "answer": "Three strategies: (1) Accountability — tell someone your goals and check in monthly. (2) Tracking — keep your diagnostic scores visible and retake quarterly. Seeing improvement motivates continued effort. (3) Teaching — explain a technique to a junior developer. Teaching forces you to understand it deeply and reignites your commitment. The developers who improve continuously aren't more disciplined — they've built systems that make improvement automatic (habits, tracking, accountability). Build the system, not the willpower.",
+      "difficulty": "hard"
+    }
+  ]
+}

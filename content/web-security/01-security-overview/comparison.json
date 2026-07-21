@@ -1,0 +1,18 @@
+{
+  "topicId": "01-security-overview",
+  "comparisons": [
+    {
+      "concept": "Web Security Fundamentals",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Web Security Fundamentals\nconst result = {\n  concept: \"Web Security Fundamentals\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Web Security Fundamentals\nresult = {\n    \"concept\": \"Web Security Fundamentals\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Web Security Fundamentals is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Web Security Fundamentals is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

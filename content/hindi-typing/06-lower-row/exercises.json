@@ -1,0 +1,31 @@
+{
+  "topicId": "06-lower-row",
+  "exercises": [
+    {
+      "title": "Basic Practice",
+      "description": "Type these words: ba, na, ma, la, ba, ban, mal, bal, nam",
+      "hints": [
+        "Keep eyes on screen",
+        "Use proper finger placement"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "ba, na, ma, la, ba, ban, mal, bal, nam"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Sentence Practice",
+      "description": "Type each sentence without looking at the keyboard.",
+      "hints": [
+        "Focus on accuracy",
+        "Use all fingers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "ban mal bal nam\nlab man bal"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

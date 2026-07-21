@@ -1,0 +1,18 @@
+{
+  "topicId": "09-common-syllables",
+  "comparisons": [
+    {
+      "concept": "Common Syllables Practice",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Common Syllables Practice\nconst result = {\n  concept: \"Common Syllables Practice\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Common Syllables Practice\nresult = {\n    \"concept\": \"Common Syllables Practice\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Common Syllables Practice is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Common Syllables Practice is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

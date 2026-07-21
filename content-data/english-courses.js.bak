@@ -1,0 +1,446 @@
+module.exports = {
+  'english-grammar-basics': {
+    topics: [
+      { id: '01-alphabet', title: 'English Alphabet & Sounds', group: 'basics', day_fast_track: 1, day_full_course: 1, icon: '\u{1F524}', description: '26 letters, vowel sounds, consonant sounds, and basic pronunciation.', prerequisites: [] },
+      { id: '02-nouns', title: 'Nouns \u2014 People, Places, Things', group: 'grammar', day_fast_track: 2, day_full_course: 2, icon: '\u{1F4DD}', description: 'Common nouns, proper nouns, plural forms, and noun usage.', prerequisites: ['01-alphabet'] },
+      { id: '03-pronouns', title: 'Pronouns \u2014 Replacing Nouns', group: 'grammar', day_fast_track: 3, day_full_course: 3, icon: '\u{1F464}', description: 'Personal, possessive, reflexive, and demonstrative pronouns.', prerequisites: ['02-nouns'] },
+      { id: '04-articles', title: 'Articles \u2014 A, An, The', group: 'grammar', day_fast_track: 4, day_full_course: 4, icon: '\u{1F4F0}', description: 'Definite and indefinite articles and when to use each.', prerequisites: ['02-nouns'] },
+      { id: '05-verbs-intro', title: 'Verbs \u2014 Action Words', group: 'grammar', day_fast_track: 5, day_full_course: 5, icon: '\u2699\uFE0F', description: 'What are verbs, action vs linking verbs, and verb basics.', prerequisites: ['02-nouns'] },
+      { id: '06-present-tense', title: 'Present Tense', group: 'grammar', day_fast_track: 6, day_full_course: 7, icon: '\u{1F504}', description: 'Simple present, present continuous, present perfect.', prerequisites: ['05-verbs-intro'] },
+      { id: '07-adjectives', title: 'Adjectives \u2014 Describing Words', group: 'grammar', day_fast_track: 7, day_full_course: 8, icon: '\u{1F3A8}', description: 'Types of adjectives, comparison degrees, and placement.', prerequisites: ['02-nouns'] },
+      { id: '08-adverbs', title: 'Adverbs \u2014 Describing Actions', group: 'grammar', day_fast_track: 8, day_full_course: 9, icon: '\u{1F4A8}', description: 'Adverbs of manner, time, place, and frequency.', prerequisites: ['05-verbs-intro'] }
+    ],
+    content: {
+      '01-alphabet': {
+        quick: {
+          topicId: '01-alphabet', type: 'quick', estimatedMinutes: 5,
+          sections: [
+            { heading: 'The English Alphabet', body: 'English has 26 letters, divided into two groups:\n\nVowels (5): A, E, I, O, U \u2014 these are the core sounds of English. Every word needs at least one vowel.\n\nConsonants (21): B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z' },
+            { heading: 'Short Vowel Sounds', body: 'Short vowels are quick, clipped sounds:\n\n\u2022 A as in "cat", "bat", "hat"\n\u2022 E as in "bed", "red", "pen"\n\u2022 I as in "sit", "hit", "bit"\n\u2022 O as in "hot", "pot", "dot"\n\u2022 U as in "cup", "bus", "run"' },
+            { heading: 'Long Vowel Sounds', body: 'Long vowels say their own name:\n\n\u2022 A as in "cake", "make", "lake"\n\u2022 E as in "these", "tree", "free"\n\u2022 I as in "bike", "kite", "time"\n\u2022 O as in "home", "bone", "tone"\n\u2022 U as in "cute", "huge", "use"' },
+            { heading: 'Consonant Sounds', body: 'Most consonants have one sound, but some have two:\n\n\u2022 Hard C /k/: cat, cup, cold\n\u2022 Soft C /s/: city, circle, center\n\u2022 Hard G /g/: go, get, game\n\u2022 Soft G /d\u0292/: gem, giant, giraffe\n\nLetter Y acts as a consonant at the start ("yes", "you") and a vowel at the end ("happy", "sky").' }
+          ],
+          jargon: [
+            { term: 'Vowel', definition: 'A letter (A, E, I, O, U) that represents an open sound. Every English word has at least one vowel.' },
+            { term: 'Consonant', definition: 'A letter that is not a vowel. Consonants are made by blocking or restricting airflow.' },
+            { term: 'Syllable', definition: 'A unit of pronunciation with one vowel sound. "Hello" = hel-lo (2 syllables). "Cat" = 1 syllable.' },
+            { term: 'Pronunciation', definition: 'The way a word sounds when spoken. Same spelling can have different pronunciations.' }
+          ],
+          summary: 'Master the 26 letters and their sounds. Practice saying each vowel pair (short and long) out loud for 5 minutes daily.'
+        },
+        deep: {
+          topicId: '01-alphabet', type: 'deep', estimatedMinutes: 15,
+          sections: [
+            { heading: 'Understanding Vowel Sounds', body: 'Vowels are the heart of English pronunciation. There are 12 vowel sounds in English (not just 5 letters!):\n\nMonophthongs (single sounds): /i\u02D0/ (see), /I/ (sit), /e/ (bed), /a/ (cat), /ɑ\u02D0/ (car), /o/ (hot), /o\u02D0/ (caught), /U/ (put), /u\u02D0/ (food), /\u028C/ (cut), /ɜ\u02D0/ (bird), /ə/ (about)\n\nDiphthongs (gliding sounds): /e\u026A/ (day), /a\u026A/ (my), /o\u026A/ (boy), /a\u028A/ (now), /o\u028A/ (go)\n\nTip: Record yourself and compare with native speakers.' },
+            { heading: 'Consonant Clusters', body: 'Some consonants combine in English:\n\nInitial clusters: /bl/ (blue), /br/ (brown), /st/ (stop), /str/ (strong), /spr/ (spring)\n\nFinal clusters: /-st/ (fast), /-nd/ (hand), /-lk/ (walk), /-mps/ (lamps)\n\nCommon mistakes:\n\u2022 "s" + consonant: "school" not "eschool"\n\u2022 "str" cluster: "street" \u2014 practice all three sounds\n\u2022 Final "d" and "t" are often reduced in casual speech' },
+            { heading: 'Word Stress Patterns', body: 'English is a stress-timed language. Some syllables are louder and longer:\n\nNouns (stress 1st syllable): TA-ble, STU-dent, HOS-pi-tal\nVerbs (stress 2nd syllable): re-PORT, be-GIN, de-CIDE\nAdjectives (stress 2nd syllable): beAU-ti-ful, com-PU-ter\n\nTwo-syllable nouns vs verbs:\n\u2022 RE-cord (noun) vs re-CORD (verb)\n\u2022 PRE-sent (noun) vs pre-SENT (verb)\n\u2022 PRO-ject (noun) vs pro-JECT (verb)' },
+            { heading: 'Silent Letters', body: 'Many English words have silent letters:\n\nSilent K: knight, knee, knife, know, knot\nSilent W: write, wrong, wrap, wrist\nSilent B: lamb, climb, bomb, thumb, debt\nSilent G: gnaw, gnash, sign, foreign\nSilent H: hour, honest, ghost, what\nSilent T: castle, listen, whistle, often\n\nThere is no single rule \u2014 you must learn these through exposure and reading.' },
+            { heading: 'Practice Drills', body: '1. Alphabet song \u2014 sing along daily to internalize letter sounds\n2. Minimal pairs: ship/sheep, bed/bad, full/fool \u2014 listen for the difference\n3. Read aloud for 10 minutes daily from any English text\n4. Shadow native speakers: play audio, speak simultaneously\n5. Tongue twisters:\n\u2022 "She sells seashells by the seashore"\n\u2022 "Peter Piper picked a peck of pickled peppers"\n\u2022 "How much wood would a woodchuck chuck"' }
+          ],
+          summary: 'English pronunciation takes practice. Focus on vowel sounds first \u2014 they carry the meaning. Record yourself weekly to track improvement.'
+        },
+        comparison: {
+          topicId: '01-alphabet',
+          comparisons: [
+            { concept: 'Short vs Long Vowel Sounds', before: { label: 'Short vowel: "cat"', code: '/k\u00e6t/ \u2014 quick, flat sound' }, after: { label: 'Long vowel: "cake"', code: '/ke\u026a/ \u2014 vowel says its name' }, explanation: 'Short vowels are quick and clipped. Long vowels "say their name" \u2014 A sounds like /e\u026a/, I sounds like /a\u026a/. The silent-e rule often makes vowels long: "cap" \u2192 "cape".' },
+            { concept: 'Voiced vs Voiceless Consonants', before: { label: 'Voiceless: "pat"', code: '/p/ \u2014 no vibration in throat' }, after: { label: 'Voiced: "bat"', code: '/b/ \u2014 vibration in throat' }, explanation: 'Place your hand on your throat. Voiceless consonants (/p/, /t/, /k/, /f/, /s/) have no vibration. Voiced consonants (/b/, /d/, /g/, /v/, /z/) vibrate. This distinction changes meaning.' },
+            { concept: 'Consonant vs Vowel Y', before: { label: 'Consonant Y: "yes"', code: '/jes/ \u2014 Y starts the syllable' }, after: { label: 'Vowel Y: "gym"', code: '/d\u0292\u0269m/ \u2014 Y sounds like /I/' }, explanation: 'When "Y" starts a syllable, it acts as a consonant. When it appears in the middle or end, it often acts as a vowel.' }
+          ],
+          keyInsight: 'English spelling is not phonetic \u2014 the same letter can represent multiple sounds. Focus on learning sounds, not just letters.'
+        },
+        interview: {
+          topicId: '01-alphabet',
+          questions: [
+            { question: 'How many vowels are there in English?', answer: 'English has 5 vowel LETTERS (A, E, I, O, U) but 12 vowel SOUNDS. The letter "A" sounds different in "cat" (/ae/), "car" (/a/), "cake" (/e\u026a/), and "about" (/e/). Spelling does not reliably predict sound.', difficulty: 'easy' },
+            { question: 'Why does English have so many silent letters?', answer: 'English spelling was standardized in the 1400s-1600s, but pronunciation continued to change. Many silent letters were once pronounced: the "k" in "knight" was spoken, the "gh" in "night" was a guttural sound. Over centuries, sounds disappeared but the spelling remained.', difficulty: 'medium' },
+            { question: 'What is the difference between phonics and phonetics?', answer: 'Phonics is a teaching method connecting sounds to letters for literacy. Phonetics is the scientific study of speech sounds \u2014 how they are produced, transmitted, and perceived. Phonics is practical application; phonetics is the academic discipline.', difficulty: 'medium' },
+            { question: 'How can I improve my English pronunciation as a beginner?', answer: 'Start with the 12 core vowel sounds. Practice minimal pairs (ship/sheep, bed/bad) to train your ear. Read aloud for 10 minutes daily. Use a pronunciation dictionary to hear correct sounds. Record yourself and compare. Focus on one sound per week.', difficulty: 'easy' }
+          ]
+        },
+        exercises: {
+          topicId: '01-alphabet',
+          exercises: [
+            { title: 'Sort the Letters', description: 'Classify each letter as a vowel or consonant: A, B, C, E, G, I, K, O, U, Z, M, D', hints: ['Remember the 5 vowels: A, E, I, O, U', 'All other letters are consonants'], solution: { language: 'text', code: 'Vowels: A, E, I, O, U\nConsonants: B, C, G, K, Z, M, D' }, difficulty: 'easy' },
+            { title: 'Identify Short and Long Vowels', description: 'For each word, identify whether the vowel sound is short or long: cat, cake, pen, tree, hot, home', hints: ['Short vowels are quick and flat', 'Long vowels "say their name"', 'Silent-e at the end often makes the vowel long'], solution: { language: 'text', code: 'cat \u2014 short A\ncake \u2014 long A\npen \u2014 short E\ntree \u2014 long E\nhot \u2014 short O\nhome \u2014 long O' }, difficulty: 'medium' },
+            { title: 'Syllable Counting', description: 'How many syllables are in each word? computer, beautiful, strong, banana, understand', hints: ['Count the vowel sounds, not the letters', 'Clap as you say each word slowly'], solution: { language: 'text', code: 'computer \u2014 3 syllables (com-pu-ter)\nbeautiful \u2014 3 syllables (beau-ti-ful)\nstrong \u2014 1 syllable\nbanana \u2014 3 syllables (ba-na-na)\nunderstand \u2014 3 syllables (un-der-stand)' }, difficulty: 'easy' }
+          ]
+        }
+      },
+      '02-nouns': {
+        quick: {
+          topicId: '02-nouns', type: 'quick', estimatedMinutes: 5,
+          sections: [
+            { heading: 'What Is a Noun?', body: 'A noun is a word that names a person, place, thing, or idea:\n\n\u2022 Person: teacher, doctor, Maria, Tom\n\u2022 Place: school, park, London, home\n\u2022 Thing: book, phone, water, car\n\u2022 Idea: freedom, love, happiness, truth' },
+            { heading: 'Common vs Proper Nouns', body: 'Common nouns name general things (lowercase): dog, city, river\nProper nouns name specific things (capitalized): Rex, Paris, Nile River\n\nRule: Always capitalize proper nouns!\n\u2022 "I live in a city." (common)\n\u2022 "I live in Tokyo." (proper)' },
+            { heading: 'Plural Nouns', body: 'Regular plurals (add -s or -es):\n\u2022 cat \u2192 cats, dog \u2192 dogs\n\u2022 box \u2192 boxes, bus \u2192 buses\n\u2022 baby \u2192 babies, city \u2192 cities\n\nIrregular plurals (must memorize):\n\u2022 man \u2192 men, woman \u2192 women\n\u2022 child \u2192 children, foot \u2192 feet\n\u2022 mouse \u2192 mice, tooth \u2192 teeth' },
+            { heading: 'Countable vs Uncountable', body: 'Countable nouns can be counted: one book, two books, three books\nUncountable nouns cannot: water, rice, information, advice\n\n\u2022 "I have a question." (countable)\n\u2022 "I need some information." (uncountable)\n\nNever say: "informations" or "an advice"' }
+          ],
+          jargon: [
+            { term: 'Noun', definition: 'A word that names a person, place, thing, or idea.' },
+            { term: 'Proper Noun', definition: 'A specific name that is always capitalized (e.g., London, Sarah).' },
+            { term: 'Plural', definition: 'The form of a noun that indicates more than one (e.g., cats, children).' },
+            { term: 'Uncountable Noun', definition: 'A noun that cannot be counted individually, like water or information.' }
+          ],
+          summary: 'Nouns are the building blocks of sentences. Learn to distinguish common from proper nouns, master plural forms, and know which nouns are countable vs uncountable.'
+        },
+        deep: {
+          topicId: '02-nouns', type: 'deep', estimatedMinutes: 15,
+          sections: [
+            { heading: 'Types of Nouns in Detail', body: 'There are six types of nouns:\n\n1. Common nouns: general names (teacher, city)\n2. Proper nouns: specific names, always capitalized (Professor Smith, New York)\n3. Abstract nouns: ideas and feelings (courage, freedom, love)\n4. Concrete nouns: things you can see/touch/hear/smell/taste (rock, music, perfume)\n5. Collective nouns: groups (team, family, flock, audience)\n6. Compound nouns: two words joined (toothpaste, swimming pool, mother-in-law)' },
+            { heading: 'Plural Rules in Detail', body: 'Adding -s: most nouns (cat \u2192 cats)\nAdding -es: words ending in s, sh, ch, x, z (bus \u2192 buses, dish \u2192 dishes)\n\nConsonant + y: change y to ies (baby \u2192 babies)\nVowel + y: just add s (day \u2192 days)\n\nWords ending in -f or -fe: change to -ves:\nknife \u2192 knives, leaf \u2192 leaves, wolf \u2192 wolves\n(Exception: roofs, chiefs, beliefs)\n\nSome nouns have the same singular and plural: sheep, deer, fish, species' },
+            { heading: 'Possessive Nouns', body: 'To show ownership, add apostrophe + s:\n\n\u2022 Singular: the dog\u2019s bone, Sarah\u2019s book\n\u2022 Plural ending in s: the dogs\u2019 bones, the teachers\u2019 lounge\n\u2022 Irregular plural: the children\u2019s toys, the women\u2019s rights\n\nCommon mistake: "its" vs "it\u2019s"\n\u2022 "its" = possessive (The cat licked its paw.)\n\u2022 "it\u2019s" = it is (It\u2019s a beautiful day.)' },
+            { heading: 'Noun Clauses and Phrases', body: 'A noun phrase is a noun plus its modifiers:\n\u2022 "The big red dog" (noun phrase, "dog" is the head noun)\n\u2022 "A very interesting book" (noun phrase)\n\nA noun clause acts as a noun in a sentence:\n\u2022 "What he said was surprising." (noun clause as subject)\n\u2022 "I know that she is kind." (noun clause as object)\n\nThese help you build more complex sentences.' }
+          ],
+          summary: 'Nouns come in many forms. Master the six types, irregular plurals, possessive forms, and noun phrases to build sophisticated sentences.'
+        },
+        comparison: {
+          topicId: '02-nouns',
+          comparisons: [
+            { concept: 'Countable vs Uncountable Nouns', before: { label: 'Countable: "I have three books."', code: 'books = can be counted (1, 2, 3...)' }, after: { label: 'Uncountable: "I need some water."', code: 'water = cannot count individually' }, explanation: 'Countable nouns use numbers and articles (a/an). Uncountable nouns use "some", "much", "a little". You cannot say "informations" \u2014 use "pieces of information" instead.' },
+            { concept: 'Common vs Proper Nouns', before: { label: 'Common: "a country"', code: 'General name, lowercase' }, after: { label: 'Proper: "Japan"', code: 'Specific name, always capitalized' }, explanation: 'Common nouns name general categories. Proper nouns name specific ones and are always capitalized. "the city" vs "Paris", "a river" vs "the Amazon River".' },
+            { concept: 'Collective Nouns: Singular or Plural?', before: { label: 'American: "The team is winning."', code: 'Collective noun treated as singular' }, after: { label: 'British: "The team are winning."', code: 'Collective noun treated as plural' }, explanation: 'In American English, collective nouns (team, family, group) are usually singular. In British English, they can be plural if emphasizing individual members.' }
+          ],
+          keyInsight: 'The biggest noun mistake is using "informations", "advices", or "furnitures" \u2014 these are uncountable and have no plural form.'
+        },
+        interview: {
+          topicId: '02-nouns',
+          questions: [
+            { question: 'What are the six types of nouns?', answer: '1. Common nouns (general: teacher), 2. Proper nouns (specific: Dr. Smith), 3. Abstract nouns (ideas: freedom), 4. Concrete nouns (sensory: rock), 5. Collective nouns (groups: team), 6. Compound nouns (joined: toothpaste). Understanding these helps you choose the right article and verb form.', difficulty: 'easy' },
+            { question: 'Why do some nouns have the same singular and plural form?', answer: 'Nouns like "sheep", "deer", "fish", and "species" come from Old English and Germanic languages where the plural was marked by a vowel change internally (like "man" \u2192 "men"), not by adding -s. Over time, the internal change disappeared but the form stayed the same. These are called "zero plurals".', difficulty: 'medium' },
+            { question: 'When should I use "its" vs "it\u2019s"?', answer: '"Its" is the possessive form of "it" (The dog wagged its tail.). "It\u2019s" is a contraction of "it is" or "it has" (It\u2019s raining. / It\u2019s been a long day.). A helpful test: if you can replace it with "it is" or "it has", use "it\u2019s". If showing ownership, use "its" (no apostrophe).', difficulty: 'easy' },
+            { question: 'How do you form possessives for irregular plurals?', answer: 'For irregular plurals that do not end in -s, add apostrophe + s: the children\u2019s toys, the women\u2019s rights, the men\u2019s room, the mice\u2019s cheese. For regular plurals ending in -s, add only an apostrophe: the teachers\u2019 lounge, the dogs\u2019 bones.', difficulty: 'medium' }
+          ]
+        },
+        exercises: {
+          topicId: '02-nouns',
+          exercises: [
+            { title: 'Identify the Noun Types', description: 'Classify each noun as common, proper, abstract, collective, or compound: London, happiness, team, toothpaste, idea, Professor Lee', hints: ['Proper nouns are always capitalized', 'Abstract nouns are ideas or feelings', 'Compound nouns are two words joined'], solution: { language: 'text', code: 'London \u2014 Proper noun\nhappiness \u2014 Abstract noun\nteam \u2014 Collective noun\ntoothpaste \u2014 Compound noun\nidea \u2014 Common noun\nProfessor Lee \u2014 Proper noun' }, difficulty: 'medium' },
+            { title: 'Plural Forms', description: 'Write the plural of each noun: box, baby, knife, sheep, child, potato, hero, mouse', hints: ['Words ending in -sh, -ch, -x, -s add -es', 'Consonant + y: change y to ies', 'Some nouns have irregular plurals'], solution: { language: 'text', code: 'box \u2192 boxes\nbaby \u2192 babies\nknife \u2192 knives\nsheep \u2192 sheep (no change)\nchild \u2192 children\npotato \u2192 potatoes\nhero \u2192 heroes\nmouse \u2192 mice' }, difficulty: 'medium' },
+            { title: 'Possessive Nouns', description: 'Write the possessive form: the dog, the cats, the children, the teachers, James, my boss', hints: ['Singular: add apostrophe + s', 'Plural ending in s: add only apostrophe', 'Irregular plural: add apostrophe + s'], solution: { language: 'text', code: "the dog \u2192 the dog's\ncats \u2192 the cats'\nchildren \u2192 the children's\nteachers \u2192 the teachers'\nJames \u2192 James'\nmy boss \u2192 my boss's" }, difficulty: 'easy' }
+          ]
+        }
+      },
+      '03-pronouns': {
+        quick: {
+          topicId: '03-pronouns', type: 'quick', estimatedMinutes: 5,
+          sections: [
+            { heading: 'What Is a Pronoun?', body: 'A pronoun is a word that replaces a noun to avoid repetition:\n\nInstead of: "Maria is a teacher. Maria works at a school."\nWrite: "Maria is a teacher. She works at a school."\n\n"She" replaces "Maria" \u2014 it is a pronoun.' },
+            { heading: 'Personal Pronouns', body: 'Subject pronouns (do the action):\nI, you, he, she, it, we, they\n\nObject pronouns (receive the action):\nme, you, him, her, it, us, them\n\n\u2022 He called her. (He = subject, her = object)\n\u2022 We invited them. (We = subject, them = object)' },
+            { heading: 'Possessive Pronouns', body: 'Show ownership (no apostrophe needed):\n\nAdjective form (before nouns): my, your, his, her, its, our, their\nPronoun form (stands alone): mine, yours, his, hers, its, ours, theirs\n\n\u2022 "This is my book." (adjective)\n\u2022 "This book is mine." (pronoun)' },
+            { heading: 'Demonstrative Pronouns', body: 'Point to specific things:\n\n\u2022 this / these (near)\n\u2022 that / those (far)\n\n\u2022 "This is my phone." (singular, near)\n\u2022 "Those are beautiful flowers." (plural, far)\n\nUse "this/that" for singular and "these/those" for plural.' }
+          ],
+          jargon: [
+            { term: 'Pronoun', definition: 'A word that replaces a noun (e.g., he, she, it, they).' },
+            { term: 'Antecedent', definition: 'The noun that a pronoun refers to. In "Maria left. She was tired.", "Maria" is the antecedent of "she".' },
+            { term: 'Reflexive Pronoun', definition: 'A pronoun ending in -self or -selves used when subject and object are the same (myself, themselves).' },
+            { term: 'Relative Pronoun', definition: 'A pronoun that connects clauses: who, whom, whose, which, that.' }
+          ],
+          summary: 'Pronouns replace nouns to avoid repetition. Master personal, possessive, and demonstrative pronouns to make your English flow naturally.'
+        },
+        deep: {
+          topicId: '03-pronouns', type: 'deep', estimatedMinutes: 15,
+          sections: [
+            { heading: 'All Types of Pronouns', body: 'English has seven types of pronouns:\n\n1. Personal: I, you, he, she, it, we, they (and object forms)\n2. Possessive: my/mine, your/yours, his, her/hers, its, our/ours, their/theirs\n3. Reflexive: myself, yourself, himself, herself, itself, ourselves, themselves\n4. Demonstrative: this, that, these, those\n5. Interrogative: who, whom, whose, which, what\n6. Relative: who, whom, whose, which, that\n7. Indefinite: anyone, everyone, someone, nobody, each, all, both, some' },
+            { heading: 'Reflexive Pronouns', body: 'Use reflexive pronouns when the subject and object are the same person:\n\n\u2022 "I hurt myself." (I = subject, myself = object)\n\u2022 "She taught herself to code."\n\u2022 "We enjoyed ourselves at the party."\n\nAlso used for emphasis:\n\u2022 "I myself finished the project."\n\u2022 "The president himself attended."\n\nCommon mistake: Do NOT use "myself" instead of "me". Say "John gave it to me" NOT "John gave it to myself".' },
+            { heading: 'Relative Pronouns', body: 'Who/whom: for people (Who is calling? The man whom I met...)\nWhose: possession (The girl whose bike was stolen...)\nWhich: for things (The book which I read...)\nThat: for people and things (The car that I bought...)\n\n\u2022 "The teacher who helped me was kind."\n\u2022 "The city that I love is Paris."\n\u2022 "The student whose work won the prize was happy."\n\n"That" vs "which": In restrictive clauses, both work. In non-restrictive (with commas), use "which".' },
+            { heading: 'Pronoun-Antecedent Agreement', body: 'A pronoun must agree with its antecedent in number and gender:\n\n\u2022 Singular: "Every student must bring his or her book."\n\u2022 Plural: "The students brought their books."\n\u2022 Mixed: "Everyone should bring their book." (accepted in modern English)\n\nAvoid ambiguity:\n\u2022 Bad: "When John met Tom, he was nervous." (Who was nervous?)\n\u2022 Good: "When John met Tom, John was nervous."' },
+            { heading: 'Common Pronoun Mistakes', body: '1. "Between you and I" \u2192 "between you and me" (object after preposition)\n2. "Me and him went" \u2192 "He and I went" (subject pronouns)\n3. "Everyone brought their" \u2014 now widely accepted\n4. "Who did you see?" \u2192 grammatically correct (who as object)\n5. "Him and me are friends" \u2192 "He and I are friends"' }
+          ],
+          summary: 'Pronouns must agree with their antecedents. Learn all seven types and avoid common errors like using "myself" incorrectly or mismatching pronoun case.'
+        },
+        comparison: {
+          topicId: '03-pronouns',
+          comparisons: [
+            { concept: 'Subject vs Object Pronouns', before: { label: 'Incorrect: "Me went to store."', code: 'me = object pronoun used as subject' }, after: { label: 'Correct: "I went to the store."', code: 'I = subject pronoun' }, explanation: 'Use subject pronouns (I, he, she, we, they) as the subject doing the action. Use object pronouns (me, him, her, us, them) as the receiver. Test: remove the other person \u2014 "Me went" sounds wrong, "I went" sounds right.' },
+            { concept: 'Who vs Whom', before: { label: '"Who did you give it to?"', code: 'who used as object (common in speech)' }, after: { label: '"To whom did you give it?"', code: 'whom = object of preposition' }, explanation: '"Who" is a subject pronoun (Who is there?). "Whom" is an object pronoun (Whom did you call?). Test: replace with he/him \u2014 if "he" fits, use "who"; if "him" fits, use "whom".' },
+            { concept: 'Possessive Adjective vs Pronoun', before: { label: '"This is my book."', code: 'my = possessive adjective (before noun)' }, after: { label: '"This book is mine."', code: 'mine = possessive pronoun (stands alone)' }, explanation: 'Possessive adjectives (my, your, his, her) come before nouns. Possessive pronouns (mine, yours, his, hers) stand alone without a noun following.' }
+          ],
+          keyInsight: 'The most common pronoun error is case confusion \u2014 using "me" where "I" is needed, or "myself" where "me" belongs. Always test by removing the other person in the sentence.'
+        },
+        interview: {
+          topicId: '03-pronouns',
+          questions: [
+            { question: 'What is the difference between "who" and "whom"?', answer: '"Who" is a subject pronoun: "Who is coming to dinner?" (He is coming.) "Whom" is an object pronoun: "Whom did you call?" (You called him.) Test: if you can replace it with "he" use "who"; if "him" fits, use "whom". In casual speech, "who" often replaces "whom".', difficulty: 'medium' },
+            { question: 'When do we use reflexive pronouns?', answer: 'Reflexive pronouns (-self/-selves) are used when the subject and object are the same person: "I hurt myself", "She taught herself". They also add emphasis: "I myself did it". Never use them as a substitute for regular object pronouns \u2014 "give it to myself" is wrong; say "give it to me".', difficulty: 'medium' },
+            { question: 'Is "everyone...their" grammatically correct?', answer: 'Traditionally, "everyone" is singular and takes "his or her": "Everyone brought his or her book." However, using singular "they/their" ("Everyone brought their book") has been accepted by major style guides since the 2010s and is now standard in both formal and informal English. It avoids the awkward "his or her" construction.', difficulty: 'medium' },
+            { question: 'Why is "between you and I" incorrect?', answer: 'The preposition "between" requires object pronouns: "between you and me". The phrase "you and I" uses two subject pronouns. The trick is to remove "you and" \u2014 you would say "between me" not "between I". This error happens because "you and I" sounds more formal, but grammar requires the objective case here.', difficulty: 'easy' }
+          ]
+        },
+        exercises: {
+          topicId: '03-pronouns',
+          exercises: [
+            { title: 'Choose the Correct Pronoun', description: 'Select the correct pronoun for each sentence: 1) ___ went to the store (I/Me). 2) She gave ___ a gift (I/me). 3) ___ is a good teacher (He/Him). 4) We sat beside ___ (they/them).', hints: ['Subject pronouns do the action', 'Object pronouns receive the action', 'Remove the other person to test'], solution: { language: 'text', code: '1) I went to the store. (subject)\n2) She gave me a gift. (object)\n3) He is a good teacher. (subject)\n4) We sat beside them. (object)' }, difficulty: 'easy' },
+            { title: 'Reflexive Pronouns', description: 'Fill in with the correct reflexive pronoun: I taught ___, She hurt ___, We enjoyed ___, They built it ___, He gave it to her __.', hints: ['Match the reflexive pronoun to the subject', 'Subject and object must be the same person'], solution: { language: 'text', code: 'I taught myself.\nShe hurt herself.\nWe enjoyed ourselves.\nThey built it themselves.\nHe gave it to her himself.' }, difficulty: 'easy' },
+            { title: 'Relative Pronouns', description: 'Choose who, whom, whose, which, or that: 1) The woman ___ called is here. 2) The dog ___ barked all night is loud. 3) The student ___ grade improved was happy. 4) The person ___ I admire most is my mother.', hints: ['Who = subject (people), whom = object (people)', 'Which = things, that = people or things', 'Whose = possession'], solution: { language: 'text', code: '1) The woman who called is here.\n2) The dog that/which barked all night is loud.\n3) The student whose grade improved was happy.\n4) The person whom/who I admire most is my mother.' }, difficulty: 'medium' }
+          ]
+        }
+      },
+      '04-articles': {
+        quick: {
+          topicId: '04-articles', type: 'quick', estimatedMinutes: 5,
+          sections: [
+            { heading: 'What Are Articles?', body: 'Articles are small words that come before nouns. English has only three:\n\n\u2022 "a" \u2014 indefinite article (before consonant sounds)\n\u2022 "an" \u2014 indefinite article (before vowel sounds)\n\u2022 "the" \u2014 definite article (specific nouns)\n\n"I saw a cat." (any cat)\n"I saw the cat." (a specific cat we both know)' },
+            { heading: 'Using "A" and "An"', body: 'Use "a" before consonant SOUNDS:\na book, a university (sounds like "yoo"), a one-time event\n\nUse "an" before vowel SOUNDS:\nan apple, an hour (h is silent), an honest person\n\nRemember: it\u2019s about SOUND, not spelling!\n\u2022 "a European" (starts with "yoo" sound)\n\u2022 "an MBA" (starts with "em" sound)' },
+            { heading: 'Using "The"', body: 'Use "the" when the listener knows which specific thing you mean:\n\n\u2022 "Pass me the salt." (the salt on the table)\n\u2022 "The sun is bright." (there\u2019s only one)\n\u2022 "I went to the bank." (specific bank we discussed)\n\nAlso use "the" with superlatives:\n\u2022 "She is the best student."\n\u2022 "This is the most expensive car."' },
+            { heading: 'No Article Needed', body: 'Do NOT use articles with:\n\n\u2022 Plural nouns in general: "Dogs are loyal." (not "The dogs are loyal" unless specific)\n\u2022 Uncountable nouns in general: "Water is essential."\n\u2022 Most proper nouns: "I live in Tokyo."\n\u2022 Meals: "I had breakfast at 8."\n\u2022 Languages: "She speaks English."' }
+          ],
+          jargon: [
+            { term: 'Definite Article', definition: '"The" \u2014 used when the noun is specific and known to both speaker and listener.' },
+            { term: 'Indefinite Article', definition: '"A" or "an" \u2014 used when the noun is non-specific or mentioned for the first time.' },
+            { term: 'Zero Article', definition: 'When no article is needed before a noun, as with general plurals and uncountable nouns.' }
+          ],
+          summary: 'Articles (a, an, the) are small but important. Use "a/an" for non-specific things, "the" for specific things, and no article for general statements.'
+        },
+        deep: {
+          topicId: '04-articles', type: 'deep', estimatedMinutes: 15,
+          sections: [
+            { heading: 'The Sound Rule for A vs An', body: 'The rule depends on the SOUND that follows, not the letter:\n\n"A" before consonant sounds: a car, a dog, a hotel, a university (yoo sound), a European (yoo sound)\n\n"An" before vowel sounds: an apple, an egg, an idea, an hour (silent h), an honest person (silent h), an MBA (em sound)\n\nSpecial cases:\n\u2022 "a one-hour meeting" (w sound)\n\u2022 "an FBI agent" (ef sound)\n\u2022 "a historic event" (some speakers say "an historic" in formal British English)' },
+            { heading: 'When to Use The', body: 'Use "the" in these situations:\n\n1. Second mention: "I saw a dog. The dog was big."\n2. Only one exists: the sun, the moon, the internet\n3. With superlatives: the best, the tallest, the most\n4. With ordinal numbers: the first, the second, the third\n5. With geographic: the Nile, the Pacific Ocean, the Alps\n6. With some proper nouns: the United States, the Times\n\nDo NOT use "the" with:\n\u2022 Most countries: Japan, France, Brazil\n\u2022 Most cities: London, Tokyo, New York\n\u2022 Streets: Main Street, Oxford Road' },
+            { heading: 'Zero Article Rules', body: 'No article before:\n\n1. General plurals: "Cats are independent." (not specific cats)\n2. General uncountable: "Music brings joy."\n3. Most proper nouns: "Paris is beautiful."\n4. Meals: "I ate lunch."\n5. Sports: "She plays tennis."\n6. Languages: "He speaks French."\n7. Academic subjects: "She studies mathematics."\n8. By means of transport: "I go by bus." (but "on the bus" when specific)\n\nCompare: "I like coffee" (general) vs "I like the coffee at that cafe" (specific)' },
+            { heading: 'Articles with Adjectives', body: 'When an adjective comes before a noun, the article goes before the adjective:\n\n\u2022 "a beautiful day" (not "beautiful a day")\n\u2022 "an interesting book"\n\u2022 "the tall building"\n\nWhen using "so" or "such":\n\u2022 "It was such a good movie!"\n\u2022 "She is so kind a person." (formal)\n\nWith "many/few/little":\n\u2022 "Many a student has failed." (formal/literary)\n\u2022 "Quite a few people came."' }
+          ],
+          summary: 'Article usage depends on whether the noun is specific or general, the sound (not spelling) of the following word, and whether the noun is countable or uncountable.'
+        },
+        comparison: {
+          topicId: '04-articles',
+          comparisons: [
+            { concept: 'A/An vs The', before: { label: 'Indefinite: "I saw a cat."', code: 'a cat = any cat, not specific' }, after: { label: 'Definite: "I saw the cat."', code: 'the cat = the specific cat we know' }, explanation: 'Use "a/an" when introducing something new or non-specific. Use "the" when both speaker and listener know which specific thing is meant. First mention: a; second mention: the.' },
+            { concept: 'Article vs No Article', before: { label: 'General: "Dogs are loyal."', code: 'No article = talking about dogs in general' }, after: { label: 'Specific: "The dogs in our neighborhood are loyal."', code: 'the = specific dogs' }, explanation: 'When making general statements about all of something, no article (or a zero article) is used. When referring to a specific group, use "the".' },
+            { concept: 'A vs An (Sound Rule)', before: { label: '"a university"', code: '"u" sounds like "yoo" = consonant sound' }, after: { label: '"an hour"', code: '"h" is silent = vowel sound' }, explanation: 'The choice between "a" and "an" depends on the first SOUND of the next word, not the letter. "University" starts with a "yoo" sound (consonant), so use "a". "Hour" starts with a silent "h", making the "ow" a vowel sound, so use "an".' }
+          ],
+          keyInsight: 'The most common article mistake is using "the" with general statements. "The music is beautiful" (specific) vs "Music is beautiful" (general) \u2014 context determines which to use.'
+        },
+        interview: {
+          topicId: '04-articles',
+          questions: [
+            { question: 'Why do we say "a university" but "an umbrella"?', answer: 'It depends on the SOUND, not the letter. "University" starts with a "yoo" sound (consonant), so use "a". "Umbrella" starts with a vowel sound "uh", so use "an". Same with "a European" (yoo sound) vs "an egg" (vowel sound).', difficulty: 'easy' },
+            { question: 'When should I omit articles entirely?', answer: 'Omit articles with: general plurals ("Dogs are friendly"), general uncountable nouns ("Water is essential"), most proper nouns ("I live in Tokyo"), meals ("I had lunch"), sports ("She plays football"), languages ("He speaks German"), and academic subjects ("She studies physics").', difficulty: 'medium' },
+            { question: 'Why do some languages struggle with English articles?', answer: 'Many languages (Russian, Chinese, Japanese, Hindi, Korean) have no articles at all. Speakers of these languages must learn article rules from scratch. Romance languages (Spanish, French, Italian) have articles but with different rules, causing partial transfer errors. Article usage requires understanding specificity, countability, and sound \u2014 three concepts that may not exist in the learner\u2019s native language.', difficulty: 'medium' },
+            { question: 'Is "the" always needed with superlatives?', answer: 'Yes, superlatives almost always require "the": "She is the tallest person in the room." "This is the best restaurant." The only exception is when the superlative is used predicatively with a possessive: "This is my best friend" or "She is her tallest this year."', difficulty: 'medium' }
+          ]
+        },
+        exercises: {
+          topicId: '04-articles',
+          exercises: [
+            { title: 'Fill in A, An, The, or Nothing', description: 'Complete: 1) I bought ___ book yesterday. 2) ___ sun rises in the east. 3) She speaks ___ English fluently. 4) He is ___ honest man. 5) I need ___ information.', hints: ['Use "an" before vowel sounds', 'Use "the" for unique things', 'No article for general uncountable nouns'], solution: { language: 'text', code: '1) I bought a book yesterday. (first mention, non-specific)\n2) The sun rises in the east. (only one sun)\n3) She speaks English fluently. (languages need no article)\n4) He is an honest man. ("h" is silent = vowel sound)\n5) I need information. (uncountable, general)' }, difficulty: 'medium' },
+            { title: 'Article or No Article?', description: 'Choose: "I love ___ music" vs "I love ___ music in this movie" / "___ water is essential" vs "___ water on the table is mine"', hints: ['General statements need no article', 'Specific things need "the"'], solution: { language: 'text', code: 'I love music. (general)\nI love the music in this movie. (specific)\nWater is essential. (general)\nThe water on the table is mine. (specific)' }, difficulty: 'medium' },
+            { title: 'A or An?', description: 'Choose a or an: ___ European, ___ hour, ___ umbrella, ___ unique idea, ___ MBA', hints: ['Think about the SOUND, not the letter', '"u" can be consonant or vowel sound'], solution: { language: 'text', code: 'a European ("yoo" sound)\nan hour (silent "h")\nan umbrella ("uh" sound)\na unique idea ("yoo" sound)\nan MBA ("em" sound)' }, difficulty: 'easy' }
+          ]
+        }
+      },
+      '05-verbs-intro': {
+        quick: {
+          topicId: '05-verbs-intro', type: 'quick', estimatedMinutes: 5,
+          sections: [
+            { heading: 'What Is a Verb?', body: 'A verb is a word that shows action or a state of being:\n\nAction verbs: run, eat, write, think, study\nState of being verbs: am, is, are, was, were\n\nEvery sentence needs a verb. Without a verb, a sentence is incomplete.\n"I happy" (no verb \u2192 wrong)\n"I am happy." (verb "am" \u2192 correct)' },
+            { heading: 'Action vs Linking Verbs', body: 'Action verbs show what the subject does:\n\u2022 "She runs every morning."\n\u2022 "They played soccer."\n\nLinking verbs connect the subject to a description:\n\u2022 "She is happy." (is = linking)\n\u2022 "The soup smells delicious." (smells = linking)\n\u2022 "He became a doctor." (became = linking)\n\nCommon linking verbs: be, become, seem, look, feel, taste, smell, sound, appear, remain' },
+            { heading: 'Transitive vs Intransitive', body: 'Transitive verbs need an object (thing receiving the action):\n\u2022 "She kicked the ball." (ball = object)\n\u2022 "I read a book." (book = object)\n\nIntransitive verbs do NOT need an object:\n\u2022 "He slept." (no object needed)\n\u2022 "The baby cried."\n\u2022 "We arrived." (arrive at/in, but no direct object)\n\nMany verbs can be both: "She sings." (intransitive) vs "She sings songs." (transitive)' },
+            { heading: 'Regular vs Irregular Verbs', body: 'Regular verbs add -ed for past tense:\nwalk \u2192 walked, play \u2192 played, cook \u2192 cooked\n\nIrregular verbs change form (must memorize):\ngo \u2192 went, eat \u2192 ate, see \u2192 saw\ncome \u2192 came, take \u2192 took, write \u2192 wrote\n\nThere are about 200 common irregular verbs in English.' }
+          ],
+          jargon: [
+            { term: 'Verb', definition: 'A word expressing action or a state of being. Every sentence must have at least one verb.' },
+            { term: 'Linking Verb', definition: 'A verb that connects the subject to a description, like "be", "seem", "become".' },
+            { term: 'Transitive Verb', definition: 'A verb that requires a direct object to complete its meaning (e.g., "kick the ball").' },
+            { term: 'Infinitive', definition: 'The base form of a verb with "to": to go, to eat, to think.' }
+          ],
+          summary: 'Verbs are the engine of every sentence. Learn to identify action vs linking verbs, transitive vs intransitive, and start memorizing irregular verb forms.'
+        },
+        deep: {
+          topicId: '05-verbs-intro', type: 'deep', estimatedMinutes: 15,
+          sections: [
+            { heading: 'Action Verbs in Detail', body: 'Action verbs can be physical or mental:\n\nPhysical actions: run, jump, eat, write, build, throw\nMental actions: think, believe, know, understand, remember, hope\n\nPhrasal verbs (verb + preposition/adverb):\n\u2022 look at, look for, look after, look up\n\u2022 give up, give in, give away, give back\n\u2022 turn on, turn off, turn up, turn down\n\nPhrasal verbs change meaning completely:\n"give up" (surrender) vs "give away" (donate)' },
+            { heading: 'Linking Verbs in Detail', body: 'Linking verbs do not show action \u2014 they connect the subject to a subject complement (adjective or noun):\n\n\u2022 "The cake tastes delicious." (delicious describes cake)\n\u2022 "She is a doctor." (a doctor renames she)\n\u2022 "He seems tired." (tired describes he)\n\nThe verb "be" has many forms:\nam, is, are, was, were, be, been, being\n\nTip: Replace the verb with "is" or "seems". If the sentence still makes sense, it is a linking verb:\n"The flowers smell nice." \u2192 "The flowers are nice." (works = linking)' },
+            { heading: 'Verb Conjugation', body: 'Verbs change form based on tense and subject:\n\nPresent tense:\nI walk, you walk, he walkS, she walkS, it walkS, we walk, they walk\n\nPast tense (regular):\nI/you/he/she/it walkED, we/they walkED\n\nIrregular examples:\ngo: I go / I went / I have gone\neat: I eat / I ate / I have eaten\nsee: I see / I saw / I have seen\n\nThe base form, past form, and past participle are the three forms you must learn for each verb.' },
+            { heading: 'Common Verb Errors', body: '1. Missing subject: "Went to store" \u2192 "I went to the store."\n2. Wrong form: "She goed" \u2192 "She went" (irregular)\n3. Double verb: "I can to go" \u2192 "I can go" (no "to" after modal)\n4. Missing -s: "He go to work" \u2192 "He goes to work"\n5. Confusion: "I am agree" \u2192 "I agree" (agree is a verb, not adjective)\n6. Wrong preposition: "discuss about" \u2192 "discuss" (no preposition needed)' }
+          ],
+          summary: 'Verbs are complex. Master action vs linking verbs, learn the three forms of common irregular verbs, and practice subject-verb agreement.'
+        },
+        comparison: {
+          topicId: '05-verbs-intro',
+          comparisons: [
+            { concept: 'Action vs Linking Verbs', before: { label: 'Action: "She looks at the painting."', code: 'looks = physical action (looking)' }, after: { label: 'Linking: "She looks happy."', code: 'looks = connects subject to description' }, explanation: 'The same verb can be action or linking. "Looks at" = action (physical). "Looks happy" = linking (describes the subject). Replace with "is" to test: "She is happy" works, so "looks" is linking.' },
+            { concept: 'Regular vs Irregular Past Tense', before: { label: 'Regular: "walk \u2192 walked"', code: 'Add -ed: play \u2192 played, cook \u2192 cooked' }, after: { label: 'Irregular: "go \u2192 went"', code: 'No pattern: eat \u2192 ate, see \u2192 saw' }, explanation: 'Regular verbs follow a predictable pattern (-ed ending). Irregular verbs change form unpredictably and must be memorized. About 70% of everyday English uses irregular verbs.' },
+            { concept: 'Transitive vs Intransitive', before: { label: 'Transitive: "She reads a book."', code: 'reads = needs an object (a book)' }, after: { label: 'Intransitive: "She reads."', code: 'reads = complete without an object' }, explanation: 'Some verbs require an object (transitive), some do not (intransitive), and many can be both depending on context. "She eats pizza" (transitive) vs "She eats early" (intransitive).' }
+          ],
+          keyInsight: 'The trickiest verb issue is knowing which verbs are linking vs action. When a verb describes what the subject IS rather than what it DOES, it is probably linking.'
+        },
+        interview: {
+          topicId: '05-verbs-intro',
+          questions: [
+            { question: 'What is the difference between a verb and a noun?', answer: 'A noun names a person, place, thing, or idea (teacher, city, love). A verb shows action or state of being (teach, live, love). In "The teacher teaches", "teacher" is a noun and "teaches" is a verb. A word can even be both: "run" can be a noun ("I went for a run") or a verb ("I run daily").', difficulty: 'easy' },
+            { question: 'How do I know if a verb is linking or action?', answer: 'Replace the verb with "is" or "seems". If the sentence still makes sense, the verb is linking. "The cake tastes good" \u2192 "The cake is good" (works = linking). "She tastes the cake" \u2192 "She is the cake" (nonsense = action). Linking verbs describe the subject; action verbs tell what the subject does.', difficulty: 'medium' },
+            { question: 'Why are irregular verbs so important?', answer: 'The 200 most common irregular verbs cover about 70% of everyday English. Verbs like "be", "have", "do", "go", "say", "get", "make", "know", "think", "take" are used constantly. If you make errors with these common verbs, communication breaks down more than with any other grammar issue.', difficulty: 'easy' },
+            { question: 'What is a phrasal verb and why is it difficult?', answer: 'A phrasal verb combines a verb with a preposition or adverb: "give up", "turn on", "look after". They are difficult because the meaning often cannot be guessed from the individual words. "Give up" means surrender (not "give" + "up"). "Turn down" means reject (not "turn" + "down"). There are thousands of phrasal verbs in English.', difficulty: 'medium' }
+          ]
+        },
+        exercises: {
+          topicId: '05-verbs-intro',
+          exercises: [
+            { title: 'Identify Verb Types', description: 'For each sentence, identify whether the main verb is action or linking: 1) The baby is sleeping. 2) She seems tired. 3) They played soccer. 4) The flowers smell wonderful. 5) He became a doctor.', hints: ['Replace with "is" to test for linking verbs', 'Action verbs show what the subject does'], solution: { language: 'text', code: '1) sleeping \u2014 action verb\n2) seems \u2014 linking verb (tired describes she)\n3) played \u2014 action verb\n4) smell \u2014 linking verb (wonderful describes flowers)\n5) became \u2014 linking verb (a doctor renames he)' }, difficulty: 'medium' },
+            { title: 'Regular vs Irregular Past Tense', description: 'Write the past tense of: walk, go, play, eat, study, see, cook, write, run, take', hints: ['Regular verbs add -ed', 'Irregular verbs must be memorized'], solution: { language: 'text', code: 'walk \u2192 walked (regular)\ngo \u2192 went (irregular)\nplay \u2192 played (regular)\neat \u2192 ate (irregular)\nstudy \u2192 studied (regular)\nsee \u2192 saw (irregular)\ncook \u2192 cooked (regular)\nwrite \u2192 wrote (irregular)\nrun \u2192 ran (irregular)\ntake \u2192 took (irregular)' }, difficulty: 'easy' },
+            { title: 'Fix the Verb Errors', description: 'Correct the errors: 1) She goed to school. 2) He don\u2019t like coffee. 3) They is happy. 4) I can to swim. 5) She have a cat.', hints: ['Irregular past forms must be memorized', 'he/she/it uses does/don\u2019t', 'Match verb to subject'], solution: { language: 'text', code: '1) She went to school. (irregular past)\n2) He doesn\u2019t like coffee. (he/she/it = doesn\u2019t)\n3) They are happy. (they = are)\n4) I can swim. (no "to" after can)\n5) She has a cat. (she = has)' }, difficulty: 'medium' }
+          ]
+        }
+      },
+      '06-present-tense': {
+        quick: {
+          topicId: '06-present-tense', type: 'quick', estimatedMinutes: 5,
+          sections: [
+            { heading: 'Simple Present', body: 'Used for habits, facts, and routines:\n\n\u2022 "I walk to work every day." (habit)\n\u2022 "Water boils at 100\u00B0C." (fact)\n\u2022 "She works at a bank." (routine)\n\nFor he/she/it, add -s or -es:\nI walk \u2192 she walks\nI watch \u2192 she watches\nI study \u2192 she studies' },
+            { heading: 'Present Continuous', body: 'Used for actions happening NOW:\n\n\u2022 "I am reading a book." (right now)\n\u2022 "She is cooking dinner." (at this moment)\n\u2022 "They are studying English." (this week)\n\nForm: am/is/are + verb-ing\nI am, you are, he/she/it is, we are, they are\n\nSpelling rules:\nrun \u2192 running (double last letter)\nmake \u2192 making (drop silent e)\nlie \u2192 lying (change ie to y)' },
+            { heading: 'Present Perfect', body: 'Used for past actions connected to the present:\n\n\u2022 "I have visited Paris." (experience)\n\u2022 "She has finished her homework." (result now)\n\u2022 "We have lived here for 5 years." (continuing)\n\nForm: have/has + past participle\nI/you/we/they have + past participle\nhe/she/it has + past participle\n\nIrregular: go\u2192gone, eat\u2192eaten, see\u2192seen, write\u2192written' },
+            { heading: 'When to Use Each', body: 'Simple Present = habits, routines, facts\n\u2022 "I brush my teeth twice a day."\n\nPresent Continuous = happening now, temporary\n\u2022 "I am reading a great book."\n\nPresent Perfect = experience, recent result, unfinished time\n\u2022 "I have read that book." (experience)\n\u2022 "I have read 3 books this month."' }
+          ],
+          jargon: [
+            { term: 'Tense', definition: 'The form of a verb that shows when the action happens (present, past, future).' },
+            { term: 'Present Perfect', definition: 'A tense combining present and past: have/has + past participle. Connects past actions to now.' },
+            { term: 'Past Participle', definition: 'The third form of a verb: walk\u2192walked, go\u2192gone, eat\u2192eaten. Used in perfect tenses.' },
+            { term: 'Progressive/Continuous', definition: 'A verb form showing ongoing action: am/is/are + verb-ing.' }
+          ],
+          summary: 'The three present tenses serve different purposes: simple for habits, continuous for now, perfect for experiences and results.'
+        },
+        deep: {
+          topicId: '06-present-tense', type: 'deep', estimatedMinutes: 15,
+          sections: [
+            { heading: 'Simple Present in Depth', body: 'Uses of simple present:\n\n1. Habits: "I exercise every morning."\n2. Facts: "The earth revolves around the sun."\n3. Timetables: "The train leaves at 9 AM."\n4. Permanent states: "She speaks three languages."\n5. Narration (historical present): "So the hero enters the room..."\n\nThird-person -s rules:\n\u2022 Most verbs: add -s (works, plays, reads)\n\u2022 Verbs ending in -sh, -ch, -ss, -x, -o: add -es (washes, teaches, passes, goes)\n\u2022 Consonant + y: change y to ies (study\u2192studies)\n\u2022 Vowel + y: add -s (play\u2192plays)' },
+            { heading: 'Present Continuous in Depth', body: 'Uses:\n\n1. Actions happening right now: "She is sleeping."\n2. Temporary situations: "I am staying at a hotel this week."\n3. Future arrangements: "We are meeting tomorrow at 3."\n4. Changing situations: "The climate is getting warmer."\n5. Annoying repeated actions (with always): "He is always interrupting."\n\nVerbs NOT used in continuous form (stative verbs):\n\u2022 Mental states: know, believe, understand, think (opinion)\n\u2022 Senses: see, hear, smell, taste\n\u2022 Emotions: love, hate, prefer, want\n\u2022 Possession: have (possession), own, belong\n\nWrong: "I am knowing the answer."\nRight: "I know the answer."' },
+            { heading: 'Present Perfect in Depth', body: 'Uses:\n\n1. Life experience (unspecified time): "Have you been to Japan?"\n2. Recent action with present result: "I have lost my keys." (I still don\u2019t have them)\n3. Unfinished time: "I have eaten three meals today."\n4. Continuing situation: "She has worked here since 2019."\n\nSignal words: ever, never, already, yet, just, since, for, so far, recently\n\n\u2022 "Have you ever eaten sushi?"\n\u2022 "I have already finished."\n\u2022 "She hasn\u2019t arrived yet."\n\u2022 "We have known each other since 2010."' },
+            { heading: 'Present Perfect vs Simple Past', body: 'This is the most common confusion:\n\nSimple Past: completed action at a SPECIFIC time\n\u2022 "I went to Paris last summer."\n\u2022 "She called me yesterday."\n\nPresent Perfect: past action with relevance to NOW\n\u2022 "I have been to Paris." (experience, no specific time)\n\u2022 "She has called me three times today."\n\nKey rule: if you mention WHEN (yesterday, last week, in 2019), use simple past. If no specific time or the time period continues (today, this week, ever, never), use present perfect.' }
+          ],
+          summary: 'Present tenses have specific uses. Stative verbs are never continuous. Present perfect vs simple past is determined by whether a specific time is mentioned.'
+        },
+        comparison: {
+          topicId: '06-present-tense',
+          comparisons: [
+            { concept: 'Simple Present vs Present Continuous', before: { label: 'Simple: "I read every day."', code: 'habit/routine \u2014 repeated action' }, after: { label: 'Continuous: "I am reading now."', code: 'happening at this moment' }, explanation: 'Simple present describes regular habits. Present continuous describes what is happening right now. "I play tennis" (regular) vs "I am playing tennis" (right now, at this moment).' },
+            { concept: 'Present Perfect vs Simple Past', before: { label: 'Simple Past: "I visited Paris in 2020."', code: 'Specific past time \u2192 simple past' }, after: { label: 'Present Perfect: "I have visited Paris."', code: 'Life experience, no specific time \u2192 present perfect' }, explanation: 'Use simple past when you mention when: "I visited Paris last year." Use present perfect for experience without a specific time: "I have visited Paris (before)." The time word determines the tense.' },
+            { concept: 'Stative vs Dynamic Verbs', before: { label: 'Stative: "I know the answer."', code: 'Mental state \u2014 no continuous form' }, after: { label: 'Dynamic: "I am learning English."', code: 'Action/process \u2014 can use continuous' }, explanation: 'Stative verbs (know, believe, love, own) describe states, not actions. They are NOT used in -ing form. Dynamic verbs (learn, run, eat) describe actions and can be continuous.' }
+          ],
+          keyInsight: 'The biggest clue for present perfect vs simple past is a time reference: mention "yesterday/last week/in 2020" \u2192 simple past. No specific time \u2192 present perfect.'
+        },
+        interview: {
+          topicId: '06-present-tense',
+          questions: [
+            { question: 'When do we use the present perfect tense?', answer: 'Present perfect (have/has + past participle) is used for: 1) Life experience at an unspecified time ("I have visited Japan"), 2) Actions with present result ("I have lost my keys"), 3) Actions continuing to the present ("She has lived here since 2015"), 4) Actions in unfinished time periods ("I have read three books this week").', difficulty: 'medium' },
+            { question: 'Why can\u2019t we say "I am knowing the answer"?', answer: '"Know" is a stative verb \u2014 it describes a mental state, not an action. Stative verbs (know, believe, understand, love, hate, want, own, seem) are not used in continuous form because they describe states that exist, not actions that happen. You can say "I am learning" (dynamic) but not "I am knowing" (stative).', difficulty: 'medium' },
+            { question: 'What is the difference between "I have been to Paris" and "I went to Paris"?', answer: '"I went to Paris" is simple past \u2014 it describes a completed trip, usually with a specific time ("I went to Paris last summer"). "I have been to Paris" is present perfect \u2014 it describes the experience of having visited Paris at some point in your life, without specifying when. "Have been to" implies you are back now.', difficulty: 'easy' },
+            { question: 'How do you form the -ing form of verbs?', answer: 'Base rule: add -ing (walk\u2192walking). If the verb ends in silent -e, drop it first: make\u2192making, write\u2192writing. If a short verb ends in consonant-vowel-consonant, double the last letter: run\u2192running, sit\u2192sitting. If it ends in -ie, change to -y: lie\u2192lying, die\u2192dying. Verbs ending in -ee do NOT double: see\u2192seeing.', difficulty: 'easy' }
+          ]
+        },
+        exercises: {
+          topicId: '06-present-tense',
+          exercises: [
+            { title: 'Choose the Correct Present Tense', description: 'Select simple present, present continuous, or present perfect: 1) She ___ (work) at a hospital. 2) I ___ (read) a book right now. 3) They ___ (never/visit) London. 4) Water ___ (freeze) at 0\u00B0C. 5) He ___ (just/finish) his homework.', hints: ['Habits/facts = simple present', 'Happening now = continuous', 'Experience/result = present perfect'], solution: { language: 'text', code: '1) She works at a hospital. (habit)\n2) I am reading a book right now. (now)\n3) They have never visited London. (experience)\n4) Water freezes at 0\u00B0C. (fact)\n5) He has just finished his homework. (result)' }, difficulty: 'medium' },
+            { title: 'Third Person -s', description: 'Write the correct form: he (play) ___ , she (watch) ___ , it (miss) ___ , he (fix) ___ , she (study) ___', hints: ['Add -s to most verbs', 'Add -es to -sh, -ch, -ss, -x, -o verbs', 'Consonant + y: change y to ies'], solution: { language: 'text', code: 'he plays (add -s)\nshe watches (add -es)\nit misses (add -es)\nhe fixes (add -es)\nshe studies (change y to ies)' }, difficulty: 'easy' },
+            { title: 'Present Perfect or Simple Past?', description: 'Choose the correct tense: 1) I ___ (visit) Paris last year. 2) She ___ (never/eat) sushi. 3) We ___ (know) each other since 2015. 4) He ___ (call) me yesterday. 5) They ___ (already/finish) the project.', hints: ['Specific time (yesterday, last year) = simple past', 'No specific time / since / for = present perfect'], solution: { language: 'text', code: '1) I visited Paris last year. (specific time)\n2) She has never eaten sushi. (experience)\n3) We have known each other since 2015. (continuing)\n4) He called me yesterday. (specific time)\n5) They have already finished the project. (result)' }, difficulty: 'medium' }
+          ]
+        }
+      },
+      '07-adjectives': {
+        quick: {
+          topicId: '07-adjectives', type: 'quick', estimatedMinutes: 5,
+          sections: [
+            { heading: 'What Are Adjectives?', body: 'Adjectives describe nouns (people, places, things):\n\n\u2022 "The big dog." (big describes dog)\n\u2022 "She is intelligent." (intelligent describes she)\n\u2022 "I have three books." (three describes books)\n\nAdjectives answer: What kind? How many? Which one?' },
+            { heading: 'Types of Adjectives', body: 'Descriptive: beautiful, tall, red, delicious\n\u2022 "The beautiful garden."\n\nQuantitative: some, many, few, three, all\n\u2022 "I have some money."\n\nDemonstrative: this, that, these, those\n\u2022 "This book is interesting."\n\nPossessive: my, your, his, her, our, their\n\u2022 "My house is small."' },
+            { heading: 'Comparison Degrees', body: 'Positive (base form): tall, beautiful, fast\nComparative (two things): taller, more beautiful, faster\nSuperlative (three+ things): tallest, most beautiful, fastest\n\nShort adjectives (1 syllable): add -er/-est\ntall \u2192 taller \u2192 tallest\n\nLong adjectives (3+ syllables): more/most\nbeautiful \u2192 more beautiful \u2192 most beautiful\n\nIrregular: good \u2192 better \u2192 best\nbad \u2192 worse \u2192 worst' },
+            { heading: 'Adjective Position', body: 'Before a noun (attributive):\n\u2022 "A tall building."\n\u2022 "A very old house."\n\nAfter a linking verb (predicative):\n\u2022 "The building is tall."\n\u2022 "She looks beautiful."\n\nOrder when multiple adjectives:\nOpinion \u2192 Size \u2192 Age \u2192 Shape \u2192 Color \u2192 Origin \u2192 Material\n"A lovely small old round red Italian wooden table"' }
+          ],
+          jargon: [
+            { term: 'Adjective', definition: 'A word that describes or modifies a noun.' },
+            { term: 'Comparative', definition: 'The form of an adjective used to compare two things (bigger, more expensive).' },
+            { term: 'Superlative', definition: 'The form of an adjective showing the highest degree (biggest, most expensive).' },
+            { term: 'Predicate Adjective', definition: 'An adjective that follows a linking verb: "The food is delicious."' }
+          ],
+          summary: 'Adjectives add detail to nouns. Learn comparison forms, adjective order, and the difference between attributive and predicative position.'
+        },
+        deep: {
+          topicId: '07-adjectives', type: 'deep', estimatedMinutes: 15,
+          sections: [
+            { heading: 'Adjective Comparison Rules', body: 'One syllable: add -er/-est\ntall \u2192 taller \u2192 tallest\nfast \u2192 faster \u2192 fastest\n\nOne syllable ending in -e: just add -r/-st\nlarge \u2192 larger \u2192 largest\n\nOne syllable ending in consonant-vowel-consonant: double the last letter\nbig \u2192 bigger \u2192 biggest\nhot \u2192 hotter \u2192 hottest\n\nTwo syllables ending in -y: change y to -ier/-iest\nhappy \u2192 happier \u2192 happiest\neasy \u2192 easier \u2192 easiest\n\nTwo or more syllables: use more/most\nexpensive \u2192 more expensive \u2192 most expensive\n\nIrregular:\ngood \u2192 better \u2192 best\nbad \u2192 worse \u2192 worst\nfar \u2192 farther/further \u2192 farthest/furthest' },
+            { heading: 'Adjective Order', body: 'When you use multiple adjectives, they follow a specific order:\n\n1. Opinion: beautiful, lovely, nice, terrible\n2. Size: big, small, tall, short\n3. Age: old, young, new, ancient\n4. Shape: round, flat, square, narrow\n5. Color: red, blue, green, dark\n6. Origin: French, American, ancient\n7. Material: wooden, metal, cotton, silk\n8. Purpose: sleeping (bag), running (shoes)\n\nExample: "A beautiful small old round red French wooden dining table"\n\nNative speakers follow this instinctively. Breaking it sounds unnatural.' },
+            { heading: 'Adjective vs Adverb Confusion', body: 'Adjectives describe nouns; adverbs describe verbs, adjectives, or other adverbs:\n\n\u2022 "She is a slow driver." (slow = adjective, describes "driver")\n\u2022 "She drives slowly." (slowly = adverb, describes "drives")\n\n\u2022 "He is a careful worker." (careful = adjective)\n\u2022 "He works carefully." (carefully = adverb)\n\n\u2022 "She is a good singer." (good = adjective)\n\u2022 "She sings well." (well = adverb)\n\nCommon mistake: "She does good" \u2192 "She does well"' },
+            { heading: ' participial Adjectives', body: 'Present participles (-ing) describe the thing causing the feeling:\n\u2022 "The movie is boring." (the movie causes boredom)\n\u2022 "I am bored." (I feel bored)\n\nPast participles (-ed) describe the person experiencing the feeling:\n\u2022 "I am interested in science."\n\u2022 "The science is interesting."\n\nMore examples:\nconfusing / confused\nexciting / excited\nsurprising / surprised\n\nTip: -ing = causes the feeling; -ed = feels the feeling' }
+          ],
+          summary: 'Master adjective comparison forms, the 8-category adjective order system, and the -ing/-ed distinction for participial adjectives.'
+        },
+        comparison: {
+          topicId: '07-adjectives',
+          comparisons: [
+            { concept: 'Comparative vs Superlative', before: { label: 'Comparative (2 things): "Taller"', code: '"She is taller than her sister."' }, after: { label: 'Superlative (3+ things): "Tallest"', code: '"She is the tallest in the class."' }, explanation: 'Use comparative to compare TWO things (add -er or more). Use superlative to show the HIGHEST degree among THREE or more (add -est or most). Never use "more taller" or "tallest" \u2014 one form per adjective.' },
+            { concept: 'Adjective vs Adverb', before: { label: 'Adjective: "a fast car"', code: 'fast = describes the noun "car"' }, after: { label: 'Adverb: "drives fast"', code: 'fast = describes the verb "drives"' }, explanation: 'Adjectives come before nouns or after linking verbs. Adverbs modify verbs, adjectives, or other adverbs. "Good" is always an adjective; "well" is the adverb form (except when meaning "healthy").' },
+            { concept: '-ing vs -ed Adjectives', before: { label: '-ing (cause): "The book is interesting."', code: 'The book causes interest' }, after: { label: '-ed (feel): "I am interested in the book."', code: 'I feel interest' }, explanation: '-ing adjectives describe the thing CAUSING the feeling. -ed adjectives describe the person EXPERIENCING it. "I am boring" means I cause boredom \u2014 probably not what you mean! Use "I am bored".' }
+          ],
+          keyInsight: 'The most unnatural error for learners is wrong adjective order. Native speakers instinctively say "a big red ball" not "a red big ball" \u2014 learn the 8-category order.'
+        },
+        interview: {
+          topicId: '07-adjectives',
+          questions: [
+            { question: 'What is the correct order of adjectives in English?', answer: 'The order is: Opinion \u2192 Size \u2192 Age \u2192 Shape \u2192 Color \u2192 Origin \u2192 Material \u2192 Purpose. So "a beautiful large old round red Italian wooden dining table" is correct. Saying "a wooden Italian red round old large beautiful dining table" sounds completely wrong to native speakers.', difficulty: 'medium' },
+            { question: 'When do we use "good" vs "well"?', answer: '"Good" is always an adjective and describes nouns: "She is a good teacher", "This is a good book". "Well" is usually an adverb and describes verbs: "She teaches well", "He plays well". Exception: "well" as an adjective means healthy: "I don\u2019t feel well". Never say "I feel good" when you mean healthy, and never say "She does good" when you mean "She does well".', difficulty: 'medium' },
+            { question: 'What are the irregular comparative forms?', answer: 'The most common irregular comparatives: good\u2192better\u2192best, bad\u2192worse\u2192worst, far\u2192farther/further\u2192farthest/furthest, little\u2192less\u2192least, much/many\u2192more\u2192most, old\u2192older/elder\u2192oldest/eldest. "Farther" is for physical distance, "further" for additional degree. "Elder" is for family members only.', difficulty: 'easy' },
+            { question: 'Why are -ing and -ed adjectives confusing?', answer: 'Because the same root word has two forms with opposite perspectives. "-ing" = the thing causing the feeling (The movie is boring = the movie causes boredom). "-ed" = the person feeling it (I am bored = I feel boredom). A common error is saying "I am boring" (which means you cause boredom!) when you mean "I am bored" (you feel boredom).', difficulty: 'easy' }
+          ]
+        },
+        exercises: {
+          topicId: '07-adjectives',
+          exercises: [
+            { title: 'Comparative and Superlative', description: 'Write the comparative and superlative: tall, beautiful, good, bad, happy, far, old, little', hints: ['Short adjectives add -er/-est', 'Long adjectives use more/most', 'Some are irregular'], solution: { language: 'text', code: 'tall \u2192 taller \u2192 tallest\nbeautiful \u2192 more beautiful \u2192 most beautiful\ngood \u2192 better \u2192 best\nbad \u2192 worse \u2192 worst\nhappy \u2192 happier \u2192 happiest\nfar \u2192 farther/further \u2192 farthest/furthest\nold \u2192 older/elder \u2192 oldest/eldest\nlittle \u2192 less \u2192 least' }, difficulty: 'medium' },
+            { title: 'Adjective Order', description: 'Put these adjectives in the correct order: wooden, red, old, big, beautiful (with "table")', hints: ['Opinion \u2192 Size \u2192 Age \u2192 Shape \u2192 Color \u2192 Origin \u2192 Material'], solution: { language: 'text', code: 'a beautiful big old red wooden table\n\nOrder: Opinion (beautiful) \u2192 Size (big) \u2192 Age (old) \u2192 Color (red) \u2192 Material (wooden)' }, difficulty: 'medium' },
+            { title: '-ing or -ed?', description: 'Choose -ing or -ed: The movie was ___ (boring/bored). I felt ___ (exciting/excited). She was ___ (surprising/surprised). The news is ___ (shocking/shocked).', hints: ['-ing = the thing causing the feeling', '-ed = the person experiencing the feeling'], solution: { language: 'text', code: 'The movie was boring. (movie causes boredom)\nI felt excited. (I feel excitement)\nShe was surprised. (she feels surprise)\nThe news is shocking. (news causes shock)' }, difficulty: 'easy' }
+          ]
+        }
+      },
+      '08-adverbs': {
+        quick: {
+          topicId: '08-adverbs', type: 'quick', estimatedMinutes: 5,
+          sections: [
+            { heading: 'What Are Adverbs?', body: 'Adverbs describe verbs, adjectives, or other adverbs. Many (but not all) end in -ly:\n\n\u2022 "She runs quickly." (quickly describes runs)\n\u2022 "He is very tall." (very describes tall)\n\u2022 "She speaks extremely fast." (extremely describes fast)\n\nAdverbs answer: How? When? Where? How often? How much?' },
+            { heading: 'Types of Adverbs', body: 'Manner (how): slowly, carefully, quickly, well\n\u2022 "She sings beautifully."\n\nTime (when): now, today, yesterday, soon, already\n\u2022 "I will call you tomorrow."\n\nPlace (where): here, there, everywhere, outside\n\u2022 "Come here."\n\nFrequency (how often): always, usually, often, sometimes, never\n\u2022 "She always arrives on time."\n\nDegree (how much): very, really, quite, extremely, almost\n\u2022 "It is very cold."' },
+            { heading: 'Adverb Position', body: 'Before the main verb:\n\u2022 "She always wakes up early."\n\u2022 "He quickly finished his work."\n\nAfter the verb (with intransitive verbs):\n\u2022 "She arrived late."\n\u2022 "He speaks softly."\n\nAt the beginning or end of a sentence:\n\u2022 "Unfortunately, I cannot come."\n\u2022 "She is studying hard."' },
+            { heading: 'Forming Adverbs from Adjectives', body: 'Most adverbs = adjective + ly:\n\u2022 quick \u2192 quickly\n\u2022 careful \u2192 carefully\n\u2022 happy \u2192 happily\n\nSpelling rules:\n\u2022 Adjective ending in -y: change y to ily (happy\u2192happily)\n\u2022 Adjective ending in -le: change le to ly (gentle\u2192gently)\n\u2022 Adjective ending in -ic: add ally (basic\u2192basically)\n\nNo -ly needed: fast, hard, early, late, straight\n\u2022 "She runs fast." (not "fastly")\n\u2022 "He works hard." (not "hardly" = almost not)' }
+          ],
+          jargon: [
+            { term: 'Adverb', definition: 'A word that modifies a verb, adjective, or another adverb. Answers how, when, where, how often, or how much.' },
+            { term: 'Adverb of Manner', definition: 'An adverb describing how an action is done: quickly, slowly, carefully.' },
+            { term: 'Adverb of Frequency', definition: 'An adverb describing how often: always, usually, sometimes, never.' },
+            { term: 'Intensifier', definition: 'An adverb that strengthens another word: very, really, extremely, quite.' }
+          ],
+          summary: 'Adverbs add detail to actions. Learn the five types, proper placement, and which adjectives do NOT take -ly (fast, hard, early, late).'
+        },
+        deep: {
+          topicId: '08-adverbs', type: 'deep', estimatedMinutes: 15,
+          sections: [
+            { heading: 'Adverb Position Rules', body: 'Mid-position (most common \u2014 before main verb, after auxiliary):\n\u2022 "She usually wakes up at 7."\n\u2022 "He has always wanted to travel."\n\u2022 "They are probably coming."\n\nFront position (for emphasis or sentence adverbs):\n\u2022 "Unfortunately, the flight was cancelled."\n\u2022 "Sometimes, I prefer to stay home."\n\u2022 "However, I disagree."\n\nEnd position (with intransitive verbs or intransitive prepositions):\n\u2022 "She spoke softly."\n\u2022 "He lives abroad."\n\u2022 "They arrived late."\n\nNever put an adverb between the verb and its object:\nWrong: "She read quickly the book."\nRight: "She quickly read the book." or "She read the book quickly."' },
+            { heading: 'Adverbs That Look Like Adjectives', body: 'Some words are both adjectives and adverbs:\n\nfast: "a fast car" (adj) / "She runs fast" (adv)\nhard: "a hard test" (adj) / "He works hard" (adv)\nearly: "an early train" (adj) / "She arrived early" (adv)\nlate: "the late train" (adj) / "He came late" (adv)\nstraight: "a straight line" (adj) / "Go straight" (adv)\n\nWARNING: Do not confuse "hard" and "hardly":\n\u2022 "He works hard." (with great effort)\n\u2022 "He hardly works." (almost never works \u2014 opposite meaning!)\n\nSimilarly:\n\u2022 "She is late." (arrives after expected time)\n\u2022 "She is lately." (doesn\u2019t exist as an adverb of time \u2014 use "lately" to mean "recently")' },
+            { heading: 'Frequency Adverb Placement', body: 'Frequency adverbs by usage level:\n\n100%: always, constantly, forever\n\u2022 "She is always on time."\n\n80%: usually, normally, generally\n\u2022 "I usually take the bus."\n\n60%: often, frequently\n\u2022 "He often visits his parents."\n\n50%: sometimes\n\u2022 "Sometimes I work from home."\n\n20%: occasionally, seldom, rarely\n\u2022 "She occasionally travels abroad."\n\n0%: never\n\u2022 "I never eat meat."\n\nPosition: after "be" verb, before other verbs:\n\u2022 "She is always late." (after is)\n\u2022 "She always arrives late." (before arrives)' },
+            { heading: 'Common Adverb Errors', body: '1. Double comparative: "more faster" \u2192 "faster"\n2. Double superlative: "most biggest" \u2192 "biggest"\n3. Wrong word: "I did it good" \u2192 "I did it well"\n4. Missing -ly: "She sings beautiful" \u2192 "She sings beautifully"\n5. Wrong -ly word: "I feel badly" (means "I have a bad sense of touch") \u2192 "I feel bad"\n6. Position error: "She reads always" \u2192 "She always reads" or "She reads always" (at end)\n7. Using adverb instead of adjective: "The food tastes badly" \u2192 "The food tastes bad"' }
+          ],
+          summary: 'Adverb placement follows specific patterns. Beware of words that are both adjectives and adverbs (fast, hard, early), and never use double comparatives.'
+        },
+        comparison: {
+          topicId: '08-adverbs',
+          comparisons: [
+            { concept: 'Hard vs Hardly', before: { label: '"He works hard."', code: 'hard = with great effort' }, after: { label: '"He hardly works."', code: 'hardly = almost not at all' }, explanation: '"Hard" as an adverb means "with effort" (He works hard = he puts in effort). "Hardly" means "barely" or "almost not" (He hardly works = he barely works). These are opposites! Same pattern: late vs lately, near vs nearly.' },
+            { concept: 'Good vs Well', before: { label: '"She is a good singer."', code: 'good = adjective, describes noun' }, after: { label: '"She sings well."', code: 'well = adverb, describes verb' }, explanation: '"Good" is always an adjective: "a good idea", "good food". "Well" is usually an adverb: "She speaks well". Exception: "well" as adjective means healthy: "I feel well". So "She does good" is wrong \u2192 "She does well" or "She does good work".' },
+            { concept: 'Adjective vs Adverb Usage', before: { label: '"She is a slow runner."', code: 'slow = adjective, describes "runner" (noun)' }, after: { label: '"She runs slowly."', code: 'slowly = adverb, describes "runs" (verb)' }, explanation: 'Use adjectives after linking verbs or before nouns. Use adverbs to modify verbs, adjectives, or other adverbs. "The food tastes good" (good = adjective after linking verb). "She tastes the food carefully" (carefully = adverb modifying verb).' }
+          ],
+          keyInsight: 'The most dangerous adverb mistake is using "hardly", "barely", or "nearly" when you mean "hard", "bare", or "near" \u2014 they have completely opposite meanings.'
+        },
+        interview: {
+          topicId: '08-adverbs',
+          questions: [
+            { question: 'Do all adverbs end in -ly?', answer: 'No. While most adverbs end in -ly (quickly, carefully, happily), many common adverbs do not: fast, hard, early, late, straight, here, there, now, then, very, too, also, never, always, sometimes. These are just as important as -ly adverbs and must be memorized separately.', difficulty: 'easy' },
+            { question: 'What is the difference between "I feel badly" and "I feel bad"?', answer: '"I feel bad" uses "bad" as an adjective describing how you feel (emotionally or physically). "I feel badly" technically means your sense of touch is impaired \u2014 you cannot feel things well. In everyday English, people say "I feel bad" when they feel sad or ill. "I feel badly" is rare and usually only used when talking about touch (e.g., after wearing gloves).', difficulty: 'medium' },
+            { question: 'Where should frequency adverbs go in a sentence?', answer: 'Frequency adverbs (always, usually, often, sometimes, never) typically go: 1) After "be" verbs: "She is always late." 2) Before main verbs: "He usually arrives early." 3) After the first auxiliary verb: "They have never visited Japan." Exception: "sometimes" can go at the beginning: "Sometimes I walk to work."', difficulty: 'easy' },
+            { question: 'What is a sentence adverb?', answer: 'A sentence adverb (also called a disjunct) modifies the entire sentence rather than a specific word. Examples: "Fortunately, nobody was hurt." "Honestly, I don\u2019t agree." "Apparently, the meeting is cancelled." These express the speaker\u2019s attitude toward the whole statement and are usually set off by commas at the beginning of a sentence.', difficulty: 'medium' }
+          ]
+        },
+        exercises: {
+          topicId: '08-adverbs',
+          exercises: [
+            { title: 'Form Adverbs from Adjectives', description: 'Convert to adverbs: quick, careful, happy, gentle, basic, good, fast, hard', hints: ['Most: add -ly', 'Adjective ending in -y: change to -ily', 'Some words stay the same as adverbs'], solution: { language: 'text', code: 'quick \u2192 quickly\ncareful \u2192 carefully\nhappy \u2192 happily\ngentle \u2192 gently\nbasic \u2192 basically\ngood \u2192 well (irregular)\nfast \u2192 fast (no change)\nhard \u2192 hard (no change)' }, difficulty: 'easy' },
+            { title: 'Choose the Correct Adverb', description: 'Select the right word: 1) She sings ___ (beautiful/beautifully). 2) He works ___ (hard/hardly) every day. 3) The food tastes ___ (good/well). 4) She arrived ___ (late/lately) from work.', hints: ['Adjectives describe nouns; adverbs describe verbs', 'hard = with effort; hardly = almost not', 'late = not on time; lately = recently'], solution: { language: 'text', code: '1) She sings beautifully. (adverb describes "sings")\n2) He works hard every day. (with great effort)\n3) The food tastes good. (adjective after linking verb)\n4) She arrived late from work. (not on time)' }, difficulty: 'medium' },
+            { title: 'Adverb Placement', description: 'Place the adverb correctly: "She (always) arrives (late)." / "He (has) (never) (been) to Japan." / "They (quickly) (finished) the work."', hints: ['After "be" verb, before other verbs', 'After the first auxiliary verb', 'Before the main verb'], solution: { language: 'text', code: 'She always arrives late. (before main verb)\nHe has never been to Japan. (after first auxiliary)\nThey quickly finished the work. (before main verb)' }, difficulty: 'medium' }
+          ]
+        }
+      },

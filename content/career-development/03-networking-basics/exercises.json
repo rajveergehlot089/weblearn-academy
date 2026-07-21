@@ -1,0 +1,47 @@
+{
+  "topicId": "03-networking-basics",
+  "exercises": [
+    {
+      "title": "Informational Interview Request",
+      "description": "Find someone in a role or company you're interested in (use LinkedIn, alumni networks, or mutual connections). Send them a brief, respectful message requesting a 20-minute informational interview. Prepare 5 thoughtful questions about their career path, daily work, and advice for someone entering the field.",
+      "hints": [
+        "Reference something specific about their work in your message",
+        "Make it easy to say yes — offer multiple time options",
+        "Questions should be open-ended, not yes/no"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Message template: 'Hi [Name], I'm a [role] at [company] and I'm really interested in [their field/company]. I saw your post about [topic] and found it insightful. Would you have 20 minutes for a virtual coffee chat? I'd love to hear about your career path and any advice you'd share.\n\nSample questions:\n1. What does a typical week look like in your role?\n2. What skills have been most valuable in your career?\n3. What's something you wish you knew when starting out?\n4. How did you transition into this role?\n5. What resources would you recommend for someone interested in this field?'"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Weekly Networking Habit",
+      "description": "Commit to a 30-minute weekly networking block. Each week, do ONE of these: (1) Leave 3 thoughtful comments on LinkedIn/Twitter posts in your field, (2) Send one genuine message to someone you haven't spoken to in a while, (3) Share one useful resource with your network, (4) Make one introduction between two people who should know each other. Track what you do for 4 weeks.",
+      "hints": [
+        "Put it on your calendar like a meeting — don't skip it",
+        "Thoughtful means more than 'Great post!' — add your perspective or experience",
+        "Introductions are one of the most valuable networking actions"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Week 1: Commented on 3 LinkedIn posts about React performance\nWeek 2: Sent a message to a former colleague — congratulated them on their new role\nWeek 3: Shared a useful debugging tool with my network with context on how I use it\nWeek 4: Introduced a frontend dev to a designer friend who was looking for collaborators\n\nResult: 2 new conversations started, 1 rekindled connection, 1 introduction made — all in 2 hours total."
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Event Networking Challenge",
+      "description": "Attend one professional event this month (meetup, conference, workshop, or online event). Before the event, research 2-3 people you want to meet. During the event, have meaningful conversations with at least 3 people. After the event, follow up with every person you spoke to within 48 hours. Write a brief reflection on what worked and what you'd do differently.",
+      "hints": [
+        "Arrive early — it's easier to talk to people when the room isn't crowded yet",
+        "Ask questions more than you talk — people love being asked about their work",
+        "Follow up with a specific reference to your conversation, not just 'nice to meet you'"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Reflection template:\n- People I met: [names and roles]\n- Most valuable conversation: [who and why]\n- What worked: [e.g., 'asking about their current projects led to great discussions']\n- What to improve: [e.g., 'I should have stayed longer for the after-event networking']\n- Follow-ups sent: [yes/no and what was said]\n- One person I want to stay in touch with: [name and plan for next touchpoint]"
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

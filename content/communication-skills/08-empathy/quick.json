@@ -1,0 +1,34 @@
+{
+  "topicId": "08-empathy",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What Is Empathy?",
+      "body": "Empathy is the ability to understand and share another person's feelings. It's not about agreeing with them — it's about seeing the world from their perspective. Empathy is the foundation of all meaningful human connection, and it's a skill that can be developed."
+    },
+    {
+      "heading": "The Three Types of Empathy",
+      "bulletPoints": [
+        "Cognitive Empathy — Understanding someone's perspective intellectually. 'I can see why you'd think that.'",
+        "Emotional Empathy — Feeling what another person feels. Your heart aches when theirs does.",
+        "Compassionate Empathy — Understanding + feeling + being moved to help. The most complete form."
+      ]
+    },
+    {
+      "heading": "Why Empathy Matters in Communication",
+      "bulletPoints": [
+        "Builds trust — People open up to those who understand them",
+        "Reduces conflict — Most disagreements stem from feeling unheard, not from facts",
+        "Improves teamwork — Empathetic teams collaborate better and innovate more",
+        "Enhances leadership — Leaders who show empathy retain talent and drive performance"
+      ]
+    }
+  ],
+  "jargon": [
+    { "term": "Empathy", "definition": "The ability to understand and share another person's feelings. Different from sympathy (feeling FOR someone) — empathy is feeling WITH someone." },
+    { "term": "Perspective-Taking", "definition": "Deliberately imagining another person's viewpoint, feelings, and context. A core skill for building empathy." },
+    { "term": "Empathy vs. Sympathy", "definition": "Empathy: 'I understand how you feel.' Sympathy: 'I feel sorry for you.' Empathy creates connection; sympathy creates distance." }
+  ],
+  "summary": "Empathy is understanding another person's perspective and feelings. Three types: cognitive (understanding), emotional (feeling), and compassionate (understanding + feeling + helping). Empathy builds trust, reduces conflict, and improves relationships. It's a skill, not a trait — it can be developed."
+}

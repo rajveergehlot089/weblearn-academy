@@ -1,0 +1,47 @@
+{
+  "topicId": "08-collaboration",
+  "exercises": [
+    {
+      "title": "Collaboration Health Check",
+      "description": "Assess your team's collaboration across five dimensions: information sharing, help-seeking, cross-team work, accountability, and trust.",
+      "hints": [
+        "Rate each dimension 1-5 honestly",
+        "Ask team members for their independent ratings",
+        "Compare your ratings to theirs — the gaps reveal blind spots"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Collaboration Health Check:\n\n1. Information Sharing (1-5)\n   'Information is shared openly and proactively'\n   Rating: ___\n   Evidence: ___________\n\n2. Help-Seeking (1-5)\n   'People ask for help without fear of judgment'\n   Rating: ___\n   Evidence: ___________\n\n3. Cross-Team Work (1-5)\n   'We collaborate regularly with other teams'\n   Rating: ___\n   Evidence: ___________\n\n4. Accountability (1-5)\n   'We hold each other accountable for commitments'\n   Rating: ___\n   Evidence: ___________\n\n5. Trust (1-5)\n   'We trust each other to do quality work'\n   Rating: ___\n   Evidence: ___________\n\nLowest dimension: ___________\nAction to improve: ___________\nReview in 30 days: ___________"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Cross-Functional Collaboration Plan",
+      "description": "Design a collaboration plan for a cross-functional project. Define shared goals, roles, communication, and conflict resolution.",
+      "hints": [
+        "Start with the shared goal — what does success look like for everyone?",
+        "Use the RAPID framework for decision-making roles",
+        "Define communication channels and meeting cadence upfront"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Cross-Functional Collaboration Plan:\n\nProject: ___________\nShared goal: ___________\nTimeline: ___________\n\nRoles (RAPID):\nR — Recommend: [Team/Person]\nA — Agree: [Team/Person]\nI — Input: [Teams/People]\nP — Perform: [Teams]\nD — Decide: [One Person]\n\nCommunication:\n- Channel: ___________\n- Sync meetings: [frequency, duration, attendees]\n- Async updates: [frequency, format]\n- Decision documentation: [where decisions are recorded]\n\nConflict resolution:\n- Process: [how disagreements are handled]\n- Escalation: [who resolves if parties can't agree]\n\nSuccess metrics:\n- How will we know it worked? ___________\n- Review date: ___________"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Information Sharing Audit",
+      "description": "Identify one piece of information your team needs but doesn't have access to. Design a sharing mechanism to fix it.",
+      "hints": [
+        "Ask: 'What information do you wish you had?'",
+        "Consider: status dashboards, meeting notes, decision logs, customer feedback",
+        "Make it accessible by default, not on request"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Information Sharing Fix:\n\nInformation gap: ___________\nWho needs it: ___________\nWhy they don't have it: ___________\n\nSharing mechanism:\n- Format: [dashboard, shared doc, weekly email, Slack channel]\n- Frequency: [real-time, daily, weekly]\n- Owner: [who maintains it]\n- Access: [who can view/edit]\n\nExample:\nInformation gap: Customer support ticket trends\nWho needs it: Product team\nWhy: They only see feature requests, not support pain points\nMechanism: Weekly summary in shared Slack channel, owned by support lead\nFrequency: Every Monday\nAccess: Product and support channels"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

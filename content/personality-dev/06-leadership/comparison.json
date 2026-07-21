@@ -1,0 +1,24 @@
+{
+  "topicId": "06-leadership",
+  "comparisons": [
+    {
+      "concept": "Manager vs Leader",
+      "manager": "Focus: Processes, systems, efficiency. Asks: 'How?' and 'When?' Controls: Rules, procedures, deadlines. Motivates: Through rewards and consequences. Result: Things get done right.",
+      "leader": "Focus: Vision, people, change. Asks: 'What?' and 'Why?' Influences: Through inspiration and trust. Motivates: Through purpose and meaning. Result: The right things get done.",
+      "explanation": "Management is about complexity; leadership is about change. You need both — management without leadership produces efficient irrelevance; leadership without management produces inspiring chaos."
+    },
+    {
+      "concept": "Autocratic vs Democratic Leadership",
+      "autocratic": "Decision-making: Leader decides alone. Communication: Top-down. Speed: Fast. Best for: Emergencies, inexperienced teams, clear tasks. Risk: Low team buy-in, stifled creativity.",
+      "democratic": "Decision-making: Team contributes, leader decides. Communication: Two-way. Speed: Slower. Best for: Complex problems, experienced teams, creative work. Risk: Analysis paralysis, unclear accountability.",
+      "explanation": "Neither style is universally better — the best leaders adapt their style to the situation. In a fire, be autocratic. In a brainstorming session, be democratic."
+    },
+    {
+      "concept": "Transactional vs Transformational Leadership",
+      "transactional": "Mechanism: Rewards and punishments. Focus: Short-term goals, compliance. Relationship: Exchange-based (do this, get that). Risk: Team does minimum required, no discretionary effort.",
+      "transformational": "Mechanism: Vision and inspiration. Focus: Long-term growth, commitment. Relationship: Purpose-based (we're building something meaningful). Risk: Over-reliance on leader's charisma.",
+      "explanation": "Transactional leadership maintains the status quo; transformational leadership creates change. Most organizations need both — transactional for daily operations, transformational for growth."
+    }
+  ],
+  "keyInsight": "The most effective leaders aren't the loudest or most charismatic — they're the ones who develop other leaders. Your job isn't to be the hero; it's to create heroes."
+}

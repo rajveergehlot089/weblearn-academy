@@ -1,0 +1,76 @@
+{
+  "topicId": "05-confidence",
+  "comparisons": [
+    {
+      "concept": "Confidence Approaches",
+      "fake_it": {
+        "name": "'Fake It Till You Make It'",
+        "approach": "Acting confident despite feeling uncertain.",
+        "mechanism": "Behavioral activation — acting changes feelings.",
+        "evidence": "Research shows acting 'as if' can shift emotional states.",
+        "risk": "Can become inauthentic; doesn't address underlying insecurity."
+      },
+      "build_it": {
+        "name": "Build It Through Mastery",
+        "approach": "Deliberately practicing skills and accumulating success experiences.",
+        "mechanism": "Self-efficacy theory — confidence comes from evidence of competence.",
+        "evidence": "Bandura's research shows mastery experiences are the strongest source of self-efficacy.",
+        "risk": "Slower initial progress; requires patience and consistent effort."
+      },
+      "reframe_it": {
+        "name": "Reframe Anxiety as Excitement",
+        "approach": "Using the same physiological arousal (racing heart, butterflies) and labeling it as excitement instead of anxiety.",
+        "mechanism": "Appraisal theory — same arousal, different interpretation = different outcome.",
+        "evidence": "Research shows reframing anxiety as excitement improves performance by 13%.",
+        "risk": "Doesn't work for all anxiety types; requires practice in the moment."
+      },
+      "explanation": "The most effective approach combines all three: 'fake it' to get started, 'build it' to sustain confidence, and 'reframe it' to manage anxiety in the moment. Start with reframing (quick win), use 'faking' to take action, and build lasting confidence through mastery experiences."
+    },
+    {
+      "concept": "Comfort Zone Dynamics",
+      "comfort_zone": {
+        "name": "Comfort Zone",
+        "characteristics": "Familiar activities, low anxiety, no growth.",
+        "emotion": "Safety, boredom.",
+        "performance": "Consistent but limited.",
+        "risk": "Atrophy — skills and confidence decline without challenge."
+      },
+      "learning_zone": {
+        "name": "Learning Zone (Stretch Zone)",
+        "characteristics": "Challenging but manageable tasks, moderate anxiety.",
+        "emotion": "Excitement, mild discomfort, flow states.",
+        "performance": "Growing, improving, developing new skills.",
+        "risk": "Temporary performance dips as new skills develop."
+      },
+      "panic_zone": {
+        "name": "Panic Zone",
+        "characteristics": "Overwhelming challenges, high anxiety, shutdown.",
+        "emotion": "Fear, helplessness, avoidance.",
+        "performance": "Impaired — cognitive function reduced under high stress.",
+        "risk": "Trauma, burnout, reinforced avoidance patterns."
+      },
+      "explanation": "Growth happens exclusively in the learning zone. The key is calibrating challenge level — too easy (comfort zone) means no growth, too hard (panic zone) means shutdown. Start at the edge of your comfort zone and gradually expand outward."
+    },
+    {
+      "concept": "Confidence Myths vs Reality",
+      "myth_confidence": {
+        "name": "Myth: Confidence means never feeling anxious",
+        "reality": "Confident people feel anxious too — they act despite the anxiety. Courage is not the absence of fear but action in its presence."
+      },
+      "myth_permanent": {
+        "name": "Myth: Confidence is permanent once achieved",
+        "reality": "Confidence is domain-specific and requires maintenance. You might be confident in coding but anxious about public speaking. Each domain needs its own evidence base."
+      },
+      "myth_innate": {
+        "name": "Myth: Some people are just 'naturally' confident",
+        "reality": "What looks like natural confidence is usually accumulated experience. Most confident people have simply done the thing many times, building mastery and evidence."
+      },
+      "myth_self_talk": {
+        "name": "Myth: Positive self-talk alone builds confidence",
+        "reality": "Affirmations without action create cognitive dissonance. 'I'm amazing' without evidence feels fake. Action → evidence → confidence is the reliable path."
+      },
+      "explanation": "Confidence is not a trait but a practice. It's built through action, not thought. The myths persist because we see confident people's outcomes without seeing their process. Behind every 'naturally confident' person is a history of small, consistent actions."
+    }
+  ],
+  "keyInsight": "Confidence is built through action, not thought. The confidence-competence loop (try → succeed/learn → gain confidence → try bigger) is the most reliable path. Use the comfort zone model to calibrate challenge level — stay in the learning zone where growth happens. Combine 'faking it' (to get started) with mastery experiences (for lasting confidence)."
+}

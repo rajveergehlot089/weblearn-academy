@@ -1,0 +1,18 @@
+{
+  "topicId": "08-caching-server",
+  "comparisons": [
+    {
+      "concept": "Server-Side Caching",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Server-Side Caching\nconst result = {\n  concept: \"Server-Side Caching\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Server-Side Caching\nresult = {\n    \"concept\": \"Server-Side Caching\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Server-Side Caching is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Server-Side Caching is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

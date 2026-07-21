@@ -1,0 +1,18 @@
+{
+  "topicId": "06-routing-rest-graphql",
+  "comparisons": [
+    {
+      "concept": "Fetching user data",
+      "javascript": {
+        "language": "javascript",
+        "code": "// REST\nconst res = await fetch('/api/users/123');\nconst user = await res.json();\n\n// GraphQL\nconst res = await fetch('/api/graphql', {\n  method: 'POST',\n  body: JSON.stringify({\n    query: '{ user(id: 123) { name email } }'\n  })\n});"
+      },
+      "python": {
+        "language": "python",
+        "code": "# REST\nimport requests\nuser = requests.get('/api/users/123').json()\n\n# GraphQL\nimport requests\nres = requests.post('/api/graphql', json={\n    'query': '{ user(id: 123) { name email } }'\n})\ndata = res.json()['data']"
+      },
+      "explanation": "The concept is identical: send a request, get JSON data back. REST returns everything; GraphQL returns only what you ask for. The logic is the same."
+    }
+  ],
+  "keyInsight": "REST and GraphQL are both ways to build APIs over HTTP. The underlying concepts (requests, responses, JSON data, status codes) are identical. The difference is in HOW you structure the query."
+}

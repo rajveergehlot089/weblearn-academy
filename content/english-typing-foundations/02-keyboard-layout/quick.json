@@ -1,0 +1,34 @@
+{
+  "topicId": "02-keyboard-layout",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Keyboard Layout & Finger Maps?",
+      "body": "QWERTY layout, finger assignments, and home row markers. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "Keyboard Layout & Finger Maps is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind Keyboard Layout & Finger Maps is understanding how different components work together.\n\n2. Application: In practice, you'll use Keyboard Layout & Finger Maps every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most Keyboard Layout & Finger Maps implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding Keyboard Layout & Finger Maps is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Keyboard",
+      "definition": "A key concept in Keyboard Layout & Finger Maps. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Layout",
+      "definition": "A key concept in Keyboard Layout & Finger Maps. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Finger",
+      "definition": "A key concept in Keyboard Layout & Finger Maps. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "Keyboard Layout & Finger Maps is a core concept in basics. QWERTY layout, finger assignments, and home row markers. Focus on understanding the fundamentals first, then practice applying them."
+}

@@ -1,0 +1,127 @@
+{
+  "users": {
+    "fed44400-a2e1-4d4c-81fc-011b0ac062a5": {
+      "id": "fed44400-a2e1-4d4c-81fc-011b0ac062a5",
+      "name": "Admin",
+      "email": "admin@weblearn.com",
+      "passwordHash": "$2b$10$3wwVx3joieUpW.TMgsKXU.qHxNmh5i3lc7SnsO6L4ooCLkKwyqD7K",
+      "createdAt": "2026-07-15T07:15:05.730Z",
+      "preferences": {
+        "learningMode": "fast-track",
+        "theme": "dark"
+      },
+      "role": "admin"
+    },
+    "93a9d383-7b76-4961-a1a8-d0febdd4efff": {
+      "id": "93a9d383-7b76-4961-a1a8-d0febdd4efff",
+      "name": "Rajveer Gehlot",
+      "email": "rajveergehlot00@gmail.com",
+      "passwordHash": "$2b$10$khD7H3WD49zC9Q7DDlkVmOO/JuTXxeRm2GDlAt0ov13nqN1bviLua",
+      "createdAt": "2026-07-15T07:17:58.461Z",
+      "preferences": {
+        "learningMode": "fast-track",
+        "theme": "dark"
+      },
+      "role": "customer"
+    },
+    "b9ac53ee-5bfc-4b19-aa46-3ce57003a276": {
+      "id": "b9ac53ee-5bfc-4b19-aa46-3ce57003a276",
+      "name": "Rajveer Gehlot",
+      "email": "rajveergehlot592@gmail.com",
+      "passwordHash": "$2b$10$cySGSsHsiYxq9ctg8gFY3eYfsd768J3kOBtp1Sq6fh.c9c8ztJHSG",
+      "createdAt": "2026-07-15T07:18:09.363Z",
+      "preferences": {
+        "learningMode": "fast-track",
+        "theme": "dark"
+      }
+    },
+    "e8528819-73fd-4f62-aec8-a257a108cbf1": {
+      "id": "e8528819-73fd-4f62-aec8-a257a108cbf1",
+      "name": "Test",
+      "email": "test@test.com",
+      "passwordHash": "$2b$10$idnXEFbcVMynTdhkedp0AeMF51S42ycu1g2poIV3EkaA.fLhYBkie",
+      "createdAt": "2026-07-15T07:19:45.904Z",
+      "preferences": {
+        "learningMode": "full-course",
+        "theme": "dark"
+      }
+    },
+    "84afa3ad-97ba-47a3-a4f7-e798667eb529": {
+      "id": "84afa3ad-97ba-47a3-a4f7-e798667eb529",
+      "name": "Rajveer Gehlot",
+      "email": "tes1t@test.com",
+      "passwordHash": "$2b$10$odCLCHsb654JVAeqA/ijmehalDjkmgUKlqFAy7ZbgRJYPaYT0vdyi",
+      "createdAt": "2026-07-15T09:00:31.645Z",
+      "preferences": {
+        "learningMode": "fast-track",
+        "theme": "dark"
+      }
+    },
+    "9e005cdc-3011-42c4-a41b-cdde28e2cc48": {
+      "id": "9e005cdc-3011-42c4-a41b-cdde28e2cc48",
+      "name": "Devil Gehlot",
+      "email": "devilgfrx9854@gmail.com",
+      "passwordHash": "$2b$10$w1a8z44.e1wP35obotrL1On9VvRzyIUtJ6X4zPReRwvxKNNUcMwhK",
+      "createdAt": "2026-07-17T15:35:06.994Z",
+      "preferences": {
+        "learningMode": "fast-track",
+        "theme": "dark"
+      }
+    },
+    "605fb808-62ca-4934-ab4d-8f5437988245": {
+      "id": "605fb808-62ca-4934-ab4d-8f5437988245",
+      "name": "Tester",
+      "email": "tester2@test.com",
+      "passwordHash": "$2b$10$da8Hvbojky4BNicYUk8DVeH0YgjrKaGbDzg68/pXuSYW5v94tPBbm",
+      "createdAt": "2026-07-18T00:28:26.219Z",
+      "preferences": {
+        "learningMode": "fast-track",
+        "theme": "dark"
+      }
+    },
+    "4e7777cc-d0d0-40b7-b5d4-7f415674e73c": {
+      "id": "4e7777cc-d0d0-40b7-b5d4-7f415674e73c",
+      "name": "Admin",
+      "email": "admin@test.com",
+      "passwordHash": "$2b$10$qKlzZtfu.SxxPuXnFZHghuWIDXZp3sIsVRmI0q/GdDBKUEP1BlPOO",
+      "createdAt": "2026-07-18T00:47:07.638Z",
+      "preferences": {
+        "learningMode": "fast-track",
+        "theme": "dark"
+      }
+    },
+    "e8191d74-694f-415f-9b46-fa6c4d6967e3": {
+      "id": "e8191d74-694f-415f-9b46-fa6c4d6967e3",
+      "name": "Test",
+      "email": "test3@test.com",
+      "passwordHash": "$2b$10$XAzedzxpAhf/UYVbWYCC6O2T79XQ3EypI3/FDUrSs.o9odX1JJFPa",
+      "createdAt": "2026-07-18T00:47:16.903Z",
+      "preferences": {
+        "learningMode": "fast-track",
+        "theme": "dark"
+      }
+    },
+    "f01de4cd-8a5b-4219-bf3a-4bc34fbf95c6": {
+      "id": "f01de4cd-8a5b-4219-bf3a-4bc34fbf95c6",
+      "name": "TestAdmin",
+      "email": "testadm@test.com",
+      "passwordHash": "$2b$10$Oep08qzQ4T/d2QAVAfOmWeSTqR6mG4lKfgA7wlvDbcG3S7plrNzEG",
+      "createdAt": "2026-07-18T00:47:37.803Z",
+      "preferences": {
+        "learningMode": "fast-track",
+        "theme": "dark"
+      }
+    },
+    "514da4fb-49d9-4c71-ab9a-51cf01d75b00": {
+      "id": "514da4fb-49d9-4c71-ab9a-51cf01d75b00",
+      "name": "Rajveer",
+      "email": "raj@test.com",
+      "passwordHash": "$2b$10$muX28plHbTgVVZtUxf7oXebrwM2XedATEfGXXceq141UMpSWUDO5a",
+      "createdAt": "2026-07-18T00:59:24.991Z",
+      "preferences": {
+        "learningMode": "fast-track",
+        "theme": "dark"
+      }
+    }
+  }
+}

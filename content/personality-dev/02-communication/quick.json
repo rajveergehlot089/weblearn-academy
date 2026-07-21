@@ -1,0 +1,25 @@
+{
+  "topicId": "02-communication",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Effective Communication?",
+      "body": "Effective communication is the ability to convey your message clearly and understand others' messages accurately. It's not just about talking — it's about ensuring your intended message matches what others receive. Research shows that 86% of employees cite lack of collaboration or ineffective communication as the main reason for workplace failures."
+    },
+    {
+      "heading": "The Communication Cycle",
+      "body": "Every communication follows a cycle:\n\n1. **Sender** encodes a message (chooses words, tone, body language)\n2. **Message** travels through a channel (face-to-face, email, phone)\n3. **Receiver** decodes the message (interprets words, tone, context)\n4. **Feedback** goes back to the sender\n\nBreakdowns happen at any stage. Your job as a communicator is to minimize these breakdowns by being clear, checking understanding, and adapting to your audience."
+    },
+    {
+      "heading": "The 7-38-55 Rule",
+      "body": "Albert Mehrabian's research found that when conveying feelings and attitudes:\n- 7% of meaning comes from words\n- 38% comes from tone of voice\n- 55% comes from body language\n\nThis doesn't mean words don't matter — it means HOW you say something often matters more than WHAT you say. A sarcastic 'great job' means the opposite of an enthusiastic 'great job'."
+    }
+  ],
+  "jargon": [
+    { "term": "Active Listening", "definition": "Fully concentrating on what someone is saying rather than just passively hearing their words. It involves paraphrasing, asking clarifying questions, and providing feedback." },
+    { "term": "Non-Verbal Communication", "definition": "All the ways we communicate without words — facial expressions, gestures, posture, eye contact, tone of voice, and even silence." },
+    { "term": "Feedback Loop", "definition": "The process of checking that your message was received as intended. It's asking 'Does that make sense?' or 'Can you tell me what you understood from what I said?'" }
+  ],
+  "summary": "Effective communication is about ensuring your message is received as intended. It involves words (7%), tone of voice (38%), and body language (55%). The communication cycle includes encoding, sending, decoding, and feedback. Most communication failures happen because senders assume their message is clear without checking for understanding."
+}

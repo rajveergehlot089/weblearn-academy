@@ -1,0 +1,52 @@
+{
+  "topicId": "07-mindfulness",
+  "comparisons": [
+    {
+      "concept": "Meditation Styles",
+      "items": [
+        {
+          "name": "Breath Awareness",
+          "description": "Focus on the sensation of breathing — the simplest and most accessible form",
+          "best_for": "Beginners, daily practice, stress reduction",
+          "duration": "3-20 minutes",
+          "difficulty": "Easy — just focus on your breath",
+          "developer_benefit": "Builds sustained attention, reduces context-switching impulse"
+        },
+        {
+          "name": "Body Scan",
+          "description": "Slowly move attention through each body part, noticing sensations",
+          "best_for": "Physical tension, pre-sleep relaxation, body awareness",
+          "duration": "5-30 minutes",
+          "difficulty": "Easy — just notice, don't change",
+          "developer_benefit": "Releases sitting-related tension (jaw, shoulders, hands, back)"
+        },
+        {
+          "name": "Walking Meditation",
+          "description": "Walk slowly, focusing on the sensation of each step",
+          "best_for": "Developers who can't sit still, outdoor breaks, transition between tasks",
+          "duration": "5-15 minutes",
+          "difficulty": "Easy — combines movement with mindfulness",
+          "developer_benefit": "Breaks up sitting, combines physical movement with focus training"
+        },
+        {
+          "name": "Loving-Kindness (Metta)",
+          "description": "Repeat phrases of goodwill toward yourself and others",
+          "best_for": "Self-criticism, imposter syndrome, team conflicts",
+          "duration": "5-20 minutes",
+          "difficulty": "Medium — requires genuine emotional engagement",
+          "developer_benefit": "Reduces imposter syndrome, improves empathy in code reviews"
+        },
+        {
+          "name": "Noting Practice",
+          "description": "Mentally label thoughts and sensations as they arise ('thinking,' 'planning,' 'tension')",
+          "best_for": "Racing thoughts, anxiety, understanding your mental patterns",
+          "duration": "5-20 minutes",
+          "difficulty": "Medium — requires attention and labeling skill",
+          "developer_benefit": "Makes mental patterns visible, helps catch anxiety early"
+        }
+      ],
+      "insight": "Start with Breath Awareness (simplest). Add Body Scan for physical tension. Use Walking Meditation as a coding break. Try Loving-Kindness for imposter syndrome. Noting Practice helps when your mind is especially busy."
+    }
+  ],
+  "keyInsight": "You don't need to find the 'best' meditation — start with Breath Awareness (3 minutes daily). The benefits come from CONSISTENCY, not style. After 2 weeks, experiment with other styles to find what works for you."
+}

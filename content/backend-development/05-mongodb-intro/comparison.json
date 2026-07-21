@@ -1,0 +1,42 @@
+{
+  "topicId": "05-mongodb-intro",
+  "type": "comparison",
+  "tables": [
+    {
+      "title": "MongoDB vs SQL Databases",
+      "headers": ["Feature", "MongoDB", "PostgreSQL/MySQL"],
+      "rows": [
+        ["Data Model", "Document (JSON-like)", "Relational (tables with rows)"],
+        ["Schema", "Flexible, dynamic", "Fixed, predefined"],
+        ["Query Language", "Mongoose/MongoDB Query API", "SQL"],
+        ["Scaling", "Horizontal (sharding)", "Vertical (bigger server)"],
+        ["Transactions", "Multi-document transactions (v4.0+)", "Full ACID transactions"],
+        ["Relationships", "Embedding or referencing", "Foreign keys and JOINs"],
+        ["Best For", "Rapid development, flexible data", "Complex queries, data integrity"]
+      ]
+    },
+    {
+      "title": "Mongoose vs Other MongoDB ODMs",
+      "headers": ["Feature", "Mongoose", "MongoDB Native Driver", "Typegoose"],
+      "rows": [
+        ["Schema Validation", "Built-in, powerful", "None (manual)", "TypeScript-based"],
+        ["Type Safety", "JavaScript", "JavaScript", "Full TypeScript"],
+        ["Middleware/Hooks", "Extensive", "None", "Inherited from Mongoose"],
+        ["Learning Curve", "Medium", "Low", "High"],
+        ["Performance", "Good (some overhead)", "Best", "Good"],
+        ["Popularity", "Most popular", "Official", "Growing"]
+      ]
+    },
+    {
+      "title": "MongoDB Data Modeling Patterns",
+      "headers": ["Pattern", "Description", "When to Use", "Example"],
+      "rows": [
+        ["Embedding", "Store related data within a single document", "1:1 or 1:few relationships", "User with address"],
+        ["Referencing", "Store references (IDs) to other documents", "1:many or many:many", "User with posts"],
+        ["Bucket Pattern", "Group time-series data into buckets", "IoT data, analytics", "Daily sensor readings"],
+        ["Outlier Pattern", "Separate unusual documents from main collection", "Documents with different access patterns", "Premium users"]
+      ]
+    }
+  ],
+  "summary": "MongoDB offers flexibility and scalability for modern applications. Choose it when you need rapid development with evolving schemas. Use Mongoose for schema validation and easier data modeling."
+}

@@ -1,0 +1,30 @@
+{
+  "topicId": "03-verbal-communication",
+  "questions": [
+    {
+      "question": "What is the BLUF method and when should you use it?",
+      "answer": "BLUF stands for Bottom Line Up Front — put the most important information at the start, then provide context. Use it in emails, meetings, presentations, and any situation where people need the answer quickly. Instead of building up to your point, lead with it. Example: 'We need to delay the launch by two weeks' (BLUF) followed by the reasons. This respects the reader's time and ensures the key message isn't buried.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do filler words affect your credibility?",
+      "answer": "Filler words ('um', 'like', 'you know', 'basically') signal uncertainty and reduce perceived competence. Studies show speakers who eliminate fillers are rated as more knowledgeable and confident. The fix isn't perfection — it's awareness. Record yourself speaking for 2 minutes, count the fillers, then practice pausing instead of filling silence with 'um'. A pause sounds thoughtful; a filler sounds unsure.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is vocal variety and why does it matter?",
+      "answer": "Vocal variety is the intentional use of pitch, pace, volume, and tone to make speech engaging. Monotone delivery — same pitch, same pace, same volume — makes even brilliant content boring. Vary your pitch for emphasis, slow down for key points, use pauses strategically, and adjust volume to draw people in (softer) or energize (louder). The goal is to make your voice an instrument that holds attention.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does framing change the impact of a message?",
+      "answer": "Framing is how you present information — the same facts can motivate or demotivate depending on emphasis. Negative framing ('The project is delayed') triggers defensiveness. Positive framing ('The project launches later, giving us more time for testing') focuses on opportunity. Constructive framing highlights what's working before addressing what needs fixing. Frame messages to inspire action, not blame.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the difference between passive and assertive verbal communication?",
+      "answer": "Passive communication minimizes your own position: 'I don't know if this is a good idea, but maybe...' Assertive communication states your position clearly: 'I recommend X because Y.' Neither is aggressive — assertiveness respects both parties. Passive communication causes your ideas to be ignored; assertive communication makes them heard. The shift is in removing qualifiers ('just', 'maybe', 'sorry to bother') and speaking with directness.",
+      "difficulty": "easy"
+    }
+  ]
+}

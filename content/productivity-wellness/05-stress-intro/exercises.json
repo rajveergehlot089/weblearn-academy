@@ -1,0 +1,47 @@
+{
+  "topicId": "05-stress-intro",
+  "exercises": [
+    {
+      "title": "Stress Source Mapping",
+      "description": "Map your top 5 stress sources. For each, identify: (1) the trigger, (2) your physical response, (3) how long the stress lasts, and (4) one action you can take to reduce it. Create a simple table and fill it in honestly.",
+      "hints": [
+        "Be specific — 'work stress' is too vague, 'unclear requirements from product team' is actionable",
+        "Notice physical responses — tension headaches, tight shoulders, insomnia are stress signals",
+        "Focus on what you CAN control, not what you can't"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "STRESS SOURCE MAP:\n\n| Source              | Trigger              | Physical Response   | Duration    | Action                      |\n|---------------------|----------------------|---------------------|-------------|----------------------------|\n| Unclear requirements| Product changes spec | Jaw clenching       | Hours-days  | Ask for written specs       |\n| Code review anxiety | Critical comments    | Racing heart        | 30-60 min   | Reframe as learning, not attack |\n| On-call anxiety     | Pager at 2 AM        | Can't fall back     | All night   | Rotate with team, limit to 1 week/month |\n| Imposter syndrome   | New technology       | Impulse to overwork | Days        | Track accomplishments file |\n| Deadline pressure   | Sprint commitment    | Shallow breathing   | Weeks       | Break into milestones, flag delays early |\n\nPRIORITY: Address #1 (unclear requirements) first — it affects daily work."
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Design Your Stress Recovery Protocol",
+      "description": "Create a personal set of quick stress recovery techniques you can use throughout the day. Include: (1) a 1-minute technique for acute stress, (2) a 5-minute technique for moderate stress, and (3) a 30-minute technique for high stress. Practice each one this week and note which works best for you.",
+      "hints": [
+        "The technique should be something you can do anywhere (no special equipment needed)",
+        "Physical techniques (breathing, movement) work faster than mental techniques",
+        "Practice when you're NOT stressed so you can use them when you ARE"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "PERSONAL STRESS RECOVERY PROTOCOL:\n\n1-MINUTE TECHNIQUE (acute stress, e.g., production incident):\nBox Breathing:\n• Inhale 4 counts\n• Hold 4 counts  \n• Exhale 4 counts\n• Hold 4 counts\n• Repeat 4 times\nWhen: During high-pressure moments (debugging crisis, urgent Slack)\n\n5-MINUTE TECHNIQUE (moderate stress, e.g., frustrating code review):\nPhysical Reset:\n• Stand up from desk (30 sec)\n• Walk to water cooler, drink water (1 min)\n• 10 shoulder rolls + 10 neck rolls (1 min)\n• 5 deep breaths with eyes closed (1 min)\n• Write down what's bothering you in 2 sentences (1 min)\nWhen: After frustrating interactions, before next task\n\n30-MINUTE TECHNIQUE (high stress, e.g., bad day/week):\nStress Discharge:\n• 15 min brisk walk outside (no phone)\n• 10 min journaling: What happened? How do I feel? What can I control?\n• 5 min: Plan one small action for tomorrow\nWhen: End of stressful days, before evening routine\n\nWEEK 1 TESTING:\n| Day | Stress Level | Technique Used | Effectiveness |\n|-----|-------------|----------------|---------------|\n| Mon | 7/10        | Box breathing   | 6/10          |\n| Tue | 5/10        | Physical reset  | 8/10          |\n| Wed | 8/10        | Walk + journal  | 9/10          |\n| Thu | 6/10        | Box breathing   | 7/10          |\n| Fri | 9/10        | Walk + journal  | 8/10          |\n\nFINDING: Physical reset (5-min) works best for moderate stress. Journaling works best for high stress."
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Weekly Stress Audit",
+      "description": "At the end of each day this week, rate your stress level (1-10) and note: what caused it, what helped, and what you'd do differently. At the end of the week, review the patterns and create a 'stress prevention plan' for next week.",
+      "hints": [
+        "Be honest with ratings — hiding stress from yourself doesn't help",
+        "Look for patterns: are certain days or activities consistently stressful?",
+        "The goal isn't zero stress — it's managing stress before it becomes chronic"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "WEEKLY STRESS AUDIT:\n\n| Day  | Stress | Cause              | What Helped        | Do Differently           |\n|------|--------|--------------------|--------------------|--------------------------|\n| Mon  | 6/10   | Sprint planning    | Morning exercise   | Prep questions before    |\n| Tue  | 4/10   | Normal day         | Deep work blocks   | Nothing — good day       |\n| Wed  | 7/10   | Code review conflict| Walk outside     | Address issues earlier   |\n| Thu  | 8/10   | Production bug     | Box breathing      | Don't skip lunch         |\n| Fri  | 5/10   | Week winding down  | Shutdown ritual    | Start earlier            |\n\nWEEKLY PATTERN ANALYSIS:\n• Average stress: 6.0/10\n• Highest: Thursday (production bug)\n• Lowest: Tuesday (normal day)\n• Most effective intervention: Morning exercise (reduced baseline by 2 points)\n• Recurring trigger: Code review conflicts (addressed Wed)\n\nSTRESS PREVENTION PLAN FOR NEXT WEEK:\n1. Continue morning exercise (reduces baseline stress)\n2. Schedule buffer time before sprint planning (prep reduces anxiety)\n3. Address code review concerns in real-time, not after the fact\n4. Never skip lunch during high-stress days (blood sugar affects stress)\n5. Keep shutdown ritual to prevent weekend stress carryover"
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

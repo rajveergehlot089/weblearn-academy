@@ -1,0 +1,30 @@
+{
+  "topicId": "05-team-dynamics",
+  "questions": [
+    {
+      "question": "What is psychological safety and why does it matter?",
+      "answer": "Psychological safety is the shared belief that the team is safe for interpersonal risk-taking — you can speak up, make mistakes, and disagree without fear of punishment or humiliation. Google's research found it's the #1 predictor of team performance, more important than talent or experience. Without it, people hide errors, withhold ideas, and stay silent when they should speak up. Leaders create it by modeling vulnerability, responding constructively to mistakes, and rewarding candor.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you handle a team in the storming phase?",
+      "answer": "I normalize it first: 'This is healthy — it means we're testing ideas and building real trust.' Then I facilitate, not arbitrate. I set ground rules for conflict (challenge ideas, not people), ensure everyone's voice is heard, and help the team surface the real issues. I don't suppress conflict — I channel it. If it becomes personal, I address it privately. The goal is to move through storming, not around it.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you build trust in a new team?",
+      "answer": "Trust is built through consistent actions over time, not team-building events. I start by being transparent about my own weaknesses and mistakes — vulnerability invites vulnerability. I follow through on every promise, no matter how small. I create opportunities for people to collaborate on meaningful work. I facilitate honest conversations about how we want to work together. And I address broken trust immediately rather than letting it fester.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Describe a time you turned around a dysfunctional team.",
+      "answer": "I inherited a team where people worked in silos, avoided conflict, and meetings were performative. I started by having honest 1-on-1s to understand each person's frustration. Then I facilitated a team session where we established working agreements: how we disagree, how we make decisions, how we hold each other accountable. I modeled the behavior — admitting my own mistakes, asking for feedback, addressing poor performance directly. Within 3 months, the dynamic shifted from guarded to collaborative.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "How do you prevent social loafing in team projects?",
+      "answer": "Social loafing thrives in ambiguity. I prevent it by: (1) assigning clear individual ownership for specific deliverables, (2) making commitments public (everyone sees who owns what), (3) tracking progress visibly, (4) having regular check-ins where each person reports on their commitments, and (5) addressing underperformance directly and privately. The key is making individual contributions visible — when people know others are counting on them, they step up.",
+      "difficulty": "medium"
+    }
+  ]
+}

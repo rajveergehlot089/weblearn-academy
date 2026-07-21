@@ -1,0 +1,82 @@
+{
+  "topicId": "02-emotional-intelligence",
+  "comparisons": [
+    {
+      "concept": "Emotional Intelligence vs Intelligence Quotient",
+      "eq": {
+        "name": "Emotional Intelligence (EQ)",
+        "definition": "Ability to recognize, understand, and manage emotions in yourself and others.",
+        "measured_by": "MSCEIT, EQ-i 2.0, self-report measures, behavioral observation",
+        "developable": "Yes — can be improved throughout life with practice",
+        "predicts": "Relationship quality, leadership effectiveness, mental health, career success",
+        "example": "A manager notices a team member is withdrawn, checks in privately, and adjusts workload — retaining a valuable employee."
+      },
+      "iq": {
+        "name": "Intelligence Quotient (IQ)",
+        "definition": "Measure of cognitive abilities: reasoning, problem-solving, abstract thinking, learning ability.",
+        "measured_by": "WAIS, Stanford-Binet, Raven's Progressive Matrices",
+        "developable": "Largely stable after adolescence; education can improve crystallized intelligence",
+        "predicts": "Academic performance, job training speed, technical problem-solving",
+        "example": "An engineer quickly learns a new programming language and solves complex algorithms."
+      },
+      "explanation": "IQ gets you in the door; EQ determines how far you go. The most effective combination is high IQ for technical competence AND high EQ for teamwork, leadership, and adaptability. A meta-analysis of 44 studies found EQ predicts job performance above and beyond IQ, with a correlation of .23 for overall performance."
+    },
+    {
+      "concept": "Five Components of Emotional Intelligence",
+      "self_awareness": {
+        "name": "Self-Awareness",
+        "skill": "Recognizing your emotions, strengths, weaknesses, and their impact on others.",
+        "practice": "Journaling, mindfulness, seeking feedback, the RAIN technique.",
+        "sign": "You can name your emotions specifically and explain why you feel them."
+      },
+      "self_regulation": {
+        "name": "Self-Regulation",
+        "skill": "Managing disruptive emotions and impulses; thinking before acting.",
+        "practice": "STOP technique, cognitive reappraisal, delayed gratification exercises.",
+        "sign": "You respond thoughtfully instead of reacting automatically."
+      },
+      "motivation": {
+        "name": "Motivation",
+        "skill": "Internal drive to achieve, optimism, and commitment to goals.",
+        "practice": "Connect daily tasks to larger purpose, celebrate small wins, build mastery.",
+        "sign": "You persist through setbacks because the work matters to you."
+      },
+      "empathy": {
+        "name": "Empathy",
+        "skill": "Understanding and sharing others' emotional states.",
+        "practice": "Active listening, perspective-taking exercises, reading fiction.",
+        "sign": "Others feel understood and validated in your presence."
+      },
+      "social_skills": {
+        "name": "Social Skills",
+        "skill": "Managing relationships, communication, conflict, and collaboration.",
+        "practice": "Assertive communication, conflict resolution, networking with genuine curiosity.",
+        "sign": "You can navigate difficult conversations and build trust quickly."
+      },
+      "explanation": "These five components are interdependent — self-awareness enables self-regulation, which supports empathy, which informs social skills. Develop them in order: start with self-awareness (the foundation) and build outward. Most people have one or two strong components and one or two weaker ones."
+    },
+    {
+      "concept": "Emotional Regulation Strategies",
+      "suppression": {
+        "name": "Emotional Suppression",
+        "strategy": "Pushing emotions down, pretending they don't exist.",
+        "short_term": "Provides temporary relief from discomfort.",
+        "long_term": "Emotions intensify (rebound effect), physical health suffers, relationships erode."
+      },
+      "reappraisal": {
+        "name": "Cognitive Reappraisal",
+        "strategy": "Reinterpreting the situation to change its emotional impact.",
+        "short_term": "Requires mental effort in the moment.",
+        "long_term": "Reduces emotional intensity, improves well-being, strengthens resilience."
+      },
+      "expression": {
+        "name": "Healthy Expression",
+        "strategy": "Acknowledging and communicating emotions constructively.",
+        "short_term": "Vulnerable and uncomfortable initially.",
+        "long_term": "Builds trust, deepens relationships, prevents accumulation of resentment."
+      },
+      "explanation": "Suppression is the least effective strategy — research by James Gross at Stanford shows it increases physiological stress and reduces memory. Reappraisal is the most effective for long-term well-being. Healthy expression combined with reappraisal provides the best outcomes. The goal is not to eliminate negative emotions but to respond to them skillfully."
+    }
+  ],
+  "keyInsight": "Emotional Intelligence is not a fixed trait — it's a set of skills that can be developed at any age. The most impactful starting point is self-awareness (recognizing what you feel), followed by self-regulation (choosing how to respond). Practice the RAIN and STOP techniques to build the gap between stimulus and response."
+}

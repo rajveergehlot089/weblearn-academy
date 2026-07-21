@@ -1,0 +1,40 @@
+{
+  "topicId": "10-leadership-assessment",
+  "comparisons": [
+    {
+      "concept": "Assessment Methods",
+      "rows": [
+        { "dimension": "What it measures", "self_assessment": "Your perception of your skills", "360_feedback": "Others' perception of your skills", "behavioral_interview": "Evidence of past leadership behavior", "assessment_center": "Simulated leadership scenarios" },
+        { "dimension": "Strengths", "self_assessment": "Quick, free, private", "360_feedback": "Multiple perspectives, reveals blind spots", "behavioral_interview": "Evidence-based, specific examples", "assessment_center": "Objective, standardized" },
+        { "dimension": "Limitations", "self_assessment": "Biased, blind spots", "360_feedback": "Political dynamics, response bias", "behavioral_interview": "Past performance ≠ future potential", "assessment_center": "Expensive, artificial setting" },
+        { "dimension": "Best for", "self_assessment": "Personal reflection, starting point", "360_feedback": "Development planning, promotion decisions", "behavioral_interview": "Hiring, promotion decisions", "assessment_center": "Executive selection, leadership programs" },
+        { "dimension": "Cost", "self_assessment": "Free", "360_feedback": "Low-medium", "behavioral_interview": "Low", "assessment_center": "High" }
+      ],
+      "explanation": "No single method is sufficient. The best approach combines self-assessment with 360 feedback for development, and behavioral evidence for selection."
+    },
+    {
+      "concept": "Leadership Maturity Levels",
+      "rows": [
+        { "dimension": "Level", "novice": "Follows rules and processes", "competent": "Adapts approach to context", "proficient": "Integrates multiple perspectives", "expert": "Intuitive, creates new approaches" },
+        { "dimension": "Decision-making", "novice": "Needs guidance for most decisions", "competent": "Makes routine decisions independently", "proficient": "Makes complex decisions with incomplete info", "expert": "Makes strategic decisions that shape the org" },
+        { "dimension": "Team impact", "novice": "Completes individual tasks", "competent": "Manages small projects", "proficient": "Leads teams through change", "expert": "Builds organizations and develops leaders" },
+        { "dimension": "Self-awareness", "novice": "Limited awareness of impact", "competent": "Aware of strengths and weaknesses", "proficient": "Seeks and acts on feedback", "expert": "Models continuous growth" },
+        { "dimension": "Development focus", "novice": "Technical skills, processes", "competent": "Communication, delegation", "proficient": "Strategy, culture, influence", "expert": "Legacy, succession, organizational impact" }
+      ],
+      "explanation": "Leadership maturity is a journey. Most people are somewhere between competent and proficient. Growth requires deliberate practice and feedback."
+    },
+    {
+      "concept": "90-Day vs. Annual Development Planning",
+      "rows": [
+        { "dimension": "Time horizon", "90_day": "3 months, focused", "annual": "12 months, broad" },
+        { "dimension": "Focus area", "90_day": "ONE specific competency", "annual": "3-5 areas" },
+        { "dimension": "Accountability", "90_day": "Monthly check-ins", "annual": "Quarterly or bi-annual reviews" },
+        { "dimension": "Agility", "90_day": "Adjust monthly based on progress", "annual": "Quarterly adjustments at best" },
+        { "dimension": "Motivation", "90_day": "High — quick wins, visible progress", "annual": "Can feel overwhelming, lose focus" },
+        { "dimension": "Best for", "90_day": "Skill development, behavior change", "annual": "Career planning, strategic development" }
+      ],
+      "explanation": "For skill development, 90-day sprints work better than annual plans. They provide focus, accountability, and the ability to adjust quickly."
+    }
+  ],
+  "keyInsight": "Leadership development is not a destination — it's a continuous cycle of assessment, focused practice, feedback, and adjustment. The best leaders never stop growing."
+}

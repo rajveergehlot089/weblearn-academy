@@ -1,0 +1,47 @@
+{
+  "topicId": "04-delegation",
+  "exercises": [
+    {
+      "title": "Delegation Audit",
+      "description": "List all tasks you do in a typical week. Categorize each as: must keep, can delegate, or should delegate but haven't. Pick 3 tasks to delegate this week.",
+      "hints": [
+        "Be honest about tasks you're hoarding because you enjoy them",
+        "For each 'should delegate' task, identify who on your team could do it",
+        "Consider both workload reduction and team development"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Delegation Audit Template:\n\nTask | Must Keep | Can Delegate | Should Delegate | Delegate To | Why\n\nExamples:\n- Weekly status report → Should delegate → Team lead → Develops their reporting skills\n- Sprint planning → Can delegate → Senior dev → They know the technical details\n- 1-on-1s → Must keep → N/A → Direct relationship, can't delegate\n- Vendor negotiation → Can delegate → Procurement lead → Develops their negotiation skills\n\nAction: Pick 3 'should delegate' tasks. For each, write the delegation conversation script."
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Delegation Conversation Practice",
+      "description": "Write out the full delegation conversation for one task using the 6-step framework: Context, Ownership, Boundaries, Authority, Support, Check-in.",
+      "hints": [
+        "Be specific about what success looks like — avoid vague descriptions",
+        "Clearly state what authority they have (budget, decisions, communication)",
+        "Set a concrete check-in date, not 'we'll talk soon'"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Delegation Script Example:\n\n'Hi [Name], I'd like you to own [task]. Here's the context: [why it matters and how it connects to our goals].\n\nYou own this from start to finish. Here's what success looks like: [specific, measurable outcome].\n\nConstraints: [budget, timeline, scope].\n\nYou have authority to [specific decisions]. Please check with me on [anything requiring your approval].\n\nI'm here if you need help, but I trust your judgment. Let's check in on [specific date]. In the meantime, flag any blockers immediately.\n\nHow does that sound? Any questions about the scope or your authority?'"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Reverse Delegation Prevention Drill",
+      "description": "For one week, practice the 'What do you think?' technique every time someone brings you a problem. Track how the dynamic changes.",
+      "hints": [
+        "Don't give your answer first — let them propose solutions",
+        "Resist the urge to solve it yourself, even if their solution isn't ideal",
+        "Notice how the quality of their proposals improves over the week"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Reverse Delegation Prevention:\n\nWhen someone brings a problem:\n1. Ask: 'What do you think we should do?' (Don't answer their question with yours)\n2. Listen to their proposal without interrupting\n3. If incomplete: 'That's a good start. What else have you considered?'\n4. If they need authority: 'You have the authority to do that. Go ahead.'\n5. If they need your input: 'I'll give my perspective, but what's your recommendation first?'\n\nTrack:\n- Day 1-2: People may be surprised by the question\n- Day 3-4: They start coming with solutions pre-formed\n- Day 5+: They stop bringing problems back and just tell you what they decided\n\nThis is the sign of successful delegation."
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

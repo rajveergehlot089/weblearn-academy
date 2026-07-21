@@ -1,0 +1,43 @@
+{
+  "topicId": "04-habits-routines",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Designing Your Morning Routine",
+      "body": "How you start your day determines how the rest unfolds. The most productive developers don't check email or Slack first thing — they protect their morning for high-value activities. A well-designed morning routine handles the basics (health, priorities, mindset) before you enter reactive mode. Here's a research-backed framework:",
+      "code": {
+        "language": "text",
+        "snippet": "THE IDEAL DEVELOPER MORNING ROUTINE:\n\n6:30 AM  - Wake up (consistent time, even weekends)\n6:35 AM  - Hydrate (16 oz water immediately)\n6:40 AM  - Move (10 min stretching or light exercise)\n6:50 AM  - Meditate or journal (5-10 min)\n7:00 AM  - Shower + get ready\n7:30 AM  - Breakfast (protein-heavy, avoid sugar crash)\n7:45 AM  - Review priorities (3 things for today)\n8:00 AM  - Commute / transition to work\n8:30 AM  - Deep work block 1 (most important task first)\n\nWHY THIS WORKS:\n• Consistent wake time regulates circadian rhythm\n• Water + movement activates your body\n• Meditation/journaling reduces decision fatigue\n• Reviewing priorities prevents reactive mode\n• Deep work BEFORE email means you control your day\n\nCOMMON MISTAKES:\n• Checking phone immediately (triggers reactive mode)\n• Skipping breakfast (blood sugar crash at 10 AM)\n• No movement (sitting all day starts with morning)\n• Starting with email (other people's priorities become yours)",
+        "explanation": "Your morning routine should handle self-care BEFORE work. Once you open Slack, your brain enters reactive mode — you're responding to others' needs instead of pursuing your own priorities."
+      }
+    },
+    {
+      "heading": "The Shutdown Ritual: Ending Your Day Right",
+      "body": "Most developers struggle to 'turn off' at the end of the day. Your brain needs a clear signal that work is done, or it will ruminate about code and bugs all evening. The shutdown ritual (from Cal Newport's 'Deep Work') creates that signal:",
+      "code": {
+        "language": "text",
+        "snippet": "THE SHUTDOWN RITUAL (10 minutes, every workday):\n\n1. Review today's task list\n   - Check off completed items\n   - Move incomplete items to tomorrow (or later)\n\n2. Quick email/Slack scan\n   - Handle anything truly urgent\n   - Flag anything that needs morning attention\n\n3. Write tomorrow's plan\n   - List 3 priorities for tomorrow\n   - Schedule them on your calendar\n\n4. Physical signal\n   - Close all work applications\n   - Say (literally, out loud): 'Shutdown complete'\n\n5. Transition activity\n   - Change clothes, go for a walk, cook dinner\n   - This creates a mental boundary between work and personal\n\nWHY IT WORKS:\n• Clears mental cache — your brain stops trying to 'remember' tasks\n• Reduces anxiety about forgetting something\n• Creates a clear boundary between work and rest\n• Improves sleep quality (no rumination about tomorrow's tasks)",
+        "explanation": "The shutdown ritual works because it offloads mental tasks to an external system (your task manager). Your brain can let go because it trusts the system will hold the information."
+      }
+    },
+    {
+      "heading": "Weekly Review and Reset",
+      "body": "Every Friday, spend 30-60 minutes on a weekly review: (1) What went well this week? (2) What didn't go as planned? (3) What did I learn? (4) What's my top priority for next week? (5) Am I on track for my quarterly goals? This review creates the feedback loop that makes habits and routines improve over time. Without it, you'll repeat the same mistakes indefinitely. Use a template and keep it consistent."
+    },
+    {
+      "heading": "Breaking Bad Habits",
+      "body": "Breaking habits is harder than building them because bad habits often have immediate rewards (social media gives instant dopamine) while good habits have delayed rewards (exercise improves health over months). Strategies: (1) Increase friction — delete apps from your phone, use website blockers during work hours. (2) Replace, don't remove — swap 'scroll Twitter' with 'read one article.' (3) Track streaks — seeing a chain of successful days motivates you to continue. (4) Environment design — put your phone in another room during deep work."
+    },
+    {
+      "heading": "Practice Task",
+      "body": "Design and implement a morning routine for 2 weeks. Start with just 3 elements: hydration, movement, and priority review. Use the Two-Minute Rule: if 10 minutes of exercise feels too much, start with 2 minutes of stretching. Track completion daily. At the end of 2 weeks, evaluate: did you complete the routine consistently? Did your mornings improve? Adjust and add elements gradually."
+    }
+  ],
+  "keyInsights": [
+    "Habits run on autopilot — design the Cue → Routine → Reward loop intentionally",
+    "The Two-Minute Rule removes activation energy: scale every new habit to 2 minutes or less",
+    "Morning routines should handle self-care BEFORE email/Slack enters reactive mode",
+    "The shutdown ritual offloads mental tasks to a system so your brain can let go"
+  ]
+}

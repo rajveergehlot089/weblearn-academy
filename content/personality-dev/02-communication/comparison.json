@@ -1,0 +1,24 @@
+{
+  "topicId": "02-communication",
+  "comparisons": [
+    {
+      "concept": "Passive vs Assertive Communication",
+      "passive": "Says: 'Whatever you want is fine.' Body language: Slouched, avoidant eye contact. Outcome: Others' needs met, yours ignored. Feeling: Resentment builds over time.",
+      "assertive": "Says: 'I'd prefer this approach because...' Body language: Upright, direct eye contact. Outcome: Both parties' needs considered. Feeling: Mutual respect and clarity.",
+      "explanation": "Passive communication avoids conflict but creates resentment. Assertive communication addresses issues directly while maintaining respect. The key difference: passive communicators prioritize others' comfort over their own needs."
+    },
+    {
+      "concept": "Email vs Face-to-Face Communication",
+      "email": "Best for: Complex information, documentation, asynchronous discussions, formal communication. Risks: Misinterpreted tone, delayed responses, lack of non-verbal cues.",
+      "face-to-face": "Best for: Sensitive topics, brainstorming, building relationships, urgent issues. Risks: Emotional reactions, power dynamics, lack of documentation.",
+      "explanation": "Choose email when you need a paper trail or time to think. Choose face-to-face when emotions are involved or nuance matters. The medium should match the message."
+    },
+    {
+      "concept": "Listening vs Hearing",
+      "hearing": "Process: Passive, automatic, requires only ears. Engagement: Low — you might hear words but miss meaning. Outcome: You receive sound waves, not necessarily the message.",
+      "listening": "Process: Active, intentional, requires focus. Engagement: High — you process words, tone, context, and emotion. Outcome: You understand the message and the speaker feels heard.",
+      "explanation": "Hearing is physiological; listening is psychological. You can hear someone talking while scrolling your phone, but you're not truly listening. Active listening requires full attention and is a skill that must be deliberately practiced."
+    }
+  ],
+  "keyInsight": "Communication isn't just about what you say — it's about what others understand. The most common communication failure isn't lying or misunderstanding; it's the assumption that your message was received as intended. Always check for understanding."
+}

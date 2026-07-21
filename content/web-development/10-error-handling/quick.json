@@ -1,0 +1,39 @@
+{
+  "topicId": "10-error-handling",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Error Handling?",
+      "body": "Things WILL go wrong in code — servers crash, users enter bad data, networks fail. Error handling is catching these problems gracefully instead of letting your app crash. It's like wearing a seatbelt — you hope you won't need it, but when you do, it saves you."
+    },
+    {
+      "heading": "Try/Catch — The Basics",
+      "body": "Try/catch lets you attempt risky code and handle failures:",
+      "code": {
+        "language": "javascript",
+        "snippet": "try {\n  const data = JSON.parse(userInput);\n  console.log(data);\n} catch (error) {\n  console.log('That was not valid JSON!');\n  console.log('Error:', error.message);\n}",
+        "explanation": "try { risky code } catch (handle error). If the risky code throws an error, execution jumps to catch. The app doesn't crash."
+      }
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Error",
+      "definition": "An unexpected problem that stops code from running normally."
+    },
+    {
+      "term": "Exception",
+      "definition": "An error that occurs during execution (same as error in JavaScript)."
+    },
+    {
+      "term": "Throw",
+      "definition": "Deliberately creating an error: throw new Error('message')."
+    },
+    {
+      "term": "Catch",
+      "definition": "Receiving and handling an error in a catch block."
+    }
+  ],
+  "summary": "Error handling catches problems gracefully. Use try/catch for risky operations. Always handle errors instead of letting your app crash."
+}

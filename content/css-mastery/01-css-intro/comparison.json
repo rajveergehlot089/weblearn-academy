@@ -1,0 +1,18 @@
+{
+  "topicId": "01-css-intro",
+  "comparisons": [
+    {
+      "concept": "CSS Introduction & Selectors",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to CSS Introduction & Selectors\nconst result = {\n  concept: \"CSS Introduction & Selectors\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to CSS Introduction & Selectors\nresult = {\n    \"concept\": \"CSS Introduction & Selectors\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of CSS Introduction & Selectors is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about CSS Introduction & Selectors is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

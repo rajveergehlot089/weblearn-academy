@@ -1,0 +1,38 @@
+{
+  "topicId": "12-deployment",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Deployment?",
+      "body": "Deployment is making your app available on the internet. Right now your app runs on YOUR computer (localhost). Deployment puts it on a real server so anyone can access it via a URL."
+    },
+    {
+      "heading": "Frontend vs Backend Deployment",
+      "body": "They're deployed separately:\n- Frontend (HTML/CSS/JS): Static files hosted on Vercel, Netlify, or GitHub Pages\n- Backend (Node.js/Express): Server hosted on Render, Railway, or AWS\nThey communicate via API calls over the internet."
+    },
+    {
+      "heading": "Free Hosting Options",
+      "body": "You can deploy for free:\n- Vercel/Netlify: Best for frontend (static sites, React)\n- Render: Best for backend (Node.js, databases)\n- GitHub Pages: Simple static hosting"
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Deployment",
+      "definition": "Making your application accessible on the internet."
+    },
+    {
+      "term": "Static Hosting",
+      "definition": "A server that serves HTML/CSS/JS files without running backend code."
+    },
+    {
+      "term": "Environment Variables",
+      "definition": "Secret configuration values (API keys, database URLs) stored separately from code."
+    },
+    {
+      "term": "CI/CD",
+      "definition": "Continuous Integration/Deployment — automatic testing and deployment when you push code."
+    }
+  ],
+  "summary": "Deployment puts your app on the internet. Frontend goes to static hosts (Vercel), backend to server hosts (Render). Use environment variables for secrets."
+}

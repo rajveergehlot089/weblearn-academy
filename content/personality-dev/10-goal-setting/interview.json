@@ -1,0 +1,8 @@
+{
+  "topicId": "10-goal-setting",
+  "questions": [
+    { "question": "How do you set and achieve your goals?", "answer": "I use SMART goals broken into 90-day sprints. First, I identify one major goal aligned with my values. Then I break it into weekly milestones and daily actions. I track progress daily, review weekly, and adjust quarterly. The key is having a system — I don't rely on motivation alone. I also build habits that support the goal, so progress becomes automatic.", "difficulty": "easy" },
+    { "question": "Where do you see yourself in 5 years?", "answer": "I see myself in a leadership role where I can combine my technical expertise with people management. Specifically, I aim to lead a team of 5-10 developers, contribute to product strategy, and mentor junior engineers. I'm working toward this by taking on more responsibility now, developing my communication skills, and building relationships with senior leaders.", "difficulty": "medium" },
+    { "question": "How do you handle setbacks when working toward a goal?", "answer": "I treat setbacks as data, not failure. When something doesn't work, I ask: What can I learn? What would I do differently? I also maintain perspective — one setback doesn't erase months of progress. I adjust my approach, not my goal. And I lean on my support network for encouragement. The most successful people aren't those who never fail — they're those who fail, learn, and keep going.", "difficulty": "medium" }
+  ]
+}

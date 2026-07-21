@@ -1,0 +1,31 @@
+{
+  "topicId": "09-sleep-health",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Sleep is a Productivity Tool",
+      "body": "Sleep isn't wasted time — it's when your brain consolidates learning, repairs cells, and clears metabolic waste. After one night of poor sleep (less than 6 hours), cognitive performance drops by 30%. After a week of 6-hour nights, you're as impaired as someone who's been awake for 24 hours straight. Developers who prioritize sleep write better code, make fewer bugs, and learn new concepts faster."
+    },
+    {
+      "heading": "Sleep Hygiene for Developers",
+      "body": "Sleep hygiene means creating conditions that promote consistent, restful sleep:",
+      "code": {
+        "language": "text",
+        "snippet": "DEVELOPER SLEEP HYGIENE CHECKLIST:\n\nENVIRONMENT:\n□ Room temperature: 65-68°F (18-20°C)\n□ Room: completely dark (blackout curtains or eye mask)\n□ Room: quiet (earplugs or white noise machine)\n□ Bed: used for sleep and sex only (not work, not scrolling)\n\nTIMING:\n□ Consistent bedtime (same time ±30 min, even weekends)\n□ Consistent wake time (same time ±30 min, even weekends)\n□ 7-9 hours of sleep opportunity (not just time in bed)\n□ No naps after 3 PM (disrupts nighttime sleep)\n\nPRE-SLEEP ROUTINE (60 min before bed):\n□ No screens (or use blue light filter)\n□ No caffeine after 2 PM\n□ No alcohol within 3 hours of bed (disrupts sleep quality)\n□ No heavy exercise within 3 hours of bed\n□ Relaxation activity (reading, stretching, breathing exercises)\n\nDEVELOPER-SPECIFIC:\n□ No coding in bed (your brain associates bed with work)\n□ No Slack/email in bed (triggers anxiety)\n□ No screen-time tracking in bed (creates performance anxiety)\n□ Use 4-7-8 breathing if you can't fall asleep",
+        "explanation": "Most developers violate sleep hygiene without realizing it. The biggest culprits: inconsistent schedule, screens in bed, and caffeine too late. Fixing these three alone can improve sleep significantly."
+      }
+    },
+    {
+      "heading": "Exercise and Sleep",
+      "body": "Regular exercise improves sleep quality by 65%, but timing matters. Morning exercise is best for sleep (regulates circadian rhythm). Afternoon exercise is fine (improves deep sleep). Evening exercise (within 3 hours of bed) can interfere with falling asleep. The best exercise for developers: 30 minutes of moderate activity (walking, cycling, swimming) at least 4 days per week."
+    }
+  ],
+  "jargon": [
+    { "term": "Sleep Hygiene", "definition": "Behaviors and environment that promote consistent, restful sleep. Includes timing, environment, and pre-sleep routines." },
+    { "term": "Circadian Rhythm", "definition": "Your body's internal 24-hour clock, regulated by light exposure. Consistent sleep/wake times strengthen it." },
+    { "term": "Blue Light", "definition": "Light from screens that suppresses melatonin production. Avoid screens 1 hour before bed, or use blue light filters." },
+    { "term": "Sleep Debt", "definition": "Accumulated sleep deficit from insufficient sleep. Can be partially repaid by sleeping longer on weekends, but chronic debt harms health." }
+  ],
+  "summary": "Sleep is a productivity tool — 30% cognitive impairment after one bad night. Use sleep hygiene: consistent schedule, cool dark room, no screens before bed, no caffeine after 2 PM. Morning exercise improves sleep quality by 65%. Developers who sleep well write better code and learn faster."
+}

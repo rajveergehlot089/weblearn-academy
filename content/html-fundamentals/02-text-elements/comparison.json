@@ -1,0 +1,58 @@
+{
+  "topicId": "02-text-elements",
+  "type": "comparison",
+  "estimatedMinutes": 10,
+  "comparisons": [
+    {
+      "title": "Proper vs Improper Heading Hierarchy",
+      "before": {
+        "code": "<h1>Page Title</h1>\n<h4>Section</h4>\n<h2>Subsection</h2>\n<h1>Another Title</h1>",
+        "description": "Skipped heading levels, multiple h1 elements, inconsistent hierarchy"
+      },
+      "after": {
+        "code": "<h1>Page Title</h1>\n<h2>Section</h2>\n<h3>Subsection</h3>\n<h2>Another Section</h2>",
+        "description": "Proper hierarchy, single h1, logical nesting"
+      }
+    },
+    {
+      "title": "Semantic Emphasis vs Visual-Only Formatting",
+      "before": {
+        "code": "<b>Important text</b>\n<i>Emphasized text</i>\n<u>Underlined text</u>",
+        "description": "Using only visual formatting tags - no semantic meaning"
+      },
+      "after": {
+        "code": "<strong>Important text</strong>\n<em>Emphasized text</em>\n<ins>Inserted text</ins>",
+        "description": "Semantic elements convey meaning to assistive technologies"
+      }
+    },
+    {
+      "title": "List Usage",
+      "before": {
+        "code": "<p>Step 1: Do this</p>\n<p>Step 2: Do that</p>\n<p>Step 3: Finish</p>\n\n<p>- Item 1<br>\n- Item 2<br>\n- Item 3</p>",
+        "description": "Using paragraphs and line breaks instead of proper list elements"
+      },
+      "after": {
+        "code": "<ol>\n    <li>Do this</li>\n    <li>Do that</li>\n    <li>Finish</li>\n</ol>\n\n<ul>\n    <li>Item 1</li>\n    <li>Item 2</li>\n    <li>Item 3</li>\n</ul>",
+        "description": "Proper list elements with clear structure and meaning"
+      }
+    },
+    {
+      "title": "Blockquote Usage",
+      "before": {
+        "code": "<p>\"This is a quote\" - Author</p>\n<div style=\"margin-left: 20px;\">\n    <p>This is an important quote from a book.</p>\n</div>",
+        "description": "Manual formatting without semantic meaning"
+      },
+      "after": {
+        "code": "<blockquote cite=\"https://example.com/source\">\n    <p>This is an important quote from a book.</p>\n</blockquote>\n<p><cite>Author Name</cite></p>",
+        "description": "Proper semantic markup for quotations"
+      }
+    }
+  ],
+  "insights": [
+    "Always use semantic elements (strong, em) instead of visual-only tags (b, i)",
+    "Maintain proper heading hierarchy - never skip levels",
+    "Use lists (ol, ul, dl) for list content, not paragraphs with line breaks",
+    "Use blockquote for extended quotations, not div with manual styling",
+    "One h1 per page, followed by h2 for sections, h3 for subsections"
+  ]
+}

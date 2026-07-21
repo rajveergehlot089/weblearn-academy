@@ -1,0 +1,25 @@
+{
+  "topicId": "01-daily-greetings",
+  "questions": [
+    {
+      "question": "What is Daily Greetings & Introductions and why is it important?",
+      "answer": "Daily Greetings & Introductions is a fundamental concept that Hello, how are you, introducing yourself, and common pleasantries. It's important because it forms the foundation for building robust and efficient applications. Understanding Daily Greetings & Introductions allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Daily Greetings & Introductions in a real project?",
+      "answer": "In practice, Daily Greetings & Introductions is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Daily Greetings & Introductions?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Daily Greetings & Introductions to a beginner?",
+      "answer": "Daily Greetings & Introductions is essentially about hello, how are you, introducing yourself, and common pleasantries. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

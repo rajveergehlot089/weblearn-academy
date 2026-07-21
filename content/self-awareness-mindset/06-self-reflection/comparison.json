@@ -1,0 +1,81 @@
+{
+  "topicId": "06-self-reflection",
+  "comparisons": [
+    {
+      "concept": "Journaling Methods",
+      "expressive": {
+        "name": "Expressive Writing (Pennebaker)",
+        "method": "Write for 20 minutes about deepest thoughts/feelings about a stressful experience. No editing.",
+        "evidence": "Improved immune function, reduced anxiety, fewer doctor visits.",
+        "best_for": "Processing difficult experiences, emotional healing.",
+        "time_required": "20 minutes per session, 3-4 sessions minimum."
+      },
+      "bullet": {
+        "name": "Bullet Journaling",
+        "method": "Rapid logging of events, thoughts, tasks using symbols and brief entries.",
+        "evidence": "Increases organization and self-awareness through pattern recognition.",
+        "best_for": "Tracking habits, managing tasks, low-time-commitment reflection.",
+        "time_required": "5-10 minutes daily."
+      },
+      "prompted": {
+        "name": "Prompted Journaling",
+        "method": "Answering specific reflection questions rather than free-writing.",
+        "evidence": "Provides structure that prevents aimless writing; targets specific growth areas.",
+        "best_for": "Focused self-improvement, building specific skills, beginners.",
+        "time_required": "10-15 minutes daily."
+      },
+      "gratitude": {
+        "name": "Gratitude Journaling",
+        "method": "Writing 3 specific things you're grateful for each day.",
+        "evidence": "Increases happiness by 25%, improves sleep, reduces depression symptoms.",
+        "best_for": "Building positive mindset, improving relationships, mental health.",
+        "time_required": "5 minutes daily."
+      },
+      "explanation": "No single method is best — use different approaches for different goals. For emotional processing: expressive writing. For organization and tracking: bullet journaling. For focused improvement: prompted journaling. For well-being: gratitude journaling. Most effective: combine 2-3 methods."
+    },
+    {
+      "concept": "Reflection Timing",
+      "daily_review": {
+        "name": "Daily Review (5-10 minutes)",
+        "timing": "End of each day",
+        "questions": "What went well? What could improve? What did I learn?",
+        "benefit": "Captures insights while fresh; builds daily self-awareness habit.",
+        "risk": "Can become superficial if done mechanically."
+      },
+      "weekly_ritual": {
+        "name": "Weekly Reflection (20-30 minutes)",
+        "timing": "End of each week (Sunday evening or Monday morning)",
+        "questions": "What patterns do I notice? What am I avoiding? What will I do differently?",
+        "benefit": "Deeper analysis; connects daily events into patterns.",
+        "risk": "May feel overwhelming without daily practice foundation."
+      },
+      "monthly_review": {
+        "name": "Monthly Deep Dive (1-2 hours)",
+        "timing": "End of each month",
+        "questions": "Am I aligned with my values? What goals am I progressing on? What needs to change?",
+        "benefit": "Strategic perspective; ensures alignment between actions and values.",
+        "risk": "Can become avoidance if not grounded in daily/weekly practice."
+      },
+      "explanation": "Daily reflection captures insights. Weekly reflection finds patterns. Monthly reflection ensures alignment. All three are necessary — daily without monthly is tactical without strategic; monthly without daily is theoretical without grounded evidence."
+    },
+    {
+      "concept": "Reflection Outcomes",
+      "rumination": {
+        "name": "Rumination (Unproductive)",
+        "characteristics": "Repetitive, passive focus on problems without solution.",
+        "thought_pattern": "'Why does this always happen to me?' 'What's wrong with me?'",
+        "outcome": "Increased anxiety, depression, paralysis.",
+        "cure": "Structured reflection with action steps; time limits; external perspective."
+      },
+      "reflection": {
+        "name": "Reflection (Productive)",
+        "characteristics": "Curious, non-judgmental examination with goal of learning.",
+        "thought_pattern": "'What happened? What can I learn? What will I do differently?'",
+        "outcome": "Increased self-awareness, improved performance, growth.",
+        "foundation": "Self-compassion, structured frameworks, action orientation."
+      },
+      "explanation": "The difference between rumination and reflection is the orientation: rumination looks backward with judgment; reflection looks forward with curiosity. Self-compassion is the key differentiator — research shows self-compassionate reflection leads to growth, while self-critical reflection leads to rumination."
+    }
+  ],
+  "keyInsight": "Effective reflection combines daily captures, weekly pattern analysis, and monthly strategic alignment. Use structured frameworks (Gibbs' Cycle, prompted questions) to avoid superficiality. The difference between productive reflection and destructive rumination is self-compassion and action-orientation. Consistency (5 minutes daily) matters more than intensity."
+}

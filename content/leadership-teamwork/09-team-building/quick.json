@@ -1,0 +1,26 @@
+{
+  "topicId": "09-team-building",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Team Building Beyond Trust Falls",
+      "body": "Effective team building isn't about forced fun or awkward icebreakers. It's about creating shared experiences that build trust, improve communication, and reveal each person's strengths. The best team building happens through real work — solving real problems together — not through artificial exercises. That said, structured activities can accelerate trust when a team is new or struggling."
+    },
+    {
+      "heading": "The Four Types of Team Building",
+      "body": "1. **Social bonding**: Getting to know each other as people, not just coworkers. Coffee chats, team lunches, personal sharing.\n\n2. **Communication practice**: Improving how the team talks to each other. Active listening exercises, feedback workshops, meeting facilitation training.\n\n3. **Problem-solving**: Tackling a challenge together. Hackathons, cross-functional projects, case study discussions.\n\n4. **Reflection**: Looking inward as a team. Retrospectives, team health checks, lessons-learned sessions."
+    },
+    {
+      "heading": "Low-Cost, High-Impact Activities",
+      "body": "You don't need a big budget. Try:\n\n• **User manual of me**: Each person writes a one-page 'how to work with me' document. Share with the team.\n• **Team retrospective**: Weekly 30-minute reflection on what worked and what didn't.\n• **Lunch and learn**: Someone shares expertise over lunch. Builds knowledge sharing.\n• **Pair rotations**: Different pairs work together each week. Builds cross-training.\n• **Gratitude circle**: At meeting end, each person thanks one teammate for something specific."
+    }
+  ],
+  "jargon": [
+    { "term": "Team Building", "definition": "Activities and processes designed to improve team effectiveness through better relationships, communication, and collaboration." },
+    { "term": "Psychological Safety", "definition": "The shared belief that the team is safe for interpersonal risk-taking. Essential for team building to work." },
+    { "term": "User Manual of Me", "definition": "A personal document each team member creates describing their working style, preferences, strengths, and triggers." },
+    { "term": "Retrospective", "definition": "A structured team reflection session to discuss what went well, what didn't, and what to change." }
+  ],
+  "summary": "Effective team building creates shared experiences that build trust and communication. The best activities are low-cost, high-impact, and focused on real work rather than artificial exercises."
+}

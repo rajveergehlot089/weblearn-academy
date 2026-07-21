@@ -1,0 +1,29 @@
+{
+  "topicId": "06-storytelling",
+  "questions": [
+    {
+      "question": "How do I make a dry technical topic interesting?",
+      "answer": "Find the human story inside the technical content. Instead of 'Here's how we configured Kubernetes,' try 'Here's the outage that taught us we needed Kubernetes.' Start with a problem people relate to — downtime, slow performance, frustrated users — then walk through the investigation and solution. The audience cares about the journey, not just the destination.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How long should a story be within a presentation?",
+      "answer": "Within a 30-minute talk, you might have 2-3 stories, each lasting 3-5 minutes. A single story shouldn't dominate the entire talk — it should serve a purpose (illustrate a problem, demonstrate a technique, drive home a lesson). The story should take up about 30-40% of your talk time, with the rest being explanation, code, and audience interaction.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Is it okay to share failures in a professional presentation?",
+      "answer": "Absolutely — failure stories are often the most valued talks. The key is structure: share the failure, explain the root cause, and provide a clear lesson the audience can apply. Don't share failures to complain or seek sympathy — share them to help others avoid the same mistake. Audiences respect vulnerability and honesty far more than pretending everything always goes perfectly.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do I avoid sounding like I'm just reading slides?",
+      "answer": "Use slides as visual support, not a script. Put only keywords, images, or code on slides — the details come from your voice. Practice without slides to internalize the flow. Use transitions between slides as conversation points: 'Now, let me show you what happened next...' Make eye contact with the audience, not the screen. Record yourself to catch when you're reading vs. speaking.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I handle technical talks for mixed audiences?",
+      "answer": "Layer your content. Start with the 'why' that everyone understands (the problem, the impact). Then add a 'what' for the technical middle (the approach, the architecture). For the deepest technical detail, offer a 'how' section that non-technical audience members can skip. Use analogies: 'Think of a load balancer like a restaurant host — it distributes incoming guests to available tables.' Analogies bridge the gap between technical and non-technical."
+    }
+  ]
+}

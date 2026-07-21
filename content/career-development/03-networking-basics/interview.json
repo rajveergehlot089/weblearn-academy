@@ -1,0 +1,30 @@
+{
+  "topicId": "03-networking-basics",
+  "questions": [
+    {
+      "question": "How do I network if I'm an introvert?",
+      "answer": "Focus on depth over breadth. One-on-one coffee chats or informational interviews play to introvert strengths — deep, focused conversations. Start online by commenting on people's posts before reaching out. Write articles or blog posts as an asynchronous form of networking. At events, volunteer for a role (registration, timekeeper) — it gives you a purpose and natural conversation starters.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What do I say when reaching out to someone I don't know?",
+      "answer": "Be specific and genuine. Reference something they've written, built, or said. 'I read your article on React server components — your point about hydration really changed how I think about performance. I'm curious how your team handles...' This shows you've done your homework and aren't just mass-messaging people.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How many networking contacts do I need?",
+      "answer": "Quality matters far more than quantity. 50 people who genuinely know your work, trust your abilities, and would think of you for opportunities are worth more than 5,000 LinkedIn connections who couldn't pick you out of a lineup. Focus on building real relationships, not accumulating numbers.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What's an informational interview and how do I request one?",
+      "answer": "An informational interview is a 20-30 minute conversation where you learn about someone's role, company, or career path. To request one, send a brief message: 'Hi [name], I'm a [your role] exploring [topic]. I really admire your work at [company]. Would you have 20 minutes for a virtual coffee? I'd love to learn about your experience.' Always respect their time, come prepared with questions, and send a thank-you note after.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I maintain relationships with people I haven't spoken to in months?",
+      "answer": "Don't apologize for the gap — just reach out with value. Share an article relevant to their work, congratulate them on a recent achievement, or make an introduction between two people who should know each other. 'Hey [name], I saw [this article] and thought of our conversation about [topic]. Hope things are going well!' Simple, genuine, and doesn't require an excuse for the silence.",
+      "difficulty": "medium"
+    }
+  ]
+}

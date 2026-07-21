@@ -1,0 +1,24 @@
+{
+  "topicId": "05-time-management",
+  "comparisons": [
+    {
+      "concept": "Time Management vs Energy Management",
+      "time_management": "Focus: Scheduling tasks, meeting deadlines, managing calendar. Tools: Calendar apps, to-do lists, time blocking. Metric: Hours spent on tasks. Risk: Burning out by doing more with less energy.",
+      "energy_management": "Focus: Aligning tasks with energy levels, protecting recovery time, optimizing physical state. Tools: Sleep tracking, exercise, breaks, nutrition. Metric: Quality of output per hour. Risk: Being too relaxed and missing deadlines.",
+      "explanation": "Time management tells you WHEN to do things; energy management tells you HOW to do them well. The best approach combines both: schedule important tasks during peak energy hours and protect recovery time."
+    },
+    {
+      "concept": "To-Do Lists vs Calendar Blocking",
+      "to_do_lists": "Pros: Simple, flexible, captures everything. Cons: No time estimates, no priority signals, easy to ignore. Best for: Quick capture of tasks, simple projects. Risk: Never-ending lists that cause anxiety.",
+      "calendar_blocking": "Pros: Forces time estimates, creates accountability, shows capacity. Cons: Less flexible, requires planning time. Best for: Complex projects, deep work, recurring routines. Risk: Over-scheduling and no buffer time.",
+      "explanation": "To-do lists are for capturing; calendars are for committing. Use both: capture tasks in a list, then schedule them on your calendar. If it's not on the calendar, it's not really a commitment."
+    },
+    {
+      "concept": "Multitasking vs Single-Tasking",
+      "multitasking": "Reality: You're not doing two things at once — you're switching between them rapidly. Cost: Each switch costs 15-25 minutes of refocusing. Result: More mistakes, lower quality, more stress. Feels productive but isn't.",
+      "single_tasking": "Method: Focus on one task at a time, complete it, then move to the next. Benefit: Higher quality, faster completion, less stress. Feels slower but produces better results. Requires discipline to resist switching.",
+      "explanation": "Your brain can't truly multitask on cognitive work. Every 'switch' costs time and attention. Single-tasking feels less productive but actually produces more and better work in less time."
+    }
+  ],
+  "keyInsight": "The goal of time management isn't to fill every minute with productivity — it's to spend more time on what matters and less on what doesn't. Protect your peak energy hours for deep work, batch similar tasks, and remember that rest is productive."
+}

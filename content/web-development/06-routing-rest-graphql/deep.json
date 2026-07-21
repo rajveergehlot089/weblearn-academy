@@ -1,0 +1,35 @@
+{
+  "topicId": "06-routing-rest-graphql",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "REST API Design",
+      "body": "Good REST APIs follow predictable patterns:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// RESTful URL patterns:\n// GET    /api/users          -> Get all users\n// GET    /api/users/123      -> Get user 123\n// POST   /api/users          -> Create new user\n// PUT    /api/users/123      -> Update user 123\n// DELETE /api/users/123      -> Delete user 123\n\n// In Express:\napp.get('/api/users/:id', (req, res) => {\n  const user = findUser(req.params.id);\n  res.json(user);\n});\n\napp.post('/api/users', (req, res) => {\n  const newUser = createUser(req.body);\n  res.status(201).json(newUser);\n});",
+        "explanation": "REST conventions: plural nouns for resources (/users, not /user), use HTTP methods for actions, return appropriate status codes (201 for creation)."
+      }
+    },
+    {
+      "heading": "GraphQL Basics",
+      "body": "GraphQL uses a single endpoint and a query language:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// REST: Multiple requests\nGET /api/users/123\nGET /api/users/123/posts\nGET /api/users/123/comments\n\n// GraphQL: One request with exact fields\n// POST /graphql\n// Body: {\n//   query: `\n//     {\n//       user(id: 123) {\n//         name\n//         email\n//         posts { title }\n//       }\n//     }\n//   `\n// }\n\n// Response: Only the fields you asked for",
+        "explanation": "GraphQL's superpower: you ask for exactly what you need. No over-fetching (getting extra data) or under-fetching (needing multiple requests)."
+      }
+    },
+    {
+      "heading": "REST vs GraphQL",
+      "body": "When to use which:",
+      "code": {
+        "language": "javascript",
+        "snippet": "/*\n  REST: Best when\n  - Your API is CRUD-based\n  - You want HTTP caching\n  - Multiple teams consume your API\n  - You want simple, well-understood conventions\n\n  GraphQL: Best when\n  - Clients need different data shapes\n  - You want to avoid over/under-fetching\n  - Your data is deeply nested\n  - You have many clients (web, mobile)\n\n  REST = Simplicity + HTTP features\n  GraphQL = Flexibility + Single request\n*/",
+        "explanation": "REST is simpler to build and debug. GraphQL is more efficient for complex data needs. Many companies use BOTH."
+      }
+    }
+  ],
+  "summary": "Routing maps URLs to handlers. REST uses URL patterns + HTTP methods for predictable CRUD APIs. GraphQL uses a single endpoint with a query language for flexible data fetching."
+}

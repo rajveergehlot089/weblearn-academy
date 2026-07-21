@@ -1,0 +1,36 @@
+{
+  "topicId": "05-written-communication",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Written Communication Matters",
+      "body": "Written communication creates a permanent record. Unlike spoken words, your emails, messages, and reports can be re-read, forwarded, and referenced months later. A single poorly written email can damage a professional relationship. Strong written skills make you appear competent, organized, and trustworthy."
+    },
+    {
+      "heading": "The 4 C's of Professional Writing",
+      "bulletPoints": [
+        "Clear — Use simple language. One idea per sentence. No jargon unless your audience knows it.",
+        "Concise — Cut unnecessary words. If a sentence doesn't add value, delete it.",
+        "Correct — Grammar and spelling errors undermine credibility. Always proofread.",
+        "Courteous — Be respectful and professional, even in difficult messages."
+      ]
+    },
+    {
+      "heading": "Email Best Practices in 30 Seconds",
+      "bulletPoints": [
+        "Subject line: Specific and actionable — 'Meeting moved to Thursday 2pm' not 'Update'",
+        "Opening: State the purpose in the first sentence",
+        "Body: One topic per paragraph. Use bullet points for lists.",
+        "Close: Clear call to action — what do you need from the reader?",
+        "Proofread: Read it aloud before sending. If it sounds awkward, rewrite it."
+      ]
+    }
+  ],
+  "jargon": [
+    { "term": "Call to Action (CTA)", "definition": "The specific next step you want the reader to take. Example: 'Please review the attached and reply by Friday.'" },
+    { "term": "TL;DR", "definition": "Too Long; Didn't Read. A summary at the top of a long email for busy readers. Format: 'TL;DR: [2-3 sentence summary].'" },
+    { "term": "Bottom Line Up Front (BLUF)", "definition": "Put the key information first, then provide context. Prevents the reader from having to search for the main point." }
+  ],
+  "summary": "Written communication creates permanent records — make yours count. Follow the 4 C's: Clear, Concise, Correct, Courteous. In emails: specific subject lines, purpose in the first sentence, one topic per paragraph, and a clear call to action."
+}

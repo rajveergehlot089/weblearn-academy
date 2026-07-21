@@ -1,0 +1,29 @@
+{
+  "topicId": "05-public-speaking",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Developers Should Speak",
+      "body": "Public speaking is a career multiplier. Developers who can present their work clearly get promoted faster, earn more, and are offered more opportunities. Speaking at meetups, conferences, or even internal team meetings positions you as a leader — not just a coder. You don't need to be an extrovert to be a good speaker; you need to be prepared."
+    },
+    {
+      "heading": "The 3 P's Framework",
+      "body": "Every successful presentation relies on three elements:\n\n1. **Preparation**: Know your material inside and out. Research your audience. Structure your talk with a clear beginning, middle, and end.\n\n2. **Practice**: Rehearse out loud at least 3-5 times. Practice in front of a mirror, record yourself, or present to a friend. Practice is what separates good talks from great ones.\n\n3. **Performance**: When you're on stage, focus on connecting with the audience — not on being perfect. Make eye contact, speak slowly, and pause when you need to."
+    },
+    {
+      "heading": "Talk Structure That Works",
+      "body": "Use the Problem → Solution → Demo → Takeaway framework:\n\n1. **Problem**: What challenge did you face? Make the audience care.\n2. **Solution**: How did you solve it? Walk through your approach.\n3. **Demo**: Show it in action — live demos or screenshots.\n4. **Takeaway**: What should the audience remember or do differently?\n\nThis structure works for lightning talks (5 minutes) and full sessions (30-45 minutes)."
+    },
+    {
+      "heading": "Your First Speaking Opportunity",
+      "body": "Start small. Give a 5-minute lightning talk at your company's team meeting or a local meetup. You don't need a polished 45-minute conference talk to begin. Lightning talks are low-pressure, high-reward opportunities to practice and build confidence."
+    }
+  ],
+  "jargon": [
+    { "term": "Lightning Talk", "definition": "A short presentation, typically 5-10 minutes, focused on a single idea. Lightning talks are great for first-time speakers because they're low-commitment and high-impact." },
+    { "term": "Slide Deck", "definition": "The visual presentation slides (PowerPoint, Keynote, Google Slides) that accompany your talk. Good slides support your words, not replace them." },
+    { "term": "Call to Action (CTA)", "definition": "The specific thing you want the audience to do after your talk — try a tool, read an article, visit your repo, or connect with you." }
+  ],
+  "summary": "Public speaking multiplies your career impact. Use the 3 P's: Preparation (know your material and audience), Practice (rehearse 3-5 times out loud), and Performance (connect with the audience, not perfection). Start with a 5-minute lightning talk — the Problem → Solution → Demo → Takeaway structure works at any length."
+}

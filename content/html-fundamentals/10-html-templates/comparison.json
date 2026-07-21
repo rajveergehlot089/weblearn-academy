@@ -1,0 +1,59 @@
+{
+  "topicId": "10-html-templates",
+  "type": "comparison",
+  "estimatedMinutes": 10,
+  "comparisons": [
+    {
+      "title": "Incomplete vs Complete Head Section",
+      "before": {
+        "code": "<head>\n    <title>My Page</title>\n</head>",
+        "description": "Missing essential meta tags, no social sharing, no favicons"
+      },
+      "after": {
+        "code": "<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>WebLearn Academy - Learn Web Development</title>\n    <meta name=\"description\" content=\"Comprehensive courses on HTML, CSS, and JavaScript.\">\n    <meta property=\"og:title\" content=\"WebLearn Academy\">\n    <meta property=\"og:description\" content=\"Learn web development today.\">\n    <meta property=\"og:image\" content=\"https://example.com/og.jpg\">\n    <link rel=\"icon\" href=\"/favicon.ico\">\n</head>",
+        "description": "Complete head with charset, viewport, SEO, social, and favicon"
+      }
+    },
+    {
+      "title": "Hidden vs Template Content",
+      "before": {
+        "code": "<div id=\"template\" style=\"display: none;\">\n    <div class=\"card\">\n        <h3></h3>\n        <p></p>\n    </div>\n</div>",
+        "description": "Using display:none - content is still in DOM and may affect layout"
+      },
+      "after": {
+        "code": "<template id=\"card-template\">\n    <div class=\"card\">\n        <h3></h3>\n        <p></p>\n    </div>\n</template>",
+        "description": "Template element - content is inert and not in DOM until cloned"
+      }
+    },
+    {
+      "title": "Missing vs Open Graph Tags",
+      "before": {
+        "code": "<head>\n    <title>My Website</title>\n</head>\n<!-- When shared on social media, shows generic preview -->",
+        "description": "No social sharing optimization"
+      },
+      "after": {
+        "code": "<head>\n    <meta property=\"og:type\" content=\"website\">\n    <meta property=\"og:title\" content=\"WebLearn Academy\">\n    <meta property=\"og:description\" content=\"Learn web development with comprehensive courses.\">\n    <meta property=\"og:image\" content=\"https://example.com/og-image.jpg\">\n    <meta property=\"og:url\" content=\"https://example.com\">\n    <meta name=\"twitter:card\" content=\"summary_large_image\">\n</head>\n<!-- When shared, shows custom preview with image -->",
+        "description": "Full social sharing optimization with OG and Twitter cards"
+      }
+    },
+    {
+      "title": "Generic vs SEO-Optimized Meta Tags",
+      "before": {
+        "code": "<head>\n    <title>Page</title>\n    <meta name=\"description\" content=\"Welcome to our website.\">\n</head>",
+        "description": "Vague title and description, poor SEO"
+      },
+      "after": {
+        "code": "<head>\n    <title>HTML Fundamentals Course - WebLearn Academy</title>\n    <meta name=\"description\" content=\"Learn HTML from scratch with comprehensive lessons on elements, attributes, forms, and accessibility. Start your web development journey today.\">\n    <meta name=\"keywords\" content=\"HTML, web development, course, tutorial, beginner\">\n</head>",
+        "description": "Specific, keyword-rich title and description for better SEO"
+      }
+    }
+  ],
+  "insights": [
+    "Always include charset and viewport meta tags",
+    "Write unique, descriptive titles (50-60 characters)",
+    "Write compelling descriptions (150-160 characters)",
+    "Include Open Graph tags for social sharing",
+    "Use template elements instead of hidden divs",
+    "Provide favicons for all devices and platforms"
+  ]
+}

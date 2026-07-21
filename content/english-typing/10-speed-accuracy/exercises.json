@@ -1,0 +1,31 @@
+{
+  "topicId": "10-speed-accuracy",
+  "exercises": [
+    {
+      "title": "Basic Practice",
+      "description": "Type these words: about their which would there could other after thought people because through between become country history program question general believe million remember nothing already example however perhaps certainly",
+      "hints": [
+        "Keep eyes on screen",
+        "Use proper finger placement"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "about their which would there could other after thought people because through between become country history program question general believe million remember nothing already example however perhaps certainly"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Sentence Practice",
+      "description": "Type each sentence without looking at the keyboard.",
+      "hints": [
+        "Focus on accuracy",
+        "Use all fingers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "The best error message is the one that never shows up.\nFirst solve the problem then write the code.\nSimplicity is prerequisite for reliability.\nThe most dangerous phrase is we have always done it this way.\nProgramming is not about typing it is about thinking.\nCode is like humor when you have to explain it it is bad.\nIt works on my machine works on mine too"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

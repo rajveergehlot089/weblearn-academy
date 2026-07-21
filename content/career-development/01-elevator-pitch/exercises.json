@@ -1,0 +1,47 @@
+{
+  "topicId": "01-elevator-pitch",
+  "exercises": [
+    {
+      "title": "Write Your 30-Second Pitch",
+      "description": "Using the 3-part formula (who you are, what you've done, what you're looking for), write a 30-second elevator pitch. Include at least one specific accomplishment with a measurable result. Time yourself reading it aloud — it should be under 60 seconds.",
+      "hints": [
+        "Start with your name and specific role (not just 'developer')",
+        "Include a number or metric from a past project",
+        "End with a question or statement that invites conversation"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Example: 'Hi, I'm Alex. I'm a React developer who specializes in building accessible web applications. Last year, I rebuilt our company's checkout flow, which increased conversion rates by 22%. I'm looking for a frontend role where I can focus on design systems and component libraries. What kind of frontend challenges is your team working on?'"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Audience Adaptation Drill",
+      "description": "Write three versions of your elevator pitch: (1) for a recruiter at a job fair, (2) for a senior engineer at a meetup, (3) for a non-technical friend. Each version should be under 60 seconds and tailored to what that specific audience cares about.",
+      "hints": [
+        "Recruiter version: emphasize skills, results, and what role you want",
+        "Senior engineer version: emphasize what you're learning and ask a question",
+        "Non-technical version: avoid jargon, explain your work in plain terms"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Recruiter: 'I'm a Python backend developer with 2 years of experience in REST APIs. I built a data pipeline that processes 50K records daily. I'm looking for a backend role at a mid-size company.'\n\nEngineer: 'I'm working on Python APIs and getting into distributed systems. I recently built a pipeline for batch processing. I'd love advice on how your team approaches idempotency in message queues.'\n\nNon-technical: 'I build the behind-the-scenes systems that make websites work — like when you submit a form and it actually saves your data. I process a lot of data automatically so teams don't have to do repetitive work.'"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Real-World Pitch Test",
+      "description": "Deliver your elevator pitch to at least two real people this week — a colleague, a friend, a family member, or someone at a meetup. After each conversation, note: (1) Did they ask a follow-up question? (2) What part seemed to resonate most? (3) What felt awkward? Use this feedback to revise your pitch.",
+      "hints": [
+        "If they ask a follow-up question, your hook worked",
+        "If they seem bored or check their phone, your pitch may be too long or generic",
+        "Record yourself on your phone and listen back for filler words"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "After testing, revise your pitch to: (1) Cut any sentence that didn't land, (2) Add more detail to the part that got the most interest, (3) Practice the revised version until it flows naturally. A pitch is never 'done' — it evolves as your experience grows."
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

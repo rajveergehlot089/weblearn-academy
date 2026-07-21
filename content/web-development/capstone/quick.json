@@ -1,0 +1,25 @@
+{
+  "topicId": "capstone",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is the Capstone Project?",
+      "body": "The capstone is where you put EVERYTHING together. You'll build a complete blog platform called DevBlog — with user accounts, blog posts, editing, deleting, likes, error handling, and loading states. Think of it as your graduation project: proving you understand how all the pieces connect."
+    },
+    {
+      "heading": "What You'll Build",
+      "body": "A simplified version of Medium or dev.to where users can:\n- Create an account and log in (authentication with JWT)\n- Write, edit, and delete blog posts (CRUD operations)\n- View all posts on a feed page (REST API)\n- Like posts (client-side interaction)\n- See loading spinners while data loads\n- Handle errors gracefully (network failures, validation errors)"
+    },
+    {
+      "heading": "How the Pieces Connect",
+      "body": "1. Frontend (HTML + CSS + JS) sends requests to the backend\n2. Backend (Node.js + Express) receives requests, checks auth, talks to the database\n3. Database (JSON file) stores users and posts permanently\n4. JWT tokens keep users logged in across requests\n5. The whole thing is one app working together — just like real production apps"
+    }
+  ],
+  "jargon": [
+    { "term": "Full-Stack", "definition": "An application that has both a frontend (what users see) and a backend (server + database)." },
+    { "term": "CRUD", "definition": "Create, Read, Update, Delete — the four basic operations every app needs." },
+    { "term": "Capstone", "definition": "A final project that demonstrates everything you've learned by building something real." }
+  ],
+  "summary": "The capstone ties together HTML, CSS, JS, REST APIs, auth, and databases into one complete blog application. By building it, you prove you understand how real web apps work end-to-end."
+}

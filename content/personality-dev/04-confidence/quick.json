@@ -1,0 +1,25 @@
+{
+  "topicId": "04-confidence",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is True Confidence?",
+      "body": "True confidence isn't the absence of fear — it's the belief that you can handle whatever comes your way. It's not arrogance (which is insecurity masked as superiority) or cockiness (which is pretending to know everything). Real confidence comes from knowing your strengths, accepting your weaknesses, and trusting your ability to learn and grow."
+    },
+    {
+      "heading": "The Confidence-Competence Loop",
+      "body": "Confidence and competence feed each other in a virtuous cycle:\n\n1. You try something new (even though you're nervous)\n2. You gain competence through practice\n3. Your competence builds confidence\n4. Your confidence motivates you to try harder things\n5. Repeat\n\nThe key insight: You don't wait for confidence to act — you build confidence BY acting. Action precedes confidence, not the other way around."
+    },
+    {
+      "heading": "The Imposter Syndrome Trap",
+      "body": "70% of people experience imposter syndrome at some point — the feeling that you're a fraud and don't deserve your success. High achievers are especially susceptible because they compare themselves to other high achievers.\n\n**How to break the cycle**:\n- Recognize that feeling like a fraud is normal, not proof you don't belong\n- Keep a 'wins' folder documenting your achievements\n- Talk about your feelings — you'll discover others feel the same way\n- Focus on learning, not proving yourself"
+    }
+  ],
+  "jargon": [
+    { "term": "Imposter Syndrome", "definition": "A psychological pattern where you doubt your accomplishments and fear being exposed as a 'fraud,' despite evidence of your competence." },
+    { "term": "Self-Efficacy", "definition": "Albert Bandura's concept: the belief in your ability to succeed in specific situations. It's built through mastery experiences, vicarious experiences, verbal persuasion, and emotional state." },
+    { "term": "Fixed vs Growth Mindset", "definition": "Carol Dweck's theory: Fixed mindset believes abilities are innate and unchangeable. Growth mindset believes abilities can be developed through effort and learning. Growth mindset is essential for building confidence." }
+  ],
+  "summary": "True confidence is believing you can handle challenges, not pretending you have no fears. It's built through action, not waiting. The confidence-competence loop shows that trying things builds competence, which builds confidence. 70% of people experience imposter syndrome — recognizing it and focusing on growth, not perfection, breaks the cycle."
+}

@@ -1,0 +1,35 @@
+{
+  "topicId": "04-confidence",
+  "exercises": [
+    {
+      "title": "The Wins Journal Challenge",
+      "description": "Start a daily practice of writing down 3 wins from each day. They can be small (made someone laugh, finished a task) or big (landed a client, received praise). For each win, write why it matters and how it shows your capability.",
+      "hints": ["Keep the journal by your bed so you do it before sleep", "Don't dismiss small wins — they add up", "Include wins from all areas of life, not just work"],
+      "solution": {
+        "language": "text",
+        "code": "Wins Journal - Week 1:\n\nDay 1:\n1. Spoke up in meeting (why: I usually stay quiet)\n2. Finished report ahead of deadline (why: shows I can manage time)\n3. Helped colleague solve problem (why: my knowledge is valuable)\n\nDay 2:\n1. Had difficult conversation with manager (why: I handled it maturely)\n2. Ran 3 miles without stopping (why: I'm building endurance)\n3. Received positive client feedback (why: my work matters)\n\nDay 3:\n1. Said 'no' to extra work (why: I'm setting boundaries)\n2. Learned new tool in 30 min (why: I can learn quickly)\n3. Made new friend at event (why: I can connect with people)\n\nKey insight: After 7 days, I noticed I was more willing to take risks. The journal made my capabilities tangible."
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "The Comfort Zone Expansion Plan",
+      "description": "Identify 5 things outside your comfort zone that would help you grow. Create a 5-week plan, tackling one each week. Start with the easiest and work up to the hardest. After each, write down what you learned and how it felt.",
+      "hints": ["Choose things that are uncomfortable but not terrifying", "Start with low-stakes situations", "Reward yourself after each challenge"],
+      "solution": {
+        "language": "text",
+        "code": "Comfort Zone Expansion Plan:\n\nWeek 1 (Easy): Introduce myself to a stranger at a coffee shop\nResult: Felt awkward but survived. Realized most people are friendly.\n\nWeek 2 (Medium): Speak up first in a team meeting\nResult: My idea was actually good! People listened and built on it.\n\nWeek 3 (Medium): Give a 5-minute presentation to my team\nResult: Heart racing, but I prepared well. Received positive feedback.\n\nWeek 4 (Hard): Negotiate my next project's deadline\nResult: Asked for 2 extra weeks, got 1. Better than nothing!\n\nWeek 5 (Hardest): Lead a meeting with senior leadership\nResult: Terrifying but transformative. Proved to myself I could do it.\n\nKey insight: Each week, the previous challenge felt easier. The growth was exponential, not linear."
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "The Imposter Syndrome Reframe",
+      "description": "When you feel like an imposter, complete this worksheet: (1) Write the imposter thought verbatim. (2) List evidence that contradicts it. (3) Write a reframe that acknowledges the feeling but focuses on growth. (4) Identify one action you can take today to build evidence of competence.",
+      "hints": ["Be specific with evidence — vague statements don't help", "The reframe should be realistic, not positive toxic positivity", "Focus on what you can control, not what you can't"],
+      "solution": {
+        "language": "text",
+        "code": "Imposter Syndrome Reframe Worksheet:\n\nImposter thought: 'I don't deserve this promotion. Everyone will find out I'm not qualified.'\n\nEvidence contradicting:\n1. I've exceeded my targets for 3 consecutive quarters\n2. My manager specifically recommended me for the role\n3. I've received positive feedback from 5 different colleagues\n4. I have 7 years of experience in this field\n5. I completed the leadership training program with top marks\n\nReframe: 'I feel anxious about the promotion because it's new and challenging. These feelings are normal. The evidence shows I'm qualified. I can learn what I don't know as I go.'\n\nAction today: Schedule a meeting with my manager to discuss my development plan for the new role."
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

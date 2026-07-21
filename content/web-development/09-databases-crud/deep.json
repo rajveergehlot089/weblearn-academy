@@ -1,0 +1,26 @@
+{
+  "topicId": "09-databases-crud",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "SQL vs NoSQL",
+      "body": "Understanding both paradigms:",
+      "code": {
+        "language": "javascript",
+        "snippet": "/*\n  SQL (PostgreSQL, MySQL)\n  Tables with fixed columns:\n  Users: id | name  | email\n         1  | Alice | alice@e.com\n         2  | Bob   | bob@e.com\n\n  NoSQL (MongoDB)\n  Flexible documents:\n  { name: 'Alice', email: 'alice@e.com',\n    address: { city: 'NYC' } }  // Nested!\n\n  SQL: Fixed structure, relationships, joins\n  NoSQL: Flexible structure, nested data\n*/",
+        "explanation": "SQL is like a spreadsheet — rigid structure, great for relationships. NoSQL is like a document — flexible, great for varied data."
+      }
+    },
+    {
+      "heading": "CRUD in Action",
+      "body": "All four operations with Express:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// CREATE\napp.post('/api/users', async (req, res) => {\n  const user = await db.users.create({\n    name: req.body.name,\n    email: req.body.email\n  });\n  res.status(201).json(user);\n});\n\n// READ\napp.get('/api/users', async (req, res) => {\n  const users = await db.users.find();\n  res.json(users);\n});\n\n// UPDATE\napp.put('/api/users/:id', async (req, res) => {\n  const user = await db.users.findByIdAndUpdate(\n    req.params.id,\n    { name: req.body.name },\n    { new: true }\n  );\n  res.json(user);\n});\n\n// DELETE\napp.delete('/api/users/:id', async (req, res) => {\n  await db.users.findByIdAndDelete(req.params.id);\n  res.json({ success: true });\n});",
+        "explanation": "Every API endpoint follows this pattern. POST creates (201), GET reads (200), PUT updates (200), DELETE removes (200)."
+      }
+    }
+  ],
+  "summary": "Databases store data permanently. CRUD (Create, Read, Update, Delete) are the 4 operations every app needs. SQL uses tables with fixed structure; NoSQL uses flexible documents."
+}

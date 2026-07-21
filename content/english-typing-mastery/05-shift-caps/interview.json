@@ -1,0 +1,25 @@
+{
+  "topicId": "05-shift-caps",
+  "questions": [
+    {
+      "question": "What is Shift Keys & Capital Letters and why is it important?",
+      "answer": "Shift Keys & Capital Letters is a fundamental concept that Using shift for capitals and the Caps Lock key. It's important because it forms the foundation for building robust and efficient applications. Understanding Shift Keys & Capital Letters allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Shift Keys & Capital Letters in a real project?",
+      "answer": "In practice, Shift Keys & Capital Letters is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Shift Keys & Capital Letters?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Shift Keys & Capital Letters to a beginner?",
+      "answer": "Shift Keys & Capital Letters is essentially about using shift for capitals and the caps lock key. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

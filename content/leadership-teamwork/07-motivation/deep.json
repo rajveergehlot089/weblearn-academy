@@ -1,0 +1,28 @@
+{
+  "topicId": "07-motivation",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Self-Determination Theory (SDT)",
+      "body": "Deci and Ryan's SDT identifies three innate psychological needs:\n\n**1. Autonomy**: The need to feel in control of one's own behavior and goals.\n• Leadership application: Let people choose HOW they work. Offer options, not mandates. Ask for input on decisions that affect them.\n• Red flag: Micromanagement, rigid processes, excessive oversight.\n\n**2. Competence**: The need to feel effective and capable.\n• Leadership application: Provide stretch assignments,及时 feedback, and skill development opportunities. Match challenge to skill level.\n• Red flag: No learning opportunities, unclear expectations, only negative feedback.\n\n**3. Relatedness**: The need to feel connected to others.\n• Leadership application: Build genuine relationships, create team rituals, celebrate together, support during difficulties.\n• Red flag: Isolation, lack of team identity, transactional relationships.\n\nWhen all three needs are met, motivation is high. When any one is unmet, motivation drops."
+    },
+    {
+      "heading": "Herzberg's Two-Factor Theory",
+      "body": "Frederick Herzberg distinguished between factors that prevent dissatisfaction and factors that create satisfaction:\n\n**Hygiene Factors** (prevent dissatisfaction but don't motivate):\n• Salary, job security, working conditions, company policies\n• Fixing these eliminates complaints but doesn't create engagement\n\n**Motivators** (create satisfaction and engagement):\n• Achievement, recognition, meaningful work, responsibility, growth\n• These are what people actually stay for\n\n**Practical implication**: Don't assume that giving someone a raise will motivate them. First ensure hygiene factors are adequate, then focus on motivators. A well-paid employee in a soul-crushing job is still unmotivated."
+    },
+    {
+      "heading": "Recognition That Actually Works",
+      "body": "Most recognition programs fail because they're generic and infrequent. Effective recognition:\n\n• **Specific**: Not 'great job' but 'your code review caught a critical bug that would have cost us 3 days.'\n• **Timely**: Within 24 hours of the behavior.\n• **Sincere**: People detect fake praise instantly.\n• **Public or private** depending on the person (ask their preference).\n• **Connected to values**: 'This reflects our value of quality.'\n\n**Recognition systems that work:**\n• Weekly shout-outs in team meetings\n• Peer-to-peer recognition tools\n• Thank-you notes (handwritten, even in digital age)\n• Linking recognition to specific business outcomes\n\n**What doesn't work:**\n• Annual awards (too infrequent, too generic)\n• Trophy walls (people see through performative recognition)\n• Money-only recognition (extrinsic, temporary)"
+    },
+    {
+      "heading": "Motivating Through Purpose",
+      "body": "People want to know their work matters. Research shows:\n\n• Hospital janitors who saw themselves as 'healthcare contributors' (not just cleaners) were more engaged and creative.\n• Call center employees who met the scholarship recipients they funded through donations showed 171% higher performance.\n\n**How to connect work to purpose:**\n• Share customer stories: 'Here's how our work changed someone's life.'\n• Connect individual tasks to team outcomes: 'Your data analysis directly informed the strategy.'\n• Help people see the 'why' behind the 'what.'\n• Invite customers or end-users to speak to the team.\n\nThe leader's job: be the translator between daily tasks and meaningful impact."
+    },
+    {
+      "heading": "The Demotivation Multiplier",
+      "body": "Demotivation is more powerful than motivation — one negative experience outweighs several positive ones. Common demotivators:\n\n• **Unfairness**: Real or perceived inequity in workload, pay, or recognition\n• **Micromanagement**: Signals distrust, kills autonomy\n• **Lack of growth**: Stagnation is demotivating even for people who don't ask for promotions\n• **Broken promises**: If you say you'll do something and don't, trust erodes\n• **Ignoring contributions**: Being invisible is worse than being criticized\n\n**The fix**: Regularly ask your team: 'What's one thing that would make your work more fulfilling?' Then actually act on the answers."
+    }
+  ],
+  "summary": "Motivation is driven by three psychological needs: autonomy, competence, and relatedness. Leaders boost motivation through purpose, specific recognition, and growth opportunities — while eliminating demotivators like unfairness, micromanagement, and stagnation."
+}

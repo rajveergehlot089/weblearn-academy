@@ -1,0 +1,48 @@
+{
+  "topicId": "07-overcoming-nervousness",
+  "exercises": [
+    {
+      "title": "Pre-Talk Ritual Design",
+      "description": "Create a personal 10-minute pre-talk ritual combining at least 4 techniques from this lesson. Write it down as a step-by-step checklist. Test it before your next presentation or meeting. After the talk, note which parts helped most and refine your ritual.",
+      "hints": [
+        "Include at least one physical technique (breathing, stretching, walking)",
+        "Include one mental technique (visualization, reframing, positive self-talk)",
+        "Include one practical technique (reviewing your opening, checking your notes)",
+        "Do it in a private space — bathroom, empty room, or parked car"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "My 10-Minute Pre-Talk Ritual:\n\n1. (2 min) Box breathing: 4-4-4-4, repeat 5 cycles\n2. (2 min) Power pose: hands on hips, chest open, standing tall\n3. (2 min) Visualization: imagine delivering the talk well, audience engaged\n4. (2 min) Vocal warm-up: humming, tongue twisters, reading my opening out loud\n5. (1 min) Grounding: name 5 things I see, 4 I hear, 3 I touch\n6. (1 min) Reframe: 'I'm excited to share this. The audience wants me to succeed.'\n\nThen: walk on stage and find 3 friendly faces in the audience."
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Anxiety Journaling",
+      "description": "Before your next presentation, write down: (1) Your specific fears (what exactly are you afraid of?), (2) For each fear, what's the realistic worst case? (3) What's your backup plan for each? After the talk, write down: (1) What actually happened vs. what you feared, (2) What went well, (3) What you'd do differently. Compare before and after.",
+      "hints": [
+        "Be honest about your fears — write them down even if they seem silly",
+        "For each fear, ask: 'Has this ever actually happened to me or anyone I know?'",
+        "After the talk, most people find the reality was far better than the fear"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Before:\nFears: (1) Forgetting my place, (2) Demo failing, (3) Audience asking a question I can't answer\nRealistic worst case: (1) I check my notes and recover, (2) I switch to screenshots, (3) I say 'Great question — let me look into that and follow up'\nBackup plans: written down and ready\n\nAfter:\nReality: I didn't forget anything major. Demo worked perfectly. One question stumped me, but I handled it gracefully.\nWhat went well: Opening hook got laughs. Pacing was good. Q&A felt natural.\nWhat to improve: Spend less time on slides 3-5 (ran 2 min over time)."
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Graded Exposure Ladder",
+      "description": "Create a personal 'exposure ladder' — 5 speaking situations ranked from least to most anxiety-provoking. Plan to do the easiest one this month, and schedule each rung for the next 3-6 months. Each rung should stretch your comfort zone slightly, not terrify you.",
+      "hints": [
+        "Start with low-stakes, low-audience situations",
+        "Each step should be slightly harder, not dramatically harder",
+        "Include a mix of formats: presenting, speaking up in meetings, leading discussions"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "My Exposure Ladder:\n\nRung 1 (This month): Give a 3-minute update at my team standup — practice speaking up\nRung 2 (Month 2): Present a 5-minute lightning talk at a team meeting — prepared with slides\nRung 3 (Month 3): Lead a 15-minute knowledge-sharing session at work — teach something I know well\nRung 4 (Month 4): Give a talk at a local meetup — 15-20 minutes, small audience\nRung 5 (Month 6): Submit to speak at a conference — 30-minute session\n\nAfter each rung: journal what went well, what to improve, and how anxiety compared to the last time."
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

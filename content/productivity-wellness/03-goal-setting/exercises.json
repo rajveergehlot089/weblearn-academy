@@ -1,0 +1,47 @@
+{
+  "topicId": "03-goal-setting",
+  "exercises": [
+    {
+      "title": "Write Your SMART Goals",
+      "description": "Create 3 SMART goals for this quarter: one career goal, one learning goal, and one health goal. For each, verify it passes the SMART checklist: Is it Specific? Measurable? Achievable? Relevant? Time-bound? If any answer is no, revise it.",
+      "hints": [
+        "Start with what you want, then work backward to make it SMART",
+        "Use numbers and dates — 'improve' is vague, 'complete 15 practice problems by March 31' is specific",
+        "Check achievability: do you have the time, resources, and skills to do this?"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "SMART GOALS EXAMPLES:\n\nCAREER GOAL:\n❌ 'Get promoted'\n✅ 'Complete 3 high-impact projects (auth refactor, API v2, dashboard redesign)\n    and receive positive 360 review feedback by June 30'\n    S: 3 specific projects + 360 feedback\n    M: 3 projects completed + positive feedback\n    A: Projects are already planned in roadmap\n    R: Directly supports senior promotion criteria\n    T: June 30 deadline\n\nLEARNING GOAL:\n❌ 'Learn system design'\n✅ 'Complete 15 system design practice problems on Pramp (score 7+),\n    read 2 architecture books, and document 1 real system at work\n    by April 30'\n    S: Specific platform, books, and documentation task\n    M: 15 problems + 2 books + 1 doc\n    A: ~5 hours/week commitment, achievable\n    R: Critical for career growth\n    T: April 30 deadline\n\nHEALTH GOAL:\n❌ 'Exercise more'\n✅ 'Run 3x/week (Mon/Wed/Fri) for 30 min before work, tracked in\n    Strava, with a goal of running 10 miles/week by end of Q1'\n    S: Running, 3x/week, specific days and times\n    M: 10 miles/week, tracked in Strava\n    A: 30 min sessions are realistic\n    R: Improves focus, energy, and stress management\n    T: End of Q1"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Create Your Personal OKR",
+      "description": "Choose one of your SMART goals and convert it into a personal OKR. Write one inspiring Objective and 2-4 quantitative Key Results. Then score yourself honestly at the end of the quarter: 0.0-0.3 (missed), 0.4-0.6 (partial), 0.7-1.0 (hit). Target 0.7 — that means you pushed yourself but didn't burn out.",
+      "hints": [
+        "The Objective should be motivating — use inspiring language",
+        "Key Results should be numbers you can measure, not activities",
+        "If every Key Result is 1.0, your goals aren't ambitious enough"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "PERSONAL OKR EXAMPLE:\n\nOBJECTIVE: Become a confident full-stack developer\n\nKEY RESULTS:\n• KR1: Complete 20 coding challenges on LeetCode (Easy+Medium)\n       with solutions documented in my GitHub repo\n       (0 → 20 challenges)\n• KR2: Build and deploy 1 full-stack project (React + Node.js)\n       with 90%+ test coverage, live at a public URL\n       (0 → 1 deployed project)\n• KR3: Write 4 technical blog posts about what I learned\n       (0 → 4 posts published)\n\nSCORING EXAMPLE:\n• KR1: Completed 15/20 challenges → Score: 0.75\n• KR2: Project deployed but only 75% test coverage → Score: 0.65\n• KR3: Published 3/4 posts → Score: 0.75\n• Overall OKR Score: 0.72\n\nVERDICT: Strong quarter. Push harder on testing next time."
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Habit Stack Builder",
+      "description": "Design a habit stack that turns your goals into automatic daily behaviors. Identify 3 existing routines you do every day without thinking. Attach a new goal-related behavior to each one using the 'After I [existing habit], I will [new habit]' formula. Practice for 2 weeks and track completion rates.",
+      "hints": [
+        "Choose existing habits that happen at consistent times (morning coffee, lunch, closing laptop)",
+        "Start with VERY small new habits (5 minutes, not 60 minutes)",
+        "Track completion — if you're below 80%, the habit is too big"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "HABIT STACK EXAMPLE:\n\nEXISTING ROUTINE → NEW GOAL HABIT\n\n1. After I pour morning coffee (7:30 AM)\n   → I will review today's 3 priorities on my Notion board\n   → Time: 2 minutes\n   → Goal it supports: Career (focus on high-impact work)\n\n2. After I sit at my desk (9:00 AM)\n   → I will start a 25-minute pomodoro on my most important task\n   → Time: 25 minutes\n   → Goal it supports: Career (deep work discipline)\n\n3. After I close laptop at 5:00 PM\n   → I will change into workout clothes\n   → Time: 3 minutes\n   → Goal it supports: Health (exercise routine)\n\n4. After I finish lunch (12:30 PM)\n   → I will read 10 pages of a tech book\n   → Time: 15 minutes\n   → Goal it supports: Learning (system design knowledge)\n\n5. After I brush teeth at night (10:00 PM)\n   → I will write 3 things I'm grateful for today\n   → Time: 2 minutes\n   → Goal it supports: Wellness (stress management)\n\nTRACKING (2 weeks):\n| Habit       | Week 1 | Week 2 | Rate |\n|-------------|--------|--------|------|\n| Priorities  | 5/7    | 6/7    | 79%  |\n| Pomodoro    | 4/7    | 5/7    | 64%  |\n| Workout     | 3/7    | 4/7    | 50%  |\n| Reading     | 6/7    | 6/7    | 86%  |\n| Gratitude   | 5/7    | 7/7    | 86%  |"
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

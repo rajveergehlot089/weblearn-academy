@@ -1,0 +1,36 @@
+{
+  "topicId": "05-mongodb-intro",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is MongoDB?",
+      "body": "MongoDB is a NoSQL document database that stores data in flexible, JSON-like documents instead of traditional tables and rows. It's designed for scalability and developer productivity."
+    },
+    {
+      "heading": "MongoDB vs SQL Databases",
+      "body": "Unlike SQL databases that use tables with fixed schemas, MongoDB stores data in collections of documents. Each document can have different fields, making it more flexible for evolving data structures.",
+      "code": {
+        "language": "javascript",
+        "snippet": "// SQL (Relational)\n// Table: users\n// | id | name  | email              |\n// | 1  | Alice | alice@example.com  |\n// | 2  | Bob   | bob@example.com    |\n\n// MongoDB (Document)\n// Collection: users\n{\n  \"_id\": ObjectId(\"507f1f77bcf86cd799439011\"),\n  \"name\": \"Alice\",\n  \"email\": \"alice@example.com\",\n  \"age\": 28,\n  \"address\": {\n    \"street\": \"123 Main St\",\n    \"city\": \"Boston\"\n  }\n}",
+        "explanation": "MongoDB documents can have nested objects and arrays, making it easy to represent complex data structures."
+      }
+    },
+    {
+      "heading": "Setting Up MongoDB with Mongoose",
+      "body": "Mongoose is the most popular MongoDB object modeling tool for Node.js. It provides schema-based validation and business logic hooks.",
+      "code": {
+        "language": "bash",
+        "snippet": "# Install MongoDB and Mongoose\nnpm install mongoose\n\n# Or use MongoDB Atlas (cloud service)\n# Get connection string from cloud.mongodb.com",
+        "explanation": "Mongoose adds structure to MongoDB through schemas and models."
+      }
+    }
+  ],
+  "jargon": [
+    { "term": "Document", "definition": "A JSON-like data structure stored in MongoDB. Similar to a row in SQL but more flexible." },
+    { "term": "Collection", "definition": "A group of documents, similar to a table in SQL databases." },
+    { "term": "Schema", "definition": "The structure and validation rules for documents in a collection." },
+    { "term": "Model", "definition": "A constructor compiled from a schema definition, used to create and query documents." }
+  ],
+  "summary": "MongoDB is a flexible NoSQL database that stores JSON-like documents. Use Mongoose to define schemas, validate data, and interact with MongoDB from Node.js applications."
+}

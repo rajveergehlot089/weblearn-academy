@@ -1,0 +1,25 @@
+{
+  "topicId": "07-password-security",
+  "questions": [
+    {
+      "question": "What is Password Hashing & Storage and why is it important?",
+      "answer": "Password Hashing & Storage is a fundamental concept that bcrypt, argon2, salting, and why you never store plain passwords. It's important because it forms the foundation for building robust and efficient applications. Understanding Password Hashing & Storage allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Password Hashing & Storage in a real project?",
+      "answer": "In practice, Password Hashing & Storage is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Password Hashing & Storage?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Password Hashing & Storage to a beginner?",
+      "answer": "Password Hashing & Storage is essentially about bcrypt, argon2, salting, and why you never store plain passwords. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

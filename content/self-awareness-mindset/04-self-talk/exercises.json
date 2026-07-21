@@ -1,0 +1,26 @@
+{
+  "topicId": "04-self-talk",
+  "exercises": [
+    {
+      "title": "Cognitive Distortion Spotter",
+      "description": "For one week, carry a small notebook or use a notes app. Every time you notice a negative or distorted thought, write it down and identify which cognitive distortion it represents. At the end of the week, count which distortions are most common for you.",
+      "hints": ["Keep the distortion list handy (all-or-nothing, catastrophizing, mind-reading, etc.)", "Don't judge the thoughts — just notice and categorize them", "Most people have 2-3 dominant distortions"],
+      "solution": { "language": "text", "code": "Cognitive Distortion Log — Week Results:\n\nTuesday: 'I always ruin everything' (All-or-Nothing + Overgeneralization)\nWednesday: 'My boss didn't smile at me — she must be angry about my work' (Mind-Reading)\nThursday: 'This deadline is impossible — I'll definitely fail' (Catastrophizing)\nFriday: 'I'm so lazy for not exercising today' (Labeling)\nSaturday: 'Everyone at the party thought I was boring' (Mind-Reading + Fortune-Telling)\nSunday: 'I should have started this project earlier — I'm terrible at time management' (Should Statements + Personalization)\n\nDominant distortions:\n1. Mind-Reading (3 instances) — Assuming I know what others think\n2. All-or-Nothing (2 instances) — Seeing things in extremes\n3. Should Statements (2 instances) — Rigid rules about how I 'should' be\n\nPattern: Most distortions occur when I'm tired or stressed\nInsight: I'm especially prone to mind-reading when interacting with authority figures\nAction: For mind-reading, ask 'What evidence do I actually have?'" },
+      "difficulty": "easy"
+    },
+    {
+      "title": "The Inner Mentor Practice",
+      "description": "Write down your inner critic's 5 most common phrases. For each one, write a response from your 'inner mentor' — the wise, compassionate voice you'd use with someone you care about deeply. Practice saying the mentor responses out loud when the critic speaks.",
+      "hints": ["Your inner critic often sounds like a parent, teacher, or past bully", "The mentor voice should be kind but honest — not just 'everything is fine'", "Write the responses as if speaking to a beloved friend"],
+      "solution": { "language": "text", "code": "Inner Critic vs Inner Mentor:\n\nCritic: 'You're so stupid. How could you make that mistake?'\nMentor: 'That was a mistake, and it's okay. Everyone makes them. What can you learn from this?'\n\nCritic: 'Nobody likes you. You're awkward in social situations.'\nMentor: 'Social situations feel hard sometimes, but you have people who care about you. Focus on being curious about others rather than judging yourself.'\n\nCritic: 'You'll never be successful. You're not as good as everyone else.'\nMentor: 'Success isn't a competition. You're on your own path. What matters is whether you're growing, not whether you're 'better' than someone else.'\n\nCritic: 'You should have it all figured out by now.'\nMentor: 'No one has it all figured out. Life is about learning as you go. You're doing better than you think.'\n\nCritic: 'Don't even try. You'll just embarrass yourself.'\nMentor: 'Trying is how you grow. Even if it doesn't go perfectly, you'll learn something. Courage isn't the absence of fear — it's acting despite it.'\n\nPractice: When the critic speaks, pause and consciously choose the mentor response. Over time, the mentor voice becomes more natural." },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Self-Compassion Letter",
+      "description": "Write a letter to yourself about a current struggle or failure, using the three components of self-compassion: (1) Self-kindness (treat yourself as you would a good friend), (2) Common humanity (acknowledge that this is a shared human experience), (3) Mindfulness (acknowledge the pain without exaggerating it). Read the letter aloud to yourself.",
+      "hints": ["Start with 'Dear [Your Name]' and write as if to a dear friend", "Name the specific emotion you're feeling and acknowledge it's valid", "End with encouragement and practical next steps"],
+      "solution": { "language": "text", "code": "Dear [Name],\n\nI know you're feeling really discouraged about not getting that promotion. It's okay to feel disappointed — you worked hard and hoped for a different outcome.\n\nRemember: this is something everyone experiences. Feeling passed over for recognition is one of the most common human experiences. You're not alone in this, even if it feels that way right now.\n\nYou're allowed to feel hurt without making it mean something about your worth. One decision by one team doesn't define your value or your future.\n\nHere's what I know about you: you're resilient, you're skilled, and you learn from setbacks. This isn't the end of your story — it's a chapter. Take the weekend to process, then ask for specific feedback. Use that information to grow.\n\nYou've overcome challenges before, and you'll overcome this one too. I believe in you — not because you're perfect, but because you're persistent.\n\nWith love and honesty,\nYour Mentor Self\n\nReading this letter aloud activates the same neural pathways as hearing comfort from another person — it literally soothes your nervous system." },
+      "difficulty": "hard"
+    }
+  ]
+}

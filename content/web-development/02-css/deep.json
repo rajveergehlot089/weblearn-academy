@@ -1,0 +1,44 @@
+{
+  "topicId": "02-css",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "CSS Selectors Deep Dive",
+      "body": "Different ways to target elements:",
+      "code": {
+        "language": "css",
+        "snippet": "/* Element selector */\np { color: black; }\n\n/* Class selector (dot prefix) */\n.card { border: 1px solid #ccc; }\n\n/* ID selector (hash prefix) */\n#header { background: navy; }\n\n/* Descendant selector */\nnav a { text-decoration: none; }\n\n/* Pseudo-class */\na:hover { color: red; }\n\n/* Child combinator */\narticle > p { font-size: 16px; }",
+        "explanation": "Class selectors (.card) are the most commonly used — they're reusable. ID selectors (#header) are unique per page. Pseudo-classes like :hover respond to user interaction."
+      }
+    },
+    {
+      "heading": "The Box Model",
+      "body": "Every HTML element is a box with 4 layers: content → padding → border → margin. Understanding this is the KEY to layouts.",
+      "code": {
+        "language": "css",
+        "snippet": "/* Without box-sizing (default — painful!) */\n.box {\n  width: 200px;\n  padding: 20px;\n  border: 2px solid black;\n  /* Actual width = 200 + 20*2 + 2*2 = 244px !!!! */\n}\n\n/* With box-sizing (the sane way) */\n.box {\n  box-sizing: border-box;\n  width: 200px;\n  padding: 20px;\n  border: 2px solid black;\n  /* Actual width = 200px. Padding and border are INSIDE. */\n}",
+        "explanation": "box-sizing: border-box makes width/height include padding and border. This is why almost every modern project starts with * { box-sizing: border-box; }."
+      }
+    },
+    {
+      "heading": "Colors, Units & Fonts",
+      "body": "CSS offers several ways to specify colors and sizes:",
+      "code": {
+        "language": "css",
+        "snippet": "/* Colors */\np {\n  color: red;              /* Named color */\n  color: #ff0000;          /* Hex */\n  color: rgb(255, 0, 0);   /* RGB */\n  color: rgba(255, 0, 0, 0.5); /* RGB with transparency */\n}\n\n/* Units */\nh1 { font-size: 32px; }        /* Pixels - fixed */\np  { font-size: 1.2rem; }       /* Relative to root font size */\n.box { width: 50%; }            /* Percentage of parent */\n.box { width: 100vw; }          /* Viewport width */",
+        "explanation": "px is fixed (same size always). rem/em are relative (scale with font size). % and vw/vh are responsive (adapt to container/viewport). Use rem for font sizes, % for layouts."
+      }
+    },
+    {
+      "heading": "Practice Task: Style a Card Component",
+      "body": "Given this HTML, write CSS to create a card with: dark background, rounded corners, padding, a shadow, and hover effect that lifts the card up.",
+      "code": {
+        "language": "css",
+        "snippet": ".card {\n  background: #1e293b;\n  border-radius: 12px;\n  padding: 24px;\n  box-shadow: 0 4px 6px rgba(0,0,0,0.3);\n  transition: transform 0.2s ease;\n  box-sizing: border-box;\n}\n\n.card:hover {\n  transform: translateY(-4px);\n  box-shadow: 0 8px 12px rgba(0,0,0,0.4);\n}",
+        "explanation": "border-radius rounds corners. box-shadow adds depth. transition makes the hover effect smooth (0.2 seconds). translateY(-4px) moves the card up on hover."
+      }
+    }
+  ],
+  "summary": "CSS uses selectors to target elements and properties to style them. The box model (content + padding + border + margin) is fundamental. Use box-sizing: border-box, rem for fonts, and percentages for responsive widths."
+}

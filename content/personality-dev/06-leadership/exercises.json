@@ -1,0 +1,35 @@
+{
+  "topicId": "06-leadership",
+  "exercises": [
+    {
+      "title": "The Leadership Self-Assessment",
+      "description": "Rate yourself on these 10 leadership competencies (1-10 scale): Vision, Communication, Decision-making, Empathy, Accountability, Delegation, Development, Integrity, Resilience, Influence. Identify your top 3 strengths and bottom 3 areas for growth.",
+      "hints": ["Be honest — this is for your development, not a performance review", "Ask others for their perspective to validate your self-assessment", "Focus on 1-2 areas for growth, not all of them at once"],
+      "solution": {
+        "language": "text",
+        "code": "Leadership Self-Assessment Results:\n\nScores:\n- Vision: 8/10 (Strong)\n- Communication: 7/10 (Good)\n- Decision-making: 6/10 (Developing)\n- Empathy: 7/10 (Good)\n- Accountability: 8/10 (Strong)\n- Delegation: 4/10 (Weak)\n- Development: 5/10 (Developing)\n- Integrity: 9/10 (Strong)\n- Resilience: 7/10 (Good)\n- Influence: 6/10 (Developing)\n\nTop 3 strengths: Integrity, Vision, Accountability\nBottom 3 areas: Delegation, Development, Influence\n\nDevelopment plan:\n1. Delegation: Practice assigning 2 tasks per week with clear outcomes and deadlines\n2. Development: Schedule monthly 1:1s with team members to discuss growth\n3. Influence: Build relationships outside my team to expand my network"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "The 360-Degree Feedback Exercise",
+      "description": "Ask 5 people (2 superiors, 2 peers, 1 direct report) to anonymously rate you on: communication, decision-making, supportiveness, and integrity (1-5 scale). Also ask for one strength and one area for improvement. Compare their ratings to your self-assessment.",
+      "hints": ["Make it anonymous for honest feedback", "Don't get defensive — use feedback as data", "Look for patterns across multiple raters"],
+      "solution": {
+        "language": "text",
+        "code": "360-Degree Feedback Results:\n\nMy Self-Rating vs Average Others Rating:\n- Communication: 7 → 6.2 (Gap: -0.8)\n- Decision-making: 6 → 5.8 (Gap: -0.2)\n- Supportiveness: 7 → 5.6 (Gap: -1.4)\n- Integrity: 9 → 8.8 (Gap: -0.2)\n\nStrengths noted by others:\n- 'Always honest and transparent' (3/5 raters)\n- 'Good at seeing the big picture' (2/5 raters)\n\nAreas for improvement:\n- 'Could check in more with team members' (3/5 raters)\n- 'Sometimes makes decisions without consulting the team' (2/5 raters)\n\nKey insight: My biggest blind spot is supportiveness — I think I'm more supportive than others perceive me. I need to be more proactive in checking in with my team."
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "The Leadership Development Plan",
+      "description": "Create a 90-day leadership development plan. (1) Choose one leadership skill to develop. (2) Set a specific, measurable goal. (3) Identify 3 actions to take. (4) Find a mentor or accountability partner. (5) Schedule weekly check-ins to track progress.",
+      "hints": ["Choose one skill that would have the biggest impact", "Make your goal specific — not 'be a better communicator' but 'hold weekly 1:1s with my team'", "Find someone who has the skill you want to develop"],
+      "solution": {
+        "language": "text",
+        "code": "90-Day Leadership Development Plan:\n\nSkill to develop: Delegation\n\nSpecific goal: Delegate 3 tasks per week with clear outcomes, deadlines, and check-in points.\n\nActions:\n1. Week 1-2: Identify 3 tasks I currently do that could be delegated\n2. Week 3-4: Have delegation conversations with team members, explaining the 'why' and 'what success looks like'\n3. Week 5-12: Delegate 3 tasks per week, provide support without micromanaging, and review outcomes\n\nMentor: Sarah (Senior Manager who is excellent at delegation)\n\nWeekly check-in: Every Friday at 3 PM\n- What did I delegate this week?\n- How did it go?\n- What did I learn?\n- What will I do differently next week?\n\nSuccess metrics:\n- I'm spending 5+ fewer hours per week on tasks others could do\n- My team members report feeling more trusted and developed\n- I'm spending more time on strategic work"
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "topicId": "06-think-framework",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What Is the THINK Framework?",
+      "body": "Before you speak, run your words through five filters: Is it True? Is it Helpful? Is it Inspiring? Is it Necessary? Is it Kind? If your words don't pass at least three of these five tests, reconsider saying them. This simple mental check prevents most communication regrets."
+    },
+    {
+      "heading": "The Five Filters",
+      "bulletPoints": [
+        "True — Is what I'm about to say factually accurate? Am I sure, or am I assuming?",
+        "Helpful — Will this add value to the conversation or the person's situation?",
+        "Inspiring — Does this encourage, motivate, or lift someone up?",
+        "Necessary — Does this need to be said right now, by me, in this way?",
+        "Kind — Am I delivering this with respect and consideration for the other person's feelings?"
+      ]
+    },
+    {
+      "heading": "When to Use It",
+      "bulletPoints": [
+        "Before giving feedback — ensures it's constructive, not hurtful",
+        "During disagreements — prevents reactive, damaging statements",
+        "On social media — the permanent record test",
+        "In emails — prevents regrettable 'send' moments",
+        "When frustrated — creates a pause between emotion and speech"
+      ]
+    }
+  ],
+  "jargon": [
+    { "term": "THINK Framework", "definition": "A pre-speech filter: True, Helpful, Inspiring, Necessary, Kind. If your words don't pass at least 3 of 5, reconsider." },
+    { "term": "Emotional Hijack", "definition": "When strong emotions override rational thought, leading to words you regret. The THINK framework creates a pause that prevents hijacks." },
+    { "term": "Intentional Communication", "definition": "Choosing your words deliberately rather than speaking on autopilot. The THINK framework is a tool for intentional communication." }
+  ],
+  "summary": "The THINK framework asks five questions before you speak: Is it True, Helpful, Inspiring, Necessary, and Kind? If your words pass at least 3 of 5 filters, proceed. If not, reconsider your approach. It's a simple pause that prevents most communication regrets."
+}

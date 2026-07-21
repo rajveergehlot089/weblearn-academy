@@ -1,0 +1,30 @@
+{
+  "topicId": "07-mindfulness",
+  "questions": [
+    {
+      "question": "I can't stop thinking during meditation. Am I doing it wrong?",
+      "answer": "No — you're doing it exactly right. The point of meditation isn't to stop thinking. It's to NOTICE when you're thinking and gently return to your breath. Every time your mind wanders and you bring it back, you've completed one 'rep' of the focus muscle. A meditation where your mind wanders 100 times and you return 100 times is MORE valuable than one where you're perfectly focused — because you practiced the return 100 times. The wandering IS the practice.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How long do I need to meditate to see benefits?",
+      "answer": "Research shows measurable brain changes after 8 weeks of daily 10-15 minute practice. But you'll notice subjective benefits much sooner: most people feel calmer and more focused after just 1-2 weeks of daily 3-5 minute sessions. The key is consistency — 3 minutes daily beats 30 minutes once a week. Start with 3 minutes and gradually increase. The best meditation duration is the one you'll actually do consistently.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Is meditation religious?",
+      "answer": "Meditation originated in religious traditions (Buddhism, Hinduism), but the secular version taught in clinical settings and apps like Headspace is purely a mental exercise — like going to the gym for your brain. You don't need to believe anything or adopt any philosophy. It's simply training your attention and awareness. Many secular meditation practitioners are atheist, agnostic, or from any religious background. Think of it like yoga: spiritual origins, but now widely practiced as exercise.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How does mindfulness help with code reviews specifically?",
+      "answer": "Code reviews trigger emotional responses: defensiveness when your code is criticized, frustration when reviewing sloppy code. Mindfulness helps you: (1) Notice the emotional reaction without acting on it (instead of firing off a defensive response). (2) Respond with curiosity instead of judgment ('Why did they write it this way?' vs. 'This is wrong'). (3) Stay focused on the code, not your ego. (4) Give feedback more constructively. The practice: take 3 breaths before starting a code review, set an intention to be curious, and notice emotional reactions as they arise.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What should I do when meditation makes me MORE anxious?",
+      "answer": "This sometimes happens, especially with people who have anxiety or trauma. Sitting with your thoughts can surface uncomfortable feelings you've been avoiding. Options: (1) Try walking meditation instead — movement helps process anxiety. (2) Try PMR (Progressive Muscle Relaxation) — it gives your mind a concrete task. (3) Try noting practice — label your thoughts ('anxiety,' 'planning,' 'worrying') instead of sitting with them. (4) If anxiety persists, see a therapist — meditation complements therapy, but doesn't replace it. Don't push through severe discomfort.",
+      "difficulty": "hard"
+    }
+  ]
+}

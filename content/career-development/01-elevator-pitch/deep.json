@@ -1,0 +1,32 @@
+{
+  "topicId": "01-elevator-pitch",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Why First Impressions Are Strategic",
+      "body": "Research shows people form initial impressions within 7 seconds. In professional settings, you rarely get a second chance to make a first impression. Your elevator pitch is the tool that shapes that critical first moment. It's not about being flashy — it's about being clear, relevant, and memorable."
+    },
+    {
+      "heading": "Building Your Pitch: The Complete Framework",
+      "body": "Here's a detailed template you can customize:\n\n**Opening (who you are):**\n'Hi, I'm [Name]. I'm a [specific role] with [X years] of experience in [domain].'\n\nExample: 'Hi, I'm Priya. I'm a frontend engineer with 4 years of experience building accessible web applications for healthcare.'\n\n**Body (what you do/have done):**\n'Recently, I [accomplishment with measurable result].'\n\nExample: 'Recently, I redesigned our patient portal, which improved task completion rates by 35% and reduced support tickets by half.'\n\n**Close (why it matters / what you want):**\n'I'm really interested in [connection to listener or goal].'\n\nExample: 'I'm passionate about healthtech accessibility, and I'd love to hear how your team approaches inclusive design.'"
+    },
+    {
+      "heading": "Tailoring Your Pitch for Different Audiences",
+      "body": "Your pitch should change depending on who you're talking to:\n\n- **Recruiter at a job fair**: Lead with your strongest relevant skill and what you're looking for. 'I'm a Python developer looking for backend roles at companies scaling their data infrastructure.'\n\n- **Potential mentor or senior engineer**: Lead with what you're learning and what you want advice on. 'I'm transitioning from QA to development and building my first open-source contributions.'\n\n- **Casual networking event**: Keep it lighter and more personal. 'I'm a developer who builds tools that make spreadsheets less painful — think automated reporting and data cleaning.'\n\n- **Investor or founder**: Lead with the problem you solve and the impact. 'I build internal tools that save operations teams 10+ hours per week on manual data entry.'"
+    },
+    {
+      "heading": "The STAR Variation for Interviews",
+      "body": "When 'tell me about yourself' comes up in an interview, adapt your pitch using a mini STAR structure:\n\n1. **Situation/Task**: Where you were and what you needed to do.\n2. **Action**: What you specifically did.\n3. **Result**: What happened because of your work.\n\nKeep it to 60-90 seconds. Interviewers use this question to assess whether you can articulate your experience clearly — it's a communication test as much as a content test."
+    },
+    {
+      "heading": "Practice Techniques",
+      "body": "- **Record yourself**: Use your phone's voice memo app. Listen back and check for filler words ('um,' 'like,' 'so basically').\n- **Time yourself**: If it runs over 60 seconds, cut something. Brevity is a skill.\n- **Test on real people**: Practice at meetups, on colleagues, or even at coffee shops. Real conversations reveal what resonates.\n- **Iterate monthly**: As you gain new experience or change goals, update your pitch."
+    },
+    {
+      "heading": "Practice Task: Build Your Pitch",
+      "body": "Write out your elevator pitch using the 3-part formula. Then refine it to under 60 seconds when spoken aloud. Practice it on at least one person this week and note their reaction — did they ask a follow-up question? If yes, the pitch worked."
+    }
+  ],
+  "summary": "A strong elevator pitch uses three beats: who you are, what you've accomplished (with specifics and numbers), and why it matters. Tailor it for different audiences — recruiters, mentors, casual events, and interviews. Practice regularly, time yourself, and iterate based on real conversations."
+}

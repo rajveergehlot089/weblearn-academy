@@ -1,0 +1,47 @@
+{
+  "topicId": "03-javascript",
+  "exercises": [
+    {
+      "title": "FizzBuzz",
+      "description": "Write a loop from 1 to 30. For each number: if divisible by 3, print 'Fizz'. If divisible by 5, print 'Buzz'. If divisible by both, print 'FizzBuzz'. Otherwise, print the number.",
+      "hints": [
+        "Use the modulo operator (%) to check divisibility",
+        "Check divisibility by BOTH 3 and 5 FIRST",
+        "The order of your if/else matters!"
+      ],
+      "solution": {
+        "language": "javascript",
+        "code": "for (let i = 1; i <= 30; i++) {\n  if (i % 3 === 0 && i % 5 === 0) {\n    console.log('FizzBuzz');\n  } else if (i % 3 === 0) {\n    console.log('Fizz');\n  } else if (i % 5 === 0) {\n    console.log('Buzz');\n  } else {\n    console.log(i);\n  }\n}"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Reverse a String",
+      "description": "Write a function that takes a string and returns it reversed. Example: reverseString('hello') should return 'olleh'.",
+      "hints": [
+        "Split the string into an array with split('')",
+        "Reverse the array with reverse()",
+        "Join it back with join('')"
+      ],
+      "solution": {
+        "language": "javascript",
+        "code": "function reverseString(str) {\n  return str.split('').reverse().join('');\n}\n\nconsole.log(reverseString('hello'));  // olleh"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Find the Largest Number",
+      "description": "Write a function that takes an array of numbers and returns the largest one. Don't use Math.max().",
+      "hints": [
+        "Start by assuming the first element is the largest",
+        "Loop through and compare each number",
+        "Update the largest if you find a bigger one"
+      ],
+      "solution": {
+        "language": "javascript",
+        "code": "function findLargest(numbers) {\n  let largest = numbers[0];\n  for (let num of numbers) {\n    if (num > largest) {\n      largest = num;\n    }\n  }\n  return largest;\n}\n\nconsole.log(findLargest([3, 7, 2, 9, 1]));  // 9"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

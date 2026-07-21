@@ -1,0 +1,35 @@
+{
+  "topicId": "04-body-language",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Body Language Matters",
+      "body": "Your body communicates before your mouth does. Within 7 seconds of meeting someone, they've formed an impression based primarily on your body language. That snap judgment is hard to reverse — which is why first impressions are so powerful."
+    },
+    {
+      "heading": "The Big Four of Body Language",
+      "bulletPoints": [
+        "Eye Contact — Shows confidence and interest. Too little = evasive. Too much = aggressive. Aim for 60-70% of the time.",
+        "Posture — Standing or sitting tall signals confidence. Slouching signals disengagement. Uncrossed arms signal openness.",
+        "Gestures — Open palm gestures signal honesty. Pointing signals aggression. Hand movements that match words add emphasis.",
+        "Personal Space — Respecting cultural norms for distance. Too close feels invasive; too far feels cold."
+      ]
+    },
+    {
+      "heading": "Quick Wins for Better Body Language",
+      "bulletPoints": [
+        "Before a meeting: Stand tall, take a deep breath, smile — it changes your emotional state",
+        "During a meeting: Lean slightly forward to show engagement, nod to show understanding",
+        "When listening: Face the person, uncross arms, maintain comfortable eye contact",
+        "When speaking: Use open gestures, plant your feet, avoid fidgeting"
+      ]
+    }
+  ],
+  "jargon": [
+    { "term": "Open Posture", "definition": "Body position that signals receptivity: uncrossed arms, relaxed shoulders, facing the other person. Closed posture (crossed arms, turned away) signals defensiveness." },
+    { "term": "Mirroring", "definition": "Subtly matching another person's body language. It builds rapport and signals that you're in sync." },
+    { "term": "Power Posing", "definition": "Standing in an expansive, confident posture (hands on hips, feet apart). Research suggests it can increase confidence before high-stakes situations." }
+  ],
+  "summary": "Body language accounts for 55% of how your message is received. The big four are eye contact, posture, gestures, and personal space. Quick wins: stand tall, maintain comfortable eye contact, use open gestures, and lean in when listening."
+}

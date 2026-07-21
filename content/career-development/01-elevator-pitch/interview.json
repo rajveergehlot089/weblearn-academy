@@ -1,0 +1,30 @@
+{
+  "topicId": "01-elevator-pitch",
+  "questions": [
+    {
+      "question": "How long should an elevator pitch be?",
+      "answer": "30-60 seconds when spoken aloud. That's roughly 75-150 words. The key is that it should be short enough to deliver naturally in a conversation without losing the other person's attention. Practice timing yourself — if it exceeds 60 seconds, cut the least essential part.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Should I memorize my pitch word-for-word?",
+      "answer": "No. Memorize the structure and key points, but deliver it conversationally. Word-for-word memorization leads to robotic delivery that sounds unnatural. Instead, internalize the three beats (who you are, what you've done, what you want) and let the exact wording flow naturally each time.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do I make my pitch stand out when everyone sounds the same?",
+      "answer": "Use specific numbers and concrete examples instead of generic claims. Instead of 'I'm a great team player,' say 'I led a 4-person team that shipped a feature 2 weeks ahead of deadline.' Specificity is memorable. Also, end with a hook question that invites the other person to respond — 'What's your team working on right now?'",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What if I don't have impressive accomplishments to mention?",
+      "answer": "Everyone has something. Use academic projects, volunteer work, personal projects, or even a specific skill you've developed. 'I built a personal budgeting app in React that tracks spending patterns' is just as valid as a work accomplishment. Focus on what you can do, not just where you've been.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I handle the 'tell me about yourself' interview question?",
+      "answer": "Treat it as a 90-second version of your elevator pitch tailored to the role. Start with your current situation, highlight 1-2 relevant accomplishments that demonstrate skills needed for this specific job, and end with why you're excited about this particular opportunity. Don't recite your resume — use it to tell a focused story about why you're a fit.",
+      "difficulty": "medium"
+    }
+  ]
+}

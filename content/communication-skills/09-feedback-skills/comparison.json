@@ -1,0 +1,43 @@
+{
+  "topicId": "09-feedback-skills",
+  "comparisons": [
+    {
+      "concept": "Vague Feedback vs. SBI Feedback",
+      "before": {
+        "label": "Vague",
+        "code": "'You need to be more proactive.'\n'Your communication could be better.'\n'Try to be more of a team player.'\n\nWhat person hears: I'm failing at my job.\nResponse: Confusion ('What does proactive mean to you?') or defensiveness."
+      },
+      "after": {
+        "label": "SBI (Situation-Behavior-Impact)",
+        "code": "[S] 'In last week's team meeting...'\n[B] '...when the project hit a roadblock, you didn't suggest solutions or ask for help...'\n[I] '...which meant the team spent two extra days solving something you could have flagged.'\n\nWhat person hears: My behavior had a specific impact I can change.\nResponse: Curiosity ('What would proactive look like in that situation?')"
+      },
+      "explanation": "SBI makes feedback factual, specific, and actionable. The person can't argue with what happened — they can only discuss how to do it differently."
+    },
+    {
+      "concept": "Sandwich Feedback vs. Direct Feedback",
+      "before": {
+        "label": "Sandwich",
+        "code": "'Your reports are thorough. But you missed the last deadline. Anyway, overall good work.'\n\nProblem: The 'but' negates the positive. The person focuses on the negative. The closing 'anyway' feels dismissive. They leave feeling confused about what you actually think."
+      },
+      "after": {
+        "label": "Direct + Kind",
+        "code": "'I want to talk about report timing. Your content quality is strong — the last one had great analysis. The issue: the deadline was Friday and you submitted Monday. This delayed the client review. Going forward, can you flag by Wednesday if you'll need more time?'",
+        "explanation": "Direct feedback acknowledges strengths, names the specific issue, explains the impact, and proposes a solution. No manipulation, no confusion."
+      },
+      "explanation": "The sandwich method was designed to soften blow, but it often creates confusion and distrust. Direct feedback with kindness is more effective and more respectful."
+    },
+    {
+      "concept": "Receiving Feedback: Defensive vs. Growth-Minded",
+      "before": {
+        "label": "Defensive",
+        "code": "Manager: 'The report had some accuracy issues.'\nYou: 'I was under a tight deadline. The data was unclear. Nobody told me the format changed.'\n\nResult: Manager stops giving feedback. Issues continue. You never improve."
+      },
+      "after": {
+        "label": "Growth-Minded",
+        "code": "Manager: 'The report had some accuracy issues.'\nYou: 'Thanks for telling me. Can you point me to the specific sections so I can fix them and prevent this next time?'\n\nResult: Manager trusts you with feedback. Issues get resolved. You improve faster."
+      },
+      "explanation": "Defensive responses kill feedback loops. Growth-minded responses ('Thank you, what specifically?') encourage more feedback, which accelerates improvement."
+    }
+  ],
+  "keyInsight": "Feedback is a gift, but only when given well and received well. SBI makes giving effective; curiosity and gratitude make receiving effective. Both skills are learnable and both compound over time."
+}

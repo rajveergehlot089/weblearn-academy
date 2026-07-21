@@ -1,0 +1,30 @@
+{
+  "topicId": "01-leadership-intro",
+  "questions": [
+    {
+      "question": "What is the difference between leadership and management?",
+      "answer": "Leadership is about setting direction and inspiring people to follow it. Management is about planning, organizing, and controlling to achieve predictable results. Leadership asks 'where should we go?' while management asks 'how do we get there?' The best professionals develop both — leadership without management produces vision without results, and management without leadership produces efficiency without purpose.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you lead without formal authority?",
+      "answer": "Lead through influence by building credibility, reliability, and relationships. First, become an expert in your domain so people trust your judgment. Second, consistently deliver on commitments — reliability builds trust faster than charisma. Third, invest in relationships: understand people's goals, help them succeed, and they'll voluntarily follow your lead. Formal titles are overrated; trust and competence are what actually move teams forward.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Describe a time when you had to make an unpopular decision. How did you handle it?",
+      "answer": "Structure your response with STAR (Situation, Task, Action, Result). Focus on: (1) how you gathered facts before deciding, (2) how you communicated the reasoning transparently, (3) how you acknowledged the pushback, and (4) how you supported people through the change. The key insight is that leaders don't avoid hard decisions — they make them with empathy and conviction simultaneously.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What role does emotional intelligence play in leadership?",
+      "answer": "Emotional intelligence is the foundation of effective leadership. It has four components: self-awareness (knowing your triggers), self-regulation (managing your reactions), social awareness (reading the room), and relationship management (influencing others). Research shows EQ accounts for nearly 90% of the difference between average and top-performing leaders. A leader with low IQ but high EQ will outperform a leader with high IQ but low EQ.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you develop leadership skills if you're not in a management role?",
+      "answer": "Start by leading yourself: be the person others can count on. Then expand your influence by mentoring junior colleagues, volunteering for cross-functional projects, leading initiative teams, or organizing knowledge-sharing sessions. Practice giving constructive feedback, facilitating meetings, and resolving team conflicts. Leadership is a behavior, not a title — anyone can practice it every day.",
+      "difficulty": "easy"
+    }
+  ]
+}

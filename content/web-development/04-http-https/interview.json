@@ -1,0 +1,25 @@
+{
+  "topicId": "04-http-https",
+  "questions": [
+    {
+      "question": "What is the difference between HTTP and HTTPS?",
+      "answer": "HTTP sends data in plain text — anyone on the network can read it. HTTPS adds TLS encryption, so all data (passwords, personal info) is encrypted and unreadable to interceptors. HTTPS uses port 443, HTTP uses port 80. Modern browsers mark HTTP sites as 'Not Secure'. Always use HTTPS in production.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the difference between GET and POST methods?",
+      "answer": "GET retrieves data and has no body — all parameters are in the URL (like /api/users?page=1). It should be idempotent (calling it multiple times gives the same result) and never changes server state. POST sends data in the request body to create new resources. It's used for form submissions, sign-ups, and any action that changes data on the server.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What does status code 401 vs 403 mean?",
+      "answer": "401 Unauthorized means 'you're not authenticated' — the server doesn't know who you are (you need to log in). 403 Forbidden means 'you're authenticated but not authorized' — the server knows who you are but you don't have permission for this action. 401 → login required. 403 → access denied.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What happens when you type a URL in the browser?",
+      "answer": "1. DNS lookup translates the domain to an IP address, 2. Browser establishes a TCP connection to the server, 3. If HTTPS, a TLS handshake encrypts the connection, 4. Browser sends an HTTP GET request for the page, 5. Server processes the request and sends back HTML, 6. Browser parses HTML, finds CSS/JS/images, 7. Sends additional requests for each resource, 8. Renders the page (layout, paint, composite).",
+      "difficulty": "hard"
+    }
+  ]
+}

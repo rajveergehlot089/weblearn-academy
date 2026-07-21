@@ -1,0 +1,47 @@
+{
+  "topicId": "06-conflict-resolution",
+  "exercises": [
+    {
+      "title": "Conflict Style Assessment",
+      "description": "Take the Thomas-Kilmann conflict mode assessment and identify your default and underused styles. Plan how to develop your underused modes.",
+      "hints": [
+        "Answer based on how you typically behave, not how you think you should behave",
+        "Your default style is probably the one you reach for under stress",
+        "The most important development is your underused style"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Conflict Style Self-Assessment:\n\nRate each statement 1-5 (strongly disagree to strongly agree):\n\nCompeting:\n- I defend my position even when others push back\n- I'm comfortable making unpopular decisions\n\nAccommodating:\n- I prioritize relationships over being right\n- I often yield to avoid tension\n\nAvoiding:\n- I prefer to sidestep controversial topics\n- I wait for conflicts to resolve themselves\n\nCompromising:\n- I look for middle ground when positions differ\n- I accept partial solutions under time pressure\n\nCollaborating:\n- I invest time to find solutions that satisfy everyone\n- I explore disagreements deeply rather than settling quickly\n\nIdentify:\n1. Your highest-scoring style = your default\n2. Your lowest-scoring style = your underused mode\n3. One situation this month to practice your underused style"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Difficult Conversation Role-Play",
+      "description": "Practice giving difficult feedback using the SBI model. Write out a feedback script for a real situation you're facing, then practice it with a friend or mentor.",
+      "hints": [
+        "Be specific about the behavior — avoid generalizations like 'you always'",
+        "Include the impact — this helps them understand why it matters",
+        "Practice asking 'What was going on for you?' after delivering feedback"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "SBI Feedback Script Template:\n\nSituation: '[Specific time and place]'\nBehavior: '[Observable action, not judgment]'\nImpact: '[Effect on you, the team, or the work]'\n\nExample:\nSituation: 'In yesterday's sprint planning...'\nBehavior: '...you committed to three features without discussing capacity with the team...'\nImpact: '...and now two developers are overloaded. It creates a pattern where the team doesn't feel consulted.'\n\nThen ask: 'What's your perspective on this?'\n\nListen without interrupting. Then discuss: 'How can we prevent this next time?'\n\nPractice 3 times before the real conversation."
+      },
+      "difficulty": "hard"
+    },
+    {
+      "title": "Conflict Mediation Practice",
+      "description": "If you're currently mediating a conflict between two people, use the structured mediation process below. If not, read about a real mediation case study and analyze what worked.",
+      "hints": [
+        "Meet with each person separately first to understand their perspective",
+        "In the joint meeting, ground rules: no interrupting, focus on the issue",
+        "Help them find common interests, not just opposing positions"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Mediation Process:\n\nPre-Meeting (separate):\n1. Ask each person: 'What happened from your perspective?'\n2. Ask: 'What do you need to resolve this?'\n3. Ask: 'What's your ideal outcome?'\n\nJoint Meeting:\n1. Set ground rules: 'We're here to find a solution, not assign blame.'\n2. Each person shares their perspective uninterrupted (3 min each)\n3. Summarize common ground: 'You both agree that...'\n4. Identify interests: 'What matters most to each of you?'\n5. Brainstorm solutions together\n6. Agree on specific actions and timeline\n7. Schedule a follow-up (1-2 weeks)\n\nPost-Mediation:\n- Document agreements\n- Check in with each person separately\n- Monitor for follow-through"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "topicId": "04-self-talk",
+  "comparisons": [
+    {
+      "concept": "Negative vs Positive Self-Talk",
+      "negative": {
+        "name": "Negative Self-Talk",
+        "examples": "'I'm so stupid,' 'I always mess things up,' 'No one respects me.'",
+        "pattern": "Uses absolutes (always, never), personalization, and labeling.",
+        "effect": "Activates threat response, increases cortisol, reduces problem-solving ability.",
+        "short_term": "Feels 'honest' or realistic, but is actually distorted.",
+        "long_term": "Erodes confidence, creates self-fulfilling prophecies, damages relationships."
+      },
+      "positive": {
+        "name": "Positive Self-Talk",
+        "examples": "'I'm learning,' 'I can try a different approach,' 'What can I do to improve?'",
+        "pattern": "Uses growth language, solution focus, and self-compassion.",
+        "effect": "Activates reward centers, reduces cortisol, improves cognitive flexibility.",
+        "short_term": "Can feel forced or inauthentic initially.",
+        "long_term": "Builds resilience, improves performance, strengthens self-efficacy."
+      },
+      "explanation": "The goal isn't to eliminate negative thoughts (that backfires through the 'white bear effect') but to notice them, challenge their accuracy, and replace them with more balanced alternatives. Research shows positive self-talk improves performance by 13% on average."
+    },
+    {
+      "concept": "Self-Talk Approaches",
+      "motivational": {
+        "name": "Motivational Self-Talk",
+        "style": "'You can do this! Give it your all!'",
+        "best_for": "Athletic performance, high-energy tasks, overcoming inertia.",
+        "research": "Boosts energy and confidence for simple, well-practiced tasks.",
+        "limitation": "Can backfire on complex tasks — increased arousal impairs fine motor control."
+      },
+      "instructional": {
+        "name": "Instructional Self-Talk",
+        "style": "'Focus on your breathing. Keep your eyes on the target. Slow and steady.'",
+        "best_for": "Complex tasks, learning new skills, precision work.",
+        "research": "Improves performance on tasks requiring strategy and concentration.",
+        "limitation": "Requires knowing the correct strategy — useless if you don't know what to do."
+      },
+      "comprehensive": {
+        "name": "Comprehensive Self-Talk",
+        "style": "'I've prepared for this. I know the material. If I get nervous, I'll take a breath and continue.'",
+        "best_for": "Presentations, interviews, high-stakes situations.",
+        "research": "Combines motivation with strategy, reducing anxiety while maintaining focus.",
+        "limitation": "Requires practice to make natural under pressure."
+      },
+      "explanation": "Research by Ipsat-Mekariya shows that the type of self-talk should match the task. Simple tasks benefit from motivational self-talk; complex tasks benefit from instructional self-talk; high-pressure situations benefit from comprehensive self-talk that combines both."
+    },
+    {
+      "concept": "Cognitive Reframing Techniques",
+      "catastrophizing": {
+        "name": "Catastrophizing → Realistic Assessment",
+        "distorted": "'If I fail this presentation, I'll lose my job and never work again.'",
+        "reframe": "'If the presentation doesn't go well, I'll learn from it. One presentation doesn't define my career.'",
+        "technique": "Ask: 'What's the actual worst case? How likely is it? Could I recover?'"
+      },
+      "all_or_nothing": {
+        "name": "All-or-Nothing → Spectrum Thinking",
+        "distorted": "'I got 80% — I'm a total failure.'",
+        "reframe": "'80% is solid. What can I learn to get to 90% next time?'",
+        "technique": "Replace binary thinking (success/failure) with a spectrum (0-100%)."
+      },
+      "mind_reading": {
+        "name": "Mind-Reading → Check the Facts",
+        "distorted": "'Everyone in that meeting thought I was incompetent.'",
+        "reframe": "'I don't know what they thought. Several people asked good follow-up questions, which suggests engagement.'",
+        "technique": "Ask: 'What evidence do I have? What evidence contradicts this thought?'"
+      },
+      "explanation": "Each distortion has a specific antidote. The key is recognizing which distortion you're using, then applying the appropriate technique. With practice, this becomes automatic — you catch and correct distortions in real-time."
+    }
+  ],
+  "keyInsight": "Self-talk is a skill that can be deliberately improved. The most effective approach combines catching cognitive distortions with self-compassion rather than just 'positive thinking.' Use motivational self-talk for simple tasks, instructional self-talk for complex tasks, and comprehensive self-talk for high-pressure situations."
+}

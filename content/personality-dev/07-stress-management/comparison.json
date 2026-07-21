@@ -1,0 +1,24 @@
+{
+  "topicId": "07-stress-management",
+  "comparisons": [
+    {
+      "concept": "Acute Stress vs Chronic Stress",
+      "acute": "Duration: Short-term (minutes to hours). Cause: Immediate threat or challenge. Effect: Boosts performance, sharpens focus. Recovery: Returns to baseline after threat passes. Example: Nervous before a presentation, then relieved after.",
+      "chronic": "Duration: Long-term (weeks to months). Cause: Ongoing压力源 (workload, relationship issues, finances). Effect: Damages health, erodes resilience. Recovery: Requires intentional intervention. Example: Constant work pressure, never feeling relaxed.",
+      "explanation": "Acute stress is normal and can be helpful. Chronic stress is destructive — it leads to burnout, health problems, and relationship breakdown. The key difference: acute stress has a clear end; chronic stress doesn't."
+    },
+    {
+      "concept": "Problem-Focused Coping vs Emotion-Focused Coping",
+      "problem_focused": "What it is: Addressing the source of stress directly. When to use: When the stressor is controllable. Examples: Asking for help, delegating tasks, setting boundaries, learning new skills. Outcome: Reduces the stressor itself.",
+      "emotion_focused": "What it is: Managing your emotional response to stress. When to use: When the stressor is uncontrollable. Examples: Meditation, exercise, journaling, talking to friends. Outcome: Reduces the emotional impact of the stressor.",
+      "explanation": "Use problem-focused coping when you can change the situation. Use emotion-focused coping when you can't. The best approach often combines both: change what you can, accept what you can't."
+    },
+    {
+      "concept": "Avoidance vs Engagement Coping",
+      "avoidance": "Strategy: Ignoring or escaping the stressor. Short-term: Feels good temporarily. Long-term: Stressors accumulate, anxiety increases. Examples: Procrastination, denial, substance use, staying busy to avoid thinking.",
+      "engagement": "Strategy: Facing the stressor directly. Short-term: Uncomfortable, requires courage. Long-term: Stressors are resolved, confidence grows. Examples: Having difficult conversations, planning, seeking help, taking action.",
+      "explanation": "Avoidance is like ignoring a leak — it gets worse. Engagement is like fixing the leak — it's uncomfortable now but solves the problem. Most people default to avoidance; resilience requires engagement."
+    }
+  ],
+  "keyInsight": "Stress itself isn't the enemy — it's the lack of recovery. Your body needs to return to baseline after stress. Complete the stress cycle through physical movement, breathing, and emotional processing. Chronic stress is just the stress response stuck in the 'on' position."
+}

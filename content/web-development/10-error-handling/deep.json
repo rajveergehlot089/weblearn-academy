@@ -1,0 +1,35 @@
+{
+  "topicId": "10-error-handling",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Try/Catch/Finally",
+      "body": "The complete error handling pattern:",
+      "code": {
+        "language": "javascript",
+        "snippet": "try {\n  const response = await fetch('/api/data');\n  const data = await response.json();\n  return data;\n} catch (error) {\n  console.error('API failed:', error.message);\n  throw new Error('Failed to load data');\n} finally {\n  console.log('Cleanup happens here regardless');\n}",
+        "explanation": "try: attempt the risky code. catch: handle any error. finally: runs ALWAYS (success or failure) — used for cleanup like hiding loading spinners."
+      }
+    },
+    {
+      "heading": "Custom Errors",
+      "body": "Create meaningful error types:",
+      "code": {
+        "language": "javascript",
+        "snippet": "class AppError extends Error {\n  constructor(message, statusCode) {\n    super(message);\n    this.statusCode = statusCode;\n    this.isOperational = true;\n  }\n}\n\n// Usage\nfunction findUser(id) {\n  const user = db.users.find(u => u.id === id);\n  if (!user) throw new AppError('User not found', 404);\n  return user;\n}\n\n// Express error handler\napp.use((err, req, res, next) => {\n  if (err.isOperational) {\n    res.status(err.statusCode).json({ error: err.message });\n  } else {\n    console.error('Unexpected error:', err);\n    res.status(500).json({ error: 'Something went wrong' });\n  }\n});",
+        "explanation": "Custom errors let you distinguish between expected errors (user not found) and bugs (null reference)."
+      }
+    },
+    {
+      "heading": "HTTP Error Responses",
+      "body": "Always return meaningful errors to clients:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// BAD: Vague error\nres.status(500).json({ error: 'Error' });\n\n// GOOD: Specific errors\nres.status(400).json({\n  error: 'Validation failed',\n  details: [\n    { field: 'email', message: 'Invalid email format' },\n    { field: 'password', message: 'Must be at least 8 characters' }\n  ]\n});",
+        "explanation": "Good error responses tell the client WHAT went wrong and HOW to fix it. Never expose internal details (stack traces, database errors)."
+      }
+    }
+  ],
+  "summary": "Use try/catch for error handling. Create custom error classes for operational vs unexpected errors. Always return meaningful HTTP error responses. Never let errors crash your app silently."
+}

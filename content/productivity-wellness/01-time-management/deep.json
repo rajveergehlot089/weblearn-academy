@@ -1,0 +1,38 @@
+{
+  "topicId": "01-time-management",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The Psychology of Time Perception",
+      "body": "Your brain doesn't experience time linearly. During flow states, time compresses — two hours feel like twenty minutes. During context switching, time dilates — you feel exhausted after a fragmented morning yet accomplished nothing meaningful. Understanding this helps you design your day around your brain's natural rhythms, not against them. Research shows it takes an average of 23 minutes to regain focus after an interruption. If you're interrupted 8 times in a morning, you may never reach deep focus at all."
+    },
+    {
+      "heading": "Advanced Eisenhower Matrix: Adding Energy Levels",
+      "body": "The standard Eisenhower Matrix works well, but it ignores a critical variable: your energy. A Quadrant 2 task (important, not urgent) like 'refactor the auth system' requires high cognitive energy. If you schedule it at 4 PM when you're drained, you'll produce poor work or skip it entirely. Add a third dimension — your energy curve — to determine not just what to do, but WHEN to do it:",
+      "code": {
+        "language": "text",
+        "snippet": "TYPICAL DEVELOPER ENERGY CURVE:\n\nHigh  ████████░░░░░░░░░░░░░░░░\n      █████████████░░░░░░░░░░\n      ████████████████░░░░░░░\nMed   ░░░░░░░░████████████░░░\n      ░░░░░░░░░░░░░░████████\nLow   ░░░░░░░░░░░░░░░░░░░░██\n      ────────────────────────\n      9am   12pm   3pm   6pm\n\nRECOMMENDED MAPPING:\n• 9-11 AM (Peak): Deep coding, architecture decisions, writing\n• 11-12 PM (Good): Code reviews, problem-solving, pair programming  \n• 1-3 PM (Dip): Meetings, emails, administrative tasks\n• 3-5 PM (Recovery): Learning, documentation, low-stakes work",
+        "explanation": "Most developers have peak cognitive energy in the mid-morning. Match your hardest work to your highest energy. Never schedule meetings during your peak hours unless absolutely necessary."
+      }
+    },
+    {
+      "heading": "The Weekly Review: Your Productivity Audit",
+      "body": "Every Friday afternoon, spend 30 minutes reviewing your week. Ask yourself: (1) What did I accomplish? (2) What took longer than expected and why? (3) What did I procrastinate on? (4) Where did I waste time? (5) What's the single most important thing for next week? This review creates a feedback loop. Without it, you'll repeat the same time management mistakes indefinitely. Use a simple spreadsheet or journal — the format doesn't matter, consistency does."
+    },
+    {
+      "heading": "Common Time Traps for Developers",
+      "body": "Watch out for these specific traps: (1) Perfectionism on code that doesn't need it — shipped code beats perfect code. (2) Context switching between branches — finish one task before starting another. (3) Unnecessary meetings — ask 'could this be an email?' before accepting. (4) Scope creep on side projects — set a hard deadline and stick to it. (5) Over-engineering — build the simplest thing that works, then iterate."
+    },
+    {
+      "heading": "Practice Task",
+      "body": "For one full work week, track every 30-minute block. At the end of the week, categorize each block using the Eisenhower Matrix. Calculate what percentage of your time falls in each quadrant. Set a goal to shift 10% of your Quadrant 1 time into Quadrant 2 by automating, delegating, or eliminating Quadrant 3 and 4 activities."
+    }
+  ],
+  "keyInsights": [
+    "Context switching costs 23 minutes of recovery time per interruption",
+    "Your energy curve matters as much as task priority — match task difficulty to energy level",
+    "Weekly reviews create the feedback loop that makes time management improve over time",
+    "Most developers underestimate Quadrant 2 (important but not urgent) — that's where career growth happens"
+  ]
+}

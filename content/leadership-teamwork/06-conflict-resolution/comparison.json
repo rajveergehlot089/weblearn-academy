@@ -1,0 +1,39 @@
+{
+  "topicId": "06-conflict-resolution",
+  "comparisons": [
+    {
+      "concept": "Thomas-Kilmann Conflict Modes",
+      "rows": [
+        { "dimension": "Approach", "competing": "Assert your view, ignore other's", "accommodating": "Yield to the other party", "avoiding": "Sidestep the issue", "compromising": "Split the difference", "collaborating": "Find a creative win-win solution" },
+        { "dimension": "Best for", "competing": "Emergencies, ethical issues, unpopular decisions", "accommodating": "When you're wrong, or relationship matters more", "avoiding": "Trivial issues, emotions too high", "compromising": "Time pressure, equal power", "collaborating": "Both perspectives matter, time available" },
+        { "dimension": "Risk", "competing": "Damages relationships", "accommodating": "Your needs go unmet", "avoiding": "Issues fester", "compromising": "No one fully satisfied", "collaborating": "Time-consuming" },
+        { "dimension": "Frequency in leaders", "competing": "High (common default under pressure)", "accommodating": "Low (uncommon)", "avoiding": "Medium (often overused)", "compromising": "High (default diplomatic mode)", "collaborating": "Low (requires skill and time)" }
+      ],
+      "explanation": "No mode is inherently best. The key is choosing the right mode for the situation — and most leaders overuse competing or avoiding."
+    },
+    {
+      "concept": "Healthy Conflict vs. Toxic Conflict",
+      "rows": [
+        { "dimension": "Focus", "healthy": "Ideas, approaches, content", "toxic": "Personal character, motives, history" },
+        { "dimension": "Language", "healthy": "'I see it differently because...'", "toxic": "'You always...' 'You never...'" },
+        { "dimension": "Goal", "healthy": "Find the best answer together", "toxic": "Win, prove the other wrong" },
+        { "dimension": "Emotion", "healthy": "Frustration, passion, energy", "toxic": "Anger, contempt, personal attacks" },
+        { "dimension": "Outcome", "healthy": "Better decisions, stronger trust", "toxic": "Damaged relationships, fear of speaking up" },
+        { "dimension": "Resolution", "healthy": "Facilitate, give space", "toxic": "Mediate, set boundaries, intervene" }
+      ],
+      "explanation": "The same disagreement can be healthy or toxic depending on HOW it's conducted. The leader's job is to keep conflict healthy."
+    },
+    {
+      "concept": "Positions vs. Interests in Conflict",
+      "rows": [
+        { "dimension": "What it is", "position": "What someone says they want", "interest": "Why they want it" },
+        { "dimension": "Example", "position": "'We must launch by June'", "interest": "'We need to show Q2 progress to secure funding'" },
+        { "dimension": "Flexibility", "position": "Rigid — hard to change", "interest": "Flexible — many ways to satisfy it" },
+        { "dimension": "Resolution", "position": "Compromise or stalemate", "interest": "Creative solutions that satisfy both parties" },
+        { "dimension": "Discovery method", "position": "Ask 'what do you want?'", "interest": "Ask 'why is this important to you?'" }
+      ],
+      "explanation": "Most conflicts are about interests, not positions. When you understand why someone wants something, you can find solutions they haven't imagined."
+    }
+  ],
+  "keyInsight": "The best conflict resolution happens before conflict escalates — through clear expectations, regular feedback, and a culture where disagreement is safe and structured."
+}

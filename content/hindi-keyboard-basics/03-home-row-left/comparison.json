@@ -1,0 +1,18 @@
+{
+  "topicId": "03-home-row-left",
+  "comparisons": [
+    {
+      "concept": "Home Row",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Home Row\nconst result = {\n  concept: \"Home Row\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Home Row\nresult = {\n    \"concept\": \"Home Row\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Home Row is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Home Row is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

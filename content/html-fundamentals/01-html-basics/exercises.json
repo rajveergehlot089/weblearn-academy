@@ -1,0 +1,46 @@
+{
+  "topicId": "01-html-basics",
+  "type": "exercises",
+  "estimatedMinutes": 20,
+  "exercises": [
+    {
+      "title": "Create Your First HTML Page",
+      "description": "Create a complete HTML document with proper structure including DOCTYPE, html, head, and body elements.",
+      "tasks": [
+        "Add the DOCTYPE declaration at the top",
+        "Create the html element with lang=\"en\"",
+        "Add head section with charset, viewport, and title",
+        "Create body section with a heading and paragraph",
+        "Save as index.html and open in browser"
+      ],
+      "solution": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>My First Page</title>\n</head>\n<body>\n    <h1>Hello, World!</h1>\n    <p>This is my first HTML page.</p>\n</body>\n</html>"
+    },
+    {
+      "title": "Build a Semantic Layout",
+      "description": "Create a web page layout using semantic HTML elements instead of divs.",
+      "tasks": [
+        "Create a header element with an h1 title",
+        "Add a nav element with a list of 3 navigation links",
+        "Create a main element containing at least 2 sections",
+        "Each section should have an h2 heading and content",
+        "Add an aside element with sidebar content",
+        "Finish with a footer element"
+      ],
+      "solution": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Semantic Layout</title>\n</head>\n<body>\n    <header>\n        <h1>My Website</h1>\n        <nav>\n            <ul>\n                <li><a href=\"#home\">Home</a></li>\n                <li><a href=\"#about\">About</a></li>\n                <li><a href=\"#contact\">Contact</a></li>\n            </ul>\n        </nav>\n    </header>\n    \n    <main>\n        <section id=\"home\">\n            <h2>Welcome</h2>\n            <p>This is the home section.</p>\n        </section>\n        \n        <section id=\"about\">\n            <h2>About Us</h2>\n            <p>Learn more about our mission.</p>\n        </section>\n    </main>\n    \n    <aside>\n        <h3>Related Links</h3>\n        <ul>\n            <li><a href=\"#resources\">Resources</a></li>\n            <li><a href=\"#blog\">Blog</a></li>\n        </ul>\n    </aside>\n    \n    <footer>\n        <p>&copy; 2026 My Website. All rights reserved.</p>\n    </footer>\n</body>\n</html>"
+    },
+    {
+      "title": "Create a Contact Form",
+      "description": "Build an accessible contact form with proper labels and input types.",
+      "tasks": [
+        "Create a form element with action attribute",
+        "Add a text input for name with label",
+        "Add an email input for email with label",
+        "Add a textarea for message with label",
+        "Include required attributes where appropriate",
+        "Add a submit button",
+        "Ensure all inputs have associated labels"
+      ],
+      "solution": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Contact Form</title>\n</head>\n<body>\n    <h1>Contact Us</h1>\n    <form action=\"/submit\" method=\"POST\">\n        <div>\n            <label for=\"name\">Name:</label>\n            <input type=\"text\" id=\"name\" name=\"name\" required placeholder=\"Your name\">\n        </div>\n        \n        <div>\n            <label for=\"email\">Email:</label>\n            <input type=\"email\" id=\"email\" name=\"email\" required placeholder=\"you@example.com\">\n        </div>\n        \n        <div>\n            <label for=\"subject\">Subject:</label>\n            <input type=\"text\" id=\"subject\" name=\"subject\" required>\n        </div>\n        \n        <div>\n            <label for=\"message\">Message:</label>\n            <textarea id=\"message\" name=\"message\" rows=\"5\" required></textarea>\n        </div>\n        \n        <button type=\"submit\">Send Message</button>\n    </form>\n</body>\n</html>"
+    }
+  ]
+}

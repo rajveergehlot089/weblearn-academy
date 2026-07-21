@@ -1,0 +1,44 @@
+{
+  "topicId": "04-http-https",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "HTTP Methods (Verbs)",
+      "body": "Each request has a METHOD that describes what you want to do:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// GET — Retrieve data (most common)\nfetch('https://api.example.com/users')\n  .then(res => res.json())\n  .then(data => console.log(data));\n\n// POST — Create new data\nfetch('https://api.example.com/users', {\n  method: 'POST',\n  headers: { 'Content-Type': 'application/json' },\n  body: JSON.stringify({ name: 'Raj', email: 'raj@example.com' })\n});\n\n// PUT — Update existing data\n// DELETE — Remove data",
+        "explanation": "GET reads, POST creates, PUT updates, DELETE removes. This maps directly to CRUD operations (Create, Read, Update, Delete) that you'll use in every app."
+      }
+    },
+    {
+      "heading": "Status Codes You Must Know",
+      "body": "Every response comes with a status code:",
+      "code": {
+        "language": "javascript",
+        "snippet": "/*\n  2xx — Success\n  200 OK              — Request worked\n  201 Created          — New resource was created\n\n  3xx — Redirect\n  301 Moved Permanently — Page moved to a new URL\n\n  4xx — Client Error (your fault)\n  400 Bad Request      — Invalid input\n  401 Unauthorized     — Not logged in\n  403 Forbidden        — Logged in but no permission\n  404 Not Found        — URL doesn't exist\n\n  5xx — Server Error (their fault)\n  500 Internal Error   — Server broke\n  503 Unavailable      — Server is overloaded\n*/",
+        "explanation": "2xx means success. 4xx means you made a mistake (wrong URL, not logged in). 5xx means the server has a problem. Understanding these helps you debug API calls instantly."
+      }
+    },
+    {
+      "heading": "Request & Response Anatomy",
+      "body": "A complete HTTP exchange:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// REQUEST has 3 parts:\n// 1. Method + URL: GET /api/users\n// 2. Headers: { Authorization: 'Bearer token123' }\n// 3. Body (for POST/PUT): { name: 'Raj' }\n\n// RESPONSE has 3 parts:\n// 1. Status: 200 OK\n// 2. Headers: { Content-Type: 'application/json' }\n// 3. Body: [{ id: 1, name: 'Raj' }, ...]\n\n// In JavaScript:\nlet response = await fetch('/api/users');\nlet status = response.status;     // 200\nlet headers = response.headers;   // Headers object\nlet data = await response.json(); // The actual data",
+        "explanation": "Every HTTP exchange follows this exact pattern. Headers carry metadata (auth tokens, content types, caching rules). The body carries the actual data."
+      }
+    },
+    {
+      "heading": "HTTPS and Security",
+      "body": "HTTPS uses TLS (Transport Layer Security) to encrypt data:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// HTTP:  GET /login → sends password in PLAIN TEXT\n//         Anyone on the network can read it!\n\n// HTTPS: GET /login → password is ENCRYPTED\n//         Even if intercepted, it's unreadable\n\n// Signs of HTTPS:\n// 1. URL starts with https://\n// 2. Padlock icon in browser\n// 3. SSL certificate (you can click to view it)\n\n// Always use HTTPS in production!",
+        "explanation": "Without HTTPS, passwords, credit cards, and personal data travel in plain text — anyone on the same WiFi can intercept them. HTTPS encrypts everything. Modern browsers warn you about HTTP sites."
+      }
+    }
+  ],
+  "summary": "HTTP uses methods (GET, POST, PUT, DELETE) to request actions and status codes (200, 404, 500) to report outcomes. HTTPS adds encryption. Every request has method + URL + headers + body; every response has status + headers + body."
+}

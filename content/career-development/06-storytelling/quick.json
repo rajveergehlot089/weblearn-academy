@@ -1,0 +1,29 @@
+{
+  "topicId": "06-storytelling",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Stories Beat Facts",
+      "body": "Neuroscience shows that stories activate multiple brain regions simultaneously — not just the language centers, but also the sensory and emotional areas. When you present data alone, the audience processes it intellectually. When you wrap that data in a story, they feel it. Stories are how humans have shared knowledge for thousands of years. Use them."
+    },
+    {
+      "heading": "The Story Spine",
+      "body": "Every memorable talk follows a version of this structure:\n\n1. **Once upon a time...**: Set the scene. Where were you? What was happening?\n2. **Every day...**: What was the normal state? What was the status quo?\n3. **Until one day...**: What changed? What was the problem or disruption?\n4. **Because of that...**: What did you do? What was your approach?\n5. **Until finally...**: What was the result? What did you learn?\n6. **And since then...**: What changed permanently? What's the takeaway?"
+    },
+    {
+      "heading": "Making Technical Topics Story-Worthy",
+      "body": "Every technical topic has a story hiding inside it:\n- **Bug hunt**: The mystery of why production was slow and how you solved it\n- **Migration**: The journey from old system to new — what went wrong, what you learned\n- **Launch**: The buildup to a release, the late nights, the final triumph\n- **Failure**: The deployment that broke everything and what it taught you\n\nStories don't need drama — they need a problem, a journey, and a lesson."
+    },
+    {
+      "heading": "The 3 Elements of a Good Story",
+      "body": "1. **Conflict**: Without a problem, there's no story. What went wrong? What was hard?\n2. **Character**: You or your team. Give the audience someone to root for.\n3. **Resolution**: What happened? What did you learn? What should the audience do differently?"
+    }
+  ],
+  "jargon": [
+    { "term": "Story Spine", "definition": "A narrative framework: 'Once upon a time... every day... until one day... because of that... until finally... and since then...' It gives any story a satisfying arc." },
+    { "term": "Hook", "definition": "The opening of your talk designed to grab attention immediately — a surprising fact, a question, or a relatable scenario." },
+    { "term": "Vulnerability", "definition": "Sharing genuine experiences, including failures and mistakes. Audiences connect with honesty far more than polished perfection." }
+  ],
+  "summary": "Stories activate the brain more deeply than facts alone. Use the Story Spine: scene → normal → disruption → action → result → lesson. Every technical topic has a story — find the conflict, the characters, and the resolution. Vulnerability and honesty make stories resonate."
+}

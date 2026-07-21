@@ -1,0 +1,30 @@
+{
+  "topicId": "01-css-intro",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is CSS Introduction & Selectors?",
+      "body": "How CSS works, selectors, specificity, and the cascade. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "CSS Introduction & Selectors is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind CSS Introduction & Selectors is understanding how different components work together.\n\n2. Application: In practice, you'll use CSS Introduction & Selectors every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most CSS Introduction & Selectors implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding CSS Introduction & Selectors is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Introduction",
+      "definition": "A key concept in CSS Introduction & Selectors. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Selectors",
+      "definition": "A key concept in CSS Introduction & Selectors. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "CSS Introduction & Selectors is a core concept in fundamentals. How CSS works, selectors, specificity, and the cascade. Focus on understanding the fundamentals first, then practice applying them."
+}

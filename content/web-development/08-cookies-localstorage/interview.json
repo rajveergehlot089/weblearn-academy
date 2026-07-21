@@ -1,0 +1,15 @@
+{
+  "topicId": "08-cookies-localstorage",
+  "questions": [
+    {
+      "question": "What is the difference between cookies and localStorage?",
+      "answer": "Cookies are small (4KB), sent to the server with every HTTP request, and can have expiration dates. LocalStorage is larger (5-10MB), only accessible via JavaScript (never sent to the server), and persists until manually cleared. Use cookies for auth tokens (httpOnly) and server-side tracking. Use localStorage for client-only state like themes and form drafts.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why should you use httpOnly cookies for JWT instead of localStorage?",
+      "answer": "localStorage is accessible to any JavaScript running on the page. If an XSS vulnerability exists, an attacker can steal the JWT token. httpOnly cookies are invisible to JavaScript — they're only sent via HTTP requests. Even if XSS exists, the attacker can't read the token.",
+      "difficulty": "medium"
+    }
+  ]
+}

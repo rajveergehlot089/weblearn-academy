@@ -1,0 +1,20 @@
+{
+  "topicId": "09-databases-crud",
+  "questions": [
+    {
+      "question": "What is the difference between SQL and NoSQL databases?",
+      "answer": "SQL databases (MySQL, PostgreSQL) use tables with fixed schemas — every row has the same columns. They excel at relationships and complex queries (JOINs). NoSQL databases (MongoDB, Redis) use flexible documents — each record can have different fields. They excel at scaling and varied data.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is a primary key?",
+      "answer": "A primary key is a unique identifier for each row in a database table. It must be unique (no duplicates) and not null. Examples: auto-incrementing integer (1, 2, 3...), UUID (abc-123-def), or email (if unique). Primary keys let you precisely identify and reference any record.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is database indexing and why does it matter?",
+      "answer": "An index is a data structure that speeds up data retrieval — like a book index that lets you find topics without reading every page. Without an index, the database scans every row (slow for large tables). With an index on the 'email' column, looking up a user by email is instant. Tradeoff: indexes speed up reads but slow down writes.",
+      "difficulty": "hard"
+    }
+  ]
+}

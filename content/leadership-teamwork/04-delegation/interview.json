@@ -1,0 +1,30 @@
+{
+  "topicId": "04-delegation",
+  "questions": [
+    {
+      "question": "How do you decide what to delegate and what to keep?",
+      "answer": "I use the Eisenhower Matrix and ask three questions: (1) Is someone else capable of doing this? (2) Would doing this develop someone on my team? (3) Am I the only person who can do this? If the answer to #3 is no, I delegate it. I keep vision, strategy, performance management, and confidential people matters. I delegate everything that develops others, frees me for higher-value work, and doesn't require my unique authority.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What do you do when someone you delegated to struggles?",
+      "answer": "First, I check if I set them up for success — clear expectations, adequate resources, appropriate authority. If those were missing, that's my failure. Then I ask: 'What's blocking you?' and 'What do you need?' I coach rather than rescue. I help them problem-solve, not solve their problems. If they're consistently struggling, I reassess whether the delegation level was right and adjust — more support, more structure, or a different approach.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you prevent reverse delegation?",
+      "answer": "When someone brings a problem to me, my first question is always 'What do you think we should do?' This trains people to come with solutions, not just problems. If they haven't thought it through, I send them back: 'Think about it and come back with a recommendation.' Over time, people stop bringing problems back because they know I'll ask them to solve it. It takes patience — usually 2-3 rounds before the pattern changes.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you delegate to someone who has never been delegated to before?",
+      "answer": "I start with a small, low-risk task and use a lower delegation level — like 'investigate and recommend.' I give explicit context on why the task matters, what success looks like, and what authority they have. I set a short check-in timeline. After they complete it, I give specific feedback on both the outcome and the process. Then I gradually increase the delegation level. The key is making them feel safe to try, fail, and learn.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "How do you handle situations where delegation failed?",
+      "answer": "I run a blameless post-mortem. Questions: (1) Did I set clear expectations? (2) Did I give adequate authority? (3) Did I provide enough context? (4) Was the person's skill level appropriate? (5) Did I check in at the right frequency? Most delegation failures trace back to unclear expectations, insufficient authority, or poor fit between person and task. I take ownership of the setup failure, adjust my approach, and try again with the same or different person.",
+      "difficulty": "hard"
+    }
+  ]
+}

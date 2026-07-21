@@ -1,0 +1,34 @@
+{
+  "topicId": "03-typography-colors",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Typography, Colors & Units?",
+      "body": "Font properties, color systems (hex, RGB, HSL), and CSS units. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "Typography, Colors & Units is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind Typography, Colors & Units is understanding how different components work together.\n\n2. Application: In practice, you'll use Typography, Colors & Units every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most Typography, Colors & Units implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding Typography, Colors & Units is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Typography,",
+      "definition": "A key concept in Typography, Colors & Units. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Colors",
+      "definition": "A key concept in Typography, Colors & Units. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Units",
+      "definition": "A key concept in Typography, Colors & Units. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "Typography, Colors & Units is a core concept in fundamentals. Font properties, color systems (hex, RGB, HSL), and CSS units. Focus on understanding the fundamentals first, then practice applying them."
+}

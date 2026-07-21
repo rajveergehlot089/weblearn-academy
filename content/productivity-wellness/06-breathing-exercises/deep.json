@@ -1,0 +1,42 @@
+{
+  "topicId": "06-breathing-exercises",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The Science of Breath Control",
+      "body": "Your breathing is unique among autonomic functions — it happens automatically AND you can control it voluntarily. This makes it a direct gateway to your nervous system. When you breathe slowly and deeply, you stimulate the vagus nerve, which runs from your brainstem to your abdomen. This triggers the parasympathetic response: heart rate drops, blood pressure decreases, cortisol reduces, and digestion improves. Research shows that just 5 minutes of slow breathing daily can reduce baseline anxiety by 20-30% over 8 weeks."
+    },
+    {
+      "heading": "Progressive Muscle Relaxation (PMR)",
+      "body": "PMR was developed by Dr. Edmund Jacobson in the 1930s. The principle: by deliberately tensing and then relaxing each muscle group, you become aware of tension you didn't know you were holding. Developers often carry tension in their shoulders, jaw, and hands without realizing it. PMR makes this tension conscious so you can release it.",
+      "code": {
+        "language": "text",
+        "snippet": "PROGRESSIVE MUSCLE RELAXATION (15 minutes):\n\nLie down or sit comfortably. For each muscle group:\n1. Tense the muscle for 5 seconds\n2. Release and notice the difference for 15 seconds\n\nSEQUENCE (from toes to head):\n1. Feet: Curl toes tightly → release\n2. Calves: Point feet up → release\n3. Thighs: Squeeze quads → release\n4. Glutes: Clench tightly → release\n5. Stomach: Tighten core → release\n6. Hands: Make fists → release\n7. Forearms: Flex wrists → release\n8. Biceps: Flex → release\n9. Shoulders: Shrug to ears → release\n10. Neck: Push head back gently → release\n11. Jaw: Clench teeth → release\n12. Eyes: Squeeze shut → release\n13. Forehead: Furrow brow → release\n\nTIP: After releasing, take 3 slow breaths and notice\nthe contrast between tension and relaxation.\n\nDEVELOPER APPLICATION:\n• Do a quick 3-minute version at your desk (hands, shoulders, jaw only)\n• Do the full version before bed for better sleep\n• Do it during lunch break to reset afternoon focus",
+        "explanation": "The key isn't the tensing — it's the RELEASING. The contrast teaches your body what 'relaxed' actually feels like, so you can recognize and release tension throughout the day."
+      }
+    },
+    {
+      "heading": "Body Scan Meditation",
+      "body": "A body scan is a mindful version of PMR — instead of tensing and releasing, you simply notice sensations in each body part without trying to change them. This builds body awareness and helps you catch stress early. Start with 5 minutes and work up to 15.",
+      "code": {
+        "language": "text",
+        "snippet": "BODY SCAN MEDITATION:\n\n1. Lie down or sit comfortably\n2. Close eyes, take 3 deep breaths\n3. Focus attention on each body part (30 seconds each):\n   • Soles of feet → notice warmth, pressure, tingling\n   • Ankles → notice any tension\n   • Calves → notice blood flow\n   • Knees → notice stability\n   • Thighs → notice weight\n   • Hips → notice any tightness\n   • Lower back → notice the surface beneath you\n   • Upper back → notice shoulder blades\n   • Chest → notice breathing movement\n   • Stomach → notice rise and fall\n   • Hands → notice fingers, palms\n   • Arms → notice upper and lower\n   • Shoulders → common stress point, just notice\n   • Neck → another stress point, just notice\n   • Jaw → unclench if clenched\n   • Eyes → let them rest\n   • Forehead → smooth any furrowing\n   • Top of head → imagine tension flowing out\n\n4. Take 3 deep breaths\n5. Open eyes slowly"
+      }
+    },
+    {
+      "heading": "Box Breathing for Developers: When and How",
+      "body": "Box breathing isn't just for Navy SEALs — it's perfect for high-pressure developer moments: production incidents, code review conflicts, sprint deadlines, and on-call nights. The technique (inhale 4, hold 4, exhale 4, hold 4) creates a rhythm that anchors your attention and activates calm. Practice it when you're NOT stressed so it becomes automatic when you ARE. Start with 4 cycles (64 seconds) and work up to 8 cycles (2 minutes)."
+    },
+    {
+      "heading": "Practice Task",
+      "body": "Practice the 4-7-8 breathing technique twice daily for one week (morning and before bed). Track your stress level before and after each session on a 1-10 scale. At the end of the week, calculate the average stress reduction. Also try PMR once during the week and note how your body feels afterward."
+    }
+  ],
+  "keyInsights": [
+    "Breathing is the only autonomic function you can consciously control — it's a direct gateway to your nervous system",
+    "PMR works by making tension conscious so you can release it — the contrast between tension and relaxation is the teacher",
+    "Just 5 minutes of slow breathing daily can reduce baseline anxiety by 20-30% over 8 weeks",
+    "Practice breathing techniques when NOT stressed so they're automatic when you ARE stressed"
+  ]
+}

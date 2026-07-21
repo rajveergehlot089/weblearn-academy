@@ -1,0 +1,18 @@
+{
+  "topicId": "01-daily-greetings",
+  "comparisons": [
+    {
+      "concept": "Daily Greetings & Introductions",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Daily Greetings & Introductions\nconst result = {\n  concept: \"Daily Greetings & Introductions\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Daily Greetings & Introductions\nresult = {\n    \"concept\": \"Daily Greetings & Introductions\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Daily Greetings & Introductions is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Daily Greetings & Introductions is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

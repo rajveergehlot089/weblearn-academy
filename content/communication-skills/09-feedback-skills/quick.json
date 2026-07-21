@@ -1,0 +1,36 @@
+{
+  "topicId": "09-feedback-skills",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Feedback Matters",
+      "body": "Feedback is the fastest way to grow. Without it, you're blind to your blind spots. But most people either avoid giving feedback (fearing conflict) or deliver it poorly (causing defensiveness). Learning to give and receive feedback well is a career-changing skill."
+    },
+    {
+      "heading": "The SBI Model for Giving Feedback",
+      "body": "SBI makes feedback specific, objective, and hard to argue with:",
+      "bulletPoints": [
+        "Situation — Describe the specific context. 'In yesterday's client meeting...'",
+        "Behavior — Describe the observable behavior. 'You interrupted the client three times...'",
+        "Impact — Explain the effect. '...which made them pull back and seemed less engaged.'"
+      ]
+    },
+    {
+      "heading": "Receiving Feedback Gracefully",
+      "bulletPoints": [
+        "Listen fully — Don't interrupt or defend",
+        "Say thank you — 'I appreciate you telling me this'",
+        "Ask clarifying questions — 'Can you give me a specific example?'",
+        "Reflect before responding — You don't have to agree immediately",
+        "Follow up — Show the feedback led to change"
+      ]
+    }
+  ],
+  "jargon": [
+    { "term": "SBI Model", "definition": "Situation-Behavior-Impact: a framework for giving clear, non-threatening feedback. Describe the situation, the observable behavior, and its impact." },
+    { "term": "Constructive Feedback", "definition": "Feedback designed to improve performance, not criticize the person. Focuses on behavior (changeable) not character (fixed)." },
+    { "term": "Feedforward", "definition": "A feedback technique where you suggest future behavior instead of criticizing past behavior. 'Next time, try...' instead of 'You should have...'" }
+  ],
+  "summary": "Feedback accelerates growth. Use the SBI model: describe the Situation, observable Behavior, and its Impact. When receiving feedback: listen, thank, ask for specifics, reflect, and follow up. Focus on behavior (changeable) not character (fixed)."
+}

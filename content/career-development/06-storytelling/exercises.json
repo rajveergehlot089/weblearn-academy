@@ -1,0 +1,47 @@
+{
+  "topicId": "06-storytelling",
+  "exercises": [
+    {
+      "title": "Write a Failure Story",
+      "description": "Write a 3-minute story about a time something went wrong at work — a bug, a failed deployment, a project that didn't go as planned. Use the Story Spine: scene → normal → disruption → action → result → lesson. Include at least 2 specific details (a time, a number, or a visual moment). End with a lesson the audience can apply.",
+      "hints": [
+        "Be specific: '3 AM on a Tuesday' not 'one time'",
+        "Include the emotional moment — what did it feel like?",
+        "End with what you'd do differently — the audience needs a takeaway"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Example story:\n\n'Once upon a time, our team shipped a feature we were proud of — a real-time notification system. Every day, it worked perfectly in staging.\n\nUntil one day, at 11 PM on launch night, notifications started duplicating. Users received 5 copies of every alert. Support tickets flooded in.\n\nWe traced it to a message queue misconfiguration — our retry logic was retrying successful messages. The fix was a one-line change: acknowledge messages before processing, not after.\n\nBecause of that, we now write a 'runbook test' for every new feature — a checklist of what can go wrong and how to verify it before launch.\n\nAnd since then, we haven't had a single notification incident in 8 months. The lesson: test the failure modes, not just the happy path.'"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Data Storytelling Exercise",
+      "description": "Take a set of metrics from a project you've worked on (performance numbers, user growth, error rates, etc.) and turn them into a story. Write a 2-minute narrative that includes: (1) the context (what was happening), (2) the numbers with 'so what?' context, and (3) the human impact. Present it to a non-technical friend and see if they understand and care.",
+      "hints": [
+        "Don't lead with numbers — lead with the problem the numbers represent",
+        "Always answer 'so what?' after each number",
+        "Connect to human impact: users, revenue, time saved"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Before (data dump): 'Our p95 latency decreased from 800ms to 200ms. We reduced the database query count by 60%. Server costs decreased by 30%.'\n\nAfter (story):\n'Our app was frustrating users — pages took nearly a second to load, and every click felt sluggish. We profiled the app and found the database was being queried 12 times per page load. By restructuring our queries and adding caching, we cut that to 5 queries. Pages now load in 200 milliseconds. Users noticed — our satisfaction score went from 3.2 to 4.6 stars. And we saved $2,000 per month on server costs.'"
+      },
+      "difficulty": "hard"
+    },
+    {
+      "title": "Talk Rewrite Challenge",
+      "description": "Take any technical presentation you've given (or find one online) and rewrite the opening 3 minutes using storytelling techniques. Replace the first 3 slides with: (1) A hook — a surprising fact, question, or relatable problem, (2) Context — the normal state before the problem, (3) The disruption — what changed. Record yourself delivering the new opening and compare it to the original.",
+      "hints": [
+        "The original likely starts with 'Today I'll talk about...' — replace that entirely",
+        "Start with a moment, not an agenda",
+        "Make the audience feel the problem before you introduce the solution"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Original opening: 'Hi, I'm Alex. Today I'll talk about our migration from a monolith to microservices. I'll cover: why we migrated, the challenges we faced, and the results.'\n\nStory opening: 'Six months ago, deploying a one-line CSS change took 45 minutes. Our entire application — user auth, payments, notifications, admin — was one giant codebase. One broken import could bring down everything. We had 200 engineers stepping on each other's toes daily. This talk is about how we untangled that knot — and what we learned along the way.'\n\nThe story opening creates immediate empathy, establishes the stakes, and makes the audience want to know what happens next."
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

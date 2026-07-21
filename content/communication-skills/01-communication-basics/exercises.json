@@ -1,0 +1,50 @@
+{
+  "topicId": "01-communication-basics",
+  "exercises": [
+    {
+      "title": "Decode a Miscommunication",
+      "description": "Read the scenario below and identify: (1) where the breakdown happened, (2) what the sender assumed, and (3) how it could have been prevented.",
+      "hints": [
+        "Consider which step of the communication process broke down",
+        "Think about what assumptions each party made",
+        "Consider what question the sender could have asked"
+      ],
+      "scenario": "Sarah emails her team: 'Please update the document ASAP.' Three hours later, she's frustrated that no one has updated it. Two team members thought 'ASAP' meant by end of day. One thought it meant within the hour. One didn't see the email at all.",
+      "solution": "Breakdown points: (1) Vague language — 'ASAP' means different things to different people. (2) No channel confirmation — Sarah didn't check if everyone received the email. (3) No feedback loop — she didn't ask for confirmation. Prevention: 'Please update the document by 3pm today. Reply to confirm you've seen this.' Specific deadline, confirmed receipt.",
+      "difficulty": "easy"
+    },
+    {
+      "title": "Align Your Signals",
+      "description": "Practice congruence by delivering the same message with aligned and misaligned signals. Stand in front of a mirror or record yourself and deliver this line: 'I'm really excited about this project.'",
+      "hints": [
+        "First deliver it with crossed arms, flat tone, and no eye contact",
+        "Then deliver it with open posture, enthusiastic tone, and direct eye contact",
+        "Notice how different the SAME words feel"
+      ],
+      "practiceSteps": [
+        "Step 1: Say 'I'm really excited about this project' while crossing your arms, slouching, and looking away. How does it feel?",
+        "Step 2: Now say the same line standing tall, making eye contact, with genuine enthusiasm in your voice. Feel the difference.",
+        "Step 3: Try a third version — say something negative ('I hate this idea') but use positive body language and tone. Notice how confusing that is.",
+        "Reflection: Which signals did you trust more — the words or the body language?"
+      ],
+      "solution": "This exercise proves the 7-38-55 rule. When words and body language conflict, the receiver trusts nonverbal signals. Practice delivering bad news with empathy (soft tone, open posture) and good news with genuine enthusiasm. Congruence builds trust; incongruence creates doubt.",
+      "difficulty": "medium"
+    },
+    {
+      "title": "Rewrite for Clarity",
+      "description": "Rewrite these vague messages to be specific, actionable, and include a feedback mechanism.",
+      "hints": [
+        "Replace vague words (soon, ASAP, maybe, stuff) with specifics",
+        "Add a deadline or timeframe",
+        "Include a request for confirmation"
+      ],
+      "scenarios": [
+        "Original: 'Let me know when you're free to chat about the project.'",
+        "Original: 'The design needs some work.'",
+        "Original: 'Can you handle this when you get a chance?'"
+      ],
+      "solution": "Rewritten: (1) 'Can we meet Tuesday or Wednesday afternoon to discuss the Q3 project timeline? I have 2pm or 4pm open — does either work for you?' (2) 'The homepage hero section needs调整: the contrast ratio on the subtitle text is too low for accessibility standards, and the CTA button should be moved above the fold.' (3) 'Can you review the client proposal by Friday end of day? The key section to focus on is the pricing table on page 3.' Specificity eliminates ambiguity.",
+      "difficulty": "medium"
+    }
+  ]
+}

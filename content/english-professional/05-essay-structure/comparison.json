@@ -1,0 +1,18 @@
+{
+  "topicId": "05-essay-structure",
+  "comparisons": [
+    {
+      "concept": "Essay Structure & Writing",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Essay Structure & Writing\nconst result = {\n  concept: \"Essay Structure & Writing\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Essay Structure & Writing\nresult = {\n    \"concept\": \"Essay Structure & Writing\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Essay Structure & Writing is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Essay Structure & Writing is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

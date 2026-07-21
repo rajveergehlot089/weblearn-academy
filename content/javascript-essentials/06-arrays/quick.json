@@ -1,0 +1,34 @@
+{
+  "topicId": "06-arrays",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Arrays?",
+      "body": "push, pop, map, filter, reduce, find, and array iteration methods. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "Arrays is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind Arrays is understanding how different components work together.\n\n2. Application: In practice, you'll use Arrays every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most Arrays implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding Arrays is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Arrays",
+      "definition": "A key concept in Arrays. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Ordered",
+      "definition": "A key concept in Arrays. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Collections",
+      "definition": "A key concept in Arrays. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "Arrays is a core concept in data-structures. push, pop, map, filter, reduce, find, and array iteration methods. Focus on understanding the fundamentals first, then practice applying them."
+}

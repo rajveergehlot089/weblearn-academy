@@ -1,0 +1,26 @@
+{
+  "topicId": "02-emotional-intelligence",
+  "exercises": [
+    {
+      "title": "Emotion Granularity Practice",
+      "description": "For one week, record every strong emotion you experience in a journal. Instead of writing 'I felt bad,' force yourself to use the most specific emotion word possible: was it frustration, disappointment, overwhelm, loneliness, shame, or something else? Use an emotion wheel as a reference. Track how many distinct emotion words you use by the end of the week.",
+      "hints": ["Use the Plutchik emotion wheel or a similar tool to find precise words", "Note the intensity (1-10) and what triggered the emotion", "Most adults use only 5-6 emotion words — aim for 15+ distinct words this week"],
+      "solution": { "language": "text", "code": "Example emotion journal entries:\n\nMonday 9am: Anxious (7/10) — deadline tomorrow, uncertain about deliverable quality.\nMonday 2pm: Energized (8/10) — solved a difficult problem, team praised the solution.\nTuesday 8am: Dread (6/10) — upcoming difficult conversation with colleague.\nTuesday 3pm: Relief (9/10) — conversation went better than expected.\nWednesday 10am: Frustrated (5/10) — tool keeps breaking, blocking progress.\nWednesday 4pm: Proud (7/10) — completed feature ahead of schedule.\n\nWeek analysis:\n- Distinct emotion words used: 12 (anxious, energized, dread, relief, frustrated, proud, curious, content, irritated, hopeful, overwhelmed, grateful)\n- Pattern: Most strong emotions occur around work challenges\n- Insight: When I use precise words, I can identify specific triggers rather than feeling generally 'stressed'\n- Progress: Started the week using 'bad' and 'stressed' — ended with nuanced vocabulary" },
+      "difficulty": "easy"
+    },
+    {
+      "title": "The STOP Challenge",
+      "description": "For two weeks, practice the STOP technique (Stop, Think, Observe, Proceed) at least once daily in response to any mild frustration or emotional trigger. Rate the intensity before and after using STOP on a 1-10 scale. Track whether the gap between impulse and response grows over time.",
+      "hints": ["Start with low-stakes situations (traffic, long lines, minor irritations)", "Time yourself — STOP should take 30-60 seconds", "Notice if your default response changes over the two weeks"],
+      "solution": { "language": "text", "code": "Week 1 STOP practice log:\n\nDay 1: Co-worker interrupted me in meeting.\nBefore STOP: Anger (7/10)\nAfter STOP: Mild annoyance (3/10)\nResponse: Waited for them to finish, then calmly continued my point.\n\nDay 3: Received critical feedback on my report.\nBefore STOP: Defensive (8/10)\nAfter STOP: Open curiosity (4/10)\nResponse: Asked clarifying questions instead of making excuses.\n\nDay 5: Partner left dishes in sink again.\nBefore STOP: Resentment (6/10)\nAfter STOP: Mild irritation (3/10)\nResponse: Mentioned it calmly instead of sarcastically.\n\nWeek 2 pattern:\n- Average intensity before STOP: 6.8\n- Average intensity after STOP: 3.2\n- Gap reduction: 53% average decrease in emotional intensity\n- Observation: By Day 10, the 'Stop' step was becoming automatic — I didn't need the full technique for mild triggers.\n\nKey insight: The space between trigger and response literally grows with practice. What used to be instantaneous reactivity became a choice." },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Empathy Mapping Exercise",
+      "description": "Choose someone you interact with regularly (colleague, friend, family member). For one week, keep an empathy map for them. Note: What do they say? What do they do? What do they think? What do they feel? What are their pain points? What are their gains? At the end of the week, share your observations with them and see how accurate your empathy was.",
+      "hints": ["Observe their body language and tone, not just words", "Consider what pressures they might be under that you don't see", "Be humble about your assumptions — check them, don't state them as facts"],
+      "solution": { "language": "text", "code": "Empathy Map for: Alex (team member)\n\nWhat Alex SAYS:\n- 'I'm fine, just busy'\n- 'The project is on track'\n- 'I don't need help'\n\nWhat Alex DOES:\n- Stays late most nights\n- Responds to emails at 11pm\n- Avoids team social events\n- Short sentences in stand-ups\n\nWhat Alex THINKS (inferred):\n- 'I should be able to handle this alone'\n- 'Asking for help is weakness'\n- 'If I slow down, I'll fall behind'\n\nWhat Alex FEELS (inferred):\n- Overwhelmed\n- Anxious about performance\n- Isolated from the team\n\nPain Points:\n- Unclear priorities from management\n- Too many concurrent projects\n- No mentorship or guidance\n\nGains:\n- Being seen as reliable\n- Delivering quality work\n- Independence and autonomy\n\nAccuracy check with Alex:\n- Correct: Overwhelmed, prioritizing independence, feeling pressure\n- Incorrect: Thought he avoided social events due to dislike — actually due to time pressure\n- Missing: Didn't realize he felt isolated from the team\n\nAction: Offered to help prioritize his workload, invited him to a smaller coffee chat instead of large events." },
+      "difficulty": "hard"
+    }
+  ]
+}

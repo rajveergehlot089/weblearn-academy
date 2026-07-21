@@ -1,0 +1,31 @@
+{
+  "topicId": "08-numbers-symbols",
+  "exercises": [
+    {
+      "title": "Basic Practice",
+      "description": "Type these words: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9",
+      "hints": [
+        "Keep eyes on screen",
+        "Use proper finger placement"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "0, 1, 2, 3, 4, 5, 6, 7, 8, 9"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Sentence Practice",
+      "description": "Type each sentence without looking at the keyboard.",
+      "hints": [
+        "Focus on accuracy",
+        "Use all fingers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "mere paas nau kitabein hain\nchar log aaye\nek sau bees log the"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

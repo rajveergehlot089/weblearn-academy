@@ -1,0 +1,25 @@
+{
+  "topicId": "02-emotional-intelligence",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Emotional Intelligence (EQ)?",
+      "body": "Emotional Intelligence is the ability to recognize, understand, manage, and effectively use emotions — both your own and others'. Psychologist Daniel Goleman popularized EQ in his 1995 book, arguing that EQ is often more predictive of success than IQ. Research shows EQ accounts for 58% of performance across all job types, and people with high EQ earn an average of $29,000 more annually than those with low EQ."
+    },
+    {
+      "heading": "Goleman's Five Components of EQ",
+      "body": "1. Self-Awareness: Recognizing your emotions as they happen. Knowing your strengths, weaknesses, and what drives you.\n\n2. Self-Regulation: Managing disruptive emotions and impulses. Thinking before acting. Adapting to changing circumstances.\n\n3. Motivation: Being driven to achieve for the sake of achievement itself. Optimism, commitment, and initiative.\n\n4. Empathy: Understanding other people's emotional makeup. Considering others' feelings when making decisions.\n\n5. Social Skills: Managing relationships effectively. Communication, conflict management, leadership, and teamwork.\n\nThese components build on each other: self-awareness enables self-regulation, which supports empathy and social skills."
+    },
+    {
+      "heading": "The EQ vs IQ Myth",
+      "body": "EQ and IQ are not opposites — they're complementary. IQ gets you in the door; EQ determines how far you go. A brilliant surgeon with zero bedside manner will lose patients' trust. A technically average manager with high EQ will build teams that outperform. The good news: unlike IQ (which is largely fixed after adolescence), EQ can be developed throughout your entire life."
+    }
+  ],
+  "jargon": [
+    { "term": "EQ (Emotional Quotient)", "definition": "A measure of emotional intelligence — your ability to perceive, use, understand, manage, and handle emotions effectively." },
+    { "term": "Self-Regulation", "definition": "The ability to manage disruptive emotions and impulses. Not suppression, but choosing how to respond rather than reacting automatically." },
+    { "term": "Empathy", "definition": "The ability to understand and share another person's emotional state. Three types: cognitive (understanding their perspective), emotional (feeling what they feel), and compassionate (being moved to help)." }
+  ],
+  "summary": "Emotional Intelligence (EQ) is the ability to recognize, understand, and manage emotions — both yours and others'. Goleman's five components are: self-awareness, self-regulation, motivation, empathy, and social skills. Unlike IQ, EQ can be developed throughout life and is strongly correlated with career success, relationship quality, and mental health."
+}

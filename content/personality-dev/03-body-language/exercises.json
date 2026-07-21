@@ -1,0 +1,35 @@
+{
+  "topicId": "03-body-language",
+  "exercises": [
+    {
+      "title": "The Body Language Observation Journal",
+      "description": "For one week, observe body language in three daily situations: (1) A meeting or conversation, (2) A public space (cafe, bus, park), (3) A TV show or interview. For each, note 3 body language signals and what they likely mean.",
+      "hints": ["Focus on clusters of signals, not isolated gestures", "Note contradictions between words and body", "Consider context — what's appropriate varies by situation"],
+      "solution": {
+        "language": "text",
+        "code": "Body Language Journal - Day 1:\n\n1. Team meeting:\n- Colleague crossed arms while saying 'I'm fine with that decision' (contradiction — likely not fine)\n- Manager leaned forward when discussing new project (genuine interest)\n- Intern avoided eye contact when asked about progress (possible discomfort)\n\n2. Coffee shop:\n- Couple leaning toward each other, mirroring coffee cup positions (strong rapport)\n- Man checking phone while on date (disinterest or anxiety)\n- Barista smiling with eyes (genuine happiness, not just polite)\n\n3. TV interview:\n- Politician touching nose when asked about scandal (possible discomfort)\n- Athlete steepling before big game (confidence, expertise)\n- Guest pointing at host during argument (aggressive, building tension)"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "The Power Pose Experiment",
+      "description": "Before three different high-stakes situations this week (a meeting, a presentation, a difficult conversation), do a 2-minute power pose. Choose from: Wonder Woman (hands on hips), Superman (hands on hips, chest out), or Victory (arms raised in V). Rate your confidence before and after on a 1-10 scale.",
+      "hints": ["Do this in private — a bathroom stall works perfectly", "Breathe deeply during the pose", "Notice any physical changes in how you feel"],
+      "solution": {
+        "language": "text",
+        "code": "Power Pose Experiment - Results:\n\nSituation 1: Big presentation to leadership\n- Before pose: Confidence 4/10 (heart racing, palms sweaty)\n- After 2-min Wonder Woman pose: Confidence 7/10\n- During presentation: Maintained eye contact, spoke clearly\n- Feedback: 'Great energy in the room'\n\nSituation 2: Salary negotiation\n- Before pose: Confidence 5/10 (worried about seeming pushy)\n- After 2-min Victory pose: Confidence 8/10\n- During negotiation: Stayed calm, asked for what I wanted\n- Outcome: Got 10% more than initial offer\n\nSituation 3: Addressing conflict with colleague\n- Before pose: Confidence 3/10 (afraid of confrontation)\n- After 2-min Superman pose: Confidence 6/10\n- During conversation: Used 'I' statements, stayed composed\n- Outcome: Resolved issue without escalation"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "The Mirror Practice Session",
+      "description": "Stand in front of a mirror and practice three body language scenarios: (1) Confident introduction (firm handshake, eye contact, genuine smile), (2) Active listening (nodding, leaning forward, open posture), (3) Assertive disagreement (open palms, steady eye contact, measured gestures). Record yourself and review.",
+      "hints": ["Pay attention to your eyes — are they engaged or dead?", "Check for nervous habits — fidgeting, touching face", "Practice until it feels natural, not rehearsed"],
+      "solution": {
+        "language": "text",
+        "code": "Mirror Practice Session - Review Notes:\n\nScenario 1: Confident introduction\n- Watched recording: Smile was genuine (engaged eyes)\n- Handshake was firm but not crushing\n- Improvement needed: Spoke too fast, need to slow down\n\nScenario 2: Active listening\n- Watched recording: Good nodding frequency\n- Leaning forward too much — looked eager, not just interested\n- Improvement needed: Balance between engagement and space\n\nScenario 3: Assertive disagreement\n- Watched recording: Open palms were good\n- Eye contact was too intense — looked aggressive, not assertive\n- Improvement needed: Use the 50/70 rule for eye contact\n\nOverall: First two scenarios felt natural. Third scenario felt forced. Need more practice to make assertive body language feel authentic."
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

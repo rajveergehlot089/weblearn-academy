@@ -1,0 +1,42 @@
+{
+  "topicId": "08-empathy",
+  "comparisons": [
+    {
+      "concept": "Empathy vs. Sympathy",
+      "before": {
+        "label": "Sympathy",
+        "code": "Friend: 'My dog passed away yesterday.'\nYou: 'Oh, I'm so sorry. At least he lived a long life.'\n\nWhat friend hears: 'Your pain isn't that bad. Look on the bright side.'\nConnection level: Low"
+      },
+      "after": {
+        "label": "Empathy",
+        "code": "Friend: 'My dog passed away yesterday.'\nYou: 'That's devastating. How are you doing right now?'\nFriend: 'I can't stop crying.'\nYou: 'He was your best friend. Of course you're crying.'\n\nWhat friend hears: 'Your pain is valid. I'm here with you.'\nConnection level: Deep"
+      },
+      "explanation": "Sympathy says 'I feel sorry for you from a distance.' Empathy says 'I'm standing beside you in this.' The friend doesn't need perspective — they need presence."
+    },
+    {
+      "concept": "Fixing vs. Empathizing",
+      "before": {
+        "label": "Fixing (Problem-First)",
+        "code": "Partner: 'I'm so stressed about work.'\nYou: 'Have you tried making a to-do list? Or talking to your boss? Or looking for a new job?'\n\nWhat partner hears: 'You should be able to handle this. Why can't you?'\nFeeling: Dismissed, alone."
+      },
+      "after": {
+        "label": "Empathizing (Person-First)",
+        "code": "Partner: 'I'm so stressed about work.'\nYou: 'What's weighing on you the most?'\nPartner: 'The constant deadlines. I feel like I can't breathe.'\nYou: 'That sounds exhausting. When did it get this bad?'\n\nWhat partner hears: 'I care about YOUR experience, not just the problem.'\nFeeling: Understood, supported."
+      },
+      "explanation": "People often need to feel understood before they can solve problems. Ask: 'Do you want me to listen or help problem-solve?'"
+    },
+    {
+      "concept": "Agreement vs. Understanding",
+      "before": {
+        "label": "Dismissing Different Perspectives",
+        "code": "Colleague: 'I think we should go with Option B.'\nYou: 'That's wrong. Option A is clearly better. Here's why...'\n\nWhat colleague hears: 'Your opinion doesn't matter.'\nResult: They stop sharing ideas."
+      },
+      "after": {
+        "label": "Understanding Without Agreeing",
+        "code": "Colleague: 'I think we should go with Option B.'\nYou: 'I see the appeal of Option B. What's driving that thinking?'\nColleague: 'I think it's more cost-effective long-term.'\nYou: 'That's a fair point. I'm leaning toward A because of the timeline, but I see the long-term value in B.'\n\nWhat colleague hears: 'My perspective is valued, even if we disagree.'\nResult: Trust grows. Better decisions emerge."
+      },
+      "explanation": "Empathy doesn't require agreement. You can fully understand someone's perspective and still disagree. Understanding is the foundation of productive disagreement."
+    }
+  ],
+  "keyInsight": "Empathy isn't a soft skill — it's a strategic advantage. It reduces conflict, builds trust, and creates the conditions for better decisions. The shift from sympathy to empathy, from fixing to listening, and from agreeing to understanding transforms every relationship."
+}

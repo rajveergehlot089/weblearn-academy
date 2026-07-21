@@ -1,0 +1,47 @@
+{
+  "topicId": "09-interview-prep",
+  "exercises": [
+    {
+      "title": "STAR Story Bank",
+      "description": "Write out 5 STAR stories covering these themes: (1) a technical challenge you solved, (2) a time you worked with a difficult colleague or stakeholder, (3) a project you led or drove, (4) a failure or mistake and what you learned, (5) your proudest professional achievement. Each story should be 2-3 minutes when spoken aloud. Practice telling each one out loud.",
+      "hints": [
+        "Use 'I' not 'we' — the interviewer wants to know what YOU did",
+        "Include specific numbers and metrics in the Result",
+        "Practice until each story flows naturally without reading"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Example STAR Story (Technical Challenge):\n\nSituation: Our API response times had degraded from 200ms to 2 seconds over the past month. Users were complaining, and support tickets were increasing.\n\nTask: As the backend lead, I was responsible for diagnosing and fixing the performance issue.\n\nAction: I profiled the API and found that a new feature was making N+1 database queries on every request. I refactored the data access layer to use batch queries and added Redis caching for frequently accessed data.\n\nResult: Response times dropped from 2 seconds to 150ms. Support tickets decreased by 60%. The fix took 3 days and saved the team approximately 10 hours per week in support work."
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Company Research Dossier",
+      "description": "Choose a company you're interviewing with (or interested in). Create a research dossier covering: (1) What does the company do? (2) Who are their competitors? (3) What's their tech stack? (4) Recent news or product launches? (5) Company culture and values? (6) Glassdoor reviews — what do employees say? Use this to prepare 3 thoughtful questions and a tailored 'Why this company?' answer.",
+      "hints": [
+        "Check the company blog, engineering blog, and recent press releases",
+        "Look at their GitHub repositories for tech stack insights",
+        "Read 5+ Glassdoor reviews — look for patterns, not outliers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Dossier template:\n\nCompany: [Name]\nWhat they do: [1-2 sentences]\nCompetitors: [3-4 companies]\nTech stack: [languages, frameworks, tools from job posting + GitHub]\nRecent news: [2-3 recent articles or launches]\nCulture signals: [from Glassdoor, blog, social media]\n\nPrepared questions:\n1. 'I saw you recently launched [product]. How has the engineering team adapted to support it?'\n2. 'What does the team's technical debt situation look like?'\n3. 'How do engineers collaborate with product and design here?'\n\n'Why here?' answer: '[Company] is solving [specific problem] in a way that aligns with my experience in [your skill]. I'm particularly drawn to [specific aspect of their work] because [personal connection].'"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Mock Interview Sprint",
+      "description": "Do a full mock interview covering all stages: (1) Record yourself answering 'Tell me about yourself' (60-90 seconds), (2) Answer 3 behavioral questions using STAR (2-3 minutes each), (3) Solve a coding problem while thinking out loud (45 minutes), (4) Ask 5 questions as if you were interviewing the company. Review each recording and note what to improve.",
+      "hints": [
+        "Use a timer for each section — interviews are time-constrained",
+        "Have a friend play the interviewer if possible — it adds pressure",
+        "For the coding section, narrate your thought process, not just your code"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Mock interview checklist:\n\n1. 'Tell me about yourself' — Did I stay under 90 seconds? Did I mention relevant experience?\n2. Behavioral Q1 (technical challenge) — Did I use STAR? Was the result specific?\n3. Behavioral Q2 (conflict) — Did I avoid blaming others? Did I show growth?\n4. Behavioral Q3 (failure) — Was it genuine? Did I show what I learned?\n5. Coding problem — Did I clarify requirements? Think out loud? Test my solution?\n6. Questions for company — Were they specific and thoughtful?\n\nScore each section 1-5 and identify the lowest-scoring area for focused practice."
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

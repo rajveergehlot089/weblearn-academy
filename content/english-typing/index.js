@@ -1,0 +1,12 @@
+module.exports = [
+  { id: "01-touch-typing-intro", title: "Introduction to Touch Typing", group: "basics", day_fast_track: 1, day_full_course: 1, icon: "🔑", description: "Learn what touch typing is and why it matters.", prerequisites: [] },
+  { id: "02-home-row-asdf", title: "Home Row - ASDF Left Hand", group: "home-row", day_fast_track: 2, day_full_course: 3, icon: "🤟", description: "Master left hand home row keys.", prerequisites: ["01-touch-typing-intro"] },
+  { id: "03-home-row-jkl", title: "Home Row - JKL Right Hand", group: "home-row", day_fast_track: 3, day_full_course: 5, icon: "🤞", description: "Master right hand home row keys.", prerequisites: ["01-touch-typing-intro"] },
+  { id: "04-home-row-combined", title: "Home Row Combined Practice", group: "home-row", day_fast_track: 4, day_full_course: 7, icon: "✋", description: "Practice both hands on the home row.", prerequisites: ["02-home-row-asdf", "03-home-row-jkl"] },
+  { id: "05-upper-row", title: "Upper Row - QWERTY", group: "rows", day_fast_track: 5, day_full_course: 9, icon: "⬆️", description: "Keys above the home row.", prerequisites: ["04-home-row-combined"] },
+  { id: "06-lower-row", title: "Lower Row - ZXCVB", group: "rows", day_fast_track: 6, day_full_course: 11, icon: "⬇️", description: "Keys below the home row.", prerequisites: ["04-home-row-combined"] },
+  { id: "07-shift-keys", title: "Shift Keys and Capitals", group: "rows", day_fast_track: 7, day_full_course: 13, icon: "⇧", description: "Using shift for capital letters.", prerequisites: ["05-upper-row", "06-lower-row"] },
+  { id: "08-common-words", title: "Common English Words", group: "practice", day_fast_track: 8, day_full_course: 15, icon: "💤", description: "Most frequently used English words.", prerequisites: ["07-shift-keys"] },
+  { id: "09-sentences-paragraphs", title: "Sentences and Paragraphs", group: "practice", day_fast_track: 9, day_full_course: 17, icon: "📝", description: "Complete sentences and paragraphs.", prerequisites: ["08-common-words"] },
+  { id: "10-speed-accuracy", title: "Speed and Accuracy Building", group: "advanced", day_fast_track: 10, day_full_course: 20, icon: "⚡", description: "Timed tests to maximize speed.", prerequisites: ["09-sentences-paragraphs"] }
+];

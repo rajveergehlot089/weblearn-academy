@@ -1,0 +1,25 @@
+{
+  "topicId": "10-mastery-recap",
+  "questions": [
+    {
+      "question": "What is Keyboard Mastery Recap and why is it important?",
+      "answer": "Keyboard Mastery Recap is a fundamental concept that Review all skills and prepare for advanced practice. It's important because it forms the foundation for building robust and efficient applications. Understanding Keyboard Mastery Recap allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Keyboard Mastery Recap in a real project?",
+      "answer": "In practice, Keyboard Mastery Recap is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Keyboard Mastery Recap?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Keyboard Mastery Recap to a beginner?",
+      "answer": "Keyboard Mastery Recap is essentially about review all skills and prepare for advanced practice. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

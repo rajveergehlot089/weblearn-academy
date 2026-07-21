@@ -1,0 +1,29 @@
+{
+  "topicId": "01-self-awareness",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Self-Awareness?",
+      "body": "Self-awareness is the conscious knowledge of your own character, feelings, motives, and desires. It's the ability to see yourself clearly — understanding both your internal landscape (thoughts, emotions, values) and how you're perceived by others. Research by organizational psychologist Tasha Eurich found that while 95% of people believe they're self-aware, only about 10-15% actually are."
+    },
+    {
+      "heading": "The Two Types of Self-Awareness",
+      "body": "1. Internal Self-Awareness: How clearly you see your own values, passions, reactions, and impact on others. High internal awareness correlates with greater life satisfaction and lower anxiety.\n\n2. External Self-Awareness: Understanding how other people view you. This isn't about people-pleasing — it's about accurate perception of how your behavior lands with others.\n\nImportant: These two types are INDEPENDENT. You can be high in one and low in the other. True self-awareness requires developing both."
+    },
+    {
+      "heading": "The Johari Window Model",
+      "body": "Created by Joseph Luft and Harrington Ingham, the Johari Window is a framework for understanding self-awareness across four quadrants:\n\n• Open Area (known to self and others): Your public self — skills, behaviors everyone knows about.\n• Blind Spot (unknown to self, known to others): Habits or tendencies you're unaware of but others see clearly.\n• Hidden Area (known to self, unknown to others): Private information you choose not to share.\n• Unknown Area (unknown to both): Untapped potential or unconscious patterns.\n\nThe goal is to expand your Open Area through feedback (reducing Blind Spot) and appropriate self-disclosure (reducing Hidden Area)."
+    },
+    {
+      "heading": "Why Self-Awareness Matters",
+      "body": "Self-awareness is the foundation of emotional intelligence and personal growth. People with high self-awareness make better decisions, have stronger relationships, communicate more effectively, and are more adaptable to change. In leadership studies, self-awareness consistently ranks as the most important competency for effective leaders."
+    }
+  ],
+  "jargon": [
+    { "term": "Self-Awareness", "definition": "The ability to accurately perceive your own emotions, thoughts, values, and behaviors, and understand how they affect others." },
+    { "term": "Johari Window", "definition": "A psychological model with four quadrants (Open, Blind Spot, Hidden, Unknown) that maps what you know about yourself versus what others know." },
+    { "term": "Introspection", "definition": "The process of examining your own conscious thoughts and feelings. While valuable, research shows excessive introspection can actually reduce self-awareness." }
+  ],
+  "summary": "Self-awareness is the foundation of personal growth — knowing your values, emotions, strengths, and blind spots. Develop both internal awareness (how you see yourself) and external awareness (how others see you) using tools like the Johari Window and feedback seeking."
+}

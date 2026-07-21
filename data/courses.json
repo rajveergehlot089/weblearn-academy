@@ -1,0 +1,628 @@
+{
+  "courses": {
+    "web-development": {
+      "id": "web-development",
+      "title": "Full Stack Web Development",
+      "description": "Master HTML, CSS, JavaScript, APIs, databases and deployment. Build real-world web applications from scratch.",
+      "icon": "fas fa-code",
+      "emoji": "💻",
+      "category": "technology",
+      "difficulty": "intermediate",
+      "color": "#667eea",
+      "contentDir": "web-development",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 15,
+        "full-course": 30
+      },
+      "isActive": true,
+      "createdAt": "2026-07-17T00:00:00Z"
+    },
+    "hindi-typing": {
+      "id": "hindi-typing",
+      "title": "Hindi Typing Mastery",
+      "description": "Learn Hindi typing with Remington and Inscript keyboard layouts. Build speed and accuracy from scratch.",
+      "icon": "fas fa-keyboard",
+      "emoji": "हिन्दी",
+      "category": "typing",
+      "difficulty": "beginner",
+      "color": "#f59e0b",
+      "contentDir": "hindi-typing",
+      "hasTypingPractice": true,
+      "typingLayout": "remington",
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 10,
+        "full-course": 20
+      },
+      "isActive": true,
+      "createdAt": "2026-07-17T00:00:00Z"
+    },
+    "english-typing": {
+      "id": "english-typing",
+      "title": "English Touch Typing",
+      "description": "Master touch typing with proper finger placement. Go from hunt-and-peck to 60+ WPM.",
+      "icon": "fas fa-keyboard",
+      "emoji": "⌨️",
+      "category": "typing",
+      "difficulty": "beginner",
+      "color": "#10b981",
+      "contentDir": "english-typing",
+      "hasTypingPractice": true,
+      "typingLayout": "qwerty",
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 10,
+        "full-course": 20
+      },
+      "isActive": true,
+      "createdAt": "2026-07-17T00:00:00Z"
+    },
+    "english-learning": {
+      "id": "english-learning",
+      "title": "English Language Learning",
+      "description": "From grammar basics to interview-ready English. Build confidence in reading, writing, and speaking.",
+      "icon": "fas fa-language",
+      "emoji": "🇬🇧",
+      "category": "language",
+      "difficulty": "beginner",
+      "color": "#3b82f6",
+      "contentDir": "english-learning",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 12,
+        "full-course": 24
+      },
+      "isActive": true,
+      "createdAt": "2026-07-17T00:00:00Z"
+    },
+    "personality-dev": {
+      "id": "personality-dev",
+      "title": "Personality & Skill Development",
+      "description": "Master communication, leadership, confidence, public speaking and other essential life skills for the modern era.",
+      "icon": "fas fa-user-tie",
+      "emoji": "🌟",
+      "category": "soft-skills",
+      "difficulty": "beginner",
+      "color": "#8b5cf6",
+      "contentDir": "personality-dev",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 10,
+        "full-course": 20
+      },
+      "isActive": true,
+      "createdAt": "2026-07-17T00:00:00Z"
+    },
+    "html-fundamentals": {
+      "id": "html-fundamentals",
+      "title": "HTML Fundamentals",
+      "description": "Master the building blocks of every webpage. Learn HTML tags, forms, tables, semantic elements, and accessibility.",
+      "icon": "fas fa-file-code",
+      "emoji": "📄",
+      "category": "technology",
+      "difficulty": "beginner",
+      "color": "#e44d26",
+      "contentDir": "html-fundamentals",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 10,
+        "full-course": 20
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "css-mastery": {
+      "id": "css-mastery",
+      "title": "CSS Mastery",
+      "description": "From basic styling to advanced layouts. Master Flexbox, Grid, animations, responsive design, and CSS variables.",
+      "icon": "fas fa-palette",
+      "emoji": "🎨",
+      "category": "technology",
+      "difficulty": "beginner",
+      "color": "#264de4",
+      "contentDir": "css-mastery",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 10,
+        "full-course": 20
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "javascript-essentials": {
+      "id": "javascript-essentials",
+      "title": "JavaScript Essentials",
+      "description": "From variables to async/await. Master JavaScript fundamentals, DOM manipulation, ES6+, and modern patterns.",
+      "icon": "fas fa-bolt",
+      "emoji": "⚡",
+      "category": "technology",
+      "difficulty": "intermediate",
+      "color": "#f7df1e",
+      "contentDir": "javascript-essentials",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 10,
+        "full-course": 20
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "web-networking": {
+      "id": "web-networking",
+      "title": "Web Networking & APIs",
+      "description": "Understand HTTP/HTTPS, REST APIs, GraphQL, API gateways, and how the web communicates.",
+      "icon": "fas fa-globe",
+      "emoji": "🌐",
+      "category": "technology",
+      "difficulty": "intermediate",
+      "color": "#0ea5e9",
+      "contentDir": "web-networking",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 10,
+        "full-course": 20
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "backend-development": {
+      "id": "backend-development",
+      "title": "Backend Development",
+      "description": "Build server-side applications with Node.js, Express, databases, CRUD operations, and error handling.",
+      "icon": "fas fa-server",
+      "emoji": "🖥️",
+      "category": "technology",
+      "difficulty": "intermediate",
+      "color": "#68a063",
+      "contentDir": "backend-development",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 10,
+        "full-course": 20
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "web-security": {
+      "id": "web-security",
+      "title": "Web Security & Authentication",
+      "description": "JWT, sessions, OAuth, cookies, local storage, CORS, and protecting your applications from attacks.",
+      "icon": "fas fa-shield-halved",
+      "emoji": "🔐",
+      "category": "technology",
+      "difficulty": "intermediate",
+      "color": "#dc2626",
+      "contentDir": "web-security",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 10,
+        "full-course": 20
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "web-performance": {
+      "id": "web-performance",
+      "title": "Web Performance & Caching",
+      "description": "Loading states, caching strategies, lazy loading, optimization techniques, and error handling best practices.",
+      "icon": "fas fa-gauge-high",
+      "emoji": "⚡",
+      "category": "technology",
+      "difficulty": "advanced",
+      "color": "#8b5cf6",
+      "contentDir": "web-performance",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 10,
+        "full-course": 20
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "web-deployment": {
+      "id": "web-deployment",
+      "title": "Deployment & DevOps",
+      "description": "Ship your apps to production. Git, CI/CD, hosting platforms, domains, SSL, and the capstone project.",
+      "icon": "fas fa-rocket",
+      "emoji": "🚀",
+      "category": "technology",
+      "difficulty": "advanced",
+      "color": "#f97316",
+      "contentDir": "web-deployment",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 10,
+        "full-course": 20
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "hindi-keyboard-basics": {
+      "id": "hindi-keyboard-basics",
+      "title": "Hindi Keyboard Basics",
+      "description": "Learn Hindi keyboard layout, finger positioning, and home row keys. Build a solid typing foundation.",
+      "icon": "fas fa-keyboard",
+      "emoji": "ह",
+      "category": "typing",
+      "difficulty": "beginner",
+      "color": "#f59e0b",
+      "contentDir": "hindi-keyboard-basics",
+      "hasTypingPractice": true,
+      "typingLayout": "remington",
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 7,
+        "full-course": 14
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "hindi-word-building": {
+      "id": "hindi-word-building",
+      "title": "Hindi Word Building",
+      "description": "Master upper and lower rows, common Hindi words, numbers, and symbols.",
+      "icon": "fas fa-spell-check",
+      "emoji": "📝",
+      "category": "typing",
+      "difficulty": "beginner",
+      "color": "#d97706",
+      "contentDir": "hindi-word-building",
+      "hasTypingPractice": true,
+      "typingLayout": "remington",
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 7,
+        "full-course": 14
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "hindi-speed-fluency": {
+      "id": "hindi-speed-fluency",
+      "title": "Hindi Speed & Fluency",
+      "description": "Type Hindi sentences fluently, build speed, and master advanced typing drills.",
+      "icon": "fas fa-tachometer-alt",
+      "emoji": "⚡",
+      "category": "typing",
+      "difficulty": "intermediate",
+      "color": "#b45309",
+      "contentDir": "hindi-speed-fluency",
+      "hasTypingPractice": true,
+      "typingLayout": "remington",
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 6,
+        "full-course": 12
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "english-typing-foundations": {
+      "id": "english-typing-foundations",
+      "title": "English Typing Foundations",
+      "description": "Introduction to touch typing, home row keys ASDF and JKL. Build proper finger placement habits.",
+      "icon": "fas fa-keyboard",
+      "emoji": "⌨️",
+      "category": "typing",
+      "difficulty": "beginner",
+      "color": "#10b981",
+      "contentDir": "english-typing-foundations",
+      "hasTypingPractice": true,
+      "typingLayout": "qwerty",
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 7,
+        "full-course": 14
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "english-typing-mastery": {
+      "id": "english-typing-mastery",
+      "title": "English Keyboard Mastery",
+      "description": "Master upper row, lower row, shift keys, and all keyboard sections for complete coverage.",
+      "icon": "fas fa-hand-pointer",
+      "emoji": "🤚",
+      "category": "typing",
+      "difficulty": "beginner",
+      "color": "#059669",
+      "contentDir": "english-typing-mastery",
+      "hasTypingPractice": true,
+      "typingLayout": "qwerty",
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 7,
+        "full-course": 14
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "english-typing-advanced": {
+      "id": "english-typing-advanced",
+      "title": "English Typing Speed & Accuracy",
+      "description": "Common words, sentences, paragraphs, and timed speed drills. Reach 60+ WPM.",
+      "icon": "fas fa-bolt",
+      "emoji": "⚡",
+      "category": "typing",
+      "difficulty": "intermediate",
+      "color": "#047857",
+      "contentDir": "english-typing-advanced",
+      "hasTypingPractice": true,
+      "typingLayout": "qwerty",
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 6,
+        "full-course": 12
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "english-grammar-basics": {
+      "id": "english-grammar-basics",
+      "title": "English Grammar Basics",
+      "description": "Alphabet, pronunciation, nouns, pronouns, articles, verbs, and present tense. Build a grammar foundation.",
+      "icon": "fas fa-font",
+      "emoji": "🔤",
+      "category": "language",
+      "difficulty": "beginner",
+      "color": "#3b82f6",
+      "contentDir": "english-grammar-basics",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 8,
+        "full-course": 16
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "english-tenses-structure": {
+      "id": "english-tenses-structure",
+      "title": "English Tenses & Sentence Structure",
+      "description": "Past and future tenses, sentence structure (SVO), questions, negation, and prepositions.",
+      "icon": "fas fa-layer-group",
+      "emoji": "📦",
+      "category": "language",
+      "difficulty": "beginner",
+      "color": "#2563eb",
+      "contentDir": "english-tenses-structure",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 8,
+        "full-course": 16
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "english-vocabulary-grammar": {
+      "id": "english-vocabulary-grammar",
+      "title": "Vocabulary & Advanced Grammar",
+      "description": "Vocabulary building techniques, active/passive voice, conjunctions, and advanced grammar patterns.",
+      "icon": "fas fa-book-open",
+      "emoji": "📖",
+      "category": "language",
+      "difficulty": "intermediate",
+      "color": "#1d4ed8",
+      "contentDir": "english-vocabulary-grammar",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 8,
+        "full-course": 16
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "english-professional": {
+      "id": "english-professional",
+      "title": "Professional English & Communication",
+      "description": "Daily conversations, essay writing, paragraph structure, and interview-ready professional English.",
+      "icon": "fas fa-briefcase",
+      "emoji": "💼",
+      "category": "language",
+      "difficulty": "intermediate",
+      "color": "#1e40af",
+      "contentDir": "english-professional",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 6,
+        "full-course": 12
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "self-awareness-mindset": {
+      "id": "self-awareness-mindset",
+      "title": "Self-Awareness & Mindset",
+      "description": "Emotional intelligence, self-awareness, confidence building, and developing a growth mindset.",
+      "icon": "fas fa-brain",
+      "emoji": "🧠",
+      "category": "soft-skills",
+      "difficulty": "beginner",
+      "color": "#8b5cf6",
+      "contentDir": "self-awareness-mindset",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 7,
+        "full-course": 14
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "communication-skills": {
+      "id": "communication-skills",
+      "title": "Communication Skills",
+      "description": "Effective speaking, active listening, body language, non-verbal cues, and the art of clear communication.",
+      "icon": "fas fa-comments",
+      "emoji": "🗣️",
+      "category": "soft-skills",
+      "difficulty": "beginner",
+      "color": "#7c3aed",
+      "contentDir": "communication-skills",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 7,
+        "full-course": 14
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "productivity-wellness": {
+      "id": "productivity-wellness",
+      "title": "Productivity & Wellness",
+      "description": "Time management, stress management, work-life balance, and mental health strategies.",
+      "icon": "fas fa-clock",
+      "emoji": "⏰",
+      "category": "soft-skills",
+      "difficulty": "beginner",
+      "color": "#6d28d9",
+      "contentDir": "productivity-wellness",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 7,
+        "full-course": 14
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "leadership-teamwork": {
+      "id": "leadership-teamwork",
+      "title": "Leadership & Teamwork",
+      "description": "Lead teams, make decisions, resolve conflicts, delegate effectively, and inspire others.",
+      "icon": "fas fa-users",
+      "emoji": "👥",
+      "category": "soft-skills",
+      "difficulty": "intermediate",
+      "color": "#5b21b6",
+      "contentDir": "leadership-teamwork",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 6,
+        "full-course": 12
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    },
+    "career-development": {
+      "id": "career-development",
+      "title": "Career Development & Networking",
+      "description": "Public speaking, professional networking, personal branding, goal setting, and career planning.",
+      "icon": "fas fa-chart-line",
+      "emoji": "🎯",
+      "category": "soft-skills",
+      "difficulty": "intermediate",
+      "color": "#4c1d95",
+      "contentDir": "career-development",
+      "hasTypingPractice": false,
+      "modes": [
+        "fast-track",
+        "full-course"
+      ],
+      "totalDays": {
+        "fast-track": 6,
+        "full-course": 12
+      },
+      "isActive": true,
+      "createdAt": "2026-07-18T00:00:00Z"
+    }
+  }
+}

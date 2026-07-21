@@ -1,0 +1,28 @@
+{
+  "topicId": "10-leadership-assessment",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The Leadership Competency Framework",
+      "body": "Rate yourself on each dimension (1 = needs significant development, 5 = strong capability):\n\n**Self-Awareness**\n1. I can name my top 3 strengths and top 3 weaknesses\n2. I understand how my behavior affects others\n3. I recognize my emotional triggers\n4. I seek feedback regularly and act on it\n5. I can articulate my values and leadership philosophy\n\n**Communication**\n1. I listen actively without planning my response\n2. I give specific, timely feedback using SBI\n3. I adapt my communication style to different audiences\n4. I facilitate productive meetings\n5. I communicate difficult messages with empathy\n\n**Decision-Making**\n1. I make timely decisions with 70% information\n2. I clarify who owns each decision (RAPID)\n3. I consider diverse perspectives before deciding\n4. I learn from past decisions through journaling\n5. I communicate the 'why' behind decisions\n\n**People Development**\n1. I delegate effectively using the 5 levels\n2. I match development opportunities to individual goals\n3. I prevent reverse delegation by coaching, not rescuing\n4. I recognize contributions specifically and publicly\n5. I address underperformance directly and constructively\n\n**Team Building**\n1. I create psychological safety on my team\n2. I facilitate productive conflict resolution\n3. I build trust through consistent behavior\n4. I establish and maintain team norms\n5. I celebrate team wins and learn from failures"
+    },
+    {
+      "heading": "Interpreting Your Scores",
+      "body": "**Score 1-2**: Critical gap. This needs immediate attention. Focus your development here.\n\n**Score 3**: Adequate but not strong. Room for improvement. Include in your development plan.\n\n**Score 4-5**: Strength. Leverage this to support others. Consider mentoring someone who's weaker here.\n\n**Development strategy:**\n• Pick ONE area with the lowest score (not the area you enjoy most)\n• Set a specific, measurable goal for 90 days\n• Find a mentor or coach for that area\n• Track progress monthly\n• Get external feedback quarterly\n\nThe most common mistake: trying to improve everything at once. Focus beats breadth."
+    },
+    {
+      "heading": "Creating Your Leadership Development Plan",
+      "body": "Based on your assessment, create a focused 90-day plan:\n\n**Step 1: Choose your focus area** (lowest score or most impactful to improve)\n\n**Step 2: Set a SMART goal**\nSpecific: What exactly will improve?\nMeasurable: How will you know?\nAchievable: Is it realistic in 90 days?\nRelevant: Does it matter to your team/organization?\nTime-bound: What's the deadline?\n\n**Step 3: Design your learning approach**\n• Read one book on the topic\n• Find a mentor or coach\n• Practice one specific behavior daily\n• Get feedback monthly\n\n**Step 4: Track progress**\nWeekly: Journal about your practice\nMonthly: Self-assess progress (1-5 scale)\nQuarterly: Get 360 feedback on the specific area\n\n**Step 5: Celebrate and reset**\nAt 90 days: review progress, celebrate growth, choose next focus area."
+    },
+    {
+      "heading": "Getting Honest Feedback",
+      "body": "Self-assessment has limits. To get real feedback:\n\n**Ask specific questions:**\n• 'What's one thing I could do to be more effective?'\n• 'When have I been most/least helpful to you?'\n• 'What's one behavior of mine that frustrates you?'\n\n**Create safety:**\n• Ask in private, one-on-one\n• Thank them genuinely — don't get defensive\n• Follow up on what they share to show you acted on it\n\n**Use 360 feedback tools:**\n• Anonymous surveys for honesty\n• Include 5-8 people: manager, peers, direct reports\n• Focus on behaviors, not personality\n• Debrief with a coach to process the results\n\n**Act on it:**\nThe #1 reason people stop giving feedback: nothing changes. When you act on feedback, people give more of it."
+    },
+    {
+      "heading": "Strengths-Based vs. Weakness-Fixing Approach",
+      "body": "Research shows two approaches to development:\n\n**Weakness-fixing**: Spend time improving areas where you're weak. Produces competent generalists. Often feels like a grind.\n\n**Strengths-development**: Spend time maximizing areas where you're strong. Produces exceptional specialists. Often feels energizing.\n\n**The balanced approach** (recommended):\n1. Fix critical weaknesses that block your effectiveness (score of 1-2)\n2. Develop strengths that differentiate you (score of 4-5)\n3. Accept that you'll never be great at everything\n\nA leader who's brilliant at strategy but poor at communication needs to fix communication. A leader who's average at everything but great at nothing needs to develop a differentiating strength."
+    }
+  ],
+  "summary": "Leadership assessment is a catalyst for focused growth. Assess honestly, get external feedback, create a SMART development plan, and focus on one area for 90 days before moving to the next."
+}

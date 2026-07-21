@@ -1,0 +1,39 @@
+{
+  "topicId": "02-express-basics",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Express.js?",
+      "body": "Express.js is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. It's essentially a thin layer of features built on top of Node.js's http module."
+    },
+    {
+      "heading": "Setting Up Express",
+      "body": "First, create a new project and install Express:",
+      "code": {
+        "language": "bash",
+        "snippet": "mkdir my-express-app\ncd my-express-app\nnpm init -y\nnpm install express",
+        "explanation": "This creates a new directory, initializes a package.json file, and installs Express."
+      }
+    },
+    {
+      "heading": "Your First Express Server",
+      "body": "Here's a simple Express server that responds to requests:",
+      "code": {
+        "language": "javascript",
+        "snippet": "const express = require('express');\nconst app = express();\nconst port = 3000;\n\napp.get('/', (req, res) => {\n  res.send('Hello World!');\n});\n\napp.listen(port, () => {\n  console.log(`Server running at http://localhost:${port}/`);\n});",
+        "explanation": "We create an Express app, define a route for GET requests to '/', and start the server on port 3000."
+      }
+    },
+    {
+      "heading": "Express vs Raw Node.js",
+      "body": "Express simplifies many tasks that are complex with raw Node.js: routing, middleware, template engines, and static file serving. It's the most popular Node.js framework for building web applications and APIs."
+    }
+  ],
+  "jargon": [
+    { "term": "Express", "definition": "A minimal Node.js web framework that provides tools for building web applications and APIs quickly." },
+    { "term": "Route", "definition": "A combination of an HTTP method (GET, POST, etc.) and a URL path that defines how your app responds to client requests." },
+    { "term": "Middleware", "definition": "Functions that have access to the request and response objects. They can execute code, modify request/response, and call the next middleware." }
+  ],
+  "summary": "Express.js simplifies building Node.js web applications. It provides routing, middleware support, and many built-in features. Start with npm install express, create an app, define routes, and listen on a port."
+}

@@ -1,0 +1,31 @@
+{
+  "topicId": "03-home-row-right",
+  "exercises": [
+    {
+      "title": "Basic Practice",
+      "description": "Type these words: ja, da, ga, ma, na, jag, dam, gam, man",
+      "hints": [
+        "Keep eyes on screen",
+        "Use proper finger placement"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "ja, da, ga, ma, na, jag, dam, gam, man"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Sentence Practice",
+      "description": "Type each sentence without looking at the keyboard.",
+      "hints": [
+        "Focus on accuracy",
+        "Use all fingers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "jag dam gam\nman da ja"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

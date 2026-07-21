@@ -1,0 +1,27 @@
+{
+  "topicId": "01-node-intro",
+  "type": "interview",
+  "questions": [
+    {
+      "question": "What is Node.js and why would you use it?",
+      "answer": "Node.js is a JavaScript runtime built on Chrome's V8 engine that allows you to run JavaScript on the server side. You'd use it because: 1) It enables full-stack JavaScript development, reducing context switching between frontend and backend. 2) Its event-driven, non-blocking I/O model makes it excellent for building scalable network applications. 3) It has a massive ecosystem through npm with over a million packages. 4) It's particularly well-suited for real-time applications like chat apps, streaming services, and APIs that need to handle many concurrent connections efficiently."
+    },
+    {
+      "question": "Explain the event loop in Node.js.",
+      "answer": "The event loop is Node.js's core mechanism for handling asynchronous operations. It works in phases: 1) Timers phase executes setTimeout/setInterval callbacks. 2) Pending callbacks phase executes I/O callbacks. 3) Idle/prepare phase is internal. 4) Poll phase retrieves new I/O events. 5) Check phase executes setImmediate callbacks. 6) Close callbacks phase handles close events. The event loop continuously cycles through these phases, checking for pending callbacks and executing them. This non-blocking architecture allows Node.js to handle thousands of concurrent connections without creating new threads for each one."
+    },
+    {
+      "question": "What's the difference between blocking and non-blocking code in Node.js?",
+      "answer": "Blocking code halts the execution of subsequent code until the operation completes. For example, using fs.readFileSync() blocks the entire event loop until the file is read. Non-blocking code allows the event loop to continue executing other operations while waiting for an I/O operation to complete. For example, using fs.readFile() with a callback doesn't block the event loop. Non-blocking code is preferred in Node.js because it allows the server to handle multiple requests simultaneously. Blocking code should be avoided in production servers as it can cause performance bottlenecks and prevent other requests from being processed."
+    },
+    {
+      "question": "How does Node.js handle concurrency?",
+      "answer": "Node.js handles concurrency through its single-threaded event loop rather than traditional multi-threading. Here's how: 1) The event loop continuously monitors for pending operations (I/O, timers, etc.). 2) When an asynchronous operation completes, its callback is added to the event queue. 3) The event loop processes callbacks one at a time from the queue. 4) For CPU-intensive tasks, Node.js uses worker threads (introduced in Node.js 10) or can offload to child processes. This model is efficient for I/O-bound tasks but can be problematic for CPU-bound work that blocks the event loop."
+    },
+    {
+      "question": "What are the main modules in Node.js core?",
+      "answer": "Node.js comes with several essential core modules: 1) http/https - for creating HTTP servers and making HTTP requests. 2) fs - for file system operations (reading/writing files). 3) path - for handling file paths. 4) url - for URL parsing. 5) events - for the EventEmitter class used in event-driven programming. 6) stream - for handling streaming data. 7) buffer - for handling binary data. 8) crypto - for cryptographic functionality. 9) os - for operating system information. 10) process - for accessing current process information. These modules are built into Node.js and don't need to be installed via npm."
+    }
+  ],
+  "summary": "Node.js interview questions typically focus on the event loop, asynchronous programming, concurrency model, and core modules. Understanding these concepts is crucial for backend development with Node.js."
+}

@@ -1,0 +1,31 @@
+{
+  "topicId": "10-speed-building",
+  "exercises": [
+    {
+      "title": "Basic Practice",
+      "description": "Type these words: the, and, for, are, but, not, you, all, can, had, her, was, one, our, out",
+      "hints": [
+        "Keep eyes on screen",
+        "Use proper finger placement"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "the, and, for, are, but, not, you, all, can, had, her, was, one, our, out"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Sentence Practice",
+      "description": "Type each sentence without looking at the keyboard.",
+      "hints": [
+        "Focus on accuracy",
+        "Use all fingers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "The quick brown fox jumps over the lazy dog\nI am learning Hindi typing every day\nPractice makes a person perfect\nConsistency is the key to success\nHard work always pays off in life\nKnowledge is power and wisdom is key\nSuccess comes to those who never give up\nEvery day is a new opportunity to learn"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "topicId": "05-api-gateway",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is an API Gateway?",
+      "body": "Imagine a hotel front desk. Guests (clients) don't go directly to rooms — they go to the front desk, which routes them to the right place. An API Gateway works the same way: it's the single entry point for all requests to your backend."
+    },
+    {
+      "heading": "Why Do We Need It?",
+      "body": "Without a gateway, clients need to know every server's address. With a gateway, they only talk to one URL. The gateway handles: routing (sending requests to the right service), authentication (checking who's asking), rate limiting (preventing abuse), and logging (tracking what happens)."
+    },
+    {
+      "heading": "What is Rate Limiting?",
+      "body": "Rate limiting controls how many requests a client can make in a time window. Think of a nightclub bouncer — they only let a certain number of people in per minute. This prevents abuse and protects servers from crashing."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "API Gateway",
+      "definition": "A server that sits between clients and your backend services, handling routing, security, and rate limiting."
+    },
+    {
+      "term": "Rate Limiting",
+      "definition": "Restricting how many requests a client can make in a given time period to prevent abuse."
+    },
+    {
+      "term": "Endpoint",
+      "definition": "A specific URL path that accepts requests, like /api/users or /api/products."
+    }
+  ],
+  "summary": "An API Gateway is the front desk of your backend — it routes requests, checks auth, and applies rate limits. Rate limiting prevents abuse by capping requests per time window."
+}

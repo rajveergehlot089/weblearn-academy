@@ -1,0 +1,57 @@
+{
+  "topicId": "06-form-validation",
+  "type": "interview",
+  "estimatedMinutes": 10,
+  "questions": [
+    {
+      "question": "What is the Constraint Validation API?",
+      "answer": "The Constraint Validation API provides JavaScript methods and properties for form validation. Key methods: checkValidity() returns true if valid, reportValidity() shows error message, setCustomValidity() sets custom message. Properties: validity object with properties like valid, valueMissing, tooShort, patternMismatch.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does the pattern attribute work?",
+      "answer": "The pattern attribute uses regular expressions to validate input. The browser checks if the input matches the regex pattern. Example: pattern=\"[0-9]{3}-[0-9]{3}-[0-9]{4}\" validates phone format. Provide a title attribute for custom error messages. Pattern works with text, search, url, tel, and password inputs.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why should you always validate on both client and server?",
+      "answer": "Client-side validation improves UX (instant feedback) but can be bypassed by disabling JavaScript or manipulating requests. Server-side validation is essential for security - it prevents malicious data, ensures data integrity, and protects against attacks. Always validate on server even if you validate on client.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What CSS pseudo-classes are used for form validation?",
+      "answer": "Key pseudo-classes: :invalid (invalid input), :valid (valid input), :required (required fields), :optional (optional fields), :in-range (within min/max), :out-of-range (outside min/max), :placeholder-shown (placeholder visible), :autofill (autocompleted). These enable styling based on validation state.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you provide custom error messages?",
+      "answer": "Use setCustomValidity() method: input.setCustomValidity('Your message'). Clear with empty string: input.setCustomValidity(''). Listen for 'input' event to update messages dynamically. Use validity object properties (tooShort, patternMismatch) to determine which message to show.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the difference between novalidate and formnovalidate?",
+      "answer": "novalidate attribute on form disables all validation for that form. formnovalidate on submit button disables validation for that specific submission. Use novalidate when handling validation entirely with JavaScript, or formnovalidate for 'save draft' buttons that should bypass validation.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you validate a select element?",
+      "answer": "Use the required attribute and set the first option to disabled with empty value: <select required> <option value=\"\" disabled selected>Choose</option> </select>. The browser requires a non-empty value. You can also validate with JavaScript by checking selectedIndex or value property.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What are the validity states in the validity object?",
+      "answer": "Key states: valid (all checks pass), valueMissing (required field empty), typeMismatch (email/url format wrong), patternMismatch (pattern doesn't match), tooLong/tooShort (length constraints), rangeUnderflow/rangeOverflow (number constraints), stepMismatch (step constraint), customError (custom message set).",
+      "difficulty": "hard"
+    },
+    {
+      "question": "How do you prevent form submission and validate with JavaScript?",
+      "answer": "Add event listener to submit event: form.addEventListener('submit', function(e) { if (!this.checkValidity()) { e.preventDefault(); // show errors } }); e.preventDefault() stops submission. Use checkValidity() to test validity. You can also use novalidate attribute and handle all validation in JavaScript.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What accessibility considerations apply to form validation?",
+      "answer": "Key practices: 1) Associate error messages with inputs using aria-describedby. 2) Use aria-invalid for invalid fields. 3) Announce errors to screen readers with aria-live. 4) Provide clear, descriptive error messages. 5) Ensure error messages are visible and accessible. 6) Test with keyboard navigation.",
+      "difficulty": "hard"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "topicId": "05-upper-row",
+  "exercises": [
+    {
+      "title": "Basic Practice",
+      "description": "Type these words: were quit your type write tower port trip pretty",
+      "hints": [
+        "Keep eyes on screen",
+        "Use proper finger placement"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "were quit your type write tower port trip pretty"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Sentence Practice",
+      "description": "Type each sentence without looking at the keyboard.",
+      "hints": [
+        "Focus on accuracy",
+        "Use all fingers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Were you pretty tired?\nWrite your trip report.\nThe port tower quits."
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

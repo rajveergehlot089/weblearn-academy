@@ -1,0 +1,30 @@
+{
+  "topicId": "01-html",
+  "questions": [
+    {
+      "question": "What is the difference between <div> and <span>?",
+      "answer": "<div> is a block-level element — it takes up the full width and starts on a new line. <span> is an inline element — it flows within text without breaking the line. Use <div> for grouping sections, <span> for styling pieces of text.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does semantic HTML mean and why does it matter?",
+      "answer": "Semantic HTML uses tags that describe the meaning of content (like <header>, <nav>, <article>, <footer>) instead of generic tags like <div>. It matters for: (1) Accessibility — screen readers understand page structure, (2) SEO — search engines rank semantic pages higher, (3) Maintainability — code is easier to read.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the DOM?",
+      "answer": "The Document Object Model is a tree-structured representation of your HTML page that the browser creates. Every HTML element becomes a node in this tree. JavaScript interacts with the DOM to dynamically change content, styles, and structure without reloading the page.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the difference between id and class attributes?",
+      "answer": "An id is unique — only one element can have a given id on a page. A class can be applied to multiple elements. Use id for one specific element (like the main navigation), use class for reusable styles (like all card components).",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why should you always include the alt attribute on images?",
+      "answer": "The alt attribute provides a text description of the image. It's used by: (1) Screen readers for visually impaired users, (2) Browsers when the image fails to load, (3) Search engines for image indexing. It's an accessibility requirement, not optional.",
+      "difficulty": "easy"
+    }
+  ]
+}

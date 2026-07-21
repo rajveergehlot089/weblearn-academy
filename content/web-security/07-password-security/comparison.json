@@ -1,0 +1,18 @@
+{
+  "topicId": "07-password-security",
+  "comparisons": [
+    {
+      "concept": "Password Hashing & Storage",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Password Hashing & Storage\nconst result = {\n  concept: \"Password Hashing & Storage\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Password Hashing & Storage\nresult = {\n    \"concept\": \"Password Hashing & Storage\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Password Hashing & Storage is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Password Hashing & Storage is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

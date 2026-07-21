@@ -1,0 +1,42 @@
+{
+  "topicId": "06-storytelling",
+  "comparisons": [
+    {
+      "concept": "Presenting a technical solution",
+      "data_only": {
+        "label": "Data-Only Approach",
+        "code": "Slide 1: We reduced page load time from 4.2s to 1.1s\nSlide 2: We implemented code splitting, lazy loading, and image optimization\nSlide 3: Bundle size decreased from 2.1MB to 450KB\nSlide 4: Lighthouse score went from 42 to 94"
+      },
+      "story_driven": {
+        "label": "Story-Driven Approach",
+        "code": "Slide 1: 'Our users were leaving. 53% of mobile visitors abandoned pages that took over 3 seconds to load.'\nSlide 2: 'We profiled the app and found the real villain: a 1.2MB analytics script loading on every page.'\nSlide 3: [Demo of before/after loading experience]\nSlide 4: 'After: 1.1s load times. 53% fewer bounces. $200K more in quarterly revenue.'"
+      },
+      "explanation": "Data-only presentations inform. Story-driven presentations persuade. The same facts wrapped in a narrative — problem, investigation, solution, result — are dramatically more memorable and actionable."
+    },
+    {
+      "concept": "Sharing a debugging experience",
+      "tutorial_style": {
+        "label": "Tutorial Style",
+        "code": "Step 1: Check the logs\nStep 2: Add breakpoints\nStep 3: Identify the race condition\nStep 4: Fix with a mutex\nStep 5: Deploy and verify"
+      },
+      "story_style": {
+        "label": "Story Style",
+        "code": "It was Friday at 4 PM when the error reports started flooding in. 'Users seeing duplicate orders.' I traced it to a race condition in our checkout service — two requests hitting the database at the exact same millisecond. The fix was elegant: a distributed lock. But the lesson was bigger: we needed idempotency keys on every write operation."
+      },
+      "explanation": "The tutorial lists steps. The story puts the audience in the moment — they feel the urgency, follow the investigation, and remember the lesson. Same technical content, completely different impact."
+    },
+    {
+      "concept": "Making a point memorable",
+      "abstract_point": {
+        "label": "Abstract Point",
+        "code": "It's important to write tests because they catch bugs early and improve code quality."
+      },
+      "story_point": {
+        "label": "Story Point",
+        "code": "Last year, I pushed a refactor to production without tests. It broke the payment flow for 3 hours. 200 customers couldn't check out. The fix took 10 minutes. Writing the tests I skipped would have taken 20. That's when I stopped thinking of tests as optional."
+      },
+      "explanation": "Abstract points are instantly forgotten. Stories create emotional anchors — the audience remembers the 200 customers who couldn't check out long after they forget the abstract advice."
+    }
+  ],
+  "keyInsight": "Stories transform data from forgettable to memorable. Every technical presentation is improved by wrapping facts in narrative: set up the problem, walk through the journey, reveal the resolution with specific details, and connect to human impact."
+}

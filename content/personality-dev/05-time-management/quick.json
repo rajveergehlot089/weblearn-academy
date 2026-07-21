@@ -1,0 +1,25 @@
+{
+  "topicId": "05-time-management",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Time Management Matters",
+      "body": "Everyone gets 24 hours a day — the difference between high performers and everyone else is how they use those hours. Poor time management leads to stress, missed deadlines, and burnout. Good time management isn't about doing more; it's about doing what matters most with less stress."
+    },
+    {
+      "heading": "The Eisenhower Matrix",
+      "body": "Dwight Eisenhower's framework for prioritizing tasks:\n\n**Quadrant 1: Urgent + Important** → Do immediately (crises, deadlines)\n**Quadrant 2: Not Urgent + Important** → Schedule (planning, relationship-building, exercise)\n**Quadrant 3: Urgent + Not Important** → Delegate (emails, meetings, interruptions)\n**Quadrant 4: Not Urgent + Not Important** → Eliminate (social media, busywork, distractions)\n\nMost people spend too much time in Quadrants 1 and 3. High performers live in Quadrant 2 — they prevent crises before they happen."
+    },
+    {
+      "heading": "The Two-Minute Rule",
+      "body": "From David Allen's Getting Things Done: If a task takes less than 2 minutes, do it immediately. Don't add it to your to-do list — just do it. This prevents small tasks from accumulating into an overwhelming list. Examples: replying to a quick email, filing a document, making a short phone call."
+    }
+  ],
+  "jargon": [
+    { "term": "Time Blocking", "definition": "Scheduling specific blocks of time for specific tasks. Instead of a to-do list, you have a calendar with dedicated time for each activity." },
+    { "term": "Deep Work", "definition": "Cal Newport's concept: focused, distraction-free work on cognitively demanding tasks. It produces high-quality output in less time than distracted work." },
+    { "term": "Parkinson's Law", "definition": "Work expands to fill the time available for its completion. If you give yourself a week for a 2-day task, it will take a week. Setting tight deadlines forces efficiency." }
+  ],
+  "summary": "Time management is about doing what matters most, not doing more. Use the Eisenhower Matrix to prioritize: focus on important-not-urgent tasks to prevent crises. Apply the two-minute rule for small tasks. Time block your calendar and protect deep work periods from distractions."
+}

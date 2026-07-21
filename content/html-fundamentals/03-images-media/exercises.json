@@ -1,0 +1,44 @@
+{
+  "topicId": "03-images-media",
+  "type": "exercises",
+  "estimatedMinutes": 20,
+  "exercises": [
+    {
+      "title": "Create an Accessible Image Gallery",
+      "description": "Build an image gallery with proper accessibility and responsive design.",
+      "tasks": [
+        "Create a gallery with at least 4 images",
+        "Add meaningful alt text to each image",
+        "Use figure/figcaption for image captions",
+        "Make images responsive with CSS",
+        "Add lazy loading for performance"
+      ],
+      "solution": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Image Gallery</title>\n    <style>\n        .gallery {\n            display: grid;\n            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\n            gap: 20px;\n            padding: 20px;\n        }\n        figure {\n            margin: 0;\n            border: 1px solid #ddd;\n            border-radius: 8px;\n            overflow: hidden;\n        }\n        img {\n            width: 100%;\n            height: 200px;\n            object-fit: cover;\n        }\n        figcaption {\n            padding: 10px;\n            text-align: center;\n            background: #f5f5f5;\n        }\n    </style>\n</head>\n<body>\n    <h1>Nature Photography Gallery</h1>\n    \n    <div class=\"gallery\">\n        <figure>\n            <img src=\"sunset.jpg\" alt=\"Golden sunset over mountain range\" loading=\"lazy\">\n            <figcaption>Mountain Sunset</figcaption>\n        </figure>\n        \n        <figure>\n            <img src=\"forest.jpg\" alt=\"Dense forest with sunlight filtering through trees\" loading=\"lazy\">\n            <figcaption>Forest Path</figcaption>\n        </figure>\n        \n        <figure>\n            <img src=\"ocean.jpg\" alt=\"Turquoise ocean waves crashing on rocky shore\" loading=\"lazy\">\n            <figcaption>Coastal Waves</figcaption>\n        </figure>\n        \n        <figure>\n            <img src=\"snow.jpg\" alt=\"Snow-covered pine trees in winter landscape\" loading=\"lazy\">\n            <figcaption>Winter Forest</figcaption>\n        </figure>\n    </div>\n</body>\n</html>"
+    },
+    {
+      "title": "Build a Video Player Page",
+      "description": "Create a page with a video player that has multiple formats and accessibility features.",
+      "tasks": [
+        "Add a video element with controls",
+        "Provide at least 2 source formats",
+        "Include a poster image",
+        "Add track element for captions",
+        "Include fallback text",
+        "Set proper dimensions"
+      ],
+      "solution": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Video Tutorial</title>\n    <style>\n        .video-container {\n            max-width: 800px;\n            margin: 0 auto;\n            padding: 20px;\n        }\n        video {\n            width: 100%;\n            height: auto;\n        }\n    </style>\n</head>\n<body>\n    <div class=\"video-container\">\n        <h1>HTML Basics Tutorial</h1>\n        \n        <video controls poster=\"thumbnail.jpg\" width=\"800\" height=\"450\">\n            <source src=\"tutorial.mp4\" type=\"video/mp4\">\n            <source src=\"tutorial.webm\" type=\"video/webm\">\n            <track kind=\"subtitles\" src=\"subtitles-en.vtt\" srclang=\"en\" label=\"English\" default>\n            <track kind=\"subtitles\" src=\"subtitles-es.vtt\" srclang=\"es\" label=\"Spanish\">\n            Your browser does not support the video tag. <a href=\"tutorial.mp4\">Download the video</a>.\n        </video>\n        \n        <p>This tutorial covers HTML fundamentals including elements, attributes, and best practices.</p>\n    </div>\n</body>\n</html>"
+    },
+    {
+      "title": "Create Responsive Art-Directed Images",
+      "description": "Use the picture element to serve different images based on viewport width.",
+      "tasks": [
+        "Create a picture element with multiple sources",
+        "Use media queries to switch between images",
+        "Provide a fallback img element",
+        "Add descriptive alt text",
+        "Style the container responsively"
+      ],
+      "solution": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Art-Directed Images</title>\n    <style>\n        .hero {\n            width: 100%;\n            max-width: 1200px;\n            margin: 0 auto;\n        }\n        picture {\n            display: block;\n            width: 100%;\n        }\n        img {\n            width: 100%;\n            height: auto;\n        }\n    </style>\n</head>\n<body>\n    <h1>Art-Directed Hero Images</h1>\n    \n    <div class=\"hero\">\n        <picture>\n            <!-- Desktop: wide landscape -->\n            <source media=\"(min-width: 1024px)\" srcset=\"hero-wide.jpg\">\n            \n            <!-- Tablet: medium crop -->\n            <source media=\"(min-width: 640px)\" srcset=\"hero-medium.jpg\">\n            \n            <!-- Mobile: portrait crop -->\n            <img src=\"hero-mobile.jpg\" alt=\"Mountain landscape with lake reflection\">\n        </picture>\n    </div>\n    \n    <p>This image adapts to different screen sizes, showing the most appropriate composition for each device.</p>\n</body>\n</html>"
+    }
+  ]
+}

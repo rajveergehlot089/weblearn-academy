@@ -1,0 +1,30 @@
+{
+  "topicId": "08-graphql-intro",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is GraphQL Introduction?",
+      "body": "Queries, mutations, schemas, and when to choose GraphQL over REST. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "GraphQL Introduction is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind GraphQL Introduction is understanding how different components work together.\n\n2. Application: In practice, you'll use GraphQL Introduction every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most GraphQL Introduction implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding GraphQL Introduction is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "GraphQL",
+      "definition": "A key concept in GraphQL Introduction. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Introduction",
+      "definition": "A key concept in GraphQL Introduction. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "GraphQL Introduction is a core concept in api-design. Queries, mutations, schemas, and when to choose GraphQL over REST. Focus on understanding the fundamentals first, then practice applying them."
+}

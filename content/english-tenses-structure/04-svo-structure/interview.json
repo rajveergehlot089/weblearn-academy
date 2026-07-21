@@ -1,0 +1,25 @@
+{
+  "topicId": "04-svo-structure",
+  "questions": [
+    {
+      "question": "What is SVO and why is it important?",
+      "answer": "SVO is a fundamental concept that The backbone of English sentence structure. It's important because it forms the foundation for building robust and efficient applications. Understanding SVO allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply SVO in a real project?",
+      "answer": "In practice, SVO is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with SVO?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain SVO to a beginner?",
+      "answer": "SVO is essentially about the backbone of english sentence structure. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

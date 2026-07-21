@@ -1,0 +1,25 @@
+{
+  "topicId": "02-emotional-intelligence",
+  "questions": [
+    {
+      "question": "What are the five components of Daniel Goleman's Emotional Intelligence model?",
+      "answer": "Goleman's model includes: (1) Self-Awareness — knowing what you feel and how it affects others, (2) Self-Regulation — managing emotions and impulses, (3) Internal Motivation — being driven by intrinsic rewards rather than external validation, (4) Empathy — understanding others' emotional states, (5) Social Skills — managing relationships effectively. These components build sequentially: self-awareness enables self-regulation, which supports empathy and social skills."
+    },
+    {
+      "question": "How does emotional suppression differ from healthy emotional regulation? What does research say about suppression?",
+      "answer": "Suppression is pushing emotions down and pretending they don't exist. Healthy regulation is acknowledging emotions and choosing how to respond. Research by James Gross at Stanford found that suppression: (1) increases physiological stress responses (higher blood pressure, cortisol), (2) impairs memory because cognitive resources are used to suppress, (3) damages relationships because inauthenticity is detectable, (4) paradoxically makes emotions stronger (the 'white bear effect' — trying not to think about something makes you think about it more). Cognitive reappraisal — reinterpreting the situation — is far more effective."
+    },
+    {
+      "question": "Explain the 'STOP' technique for managing emotional reactions in high-pressure situations.",
+      "answer": "STOP stands for: S — Stop (physically pause, take one breath to interrupt the automatic reaction), T — Think (identify what you're feeling and consider the best response), O — Observe (consider what the other person needs and how they might be feeling), P — Proceed (choose a response aligned with your values rather than your impulses). This technique works because it exploits the 90-second gap between an emotional trigger and the full physiological response. By pausing, you prevent the amygdala hijack and engage the prefrontal cortex for rational decision-making."
+    },
+    {
+      "question": "What is the difference between empathy and sympathy? Why does the distinction matter?",
+      "answer": "Empathy is feeling WITH someone — understanding their emotional experience from their perspective. Sympathy is feeling FOR someone — acknowledging their situation from your perspective. Brené Brown illustrates it this way: sympathy says 'I know how you feel' (which often isn't true); empathy says 'I'm here with you in this.' The distinction matters because sympathy can feel dismissive ('At least you have...'), while empathy creates connection. When someone shares a struggle, they need to feel understood, not fixed."
+    },
+    {
+      "question": "How can someone with low EQ systematically improve their emotional intelligence?",
+      "answer": "A practical progression: Week 1-2: Practice naming emotions using an emotion wheel (granularity improves accuracy). Week 3-4: Start a daily 2-minute check-in ('What am I feeling? What triggered it?'). Month 2: Practice the STOP technique in low-stakes situations. Month 3: Seek feedback from trusted people about your emotional impact. Month 4-6: Practice active listening — reflect back what others say before responding. Ongoing: Read fiction (increases empathy by 20% per research), meditate (builds the self-observation muscle), and journal about emotional experiences."
+    }
+  ]
+}

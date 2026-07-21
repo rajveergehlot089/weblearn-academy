@@ -1,0 +1,25 @@
+{
+  "topicId": "10-optimization-checklist",
+  "questions": [
+    {
+      "question": "What is Optimization Checklist & Case Studies and why is it important?",
+      "answer": "Optimization Checklist & Case Studies is a fundamental concept that Complete optimization checklist and real-world performance case studies. It's important because it forms the foundation for building robust and efficient applications. Understanding Optimization Checklist & Case Studies allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Optimization Checklist & Case Studies in a real project?",
+      "answer": "In practice, Optimization Checklist & Case Studies is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Optimization Checklist & Case Studies?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Optimization Checklist & Case Studies to a beginner?",
+      "answer": "Optimization Checklist & Case Studies is essentially about complete optimization checklist and real-world performance case studies. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

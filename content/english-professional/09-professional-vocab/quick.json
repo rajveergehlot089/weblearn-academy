@@ -1,0 +1,30 @@
+{
+  "topicId": "09-professional-vocab",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Professional Vocabulary?",
+      "body": "Workplace vocabulary, business terms, and formal expressions. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "Professional Vocabulary is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind Professional Vocabulary is understanding how different components work together.\n\n2. Application: In practice, you'll use Professional Vocabulary every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most Professional Vocabulary implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding Professional Vocabulary is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Professional",
+      "definition": "A key concept in Professional Vocabulary. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Vocabulary",
+      "definition": "A key concept in Professional Vocabulary. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "Professional Vocabulary is a core concept in vocabulary. Workplace vocabulary, business terms, and formal expressions. Focus on understanding the fundamentals first, then practice applying them."
+}

@@ -1,0 +1,59 @@
+{
+  "topicId": "05-mongodb-intro",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Connecting to MongoDB",
+      "body": "First, let's establish a connection to MongoDB using Mongoose and handle connection events properly.",
+      "code": {
+        "language": "javascript",
+        "snippet": "const mongoose = require('mongoose');\n\n// Connection string\nconst MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/myapp';\n\n// Connect to MongoDB\nmongoose.connect(MONGODB_URI, {\n  useNewUrlParser: true,\n  useUnifiedTopology: true\n})\n.then(() => console.log('Connected to MongoDB'))\n.catch(err => console.error('MongoDB connection error:', err));\n\n// Connection events\nmongoose.connection.on('connected', () => {\n  console.log('Mongoose connected to MongoDB');\n});\n\nmongoose.connection.on('error', (err) => {\n  console.error('Mongoose connection error:', err);\n});\n\nmongoose.connection.on('disconnected', () => {\n  console.log('Mongoose disconnected from MongoDB');\n});\n\n// Graceful shutdown\nprocess.on('SIGINT', async () => {\n  await mongoose.connection.close();\n  console.log('MongoDB connection closed through app termination');\n  process.exit(0);\n});",
+        "explanation": "Always handle connection events and implement graceful shutdown to prevent data corruption."
+      }
+    },
+    {
+      "heading": "Defining Schemas and Models",
+      "body": "Schemas define the structure of documents. Models provide an interface for creating, querying, updating, and deleting documents.",
+      "code": {
+        "language": "javascript",
+        "snippet": "const mongoose = require('mongoose');\n\n// User Schema\nconst userSchema = new mongoose.Schema({\n  name: {\n    type: String,\n    required: [true, 'Name is required'],\n    trim: true,\n    minlength: [2, 'Name must be at least 2 characters'],\n    maxlength: [50, 'Name cannot exceed 50 characters']\n  },\n  email: {\n    type: String,\n    required: [true, 'Email is required'],\n    unique: true,\n    lowercase: true,\n    match: [/^\\S+@\\S+\\.\\S+$/, 'Please enter a valid email']\n  },\n  age: {\n    type: Number,\n    min: [0, 'Age cannot be negative'],\n    max: [150, 'Age seems too high']\n  },\n  role: {\n    type: String,\n    enum: ['user', 'admin', 'moderator'],\n    default: 'user'\n  },\n  isActive: {\n    type: Boolean,\n    default: true\n  },\n  profile: {\n    bio: String,\n    avatar: String,\n    socialLinks: {\n      twitter: String,\n      github: String\n    }\n  },\n  tags: [{\n    type: String,\n    trim: true\n  }]\n}, {\n  timestamps: true, // Adds createdAt and updatedAt\n  toJSON: { virtuals: true },\n  toObject: { virtuals: true }\n});\n\n// Virtual field (computed property)\nuserSchema.virtual('profileUrl').get(function() {\n  return `/api/users/${this._id}`;\n});\n\n// Instance method\nuserSchema.methods.isAdult = function() {\n  return this.age >= 18;\n};\n\n// Static method\nuserSchema.statics.findByEmail = function(email) {\n  return this.findOne({ email: email.toLowerCase() });\n};\n\n// Pre-save middleware\nuserSchema.pre('save', function(next) {\n  // Example: hash password before saving\n  // if (this.isModified('password')) {\n  //   this.password = await bcrypt.hash(this.password, 10);\n  // }\n  next();\n});\n\n// Create model\nconst User = mongoose.model('User', userSchema);\n\nmodule.exports = User;",
+        "explanation": "Schemas define structure, validation, and behavior. Models provide the interface for database operations."
+      }
+    },
+    {
+      "heading": "CRUD Operations with Mongoose",
+      "body": "Mongoose provides methods for Create, Read, Update, and Delete operations.",
+      "code": {
+        "language": "javascript",
+        "snippet": "// CREATE\n// Save a single document\nconst user = new User({\n  name: 'Alice',\n  email: 'alice@example.com',\n  age: 28\n});\nawait user.save();\n\n// Create multiple documents\nconst users = await User.create([\n  { name: 'Bob', email: 'bob@example.com', age: 25 },\n  { name: 'Charlie', email: 'charlie@example.com', age: 32 }\n]);\n\n// READ\n// Find all users\nconst allUsers = await User.find();\n\n// Find with conditions\nconst activeAdults = await User.find({\n  isActive: true,\n  age: { $gte: 18 }\n});\n\n// Find one\nconst alice = await User.findOne({ email: 'alice@example.com' });\n\n// Find by ID\nconst userById = await User.findById('someId');\n\n// Select specific fields\nconst namesAndEmails = await User.find().select('name email -_id');\n\n// Sort and limit\nconst recentUsers = await User.find()\n  .sort({ createdAt: -1 })\n  .limit(10);\n\n// UPDATE\n// Update one\nawait User.updateOne(\n  { email: 'alice@example.com' },\n  { $set: { age: 29 } }\n);\n\n// Update many\nawait User.updateMany(\n  { role: 'user' },\n  { $set: { isActive: true } }\n);\n\n// Find and update (returns updated document)\nconst updatedUser = await User.findOneAndUpdate(\n  { email: 'alice@example.com' },\n  { $set: { age: 30 } },\n  { new: true, runValidators: true }\n);\n\n// DELETE\n// Delete one\nawait User.deleteOne({ email: 'alice@example.com' });\n\n// Delete many\nawait User.deleteMany({ isActive: false });\n\n// Find and delete\nconst deletedUser = await User.findOneAndDelete({ email: 'bob@example.com' });",
+        "explanation": "Mongoose provides chainable query methods. Use async/await for clean asynchronous code."
+      }
+    },
+    {
+      "heading": "Query Building and Chaining",
+      "body": "Mongoose queries are chainable and lazy - they don't execute until you call .exec() or await them.",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Query building example\nasync function searchUsers(queryParams) {\n  const { \n    name, \n    role, \n    minAge, \n    maxAge, \n    isActive,\n    page = 1,\n    limit = 10,\n    sortBy = 'createdAt',\n    sortOrder = 'desc'\n  } = queryParams;\n\n  // Build query\n  let query = User.find();\n\n  // Apply filters\n  if (name) {\n    query = query.where('name').regex(new RegExp(name, 'i'));\n  }\n  if (role) {\n    query = query.where('role').equals(role);\n  }\n  if (minAge) {\n    query = query.where('age').gte(parseInt(minAge));\n  }\n  if (maxAge) {\n    query = query.where('age').lte(parseInt(maxAge));\n  }\n  if (isActive !== undefined) {\n    query = query.where('isActive').equals(isActive === 'true');\n  }\n\n  // Pagination\n  const skip = (page - 1) * limit;\n  query = query.skip(skip).limit(parseInt(limit));\n\n  // Sorting\n  const sort = {};\n  sort[sortBy] = sortOrder === 'desc' ? -1 : 1;\n  query = query.sort(sort);\n\n  // Execute query\n  const users = await query.exec();\n\n  // Get total count for pagination\n  const total = await User.countDocuments(query.getFilter());\n\n  return {\n    users,\n    pagination: {\n      total,\n      page: parseInt(page),\n      limit: parseInt(limit),\n      pages: Math.ceil(total / limit)\n    }\n  };\n}\n\n// Using populate for relationships\nasync function getUserWithPosts(userId) {\n  return await User.findById(userId)\n    .populate('posts')  // Assuming User has posts reference\n    .select('-__v');\n}",
+        "explanation": "Query building allows dynamic, flexible queries. Use populate() to fetch related documents."
+      }
+    },
+    {
+      "heading": "Error Handling and Validation",
+      "body": "Mongoose provides built-in validation and error handling. Understanding error types is crucial for robust applications.",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Custom validation\nconst userSchema = new mongoose.Schema({\n  email: {\n    type: String,\n    required: true,\n    validate: {\n      validator: function(v) {\n        return /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(v);\n      },\n      message: props => `${props.value} is not a valid email!`\n    }\n  },\n  password: {\n    type: String,\n    required: true,\n    minlength: 8\n  },\n  confirmPassword: {\n    type: String,\n    required: true,\n    validate: {\n      validator: function(v) {\n        return this.password === v;\n      },\n      message: 'Passwords do not match!'\n    }\n  }\n});\n\n// Error handling in operations\ntry {\n  const user = new User({\n    name: '',  // Will fail validation\n    email: 'invalid-email'\n  });\n  await user.save();\n} catch (error) {\n  // Handle different error types\n  if (error.name === 'ValidationError') {\n    // Validation errors\n    const messages = Object.values(error.errors).map(err => err.message);\n    console.error('Validation errors:', messages);\n  } else if (error.code === 11000) {\n    // Duplicate key error\n    console.error('Duplicate entry:', error.keyValue);\n  } else {\n    // Other errors\n    console.error('Error:', error.message);\n  }\n}\n\n// Custom error class\nclass AppError extends Error {\n  constructor(message, statusCode) {\n    super(message);\n    this.statusCode = statusCode;\n    this.isOperational = true;\n    Error.captureStackTrace(this, this.constructor);\n  }\n}",
+        "explanation": "Always handle validation errors and duplicate key errors gracefully. Use custom error classes for better error management."
+      }
+    }
+  ],
+  "jargon": [
+    { "term": "ObjectId", "definition": "MongoDB's default unique identifier for documents. A 12-byte identifier typically represented as a 24-character hex string." },
+    { "term": "Population", "definition": "Mongoose's way of referencing documents in other collections, similar to JOINs in SQL." },
+    { "term": "Middleware (Hooks)", "definition": "Functions that execute before or after certain operations (save, validate, etc.) in Mongoose." },
+    { "term": "Projection", "definition": "Selecting specific fields to return from queries using select()." }
+  ],
+  "summary": "MongoDB with Mongoose provides a flexible, schema-based approach to data modeling. Key concepts: schemas define structure, models provide the interface, and queries are chainable and lazy. Always handle errors and use validation for data integrity."
+}

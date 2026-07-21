@@ -1,0 +1,30 @@
+{
+  "topicId": "09-feedback-skills",
+  "questions": [
+    {
+      "question": "What is the SBI feedback model?",
+      "answer": "SBI stands for Situation-Behavior-Impact. It's a framework for giving clear, non-threatening feedback: (1) Situation — Describe the specific context ('In yesterday's meeting...'). (2) Behavior — Describe the observable behavior ('You interrupted the client three times...'). (3) Impact — Explain the effect ('...which made them less willing to share'). This removes judgment and opinion, making feedback factual and actionable.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why does the feedback sandwich method often fail?",
+      "answer": "The sandwich (positive-negative-positive) fails because: (1) The 'but' negates everything before it — 'Great job, but...' makes the positive feel manipulative. (2) The closing positive feels insincere — people know a 'but' is coming. (3) The person focuses on the negative middle and forgets the positive. (4) It signals you're hiding something. Better: deliver honest feedback directly with kindness, without the artificial positive wrapping.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you receive feedback without getting defensive?",
+      "answer": "Five steps: (1) Pause — take a breath before responding (defensiveness is your amygdala, not your wisdom). (2) Listen for the signal, not the tone — extract the useful facts. (3) Ask for examples — 'Can you give me a specific instance?' (4) Thank them — 'I appreciate you telling me this.' (5) Reflect — 'Let me think about that' instead of defending immediately. The key insight: feedback is data, not a personal attack.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you give feedback to someone who is sensitive to criticism?",
+      "answer": "Key adjustments: (1) Use SBI — stick to facts, not opinions. (2) Start with genuine appreciation, not as a sandwich but because you mean it. (3) Ask permission: 'Can I share an observation?' This gives them agency. (4) Focus on the future, not the past: 'Next time, try...' instead of 'You should have...' (5) Make it a conversation, not a lecture. (6) Follow up to show you care about their growth, not just their performance.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "How do you create a feedback culture in a team?",
+      "answer": "Four pillars: (1) Model vulnerability — share your own mistakes openly. (2) Make it routine — weekly 1:1s with feedback built in, retrospectives, peer reviews. (3) Celebrate feedback given — recognize people who speak up, not just high performers. (4) Follow through — nothing kills feedback culture faster than asking for input and ignoring it. Start small: ask your team 'What's one thing I could do differently?' and actually change.",
+      "difficulty": "medium"
+    }
+  ]
+}

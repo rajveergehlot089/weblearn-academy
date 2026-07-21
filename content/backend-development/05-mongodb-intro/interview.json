@@ -1,0 +1,27 @@
+{
+  "topicId": "05-mongodb-intro",
+  "type": "interview",
+  "questions": [
+    {
+      "question": "What is MongoDB and when would you use it?",
+      "answer": "MongoDB is a NoSQL document database that stores data in JSON-like documents. Use it when: 1) You need flexible schemas that evolve quickly. 2) Your data is hierarchical or nested (like user profiles with addresses). 3) You're building rapid prototypes or MVPs. 4) You need horizontal scaling for large datasets. 5) You're working with real-time analytics or content management. Don't use it when you need complex transactions across multiple tables, strong relational integrity, or complex SQL queries with many JOINs."
+    },
+    {
+      "question": "Explain the difference between embedding and referencing in MongoDB.",
+      "answer": "Embedding means storing related data within the same document (nested objects or arrays). Use for 1:1 or 1:few relationships, like a user's address. Referencing means storing the _id of a document in another document, similar to foreign keys. Use for 1:many or many:many relationships, like a user's posts. Embedding provides faster reads (single query) but can lead to large documents. Referencing keeps documents smaller but requires multiple queries or population. The choice depends on your access patterns and data relationships."
+    },
+    {
+      "question": "What are the advantages and disadvantages of using Mongoose?",
+      "answer": "Advantages: 1) Schema validation ensures data integrity. 2) Middleware/hooks for pre/post operations. 3) Built-in type casting and getters/setters. 4) Virtual properties and methods. 5) Population for joining collections. 6) Easy query building with chainable methods. Disadvantages: 1) Adds overhead compared to native driver. 2) Learning curve for complex schemas. 3) Can hide MongoDB's actual behavior. 4) Schema migrations can be challenging. 5) Performance overhead for simple operations. Use Mongoose for applications needing structure and validation; use native driver for maximum performance or simple operations."
+    },
+    {
+      "question": "How do you handle relationships in MongoDB?",
+      "answer": "MongoDB handles relationships differently than SQL: 1) Embedding: Store related data directly in documents (best for 1:1, 1:few). 2) Referencing: Store _id references and use populate() to fetch related documents. 3) Hybrid approach: Embed frequently accessed data, reference less accessed data. 4) Manual joins: Use aggregation pipeline for complex relationships. For example, embed user address in user document, but reference posts in separate collection. Consider your query patterns - if you always fetch related data together, embed it; if you often query related data separately, reference it."
+    },
+    {
+      "question": "What are MongoDB indexes and why are they important?",
+      "answer": "Indexes are data structures that improve query performance by allowing MongoDB to find documents without scanning the entire collection. They work like book indexes - pointing to where data is located. Types include: 1) Single field indexes. 2) Compound indexes (multiple fields). 3) Multikey indexes (arrays). 4) Text indexes (full-text search). 5) Geospatial indexes. Without indexes, MongoDB performs collection scans (slow). Create indexes on fields you frequently query, sort, or use in aggregations. However, indexes have overhead: they use storage and slow down writes. Balance is key - don't over-index."
+    }
+  ],
+  "summary": "MongoDB interview questions focus on data modeling, relationships, Mongoose usage, and performance optimization. Understanding when to embed vs reference and how to use indexes is crucial."
+}

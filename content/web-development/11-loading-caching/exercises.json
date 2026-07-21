@@ -1,0 +1,19 @@
+{
+  "topicId": "11-loading-caching",
+  "exercises": [
+    {
+      "title": "Build a Loading Spinner Component",
+      "description": "Write a function that fetches data from an API and shows a loading spinner while waiting. Hide the spinner when data loads or when an error occurs.",
+      "hints": [
+        "Create a show/hide function for the spinner",
+        "Use try/catch/finally to manage states",
+        "Show error message on failure"
+      ],
+      "solution": {
+        "language": "javascript",
+        "code": "async function loadData() {\n  const spinner = document.getElementById('spinner');\n  const content = document.getElementById('content');\n  const errorEl = document.getElementById('error');\n\n  spinner.style.display = 'block';\n  content.style.display = 'none';\n  errorEl.style.display = 'none';\n\n  try {\n    const res = await fetch('/api/data');\n    if (!res.ok) throw new Error('Failed');\n    const data = await res.json();\n    renderContent(data);\n    content.style.display = 'block';\n  } catch (e) {\n    errorEl.textContent = 'Something went wrong.';\n    errorEl.style.display = 'block';\n  } finally {\n    spinner.style.display = 'none';\n  }\n}"
+      },
+      "difficulty": "easy"
+    }
+  ]
+}

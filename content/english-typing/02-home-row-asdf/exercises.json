@@ -1,0 +1,31 @@
+{
+  "topicId": "02-home-row-asdf",
+  "exercises": [
+    {
+      "title": "Basic Practice",
+      "description": "Type these words: sad fad dad ask add ash flask lass dash",
+      "hints": [
+        "Keep eyes on screen",
+        "Use proper finger placement"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "sad fad dad ask add ash flask lass dash"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Sentence Practice",
+      "description": "Type each sentence without looking at the keyboard.",
+      "hints": [
+        "Focus on accuracy",
+        "Use all fingers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "A glad dad had a flask.\nA lass had a sad dad.\nDash had a glad flask."
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

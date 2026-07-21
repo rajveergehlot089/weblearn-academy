@@ -1,0 +1,20 @@
+{
+  "topicId": "07-auth",
+  "questions": [
+    {
+      "question": "What is the difference between authentication and authorization?",
+      "answer": "Authentication answers 'Who are you?' — verifying identity (login with email/password). Authorization answers 'What can you do?' — checking permissions (admin vs regular user). You authenticate first, then authorize. A user might be authenticated (logged in) but not authorized to access admin pages.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How does JWT work?",
+      "answer": "JWT (JSON Web Token) has 3 parts separated by dots: header (algorithm used), payload (user data like id, name, expiry), and signature (hash of header+payload using a secret key). The server creates and signs the JWT on login. The client stores it and sends it in the Authorization header on every request. Any server with the secret key can verify it without checking a database.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why should JWTs have short expiry times?",
+      "answer": "JWTs are hard to revoke once issued — they're valid until they expire. If a token is stolen, the attacker has access for the full expiry duration. Short expiry (15 min for access tokens) limits damage. You can use refresh tokens (long-lived) to get new access tokens without re-logging in.",
+      "difficulty": "medium"
+    }
+  ]
+}

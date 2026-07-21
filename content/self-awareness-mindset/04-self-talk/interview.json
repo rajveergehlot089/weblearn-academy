@@ -1,0 +1,25 @@
+{
+  "topicId": "04-self-talk",
+  "questions": [
+    {
+      "question": "What are cognitive distortions and why do they matter for self-talk?",
+      "answer": "Cognitive distortions are habitual thinking patterns that are inaccurate or exaggerated, creating a negative view of reality. Common examples include all-or-nothing thinking ('If I'm not perfect, I'm a failure'), catastrophizing ('This small mistake will ruin everything'), and mind-reading ('They think I'm incompetent'). They matter because they directly trigger negative emotions and maladaptive behaviors. A person who catastrophizes about a presentation will experience more anxiety and perform worse. Identifying and correcting these distortions is a core technique in Cognitive Behavioral Therapy (CBT) and one of the most evidence-based approaches to improving mental health."
+    },
+    {
+      "question": "How does self-compassion differ from positive self-talk, and why might it be more effective?",
+      "answer": "Positive self-talk says 'I'm great, I can do anything!' Self-compassion says 'This is hard, and that's okay — I'll treat myself with the same kindness I'd offer a friend.' Research by Kristin Neff shows self-compassion is more effective because: (1) it acknowledges the difficulty rather than denying it, (2) it connects you to common humanity ('everyone struggles'), and (3) it's sustainable — positive affirmations can feel fake, while self-compassion is always appropriate. Self-compassionate people show more motivation, not less, because their self-worth isn't contingent on performance."
+    },
+    {
+      "question": "Explain the cognitive triangle and how it can be used to break negative cycles.",
+      "answer": "The cognitive triangle (from CBT) shows how thoughts, feelings, and behaviors are interconnected: 'I'll fail this presentation' (thought) → anxiety (feeling) → avoiding preparation (behavior) → confirming 'I'm not capable' (thought). Breaking the cycle at any point changes the entire system. The easiest entry point is usually thoughts: changing 'I'll fail' to 'I'll prepare thoroughly and do my best' reduces anxiety, which increases preparation, which builds competence, which reinforces confidence. This creates an upward spiral instead of a downward one."
+    },
+    {
+      "question": "What is the 'white bear effect' and why does it make 'just think positive' advice problematic?",
+      "answer": "The 'white bear effect' (Wegner, 1987) shows that trying to suppress a thought makes it more persistent. When people are told 'don't think about a white bear,' they think about white bears more frequently than if they hadn't been told to suppress it. This is why 'just think positive' often backfires — actively suppressing negative thoughts makes them stronger. Instead of suppression, effective approaches involve: (1) noticing the negative thought without judgment, (2) acknowledging its presence, (3) choosing a more balanced alternative. This is acceptance-based rather than suppression-based."
+    },
+    {
+      "question": "Describe the 'Catch-Check-Change' technique and provide an example of each step.",
+      "answer": "Catch-Check-Change is a three-step cognitive restructuring technique: CATCH: Notice when you're having a distorted thought. Example: 'I messed up that email — now everyone thinks I'm unprofessional.' CHECK: Ask three questions: Is this 100% true? Would I say this to a friend? Is this helpful? Answer: 'Not 100% true — I made one mistake, and people probably didn't notice as much as I think. I wouldn't call a friend 'unprofessional' for one error. This thought isn't helping me improve.' CHANGE: Replace with a balanced alternative. Example: 'I made a typo, which is human. I'll proofread more carefully next time. One error doesn't define my professionalism.'"
+    }
+  ]
+}

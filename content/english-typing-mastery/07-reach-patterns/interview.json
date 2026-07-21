@@ -1,0 +1,25 @@
+{
+  "topicId": "07-reach-patterns",
+  "questions": [
+    {
+      "question": "What is Finger Reach Patterns and why is it important?",
+      "answer": "Finger Reach Patterns is a fundamental concept that Common finger movement patterns for efficiency. It's important because it forms the foundation for building robust and efficient applications. Understanding Finger Reach Patterns allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Finger Reach Patterns in a real project?",
+      "answer": "In practice, Finger Reach Patterns is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Finger Reach Patterns?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Finger Reach Patterns to a beginner?",
+      "answer": "Finger Reach Patterns is essentially about common finger movement patterns for efficiency. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

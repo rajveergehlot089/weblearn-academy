@@ -1,0 +1,26 @@
+{
+  "topicId": "02-leadership-styles",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "The Four Core Leadership Styles",
+      "body": "There's no single 'best' leadership style — effectiveness depends on context. Four styles dominate modern leadership practice:\n\n• **Servant Leadership**: You serve the team first. Your job is to remove obstacles, provide resources, and help people grow. The leader eats last.\n\n• **Transformational Leadership**: You inspire people to transcend self-interest for a larger mission. You challenge assumptions, stimulate creativity, and connect work to meaning.\n\n• **Democratic Leadership**: You involve the team in decisions. This builds ownership and surfaces diverse perspectives, though it requires more time.\n\n• **Situational Leadership**: You adapt your style to each person and situation. New employees need direction; experienced experts need autonomy."
+    },
+    {
+      "heading": "Servant Leadership in Practice",
+      "body": "Robert Green coined 'servant leadership' in 1970. The core idea: inverting the traditional power pyramid. Instead of employees serving the leader, the leader serves employees.\n\nPractical actions:\n• Ask 'what do you need from me?' in every 1-on-1\n• Spend 80% of your time removing blockers, 20% directing\n• Hire people smarter than you and get out of their way\n• Put your team's development ahead of your own advancement"
+    },
+    {
+      "heading": "When Each Style Works Best",
+      "body": "• Servant → knowledge workers, creative teams, long-term culture building\n• Transformational → turnarounds, startups, large-scale change initiatives\n• Democratic → complex problems requiring diverse input, experienced teams\n• Situational → mixed-skill teams, growing organizations, changing projects\n\nMost effective leaders blend elements from all four styles fluidly."
+    }
+  ],
+  "jargon": [
+    { "term": "Servant Leadership", "definition": "A style where the leader prioritizes serving the team — removing obstacles, supporting growth, and putting people before power." },
+    { "term": "Transformational Leadership", "definition": "Inspiring followers to exceed expectations by connecting their work to a compelling vision and personal growth." },
+    { "term": "Situational Leadership", "definition": "Adapting your leadership approach (directing, coaching, supporting, delegating) based on each individual's maturity level." },
+    { "term": "Autocratic vs. Democratic", "definition": "Autocratic: leader decides alone. Democratic: leader involves the team. Neither is inherently better — context determines effectiveness." }
+  ],
+  "summary": "Effective leaders don't stick to one style — they develop fluency across servant, transformational, democratic, and situational approaches, choosing the right one for the right context."
+}

@@ -1,0 +1,47 @@
+{
+  "topicId": "06-breathing-exercises",
+  "exercises": [
+    {
+      "title": "4-7-8 Breathing Challenge",
+      "description": "Practice the 4-7-8 breathing technique twice daily for 7 days (morning and before bed). Track your stress level before and after each session (1-10 scale). Record how long it takes to fall asleep on practice nights vs. non-practice nights.",
+      "hints": [
+        "Start with 2 cycles and work up to 4 — the hold may be challenging at first",
+        "Place your tongue tip behind your upper front teeth as instructed",
+        "Be consistent — the benefits compound over days, not minutes"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "4-7-8 BREATHING TRACKING LOG:\n\n| Day | Time    | Cycles | Before (1-10) | After (1-10) | Change | Sleep time |\n|-----|---------|--------|---------------|--------------|--------|------------|\n| Mon | 7 AM    | 2      | 5             | 3            | -2     | -          |\n| Mon | 10 PM   | 2      | 6             | 4            | -2     | 12 min     |\n| Tue | 7 AM    | 3      | 4             | 2            | -2     | -          |\n| Tue | 10 PM   | 3      | 5             | 3            | -2     | 10 min     |\n| Wed | 7 AM    | 3      | 5             | 3            | -2     | -          |\n| Wed | 10 PM   | 3      | 7             | 4            | -3     | 8 min      |\n| Thu | 7 AM    | 4      | 4             | 2            | -2     | -          |\n| Thu | 10 PM   | 4      | 6             | 3            | -3     | 7 min      |\n| Fri | 7 AM    | 4      | 5             | 3            | -2     | -          |\n| Fri | 10 PM   | 4      | 5             | 2            | -3     | 9 min      |\n| Sat | 7 AM    | 4      | 4             | 2            | -2     | -          |\n| Sat | 10 PM   | 4      | 6             | 3            | -3     | 8 min      |\n| Sun | 7 AM    | 4      | 3             | 1            | -2     | -          |\n| Sun | 10 PM   | 4      | 5             | 2            | -3     | 10 min     |\n\nRESULTS:\n• Average stress reduction: 2.3 points (1-10 scale)\n• Average sleep time (practice nights): 9 min\n• Average sleep time (non-practice nights): 18 min\n• Best time: Before bed (slightly more effective than morning)\n• Conclusion: 4-7-8 significantly reduces stress and improves sleep latency"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Progressive Muscle Relaxation Session",
+      "description": "Do a full 15-minute PMR session following the body sequence from toes to head. Note which body parts hold the most tension. Then create a 'quick PMR' version (3-5 minutes) that targets only your personal tension hotspots for daily use.",
+      "hints": [
+        "Don't rush — give each muscle group the full 5 seconds of tension + 15 seconds of release",
+        "The most common tension spots for developers: jaw, shoulders, hands, and lower back",
+        "Practice the quick version at your desk during a stressful day"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "PMR SESSION LOG:\n\nFULL SESSION (15 min):\n• Feet: Low tension\n• Calves: Low tension\n• Thighs: Low tension  \n• Glutes: Medium tension\n• Stomach: Low tension\n• Hands: HIGH tension (clenched from typing)\n• Forearms: HIGH tension (keyboard strain)\n• Biceps: Medium tension\n• Shoulders: VERY HIGH tension (desk posture)\n• Neck: HIGH tension\n• Jaw: HIGH tension (realized I was clenching)\n• Eyes: Medium tension\n• Forehead: Low tension\n\nPERSONAL HOTSPOTS: Hands, Shoulders, Jaw\n\nQUICK PMR VERSION (3 min, for desk use):\n1. Hands: Make fists for 5 sec → release for 15 sec\n2. Shoulders: Shrug to ears for 5 sec → drop for 15 sec  \n3. Jaw: Clench teeth for 5 sec → unclench for 15 sec\n4. Take 3 deep breaths\n5. Notice the difference\n\nUSAGE: Do quick PMR every 2 hours during intense coding sessions"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Build a Breathing Habit",
+      "description": "Choose one breathing technique and practice it daily for 2 weeks using habit stacking. Attach it to an existing routine (morning coffee, lunch break, bedtime). Track completion and stress reduction daily.",
+      "hints": [
+        "Start with the simplest technique — Box Breathing or Physiological Sigh",
+        "Use habit stacking: 'After I [existing habit], I will [breathing technique]'",
+        "Track both completion AND effectiveness — a habit that doesn't work isn't worth keeping"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "BREATHING HABIT DESIGN:\n\nCHOSEN TECHNIQUE: Box Breathing (4-4-4-4)\nHABIT STACK: After I pour my morning coffee, I will do 4 cycles of box breathing\nWHEN: 7:30 AM daily\nWHERE: Kitchen, while coffee cools\nREMINDER: Sticky note on coffee maker\n\nTRACKING (2 weeks):\n| Day | Done? | Stress Before | Stress After | Notes |\n|-----|-------|---------------|--------------|-------|\n| Mon | ✓     | 5             | 3            | Felt calmer all morning |\n| Tue | ✓     | 4             | 2            | Easy day, helped maintain |\n| Wed | ✓     | 6             | 3            | Stressful day, very helpful |\n| Thu | ✓     | 5             | 3            | Good focus after |\n| Fri | ✓     | 4             | 2            | End of week, nice ritual |\n| Sat | ✓     | 3             | 1            | Weekend, less stressful |\n| Sun | ✓     | 3             | 2            | Prep for week ahead |\n| Mon | ✓     | 5             | 3            | Second week, more natural |\n| Tue | ✓     | 6             | 3            | Production issue, helped |\n| Wed | ✓     | 5             | 2            | Getting automatic |\n| Thu | ✓     | 7             | 4            | High stress day, essential |\n| Fri | ✓     | 4             | 2            | Week complete! |\n| Sat | ✓     | 3             | 2            | Habit established |\n| Sun | ✓     | 3             | 1            | 14/14 days! |\n\nRESULTS:\n• Completion rate: 100% (14/14)\n• Average stress reduction: 2.4 points\n• Best finding: Habit is now automatic — no motivation needed\n• Next: Add evening 4-7-8 breathing for sleep"
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

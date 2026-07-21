@@ -1,0 +1,42 @@
+{
+  "topicId": "07-overcoming-nervousness",
+  "comparisons": [
+    {
+      "concept": "Response to pre-talk anxiety",
+      "avoidance": {
+        "label": "Avoidance Response",
+        "code": "I'm so nervous, I can't do this. I should cancel. What if I forget everything? Everyone will think I'm incompetent."
+      },
+      "reframe": {
+        "label": "Reframe Response",
+        "code": "I'm feeling energized — that means this matters to me. I've prepared thoroughly. I know my material. The audience wants me to succeed. Even if I stumble, I can recover."
+      },
+      "explanation": "Avoidance amplifies anxiety — each cancelled opportunity makes the next one scarier. Reframing transforms anxiety into focused energy. The physical sensations are the same; the interpretation changes everything."
+    },
+    {
+      "concept": "What happens during the talk",
+      "spiraling": {
+        "label": "Anxiety Spiral",
+        "code": "Heart racing → 'They can tell I'm nervous' → Try to hide it → Speak faster → Lose place → Panic → Rush to finish"
+      },
+      "grounding": {
+        "label": "Grounded Approach",
+        "code": "Heart racing → Notice it → Breathe → Pause and sip water → Make eye contact with a friendly face → Slow down → Continue with confidence"
+      },
+      "explanation": "Anxiety spirals happen when you fight the feeling. Grounding techniques interrupt the spiral by redirecting your focus outward (audience, breathing, physical sensations) instead of inward (fear, self-judgment)."
+    },
+    {
+      "concept": "Preparation approaches",
+      "last_minute": {
+        "label": "Last-Minute Preparation",
+        "code": "Read through slides the morning of. Don't practice out loud. Hope for the best."
+      },
+      "deliberate_practice": {
+        "label": "Deliberate Practice",
+        "code": "Practice out loud 3-5 times. Record and review. Time yourself. Refine weak sections. Design a pre-talk ritual. Visualize success."
+      },
+      "explanation": "Last-minute preparation leaves you vulnerable — every forgotten word feels catastrophic. Deliberate practice builds a safety net: you've recovered from mistakes during practice, so real-stage stumbles feel manageable."
+    }
+  ],
+  "keyInsight": "Reframe anxiety as excitement. Ground yourself with breathing and physical awareness. Thorough preparation is the single best defense against stage fright. Start small, build exposure, and remember — the audience wants you to succeed."
+}

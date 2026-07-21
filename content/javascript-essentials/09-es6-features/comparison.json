@@ -1,0 +1,18 @@
+{
+  "topicId": "09-es6-features",
+  "comparisons": [
+    {
+      "concept": "ES6+ Modern JavaScript",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to ES6+ Modern JavaScript\nconst result = {\n  concept: \"ES6+ Modern JavaScript\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to ES6+ Modern JavaScript\nresult = {\n    \"concept\": \"ES6+ Modern JavaScript\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of ES6+ Modern JavaScript is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about ES6+ Modern JavaScript is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

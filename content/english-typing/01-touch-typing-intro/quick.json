@@ -1,0 +1,38 @@
+{
+  "topicId": "01-touch-typing-intro",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Touch Typing?",
+      "body": "Touch typing means typing without looking at the keyboard. Your fingers know where each key is by feel (muscle memory).\n\nBenefits:\n• 3-5x faster than \"hunt and peck\"\n• Less eye strain (eyes stay on screen)\n• Fewer errors (fingers know the layout)\n• More productive (can think while typing)\n\nThe secret: Home Row. Your fingers ALWAYS rest on these keys:\nLeft hand: A S D F (index on F — note the bump)\nRight hand: J K L ; (index on J — note the bump)\nThe bumps on F and J are your home position markers."
+    },
+    {
+      "heading": "Finger Assignments",
+      "body": "Each finger controls specific keys:\n\nLeft Hand:\n• Pinky: 1, Q, A, Z, Shift, Ctrl\n• Ring: 2, W, S, X\n• Middle: 3, E, D, C\n• Index: 4, R, F, V, 5, T, G, B\n\nRight Hand:\n• Index: 6, Y, H, N, 7, U, J, M\n• Middle: 8, I, K, ,\n• Ring: 9, O, L, .\n• Pinky: 0, P, ;, /, Shift, Enter\n\nThumbs: Space bar (use whichever feels natural)"
+    },
+    {
+      "heading": "Practice: Home Row Only",
+      "body": "Today's exercise: ASDF JKL;\n\nType these combinations:\n1. asdf jkl; asdf jkl;\n2. asdf asdf jkl; jkl;\n3. fjdk slaj fjdk slaj\n4. asdf fdsa jkl; ;lkj\n5. a sad lad; a flask; a salad\n\nSentences:\n\"ask a sad dad\"\n\"a lad asks a lass\"\n\"fall as a fast lad\"\n\nRule: NEVER look at the keyboard. If you make a mistake, backspace and retry by feel."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Touch Typing",
+      "definition": "Typing without looking at the keyboard, using muscle memory. Each finger is assigned specific keys."
+    },
+    {
+      "term": "Home Row",
+      "definition": "The middle row (ASDF JKL;) where fingers rest. The tactile bumps on F and J mark the home position."
+    },
+    {
+      "term": "WPM",
+      "definition": "Words Per Minute. Standard measure: one word = 5 characters including spaces. Average typist: 40 WPM. Professional: 75+ WPM."
+    },
+    {
+      "term": "Muscle Memory",
+      "definition": "The ability to perform movements without conscious thought, developed through repetition. Key to touch typing."
+    }
+  ],
+  "summary": "Touch typing is a physical skill, not a mental one. Your fingers need to learn, not your brain. Practice 20 minutes daily, never look down."
+}

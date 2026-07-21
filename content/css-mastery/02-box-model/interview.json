@@ -1,0 +1,25 @@
+{
+  "topicId": "02-box-model",
+  "questions": [
+    {
+      "question": "What is The Box Model and why is it important?",
+      "answer": "The Box Model is a fundamental concept that Margin, padding, border, box-sizing, and element dimensions. It's important because it forms the foundation for building robust and efficient applications. Understanding The Box Model allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply The Box Model in a real project?",
+      "answer": "In practice, The Box Model is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with The Box Model?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain The Box Model to a beginner?",
+      "answer": "The Box Model is essentially about margin, padding, border, box-sizing, and element dimensions. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "topicId": "09-rate-limiting",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Rate Limiting & Brute Force Protection?",
+      "body": "Protect APIs from abuse with rate limiting and throttling. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "Rate Limiting & Brute Force Protection is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind Rate Limiting & Brute Force Protection is understanding how different components work together.\n\n2. Application: In practice, you'll use Rate Limiting & Brute Force Protection every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most Rate Limiting & Brute Force Protection implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding Rate Limiting & Brute Force Protection is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Rate",
+      "definition": "A key concept in Rate Limiting & Brute Force Protection. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Limiting",
+      "definition": "A key concept in Rate Limiting & Brute Force Protection. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Brute",
+      "definition": "A key concept in Rate Limiting & Brute Force Protection. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "Rate Limiting & Brute Force Protection is a core concept in security. Protect APIs from abuse with rate limiting and throttling. Focus on understanding the fundamentals first, then practice applying them."
+}

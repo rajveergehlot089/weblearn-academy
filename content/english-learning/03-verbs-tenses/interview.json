@@ -1,0 +1,20 @@
+{
+  "topicId": "03-verbs-tenses",
+  "questions": [
+    {
+      "question": "What's the difference between \"I work\" and \"I am working\"?",
+      "answer": "\"I work\" (Simple Present) describes a general habit or fact — your job in general. \"I am working\" (Present Continuous) describes what you're doing right now, at this moment. Compare: \"I work at Google\" (general) vs \"I am working on a project\" (now).",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why can't we say \"I am knowing the answer\"?",
+      "answer": "\"Know\" is a stative verb — it describes a state, not an action. Stative verbs (know, believe, love, hate, want, seem) are NOT used in continuous forms because they describe permanent states, not ongoing actions. You say \"I know the answer\" not \"I am knowing the answer\".",
+      "difficulty": "medium"
+    },
+    {
+      "question": "When do you double the last consonant before -ing?",
+      "answer": "When a one-syllable verb ends in consonant-vowel-consonant (CVC pattern): run → running, sit → sitting, get → getting. For two+ syllable verbs, double only if the LAST syllable is stressed: begin → beginning, but open → opening (stress on first syllable).",
+      "difficulty": "medium"
+    }
+  ]
+}

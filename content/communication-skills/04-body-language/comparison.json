@@ -1,0 +1,42 @@
+{
+  "topicId": "04-body-language",
+  "comparisons": [
+    {
+      "concept": "Closed vs. Open Body Language",
+      "before": {
+        "label": "Closed (Defensive/Unapproachable)",
+        "code": "Arms crossed tightly across chest\nLegs crossed, body turned away\nChin down, avoiding eye contact\nShoulders hunched\nHands in pockets\n\nMessage sent: 'I'm not open to what you're saying.'"
+      },
+      "after": {
+        "label": "Open (Approachable/Confident)",
+        "code": "Arms relaxed at sides or using open gestures\nBody facing the speaker directly\nEye contact at 50-70%\nShoulders back, posture upright\nHands visible, palms occasionally showing\n\nMessage sent: 'I'm engaged and receptive.'"
+      },
+      "explanation": "Open body language makes people feel safe to share ideas. Closed body language triggers defensiveness. In meetings, your posture sets the tone for everyone."
+    },
+    {
+      "concept": "Fidgeting vs. Grounded Presence",
+      "before": {
+        "label": "Fidgeting (Anxious/Distracted)",
+        "code": "Tapping foot, clicking pen\nTouching face, playing with hair\nShifting weight from side to side\nDrumming fingers\nLooking at phone\n\nMessage sent: 'I'm nervous, bored, or thinking about something else.'"
+      },
+      "after": {
+        "label": "Grounded (Calm/Present)",
+        "code": "Feet planted on the floor\nHands resting naturally\nSteady posture, minimal movement\nHead up, looking at speaker\n\nMessage sent: 'I'm here. I'm focused. I'm listening.'"
+      },
+      "explanation": "Grounded presence signals confidence and attention. To reduce fidgeting: feel your feet on the floor, rest your hands, and focus on the speaker's words."
+    },
+    {
+      "concept": "Fake Smile vs. Genuine Smile",
+      "before": {
+        "label": "Fake (Polite) Smile",
+        "code": "Only the mouth moves\nEyes remain unchanged or narrow\nAppears in professional greetings\nFades quickly\n\nRecognition: The 'Duchenne marker' (crow's feet around eyes) is missing."
+      },
+      "after": {
+        "label": "Genuine (Duchenne) Smile",
+        "code": "Mouth AND eyes engage\nCrow's feet appear at eye corners\nCheeks raise naturally\nLingers for a beat\n\nRecognition: Genuine smiles activate the orbicularis oculi muscle around the eyes."
+      },
+      "explanation": "People can detect fake smiles instantly. To create a genuine smile: think of something you actually appreciate about the person before smiling. The emotion precedes the expression."
+    }
+  ],
+  "keyInsight": "Body language isn't about tricks — it's about alignment. Your nonverbal signals should match your message. When they don't, people believe the body language, not the words."
+}

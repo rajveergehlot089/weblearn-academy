@@ -1,0 +1,59 @@
+{
+  "topicId": "01-node-intro",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Node.js Architecture",
+      "body": "Node.js uses a single-threaded event loop with non-blocking I/O. This means it can handle thousands of concurrent connections without creating new threads for each one. The event loop continuously checks for pending operations and executes callbacks when they complete.",
+      "code": {
+        "language": "javascript",
+        "snippet": "// The event loop in action\nconst fs = require('fs');\n\nconsole.log('Start');\nfs.readFile('large-file.txt', () => {\n  console.log('File read complete');\n});\nconsole.log('End');\n\n// Output:\n// Start\n// End\n// File read complete",
+        "explanation": "Notice that 'End' prints before 'File read complete'. The file reading happens asynchronously, so the event loop continues executing other code."
+      }
+    },
+    {
+      "heading": "Modules and require()",
+      "body": "Node.js uses the CommonJS module system. You can split your code into separate files and import them using require(). Each file is a module with its own scope.",
+      "code": {
+        "language": "javascript",
+        "snippet": "// math.js\nfunction add(a, b) {\n  return a + b;\n}\nfunction subtract(a, b) {\n  return a - b;\n}\nmodule.exports = { add, subtract };\n\n// app.js\nconst math = require('./math');\nconsole.log(math.add(5, 3)); // 8\nconsole.log(math.subtract(10, 4)); // 6",
+        "explanation": "module.exports exposes functions from a file. require() imports them into another file. This keeps your code organized."
+      }
+    },
+    {
+      "heading": "npm and package.json",
+      "body": "npm manages your project's dependencies and scripts. When you run 'npm init', it creates a package.json file that tracks your project's metadata and dependencies.",
+      "code": {
+        "language": "json",
+        "snippet": "{\n  \"name\": \"my-server\",\n  \"version\": \"1.0.0\",\n  \"description\": \"A simple Node.js server\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"start\": \"node index.js\",\n    \"dev\": \"nodemon index.js\"\n  },\n  \"dependencies\": {\n    \"express\": \"^4.18.2\"\n  },\n  \"devDependencies\": {\n    \"nodemon\": \"^3.0.1\"\n  }\n}",
+        "explanation": "Dependencies are packages your project needs. devDependencies are only needed during development (like nodemon for auto-restart)."
+      }
+    },
+    {
+      "heading": "The http Module in Detail",
+      "body": "The http module is Node.js's built-in way to create HTTP servers and make HTTP requests. Let's build a more complete server that handles different routes:",
+      "code": {
+        "language": "javascript",
+        "snippet": "const http = require('http');\nconst url = require('url');\n\nconst server = http.createServer((req, res) => {\n  const parsedUrl = url.parse(req.url, true);\n  const path = parsedUrl.pathname;\n\n  // Route handling\n  if (path === '/') {\n    res.writeHead(200, { 'Content-Type': 'text/html' });\n    res.end('<h1>Home Page</h1>');\n  } else if (path === '/about') {\n    res.writeHead(200, { 'Content-Type': 'text/html' });\n    res.end('<h1>About Page</h1>');\n  } else if (path === '/api/users') {\n    res.writeHead(200, { 'Content-Type': 'application/json' });\n    res.end(JSON.stringify({ users: ['Alice', 'Bob'] }));\n  } else {\n    res.writeHead(404, { 'Content-Type': 'text/html' });\n    res.end('<h1>404 Not Found</h1>');\n  }\n});\n\nserver.listen(3000, () => {\n  console.log('Server running on port 3000');\n});",
+        "explanation": "We parse the URL to determine the path, then handle different routes. For JSON responses, we set the Content-Type to application/json and stringify the data."
+      }
+    },
+    {
+      "heading": "Error Handling Basics",
+      "body": "Proper error handling prevents your server from crashing. Always wrap potentially problematic code in try-catch blocks and handle errors gracefully.",
+      "code": {
+        "language": "javascript",
+        "snippet": "const http = require('http');\nconst fs = require('fs');\n\nconst server = http.createServer((req, res) => {\n  try {\n    // Simulate an error\n    if (req.url === '/error') {\n      throw new Error('Something went wrong!');\n    }\n\n    res.writeHead(200, { 'Content-Type': 'text/plain' });\n    res.end('Request handled successfully');\n  } catch (error) {\n    console.error('Server error:', error.message);\n    res.writeHead(500, { 'Content-Type': 'text/plain' });\n    res.end('Internal Server Error');\n  }\n});",
+        "explanation": "The try-catch block catches any errors during request handling. We log the error and send a 500 response to the client."
+      }
+    }
+  ],
+  "jargon": [
+    { "term": "Event Loop", "definition": "The core of Node.js that handles asynchronous operations. It continuously checks for pending tasks and executes their callbacks." },
+    { "term": "Callback", "definition": "A function passed as an argument to another function, to be executed when an operation completes. Common in Node.js for async operations." },
+    { "term": "Blocking vs Non-blocking", "definition": "Blocking code stops execution until it completes. Non-blocking code lets the event loop continue while waiting for operations to finish." },
+    { "term": "Buffer", "definition": "Node.js's way of handling binary data. Buffers represent fixed-length sequences of bytes." }
+  ],
+  "summary": "Node.js uses an event-driven, non-blocking architecture that makes it efficient for I/O-heavy operations. Modules let you organize code, npm manages dependencies, and the http module provides the foundation for building servers."
+}

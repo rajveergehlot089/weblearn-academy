@@ -1,0 +1,8 @@
+{
+  "topicId": "07-vocabulary-builder",
+  "questions": [
+    { "question": "What is the difference between 'make' and 'do'?", "answer": "'Make' implies creating or producing something (make a cake, make a decision, make money). 'Do' implies performing an action or task (do homework, do exercise, do a job). The easiest rule: make = create/result, do = activity/process. But there are many fixed collocations to memorize.", "difficulty": "easy" },
+    { "question": "How can you learn vocabulary faster?", "answer": "Use spaced repetition (review at increasing intervals), learn words in context (not isolated), study word families (decide/decision/decisive), and focus on collocations (make a decision, not do a decision). Most importantly: use new words actively in speaking and writing within 24 hours of learning them.", "difficulty": "medium" },
+    { "question": "What is the difference between 'affect' and 'effect'?", "answer": "'Affect' is usually a verb meaning to influence: 'The weather affects my mood.' 'Effect' is usually a noun meaning the result: 'The medicine had a positive effect.' Easy trick: Affect = Action (both start with A), Effect = End result (both start with E). Exception: 'effect' can be a verb meaning to bring about: 'to effect change.'", "difficulty": "medium" }
+  ]
+}

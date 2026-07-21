@@ -1,0 +1,26 @@
+{
+  "topicId": "01-self-awareness",
+  "exercises": [
+    {
+      "title": "Values Clarification Exercise",
+      "description": "Identify your top 5 core values from a list of 50 common values, then write a brief scenario for each showing how that value shows up in your life (or when it's been violated). This helps you understand what you truly prioritize beyond what you say you value.",
+      "hints": ["Start by listing all values that resonate with you, then force-rank to 5", "For each value, think of a specific moment when honoring it felt right", "Consider what you would sacrifice to maintain each value — that's how you know it's truly core"],
+      "solution": { "language": "text", "code": "Example output:\n\n1. INTEGRITY\n   Value meaning: Being honest and aligned with my principles even when it's difficult.\n   Example: Turning down a lucrative client because their product would harm users.\n   Cost I'd pay: Losing income rather than compromising honesty.\n\n2. CREATIVITY\n   Value meaning: Finding innovative solutions and expressing original ideas.\n   Example: Spending weekends building side projects that challenge me.\n   Cost I'd pay: Giving up leisure time to pursue creative work.\n\n3. GROWTH\n   Value meaning: Continuously learning and pushing beyond comfort zones.\n   Example: Taking on a stretch assignment despite fear of failure.\n   Cost I'd pay: Comfort and certainty for the sake of development.\n\n4. CONNECTION\n   Value meaning: Deep, authentic relationships with people I care about.\n   Example: Calling a friend during a busy week because the relationship matters.\n   Cost I'd pay: Productivity time to invest in relationships.\n\n5. AUTONOMY\n   Value meaning: Freedom to make my own decisions and direct my own path.\n   Example: Leaving a stable job to pursue independent work.\n   Cost I'd pay: Security for freedom." },
+      "difficulty": "medium"
+    },
+    {
+      "title": "7-Day Energy Audit",
+      "description": "Track your energy levels throughout the day for one week. Every 2 hours, rate your energy from -3 (completely drained) to +3 (highly energized). At the end of the week, analyze patterns to identify your energy sources and drains.",
+      "hints": ["Set phone reminders every 2 hours during waking hours", "Rate honestly — not what you think you should feel, but what you actually feel", "Look for patterns: time of day, activities, people, environments"],
+      "solution": { "language": "text", "code": "Example tracking sheet:\n\nDay: Monday\n8am: +2 (morning energy, coffee, fresh start)\n10am: +1 (focused work, feeling productive)\n12pm: -1 (post-lunch slump, meetings)\n2pm: -2 (exhausted, too many back-to-back calls)\n4pm: +1 (second wind, creative problem-solving)\n6pm: -1 (tired but satisfied)\n\nWeekly analysis pattern:\n- ENERGERS: Morning solo work, creative projects, deep conversations\n- DRAINERS: Back-to-back meetings, administrative tasks, conflict\n- INSIGHT: You do your best creative work 10am-12pm and 3pm-5pm\n- ACTION: Protect these blocks for important creative work; batch meetings together\n\nKey finding: Your energy isn't random — it follows predictable patterns based on activity type, not just time of day." },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Blind Spot Discovery",
+      "description": "Ask 5 people who know you well (mix of personal and professional) to anonymously answer: 'What is one thing I do that I might not realize I do? How does it affect others?' Collect responses, look for patterns, and write a reflection on what surprised you.",
+      "hints": ["Choose people who will be honest, not just kind", "Make it anonymous (use a form) so people feel safe being truthful", "Look for patterns across multiple responses rather than fixating on one comment"],
+      "solution": { "language": "text", "code": "Example responses collected:\n\nPerson 1 (colleague): 'You sometimes interrupt when you're excited about an idea. It can make others feel unheard.'\nPerson 2 (friend): 'You tend to over-explain things, which can come across as not trusting people to understand.'\nPerson 3 (partner): 'When stressed, you withdraw without explaining why, which leaves me guessing.'\nPerson 4 (manager): 'You're great at starting projects but sometimes underestimate how long follow-through takes.'\nPerson 5 (family): 'You say you're fine when you're clearly not fine, and it's hard to know how to support you.'\n\nPattern analysis:\n- Communication pattern: Over-explaining + withdrawing under stress\n- Pattern: Difficulty being concise and direct\n- Impact: Others feel they can't fully engage or support you\n\nReflection: The most surprising insight is that my 'protective' behaviors (withdrawing, over-explaining) actually create the opposite of my intention — they push people away rather than protecting relationships.\n\nAction plan: Practice concise communication ('one sentence, then stop') and name my emotions when stressed ('I need 20 minutes to decompress') instead of silently withdrawing." },
+      "difficulty": "hard"
+    }
+  ]
+}

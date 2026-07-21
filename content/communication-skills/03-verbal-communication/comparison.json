@@ -1,0 +1,42 @@
+{
+  "topicId": "03-verbal-communication",
+  "comparisons": [
+    {
+      "concept": "Vague vs. Specific Language",
+      "before": {
+        "label": "Vague",
+        "code": "Meeting opener:\n'Hey everyone, thanks for coming. So, there's a lot going on, and I wanted to touch base on some things and see where we're at and maybe brainstorm some ideas for moving forward.'\n\nListener reaction: What are we actually here for?"
+      },
+      "after": {
+        "label": "Specific",
+        "code": "Meeting opener:\n'Thanks for joining. Today we're solving one problem: the Q3 conversion rate dropped 8%. I'll share the data, then we'll brainstorm fixes. We need a decision by end of this meeting.'\n\nListener reaction: Clear purpose, clear outcome."
+      },
+      "explanation": "Specific language respects people's time. Vague language wastes it. Always state: what are we doing, why, and what's the expected outcome."
+    },
+    {
+      "concept": "Negative vs. Positive Framing",
+      "before": {
+        "label": "Negative Framing",
+        "code": "Feedback:\n'Don't submit reports late again.'\n'Don't interrupt during client calls.'\n'Don't use that color palette — it looks unprofessional.'\n\nResult: Listener focuses on what NOT to do, feels criticized."
+      },
+      "after": {
+        "label": "Positive Framing",
+        "code": "Feedback:\n'Please submit reports by Thursday 5pm so I can review before the Monday meeting.'\n'Hold questions until after the client finishes their thought — then address them.'\n'Try the blue-gray palette — it reads more professional for B2B clients.'\n\nResult: Listener knows exactly what TO do, feels guided."
+      },
+      "explanation": "The brain processes positive instructions faster than negatives. 'Don't run' still puts the image of running in your mind."
+    },
+    {
+      "concept": "Passive vs. Assertive Communication",
+      "before": {
+        "label": "Passive",
+        "code": "In a meeting:\n'I don't know if this is a good idea, but maybe we could possibly consider...'\n'Sorry to bring this up, but...'\n'I might be wrong, but...'\n\nResult: Ideas get ignored. Speaker seems uncertain."
+      },
+      "after": {
+        "label": "Assertive",
+        "code": "In a meeting:\n'I recommend we shift budget to digital channels. Here's why.'\n'I have a concern about the timeline — can we discuss?'\n'I see a risk in the current approach. Let me explain.'\n\nResult: Ideas get heard. Speaker seems confident and prepared."
+      },
+      "explanation": "Assertive communication states your position clearly without aggression. It respects both your own perspective and the listener's."
+    }
+  ],
+  "keyInsight": "The biggest verbal upgrade isn't learning new words — it's removing weak ones. Cutting filler words, hedging, and negatives from your vocabulary immediately makes you sound more competent and confident."
+}

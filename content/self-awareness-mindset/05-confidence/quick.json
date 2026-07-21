@@ -1,0 +1,25 @@
+{
+  "topicId": "05-confidence",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Confidence is a Verb, Not a Noun",
+      "body": "Most people think confidence is something you either have or don't — a personality trait you're born with. Research shows confidence is actually a behavior. You don't wait to feel confident to act; you act to build confidence. Confidence comes AFTER action, not before. As psychologist Albert Bandura's self-efficacy theory shows: confidence comes from mastery experiences (successfully doing something), not from thinking about doing it."
+    },
+    {
+      "heading": "The Confidence-Competence Loop",
+      "body": "Confidence and competence feed each other:\n\n1. Try something (even imperfectly)\n2. Succeed or learn from failure\n3. Build competence AND confidence\n4. Take on a bigger challenge\n5. Repeat\n\nThis is why 'fake it till you make it' actually works — not because faking is good, but because acting despite fear creates real evidence that you can handle it. The brain doesn't distinguish well between 'I'm confident' and 'I'm acting confidently.'"
+    },
+    {
+      "heading": "The Comfort Zone Model",
+      "body": "Three concentric zones:\n\n• Comfort Zone: Where you feel safe and competent. Low anxiety, but no growth.\n• Learning Zone: Where you're challenged but capable. Moderate anxiety, maximum growth.\n• Panic Zone: Where you're overwhelmed. High anxiety, no learning.\n\nThe goal is to consistently operate at the edge of your comfort zone — in the learning zone. Too comfortable = stagnation. Too far outside = shutdown. Growth happens in the stretch, not the snap."
+    }
+  ],
+  "jargon": [
+    { "term": "Self-Efficacy", "definition": "Albert Bandura's term for your belief in your ability to succeed in specific situations. The strongest predictor of whether you'll try something new or persist through difficulty." },
+    { "term": "Comfort Zone", "definition": "A psychological state where you feel familiar and in control. Staying here feels safe but prevents growth." },
+    { "term": "Exposure Therapy", "definition": "Gradually exposing yourself to feared situations to reduce anxiety and build confidence. The basis for most confidence-building strategies." }
+  ],
+  "summary": "Confidence comes from action, not thought. The confidence-competence loop shows that trying → succeeding/learning → building confidence → trying bigger challenges. Operate at the edge of your comfort zone where growth happens. Self-efficacy (belief in your ability) is built through mastery experiences — actually doing things and succeeding."
+}

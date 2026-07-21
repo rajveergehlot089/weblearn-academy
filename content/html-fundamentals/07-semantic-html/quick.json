@@ -1,0 +1,34 @@
+{
+  "topicId": "07-semantic-html",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Semantic HTML?",
+      "body": "Semantic HTML uses elements that clearly describe their meaning to both browsers and developers. Instead of using generic div elements, semantic elements like header, nav, main, article, and footer convey the purpose of the content."
+    },
+    {
+      "heading": "Why Use Semantic HTML?",
+      "body": "Benefits include:\n• Accessibility: Screen readers can better understand page structure\n• SEO: Search engines can better index and rank content\n• Maintainability: Developers can quickly understand code\n• Standards Compliance: Follows web standards and best practices"
+    },
+    {
+      "heading": "Common Semantic Elements",
+      "body": "Key semantic elements:\n• Header: Page or section header\n• Nav: Navigation links\n• Main: Main content area\n• Article: Self-contained content\n• Section: Thematic grouping\n• Aside: Sidebar content\n• Footer: Page or section footer"
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Semantic",
+      "definition": "Elements that convey meaning about their content, not just appearance"
+    },
+    {
+      "term": "Accessibility",
+      "definition": "Making web content usable by people with disabilities"
+    },
+    {
+      "term": "Screen Reader",
+      "definition": "Software that reads web content aloud for visually impaired users"
+    }
+  ],
+  "summary": "Semantic HTML uses meaningful elements that describe content purpose. Benefits include better accessibility, SEO, and maintainability. Replace generic divs with semantic elements."
+}

@@ -1,0 +1,57 @@
+{
+  "topicId": "01-english-basics",
+  "exercises": [
+    {
+      "title": "Vowel Sound Identification",
+      "description": "Read these words and circle the vowel sound: cat, bed, sit, hot, cup, cake, these, bike, home, cute. Group them by short vs long vowel sounds.",
+      "hints": [
+        "Remember: short vowels are quick sounds, long vowels say their letter name",
+        "Group by the vowel letter: a, e, i, o, u"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Short: cat(a), bed(e), sit(i), hot(o), cup(u)\nLong: cake(a), these(e), bike(i), home(o), cute(u)"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Minimal Pairs Practice",
+      "description": "Listen to and practice these minimal pairs. Write the difference you hear: ship/sheep, bed/bad, full/fool, light/right, think/sink",
+      "hints": [
+        "Focus on the vowel sound difference",
+        "Ship has /ɪ/ (short i), sheep has /iː/ (long e)"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "ship /ɪ/ vs sheep /iː/\nbed /e/ vs bad /æ/\nfull /ʊ/ vs fool /uː/\nlight /aɪ/ vs right /aɪ/ (consonant difference)\nthink /θ/ vs sink /s/ (consonant difference)"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Syllable Counting",
+      "description": "Count the syllables in: university, beautiful, understand, computer, communicate, interesting, comfortable",
+      "hints": [
+        "Clap as you say each syllable",
+        "Listen for each distinct vowel sound"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "university = u-ni-ver-si-ty (6)\nbeautiful = beau-ti-ful (3)\nunderstand = un-der-stand (3)\ncomputer = com-pu-ter (3)\ncommunicate = com-mu-ni-cate (4)\ninteresting = in-ter-est-ing (4)\ncomfortable = com-for-ta-ble (4)"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Tongue Twister Challenge",
+      "description": "Practice these tongue twisters 5 times each. Focus on clear pronunciation, not speed.",
+      "hints": [
+        "Start slowly and increase speed gradually",
+        "Focus on the difficult consonant clusters"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "1. She sells seashells by the seashore.\n2. Peter Piper picked a peck of pickled peppers.\n3. How much wood would a woodchuck chuck?\n4. Red lorry, yellow lorry, red lorry, yellow lorry.\n5. The sixth sick sheikh's sixth sheep's sick."
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

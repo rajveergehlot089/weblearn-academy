@@ -1,0 +1,40 @@
+{
+  "topicId": "02-active-listening",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Why Most People Are Bad Listeners",
+      "body": "Research shows the average person retains only 25-50% of what they hear immediately after a conversation. The brain processes speech at 400-800 words per minute, but we speak at only 125-175 words per minute. This gap means your brain has extra capacity — and it fills that gap with daydreaming, planning responses, or judging the speaker."
+    },
+    {
+      "heading": "The HEAR Model of Active Listening",
+      "body": "Follow these four steps in every important conversation:",
+      "bulletPoints": [
+        "H — Halt: Stop what you're doing. Put down your phone, close your laptop, turn to face the person. Give undivided attention.",
+        "E — Empathize: Try to understand the speaker's perspective and emotions, not just their words. Ask yourself: 'What is this person feeling right now?'",
+        "A — Anticipate: Stay curious. Don't assume you know what they'll say. Let them finish before responding.",
+        "R — Respond: Give a thoughtful, relevant response. Ask follow-up questions. Show you were truly listening."
+      ]
+    },
+    {
+      "heading": "Barriers to Active Listening",
+      "body": "Recognize these patterns in yourself — they're the enemies of listening:",
+      "code": {
+        "language": "example",
+        "snippet": "1. THE FIXER\nSpeaker: 'I'm overwhelmed with work.'\nFixer: 'Just make a to-do list and prioritize.'\nActive Listener: 'What's taking up the most mental space right now?'\n\n2. THE ONE-UPPER\nSpeaker: 'I ran a 5K this weekend.'\nOne-Upper: 'I ran a half marathon last month.'\nActive Listener: 'Nice! How did it feel? Were you aiming for a specific time?'\n\n3. THE ZONE-OUT\nSpeaker is talking. Listener nods but is thinking about dinner plans.\nActive Listener: 'Sorry, can you repeat that last part? I want to make sure I heard it right.'\n\n4. THE JUDGER\nSpeaker: 'I'm thinking about changing careers.'\nJudger: 'That's risky at your age.'\nActive Listener: 'What's drawing you toward a change?'",
+        "explanation": "Each barrier shifts focus from the speaker to the listener. Active listening keeps the focus where it belongs."
+      }
+    },
+    {
+      "heading": "Practice: The 2-Minute Listening Exercise",
+      "body": "Pair up with someone. One person talks for 2 minutes about something that happened to them this week. The listener cannot speak — only listen. After 2 minutes, the listener must: (1) paraphrase the main point, (2) reflect one emotion they noticed, (3) ask one clarifying question. Switch roles.",
+      "code": {
+        "language": "example",
+        "snippet": "After 2 minutes of listening, try this template:\n\n'Let me make sure I understood — you're saying [paraphrase].\nIt sounds like you felt [emotion] because [reason].\nI'm curious about [clarifying question].'\n\nExample:\n'I heard that your manager moved your project deadline up by two weeks. It sounds like you felt frustrated because you'd already planned your workload. I'm curious — have you talked to them about the impact?'",
+        "explanation": "This exercise trains you to hold attention, process content and emotion, and respond thoughtfully instead of reactively."
+      }
+    }
+  ],
+  "summary": "Most people are poor listeners because their brain fills the speech-processing gap with distractions. The HEAR model (Halt, Empathize, Anticipate, Respond) provides a structured approach. Common barriers include fixing, one-upping, zoning out, and judging. Practice by listening for 2 minutes without interrupting, then paraphrasing, reflecting emotion, and asking a clarifying question."
+}

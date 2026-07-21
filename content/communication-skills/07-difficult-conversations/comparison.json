@@ -1,0 +1,42 @@
+{
+  "topicId": "07-difficult-conversations",
+  "comparisons": [
+    {
+      "concept": "Blame vs. I-Statements",
+      "before": {
+        "label": "Blame (You-Statements)",
+        "code": "'You always miss deadlines and it screws everyone over.'\n'You don't listen to anyone on this team.'\n'You made a huge mistake and now we have to fix it.'\n\nResult: Listener feels attacked → becomes defensive → conversation escalates."
+      },
+      "after": {
+        "label": "I-Statements",
+        "code": "'I feel frustrated when deadlines are missed because it impacts the whole team's schedule.'\n'I feel unheard when my suggestions aren't discussed in meetings.'\n'I'm concerned about the error because it affects the client relationship.'\n\nResult: Listener hears your experience → can respond to the issue, not defend their character."
+      },
+      "explanation": "You-statements attack character. I-statements express impact. Same information, completely different emotional response."
+    },
+    {
+      "concept": "Escalation vs. De-escalation",
+      "before": {
+        "label": "Escalation",
+        "code": "You: 'This is unacceptable. You need to fix this NOW.'\nThem: 'Don't tell me what to do. You're not my boss.'\nYou: 'Someone needs to take responsibility here.'\nThem: 'Maybe if you'd given clearer instructions...'\n\nResult: Both sides dig in. No resolution. Relationship damaged."
+      },
+      "after": {
+        "label": "De-escalation",
+        "code": "You: 'I can see this is a frustrating situation for both of us.'\nThem: 'It is. I've been working overtime on this.'\nYou: 'I appreciate that. Let's figure out what we both need to move forward.'\nThem: 'Okay. What would help from your side?'\n\nResult: Temperature drops. Both sides problem-solve together."
+      },
+      "explanation": "De-escalation starts with acknowledging the other person's emotional experience. It's not agreement — it's recognition. 'I see you're frustrated' doesn't mean 'You're right.'"
+    },
+    {
+      "concept": "Winning vs. Understanding",
+      "before": {
+        "label": "Winning the Argument",
+        "code": "Goal: Prove I'm right and they're wrong.\nApproach: Gather evidence, interrupt, dismiss their points.\nLanguage: 'That's not true.' 'You're wrong about that.' 'Let me explain why...'\nOutcome: I 'win' the argument but lose the relationship."
+      },
+      "after": {
+        "label": "Seeking Understanding",
+        "code": "Goal: Understand their perspective and find a solution.\nApproach: Ask questions, listen fully, acknowledge valid points.\nLanguage: 'Help me understand...' 'I see your point about...' 'What if we...'\nOutcome: Both sides feel heard. Solution is collaborative."
+      },
+      "explanation": "In most professional and personal relationships, 'winning' an argument actually means losing. The goal of a difficult conversation should be understanding, not victory."
+    }
+  ],
+  "keyInsight": "The shift from blame to I-statements, from escalation to de-escalation, and from winning to understanding — these three pivots transform difficult conversations from relationship-damaging to relationship-strengthening."
+}

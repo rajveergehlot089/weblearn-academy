@@ -1,0 +1,52 @@
+{
+  "topicId": "06-breathing-exercises",
+  "comparisons": [
+    {
+      "concept": "Breathing Techniques",
+      "items": [
+        {
+          "name": "4-7-8 Breathing",
+          "description": "Inhale 4, hold 7, exhale 8 — extended exhale stimulates vagus nerve",
+          "best_for": "Anxiety, sleep, pre-presentation calm",
+          "duration": "2-4 minutes (4-8 cycles)",
+          "difficulty": "Medium — the hold can be challenging at first",
+          "key_mechanism": "Extended exhale activates parasympathetic nervous system via vagus nerve"
+        },
+        {
+          "name": "Box Breathing",
+          "description": "Inhale 4, hold 4, exhale 4, hold 4 — equal intervals create calm rhythm",
+          "best_for": "High-pressure work moments, production incidents, focus",
+          "duration": "1-2 minutes (4-8 cycles)",
+          "difficulty": "Easy — equal counts are simple to remember",
+          "key_mechanism": "Rhythmic breathing anchors attention and activates parasympathetic response"
+        },
+        {
+          "name": "Physiological Sigh",
+          "description": "Double inhale through nose (long + short), then long exhale through mouth",
+          "best_for": "Immediate calm — fastest known breathing technique",
+          "duration": "15-30 seconds (1-3 breaths)",
+          "difficulty": "Very easy — can be done anywhere without being noticed",
+          "key_mechanism": "Double inhale maximizes lung CO2 offloading, fast parasympathetic activation"
+        },
+        {
+          "name": "Diaphragmatic (Belly) Breathing",
+          "description": "Deep breaths that expand the belly, not the chest — engages diaphragm fully",
+          "best_for": "Building foundational breathing habit, relaxation",
+          "duration": "5-10 minutes",
+          "difficulty": "Easy to learn, requires practice to make natural",
+          "key_mechanism": "Full diaphragm engagement maximizes oxygen exchange and vagus nerve stimulation"
+        },
+        {
+          "name": "Alternate Nostril Breathing (Nadi Shodhana)",
+          "description": "Breathe through one nostril at a time, alternating with finger placement",
+          "best_for": "Balancing nervous system, pre-meditation preparation",
+          "duration": "5-10 minutes",
+          "difficulty": "Medium — requires finger coordination",
+          "key_mechanism": "Balances sympathetic and parasympathetic activation, improves focus"
+        }
+      ],
+      "insight": "For developers, the most practical techniques are Box Breathing (work moments) and Physiological Sigh (immediate calm). Use 4-7-8 for sleep. Practice one technique daily until it's automatic, then add others."
+    }
+  ],
+  "keyInsight": "The fastest stress relief technique is the Physiological Sigh (double inhale + long exhale) — one breath can calm you down. For work, use Box Breathing. For sleep, use 4-7-8. Practice daily so they're automatic under pressure."
+}

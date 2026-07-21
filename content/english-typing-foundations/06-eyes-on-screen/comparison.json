@@ -1,0 +1,18 @@
+{
+  "topicId": "06-eyes-on-screen",
+  "comparisons": [
+    {
+      "concept": "Typing Without Looking",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Typing Without Looking\nconst result = {\n  concept: \"Typing Without Looking\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Typing Without Looking\nresult = {\n    \"concept\": \"Typing Without Looking\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Typing Without Looking is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Typing Without Looking is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

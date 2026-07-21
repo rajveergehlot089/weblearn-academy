@@ -1,0 +1,35 @@
+{
+  "topicId": "07-stress-management",
+  "exercises": [
+    {
+      "title": "The Stress Inventory and Action Plan",
+      "description": "List your top 10 current stressors. For each, categorize as 'controllable' or 'uncontrollable.' For controllable stressors, write one specific action you can take this week. For uncontrollable stressors, write one way to practice acceptance.",
+      "hints": ["Be specific — 'work is stressful' is too vague", "Focus on the top 3 controllable stressors for maximum impact", "Acceptance doesn't mean approval — it means not fighting reality"],
+      "solution": {
+        "language": "text",
+        "code": "Stress Inventory and Action Plan:\n\n1. Workload (Controllable) → Action: Talk to manager about priorities this week\n2. Deadline pressure (Controllable) → Action: Break project into smaller milestones\n3. Colleague conflict (Partially controllable) → Action: Have direct conversation Friday\n4. Financial concerns (Controllable) → Action: Review budget and cut one unnecessary expense\n5. Health anxiety (Partially controllable) → Action: Schedule doctor appointment\n6. Relationship tension (Controllable) → Action: Plan date night this weekend\n7. News and current events (Uncontrollable) → Acceptance: Limit news to 15 min/day\n8. Traffic (Uncontrollable) → Acceptance: Use commute for audiobooks/podcasts\n9. Weather (Uncontrollable) → Acceptance: Focus on what I can control (indoor activities)\n10. Past mistakes (Uncontrollable) → Acceptance: Practice self-compassion, learn and move on\n\nTop 3 actions to take this week:\n1. Monday: Talk to manager about workload priorities\n2. Wednesday: Have direct conversation with colleague\n3. Saturday: Plan date night with partner"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "The Daily Recovery Routine",
+      "description": "Design a 30-minute daily recovery routine that includes physical movement, mental relaxation, and social connection. Practice it for one week and track your stress levels (1-10) before and after each session.",
+      "hints": ["Start small — 10 minutes is better than nothing", "Choose activities you enjoy — recovery shouldn't feel like another chore", "Track consistently to see patterns"],
+      "solution": {
+        "language": "text",
+        "code": "Daily Recovery Routine - Week 1:\n\nRoutine (30 minutes):\n- 10 min: Walk around the block (physical movement)\n- 10 min: Meditation using Headspace app (mental relaxation)\n- 10 min: Call a friend or family member (social connection)\n\nResults:\nDay 1: Before: 7/10 stress. After: 4/10. Felt calmer immediately after walk.\nDay 2: Before: 6/10. After: 3/10. Meditation was harder — mind kept wandering.\nDay 3: Before: 8/10. After: 5/10. Bad day at work, walk helped release tension.\nDay 4: Before: 5/10. After: 2/10. Good day overall, routine maintained it.\nDay 5: Before: 7/10. After: 4/10. Call with friend was most helpful.\nDay 6: Before: 4/10. After: 2/10. Weekend, lower baseline stress.\nDay 7: Before: 5/10. After: 3/10. Consistent improvement throughout week.\n\nKey insight: Average stress reduction was 3 points on 10-point scale. The routine became easier by day 4. Walking was most effective for immediate relief."
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "The Resilience Assessment and Growth Plan",
+      "description": "Assess your resilience using the 4 S's framework: Social Support (1-10), Self-Care (1-10), Sense of Purpose (1-10), Self-Efficacy (1-10). Identify your lowest score and create a specific plan to improve it over 30 days.",
+      "hints": ["Be honest about your scores — this is for your growth", "Choose one S to focus on — trying to improve all four at once is overwhelming", "Set small, measurable goals for the 30-day period"],
+      "solution": {
+        "language": "text",
+        "code": "Resilience Assessment:\n\nScores:\n- Social Support: 6/10 (Have some friends, but don't reach out when stressed)\n- Self-Care: 5/10 (Exercise sporadically, sleep is inconsistent)\n- Sense of Purpose: 8/10 (Clear career goals, know my 'why')\n- Self-Efficacy: 7/10 (Confident in my abilities, but doubt under pressure)\n\nLowest score: Self-Care (5/10)\n\n30-Day Self-Care Improvement Plan:\n\nWeek 1: Establish sleep routine\n- Goal: In bed by 10:30 PM every night\n- Action: Set phone reminder, create bedtime ritual\n- Track: Log sleep time daily\n\nWeek 2: Add daily movement\n- Goal: 30 minutes of exercise, 5 days per week\n- Action: Schedule gym sessions, walk during lunch\n- Track: Log exercise in journal\n\nWeek 3: Improve nutrition\n- Goal: Cook 3 healthy meals per day, reduce takeout to 1x/week\n- Action: Meal prep on Sunday, keep healthy snacks at desk\n- Track: Log meals daily\n\nWeek 4: Integrate all three\n- Goal: Maintain sleep, exercise, and nutrition habits\n- Action: Review what worked, adjust as needed\n- Track: Rate overall well-being daily (1-10)\n\nExpected outcome: Self-Care score increases to 7/10, overall resilience improves."
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

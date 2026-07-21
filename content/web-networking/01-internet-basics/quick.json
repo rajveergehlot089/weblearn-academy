@@ -1,0 +1,30 @@
+{
+  "topicId": "01-internet-basics",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is How the Internet Works?",
+      "body": "DNS, TCP/IP, packets, and the journey of a web request. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "How the Internet Works is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind How the Internet Works is understanding how different components work together.\n\n2. Application: In practice, you'll use How the Internet Works every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most How the Internet Works implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding How the Internet Works is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Internet",
+      "definition": "A key concept in How the Internet Works. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Works",
+      "definition": "A key concept in How the Internet Works. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "How the Internet Works is a core concept in fundamentals. DNS, TCP/IP, packets, and the journey of a web request. Focus on understanding the fundamentals first, then practice applying them."
+}

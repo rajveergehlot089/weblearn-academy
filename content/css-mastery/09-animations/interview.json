@@ -1,0 +1,25 @@
+{
+  "topicId": "09-animations",
+  "questions": [
+    {
+      "question": "What is Transitions & Animations and why is it important?",
+      "answer": "Transitions & Animations is a fundamental concept that Smooth transitions, keyframe animations, and transform effects. It's important because it forms the foundation for building robust and efficient applications. Understanding Transitions & Animations allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Transitions & Animations in a real project?",
+      "answer": "In practice, Transitions & Animations is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Transitions & Animations?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Transitions & Animations to a beginner?",
+      "answer": "Transitions & Animations is essentially about smooth transitions, keyframe animations, and transform effects. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

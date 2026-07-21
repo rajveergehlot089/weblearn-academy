@@ -1,0 +1,35 @@
+{
+  "topicId": "04-middleware",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Middleware?",
+      "body": "Middleware functions are functions that have access to the request, response, and next function in your Express application. They can execute code, modify request/response objects, or end the request-response cycle."
+    },
+    {
+      "heading": "Middleware Syntax",
+      "body": "Every middleware function receives three arguments: req, res, and next. You must call next() to pass control to the next middleware, otherwise the request will hang.",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Basic middleware structure\nfunction myMiddleware(req, res, next) {\n  // Do something with the request\n  console.log('Request received:', req.method, req.url);\n  \n  // Call next() to pass to the next middleware\n  next();\n}\n\n// Using middleware\napp.use(myMiddleware);",
+        "explanation": "The next() function is crucial - without it, the request will never reach your route handler."
+      }
+    },
+    {
+      "heading": "Types of Middleware",
+      "body": "Express has several types of middleware: application-level (app.use), router-level (router.use), built-in (express.json), third-party (cors, helmet), and error-handling middleware (4 parameters).",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Application-level middleware\napp.use(express.json());\n\n// Router-level middleware\nconst router = express.Router();\nrouter.use(myMiddleware);\n\n// Error-handling middleware (note 4 parameters)\napp.use((err, req, res, next) => {\n  console.error(err.stack);\n  res.status(500).send('Something broke!');\n});",
+        "explanation": "Error-handling middleware must have exactly 4 parameters: err, req, res, next."
+      }
+    }
+  ],
+  "jargon": [
+    { "term": "Middleware", "definition": "Functions that process requests before they reach route handlers. They can modify requests, responses, or end the cycle." },
+    { "term": "next()", "definition": "A function that passes control to the next middleware in the stack. Must be called to continue processing." },
+    { "term": "Error-handling Middleware", "definition": "Special middleware with 4 parameters (err, req, res, next) that catches errors from previous middleware." }
+  ],
+  "summary": "Middleware is the backbone of Express applications. They process requests before route handlers, can modify req/res objects, and must call next() to continue. Error-handling middleware has a special 4-parameter signature."
+}

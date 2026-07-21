@@ -1,0 +1,30 @@
+{
+  "topicId": "05-written-communication",
+  "questions": [
+    {
+      "question": "What makes an email effective?",
+      "answer": "An effective email has: (1) A specific subject line that tells the reader what's needed and by when, (2) Purpose stated in the first sentence, (3) Organized body with one idea per paragraph and bullet points for lists, (4) A clear call to action — what you need the reader to do, (5) Appropriate tone — professional but warm. The test: if the reader can understand the email and take action in under 30 seconds, it's effective.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you write a professional email that says 'no'?",
+      "answer": "Use the 'No sandwich' — appreciation, clear no, alternative. Example: 'Thank you for the invitation (appreciation). Unfortunately, I can't attend the conference this year (clear no). I'd be happy to review the materials afterward if that would help (alternative).' The key is being direct — don't say 'maybe' or 'I'll try' when the answer is no. Vague refusals are worse than clear ones.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you handle tone in written communication?",
+      "answer": "Without vocal cues, written tone is easily misread. Tips: (1) Read your email aloud — if it sounds cold, add warmth ('Thanks for your patience' vs. just stating facts), (2) Avoid all caps (reads as shouting), (3) Use 'I' statements instead of 'you' accusations ('I need this by Friday' vs. 'You didn't send this'), (4) Add context for why you're asking something, (5) When in doubt, err on the side of slightly warmer than you think necessary.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the Pyramid Principle in writing?",
+      "answer": "The Pyramid Principle, developed by Barbara Minto at McKinsey, says: start with the answer/conclusion, then provide supporting evidence, then details. In practice: Executive Summary (your recommendation) → Context (the problem) → Analysis (data supporting your conclusion) → Next Steps (what should happen). This structure works because busy readers want the answer first — they'll decide if they need the details.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How long should a professional email be?",
+      "answer": "Short enough to read in under 30 seconds. If your email exceeds 5 sentences, ask: can this be a bullet list instead of paragraphs? Can the context be an attachment? Should this be a meeting instead? Most professional emails should be 3-7 sentences. The exception: detailed proposals, reports, or explanatory emails where depth is needed. When in doubt, shorter is almost always better.",
+      "difficulty": "easy"
+    }
+  ]
+}

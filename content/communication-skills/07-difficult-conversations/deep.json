@@ -1,0 +1,46 @@
+{
+  "topicId": "07-difficult-conversations",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The Anatomy of a Difficult Conversation",
+      "body": "According to the authors of 'Difficult Conversations' (Stone, Patton, Heen), every hard conversation has three layers underneath. Understanding these layers helps you address the real issue, not just the surface conflict:",
+      "bulletPoints": [
+        "Layer 1: What Happened — Both sides have different interpretations of the same events. Neither is 'wrong' — they have different information, different frameworks, and different stories they've told themselves.",
+        "Layer 2: Feelings — Underneath every factual disagreement is an emotional one. 'You didn't CC me on the email' is really about feeling excluded or disrespected.",
+        "Layer 3: Identity — The conversation threatens how someone sees themselves. 'You made a mistake' becomes 'I'm incompetent' in the listener's mind."
+      ]
+    },
+    {
+      "heading": "The I-Statement Formula (And How to Use It)",
+      "body": "I-statements are the single most powerful tool for difficult conversations. The formula is simple, but practice is essential:",
+      "code": {
+        "language": "example",
+        "snippet": "FORMULA:\nI feel [emotion word] when [specific, observable behavior] because [impact on you or the situation].\n\nEXAMPLES:\n\nBlame (accusatory):\n'You never include me in decisions. You clearly don't value my input.'\n\nI-Statement:\n'I feel frustrated when decisions are made without my input because I want to contribute and ensure the project succeeds.'\n\nBlame:\n'You're always late. It's so disrespectful.'\n\nI-Statement:\n'I feel anxious when meetings start late because I have back-to-back commitments and it puts me behind schedule.'\n\nBlame:\n'You didn't finish your part. Now we're all behind.'\n\nI-Statement:\n'I'm concerned about the timeline because the deadline is Friday and we need all pieces complete to submit on time.'",
+        "explanation": "Notice: I-statements describe YOUR experience, not the other person's character. They invite dialogue instead of triggering defensiveness."
+      }
+    },
+    {
+      "heading": "De-escalation Techniques",
+      "body": "When emotions run high, use these techniques to bring the temperature down before addressing the issue:",
+      "bulletPoints": [
+        "Name the emotion: 'I can see this is really frustrating for you' — acknowledging feelings reduces their intensity",
+        "Slow down: Speak 20% slower, lower your volume slightly. Pace sets the emotional tone.",
+        "Find the agreement: 'We both want this project to succeed' — start from shared goals",
+        "Take a timeout: 'I want to have this conversation well. Can we take 10 minutes and come back?'",
+        "Ask questions instead of making accusations: 'Help me understand...' instead of 'You should have...'"
+      ]
+    },
+    {
+      "heading": "Practice: The Difficult Conversation Prep",
+      "body": "Before any difficult conversation, prepare by writing down answers to these four questions:",
+      "code": {
+        "language": "example",
+        "snippet": "1. What is the specific behavior or situation I need to address?\n   (Be factual, not judgmental)\n\n2. What impact does it have on me or the team?\n   (Focus on facts and feelings, not character)\n\n3. What do I want the outcome to be?\n   (Be specific: changed behavior, understanding, agreement)\n\n4. What might the other person be feeling or thinking?\n   (Their perspective matters too — prepare to listen)\n\nExample:\nSituation: 'For the last two weeks, the weekly report has been submitted after the Friday deadline.'\nImpact: 'This delays the Monday leadership meeting and creates a rush for the team.'\nDesired outcome: 'Reports submitted by Thursday EOD so we can review before Monday.'\nOther's perspective: 'Maybe they're overloaded, or unclear on the deadline, or the process is inefficient.'",
+        "explanation": "Preparation prevents you from spiraling into blame. When you know your facts, your impact, your goal, and their perspective, you can have a productive conversation."
+      }
+    }
+  ],
+  "summary": "Difficult conversations have three layers: what happened, feelings, and identity. Use the I-statements formula: 'I feel [emotion] when [behavior] because [impact].' De-escalate by naming emotions, slowing down, and finding common ground. Always prepare before the conversation by clarifying facts, impact, desired outcome, and the other person's perspective."
+}

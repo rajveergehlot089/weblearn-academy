@@ -1,0 +1,26 @@
+{
+  "topicId": "06-conflict-resolution",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Conflict is Not the Enemy",
+      "body": "Most people avoid conflict. That's a mistake. Healthy conflict (disagreement about ideas, methods, or priorities) leads to better decisions, stronger relationships, and more innovation. The goal isn't to eliminate conflict — it's to prevent it from becoming personal. When two people respectfully disagree, the team wins. When two people fight personally, everyone loses."
+    },
+    {
+      "heading": "The Thomas-Kilmann Conflict Modes",
+      "body": "Five ways people handle conflict, each appropriate in different situations:\n\n• **Competing**: Win-lose. Use when quick, decisive action is needed (emergencies).\n• **Accommodating**: Yield to the other party. Use when the issue matters more to them than to you.\n• **Avoiding**: Sidestep the conflict. Use when the issue is trivial or emotions need to cool.\n• **Compromising**: Split the difference. Use when time is limited and both parties have equal power.\n• **Collaborating**: Win-win. Use when both perspectives are important and you have time to find a creative solution."
+    },
+    {
+      "heading": "The PEACE Framework for Difficult Conversations",
+      "body": "A structured approach for resolving conflicts:\n\n• **Prepare**: Gather facts, understand your own emotions, think about their perspective.\n• **Engage**: Start with a neutral opening, not an accusation.\n• **Acknowledge**: Listen to their side without interrupting.\n• **Clarify**: Summarize what you heard. Find the root cause.\n• **Exit**: Agree on next steps and a follow-up."
+    }
+  ],
+  "jargon": [
+    { "term": "Conflict Resolution", "definition": "The process of finding a peaceful solution to a disagreement. It requires communication, empathy, and willingness to compromise." },
+    { "term": "Active Listening", "definition": "Fully concentrating on what the other person is saying, not just waiting for your turn to speak. Includes paraphrasing and asking clarifying questions." },
+    { "term": "I-Statement", "definition": "A communication technique that expresses feelings without blame: 'I feel frustrated when deadlines are missed' instead of 'You always miss deadlines.'" },
+    { "term": "Mediation", "definition": "A neutral third party facilitates the conversation between conflicting parties. The mediator doesn't decide — they help the parties find their own resolution." }
+  ],
+  "summary": "Conflict is healthy when it stays focused on ideas, not people. Use the Thomas-Kilmann modes to choose the right approach for each situation, and the PEACE framework for structuring difficult conversations."
+}

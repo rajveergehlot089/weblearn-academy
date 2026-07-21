@@ -1,0 +1,47 @@
+{
+  "topicId": "10-career-assessment",
+  "exercises": [
+    {
+      "title": "Full Career Assessment",
+      "description": "Complete the full 16-question self-assessment from the deep dive. Rate each sub-area 1-5. Calculate your total score and individual area averages. Identify your top 3 strengths and your bottom 3 growth areas. Write a 1-page reflection on what surprised you and what confirmed your expectations.",
+      "hints": [
+        "Be brutally honest — inflated scores help no one",
+        "Consider asking a trusted colleague to rate you on the same criteria for comparison",
+        "Look for patterns: are your weaknesses concentrated in one area?"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Sample assessment results:\n\nBranding: 15/20 (Strong — LinkedIn is optimized, niche is clear)\nNetworking: 10/20 (Needs work — attend more events, follow up more)\nCommunication: 12/20 (Competent — can present but need more practice)\nCareer Planning: 8/20 (Gap — no written roadmap, no regular skill development)\n\nTotal: 45/80\n\nStrengths: LinkedIn profile, technical communication, self-awareness\nGrowth areas: Career planning (no roadmap), networking consistency, speaking confidence\n\nSurprise: I thought I was better at career planning — I have ideas but no written plan\nConfirmation: I knew networking was my weakest area — I avoid events"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "30-Day Growth Sprint",
+      "description": "Choose your lowest-scoring competency area. Create a 30-day action plan with: (1) A specific, measurable goal (e.g., 'Give one talk at a meetup' not 'get better at speaking'), (2) Weekly milestones, (3) One accountability partner who will check in with you weekly. Execute the plan and document your progress.",
+      "hints": [
+        "Make the goal ambitious but achievable in 30 days",
+        "Break it into weekly chunks so you can track progress",
+        "Accountability partners make the difference — choose someone who'll actually follow up"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "30-Day Sprint: Networking (Scored 5/20)\n\nGoal: Build 5 new genuine professional relationships\n\nWeek 1: Attend one meetup, follow up with 2 people within 48 hours\nWeek 2: Request 2 informational interviews with people in my target field\nWeek 3: Make 1 introduction between two people who should know each other\nWeek 4: Attend another event, send 3 LinkedIn messages to people I admire\n\nAccountability: Check in with [colleague name] every Friday — share what I did this week\n\nMetric: Track number of follow-ups sent, responses received, and relationships started"
+      },
+      "difficulty": "hard"
+    },
+    {
+      "title": "Career Portfolio Creation",
+      "description": "Create a career portfolio document (Google Doc, Notion page, or GitHub repo) that includes: (1) Your career assessment results, (2) Your career roadmap, (3) A list of your key accomplishments with metrics, (4) Skills you've developed this year, (5) Feedback you've received, (6) Goals for next quarter. Update this quarterly before your career review.",
+      "hints": [
+        "Keep it in a format you'll actually update — don't over-engineer it",
+        "Include specific metrics wherever possible — numbers are more convincing than adjectives",
+        "This becomes invaluable for performance reviews and job searches"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Career Portfolio Structure:\n\n1. Career Assessment (current scores + trend over time)\n2. Career Roadmap (immediate, medium, long-term goals)\n3. Accomplishments (top 10 with metrics)\n   - 'Redesigned checkout flow — 22% increase in conversion'\n   - 'Led accessibility audit — WCAG AA compliance achieved'\n   - 'Gave 3 talks at meetups — built public speaking confidence'\n4. Skills Developed (this year)\n   - TypeScript, accessibility, public speaking, technical writing\n5. Feedback (direct quotes from managers, peers, mentors)\n6. Next Quarter Goals (specific, measurable actions)\n\nUpdated: [Date] — next review in 3 months"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

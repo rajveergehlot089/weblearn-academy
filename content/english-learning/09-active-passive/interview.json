@@ -1,0 +1,8 @@
+{
+  "topicId": "09-active-passive",
+  "questions": [
+    { "question": "When should you use passive voice?", "answer": "Use passive when: (1) the doer is unknown — 'My bike was stolen'; (2) the action matters more than who did it — 'The vaccine was developed in 2020'; (3) formal/scientific writing — 'The experiment was conducted'; (4) diplomatic language — 'Mistakes were made'. Avoid passive in casual writing where active is clearer and more engaging.", "difficulty": "easy" },
+    { "question": "How do you form passive in the present perfect tense?", "answer": "Formula: has/have + been + past participle (V3). Examples: 'The project has been completed.' 'The files have been deleted.' 'She has been promoted.' The subject receives the action, and 'been' connects the perfect tense to the passive structure.", "difficulty": "medium" },
+    { "question": "Why is 'The window was broken' considered poor writing?", "answer": "It's not necessarily poor — it depends on context. If you don't know who broke it, passive is correct. But if you do know, active ('John broke the window') is clearer and more direct. Passive without 'by' + agent leaves the reader wondering who did it, which can feel evasive or vague.", "difficulty": "medium" }
+  ]
+}

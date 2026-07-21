@@ -1,0 +1,60 @@
+{
+  "topicId": "10-comm-assessment",
+  "exercises": [
+    {
+      "title": "The Communication Audit",
+      "description": "Complete the full communication audit (speaking, listening, writing, nonverbal, feedback/empathy). Rate each sub-skill 1-10. Calculate your average for each dimension.",
+      "hints": [
+        "Be honest — inflated scores don't help you improve",
+        "Consider recent evidence, not your aspirational self",
+        "Ask a trusted friend to rate you on 3-5 skills for comparison"
+      ],
+      "scoringGuide": {
+        "8-10": "Strength — leverage this skill",
+        "5-7": "Competent — room for fine-tuning",
+        "3-4": "Development area — prioritize improvement",
+        "1-2": "Critical gap — address immediately"
+      },
+      "solution": "After completing the audit, you should have: (1) One clear strength (your highest-scoring dimension) to leverage. (2) One clear gap (your lowest-scoring dimension) to address. (3) A prioritized list of sub-skills within your gap area. Most people discover their self-perception doesn't match reality — that's the value of structured assessment.",
+      "difficulty": "medium"
+    },
+    {
+      "title": "The 30-Day Growth Plan",
+      "description": "Based on your audit, choose ONE skill to improve over the next 30 days. Create a specific, measurable plan.",
+      "hints": [
+        "Pick your lowest-scoring skill OR the skill with the highest impact on your goals",
+        "Make your plan specific — 'get better at listening' is not actionable",
+        "Include daily micro-practices (2-5 minutes) and weekly milestones"
+      ],
+      "planTemplate": {
+        "skill": "[Which skill are you improving?]",
+        "why": "[Why does this skill matter for your goals?]",
+        "week1": "[What will you practice in week 1?]",
+        "week2": "[What will you practice in week 2?]",
+        "week3": "[What will you practice in week 3?]",
+        "week4": "[What will you practice in week 4?]",
+        "measure": "[How will you know you've improved?]"
+      },
+      "solution": "Example plan: Skill: Active Listening. Why: My low listening score (4/10) is damaging my relationships. Week 1: Track interruptions. Week 2: Paraphrase in every meeting. Week 3: Practice reflective listening. Week 4: Ask a colleague for feedback. Measure: Daily interruption count + colleague feedback at Day 30.",
+      "difficulty": "hard"
+    },
+    {
+      "title": "The External Feedback Comparison",
+      "description": "Ask 3 people (colleague, friend, family member) to rate you on 5 communication skills using a 1-10 scale: clarity of speech, listening ability, writing quality, body language, and feedback comfort.",
+      "hints": [
+        "Give them the same 5 criteria to rate",
+        "Don't defend or explain — just listen to their ratings",
+        "Compare their ratings to your self-assessment"
+      ],
+      "scoringCriteria": [
+        "Clarity of speech: How clearly do I communicate my ideas?",
+        "Listening: How well do I listen and understand others?",
+        "Writing: How clear and professional is my written communication?",
+        "Body language: How confident and open does my body language appear?",
+        "Feedback: How comfortable am I giving and receiving honest feedback?"
+      ],
+      "solution": "The most valuable insight is the GAP between your self-rating and others' ratings. If you rate yourself 8 on listening but others rate you 4, that's your blind spot. If others rate you higher than you rate yourself, you have a confidence gap. Either way, the comparison reveals what you can't see alone. Use this data to adjust your growth plan.",
+      "difficulty": "hard"
+    }
+  ]
+}

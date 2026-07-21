@@ -1,0 +1,30 @@
+{
+  "topicId": "04-linkedin",
+  "questions": [
+    {
+      "question": "How often should I update my LinkedIn profile?",
+      "answer": "Update your profile at least once per month — even small changes like adding a new skill or updating a bullet point. LinkedIn boosts recently active profiles in search results. Major updates (new role, new project, new photo) should be done immediately. Also update when you learn a new technology, complete a significant project, or change career goals.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Should I accept every LinkedIn connection request?",
+      "answer": "It depends on your strategy. Accept requests from people in your industry, recruiters at companies you're interested in, and professionals you'd genuinely like to know. You can politely decline or ignore requests from spam accounts or people outside your field with no clear reason to connect. Your network quality matters more than quantity.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do I write a LinkedIn post that actually gets engagement?",
+      "answer": "Start with a hook in the first line — a surprising fact, a question, or a bold statement. Keep the body short (under 150 words for most posts). Use line breaks for readability. End with a question to invite comments. Post when your audience is active (weekday mornings). Most importantly: share something genuinely useful or interesting — engagement follows value.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Should I use LinkedIn's 'Open to Work' feature?",
+      "answer": "Use it strategically. The 'Open to Work' frame is visible to recruiters but can be set to 'recruiters only' if you don't want your current employer to see it. It signals to recruiters that you're available, which can increase inbound messages. If you're actively job searching, turn it on. If you're passively open, keep it off and focus on optimizing your profile instead.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I handle recruiters who message me with irrelevant roles?",
+      "answer": "You have three options: (1) Politely redirect: 'Thanks for reaching out! I'm actually focused on [specific area] — if you have roles matching that, I'd love to hear about them.' (2) Ignore if truly irrelevant. (3) Use the message to network: 'Not the right fit, but I'd love to stay connected for future opportunities.' Never burn bridges — today's irrelevant recruiter may have your dream role tomorrow.",
+      "difficulty": "medium"
+    }
+  ]
+}

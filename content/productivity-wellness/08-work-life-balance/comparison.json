@@ -1,0 +1,52 @@
+{
+  "topicId": "08-work-life-balance",
+  "comparisons": [
+    {
+      "concept": "Work-Life Balance Strategies",
+      "items": [
+        {
+          "name": "Fixed Work Hours",
+          "description": "Set specific start and end times and stick to them consistently",
+          "best_for": "Remote workers who struggle with boundary blurring",
+          "pros": "Clear boundary, predictable schedule, enables planning",
+          "cons": "Requires discipline, may conflict with team expectations",
+          "implementation": "Block calendar 9 AM-5:30 PM, set Slack status after hours"
+        },
+        {
+          "name": "Shutdown Ritual",
+          "description": "A consistent end-of-work routine that signals mental disconnection",
+          "best_for": "Developers who can't 'turn off' after work",
+          "pros": "Clear mental boundary, reduces evening anxiety, improves sleep",
+          "cons": "Takes 10 min daily, requires consistency to work",
+          "implementation": "Review tasks, write tomorrow's plan, say 'shutdown complete'"
+        },
+        {
+          "name": "Technology Boundaries",
+          "description": "Separate work and personal devices/accounts, use Do Not Disturb",
+          "best_for": "People who check Slack/email compulsively after hours",
+          "pros": "Removes temptation, creates physical separation",
+          "cons": "May miss genuine emergencies, requires on-call policy",
+          "implementation": "Separate work phone, DND after 6 PM, no work email on personal device"
+        },
+        {
+          "name": "Energy Management",
+          "description": "Match high-energy tasks to peak hours, protect low-energy time",
+          "best_for": "People who feel exhausted despite working 'normal' hours",
+          "pros": "Works with your biology, not against it, sustainable",
+          "cons": "Requires self-awareness, may conflict with team schedule",
+          "implementation": "Deep work 9-11 AM, meetings 1-4 PM, admin 4-5 PM"
+        },
+        {
+          "name": "Social Boundaries",
+          "description": "Protect non-work relationships and activities as fiercely as work commitments",
+          "best_for": "People whose social life has deteriorated due to work",
+          "pros": "Prevents isolation, improves wellbeing, provides perspective",
+          "cons": "May require saying no to work events, can feel uncomfortable",
+          "implementation": "Weekly dinner with friends, no work at family events, hobby time"
+        }
+      ],
+      "insight": "The most effective approach combines multiple strategies: fixed hours + shutdown ritual + technology boundaries. Start with one, build consistency, then add others. The key isn't which strategy you pick — it's that you communicate and enforce it."
+    }
+  ],
+  "keyInsight": "Work-life balance requires ACTIVE strategies, not passive hope. Combine fixed work hours, shutdown rituals, and technology boundaries. Communicate them clearly and enforce them consistently. The first 2 weeks are hardest — after that, people respect your boundaries."
+}

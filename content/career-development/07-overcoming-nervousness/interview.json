@@ -1,0 +1,30 @@
+{
+  "topicId": "07-overcoming-nervousness",
+  "questions": [
+    {
+      "question": "Is it normal to feel sick before a presentation?",
+      "answer": "Yes, completely. Nausea, loss of appetite, and stomach butterflies are common physical manifestations of performance anxiety. Your body is redirecting blood flow to your muscles in preparation for 'fight or flight.' To manage it: eat a light meal 2 hours before (avoid heavy or spicy food), stay hydrated, and practice deep breathing. Most people feel fine once they start speaking — the anticipation is worse than the reality.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What if my mind goes completely blank during the talk?",
+      "answer": "Have a recovery plan ready: (1) Pause and take a sip of water — the audience sees this as confident, not lost, (2) Glance at your notes or the current slide — it will trigger your memory, (3) Say 'Let me step back for a moment' and recap the last point — this gives your brain time to reconnect, (4) If all else fails, engage the audience: 'Let me ask you a quick question' — this buys you time while appearing interactive.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Can medication help with severe stage fright?",
+      "answer": "For severe performance anxiety, beta-blockers (like propranolol) can help by blocking the physical symptoms — racing heart, shaking hands, sweating. They're prescribed by doctors and don't affect your mental clarity. They're not a substitute for practice and preparation, but they can help break the cycle of anxiety for people with severe cases. Talk to your doctor if anxiety is preventing you from professional opportunities.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I handle a hostile or challenging audience member?",
+      "answer": "Stay calm and professional. (1) Acknowledge their point: 'That's a fair question.' (2) Answer briefly and factually. (3) If they persist, say: 'I'd love to discuss this more after the talk — let's connect offline.' (4) Don't get defensive or argumentative — the rest of the audience is watching how you handle pressure. Usually, one difficult questioner doesn't represent the whole room.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Does exposure therapy actually work for public speaking anxiety?",
+      "answer": "Yes, graded exposure is one of the most evidence-backed treatments. Start with the least anxiety-provoking situation (a 2-minute talk to a trusted friend), then gradually increase difficulty (team meeting → small meetup → larger event). Each successful experience rewires your brain's threat response. The key is gradual progression — don't jump from 'never spoken' to 'keynote at a conference.' Build incrementally.",
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "topicId": "10-comm-assessment",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The Comprehensive Communication Audit",
+      "body": "Rate yourself honestly on each dimension (1 = needs significant improvement, 10 = expert). Be brutally honest — self-assessment only works if you don't inflate your scores.",
+      "code": {
+        "language": "example",
+        "snippet": "SPEAKING (rate each 1-10):\n[ ] Clarity — Can I explain complex ideas simply?\n[ ] Confidence — Do I speak up in meetings without excessive hedging?\n[ ] Conciseness — Do I get to the point quickly?\n[ ] Vocal variety — Do I vary my tone, pace, and volume?\n[ ] Storytelling — Can I make a point with a compelling example?\n\nLISTENING (rate each 1-10):\n[ ] Full attention — Do I put away devices and focus?\n[ ] Paraphrasing — Do I confirm understanding?\n[ ] Questions — Do I ask clarifying questions?\n[ ] Patience — Can I let someone finish without interrupting?\n[ ] Empathy — Do I listen for emotions, not just words?\n\nWRITING (rate each 1-10):\n[ ] Structure — Is my writing organized and scannable?\n[ ] Clarity — Is my main point obvious in the first sentence?\n[ ] Brevity — Do I cut unnecessary words?\n[ ] Tone — Does my writing sound professional but warm?\n[ ] Action — Is there a clear next step for the reader?\n\nNONVERBAL (rate each 1-10):\n[ ] Eye contact — Do I maintain comfortable eye contact?\n[ ] Posture — Do I stand/sit with confidence?\n[ ] Gestures — Do I use open, natural gestures?\n[ ] Congruence — Does my body language match my words?\n[ ] Presence — Am I fully present, not distracted?\n\nFEEDBACK & EMPATHY (rate each 1-10):\n[ ] Giving feedback — Can I deliver it clearly and kindly?\n[ ] Receiving feedback — Can I listen without defending?\n[ ] Perspective-taking — Do I consider others' viewpoints?\n[ ] Difficult conversations — Can I navigate conflict productively?\n[ ] Emotional regulation — Can I manage my emotions in tough situations?",
+        "explanation": "Tally your scores in each category. The category with the lowest average is your priority area. The category with the highest average is your strength to leverage."
+      }
+    },
+    {
+      "heading": "Interpreting Your Results",
+      "body": "Your scores reveal patterns. Here's how to read them:",
+      "bulletPoints": [
+        "Score 8-10: Strength — Leverage this. Help others develop in this area.",
+        "Score 5-7: Competent — Room for growth, but functional. Fine-tune.",
+        "Score 3-4: Development Area — This is holding you back. Prioritize improvement.",
+        "Score 1-2: Critical Gap — This is your biggest blind spot. Address immediately."
+      ],
+      "code": {
+        "language": "example",
+        "snippet": "EXAMPLE PROFILE:\nSpeaking: 7.5 (Competent — fine-tune)\nListening: 4.2 (Development Area — prioritize)\nWriting: 8.0 (Strength — leverage)\nNonverbal: 5.8 (Competent — fine-tune)\nFeedback & Empathy: 3.6 (Critical Gap — address immediately)\n\nANALYSIS:\n- Strength: Writing (leverage this in emails, reports, documentation)\n- Priority: Listening & Feedback — these are the biggest drags on relationships\n- Action Plan: Practice active listening for 2 weeks, then give 3 pieces of SBI feedback\n\nHIDDEN PATTERN: Strong writer but weak listener — common pattern. People who process well in writing sometimes struggle with the pace of spoken conversation.",
+        "explanation": "The most powerful insights come from comparing categories. High writing + low listening suggests you're better at async than real-time communication. High speaking + low feedback suggests you're good at talking but not at honest dialogue."
+      }
+    },
+    {
+      "heading": "Building Your 30-Day Communication Growth Plan",
+      "body": "Don't try to improve everything. Pick ONE area and commit for 30 days:",
+      "code": {
+        "language": "example",
+        "snippet": "30-DAY ACTIVE LISTENING PLAN:\n\nWeek 1: Awareness\n- Track how many times you interrupt in conversations\n- Practice the HEAR model in 1 conversation per day\n- Goal: Notice your listening patterns\n\nWeek 2: Practice\n- Use paraphrasing in every meeting: 'So what you're saying is...'\n- Ask one clarifying question per conversation\n- Goal: Build the habit of confirming understanding\n\nWeek 3: Deepen\n- Practice global listening — notice emotions, not just words\n- Use reflective listening: 'It sounds like you're feeling...'\n- Goal: Listen at Level 2-3, not just Level 1\n\nWeek 4: Integrate\n- Ask a colleague for feedback on your listening\n- Apply all three levels in your most important relationship\n- Goal: Make active listening automatic\n\nMEASUREMENT: Ask a trusted person at Day 30: 'Have you noticed any change in how I listen?' Their answer is your success metric.",
+        "explanation": "Thirty days of focused practice on ONE skill creates lasting change. Trying to improve five skills simultaneously results in improving none."
+      }
+    }
+  ],
+  "summary": "Complete the communication audit across five dimensions: speaking, listening, writing, nonverbal, and feedback/empathy. Identify your highest strength (leverage it) and lowest gap (fix it). Build a 30-day growth plan focused on ONE skill. Measure progress through behavioral tracking and feedback from others."
+}

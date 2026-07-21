@@ -1,0 +1,30 @@
+{
+  "topicId": "05-stress-intro",
+  "questions": [
+    {
+      "question": "Is all stress bad for me?",
+      "answer": "No. Short-term (acute) stress actually improves performance — it sharpens focus, increases energy, and helps you meet deadlines. The Yerkes-Dodson Law shows that performance increases with stress up to an optimal point, then drops. The problem is CHRONIC stress — stress that persists for weeks or months without resolution. Think of it like exercise: a hard workout is stressful but beneficial; being injured and unable to recover is harmful. The key is completing the stress cycle and returning to baseline before the next stressor hits.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do I know if I'm burned out vs. just tired?",
+      "answer": "Tiredness resolves with rest; burnout doesn't. Signs of burnout: (1) Emotional exhaustion — you feel drained even after a weekend off. (2) Cynicism — you've become negative about your work, team, or industry. (3) Reduced efficacy — your performance is declining despite putting in hours. (4) Physical symptoms — headaches, insomnia, frequent illness. If you've felt this way for 2+ months, it's likely burnout, not just tiredness. Burnout requires systemic change (boundaries, role adjustment, or environment change), not just a vacation.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's the fastest way to reduce acute stress in the moment?",
+      "answer": "Box breathing: inhale for 4 counts, hold for 4, exhale for 4, hold for 4. Repeat 4 times (takes 64 seconds). This activates your parasympathetic nervous system (the 'rest and digest' system), counteracting the fight-or-flight response. Other fast techniques: splash cold water on your face (triggers dive reflex), do 10 jumping jacks (burns off adrenaline), or write down what's stressing you (externalizes the anxiety). The key: do something PHYSICAL — stress lives in the body, not just the mind.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I deal with stress from imposter syndrome?",
+      "answer": "First, know that 70% of people experience imposter syndrome — it's incredibly common, especially in tech where there's always more to learn. Practical strategies: (1) Keep an 'evidence file' of your accomplishments, positive feedback, and completed projects. Review it when you feel like a fraud. (2) Talk about it — telling a trusted colleague 'I feel like I don't belong here' often reveals they feel the same way. (3) Reframe: 'I don't know everything' is different from 'I'm not good enough.' The former is true for everyone; the latter is a cognitive distortion.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's the biggest mistake developers make when dealing with stress?",
+      "answer": "Trying to 'push through' instead of addressing the root cause. Developers are trained to solve problems, so they treat stress like a bug to fix with more effort. But chronic stress isn't solved by working harder — it's solved by changing boundaries, reducing workload, or addressing the source. The other big mistake: using unhealthy coping mechanisms (alcohol, overeating, endless scrolling) that provide temporary relief but worsen long-term stress. The fix: identify the stress SOURCE, not just the symptom, and address it systematically.",
+      "difficulty": "hard"
+    }
+  ]
+}

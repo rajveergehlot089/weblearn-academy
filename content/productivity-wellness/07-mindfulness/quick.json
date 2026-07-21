@@ -1,0 +1,30 @@
+{
+  "topicId": "07-mindfulness",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Mindfulness?",
+      "body": "Mindfulness is paying attention to the present moment without judgment. It's not about clearing your mind — that's impossible. It's about noticing when your mind wanders and gently bringing it back. Think of it as a bicep curl for your attention: every time you notice your mind has drifted and return to the present, you're strengthening your focus muscle."
+    },
+    {
+      "heading": "Why Developers Benefit from Mindfulness",
+      "body": "Programming requires sustained attention. Mindfulness trains the exact mental skills developers need: (1) Focus — staying on one task without context-switching. (2) Awareness — noticing bugs, edge cases, and architectural issues. (3) Patience — sitting with a difficult problem without giving up. (4) Resilience — bouncing back from frustrating code reviews or production incidents. Google, Apple, and Intel all offer mindfulness programs to their engineers for these reasons."
+    },
+    {
+      "heading": "Your First Meditation (3 Minutes)",
+      "body": "You don't need an app, a cushion, or 30 minutes. Here's the simplest possible meditation:",
+      "code": {
+        "language": "text",
+        "snippet": "3-MINUTE MEDITATION:\n\n1. Sit comfortably (chair is fine, no need for cross-legged)\n2. Close your eyes or look at the floor\n3. Focus on your breath — just notice the sensation\n4. Your mind WILL wander (to work, lunch, that bug)\n5. When it wanders, gently return to your breath\n6. That's it — the 'wandering and returning' IS the practice\n\nDON'T:\n• Try to clear your mind (impossible)\n• Judge yourself for getting distracted (everyone does)\n• Think you're 'bad at meditation' (there's no bad)\n\nDO:\n• Start with 3 minutes, not 30\n• Be consistent (daily > longer but sporadic)\n• Notice the contrast before/after\n\nTIP: Set a gentle alarm. When it rings, notice how you feel\ncompared to when you started. Most people feel calmer and\nmore focused — even after just 3 minutes."
+      }
+    }
+  ],
+  "jargon": [
+    { "term": "Mindfulness", "definition": "Paying attention to the present moment without judgment. A mental skill trained through practice, not a state you achieve." },
+    { "term": "Meditation", "definition": "A formal practice of training your attention. Like going to the gym for your mind — you're building focus and awareness." },
+    { "term": "Present Moment", "definition": "The only moment that actually exists. Most stress comes from worrying about the future or ruminating about the past." },
+    { "term": "Non-Judgment", "definition": "Observing thoughts and feelings without labeling them as 'good' or 'bad.' This reduces emotional reactivity." }
+  ],
+  "summary": "Mindfulness is paying attention to the present moment without judgment. It trains focus, awareness, patience, and resilience — skills developers need daily. Start with 3 minutes: sit comfortably, focus on your breath, and gently return when your mind wanders. The wandering and returning IS the practice."
+}

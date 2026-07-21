@@ -1,0 +1,34 @@
+{
+  "topicId": "10-productivity-test",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Your Productivity & Wellness Assessment",
+      "body": "This assessment helps you evaluate your current habits, stress levels, and productivity systems. Use it as a baseline — then retake it in 3 months to measure your progress. Answer honestly; this is for your eyes only."
+    },
+    {
+      "heading": "Time Management Assessment",
+      "body": "Rate yourself 1-5 on each statement (1 = never, 5 = always):",
+      "code": {
+        "language": "text",
+        "snippet": "TIME MANAGEMENT:\n□ I use a system to prioritize tasks (Eisenhower, etc.)    (1-2-3-4-5)\n□ I time block my calendar for deep work                    (1-2-3-4-5)\n□ I complete my top priority before checking email/Slack     (1-2-3-4-5)\n□ I finish most tasks within estimated time                 (1-2-3-4-5)\n□ I review my week and plan next week                       (1-2-3-4-5)\nScore: ___/25\n\nFOCUS:\n□ I use a focus technique (Pomodoro, etc.)                  (1-2-3-4-5)\n□ I can work for 25+ minutes without checking my phone      (1-2-3-4-5)\n□ I batch similar tasks (all reviews together, etc.)        (1-2-3-4-5)\n□ I say no to non-essential meetings                        (1-2-3-4-5)\n□ I minimize context switching between tasks                 (1-2-3-4-5)\nScore: ___/25\n\nGOALS & HABITS:\n□ I have written SMART goals for this quarter               (1-2-3-4-5)\n□ I track my progress toward my goals                       (1-2-3-4-5)\n□ I have consistent daily routines                          (1-2-3-4-5)\n□ I use habit stacking to build new habits                  (1-2-3-4-5)\n□ I review and adjust my goals quarterly                    (1-2-3-4-5)\nScore: ___/25\n\nTOTAL PRODUCTIVITY SCORE: ___/75\n20-35: Foundation needed — start with time blocking + Pomodoro\n36-55: Good base — optimize with weekly reviews + goal tracking\n56-75: Strong system — focus on consistency + continuous improvement",
+        "explanation": "This isn't a pass/fail test — it's a diagnostic. Low scores in one area tell you where to focus your improvement efforts."
+      }
+    },
+    {
+      "heading": "Wellness Assessment",
+      "body": "Rate yourself 1-5 on each statement:",
+      "code": {
+        "language": "text",
+        "snippet": "STRESS MANAGEMENT:\n□ I recognize my stress triggers                           (1-2-3-4-5)\n□ I use breathing techniques when stressed                  (1-2-3-4-5)\n□ I practice mindfulness or meditation regularly            (1-2-3-4-5)\n□ I can disconnect from work after hours                    (1-2-3-4-5)\n□ I have healthy coping mechanisms for stress               (1-2-3-4-5)\nScore: ___/25\n\nPHYSICAL HEALTH:\n□ I sleep 7-9 hours consistently                           (1-2-3-4-5)\n□ I exercise 3+ times per week                             (1-2-3-4-5)\n□ My workspace is ergonomic                                (1-2-3-4-5)\n□ I eat balanced meals (protein, vegetables, etc.)          (1-2-3-4-5)\n□ I take regular breaks during work                        (1-2-3-4-5)\nScore: ___/25\n\nWORK-LIFE BALANCE:\n□ I have clear boundaries between work and personal time    (1-2-3-4-5)\n□ I have time for hobbies and relationships                 (1-2-3-4-5)\n□ I don't check work email/Slack after hours                (1-2-3-4-5)\n□ I feel energized at the end of most workdays              (1-2-3-4-5)\n□ I take vacations and actually disconnect                  (1-2-3-4-5)\nScore: ___/25\n\nTOTAL WELLNESS SCORE: ___/75\n20-35: Needs attention — prioritize sleep + stress management\n36-55: Decent foundation — focus on consistency + boundaries\n56-75: Strong wellness — maintain and optimize",
+        "explanation": "Wellness scores often reveal hidden problems. Many developers score high on productivity but low on wellness — which is unsustainable long-term."
+      }
+    }
+  ],
+  "jargon": [
+    { "term": "Baseline", "definition": "Your starting measurement before making changes. Essential for tracking improvement over time." },
+    { "term": "Burnout Risk", "definition": "When wellness scores are consistently low (below 35/75). Requires immediate attention to prevent health consequences." }
+  ],
+  "summary": "This assessment evaluates your productivity (time management, focus, goals) and wellness (stress, physical health, work-life balance) on a 1-5 scale. Scores below 35 in any area indicate it needs immediate attention. Retake in 3 months to measure progress."
+}

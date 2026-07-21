@@ -1,0 +1,35 @@
+{
+  "topicId": "01-self-awareness",
+  "exercises": [
+    {
+      "title": "The Values Clarification Exercise",
+      "description": "Identify your top 5 core values from the list of 50 values. For each, explain why it matters to you and give a specific example of when you've lived that value.",
+      "hints": ["Values are principles that guide your decisions, not goals you want to achieve", "Look for values that feel energizing when you think about them", "A value you've violated will feel uncomfortable — that's useful information"],
+      "solution": {
+        "language": "text",
+        "code": "Example values and explanations:\n\n1. INTEGRITY - I value honesty and doing the right thing even when it's hard. Example: I once told my manager our product had a flaw even though it meant missing a deadline.\n\n2. GROWTH - I value learning and improving. Example: I spend 30 minutes daily learning a new skill, even when I'm busy.\n\n3. CONNECTION - I value deep relationships. Example: I call my parents every week and have monthly dinners with close friends.\n\n4. EXCELLENCE - I value doing my best work. Example: I always review my work twice before submitting it.\n\n5. FREEDOM - I value autonomy. Example: I chose freelancing over a corporate job because I need to control my time."
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "The Perception Gap Audit",
+      "description": "Ask 5 people who know you well (colleagues, friends, family) to rate you on these qualities: communication, listening, reliability, empathy, and honesty. Compare their ratings to how you'd rate yourself. Identify the biggest gaps.",
+      "hints": ["Choose people who will be honest with you, not just supportive", "Ask them to rate on a 1-10 scale with specific examples", "Look for patterns across all 5 responses"],
+      "solution": {
+        "language": "text",
+        "code": "Example perception gap analysis:\n\nMy Self-Rating → Average Rating from Others:\n- Communication: 8 → 6 (Gap: -2)\n- Listening: 7 → 5 (Gap: -2)\n- Reliability: 9 → 9 (Gap: 0)\n- Empathy: 7 → 6 (Gap: -1)\n- Honesty: 9 → 9 (Gap: 0)\n\nBiggest Gap: Listening. Multiple people said I interrupt and seem distracted.\nAction: Practice active listening — maintain eye contact, don't interrupt, paraphrase what they said before responding."
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "The Emotional Trigger Map",
+      "description": "For one week, track every time you feel a strong negative emotion (anger, frustration, anxiety, sadness). Write down: the situation, the emotion, the intensity (1-10), the trigger, and your response. After a week, identify your top 3 triggers and patterns.",
+      "hints": ["Carry a small notebook or use your phone's notes app", "Be honest about the trigger — it's often deeper than the surface situation", "Look for patterns: time of day, specific people, certain topics"],
+      "solution": {
+        "language": "text",
+        "code": "Example trigger map after one week:\n\nTrigger 1: Feeling ignored in meetings\n- Frequency: 4 times this week\n- Emotion: Frustration (intensity: 7-8)\n- Pattern: Usually when I'm presenting ideas and people check their phones\n- My response: I shut down and stop contributing\n- Deeper trigger: Fear of not being valued\n\nTrigger 2: Tight deadlines\n- Frequency: 3 times this week\n- Emotion: Anxiety (intensity: 6-7)\n- Pattern: When tasks are assigned last-minute\n- My response: I work overtime and skip self-care\n- Deeper trigger: Fear of failure and letting people down\n\nTrigger 3: Constructive criticism\n- Frequency: 2 times this week\n- Emotion: Defensiveness (intensity: 5)\n- Pattern: When my work is questioned\n- My response: I justify my decisions instead of listening\n- Deeper trigger: Fear of not being good enough"
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

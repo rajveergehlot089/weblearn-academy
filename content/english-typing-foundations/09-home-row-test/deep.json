@@ -1,0 +1,34 @@
+{
+  "topicId": "09-home-row-test",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Deep Dive: Home Row Mastery Test",
+      "body": "Let's go deeper into Home Row Mastery Test. This section covers the internals and advanced concepts that separate beginners from proficient developers.",
+      "code": {
+        "language": "text",
+        "snippet": "Practice exercise for Home Row Mastery Test:\n\nFocus on accuracy first, then speed.\nKeep your eyes on the screen.\nUse proper finger placement.\nPractice for 15-20 minutes daily.",
+        "explanation": "Consistent daily practice is the key to improvement. Start slow and focus on accuracy."
+      }
+    },
+    {
+      "heading": "Practical Implementation",
+      "body": "Here's how to implement Home Row Mastery Test in a real project. The key is to start simple and add complexity as you gain confidence.",
+      "code": {
+        "language": "text",
+        "snippet": "Application exercise for Home Row Mastery Test:\n\nStep 1: Identify a situation where you can apply this skill\nStep 2: Plan your approach using the techniques learned\nStep 3: Execute and observe the results\nStep 4: Reflect on what worked and what to improve",
+        "explanation": "The best way to learn soft skills is through real-world application and reflection."
+      }
+    },
+    {
+      "heading": "Common Patterns & Best Practices",
+      "body": "Here are the best practices for Home Row Mastery Test:\n\n1. Start Simple: Begin with the simplest implementation that works, then add complexity as needed.\n\n2. Follow Conventions: Stick to established patterns and conventions in your codebase. Consistency makes code maintainable.\n\n3. Test Your Work: Always test your implementation. Write tests that cover both happy paths and edge cases.\n\n4. Document Decisions: Add comments that explain WHY, not WHAT. Future you (and teammates) will thank you.\n\n5. Review and Refactor: Code reviews and regular refactoring keep code quality high."
+    },
+    {
+      "heading": "Practice Task",
+      "body": "Apply what you've learned about Home Row Mastery Test. Try building a small project that uses these concepts. Start with the basics and gradually add features."
+    }
+  ],
+  "summary": "Home Row Mastery Test is an essential concept that you'll use throughout your development journey. Test your home row speed and accuracy. Practice the examples in this lesson and apply them to your own projects."
+}

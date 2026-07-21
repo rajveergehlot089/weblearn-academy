@@ -1,0 +1,42 @@
+{
+  "topicId": "03-networking-basics",
+  "comparisons": [
+    {
+      "concept": "Approaching networking",
+      "transactional": {
+        "label": "Transactional Networking",
+        "code": "Hi, I'm looking for a job. Do you know any openings? Can you refer me?"
+      },
+      "relational": {
+        "label": "Relational Networking",
+        "code": "Hi, I saw your team is working on [project]. I've been exploring [related topic] — would love to hear your perspective on how you approached it."
+      },
+      "explanation": "Transactional networking burns goodwill quickly. Relational networking builds genuine connections that naturally lead to opportunities over time. People help those they know, like, and trust — not those who only reach out when they need something."
+    },
+    {
+      "concept": "Following up after meeting someone",
+      "no_followup": {
+        "label": "No Follow-Up",
+        "code": "Meet someone at a conference. Never contact them again. Hope they remember you when a job opens."
+      },
+      "strategic_followup": {
+        "label": "Strategic Follow-Up",
+        "code": "Send a message within 48 hours: 'Great chatting about [topic]. I found that article I mentioned — here's the link. Let's grab coffee sometime.' Then check in quarterly with something useful."
+      },
+      "explanation": "Without follow-up, most networking encounters are forgotten within a week. A single follow-up message makes you memorable. Ongoing, value-giving contact builds a real relationship."
+    },
+    {
+      "concept": "Building your network",
+      "narrow_network": {
+        "label": "Same Circle",
+        "code": "Only talk to people at your company, in your city, in your exact role"
+      },
+      "diverse_network": {
+        "label": "Cross-Boundary Network",
+        "code": "Connect with people across companies, cities, roles, and industries — designers, PMs, founders, open-source maintainers"
+      },
+      "explanation": "A diverse network exposes you to unexpected opportunities, perspectives, and information. If everyone in your network does the same job at the same type of company, you're all competing for the same opportunities."
+    }
+  ],
+  "keyInsight": "Effective networking is relational, not transactional. Give value first, follow up consistently, and build a diverse network across different companies, roles, and industries. The best networks are built over years, not at single events."
+}

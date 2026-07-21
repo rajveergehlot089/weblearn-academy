@@ -1,0 +1,28 @@
+{
+  "topicId": "05-team-dynamics",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Google's Project Aristotle: What Makes Teams Work",
+      "body": "Google studied 180 teams to find what makes some teams wildly successful. The top factor wasn't talent, experience, or personality — it was psychological safety.\n\n**Five key findings in order of importance:**\n1. **Psychological Safety**: 'Can I take risks without fear of punishment?'\n2. **Dependability**: 'Can I count on my teammates to deliver quality work on time?'\n3. **Structure & Clarity**: 'Do I know what's expected of me?'\n4. **Meaning**: 'Does my work matter to me personally?'\n5. **Impact**: 'Does our team's work create meaningful outcomes?'\n\nNote: Individual talent didn't make the list. It's about how the team works together, not who's on it."
+    },
+    {
+      "heading": "Patrick Lencioni's Five Dysfunctions",
+      "body": "A framework for diagnosing team problems, built as a pyramid:\n\n**Level 1 — Absence of Trust**: Team members don't admit weaknesses or ask for help. Root cause: fear of vulnerability.\n\n**Level 2 — Fear of Conflict**: Without trust, people avoid healthy debate. They hold back opinions and agree superficially.\n\n**Level 3 — Lack of Commitment**: Without honest conflict, people don't truly buy into decisions. They pay lip service while harboring doubts.\n\n**Level 4 — Avoidance of Accountability**: Without commitment, people don't hold each other accountable. They let poor performance slide.\n\n**Level 5 — Inattention to Results**: Without accountability, individuals prioritize personal safety over team outcomes.\n\n**Solution**: Work from the bottom up. Build trust first. Trust is the foundation of everything."
+    },
+    {
+      "heading": "Building High-Performance Team Habits",
+      "body": "Teams aren't high-performing by accident — they build specific habits:\n\n• **Daily standups** (15 min max): What I did, what I'll do, what's blocking me.\n• **Weekly retrospectives**: What went well, what didn't, what will we change? (Not optional — this is how teams improve.)\n• **Clear working agreements**: When do we respond to messages? How do we handle disagreements? What does 'done' mean?\n• **Shared accountability**: Public commitments, visible progress, honest status updates.\n• **Cross-training**: Team members learn each other's roles to prevent silos and single points of failure.\n• **Celebration**: Recognize wins, both individual and collective. Momentum requires celebration."
+    },
+    {
+      "heading": "Managing Team Conflict Productively",
+      "body": "Conflict is inevitable and healthy when managed well. The key is to distinguish:\n\n**Task conflict** (good): Disagreement about ideas, approaches, or content. This improves decisions.\n\n**Relationship conflict** (bad): Personal friction, resentment, or animosity. This destroys teams.\n\n**How to foster task conflict while preventing relationship conflict:**\n• Establish ground rules: challenge ideas, not people\n• Use structured debate formats (Six Thinking Hats, devil's advocate)\n• Separate the person from the problem\n• Address relationship conflict immediately — don't let it fester\n• Facilitate, don't arbitrate — help people find their own resolution"
+    },
+    {
+      "heading": "Team Composition Matters",
+      "body": "High-performing teams aren't built from identical people. They include:\n\n• **Belbin's Team Roles**: Plant (creative ideas), Shaper (drives action), Coordinator (organizes), Resource Investigator (outward-facing), Monitor-Evaluator (analytical), Teamworker (harmonizer), Implementer (practical execution), Completer-Finisher (quality), Specialist (deep knowledge).\n\n• **Cognitive diversity**: Mix thinking styles — analytical, creative, practical, relational. Homogeneous teams feel comfortable but produce predictable results.\n\n• **Skill complementarity**: One person can't do everything. Map your team's strengths and gaps deliberately.\n\nThe leader's job: help people understand their strengths, appreciate others' differences, and leverage the full spectrum."
+    }
+  ],
+  "summary": "High-performing teams are built on psychological safety, managed through honest conflict, and sustained through deliberate habits. The leader's role is to create conditions where trust, accountability, and results reinforce each other."
+}

@@ -1,0 +1,34 @@
+{
+  "topicId": "04-past-future",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Simple Past Tense",
+      "body": "Used for: completed actions in the past\n\nRegular verbs: add -ed\n• work → worked, play → played, study → studied\n\nIrregular verbs (must memorize):\n• go → went, eat → ate, see → saw\n• have → had, make → made, take → took\n• come → came, give → gave, know → knew\n\nNegatives: didn't + base form\n• I didn't go. She didn't eat.\n\nQuestions: Did + subject + base form\n• Did you go? Did she eat?"
+    },
+    {
+      "heading": "Future with \"will\"",
+      "body": "Used for: predictions, promises, spontaneous decisions\n\nFormula: will + base form\n• I will help you. (promise)\n• It will rain tomorrow. (prediction)\n• I'll have the chicken. (spontaneous decision)\n\nNegatives: won't (will not)\n• I won't forget.\n\nQuestions: Will + subject + base form\n• Will you come? Won't it be expensive?"
+    },
+    {
+      "heading": "Future with \"going to\"",
+      "body": "Used for: planned actions, intentions, evidence-based predictions\n\nFormula: am/is/are + going to + base form\n• I am going to study medicine. (plan)\n• She is going to visit Paris next month. (intention)\n• Look at those clouds — it's going to rain. (evidence)\n\nDifference: \"will\" = spontaneous, \"going to\" = planned\n• \"I'll help you\" (just decided)\n• \"I'm going to help you\" (already planned)"
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Regular verb",
+      "definition": "A verb that forms past tense by adding -ed. Examples: worked, played, walked, studied."
+    },
+    {
+      "term": "Irregular verb",
+      "definition": "A verb that changes form unpredictably in past tense. Examples: go→went, eat→ate, see→saw. Must be memorized."
+    },
+    {
+      "term": "Auxiliary verb",
+      "definition": "A helping verb used with the main verb. Examples: will, do, is, have. \"She IS working\" — \"is\" is the auxiliary."
+    }
+  ],
+  "summary": "Past tense needs -ed (regular) or memorization (irregular). For future: \"will\" for instant decisions, \"going to\" for plans."
+}

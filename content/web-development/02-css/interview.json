@@ -1,0 +1,25 @@
+{
+  "topicId": "02-css",
+  "questions": [
+    {
+      "question": "What is the CSS box model?",
+      "answer": "The box model describes how every HTML element is rendered as a rectangular box with four layers: content (the actual text/image), padding (space inside the border), border (the edge), and margin (space outside the border). Understanding this is essential for layout control. Using box-sizing: border-box makes width/height include padding and border, which is much easier to work with.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the difference between class and id selectors in CSS?",
+      "answer": "A class selector (.classname) can be applied to multiple elements — it's reusable. An id selector (#idname) must be unique — only one element per page. Use classes for styles you'll reuse (like card styling), and ids for unique elements or JavaScript targeting.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What does 'Cascading' mean in CSS?",
+      "answer": "Cascading means that multiple CSS rules can apply to the same element, and they 'cascade' down in priority. The order of specificity is: inline styles > id selectors > class selectors > element selectors. When two rules conflict, the more specific one wins. If specificity is equal, the last rule wins.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you make a website responsive?",
+      "answer": "Responsive design makes your site look good on all screen sizes. Key techniques: (1) Use relative units (%, rem, vw) instead of fixed px, (2) Use media queries to apply different styles at different screen widths, (3) Use Flexbox or CSS Grid for flexible layouts, (4) Always include the viewport meta tag in HTML.",
+      "difficulty": "medium"
+    }
+  ]
+}

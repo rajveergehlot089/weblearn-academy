@@ -1,0 +1,18 @@
+{
+  "topicId": "09-performance-monitoring",
+  "comparisons": [
+    {
+      "concept": "Performance Monitoring & Metrics",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Performance Monitoring & Metrics\nconst result = {\n  concept: \"Performance Monitoring & Metrics\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Performance Monitoring & Metrics\nresult = {\n    \"concept\": \"Performance Monitoring & Metrics\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Performance Monitoring & Metrics is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Performance Monitoring & Metrics is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

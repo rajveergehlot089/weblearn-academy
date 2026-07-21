@@ -1,0 +1,42 @@
+{
+  "topicId": "09-interview-prep",
+  "comparisons": [
+    {
+      "concept": "Answering behavioral questions",
+      "vague_answer": {
+        "label": "Vague Answer",
+        "code": "Tell me about a time you handled a challenge.\n'I once had to deal with a difficult situation at work. I worked really hard and eventually figured it out. It was a great learning experience.'"
+      },
+      "star_answer": {
+        "label": "STAR Answer",
+        "code": "Tell me about a time you handled a challenge.\n'Our payment system was failing for 10% of users (S). I was responsible for diagnosing and fixing it (T). I profiled the API, found a race condition in the concurrency handler, and implemented a queue-based solution (A). Error rate dropped to 0.1%, and we saved an estimated $50K in lost transactions per month (R).'"
+      },
+      "explanation": "Vague answers are forgettable and tell the interviewer nothing about your actual capabilities. STAR answers are specific, evidence-based, and demonstrate real impact. The interviewer can evaluate your thinking process, technical skills, and business awareness."
+    },
+    {
+      "concept": "Interview preparation",
+      "winging_it": {
+        "label": "Winging It",
+        "code": "Show up, answer questions based on what comes to mind. Hope your experience speaks for itself. Don't prepare questions to ask."
+      },
+      "prepared": {
+        "label": "Fully Prepared",
+        "code": "Research the company, prepare STAR stories for each requirement in the job description, practice out loud, prepare 5 questions, review your resume for talking points, and do a mock interview."
+      },
+      "explanation": "Even experienced professionals need preparation. The interview rewards those who can articulate their experience clearly — and articulation requires practice. Preparation isn't about memorizing answers; it's about organizing your thoughts so they flow naturally."
+    },
+    {
+      "concept": "Asking questions in an interview",
+      "no_questions": {
+        "label": "No Questions",
+        "code": "Interviewer: 'Do you have any questions for us?'\nCandidate: 'No, I think you covered everything.'"
+      },
+      "strategic_questions": {
+        "label": "Strategic Questions",
+        "code": "Interviewer: 'Do you have any questions for us?'\nCandidate: 'Yes — what does success look like in this role in the first 90 days? And what's the biggest challenge the team is currently facing?'"
+      },
+      "explanation": "No questions signals low interest or poor preparation. Strategic questions show you're evaluating the opportunity seriously and thinking about how you'll contribute. They also help you gather information to make a good decision."
+    }
+  ],
+  "keyInsight": "Interviews reward preparation and specificity. Use STAR for behavioral questions — vague answers are forgettable. Always prepare questions to ask — it demonstrates genuine interest. Even experienced professionals need to practice articulating their experience."
+}

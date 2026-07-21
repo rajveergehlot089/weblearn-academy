@@ -1,0 +1,25 @@
+{
+  "topicId": "04-self-talk",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "The Voice Inside Your Head",
+      "body": "You have an inner narrator that comments on everything — your performance, your relationships, your worth. This is self-talk, and it runs approximately 6,000 thoughts per day. The average person's inner dialogue is 77% negative. This isn't a character flaw — it's a survival mechanism called the negativity bias, where our brains evolved to pay more attention to threats than opportunities."
+    },
+    {
+      "heading": "Three Types of Self-Talk",
+      "body": "1. Negative Self-Talk: Criticizing, catastrophizing, mind-reading. ('I'm so stupid,' 'Everyone thinks I'm a fraud,' 'This will definitely go wrong.')\n\n2. Neutral Self-Talk: Factual observation without judgment. ('I made an error on that report,' 'The meeting went differently than planned.')\n\n3. Positive Self-Talk: Encouraging, solution-focused, compassionate. ('I can learn from this,' 'What can I do differently next time?')\n\nThe goal isn't to eliminate negative thoughts (that backfires through the 'white bear effect'). It's to notice them, challenge them, and replace them with more accurate, constructive alternatives."
+    },
+    {
+      "heading": "The Cognitive Triangle",
+      "body": "Cognitive Behavioral Therapy (CBT) reveals how thoughts, feelings, and behaviors form a triangle:\n\n• Thoughts influence feelings → 'I'll fail this presentation' creates anxiety\n• Feelings influence behaviors → Anxiety makes you avoid preparing\n• Behaviors influence thoughts → Avoiding preparation confirms 'I'm not capable'\n\nBreaking the cycle at any point changes the whole system. The easiest entry point is usually thoughts — changing what you tell yourself changes how you feel and what you do."
+    }
+  ],
+  "jargon": [
+    { "term": "Cognitive Distortion", "definition": "Thinking patterns that are inaccurate or exaggerated, creating a negative view of reality. Examples: all-or-nothing thinking, catastrophizing, mind-reading." },
+    { "term": "Cognitive Reframing", "definition": "The technique of identifying distorted thoughts and replacing them with more balanced, accurate alternatives. A core skill in CBT." },
+    { "term": "Inner Critic", "definition": "The internal voice that judges, criticizes, and undermines you. It often sounds like a parent, teacher, or past bully. Understanding it is key to managing it." }
+  ],
+  "summary": "Your inner dialogue runs ~6,000 thoughts daily, and 77% are negative by default. This is the negativity bias, not a personal failing. The cognitive triangle shows how thoughts → feelings → behaviors form a cycle. By catching cognitive distortions and reframing them, you can break negative cycles and build more constructive inner dialogue."
+}

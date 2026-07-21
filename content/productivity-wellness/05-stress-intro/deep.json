@@ -1,0 +1,38 @@
+{
+  "topicId": "05-stress-intro",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The Neuroscience of Stress",
+      "body": "When you perceive a threat (real or imagined), your amygdala sends a distress signal to your hypothalamus. This activates your sympathetic nervous system, flooding your body with adrenaline and cortisol. Your heart rate increases, muscles tense, and blood flows to your limbs — preparing you to fight or flee. This is efficient for physical threats but devastating when the 'threat' is a code review comment or an email from your manager. Chronic activation of this system leads to: impaired prefrontal cortex function (worse decisions), weakened immune system (more illness), disrupted sleep (worse recovery), and hippocampal shrinkage (worse memory)."
+    },
+    {
+      "heading": "The Developer Stress Inventory",
+      "body": "Rate each area 1-10 (1 = no stress, 10 = extreme stress). This helps identify where to focus your efforts:",
+      "code": {
+        "language": "text",
+        "snippet": "DEVELOPER STRESS INVENTORY:\n\nWorkload & Deadlines:\n□ My workload is manageable          (1-2-3-4-5-6-7-8-9-10)\n□ Deadlines are realistic             (1-2-3-4-5-6-7-8-9-10)\n□ I can say no to additional work     (1-2-3-4-5-6-7-8-9-10)\n\nTechnical Pressure:\n□ I feel competent in my role         (1-2-3-4-5-6-7-8-9-10)\n□ I'm not overwhelmed by new tech     (1-2-3-4-5-6-7-8-9-10)\n□ Code reviews don't feel hostile     (1-2-3-4-5-6-7-8-9-10)\n\nWork Environment:\n□ My team is supportive               (1-2-3-4-5-6-7-8-9-10)\n□ I have autonomy in my work          (1-2-3-4-5-6-7-8-9-10)\n□ Communication is clear              (1-2-3-4-5-6-7-8-9-10)\n\nWork-Life Balance:\n□ I can disconnect after work          (1-2-3-4-5-6-7-8-9-10)\n□ Weekends feel restful               (1-2-3-4-5-6-7-8-9-10)\n□ I have time for hobbies             (1-2-3-4-5-6-7-8-9-10)\n\nHealth & Wellbeing:\n□ I sleep well                        (1-2-3-4-5-6-7-8-9-10)\n□ I exercise regularly                (1-2-3-4-5-6-7-8-9-10)\n□ I eat well                          (1-2-3-4-5-6-7-8-9-10)\n\nINTERPRETATION:\n• 15-30: Low stress — maintain good habits\n• 31-50: Moderate stress — address 2-3 lowest areas\n• 51-75: High stress — prioritize stress reduction immediately\n• 76-90: Critical — consider professional support",
+        "explanation": "This inventory helps you identify WHERE your stress comes from, not just that you're stressed. Different stress sources require different interventions."
+      }
+    },
+    {
+      "heading": "The Stress-Performance Curve",
+      "body": "The Yerkes-Dodson Law shows that performance increases with stress up to a point, then drops sharply. Zero stress means boredom and low performance. Moderate stress means optimal focus and energy. Too much stress means anxiety, mistakes, and burnout. Your goal isn't zero stress — it's finding and maintaining your optimal stress level. This is called 'eustress' (positive stress) vs 'distress' (negative stress)."
+    },
+    {
+      "heading": "Common Stress Triggers for Developers",
+      "body": "These are the most frequent stressors developers face: (1) Imposter syndrome — feeling like you don't belong, despite evidence of competence. (2) Always-on culture — Slack, email, and on-call making you feel you're never 'off.' (3) Unclear requirements — ambiguous specs that change constantly. (4) Production incidents — high-pressure, time-sensitive emergencies. (5) Technical debt — knowing the codebase needs fixing but having no time to fix it. (6) Comparison trap — seeing others' GitHub contributions, blog posts, or career progress."
+    },
+    {
+      "heading": "Practice Task",
+      "body": "Complete the Developer Stress Inventory above. Identify your top 3 stress sources (highest scores). For each, write one specific action you can take this week to reduce it. Schedule that action as a task in your calendar. Stress reduction isn't passive — it requires deliberate, scheduled action."
+    }
+  ],
+  "keyInsights": [
+    "Chronic stress impairs the prefrontal cortex — worse decisions, worse memory, worse health",
+    "Different stress sources require different interventions — identify WHERE your stress comes from",
+    "The Yerkes-Dodson Law: some stress improves performance, too much destroys it",
+    "Stress reduction requires deliberate, scheduled action — it won't happen on its own"
+  ]
+}

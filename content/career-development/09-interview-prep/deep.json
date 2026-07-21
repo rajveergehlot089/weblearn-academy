@@ -1,0 +1,40 @@
+{
+  "topicId": "09-interview-prep",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The Interview Funnel",
+      "body": "Most hiring processes follow a funnel:\n\n1. **Application**: Resume + cover letter → ATS screening\n2. **Recruiter screen**: 30-minute phone/video call with HR\n3. **Technical screen**: Coding challenge or technical conversation\n4. **On-site/final round**: Multiple interviews (behavioral, technical, system design, culture fit)\n5. **Offer**: Negotiation and decision\n\nEach stage has different goals. The recruiter screen evaluates communication and basic fit. Technical screens assess competence. Final rounds evaluate depth, culture, and collaboration."
+    },
+    {
+      "heading": "Resume Optimization for ATS",
+      "body": "Most companies use Applicant Tracking Systems (ATS) that scan your resume before a human sees it. To pass:\n\n- Use keywords from the job description verbatim (e.g., if they say 'React,' write 'React,' not 'modern JavaScript framework')\n- Use standard section headers: 'Experience,' 'Education,' 'Skills'\n- Avoid tables, images, headers/footers, and creative formatting\n- Use a clean, single-column layout\n- Include metrics: 'Reduced load time by 40%' not 'Improved performance'\n\nAfter passing ATS, a human reviews it — so it still needs to tell a compelling story."
+    },
+    {
+      "heading": "Preparing STAR Stories",
+      "body": "Prepare 5-8 STAR stories that cover common behavioral themes:\n\n1. **Technical challenge**: A hard problem you solved\n2. **Conflict resolution**: A disagreement with a colleague and how you resolved it\n3. **Leadership**: A time you led without formal authority\n4. **Failure**: A mistake you made and what you learned\n5. **Collaboration**: Working with cross-functional teams\n6. **Initiative**: Going beyond your job description\n7. **Ambiguity**: Making decisions with incomplete information\n8. **Impact**: Your most significant professional achievement\n\nEach story should be 2-3 minutes when spoken. Practice them out loud."
+    },
+    {
+      "heading": "Answering 'Why This Company?'",
+      "body": "This question tests whether you've done your homework and whether your motivations align. Bad answers: 'I need a job,' 'The salary is good,' 'I heard great things.'\n\nStrong answers combine:\n1. **Specific company knowledge**: Reference their product, mission, or recent work\n2. **Personal connection**: Why this resonates with you specifically\n3. **Mutual benefit**: What you can contribute and what you'll learn\n\nExample: 'I've been following your work on [product] since [specific event]. Your approach to [specific thing] aligns with my experience in [your skill]. I'm excited about the opportunity to [specific contribution] while growing in [area].'"
+    },
+    {
+      "heading": "Technical Interview Strategy",
+      "body": "For coding interviews:\n\n- **Clarify first**: Ask questions about constraints, edge cases, and expected input size\n- **Think out loud**: Explain your approach before writing code\n- **Start with brute force**: Then optimize — this shows you can think incrementally\n- **Test your solution**: Walk through examples manually after coding\n- **Discuss trade-offs**: Time/space complexity, alternative approaches\n\nFor system design interviews:\n- **Clarify requirements**: What are we building? For how many users? What are the constraints?\n- **Start high-level**: APIs, data model, architecture diagram\n- **Deep dive**: Focus on 2-3 interesting components\n- **Discuss trade-offs**: CAP theorem, scaling strategies, caching"
+    },
+    {
+      "heading": "Handling Tough Questions",
+      "body": "- **'Tell me about a time you failed'**: Choose a real failure with a meaningful lesson. Don't pick a fake failure disguised as a success.\n- **'Why did you leave your last job?'**: Stay positive. Focus on what you're moving toward, not what you're running from.\n- **'What's your weakness?'**: Pick a genuine area of growth. Show what you're doing about it. Don't say 'I work too hard.'\n- **'Where do you see yourself in 5 years?'**: Show ambition but stay realistic. Tie it to the company's growth.\n- **'Tell me about yourself'**: Use your elevator pitch — current situation, relevant experience, why you're here."
+    },
+    {
+      "heading": "The Follow-Up",
+      "body": "After every interview:\n\n1. **Send a thank-you email** within 24 hours. Reference something specific from the conversation.\n2. **Reflect on what went well** and what to improve.\n3. **Follow up** if you haven't heard back within the stated timeline — one polite check-in.\n\nThank-you email template: 'Thank you for the conversation about [role]. I especially enjoyed learning about [specific topic discussed]. I'm excited about the opportunity to [specific contribution]. Please let me know if there's any additional information I can provide.'"
+    },
+    {
+      "heading": "Practice Task: Mock Interview",
+      "body": "Do a mock interview with a friend or record yourself answering: (1) 'Tell me about yourself,' (2) 'Tell me about a technical challenge you faced,' (3) 'Why do you want to work here?' Time each answer — behavioral answers should be 2-3 minutes, 'tell me about yourself' should be 60-90 seconds. Review and refine."
+    }
+  ],
+  "summary": "The interview funnel goes from application → recruiter screen → technical screen → final rounds → offer. Pass ATS by using job description keywords. Prepare 5-8 STAR stories covering technical challenges, failures, leadership, and impact. Research the company deeply for 'why here?' questions. In technical interviews, clarify requirements, think out loud, and discuss trade-offs. Always follow up with a personalized thank-you email."
+}

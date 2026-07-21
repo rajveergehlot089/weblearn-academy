@@ -1,0 +1,33 @@
+{
+  "topicId": "07-auth",
+  "exercises": [
+    {
+      "title": "Build a Login Endpoint",
+      "description": "Write an Express POST /api/auth/login endpoint that: takes email + password, looks up the user, compares passwords, and returns a JWT token on success or 401 on failure.",
+      "hints": [
+        "Use bcrypt.compare() for password checking",
+        "Use jwt.sign() to create the token",
+        "Return 401 for invalid credentials"
+      ],
+      "solution": {
+        "language": "javascript",
+        "code": "app.post('/api/auth/login', async (req, res) => {\n  const { email, password } = req.body;\n  const user = await User.findOne({ email });\n  if (!user) return res.status(401).json({ error: 'Invalid credentials' });\n\n  const valid = await bcrypt.compare(password, user.passwordHash);\n  if (!valid) return res.status(401).json({ error: 'Invalid credentials' });\n\n  const token = jwt.sign({ id: user.id }, SECRET, { expiresIn: '1h' });\n  res.json({ token });\n});"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Create an Auth Middleware",
+      "description": "Write Express middleware that checks for a JWT in the Authorization header (format: 'Bearer <token>'). If valid, attach user data to req.user. If invalid or missing, return 401.",
+      "hints": [
+        "Use req.headers.authorization",
+        "Split by space to get the token",
+        "Use try/catch around jwt.verify()"
+      ],
+      "solution": {
+        "language": "javascript",
+        "code": "function auth(req, res, next) {\n  const header = req.headers.authorization;\n  if (!header || !header.startsWith('Bearer ')) {\n    return res.status(401).json({ error: 'No token' });\n  }\n  const token = header.split(' ')[1];\n  try {\n    const decoded = jwt.verify(token, SECRET);\n    req.user = decoded;\n    next();\n  } catch {\n    res.status(401).json({ error: 'Invalid token' });\n  }\n}"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

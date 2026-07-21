@@ -1,0 +1,25 @@
+{
+  "topicId": "09-tense-comparison",
+  "questions": [
+    {
+      "question": "What is Tense Comparison & Usage and why is it important?",
+      "answer": "Tense Comparison & Usage is a fundamental concept that When to use which tense with real examples. It's important because it forms the foundation for building robust and efficient applications. Understanding Tense Comparison & Usage allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Tense Comparison & Usage in a real project?",
+      "answer": "In practice, Tense Comparison & Usage is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Tense Comparison & Usage?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Tense Comparison & Usage to a beginner?",
+      "answer": "Tense Comparison & Usage is essentially about when to use which tense with real examples. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

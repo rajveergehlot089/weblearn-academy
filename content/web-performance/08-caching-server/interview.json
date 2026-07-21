@@ -1,0 +1,25 @@
+{
+  "topicId": "08-caching-server",
+  "questions": [
+    {
+      "question": "What is Server-Side Caching and why is it important?",
+      "answer": "Server-Side Caching is a fundamental concept that Redis, Memcached, in-memory caching, and cache invalidation. It's important because it forms the foundation for building robust and efficient applications. Understanding Server-Side Caching allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Server-Side Caching in a real project?",
+      "answer": "In practice, Server-Side Caching is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Server-Side Caching?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Server-Side Caching to a beginner?",
+      "answer": "Server-Side Caching is essentially about redis, memcached, in-memory caching, and cache invalidation. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

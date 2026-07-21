@@ -1,0 +1,47 @@
+{
+  "topicId": "07-mindfulness",
+  "exercises": [
+    {
+      "title": "30-Day Mindfulness Challenge",
+      "description": "Meditate for 3 minutes daily for 30 days. Use the simplest technique: breath awareness. Track completion and note your mental state before and after each session. At the end of 30 days, evaluate: did your focus, stress, or awareness change?",
+      "hints": [
+        "Same time every day — anchor it to an existing habit (after coffee, before bed)",
+        "Use an app like Insight Timer or just set a phone timer",
+        "Don't judge 'good' or 'bad' sessions — all practice counts"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "30-DAY MINDFULNESS TRACKER:\n\nWeek 1:\n| Day | Done? | Before | After | Notes |\n|-----|-------|--------|-------|-------|\n| 1   | ✓     | 5      | 3     | Mind wandered ~20 times |\n| 2   | ✓     | 4      | 2     | Wandering less frequent |\n| 3   | ✓     | 6      | 4     | Stressed day, very helpful |\n| 4   | ✓     | 3      | 2     | Easier to focus |\n| 5   | ✓     | 5      | 3     | Noticed thoughts more clearly |\n| 6   | ✓     | 4      | 2     | Starting to look forward to it |\n| 7   | ✓     | 3      | 1     | Week 1 complete! Feeling calmer |\n\nWeek 2-4: [Continue tracking...]\n\n30-DAY RESULTS:\n• Completion rate: 93% (28/30 days)\n• Average stress reduction: 2.1 points\n• Subjective changes:\n  - Focus during coding improved noticeably\n  - Less reactive to Slack interruptions\n  - Better at noticing when I'm stressed\n  - Sleep improved (less rumination)\n• Mind wandering frequency: Decreased from ~20 to ~8 per session\n• Conclusion: 3 minutes daily produces real, measurable benefits"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Mindful Coding Experiment",
+      "description": "For one week, practice mindful coding: before each coding session, take 3 deep breaths and set an intention ('I will write clean code,' 'I will focus on one task'). During coding, notice when you context-switch and gently return. After each session, take 10 seconds to notice how you feel. Compare this week to a typical un-mindful week.",
+      "hints": [
+        "The intention matters — it focuses your attention before you start",
+        "Don't judge yourself for context-switching — just notice and return",
+        "Compare not just output, but HOW you felt during the work"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "MINDFUL CODING EXPERIMENT LOG:\n\nMonday:\n• Pre-session breath: 3 deep breaths\n• Intention: 'Focus on the API refactor, one endpoint at a time'\n• Context switches: 3 (vs. typical 8-10)\n• Quality: Better — caught 2 bugs I usually would have missed\n• Post-session: Felt accomplished, not drained\n\nTuesday:\n• Pre-session breath: 3 deep breaths\n• Intention: 'Write tests before implementation (TDD)'\n• Context switches: 4\n• Quality: Tests caught issues early, cleaner code\n• Post-session: Less anxiety about missing edge cases\n\n[Continue for full week...]\n\nCOMPARISON:\n| Metric            | Mindful Week | Typical Week |\n|-------------------|-------------|-------------|\n| Context switches  | 3.5/day     | 9.2/day     |\n| Bugs caught early | 2.1/day     | 0.8/day     |\n| Post-session mood | 7.2/10      | 4.8/10      |\n| Energy at 5 PM    | 6.5/10      | 3.2/10      |\n| Satisfaction      | 8.1/10      | 5.4/10      |\n\nCONCLUSION: Mindful coding reduces context switching by 62% and improves post-work energy by 103%."
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Body Scan for Developer Tension",
+      "description": "Do a 10-minute body scan focusing on the body parts most affected by desk work: hands, forearms, shoulders, jaw, neck, and lower back. Notice where you hold tension. Then create a 'desk body scan' version (2 minutes) you can do hourly to catch and release tension before it builds up.",
+      "hints": [
+        "Don't try to fix the tension — just notice it. Noticing is the practice.",
+        "Common developer tension spots: jaw (clenching), shoulders (shrugging), hands (typing), back (sitting)",
+        "Set an hourly reminder to do the quick scan during work hours"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "BODY SCAN RESULTS:\n\nFULL SCAN (10 min):\n• Hands: HIGH tension (wrists sore from typing)\n• Forearms: HIGH tension (keyboard strain)\n• Shoulders: VERY HIGH (raised toward ears)\n• Neck: HIGH (forward head posture)\n• Jaw: VERY HIGH (realized I was clenching)\n• Lower back: HIGH (sitting all day)\n\nDESK BODY SCAN (2 min, hourly):\n1. Unclench your jaw (10 sec)\n2. Drop your shoulders away from ears (10 sec)\n3. Release your hands — let them hang loose (10 sec)\n4. Roll your neck gently side to side (20 sec)\n5. Sit up straight, engage your core slightly (10 sec)\n6. Take 3 deep breaths (30 sec)\n7. Notice the difference (30 sec)\n\nHOURLY REMINDER: Set calendar alerts for 10 AM, 11 AM, 2 PM, 3 PM, 4 PM\n\nWEEK RESULTS:\n• Tension headaches: Reduced from 3/week to 0/week\n• Jaw pain: Reduced significantly\n• Shoulder stiffness: Noticeably improved\n• Overall comfort: Much better by end of week"
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

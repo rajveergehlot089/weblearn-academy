@@ -1,0 +1,70 @@
+{
+  "topicId": "07-semantic-html",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Page Structure with Semantic Elements",
+      "body": "Semantic elements create a clear document outline that mirrors how users and assistive technologies navigate content.",
+      "code": {
+        "language": "html",
+        "snippet": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Semantic Page Structure</title>\n</head>\n<body>\n    <header>\n        <h1>Website Title</h1>\n        <nav>\n            <ul>\n                <li><a href=\"/\">Home</a></li>\n                <li><a href=\"/about\">About</a></li>\n                <li><a href=\"/contact\">Contact</a></li>\n            </ul>\n        </nav>\n    </header>\n    \n    <main>\n        <article>\n            <header>\n                <h2>Article Title</h2>\n                <time datetime=\"2026-01-15\">January 15, 2026</time>\n            </header>\n            \n            <section>\n                <h3>Introduction</h3>\n                <p>Article content goes here...</p>\n            </section>\n            \n            <section>\n                <h3>Main Points</h3>\n                <p>Detailed information...</p>\n            </section>\n            \n            <footer>\n                <p>Written by Author Name</p>\n            </footer>\n        </article>\n        \n        <aside>\n            <h3>Related Articles</h3>\n            <ul>\n                <li><a href=\"#\">Related Article 1</a></li>\n                <li><a href=\"#\">Related Article 2</a></li>\n            </ul>\n        </aside>\n    </main>\n    \n    <footer>\n        <p>&copy; 2026 Website Name. All rights reserved.</p>\n    </footer>\n</body>\n</html>",
+        "explanation": "This structure clearly defines page regions. Header contains branding and navigation. Main holds primary content. Article wraps self-contained content. Section groups related content. Aside is for tangential content. Footer has copyright and links."
+      }
+    },
+    {
+      "heading": "Article vs Section vs Div",
+      "body": "Understanding when to use each:\n• article: Self-contained content that makes sense independently (blog post, news story, forum post)\n• section: Thematic grouping of content (chapters, tabbed content, feature sections)\n• div: Generic container with no semantic meaning (use only when no other element fits)",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Article: self-contained content -->\n<article>\n    <h2>How to Learn Web Development</h2>\n    <p>This guide covers the fundamentals...</p>\n    <p>By Author Name</p>\n</article>\n\n<!-- Section: thematic grouping -->\n<section>\n    <h2>Courses Offered</h2>\n    <p>We offer courses in HTML, CSS, and JavaScript.</p>\n</section>\n\n<!-- Div: last resort -->\n<div class=\"custom-widget\">\n    <!-- Content that doesn't fit other elements -->\n</div>\n\n<!-- Articles in a blog listing -->\n<main>\n    <article>\n        <h2>First Post</h2>\n        <p>Summary of first post...</p>\n    </article>\n    \n    <article>\n        <h2>Second Post</h2>\n        <p>Summary of second post...</p>\n    </article>\n</main>",
+        "explanation": "Use article for content that can be syndicated or make sense independently. Use section for thematic groupings within a page. Use div only when no semantic element applies."
+      }
+    },
+    {
+      "heading": "Navigation Patterns",
+      "body": "The nav element represents navigation sections. Use it for major navigation blocks, not every list of links.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Primary navigation -->\n<nav aria-label=\"Main\">\n    <ul>\n        <li><a href=\"/\">Home</a></li>\n        <li><a href=\"/courses\">Courses</a>\n            <ul>\n                <li><a href=\"/html\">HTML</a></li>\n                <li><a href=\"/css\">CSS</a></li>\n            </ul>\n        </li>\n        <li><a href=\"/about\">About</a></li>\n    </ul>\n</nav>\n\n<!-- Breadcrumb navigation -->\n<nav aria-label=\"Breadcrumb\">\n    <ol>\n        <li><a href=\"/\">Home</a></li>\n        <li><a href=\"/courses\">Courses</a></li>\n        <li><a href=\"/courses/html\">HTML Fundamentals</a></li>\n    </ol>\n</nav>\n\n<!-- Footer navigation -->\n<nav aria-label=\"Footer\">\n    <ul>\n        <li><a href=\"/privacy\">Privacy Policy</a></li>\n        <li><a href=\"/terms\">Terms of Service</a></li>\n        <li><a href=\"/contact\">Contact</a></li>\n    </ul>\n</nav>",
+        "explanation": "Multiple nav elements are fine - use aria-label to distinguish them. Not every link list needs nav - use it for major navigation blocks."
+      }
+    },
+    {
+      "heading": "Time and Date Elements",
+      "body": "The time element represents dates and times in a machine-readable format.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Publication date -->\n<article>\n    <h2>Article Title</h2>\n    <time datetime=\"2026-01-15\">January 15, 2026</time>\n    <p>Article content...</p>\n</article>\n\n<!-- Event dates -->\n<event>\n    <h3>Conference</h3>\n    <time datetime=\"2026-03-20T09:00\">March 20, 2026 at 9:00 AM</time>\n    <p>Location: Convention Center</p>\n</event>\n\n<!-- Duration -->\n<p>\n    <time datetime=\"PT2H30M\">2 hours and 30 minutes</time>\n</p>\n\n<!-- Machine-readable date -->\n<p>Published on <time datetime=\"2026-01-15T10:30:00Z\">January 15, 2026</time></p>",
+        "explanation": "The datetime attribute provides machine-readable dates. ISO 8601 format is preferred. Screen readers can announce dates properly. Search engines can understand content freshness."
+      }
+    },
+    {
+      "heading": "Lists and Figures",
+      "body": "Use figcaption for captions and figure for self-contained content like images, diagrams, or code listings.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Figure with caption -->\n<figure>\n    <img src=\"chart.png\" alt=\"Sales growth chart\">\n    <figcaption>Figure 1: Quarterly sales growth for 2025</figcaption>\n</figure>\n\n<!-- Code block with caption -->\n<figure>\n    <pre><code>function greet(name) {\n    return `Hello, ${name}!`;\n}</code></pre>\n    <figcaption>Listing 1: Basic greeting function</figcaption>\n</figure>\n\n<!-- Description list -->\n<dl>\n    <dt>HTML</dt>\n    <dd>HyperText Markup Language</dd>\n    \n    <dt>CSS</dt>\n    <dd>Cascading Style Sheets</dd>\n</dl>\n\n<!-- Nested navigation list -->\n<nav>\n    <ul>\n        <li>\n            <a href=\"/courses\">Courses</a>\n            <ul>\n                <li><a href=\"/html\">HTML</a></li>\n                <li><a href=\"/css\">CSS</a></li>\n            </ul>\n        </li>\n    </ul>\n</nav>",
+        "explanation": "Figure/figcaption works for any self-contained content with a caption. Description lists are semantic for term/definition pairs. Nested lists create hierarchy."
+      }
+    },
+    {
+      "heading": "Accessibility with Semantic HTML",
+      "body": "Semantic HTML improves accessibility by providing structure that assistive technologies can interpret.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Landmark regions -->\n<header role=\"banner\">...</header>\n<nav role=\"navigation\">...</nav>\n<main role=\"main\">...</main>\n<aside role=\"complementary\">...</aside>\n<footer role=\"contentinfo\">...</footer>\n\n<!-- Skip navigation link -->\n<a href=\"#main-content\" class=\"skip-link\">Skip to main content</a>\n\n<!-- ARIA labels for multiple landmarks -->\n<nav aria-label=\"Main\">...</nav>\n<nav aria-label=\"Footer\">...</nav>\n\n<!-- Headings hierarchy -->\n<h1>Page Title</h1>\n<h2>Section Title</h2>\n<h3>Subsection Title</h3>",
+        "explanation": "Semantic elements automatically create landmark regions. Use aria-label to distinguish multiple landmarks of the same type. Maintain proper heading hierarchy for screen reader navigation."
+      }
+    },
+    {
+      "heading": "Best Practices",
+      "body": "Semantic HTML guidelines:\n\n1. Use semantic elements instead of divs when possible\n2. Maintain proper heading hierarchy (h1-h6)\n3. Use landmark elements (header, nav, main, aside, footer)\n4. Add aria-labels for multiple landmarks of same type\n5. Use time element for dates and times\n6. Use figure/figcaption for images with captions\n7. Test with screen readers for accessibility"
+    },
+    {
+      "heading": "Practice Task",
+      "body": "Convert a div-based layout to semantic HTML:\n• Replace div.header with header\n• Replace div.nav with nav\n• Replace div.content with main\n• Replace div.sidebar with aside\n• Replace div.footer with footer\n• Add proper headings and structure"
+    }
+  ],
+  "summary": "Master semantic HTML elements: header, nav, main, article, section, aside, footer. Use them to create accessible, SEO-friendly, and maintainable web pages."
+}

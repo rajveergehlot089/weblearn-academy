@@ -1,0 +1,31 @@
+{
+  "topicId": "04-habits-routines",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Habits Matter More Than Motivation",
+      "body": "Motivation is unreliable — it comes and goes. Habits are automatic behaviors that happen without conscious decision-making. The developer who exercises every Monday at 7 AM doesn't need motivation; the habit does the work. Research shows 40-45% of your daily actions are habits, not decisions. Building the right habits is the most powerful productivity lever you have."
+    },
+    {
+      "heading": "The Habit Loop",
+      "body": "Every habit has three components (from Charles Duhigg's 'The Power of Habit'):",
+      "code": {
+        "language": "text",
+        "snippet": "THE HABIT LOOP:\n\n    ┌─────────────┐\n    │   CUE        │  What triggers the behavior\n    │   (trigger)  │  e.g., closing laptop at 5 PM\n    └──────┬──────┘\n           ▼\n    ┌─────────────┐\n    │   ROUTINE    │  The behavior itself\n    │   (action)   │  e.g., changing into workout clothes\n    └──────┬──────┘\n           ▼\n    ┌─────────────┐\n    │   REWARD     │  What makes your brain want to repeat it\n    │   (benefit)  │  e.g., endorphin rush, sense of accomplishment\n    └─────────────┘\n\nTO BUILD A HABIT:\n1. Make the cue obvious (place shoes by the door)\n2. Make the routine easy (start with 5 minutes, not 60)\n3. Make the reward satisfying (track completion, celebrate wins)\n\nTO BREAK A BAD HABIT:\n1. Make the cue invisible (remove phone from bedroom)\n2. Make the routine difficult (delete social media apps)\n3. Make the reward unsatisfying (track time wasted)",
+        "explanation": "The habit loop explains why habits are so powerful — once established, they run on autopilot. Your job is to design the loop, then let it execute."
+      }
+    },
+    {
+      "heading": "The Two-Minute Rule",
+      "body": "When starting a new habit, scale it down to two minutes or less. 'Exercise for 30 minutes' becomes 'put on workout clothes.' 'Read every day' becomes 'read one page.' 'Write code' becomes 'open your IDE.' This works because it removes the activation energy barrier. Once you start, continuing is much easier. You can scale up later — but starting small is non-negotiable."
+    }
+  ],
+  "jargon": [
+    { "term": "Habit Loop", "definition": "The three-part cycle: Cue (trigger) → Routine (behavior) → Reward (benefit). Understanding this loop lets you design and modify habits intentionally." },
+    { "term": "Habit Stacking", "definition": "Attaching a new habit to an existing one: 'After I [current habit], I will [new habit].' Leverages existing neural pathways." },
+    { "term": "Two-Minute Rule", "definition": "Scale any new habit down to 2 minutes or less. 'Exercise' becomes 'put on shoes.' Removes activation energy barrier." },
+    { "term": "Activation Energy", "definition": "The initial effort required to start a task. Lowering activation energy (laying out clothes, opening the IDE) makes habits easier to start." }
+  ],
+  "summary": "Habits are automatic behaviors driven by the Cue → Routine → Reward loop. Build habits by making cues obvious, routines easy, and rewards satisfying. Use the Two-Minute Rule to start: scale every new habit to 2 minutes or less, then gradually increase. Habit stacking links new behaviors to existing routines for automatic execution."
+}

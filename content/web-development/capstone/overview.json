@@ -1,0 +1,20 @@
+{
+  "topicId": "capstone",
+  "type": "capstone",
+  "title": "DevBlog — A Developer Blog Platform",
+  "description": "Build a complete blog application that ties together everything you've learned: HTML, CSS, JavaScript, REST APIs, authentication, databases, error handling, and deployment.",
+  "sections": [
+    {
+      "heading": "What You'll Build",
+      "body": "A simplified version of Medium or dev.to where users can:\n- Create an account and log in (authentication)\n- Write, edit, and delete blog posts (CRUD)\n- View other users' posts (routing, REST API)\n- Like posts (client interaction)\n- See loading states and handle errors gracefully"
+    },
+    {
+      "heading": "Technologies Used",
+      "body": "Everything from the course:\n- HTML: Semantic structure\n- CSS: Flexbox/Grid layouts, CSS variables, responsive design\n- JavaScript: ES6+, async/await, fetch, DOM manipulation\n- Backend: Node.js + Express\n- Database: JSON files (or SQLite)\n- Auth: JWT tokens\n- API: REST endpoints"
+    },
+    {
+      "heading": "How It Works",
+      "body": "Complete milestones in order. Each milestone builds on the previous one. By the end, you'll have a working full-stack application."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "topicId": "08-symbols-punctuation",
+  "comparisons": [
+    {
+      "concept": "Symbols & Punctuation",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Symbols & Punctuation\nconst result = {\n  concept: \"Symbols & Punctuation\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Symbols & Punctuation\nresult = {\n    \"concept\": \"Symbols & Punctuation\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Symbols & Punctuation is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Symbols & Punctuation is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

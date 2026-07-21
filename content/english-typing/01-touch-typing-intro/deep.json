@@ -1,0 +1,20 @@
+{
+  "topicId": "01-touch-typing-intro",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The Science of Muscle Memory",
+      "body": "Your brain stores motor skills in the cerebellum, not the conscious mind. This means:\n\n1. Repetition is key: Do the same exercise 50+ times\n2. Speed comes later: Focus on accuracy for the first 2 weeks\n3. Errors compound: One wrong finger position affects all keys that finger reaches\n4. Sleep helps: Your brain consolidates motor memories during sleep\n\nResearch shows: 10 minutes of focused daily practice beats 60 minutes once a week.\n\nTimeline:\nWeek 1-2: Home row only, 15-20 WPM\nWeek 3-4: Add upper row, 20-30 WPM\nWeek 5-6: Add lower row, 30-40 WPM\nWeek 7-8: Numbers and symbols, 40-50 WPM\nWeek 9+: Speed building, 50-70+ WPM"
+    },
+    {
+      "heading": "Common Mistakes and How to Fix Them",
+      "body": "Mistake 1: Looking at the keyboard\nFix: Cover your hands with a cloth. Or type in a dark room with only screen lit.\n\nMistake 2: Using wrong finger for a key\nFix: Print a keyboard map. Practice each finger's territory separately.\n\nMistake 3: Rushing speed before accuracy\nFix: Set a rule: if accuracy drops below 95%, slow down immediately.\n\nMistake 4: Not using all fingers\nFix: Pinky fingers are weak but essential. Practice pinky-only exercises.\n\nMistake 5: Inconsistent practice\nFix: Set a daily alarm. 20 minutes at the same time every day."
+    },
+    {
+      "heading": "Ergonomics",
+      "body": "Proper setup prevents injury and improves speed:\n\nChair: Feet flat on floor, knees at 90°, back supported\nDesk: Elbows at 90°, wrists straight (not bent up or down)\nScreen: Top of screen at eye level, 20-26 inches away\nKeyboard: Tilted slightly away from you, spacebar near body\n\nWrist pain? You may be:\n• Resting wrists on desk while typing (don't!)\n• Bending wrists up (keep them straight)\n• Gripping too hard (relax your hands)\n\nTake breaks: 20-20-20 rule — every 20 minutes, look at something 20 feet away for 20 seconds."
+    }
+  ],
+  "summary": "Touch typing is muscle memory built through consistent, focused practice. Start slow, maintain accuracy, and never look at the keyboard. Speed will follow naturally."
+}

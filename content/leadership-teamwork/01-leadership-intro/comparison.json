@@ -1,0 +1,41 @@
+{
+  "topicId": "01-leadership-intro",
+  "comparisons": [
+    {
+      "concept": "Leadership vs. Management",
+      "rows": [
+        { "dimension": "Focus", "leadership": "Vision and direction", "management": "Planning and execution" },
+        { "dimension": "Power source", "leadership": "Influence and trust", "management": "Positional authority" },
+        { "dimension": "Time horizon", "leadership": "Long-term change", "management": "Short-term results" },
+        { "dimension": "Key skill", "leadership": "Inspiring people", "management": "Organizing resources" },
+        { "dimension": "Question asked", "leadership": "\"What should we become?\"", "management": "\"How do we get there efficiently?\"" },
+        { "dimension": "Risk tolerance", "leadership": "Challenges status quo", "management": "Reduces variance" },
+        { "dimension": "Followers", "leadership": "Voluntary commitment", "management": "Compliance through structure" }
+      ],
+      "explanation": "Great organizations need both. Vision without execution is daydreaming; execution without vision is busywork."
+    },
+    {
+      "concept": "Authoritative vs. Authoritarian Leadership",
+      "rows": [
+        { "dimension": "Decision making", "authoritative": "Consultative — seeks input before deciding", "authoritarian": "Unilateral — decides without input" },
+        { "dimension": "Communication", "authoritative": "Two-way, transparent", "authoritarian": "Top-down, one-directional" },
+        { "dimension": "Team morale", "authoritative": "High — people feel valued", "authoritarian": "Low — fear-based compliance" },
+        { "dimension": "Innovation", "authoritative": "Encourages new ideas", "authoritarian": "Discourages dissent" },
+        { "dimension": "Accountability", "authoritative": "Shared ownership", "authoritarian": "Blame-oriented" }
+      ],
+      "explanation": "Authoritative leaders make final decisions but earn buy-in through consultation. Authoritarian leaders demand obedience. The difference is respect, not decisiveness."
+    },
+    {
+      "concept": "Leading Individuals vs. Leading Teams",
+      "rows": [
+        { "dimension": "Approach", "individuals": "Tailor to each person's strengths", "teams": "Align diverse skills toward shared goals" },
+        { "dimension": "Communication", "individuals": "1:1 conversations", "teams": "Group forums, shared channels" },
+        { "dimension": "Motivation", "individuals": "Personal growth and recognition", "teams": "Collective purpose and shared success" },
+        { "dimension": "Conflict", "individuals": "Direct, private feedback", "teams": "Facilitate dialogue between parties" },
+        { "dimension": "Accountability", "individuals": "Personal goals and metrics", "teams": "Team-level OKRs and shared ownership" }
+      ],
+      "explanation": "Skilled leaders toggle between modes — using individual coaching for development and team leadership for alignment."
+    }
+  ],
+  "keyInsight": "Leadership is not about being perfect — it's about being intentional. The best leaders are self-aware enough to know when to lead with authority and when to lead with humility."
+}

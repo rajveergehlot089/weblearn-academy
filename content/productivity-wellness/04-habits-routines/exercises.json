@@ -1,0 +1,47 @@
+{
+  "topicId": "04-habits-routines",
+  "exercises": [
+    {
+      "title": "Design Your Morning Routine",
+      "description": "Create a morning routine with 5 elements: hydration, movement, mindfulness, priority review, and a transition activity. Use the Two-Minute Rule for each element (start small). Write out the specific times and what you'll do. Practice for 2 weeks and track completion.",
+      "hints": [
+        "Start with what you already do (current routine) and add one element at a time",
+        "Use the Two-Minute Rule: if 10 min meditation is too much, start with 3 deep breaths",
+        "Place items physically where you'll see them (water glass by bed, shoes by door)"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "MORNING ROUTINE TEMPLATE:\n\n6:30 AM - Wake up (consistent time, no snooze)\n6:35 AM - Drink 16 oz water (glass on nightstand)\n6:40 AM - 5 min stretching (yoga mat by bed)\n6:45 AM - 3 deep breaths + set today's intention\n6:50 AM - Shower + get ready\n7:20 AM - Breakfast (protein: eggs or yogurt)\n7:35 AM - Review 3 priorities (Notion board)\n7:45 AM - Transition (commute or walk around block)\n8:00 AM - Start deep work\n\nTWO-MINUTE VARIANTS (for busy mornings):\n• Hydration: Drink water while waiting for coffee\n• Movement: 2 min stretching at desk\n• Mindfulness: 3 deep breaths in the shower\n• Priorities: Glance at Notion on phone\n• Transition: Walk to desk instead of rolling chair\n\nTRACKING (2 weeks):\n| Day | Hydrate | Move | Mind | Priorities | Transition |\n|-----|---------|------|------|------------|------------|\n| Mon | ✓       | ✓    | ✓    | ✓          | ✓          |\n| Tue | ✓       | ✓    | ✗    | ✓          | ✓          |\n| Wed | ✓       | ✓    | ✓    | ✓          | ✗          |\n...\nCompletion rate: 87% (target: 80%+)\nVerdict: Routine is working. Add meditation next week."
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Build a Habit Stack",
+      "description": "Identify 3 existing habits you do automatically every day. Attach a new goal-related behavior to each using the 'After I [existing habit], I will [new habit]' formula. Practice all 3 for 2 weeks and track which ones stick.",
+      "hints": [
+        "Choose habits that happen at consistent times (coffee, lunch, closing laptop)",
+        "Make the new habits very small (2-5 minutes) to start",
+        "Write the stack down and place it where you'll see it"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "HABIT STACK DESIGN:\n\nSTACK 1: Morning Priority\nAfter I pour my coffee, I will review today's 3 priorities on Notion.\nTime: 2 minutes\nTrigger: Coffee smell (strong sensory cue)\nReward: Feeling prepared and in control\n\nSTACK 2: Learning\nAfter I finish lunch, I will read 10 pages of a tech book.\nTime: 15 minutes\nTrigger: Closing my lunch container\nReward: Knowledge accumulation, book progress tracker\n\nSTACK 3: Shutdown\nAfter I close my laptop at 5 PM, I will write tomorrow's 3 priorities.\nTime: 3 minutes\nTrigger: Laptop closing (physical signal)\nReward: Mental clarity, work-life boundary\n\nTRACKING (2 weeks):\n| Stack | Week 1 | Week 2 | Rate |\n|-------|--------|--------|------|\n| Coffee priorities | 6/7 | 7/7 | 93% |\n| Lunch reading | 5/7 | 6/7 | 79% |\n| Shutdown priorities | 4/7 | 5/7 | 64% |\n\nANALYSIS:\n• Stack 1 (morning) sticks easily — strong sensory trigger\n• Stack 2 (lunch) works well — consistent daily event\n• Stack 3 (shutdown) needs work — add physical signal (close laptop lid audibly)"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Design a Shutdown Ritual",
+      "description": "Create a 10-minute end-of-day shutdown ritual that helps you mentally disconnect from work. Include: task review, email scan, tomorrow's plan, physical signal, and transition activity. Practice for 1 week and note how your evening quality changes.",
+      "hints": [
+        "Make the physical signal very clear (saying 'shutdown complete' out loud sounds silly but works)",
+        "The ritual should be consistent — same time, same steps, every day",
+        "The transition activity is crucial: it creates a mental boundary between work and rest"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "SHUTDOWN RITUAL TEMPLATE:\n\n4:50 PM - Stop working on current task\n4:55 PM - Quick email/Slack scan (5 min max)\n5:00 PM - Review today's task list\n         - Check off completed items ✓\n         - Move incomplete items to tomorrow\n5:03 PM - Write tomorrow's 3 priorities\n         - Schedule them on calendar\n5:06 PM - Physical signal: close all work tabs\n         - Say out loud: 'Shutdown complete'\n5:07 PM - Transition activity:\n         - Option A: Walk around the block (10 min)\n         - Option B: Change into casual clothes\n         - Option C: Cook dinner (hands-on activity)\n5:10 PM - Work is done. No checking email until tomorrow.\n\nWHAT TO AVOID:\n• Checking email 'one last time' after shutdown\n• Keeping work Slack open on your phone\n• Thinking about tomorrow's tasks after shutdown\n• Working past your shutdown time 'just to finish one thing'\n\nWEEK 1 RESULTS:\n• Completed ritual: 5/7 days (71%)\n• Evening anxiety: Reduced noticeably\n• Sleep quality: Improved (less rumination)\n• Weekday vs weekend: Started feeling more distinct"
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

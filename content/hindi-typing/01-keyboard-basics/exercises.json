@@ -1,0 +1,31 @@
+{
+  "topicId": "01-keyboard-basics",
+  "exercises": [
+    {
+      "title": "Basic Practice",
+      "description": "Type these words: fa, ka, gha, tha, cha, ja, da, ga, ma, na",
+      "hints": [
+        "Keep eyes on screen",
+        "Use proper finger placement"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "fa, ka, gha, tha, cha, ja, da, ga, ma, na"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Sentence Practice",
+      "description": "Type each sentence without looking at the keyboard.",
+      "hints": [
+        "Focus on accuracy",
+        "Use all fingers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "main hindi seekhta hoon\nyah mera naam hai\nkya haal hai\nachha lagta hai"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

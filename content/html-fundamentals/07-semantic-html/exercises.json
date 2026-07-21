@@ -1,0 +1,47 @@
+{
+  "topicId": "07-semantic-html",
+  "type": "exercises",
+  "estimatedMinutes": 20,
+  "exercises": [
+    {
+      "title": "Convert to Semantic HTML",
+      "description": "Convert a div-based layout to semantic HTML with proper structure.",
+      "tasks": [
+        "Replace div.header with header element",
+        "Replace div.nav with nav element",
+        "Replace div.content with main element",
+        "Replace div.sidebar with aside element",
+        "Replace div.footer with footer element",
+        "Add proper heading hierarchy"
+      ],
+      "solution": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Semantic Layout</title>\n</head>\n<body>\n    <header>\n        <h1>My Website</h1>\n        <nav aria-label=\"Main\">\n            <ul>\n                <li><a href=\"/\">Home</a></li>\n                <li><a href=\"/courses\">Courses</a></li>\n                <li><a href=\"/about\">About</a></li>\n                <li><a href=\"/contact\">Contact</a></li>\n            </ul>\n        </nav>\n    </header>\n    \n    <main>\n        <article>\n            <header>\n                <h2>Welcome to WebLearn Academy</h2>\n                <time datetime=\"2026-01-15\">January 15, 2026</time>\n            </header>\n            \n            <section>\n                <h3>About Us</h3>\n                <p>We offer comprehensive web development courses...</p>\n            </section>\n            \n            <section>\n                <h3>Our Courses</h3>\n                <p>Learn HTML, CSS, JavaScript, and more...</p>\n            </section>\n        </article>\n        \n        <aside>\n            <h3>Related Resources</h3>\n            <ul>\n                <li><a href=\"#\">Free HTML Tutorial</a></li>\n                <li><a href=\"#\">CSS Cheat Sheet</a></li>\n                <li><a href=\"#\">JavaScript Guide</a></li>\n            </ul>\n        </aside>\n    </main>\n    \n    <footer>\n        <nav aria-label=\"Footer\">\n            <ul>\n                <li><a href=\"/privacy\">Privacy Policy</a></li>\n                <li><a href=\"/terms\">Terms of Service</a></li>\n                <li><a href=\"/contact\">Contact Us</a></li>\n            </ul>\n        </nav>\n        <p>&copy; 2026 WebLearn Academy. All rights reserved.</p>\n    </footer>\n</body>\n</html>"
+    },
+    {
+      "title": "Build a Blog with Semantic HTML",
+      "description": "Create a blog page using semantic elements for proper structure.",
+      "tasks": [
+        "Use header for page header",
+        "Use nav for navigation",
+        "Use main for content area",
+        "Use article for each blog post",
+        "Use section for post sections",
+        "Use aside for sidebar",
+        "Use footer for page footer"
+      ],
+      "solution": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Blog - WebLearn Academy</title>\n</head>\n<body>\n    <header>\n        <h1>WebLearn Academy Blog</h1>\n        <nav aria-label=\"Main\">\n            <ul>\n                <li><a href=\"/\">Home</a></li>\n                <li><a href=\"/blog\">Blog</a></li>\n                <li><a href=\"/courses\">Courses</a></li>\n            </ul>\n        </nav>\n    </header>\n    \n    <main>\n        <article>\n            <header>\n                <h2>Getting Started with HTML</h2>\n                <p>Published on <time datetime=\"2026-01-15\">January 15, 2026</time></p>\n            </header>\n            \n            <section>\n                <h3>What is HTML?</h3>\n                <p>HTML (HyperText Markup Language) is the standard language for creating web pages...</p>\n            </section>\n            \n            <section>\n                <h3>Basic Structure</h3>\n                <p>Every HTML document follows a standard structure...</p>\n            </section>\n            \n            <footer>\n                <p>Written by <span>John Doe</span></p>\n                <p>Tags: <a href=\"#\">HTML</a>, <a href=\"#\">Beginners</a></p>\n            </footer>\n        </article>\n        \n        <article>\n            <header>\n                <h2>CSS Fundamentals</h2>\n                <p>Published on <time datetime=\"2026-01-10\">January 10, 2026</time></p>\n            </header>\n            \n            <section>\n                <h3>What is CSS?</h3>\n                <p>CSS (Cascading Style Sheets) is used to style web pages...</p>\n            </section>\n            \n            <footer>\n                <p>Written by <span>Jane Smith</span></p>\n            </footer>\n        </article>\n    </main>\n    \n    <aside>\n        <h3>Categories</h3>\n        <ul>\n            <li><a href=\"#\">HTML</a></li>\n            <li><a href=\"#\">CSS</a></li>\n            <li><a href=\"#\">JavaScript</a></li>\n        </ul>\n        \n        <h3>Recent Posts</h3>\n        <ul>\n            <li><a href=\"#\">Getting Started with HTML</a></li>\n            <li><a href=\"#\">CSS Fundamentals</a></li>\n        </ul>\n    </aside>\n    \n    <footer>\n        <p>&copy; 2026 WebLearn Academy Blog</p>\n    </footer>\n</body>\n</html>"
+    },
+    {
+      "title": "Create Accessible Navigation",
+      "description": "Build navigation with proper semantic structure and ARIA labels.",
+      "tasks": [
+        "Create primary navigation with nav element",
+        "Add breadcrumb navigation",
+        "Create footer navigation",
+        "Use aria-labels for multiple navs",
+        "Add skip navigation link",
+        "Test with screen reader"
+      ],
+      "solution": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Accessible Navigation</title>\n    <style>\n        .skip-link {\n            position: absolute;\n            left: -9999px;\n            top: 0;\n            background: #000;\n            color: #fff;\n            padding: 10px;\n            z-index: 100;\n        }\n        .skip-link:focus {\n            left: 0;\n        }\n        nav ul {\n            list-style: none;\n            padding: 0;\n            display: flex;\n            gap: 20px;\n        }\n        nav a {\n            text-decoration: none;\n            color: #333;\n        }\n        nav a:hover {\n            text-decoration: underline;\n        }\n    </style>\n</head>\n<body>\n    <a href=\"#main-content\" class=\"skip-link\">Skip to main content</a>\n    \n    <header>\n        <h1>WebLearn Academy</h1>\n        <nav aria-label=\"Main\">\n            <ul>\n                <li><a href=\"/\">Home</a></li>\n                <li><a href=\"/courses\">Courses</a></li>\n                <li><a href=\"/about\">About</a></li>\n                <li><a href=\"/contact\">Contact</a></li>\n            </ul>\n        </nav>\n    </header>\n    \n    <nav aria-label=\"Breadcrumb\">\n        <ol>\n            <li><a href=\"/\">Home</a></li>\n            <li><a href=\"/courses\">Courses</a></li>\n            <li><a href=\"/courses/html\" aria-current=\"page\">HTML Fundamentals</a></li>\n        </ol>\n    </nav>\n    \n    <main id=\"main-content\">\n        <h2>HTML Fundamentals Course</h2>\n        <p>Course content goes here...</p>\n    </main>\n    \n    <footer>\n        <nav aria-label=\"Footer\">\n            <ul>\n                <li><a href=\"/privacy\">Privacy Policy</a></li>\n                <li><a href=\"/terms\">Terms of Service</a></li>\n                <li><a href=\"/sitemap\">Sitemap</a></li>\n            </ul>\n        </nav>\n        <p>&copy; 2026 WebLearn Academy</p>\n    </footer>\n</body>\n</html>"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "topicId": "05-forms-inputs",
+  "type": "interview",
+  "estimatedMinutes": 10,
+  "questions": [
+    {
+      "question": "What is the difference between GET and POST methods?",
+      "answer": "GET appends form data to the URL as query parameters (visible in address bar, limited to ~2000 characters). Use for search forms and non-sensitive data. POST sends data in the request body (not visible in URL, no size limit). Use for sensitive data, file uploads, and forms that modify server data.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Why should you use different input types instead of just text?",
+      "answer": "Different input types provide: 1) Built-in validation (email validates format, number checks range). 2) Appropriate mobile keyboards (email shows @ key, number shows number pad). 3) Semantic meaning for accessibility. 4) Specialized controls (date picker, color picker). 5) Better user experience.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do labels improve form accessibility?",
+      "answer": "Labels associate text descriptions with form controls. When a label's for attribute matches an input's id, screen readers announce the label when the input receives focus. Clicking a label focuses its associated control. This is essential for keyboard navigation and screen reader users.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the purpose of the fieldset and legend elements?",
+      "answer": "Fieldset groups related form controls, and legend provides a caption for the group. They improve accessibility by helping screen readers understand the form structure. Example: grouping shipping address fields or personal information. They also provide visual organization when styled with CSS.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How does HTML5 form validation work?",
+      "answer": "HTML5 provides built-in validation with attributes: required (mandatory), pattern (regex), min/max (number range), minlength/maxlength (text length), type (email, url validation). The browser prevents submission of invalid forms and displays error messages. You can customize messages with setCustomValidity().",
+      "difficulty": "medium"
+    },
+    {
+      "question": "When would you use a textarea instead of an input?",
+      "answer": "Use textarea for multi-line text input like comments, messages, descriptions, or code. Use input for single-line data like names, emails, passwords. Textarea supports rows/cols attributes for initial size and can be resized with CSS. Input is better for short, single-value data.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the difference between checkbox and radio inputs?",
+      "answer": "Checkboxes allow multiple selections (user can select none, one, or several). Radio buttons allow only one selection from a group (all radios with same name). Use checkboxes for independent options (interests, preferences) and radio buttons for mutually exclusive choices (yes/no, size options).",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you prevent default form submission behavior?",
+      "answer": "Use event.preventDefault() in JavaScript: form.addEventListener('submit', function(e) { e.preventDefault(); // handle form data }); This stops the browser from sending the request, allowing you to validate, process with JavaScript, or send via AJAX. Useful for single-page applications.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the purpose of the placeholder attribute?",
+      "answer": "Placeholder provides hint text inside an input field that disappears when the user starts typing. Use it as an example format (like 'you@example.com'), not as a label replacement. It's not a substitute for labels because it disappears on input and isn't always announced by screen readers.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you handle file uploads in HTML forms?",
+      "answer": "Use input type=\"file\" and set enctype=\"multipart/form-data\" on the form. Example: <form action=\"/upload\" method=\"POST\" enctype=\"multipart/form-data\"> <input type=\"file\" name=\"document\" accept=\".pdf,.docx\"> </form>. The accept attribute restricts file types. Multiple files can be uploaded with the multiple attribute.",
+      "difficulty": "medium"
+    }
+  ]
+}

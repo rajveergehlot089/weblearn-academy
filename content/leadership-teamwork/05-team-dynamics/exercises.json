@@ -1,0 +1,47 @@
+{
+  "topicId": "05-team-dynamics",
+  "exercises": [
+    {
+      "title": "Team Health Check",
+      "description": "Rate your team on Google's five dimensions of team effectiveness (1-5 each). Identify the lowest score and create one action to improve it.",
+      "hints": [
+        "Be honest — this is for improvement, not a report card",
+        "Ask team members for their scores independently before comparing",
+        "Focus on the single lowest dimension, not all five"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Team Health Check Scorecard:\n\n1. Psychological Safety: ___/5\n   'I can take risks without fear of punishment'\n\n2. Dependability: ___/5\n   'I can count on my teammates to deliver on time'\n\n3. Structure & Clarity: ___/5\n   'I know what's expected of me'\n\n4. Meaning: ___/5\n   'My work matters to me personally'\n\n5. Impact: ___/5\n   'Our team creates meaningful outcomes'\n\nLowest dimension action plan:\nDimension: ___________\nCurrent score: ___/5\nTarget score: ___/5\nOne action this month: ___________\nHow I'll measure progress: ___________\nReview date: ___________"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Team Norms Workshop",
+      "description": "Facilitate a 30-minute team session to establish working agreements on communication, decision-making, and conflict resolution.",
+      "hints": [
+        "Let the team propose norms — don't dictate them",
+        "Focus on 3-5 key areas, not exhaustive rules",
+        "Write them down and revisit quarterly"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Team Norms Workshop Agenda (30 min):\n\n1. Communication (10 min):\n   - How do we handle urgent vs. non-urgent communication?\n   - Response time expectations?\n   - Channel preferences (Slack, email, meetings)?\n\n2. Decision-Making (10 min):\n   - Who decides what? (RAPID framework)\n   - How do we handle disagreements?\n   - When do we need consensus vs. when does one person decide?\n\n3. Conflict Resolution (10 min):\n   - How do we address issues directly?\n   - What happens when two people disagree?\n   - When do we escalate?\n\nOutput: A written document with 5-7 norms, signed by all team members.\nRevisit: Quarterly, 30-minute review session."
+      },
+      "difficulty": "hard"
+    },
+    {
+      "title": "Team Role Mapping",
+      "description": "Map each team member's strengths using Belbin's team roles framework. Identify strengths gaps and plan to address them.",
+      "hints": [
+        "Have people self-assess AND have others rate them",
+        "Look for clusters — too many of one role creates blind spots",
+        "Plan to develop missing roles through training or hiring"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Team Role Mapping Template:\n\nFor each team member, identify their top 2-3 roles:\n\nPerson | Primary Role | Secondary Role | Development Area\n-------|-------------|----------------|------------------\nAlice  | Plant (ideas)| Monitor-Evaluator| Shaper (drive)\nBob    | Implementer | Completer-Finisher| Resource Investigator\nCarol  | Coordinator | Teamworker | Plant (creativity)\n\nGap Analysis:\n- Who drives action when things stall? (Shaper)\n- Who generates creative ideas? (Plant)\n- Who ensures quality? (Completer-Finisher)\n- Who builds relationships? (Teamworker)\n\nAction: For each gap, decide: develop an existing person, hire for it, or accept the risk?"
+      },
+      "difficulty": "easy"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "topicId": "01-elevator-pitch",
+  "comparisons": [
+    {
+      "concept": "Telling people about yourself",
+      "weak_pitch": {
+        "label": "Vague Pitch",
+        "code": "Hi, I'm a software developer. I like coding and I'm passionate about technology. I'm looking for opportunities."
+      },
+      "strong_pitch": {
+        "label": "Specific Pitch",
+        "code": "Hi, I'm Sam. I'm a full-stack developer who built an internal tool that automated invoice processing — saving the finance team 12 hours per week. I'm now looking for a role where I can build developer tools at scale."
+      },
+      "explanation": "The weak pitch could describe thousands of people. The strong pitch is memorable because it includes a specific accomplishment with a measurable result and a clear goal."
+    },
+    {
+      "concept": "Pitching to a recruiter vs. a peer",
+      "recruiter": {
+        "label": "Recruiter-Optimized",
+        "code": "I'm a backend engineer with 3 years of experience in distributed systems. I recently migrated a monolithic service to microservices, reducing deployment time by 60%. I'm looking for a senior backend role at a company scaling their infrastructure."
+      },
+      "peer": {
+        "label": "Peer-Optimized",
+        "code": "I work on backend systems — mostly Go and Kubernetes. Last quarter I split our monolith into services, which was honestly a great learning experience. I'm curious how your team handles service communication — do you use gRPC?"
+      },
+      "explanation": "With a recruiter, be direct about your skills, results, and what you're looking for. With a peer, be conversational, share what you learned, and ask a question to start a real discussion."
+    }
+  ],
+  "keyInsight": "The best elevator pitches are specific, results-oriented, and tailored to the audience. Replace vague claims ('passionate about tech') with concrete evidence ('saved 12 hours per week through automation')."
+}

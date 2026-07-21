@@ -1,0 +1,25 @@
+{
+  "topicId": "08-cors-security",
+  "questions": [
+    {
+      "question": "What is CORS & Cross-Site Attacks and why is it important?",
+      "answer": "CORS & Cross-Site Attacks is a fundamental concept that CORS configuration, CSRF, XSS, and preventing cross-site attacks. It's important because it forms the foundation for building robust and efficient applications. Understanding CORS & Cross-Site Attacks allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply CORS & Cross-Site Attacks in a real project?",
+      "answer": "In practice, CORS & Cross-Site Attacks is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with CORS & Cross-Site Attacks?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain CORS & Cross-Site Attacks to a beginner?",
+      "answer": "CORS & Cross-Site Attacks is essentially about cors configuration, csrf, xss, and preventing cross-site attacks. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

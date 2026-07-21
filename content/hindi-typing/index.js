@@ -1,0 +1,12 @@
+module.exports = [
+  { id: "01-keyboard-basics", title: "कीबोर्ड का परिचित", group: "basics", day_fast_track: 1, day_full_course: 1, icon: "🔐", description: "Hindi keyboard layout and finger positioning basics.", prerequisites: [] },
+  { id: "02-home-row-left", title: "Home Row - Left Hand Keys", group: "home-row", day_fast_track: 2, day_full_course: 3, icon: "🤟", description: "Learn left hand home row keys: fa, ka, gha, tha, cha.", prerequisites: ["01-keyboard-basics"] },
+  { id: "03-home-row-right", title: "Home Row - Right Hand Keys", group: "home-row", day_fast_track: 3, day_full_course: 5, icon: "🤞", description: "Learn right hand home row keys: ja, da, ga, ma, na.", prerequisites: ["01-keyboard-basics"] },
+  { id: "04-home-row-combined", title: "Home Row Combined Practice", group: "home-row", day_fast_track: 4, day_full_course: 7, icon: "✋", description: "Practice both hands on home row together.", prerequisites: ["02-home-row-left", "03-home-row-right"] },
+  { id: "05-upper-row", title: "Upper Row Keys", group: "rows", day_fast_track: 5, day_full_course: 9, icon: "⬆️", description: "Keys above the home row for complete coverage.", prerequisites: ["04-home-row-combined"] },
+  { id: "06-lower-row", title: "Lower Row Keys", group: "rows", day_fast_track: 6, day_full_course: 11, icon: "⬇️", description: "Keys below the home row.", prerequisites: ["04-home-row-combined"] },
+  { id: "07-common-words", title: "Common Hindi Words", group: "practice", day_fast_track: 7, day_full_course: 13, icon: "💤", description: "Frequently used Hindi words for daily typing.", prerequisites: ["05-upper-row", "06-lower-row"] },
+  { id: "08-numbers-symbols", title: "Numbers and Symbols", group: "practice", day_fast_track: 8, day_full_course: 15, icon: "🔢", description: "Hindi numbers and special characters.", prerequisites: ["07-common-words"] },
+  { id: "09-sentences", title: "Hindi Sentences Practice", group: "practice", day_fast_track: 9, day_full_course: 17, icon: "📝", description: "Type complete Hindi sentences fluently.", prerequisites: ["07-common-words"] },
+  { id: "10-speed-building", title: "Speed Building Drills", group: "advanced", day_fast_track: 10, day_full_course: 20, icon: "⚡", description: "Timed practice sessions to build speed.", prerequisites: ["09-sentences"] }
+];

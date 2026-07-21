@@ -1,0 +1,25 @@
+{
+  "topicId": "09-api-gateway",
+  "questions": [
+    {
+      "question": "What is API Gateway & Rate Limiting and why is it important?",
+      "answer": "API Gateway & Rate Limiting is a fundamental concept that Request routing, rate limiting, throttling, and API management. It's important because it forms the foundation for building robust and efficient applications. Understanding API Gateway & Rate Limiting allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply API Gateway & Rate Limiting in a real project?",
+      "answer": "In practice, API Gateway & Rate Limiting is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with API Gateway & Rate Limiting?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain API Gateway & Rate Limiting to a beginner?",
+      "answer": "API Gateway & Rate Limiting is essentially about request routing, rate limiting, throttling, and api management. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

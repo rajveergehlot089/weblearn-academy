@@ -1,0 +1,8 @@
+{
+  "topicId": "12-interview-english",
+  "questions": [
+    { "question": "How do you answer 'Tell me about yourself' in an interview?", "answer": "Use the Present-Past-Future formula. Present: your current role and key skills. Past: relevant experience and education. Future: why you're interested in this role and what you hope to achieve. Keep it 60-90 seconds, professional, and relevant to the job. Avoid personal details.", "difficulty": "easy" },
+    { "question": "What is the STAR method and when should you use it?", "answer": "STAR stands for Situation, Task, Action, Result. Use it for behavioral interview questions like 'Tell me about a time when...' or 'Give an example of...'. Structure your answer: briefly describe the situation, explain your task/responsibility, detail the specific actions YOU took, and share the measurable result. Keep each element to 2-3 sentences.", "difficulty": "medium" },
+    { "question": "How should you answer 'What is your weakness?'", "answer": "Be honest but strategic. Name a real weakness (not 'I work too hard'), show self-awareness, and explain what you're doing to improve. Example: 'I used to struggle with public speaking, so I joined Toastmasters and now I present at team meetings.' The key is showing growth, not perfection. Avoid weaknesses that are critical for the job.", "difficulty": "medium" }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "topicId": "04-past-future",
+  "comparisons": [
+    {
+      "concept": "past future",
+      "javascript": {
+        "language": "english",
+        "code": "I went to school yesterday."
+      },
+      "python": {
+        "language": "english",
+        "code": "She studied English last night."
+      },
+      "explanation": "English follows consistent patterns once you learn the rules."
+    }
+  ],
+  "keyInsight": "Understanding this concept is fundamental to English fluency."
+}

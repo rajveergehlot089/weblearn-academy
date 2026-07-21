@@ -1,0 +1,43 @@
+{
+  "topicId": "14-modern-javascript",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Modern JavaScript (ES6+)",
+      "body": "ES6 (2015) was a massive update to JavaScript. It added features that make code shorter, cleaner, and easier to read. Think of it like upgrading from a typewriter to a modern word processor."
+    },
+    {
+      "heading": "Key Features",
+      "body": "The features you'll use every day:\n1. Arrow functions: () => {} — shorter function syntax\n2. const/let: better variables (no more var)\n3. Template literals: `Hello ${name}` — easy string mixing\n4. Destructuring: const {name} = user — extract values easily\n5. async/await: handle promises cleanly\n6. fetch: make API calls easily"
+    },
+    {
+      "heading": "Arrow Functions",
+      "body": "Shorter way to write functions:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Old way\nfunction add(a, b) {\n  return a + b;\n}\n\n// Modern way\nconst add = (a, b) => a + b;\n\n// Even shorter for single params\nconst double = x => x * 2;",
+        "explanation": "Arrow functions are shorter and don't have their own 'this'. Use them for callbacks and small functions."
+      }
+    }
+  ],
+  "jargon": [
+    {
+      "term": "ES6+",
+      "definition": "ECMAScript 2015 and later versions — the modern standard for JavaScript."
+    },
+    {
+      "term": "Arrow Function",
+      "definition": "A concise function syntax using => instead of the function keyword."
+    },
+    {
+      "term": "Destructuring",
+      "definition": "Extracting values from objects/arrays into individual variables."
+    },
+    {
+      "term": "Async/Await",
+      "definition": "Modern syntax for handling asynchronous operations (Promises)."
+    }
+  ],
+  "summary": "ES6+ modernizes JavaScript with arrow functions, const/let, template literals, destructuring, async/await, and fetch."
+}

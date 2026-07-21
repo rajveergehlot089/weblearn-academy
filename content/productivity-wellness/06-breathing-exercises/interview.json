@@ -1,0 +1,30 @@
+{
+  "topicId": "06-breathing-exercises",
+  "questions": [
+    {
+      "question": "How quickly do breathing exercises actually work?",
+      "answer": "The Physiological Sigh (double inhale + long exhale) can calm you down in ONE breath — about 15 seconds. Box Breathing takes about 1-2 minutes (4-8 cycles). The 4-7-8 technique takes about 2 minutes. These aren't placebo — they directly activate your parasympathetic nervous system via the vagus nerve. For long-term anxiety reduction, daily practice of 5 minutes can reduce baseline anxiety by 20-30% over 8 weeks. But for immediate relief, breathing is the fastest evidence-based tool available.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "I feel more anxious when I try to focus on my breath. What's wrong?",
+      "answer": "Nothing is wrong — this is common, especially with anxiety. Focusing on your breath can make you hyperaware of your breathing, which increases anxiety. Alternatives: (1) Try PMR instead — tensing and releasing muscles gives your mind a concrete task. (2) Try walking meditation — focus on the sensation of your feet on the ground instead of your breath. (3) Try counting breaths backward from 100 — the counting gives your anxious mind something to do. (4) Try the Physiological Sigh — it's so fast that there's no time for anxiety to build.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Can breathing exercises replace therapy or medication for anxiety?",
+      "answer": "No. Breathing exercises are a coping tool, not a treatment. They manage symptoms but don't address root causes. If you have clinical anxiety, you need professional help — therapy (especially CBT) and sometimes medication are evidence-based treatments. Breathing exercises COMPLEMENT these treatments — they're not a replacement. Think of breathing like painkillers for a broken bone: it helps manage the pain, but you still need to set the bone. If your anxiety significantly impacts your daily life, see a therapist.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's the best breathing technique to use during a production incident?",
+      "answer": "Box Breathing — it's fast (64 seconds for 4 cycles), easy to remember (4-4-4-4), and can be done while looking at your screen. Do 4 cycles before you start debugging, then 2-3 cycles between each troubleshooting step. The key: don't let adrenaline drive your debugging. Calm focus produces better solutions than panicked rushing. Many senior engineers have a 'before I touch anything' rule: 4 box breaths, then assess the situation calmly.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I make breathing exercises a daily habit?",
+      "answer": "Stack it onto an existing habit: 'After I brush my teeth in the morning, I will do 4 cycles of box breathing.' Start with just 1 cycle (16 seconds) — the Two-Minute Rule applies. Place a reminder where you'll see it (phone wallpaper, sticky note on monitor). Use an app like Headspace or Calm for guided sessions. Track your streak — seeing a chain of completed days motivates you. The goal: 5 minutes daily for 8 weeks, then you'll notice the habit is automatic.",
+      "difficulty": "easy"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "topicId": "08-accuracy-drills",
+  "questions": [
+    {
+      "question": "What is Accuracy-First Drills and why is it important?",
+      "answer": "Accuracy-First Drills is a fundamental concept that Slow, accurate typing to build correct habits. It's important because it forms the foundation for building robust and efficient applications. Understanding Accuracy-First Drills allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Accuracy-First Drills in a real project?",
+      "answer": "In practice, Accuracy-First Drills is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Accuracy-First Drills?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Accuracy-First Drills to a beginner?",
+      "answer": "Accuracy-First Drills is essentially about slow, accurate typing to build correct habits. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

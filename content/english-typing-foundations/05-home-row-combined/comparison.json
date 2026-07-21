@@ -1,0 +1,18 @@
+{
+  "topicId": "05-home-row-combined",
+  "comparisons": [
+    {
+      "concept": "Home Row Combined Practice",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Home Row Combined Practice\nconst result = {\n  concept: \"Home Row Combined Practice\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Home Row Combined Practice\nresult = {\n    \"concept\": \"Home Row Combined Practice\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Home Row Combined Practice is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Home Row Combined Practice is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

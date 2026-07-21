@@ -1,0 +1,47 @@
+{
+  "topicId": "03-decision-making",
+  "exercises": [
+    {
+      "title": "Decision Journal",
+      "description": "For one week, log every significant decision you make using this template. Review at week's end to identify patterns.",
+      "hints": [
+        "Include decisions you make at work AND in personal life",
+        "Be honest about what information you had (and didn't have)",
+        "Rate your confidence at the time of the decision"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Decision Journal Template:\n\nDate: ___________\nDecision: ___________\nOptions considered: ___________\nInformation available: ___________\nInformation missing: ___________\nConfidence level (1-10): ___________\nReversible or irreversible? ___________\nReasoning: ___________\nExpected outcome: ___________\n\nAfter 1 week, revisit:\n- Actual outcome: ___________\n- Was confidence calibrated? ___________\n- What bias might have influenced me? ___________\n\nPattern to watch for: Do I decide too fast? Too slow? With too much input? Too little?"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Pre-Mortem Exercise",
+      "description": "Choose a decision you're about to make. Before making it, imagine it failed spectacularly. Write down every reason it could have failed. Then address the top 3 risks.",
+      "hints": [
+        "Force yourself to be pessimistic — this isn't about being negative",
+        "Focus on the top 3 risks, not all of them",
+        "For each risk, write one mitigation action"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Pre-Mortem Template:\n\nDecision: ___________\n\nImagine it's 6 months from now and this decision failed. Why?\n\nRisk 1: ___________\nMitigation: ___________\n\nRisk 2: ___________\nMitigation: ___________\n\nRisk 3: ___________\nMitigation: ___________\n\nNow: Do the mitigations change your decision? If yes, reconsider. If no, proceed with confidence knowing you've stress-tested your thinking."
+      },
+      "difficulty": "hard"
+    },
+    {
+      "title": "RAPID Role Clarification",
+      "description": "Take a pending team decision and map out who plays each role (R-A-P-I-D) using the framework. Share with stakeholders for alignment.",
+      "hints": [
+        "The 'D' (decide) role must be ONE person, not a committee",
+        "The 'A' (agree) roles should be minimal — too many slows things down",
+        "Clarify before the meeting, not during it"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "RAPID Mapping for: [Decision Name]\n\nR — Recommend: [Name] — Will prepare options and present to decision-maker\nA — Agree: [Name(s)] — Must approve before proceeding (keep this list short)\nI — Input: [Names] — Will provide expertise but don't decide\nP — Perform: [Team(s)] — Will execute the decision once made\nD — Decide: [One Name] — Final decision-maker\n\nTimeline: R presents by [date]. D decides by [date]. P begins [date].\n\nCommunicate this mapping to all parties before the decision meeting."
+      },
+      "difficulty": "easy"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "topicId": "02-leadership-styles",
+  "exercises": [
+    {
+      "title": "Style Flex Challenge",
+      "description": "For one week, deliberately practice your weakest leadership style. If you default to directing, try delegating more. If you default to serving, try being more directive with a struggling team member.",
+      "hints": [
+        "Identify your default style by reflecting on recent decisions",
+        "Choose one specific situation each day to practice the opposite style",
+        "Journal what happened — what felt natural, what felt forced"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Week-long Style Flex Exercise:\n\nDay 1: Identify your default style\n- When you're stressed, what do you default to?\n- Ask 2 colleagues: 'How would you describe my leadership style?'\n\nDay 2-7: Practice one alternative style per day\n- Pick a specific interaction each day\n- Before it, plan: 'I will [specific behavior] instead of [my default]'\n- After it, journal: what worked? what didn't?\n\nEnd of week: Write 3 takeaways about when the alternative style was more effective."
+      },
+      "difficulty": "hard"
+    },
+    {
+      "title": "Leadership Style Diagnostic for Your Team",
+      "description": "Survey 5-10 people you work with (peers, reports, manager) and ask them to describe your leadership style in 3 words. Then map their descriptions to the four styles.",
+      "hints": [
+        "Use a simple anonymous survey or ask in 1-on-1s",
+        "Look for patterns across responses",
+        "Compare their perception to your self-assessment"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Survey Questions:\n1. 'How would you describe my leadership style in 3 words?'\n2. 'When do I lead most effectively?'\n3. 'When do I lead least effectively?'\n4. 'What one thing would make me a better leader for you?'\n\nAnalysis:\n- Map words to styles: 'supportive, helpful' → servant; 'inspiring, visionary' → transformational; 'adaptive, flexible' → situational; 'collaborative, inclusive' → democratic\n- Identify gap between self-perception and others' perception\n- Choose one action to bridge the gap"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Style-Context Match Analysis",
+      "description": "Take 5 recent leadership decisions and analyze which style you used, which was needed, and how you could have adapted better.",
+      "hints": [
+        "Pick decisions from different contexts: one crisis, one planning, one people conflict",
+        "Be honest about what drove your style choice",
+        "Identify one decision where a different style would have produced better results"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Decision Analysis Template:\n\nFor each of 5 decisions:\n1. What was the situation?\n2. What style did I use? (servant/transformational/situational/democratic)\n3. What style was the situation calling for?\n4. What was the outcome?\n5. What would have happened with a different style?\n\nExample:\n- Situation: New hire struggling with onboarding\n- Style used: Delegating (S4) — too hands-off\n- Style needed: Directing (S1) — needed more structure\n- Outcome: Hire felt lost, ramped up slowly\n- Alternative: Could have provided clearer milestones and daily check-ins\n\nInsight: Identify your overused style and the situations where it fails."
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

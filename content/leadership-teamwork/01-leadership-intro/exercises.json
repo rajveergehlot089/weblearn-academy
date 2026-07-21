@@ -1,0 +1,47 @@
+{
+  "topicId": "01-leadership-intro",
+  "exercises": [
+    {
+      "title": "Leadership Self-Assessment",
+      "description": "Rate yourself honestly on each dimension (1-5) and write one specific action to improve your lowest score.",
+      "hints": [
+        "Be brutally honest — this is for your growth, not a grade",
+        "Ask a trusted colleague for their perspective on your lowest-rated areas",
+        "Focus improvement on one dimension at a time"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Self-Assessment Scorecard:\n\n1. Vision: Can I articulate where my team should be in 6 months?\n2. Communication: Do I adapt my style to different audiences?\n3. Decision-making: Can I make tough calls with incomplete information?\n4. Empathy: Do I genuinely understand my team members' challenges?\n5. Accountability: Do I take responsibility for failures before claiming credit for wins?\n\nAction Plan: Pick your lowest score and commit to ONE behavior change this week. For example, if empathy scored low, schedule three 1-on-1s focused on listening (not updating)."
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Influence Mapping Exercise",
+      "description": "Map your professional network and identify where you have influence, where you need influence, and what actions would build it.",
+      "hints": [
+        "List everyone you interact with regularly — peers, managers, direct reports, stakeholders",
+        "Rate your current influence level with each (1-5)",
+        "Identify 2-3 relationships where increasing influence would have the most impact"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Influence Map Framework:\n\nFor each key relationship, document:\n- Current influence level (1-5)\n- Desired influence level\n- Key gap: What's missing? (credibility, visibility, relationship)\n- One action this month to build influence\n\nExample:\n- Director of Product (current: 2, desired: 4)\n- Gap: They don't know my work\n- Action: Present our team's results at the next product review\n\nTarget: Move one relationship up by 1 point this quarter."
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Leadership Philosophy Statement",
+      "description": "Write a one-paragraph leadership philosophy statement that captures your values, approach, and what you want to be known for as a leader.",
+      "hints": [
+        "Think about leaders you admire — what qualities do they share?",
+        "Consider what matters most to you: fairness, growth, excellence, autonomy?",
+        "Make it specific enough to guide daily decisions"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Template for Leadership Philosophy:\n\n\"I believe that [core belief about people/teams]. As a leader, I commit to [2-3 specific behaviors]. My team will know me for [what you want to be remembered for]. When faced with tough decisions, I will [decision-making principle].\"\n\nExample:\n\"I believe that people do their best work when they feel trusted and challenged. As a leader, I commit to being transparent about reasoning, giving credit generously, and having hard conversations early. My team will know me for helping them grow. When faced with tough decisions, I will ask 'what's right for the team and customer?' before 'what's easiest?'\"\n\nRefine this quarterly as you grow."
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

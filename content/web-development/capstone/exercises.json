@@ -1,0 +1,50 @@
+{
+  "topicId": "capstone",
+  "exercises": [
+    {
+      "title": "Build the Registration Flow",
+      "description": "Implement the complete user registration: (1) Frontend form with name, email, password fields, (2) POST /api/auth/register endpoint that validates input, hashes password, stores user, returns JWT, (3) After registration, automatically log the user in and redirect to the dashboard. Include error handling for duplicate emails and weak passwords.",
+      "hints": [
+        "Use bcrypt to hash passwords before storing",
+        "Generate a JWT token with the user's id, name, email",
+        "Check if email already exists before creating the user",
+        "Store the token in localStorage after successful registration"
+      ],
+      "solution": {
+        "language": "javascript",
+        "code": "// Backend: Register endpoint\napp.post('/api/auth/register', async (req, res) => {\n  try {\n    const { name, email, password } = req.body;\n    \n    // Validate\n    if (!name || !email || !password) {\n      return res.status(400).json({ error: 'All fields required' });\n    }\n    if (password.length < 6) {\n      return res.status(400).json({ error: 'Password too short' });\n    }\n    \n    // Check duplicate\n    const existing = users.find(u => u.email === email);\n    if (existing) {\n      return res.status(400).json({ error: 'Email already registered' });\n    }\n    \n    // Hash and store\n    const hash = await bcrypt.hash(password, 10);\n    const user = { id: nextUserId++, name, email, password: hash };\n    users.push(user);\n    \n    // Return token\n    const token = jwt.sign({ id: user.id, name, email }, SECRET);\n    res.status(201).json({ token, user: { id: user.id, name, email } });\n  } catch (err) {\n    res.status(500).json({ error: 'Registration failed' });\n  }\n});\n\n// Frontend: Register form handler\ndocument.getElementById('register-form').addEventListener('submit', async (e) => {\n  e.preventDefault();\n  const name = document.getElementById('name').value;\n  const email = document.getElementById('email').value;\n  const password = document.getElementById('password').value;\n  \n  try {\n    const res = await fetch('/api/auth/register', {\n      method: 'POST',\n      headers: { 'Content-Type': 'application/json' },\n      body: JSON.stringify({ name, email, password })\n    });\n    const data = await res.json();\n    if (!res.ok) throw new Error(data.error);\n    localStorage.setItem('token', data.token);\n    showDashboard();\n  } catch (err) {\n    showError(err.message);\n  }\n});"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Add Pagination to the Post Feed",
+      "description": "Modify the GET /api/posts endpoint to support pagination. Accept ?page=1&limit=10 query parameters. Return the posts for that page plus metadata (total posts, total pages, current page). On the frontend, add Previous/Next buttons to navigate between pages.",
+      "hints": [
+        "Use Array.slice() to get a subset of posts",
+        "Calculate total pages with Math.ceil(totalPosts / limit)",
+        "Return metadata alongside the posts: { posts, page, totalPages, total }",
+        "Disable Previous button on page 1, Next on last page"
+      ],
+      "solution": {
+        "language": "javascript",
+        "code": "// Backend: Paginated GET\napp.get('/api/posts', (req, res) => {\n  const page = parseInt(req.query.page) || 1;\n  const limit = parseInt(req.query.limit) || 10;\n  const start = (page - 1) * limit;\n  \n  const sliced = posts.slice(start, start + limit);\n  res.json({\n    posts: sliced,\n    page,\n    totalPages: Math.ceil(posts.length / limit),\n    total: posts.length\n  });\n});\n\n// Frontend: Pagination controls\nlet currentPage = 1;\n\nasync function loadPosts(page = 1) {\n  const res = await fetch(`/api/posts?page=${page}&limit=10`);\n  const data = await res.json();\n  renderPosts(data.posts);\n  renderPagination(data.page, data.totalPages);\n  currentPage = data.page;\n}\n\nfunction renderPagination(page, totalPages) {\n  const controls = document.getElementById('pagination');\n  controls.innerHTML = `\n    <button ${page <= 1 ? 'disabled' : ''} onclick=\"loadPosts(${page - 1})\">Previous</button>\n    <span>Page ${page} of ${totalPages}</span>\n    <button ${page >= totalPages ? 'disabled' : ''} onclick=\"loadPosts(${page + 1})\">Next</button>\n  `;\n}"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Implement Like Functionality",
+      "description": "Add a like button to each post. When clicked, it should: (1) Send a POST /api/posts/:id/like request, (2) Update the like count on the server, (3) Update the button on the frontend without reloading the page. Only authenticated users can like posts. A user can only like a post once.",
+      "hints": [
+        "Track which users have liked which posts (use a Set per post)",
+        "Send the JWT token in the request headers",
+        "Optimistically update the UI, then confirm with the server",
+        "Toggle the like button appearance based on whether the user already liked it"
+      ],
+      "solution": {
+        "language": "javascript",
+        "code": "// Backend: Like endpoint\napp.post('/api/posts/:id/like', auth, (req, res) => {\n  const post = posts.find(p => p.id === parseInt(req.params.id));\n  if (!post) return res.status(404).json({ error: 'Not found' });\n  \n  if (!post.likedBy) post.likedBy = [];\n  \n  const alreadyLiked = post.likedBy.includes(req.user.id);\n  if (alreadyLiked) {\n    // Unlike\n    post.likedBy = post.likedBy.filter(id => id !== req.user.id);\n    post.likes--;\n  } else {\n    // Like\n    post.likedBy.push(req.user.id);\n    post.likes++;\n  }\n  \n  res.json({ likes: post.likes, liked: !alreadyLiked });\n});\n\n// Frontend: Like handler\nasync function likePost(postId) {\n  const token = localStorage.getItem('token');\n  const res = await fetch(`/api/posts/${postId}/like`, {\n    method: 'POST',\n    headers: { 'Authorization': 'Bearer ' + token }\n  });\n  const data = await res.json();\n  if (res.ok) {\n    const btn = document.getElementById(`like-${postId}`);\n    btn.textContent = `❤ ${data.likes}`;\n    btn.classList.toggle('liked', data.liked);\n  }\n}"
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

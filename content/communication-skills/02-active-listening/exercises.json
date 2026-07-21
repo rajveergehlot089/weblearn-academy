@@ -1,0 +1,38 @@
+{
+  "topicId": "02-active-listening",
+  "exercises": [
+    {
+      "title": "The Paraphrase Challenge",
+      "description": "Watch a 5-minute interview or podcast clip. After listening, write down: (1) the main point in your own words, (2) one emotion the speaker seemed to feel, (3) one question you'd ask to go deeper. Then re-listen and compare your summary to what was actually said.",
+      "hints": [
+        "Don't write during the clip — listen fully first",
+        "Use 'They were saying...' to start your paraphrase",
+        "If your summary is inaccurate, that's expected — this is a skill that improves with practice"
+      ],
+      "solution": "After 5 minutes of listening, you should be able to say: 'The main point was [X]. They seemed to feel [emotion] because [reason]. One thing I'm curious about is [question].' If your summary misses the mark, re-listen and note what you missed. This trains your brain to listen for content, emotion, and gaps — all three levels.",
+      "difficulty": "easy"
+    },
+    {
+      "title": "The Silent Listener",
+      "description": "In your next 3 conversations today, practice the 80/20 rule: listen 80% of the time, speak 20%. For each conversation, track: (1) How many times did you interrupt? (2) How many clarifying questions did you ask? (3) Did you paraphrase at least once?",
+      "hints": [
+        "If you catch yourself interrupting, say 'Sorry, go ahead' and let them continue",
+        "Ask at least one 'What did you mean by...' question per conversation",
+        "End each conversation with a brief summary of what you heard"
+      ],
+      "solution": "After tracking for a day, review your notes. Most people discover they interrupt 2-3x more than they think. The 80/20 rule isn't about staying silent — it's about creating space for the other person to fully express themselves. Try this for a week and notice how differently people respond to you.",
+      "difficulty": "medium"
+    },
+    {
+      "title": "The 'What I Heard' Check-In",
+      "description": "Choose a meaningful conversation you had this week. Replay it in your mind and answer: (1) What was the person's main message? (2) What emotion were they expressing? (3) What did they leave unsaid? (4) How did you respond? (5) Would they say you truly listened?",
+      "hints": [
+        "Be honest — most of us think we listen better than we actually do",
+        "Consider what the person's body language told you",
+        "Think about whether you made assumptions about their message"
+      ],
+      "solution": "This reflection exercise reveals listening blind spots. If you can't answer (1) or (2), you weren't fully present. If you can't answer (3), you may not have been listening at a global level. If your answer to (5) is uncertain, that's a sign to practice more active listening. The goal isn't perfection — it's awareness and gradual improvement.",
+      "difficulty": "hard"
+    }
+  ]
+}

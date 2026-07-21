@@ -1,0 +1,35 @@
+{
+  "topicId": "12-deployment",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Frontend Deployment",
+      "body": "Deploying to Vercel/Netlify:",
+      "code": {
+        "language": "javascript",
+        "snippet": "/*\n  Step 1: Push code to GitHub\n  Step 2: Connect GitHub repo to Vercel/Netlify\n  Step 3: Configure build settings\n\n  After deployment:\n  - You get a URL like: https://your-app.vercel.app\n  - Every git push auto-deploys\n  - PR previews for testing\n*/",
+        "explanation": "Static deployment is simple: push code, get URL. No server to manage."
+      }
+    },
+    {
+      "heading": "Backend Deployment",
+      "body": "Deploying Node.js to Render:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Render deployment steps:\n// 1. Push to GitHub\n// 2. Create new Web Service on Render\n// 3. Configure:\n//    - Build command: npm install\n//    - Start command: node server.js\n\n// Important: Use environment variables!\nconst PORT = process.env.PORT || 3000;\nconst JWT_SECRET = process.env.JWT_SECRET;\n\napp.listen(PORT, () => {\n  console.log('Server running on port ' + PORT);\n});",
+        "explanation": "Always use environment variables for secrets — never commit .env files."
+      }
+    },
+    {
+      "heading": "Production Checklist",
+      "body": "Before deploying:",
+      "code": {
+        "language": "javascript",
+        "snippet": "/*\n  Security:\n  - Use environment variables\n  - Enable HTTPS\n  - Add rate limiting\n  - Validate all user input\n\n  Performance:\n  - Enable gzip compression\n  - Set cache headers\n  - Optimize images\n\n  Monitoring:\n  - Add error logging\n  - Monitor uptime\n*/",
+        "explanation": "Focus on: environment variables, HTTPS, error handling, and a working README."
+      }
+    }
+  ],
+  "summary": "Frontend deploys to static hosts (Vercel/Netlify), backend to server hosts (Render). Use environment variables for secrets. Configure CORS to connect them."
+}

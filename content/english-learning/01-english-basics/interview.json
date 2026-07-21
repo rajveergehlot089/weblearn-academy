@@ -1,0 +1,25 @@
+{
+  "topicId": "01-english-basics",
+  "questions": [
+    {
+      "question": "How many vowels and consonants are there in English?",
+      "answer": "There are 5 vowel letters (A, E, I, O, U) and 21 consonant letters. However, English has about 12-15 distinct vowel sounds depending on the dialect.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What is the difference between short and long vowel sounds?",
+      "answer": "Short vowels are quick sounds like the \"a\" in \"cat\" or the \"i\" in \"sit\". Long vowels sound like the letter name itself — \"a\" in \"cake\", \"i\" in \"bike\". The length isn't just about time, but about the mouth shape and tongue position.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Why do English words sometimes have silent letters?",
+      "answer": "English spelling was standardized centuries ago when pronunciation was different. Words like \"knight\" (silent k, gh), \"know\" (silent k), and \"psychology\" (silent p) retain their old spellings. The Great Vowel Shift of 1400-1700 changed sounds but not spellings.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is word stress and why does it matter?",
+      "answer": "Word stress is the emphasis placed on certain syllables in a word. It matters because misplacing stress can confuse listeners — \"REcord\" (noun, a vinyl disc) vs \"reCORD\" (verb, to capture audio). Most two-syllable nouns stress the first syllable, while verbs stress the second.",
+      "difficulty": "medium"
+    }
+  ]
+}

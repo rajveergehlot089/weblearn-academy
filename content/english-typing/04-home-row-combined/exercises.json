@@ -1,0 +1,31 @@
+{
+  "topicId": "04-home-row-combined",
+  "exercises": [
+    {
+      "title": "Basic Practice",
+      "description": "Type these words: flask lad salad fall lass daffodil flash dash",
+      "hints": [
+        "Keep eyes on screen",
+        "Use proper finger placement"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "flask lad salad fall lass daffodil flash dash"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Sentence Practice",
+      "description": "Type each sentence without looking at the keyboard.",
+      "hints": [
+        "Focus on accuracy",
+        "Use all fingers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "A flask had a lad of salad.\nFlash had a sad lass.\nDash falls all."
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

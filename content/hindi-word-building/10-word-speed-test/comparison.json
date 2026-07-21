@@ -1,0 +1,18 @@
+{
+  "topicId": "10-word-speed-test",
+  "comparisons": [
+    {
+      "concept": "Word Building Speed Test",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Word Building Speed Test\nconst result = {\n  concept: \"Word Building Speed Test\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Word Building Speed Test\nresult = {\n    \"concept\": \"Word Building Speed Test\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Word Building Speed Test is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Word Building Speed Test is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

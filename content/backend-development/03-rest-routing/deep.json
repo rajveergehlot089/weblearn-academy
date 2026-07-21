@@ -1,0 +1,59 @@
+{
+  "topicId": "03-rest-routing",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "RESTful Resource Design",
+      "body": "Good REST API design starts with identifying your resources and their relationships. Resources should be nouns, plural, and follow a consistent naming convention.",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Well-designed RESTful routes\n// Users resource\napp.get('/api/users', getAllUsers);           // GET /api/users\napp.get('/api/users/:id', getUserById);       // GET /api/users/123\napp.post('/api/users', createUser);           // POST /api/users\napp.put('/api/users/:id', updateUser);        // PUT /api/users/123\napp.delete('/api/users/:id', deleteUser);     // DELETE /api/users/123\n\n// Nested resources (User's posts)\napp.get('/api/users/:userId/posts', getUserPosts);    // GET /api/users/123/posts\napp.post('/api/users/:userId/posts', createPost);     // POST /api/users/123/posts\n\n// Alternative: separate posts resource\napp.get('/api/posts', getAllPosts);             // GET /api/posts\napp.get('/api/posts/:id', getPostById);        // GET /api/posts/456\napp.get('/api/posts?userId=123', getPostsByUser); // Filter by user",
+        "explanation": "Notice the consistent pattern: plural nouns for collections, IDs for specific items. Nested resources show relationships but keep URLs shallow."
+      }
+    },
+    {
+      "heading": "Handling Request Parameters",
+      "body": "Express provides three ways to receive data from clients: URL parameters, query strings, and request bodies.",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Route parameters (required for identification)\napp.get('/api/products/:id', (req, res) => {\n  const productId = req.params.id;  // 'id' from URL\n  // Get product from database\n  res.json({ id: productId, name: 'Widget' });\n});\n\n// Query parameters (optional filters/pagination)\napp.get('/api/products', (req, res) => {\n  const { category, minPrice, maxPrice, page = 1, limit = 10 } = req.query;\n  \n  // Build query based on parameters\n  let query = {};\n  if (category) query.category = category;\n  if (minPrice || maxPrice) {\n    query.price = {};\n    if (minPrice) query.price.$gte = parseFloat(minPrice);\n    if (maxPrice) query.price.$lte = parseFloat(maxPrice);\n  }\n  \n  // Pagination\n  const skip = (page - 1) * limit;\n  \n  res.json({ query, page: parseInt(page), limit: parseInt(limit) });\n});\n\n// Request body (for creating/updating resources)\napp.post('/api/products', (req, res) => {\n  const { name, price, category, description } = req.body;\n  \n  // Validate required fields\n  if (!name || !price) {\n    return res.status(400).json({ error: 'Name and price are required' });\n  }\n  \n  const product = {\n    id: Date.now(),\n    name,\n    price: parseFloat(price),\n    category: category || 'general',\n    description: description || ''\n  };\n  \n  res.status(201).json(product);\n});",
+        "explanation": "Parameters come from different parts of the request: URL params for identification, query strings for filtering, and body for data payload."
+      }
+    },
+    {
+      "heading": "Status Codes and Error Handling",
+      "body": "Proper HTTP status codes are crucial for REST APIs. They tell the client exactly what happened with their request.",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Common status codes in REST APIs\napp.get('/api/users/:id', async (req, res) => {\n  try {\n    const user = await User.findById(req.params.id);\n    \n    if (!user) {\n      return res.status(404).json({\n        error: 'User not found',\n        message: `No user exists with ID ${req.params.id}`\n      });\n    }\n    \n    res.json(user);\n  } catch (error) {\n    res.status(500).json({\n      error: 'Internal server error',\n      message: error.message\n    });\n  }\n});\n\n// Status code reference\nconst STATUS_CODES = {\n  200: 'OK - Request successful',\n  201: 'Created - Resource created successfully',\n  204: 'No Content - Successful delete',\n  400: 'Bad Request - Invalid request data',\n  401: 'Unauthorized - Authentication required',\n  403: 'Forbidden - Insufficient permissions',\n  404: 'Not Found - Resource doesn\\'t exist',\n  409: 'Conflict - Resource already exists',\n  422: 'Unprocessable Entity - Validation failed',\n  500: 'Internal Server Error - Server problem'\n};",
+        "explanation": "Use 2xx for success, 4xx for client errors, 5xx for server errors. Always include a meaningful error message in the response body."
+      }
+    },
+    {
+      "heading": "Versioning and Pagination",
+      "body": "As your API grows, you'll need to version it and paginate large result sets to maintain performance.",
+      "code": {
+        "language": "javascript",
+        "snippet": "// API Versioning\n// Option 1: URL path versioning\napp.use('/api/v1', v1Router);\napp.use('/api/v2', v2Router);\n\n// Option 2: Header versioning\napp.use('/api', (req, res, next) => {\n  const version = req.headers['accept-version'] || 'v1';\n  req.apiVersion = version;\n  next();\n});\n\n// Pagination implementation\napp.get('/api/products', async (req, res) => {\n  const page = parseInt(req.query.page) || 1;\n  const limit = parseInt(req.query.limit) || 10;\n  const sortBy = req.query.sortBy || 'createdAt';\n  const order = req.query.order === 'desc' ? -1 : 1;\n  \n  try {\n    const total = await Product.countDocuments();\n    const products = await Product.find()\n      .sort({ [sortBy]: order })\n      .skip((page - 1) * limit)\n      .limit(limit);\n    \n    res.json({\n      data: products,\n      pagination: {\n        total,\n        page,\n        limit,\n        totalPages: Math.ceil(total / limit),\n        hasNextPage: page * limit < total,\n        hasPrevPage: page > 1\n      }\n    });\n  } catch (error) {\n    res.status(500).json({ error: error.message });\n  }\n});",
+        "explanation": "Versioning allows you to make breaking changes without affecting existing clients. Pagination prevents sending huge amounts of data at once."
+      }
+    },
+    {
+      "heading": "HATEOAS (Hypermedia as the Engine of Application State)",
+      "body": "HATEOAS adds links to your API responses so clients can discover available actions without hardcoding URLs.",
+      "code": {
+        "language": "javascript",
+        "snippet": "// HATEOAS example\napp.get('/api/users/:id', async (req, res) => {\n  const user = await User.findById(req.params.id);\n  \n  const response = {\n    id: user.id,\n    name: user.name,\n    email: user.email,\n    links: {\n      self: `/api/users/${user.id}`,\n      posts: `/api/users/${user.id}/posts`,\n      followers: `/api/users/${user.id}/followers`,\n      update: `/api/users/${user.id}`,\n      delete: `/api/users/${user.id}`\n    }\n  };\n  \n  res.json(response);\n});\n\n// Collection with links\napp.get('/api/users', async (req, res) => {\n  const users = await User.find();\n  const page = parseInt(req.query.page) || 1;\n  const limit = parseInt(req.query.limit) || 10;\n  const total = await User.countDocuments();\n  \n  res.json({\n    data: users,\n    links: {\n      self: `/api/users?page=${page}&limit=${limit}`,\n      next: page * limit < total ? `/api/users?page=${page + 1}&limit=${limit}` : null,\n      prev: page > 1 ? `/api/users?page=${page - 1}&limit=${limit}` : null\n    }\n  });\n});",
+        "explanation": "HATEOAS makes your API self-documenting. Clients can discover available actions by following links in responses."
+      }
+    }
+  ],
+  "jargon": [
+    { "term": "Idempotent", "definition": "An operation that produces the same result when called multiple times. GET, PUT, and DELETE are idempotent; POST is not." },
+    { "term": "Stateless", "definition": "The server doesn't store client state between requests. Each request contains all information needed to process it." },
+    { "term": "Resource Representation", "definition": "The format in which a resource is sent to the client, typically JSON or XML." },
+    { "term": "Content Negotiation", "definition": "The process of selecting the best representation for a response based on the client's preferences (Accept header)." }
+  ],
+  "summary": "RESTful routing provides a consistent, scalable way to design APIs. Use proper HTTP methods, status codes, and resource naming. Implement pagination, versioning, and HATEOAS for production-ready APIs."
+}

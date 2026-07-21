@@ -1,0 +1,30 @@
+{
+  "topicId": "09-team-building",
+  "questions": [
+    {
+      "question": "How do you build trust in a new team?",
+      "answer": "I start with structured vulnerability: each person shares their 'user manual of me' — how they work best, what motivates them, what frustrates them. Then I model vulnerability myself — sharing a past failure and what I learned. I create low-stakes shared experiences: team lunches, pair work rotations, collaborative problem-solving. And I follow through on every small promise to build credibility. Trust is built through consistent actions, not grand gestures.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you keep a remote team connected?",
+      "answer": "I invest in intentional connection: virtual coffee chats (15 min, no agenda), shared rituals (weekly wins, monthly retrospectives), and a dedicated social channel for non-work sharing. I schedule regular 1-on-1s that go beyond status updates. I create opportunities for pair work across the team. And I make sure remote workers are included in decisions, not just informed about them. Connection requires structure when you can't rely on hallway conversations.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's the most effective team building activity you've used?",
+      "answer": "The 'user manual of me' exercise. Each person writes a one-page document about how they work best — their communication preferences, strengths, triggers, and what they need from teammates. Then we share them in a team session. It's low-cost, high-impact because it: (1) surfaces differences that would otherwise cause friction, (2) normalizes discussing working styles, and (3) gives everyone actionable information for better collaboration.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you build team culture in a fast-growing team?",
+      "answer": "You have to be deliberate. I create clear onboarding rituals: new hires get a buddy, a team handbook, and a 'first 30 days' plan. I establish non-negotiable team rituals: weekly retros, monthly team lunches, quarterly offsites. I hire for cultural add, not cultural fit — diversity strengthens culture. And I address anti-cultural behavior quickly. Culture scales only when it's documented, modeled, and reinforced consistently.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "How do you handle team building when team members are skeptical?",
+      "answer": "I don't force it. I start with work-related activities that feel productive: a retrospective, a problem-solving session, or a process improvement workshop. As people experience the benefits of better communication and collaboration, they become more open to relationship-building. I also respect that not everyone enjoys social activities — I provide options (virtual and in-person, structured and unstructured). The goal is trust, not mandatory fun.",
+      "difficulty": "medium"
+    }
+  ]
+}

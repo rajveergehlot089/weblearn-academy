@@ -1,0 +1,52 @@
+{
+  "topicId": "09-sleep-health",
+  "comparisons": [
+    {
+      "concept": "Health Foundations for Developers",
+      "items": [
+        {
+          "name": "Sleep",
+          "description": "7-9 hours of consistent, quality sleep per night",
+          "best_for": "Memory consolidation, immune function, cognitive performance",
+          "minimum_effective_dose": "7 hours, consistent schedule ±30 min",
+          "developer_impact": "30% cognitive impairment after one bad night; chronic sleep debt doubles bug rate",
+          "quick_fix": "Consistent wake time + dark room + no screens 1 hour before bed"
+        },
+        {
+          "name": "Exercise",
+          "description": "150+ minutes of moderate exercise per week",
+          "best_for": "Focus, stress reduction, cardiovascular health, mood",
+          "minimum_effective_dose": "30 min, 5 days/week (or 3 x 50 min)",
+          "developer_impact": "Improves focus for 2-3 hours post-exercise; reduces sitting-related health risks",
+          "quick_fix": "Morning walk or jog before work; standing desk for afternoon"
+        },
+        {
+          "name": "Nutrition",
+          "description": "Balanced meals with protein, complex carbs, and healthy fats",
+          "best_for": "Sustained energy, cognitive function, mood stability",
+          "minimum_effective_dose": "Protein at breakfast, water throughout day, no sugar crashes",
+          "developer_impact": "Sugar crashes cause afternoon brain fog; dehydration reduces cognition 25%",
+          "quick_fix": "Eggs/nuts for breakfast, water bottle on desk, avoid vending machine"
+        },
+        {
+          "name": "Ergonomics",
+          "description": "Proper workspace setup to prevent chronic pain and injury",
+          "best_for": "Long-term health, comfort, sustained productivity",
+          "minimum_effective_dose": "Monitor at eye level, chair with lumbar support, hourly movement",
+          "developer_impact": "RSI, back pain, and eye strain are top causes of developer disability",
+          "quick_fix": "Raise monitor to eye level, set hourly posture reminder, 20-20-20 eye rule"
+        },
+        {
+          "name": "Social Connection",
+          "description": "Regular meaningful interactions with friends, family, and colleagues",
+          "best_for": "Mental health, stress resilience, sense of belonging",
+          "minimum_effective_dose": "1 meaningful conversation per day, 1 social activity per week",
+          "developer_impact": "Isolation increases depression risk; social support buffers work stress",
+          "quick_fix": "Lunch with a colleague, weekly call with friend, join a developer community"
+        }
+      ],
+      "insight": "These five areas are interconnected: poor sleep ruins exercise motivation, bad nutrition reduces focus, poor ergonomics causes pain that disrupts sleep. Start with sleep — it's the foundation that makes everything else possible."
+    }
+  ],
+  "keyInsight": "Sleep, exercise, nutrition, ergonomics, and social connection are the five foundations of developer health. They're interconnected — fix sleep first (it enables everything else), then add exercise (it improves focus and sleep), then optimize nutrition and ergonomics."
+}

@@ -1,0 +1,32 @@
+{
+  "topicId": "05-time-management",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The Time Audit: Where Does Your Time Actually Go?",
+      "body": "Most people have no idea where their time goes. Before optimizing, you need data. Here's how to conduct a time audit:"
+    },
+    {
+      "heading": "Step 1: Track Your Time for One Week",
+      "body": "For 7 days, log every 30-minute block. Use a simple spreadsheet or app. Be honest — include everything (work, commute, social media, meals, sleep, TV).\n\n**Example log**:\n- 6:00-6:30 AM: Waking up, checking phone (30 min)\n- 6:30-7:00 AM: Getting ready (30 min)\n- 7:00-7:30 AM: Commute (30 min)\n- 7:30-8:00 AM: Email and planning (30 min)\n- 8:00-12:00 PM: Deep work (4 hours)\n- 12:00-1:00 PM: Lunch and social media (1 hour)\n- 1:00-5:00 PM: Meetings and tasks (4 hours)\n- 5:00-6:00 PM: Commute (1 hour)\n- 6:00-10:00 PM: Dinner, TV, relaxation (4 hours)\n- 10:00-11:00 PM: Phone, getting ready for bed (1 hour)\n- 11:00 PM-6:00 AM: Sleep (7 hours)"
+    },
+    {
+      "heading": "Step 2: Analyze Your Patterns",
+      "body": "After one week, categorize your time:\n\n- **Productive work**: Time spent on high-value tasks\n- **Administrative work**: Email, meetings, reports\n- **Personal care**: Sleep, exercise, meals\n- **Leisure**: TV, social media, hobbies\n- **Wasted time**: Scrolling, procrastination, unproductive meetings\n\n**Common findings**:\n- Most people waste 2-3 hours daily on social media/phone\n- Email checking fragments deep work into 15-minute chunks\n- Meetings consume 30-50% of work time, often without clear outcomes"
+    },
+    {
+      "heading": "Step 3: Optimize Based on Data",
+      "body": "Now that you know where time goes, optimize:\n\n1. **Protect your peak hours**: When are you most alert? Schedule deep work during those hours. Most people peak between 9-11 AM.\n\n2. **Batch similar tasks**: Check email at 2-3 set times daily instead of constantly. Group phone calls together.\n\n3. **Eliminate or reduce time-wasters**: Set app limits, unsubscribe from unnecessary emails, decline low-value meetings.\n\n4. **Add buffer time**: Don't schedule back-to-back meetings. Add 15-minute buffers for transitions and unexpected tasks."
+    },
+    {
+      "heading": "The Weekly Planning Ritual",
+      "body": "Every Sunday evening (30 minutes), plan your week:\n\n1. **Review last week**: What went well? What didn't? What did I learn?\n\n2. **Identify top 3 priorities**: What are the 3 most important outcomes for this week?\n\n3. **Time block your calendar**: Schedule deep work, meetings, exercise, and personal time. Treat them as non-negotiable appointments.\n\n4. **Prepare for obstacles**: What could derail your plan? How will you handle it?\n\n5. **Set boundaries**: What will you say 'no' to this week? What won't you do?"
+    },
+    {
+      "heading": "Energy Management > Time Management",
+      "body": "Time management without energy management is futile. You can have 8 hours scheduled but only 4 hours of productive energy.\n\n**Optimize your energy**:\n- **Sleep**: 7-8 hours is non-negotiable. Sleep deprivation reduces productivity by 25%.\n- **Exercise**: 30 minutes of movement boosts energy for 2-3 hours.\n- **Nutrition**: Eat whole foods, avoid sugar crashes, stay hydrated.\n- **Breaks**: Take a 5-10 minute break every 90 minutes. Your brain needs rest.\n- **Environment**: Good lighting, comfortable temperature, minimal distractions."
+    }
+  ],
+  "summary": "Start with a time audit to understand where your time actually goes. Most people waste 2-3 hours daily on low-value activities. Optimize by protecting peak hours, batching similar tasks, and eliminating time-wasters. Use weekly planning to set priorities and time block your calendar. Remember: energy management is as important as time management — protect sleep, exercise, and breaks."
+}

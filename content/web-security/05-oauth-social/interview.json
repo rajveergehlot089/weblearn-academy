@@ -1,0 +1,25 @@
+{
+  "topicId": "05-oauth-social",
+  "questions": [
+    {
+      "question": "What is OAuth & Social Login and why is it important?",
+      "answer": "OAuth & Social Login is a fundamental concept that OAuth 2.0 flow, Google/GitHub login, and third-party authentication. It's important because it forms the foundation for building robust and efficient applications. Understanding OAuth & Social Login allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply OAuth & Social Login in a real project?",
+      "answer": "In practice, OAuth & Social Login is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with OAuth & Social Login?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain OAuth & Social Login to a beginner?",
+      "answer": "OAuth & Social Login is essentially about oauth 2.0 flow, google/github login, and third-party authentication. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

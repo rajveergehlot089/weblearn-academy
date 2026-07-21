@@ -1,0 +1,30 @@
+{
+  "topicId": "04-lists-tables",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "HTML Lists",
+      "body": "HTML provides three types of lists:\n• Unordered lists (ul): Bullet points for non-sequential items\n• Ordered lists (ol): Numbered items for sequential content\n• Description lists (dl): Term/definition pairs"
+    },
+    {
+      "heading": "HTML Tables",
+      "body": "Tables display tabular data in rows and columns. Key elements:\n• table: Container for the entire table\n• tr: Table row\n• td: Table data cell\n• th: Table header cell (bold and centered by default)\n• thead/tbody/tfoot: Semantic sections"
+    },
+    {
+      "heading": "Best Practices",
+      "body": "Use lists for navigation, steps, or grouping items. Use tables only for tabular data, not for layout. Always include headers and use semantic sections for accessibility."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Tabular Data",
+      "definition": "Information organized in rows and columns, like spreadsheets or databases"
+    },
+    {
+      "term": "Semantic",
+      "definition": "Elements that convey meaning about their content (like thead vs just tr)"
+    }
+  ],
+  "summary": "HTML lists organize content with bullets, numbers, or definitions. Tables display tabular data with rows and columns. Use semantic elements for accessibility and proper structure."
+}

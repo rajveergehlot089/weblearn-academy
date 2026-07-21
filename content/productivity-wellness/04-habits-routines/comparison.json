@@ -1,0 +1,52 @@
+{
+  "topicId": "04-habits-routines",
+  "comparisons": [
+    {
+      "concept": "Habit Building Methods",
+      "items": [
+        {
+          "name": "Habit Stacking (Atomic Habits)",
+          "description": "Link new habits to existing routines: 'After I X, I will Y'",
+          "best_for": "Building new habits when you have established routines",
+          "pros": "Leverages existing neural pathways, automatic, requires no motivation",
+          "cons": "Takes 1-2 weeks to establish, new habit depends on old one",
+          "example": "After I pour coffee, I will review today's 3 priorities."
+        },
+        {
+          "name": "Implementation Intentions",
+          "description": "Pre-decide when and where you'll do the habit: 'I will [behavior] at [time] in [location]'",
+          "best_for": "Habits that happen at specific times",
+          "pros": "Research-backed (2-3x more likely to follow through), removes decision-making",
+          "cons": "Rigid — doesn't adapt well to schedule changes",
+          "example": "I will exercise at 7 AM in my living room."
+        },
+        {
+          "name": "Temptation Bundling",
+          "description": "Pair something you want to do with something you need to do",
+          "best_for": "Making unpleasant habits enjoyable",
+          "pros": "Creates immediate reward, makes hard habits attractive",
+          "cons": "Can become dependent on the bundled reward",
+          "example": "I only listen to my favorite podcast while exercising."
+        },
+        {
+          "name": "Environment Design",
+          "description": "Modify your physical space to make good habits easy and bad habits hard",
+          "best_for": "Habits that are blocked by friction or temptation",
+          "pros": "Removes willpower from the equation, works passively",
+          "cons": "Requires initial setup effort, may not work for all habits",
+          "example": "Put gym clothes by the door, delete social media apps from phone."
+        },
+        {
+          "name": "Accountability Partner",
+          "description": "Share your habit goals with someone and check in regularly",
+          "best_for": "Habits where you tend to quit when no one's watching",
+          "pros": "Social pressure increases follow-through (65% more likely)",
+          "cons": "Requires finding the right partner, can feel awkward",
+          "example": "Text your accountability partner every time you complete your habit."
+        }
+      ],
+      "insight": "The best habit-building strategy combines multiple methods: Environment Design to reduce friction, Habit Stacking to trigger the behavior, and Accountability to maintain consistency. Start with one method and add others as needed."
+    }
+  ],
+  "keyInsight": "Habits are more powerful than motivation because they run on autopilot. Design the Cue → Routine → Reward loop, use the Two-Minute Rule to start small, and combine Environment Design + Habit Stacking + Accountability for maximum consistency."
+}

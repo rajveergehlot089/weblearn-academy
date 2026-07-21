@@ -1,0 +1,38 @@
+{
+  "topicId": "10-productivity-test",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Self-Assessment: The Full Diagnostic",
+      "body": "Use this comprehensive diagnostic to evaluate every aspect of your productivity and wellness system. Be honest — this is for your eyes only. Score each item 1-5 (1 = never/rarely, 5 = almost always).",
+      "code": {
+        "language": "text",
+        "snippet": "PRODUCTIVITY SYSTEM DIAGNOSTIC:\n\nSECTION A: TIME MANAGEMENT (___/30)\n1. I use a prioritization system (Eisenhower, etc.)          (1-2-3-4-5)\n2. I time block my calendar for deep work sessions           (1-2-3-4-5)\n3. I complete my most important task before checking email    (1-2-3-4-5)\n4. I batch similar tasks to reduce context switching          (1-2-3-4-5)\n5. I review my week and plan next week                        (1-2-3-4-5)\n6. I finish most tasks within my estimated time               (1-2-3-4-5)\n\nSECTION B: FOCUS & DEEP WORK (___/25)\n7. I use a focus technique (Pomodoro, timeboxing, etc.)       (1-2-3-4-5)\n8. I can work 25+ minutes without checking my phone           (1-2-3-4-5)\n9. I protect 2+ hours daily for deep, uninterrupted work     (1-2-3-4-5)\n10. I minimize unnecessary meetings                           (1-2-3-4-5)\n11. I set my Slack/email to Do Not Disturb during focus time  (1-2-3-4-5)\n\nSECTION C: GOALS & HABITS (___/25)\n12. I have written SMART goals for this quarter               (1-2-3-4-5)\n13. I track my progress toward my goals weekly                (1-2-3-4-5)\n14. I have consistent morning and evening routines            (1-2-3-4-5)\n15. I use habit stacking to build new behaviors               (1-2-3-4-5)\n16. I review and adjust goals quarterly                       (1-2-3-4-5)\n\nSECTION D: STRESS & MINDFULNESS (___/30)\n17. I recognize my top 3 stress triggers                      (1-2-3-4-5)\n18. I use breathing techniques when stressed                  (1-2-3-4-5)\n19. I practice mindfulness or meditation at least 3x/week     (1-2-3-4-5)\n20. I do a body scan or PMR when physically tense             (1-2-3-4-5)\n21. I have a healthy way to process difficult emotions         (1-2-3-4-5)\n22. I can identify when I'm burned out and take action         (1-2-3-4-5)\n\nSECTION E: PHYSICAL HEALTH (___/30)\n23. I sleep 7-9 hours consistently                            (1-2-3-4-5)\n24. I exercise at least 3 times per week                      (1-2-3-4-5)\n25. My workspace is properly ergonomic                        (1-2-3-4-5)\n26. I eat balanced meals (protein, vegetables, whole grains)  (1-2-3-4-5)\n27. I stay hydrated throughout the day                        (1-2-3-4-5)\n28. I take regular breaks (20-20-20 rule, hourly movement)   (1-2-3-4-5)\n\nSECTION F: WORK-LIFE BALANCE (___/30)\n29. I have clear boundaries between work and personal time    (1-2-3-4-5)\n30. I use a shutdown ritual to disconnect from work           (1-2-3-4-5)\n31. I don't check email/Slack after hours (except on-call)    (1-2-3-4-5)\n32. I have time for hobbies and relationships outside work    (1-2-3-4-5)\n33. I feel energized at the end of most workdays              (1-2-3-4-5)\n34. I take vacations and actually disconnect                  (1-2-3-4-5)\n\nTOTAL SCORE: ___/170\n\nSCORING GUIDE:\n136-170: EXCELLENT — You have a strong system. Focus on maintenance.\n102-135: GOOD — Solid foundation. Optimize your weakest areas.\n68-101:  DEVELOPING — Working system with gaps. Prioritize 2-3 areas.\n34-67:   FOUNDATIONAL — Significant gaps. Start with sleep + time management.\n0-33:    CRITICAL — Consider professional support (coach, therapist, mentor).",
+        "explanation": "This diagnostic covers all 9 modules of the course. Use your section scores to identify your strongest and weakest areas."
+      }
+    },
+    {
+      "heading": "Creating Your Personal Development Plan",
+      "body": "Based on your diagnostic, create a focused development plan:",
+      "code": {
+        "language": "text",
+        "snippet": "PERSONAL DEVELOPMENT PLAN TEMPLATE:\n\nSTEP 1: Identify your 2 weakest sections (lowest scores)\n\nStep 2: For each weak section, identify 1 specific habit to build:\n  Example: Low 'Focus' score → 'Use Pomodoro for all deep work sessions'\n  Example: Low 'Sleep' score → 'Consistent 10:30 PM bedtime, no screens after 9:30'\n\nStep 3: Apply the Two-Minute Rule:\n  Scale the habit to 2 minutes or less:\n  - 'Meditate daily' → '3 deep breaths after morning coffee'\n  - 'Exercise 3x/week' → '10-minute walk on Monday, Wednesday, Friday'\n\nStep 4: Track for 4 weeks:\n  - Completion rate (target: 80%+)\n  - Before/after comparison (stress level, energy, focus)\n\nStep 5: Review and adjust:\n  - After 4 weeks: Is the habit automatic? If yes, add the next one.\n  - If no: Scale it down further, change the trigger, or try a different approach.\n\nEXAMPLE PLAN:\n\nWEEK 1-4: Focus on sleep\n  Habit: 'After I close laptop at 5:30 PM, I will not check work until tomorrow'\n  Track: Sleep quality (1-10), morning energy (1-10)\n  Target: 80% compliance, +2 points on energy\n\nWEEK 5-8: Add focus technique\n  Habit: 'After I sit at my desk at 9 AM, I will start a 25-min Pomodoro'\n  Track: Pomodoros completed, deep work hours\n  Target: 80% compliance, 6+ deep work hours/week\n\nWEEK 9-12: Add stress management\n  Habit: 'After I pour morning coffee, I will do 3 cycles of box breathing'\n  Track: Stress level before/after, completion rate\n  Target: 80% compliance, -2 points on stress\n\nREASSESS: Retake the diagnostic at Week 12 and compare scores."
+      }
+    },
+    {
+      "heading": "The Compounding Effect",
+      "body": "Productivity and wellness improvements compound over time. Small daily habits — 3 minutes of breathing, 30 minutes of exercise, consistent sleep — produce dramatic results over months. The developers who are consistently productive and healthy aren't doing extraordinary things — they're doing ordinary things consistently. Your job isn't to overhaul your life overnight. It's to build one small habit, maintain it for a month, then add another. In 6 months, you'll be unrecognizable."
+    },
+    {
+      "heading": "Practice Task",
+      "body": "Complete the full diagnostic above. Identify your 2 weakest sections. Create a 12-week development plan focusing on those sections, with one habit per 4-week block. Start Week 1 today."
+    }
+  ],
+  "keyInsights": [
+    "Low scores aren't failures — they're diagnostic data showing where to focus",
+    "Focus on 1-2 areas at a time — trying to fix everything at once fixes nothing",
+    "The Two-Minute Rule makes habits automatic before adding complexity",
+    "Compounding matters: small daily habits produce dramatic results over months"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "topicId": "02-personal-branding",
+  "comparisons": [
+    {
+      "concept": "Professional profiles — generic vs. branded",
+      "generic_profile": {
+        "label": "Generic Profile",
+        "code": "Software Developer | Open to opportunities"
+      },
+      "branded_profile": {
+        "label": "Branded Profile",
+        "code": "Frontend Engineer | React & Accessibility | Building inclusive enterprise dashboards"
+      },
+      "explanation": "The generic profile could describe millions of people. The branded profile immediately tells visitors what you specialize in, what technologies you use, and what kind of work you do. Recruiters searching for React or accessibility will find the branded profile first."
+    },
+    {
+      "concept": "Sharing content — passive vs. intentional",
+      "passive": {
+        "label": "Passive Approach",
+        "code": "Maybe share a link to an article once a month with no commentary"
+      },
+      "intentional": {
+        "label": "Intentional Approach",
+        "code": "Weekly post: share a specific problem you solved, with a code snippet, explain what you learned, and tag 2-3 relevant people"
+      },
+      "explanation": "Passive sharing builds nothing. Intentional sharing builds visibility, demonstrates expertise, and creates engagement. Adding context ('here's what I learned') is more valuable than just sharing a link."
+    },
+    {
+      "concept": "Being a generalist vs. specialist brand",
+      "generalist": {
+        "label": "Generalist",
+        "code": "Full-stack developer proficient in React, Angular, Vue, Node, Python, Java, Go, Docker, AWS..."
+      },
+      "specialist": {
+        "label": "Specialist",
+        "code": "React performance engineer — I help teams cut bundle sizes by 40%+ through lazy loading and code splitting strategies"
+      },
+      "explanation": "A long list of technologies signals 'I've used many things' but not 'I'm great at any of them.' The specialist brand is instantly memorable and positions you as the go-to person for a specific problem."
+    }
+  ],
+  "keyInsight": "A strong personal brand is specific, consistent, and visible. Replace generic descriptions with specific niches. Share intentionally, not passively. Being known for one thing well beats being known for everything vaguely."
+}

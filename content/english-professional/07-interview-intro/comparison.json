@@ -1,0 +1,18 @@
+{
+  "topicId": "07-interview-intro",
+  "comparisons": [
+    {
+      "concept": "Interview Preparation Basics",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Interview Preparation Basics\nconst result = {\n  concept: \"Interview Preparation Basics\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Interview Preparation Basics\nresult = {\n    \"concept\": \"Interview Preparation Basics\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Interview Preparation Basics is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Interview Preparation Basics is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

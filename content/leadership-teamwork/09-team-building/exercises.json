@@ -1,0 +1,47 @@
+{
+  "topicId": "09-team-building",
+  "exercises": [
+    {
+      "title": "User Manual of Me",
+      "description": "Create your own 'user manual' — a one-page document describing how to work with you. Then have your team do the same and share.",
+      "hints": [
+        "Include: communication preferences, best working hours, pet peeves, strengths",
+        "Be honest — the more authentic, the more useful",
+        "Share in a team session and discuss how to leverage differences"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "User Manual of Me Template:\n\nAbout Me:\n- I do my best work when: ___________\n- My communication style: [direct/diplomatic, async/prefer calls]\n- My strengths: ___________\n- What frustrates me: ___________\n- How to give me feedback: ___________\n- My working hours: ___________\n- How I handle stress: ___________\n- What I need from my team: ___________\n\nExample:\n- I do my best work in the morning — schedule important meetings before noon\n- Communication: I prefer Slack for quick questions, email for complex topics\n- Strengths: breaking down complex problems, mentoring\n- Frustrations: meetings without agendas, last-minute changes\n- Feedback: direct, please. Don't sugarcoat.\n- Working hours: 8am-5pm, but flexible\n- Stress: I need 30 minutes of quiet time after a tough meeting\n- Need: trust and autonomy to do my best work"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Team Retrospective Facilitation",
+      "description": "Facilitate a team retrospective using the Start/Stop/Continue framework. Capture actions and follow up next week.",
+      "hints": [
+        "Create psychological safety — no blame, focus on the process",
+        "Let everyone contribute before discussing",
+        "Limit to 3 action items — too many won't get done"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Team Retrospective Agenda (60 min):\n\n1. Set the stage (5 min):\n   'This is a safe space. We're here to improve, not blame.'\n\n2. Gather data (15 min):\n   Each person writes sticky notes for:\n   - Start: What should we START doing?\n   - Stop: What should we STOP doing?\n   - Continue: What should we CONTINUE doing?\n\n3. Discuss (20 min):\n   Group similar items. Discuss the top themes.\n   For each: 'What specifically will we do?'\n\n4. Decide actions (10 min):\n   Limit to 3 actions. Each has:\n   - What: ___________\n   - Who: ___________\n   - By when: ___________\n\n5. Close (10 min):\n   One-word check-out: How are you feeling?\n   Schedule next retro."
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Team Culture Ritual Design",
+      "description": "Design three recurring rituals for your team: one weekly, one monthly, one quarterly. Each should serve a specific purpose.",
+      "hints": [
+        "Start small — consistency matters more than grandeur",
+        "Make rituals inclusive of all personality types",
+        "Track whether rituals are actually happening and adjust"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Team Culture Rituals Plan:\n\nWeekly Ritual:\nName: ___________\nPurpose: ___________\nDuration: ___________\nWhen: ___________\nExample: Weekly Wins — every Friday, 15 min, each person shares one win\n\nMonthly Ritual:\nName: ___________\nPurpose: ___________\nDuration: ___________\nWhen: ___________\nExample: Team Lunch — first Friday of month, informal, no work talk\n\nQuarterly Ritual:\nName: ___________\nPurpose: ___________\nDuration: ___________\nWhen: ___________\nExample: Team Retrospective + Offsite — half day, reflect + plan\n\nSuccess measures:\n- Are people showing up? ___________\n- Do they value it? (Ask)\n- Is it changing behavior? ___________\n- Adjust quarterly based on feedback"
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

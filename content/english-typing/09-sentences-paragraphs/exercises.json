@@ -1,0 +1,31 @@
+{
+  "topicId": "09-sentences-paragraphs",
+  "exercises": [
+    {
+      "title": "Basic Practice",
+      "description": "Type these words: The art of programming is the skill of controlling complexity.",
+      "hints": [
+        "Keep eyes on screen",
+        "Use proper finger placement"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "The art of programming is the skill of controlling complexity."
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Sentence Practice",
+      "description": "Type each sentence without looking at the keyboard.",
+      "hints": [
+        "Focus on accuracy",
+        "Use all fingers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "The art of programming is the skill of controlling complexity.\nSimplicity is prerequisite for reliability.\nFirst solve the problem then write the code.\nThe only way to learn a new programming language is by writing programs in it.\nPrograms must be written for people to read.\nAny fool can write code that a computer can understand.\nGood code is its own best documentation.\nBefore software can be reusable it first has to be usable."
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

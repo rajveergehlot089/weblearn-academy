@@ -1,0 +1,25 @@
+{
+  "topicId": "02-communication",
+  "questions": [
+    {
+      "question": "How do I become a better listener?",
+      "answer": "Practice these five techniques: (1) Give your full attention — put away your phone, maintain eye contact. (2) Don't interrupt — let them finish their thought. (3) Paraphrase back: 'So what I'm hearing is...' (4) Ask clarifying questions: 'Can you tell me more about that?' (5) Notice non-verbal cues — are their words and body language aligned? Start with one technique and build from there."
+    },
+    {
+      "question": "How do I give constructive criticism without hurting someone's feelings?",
+      "answer": "Use the 'feedback sandwich' carefully and be specific. Instead of 'Your presentation was bad,' try: 'Your research was thorough (positive). The main argument could be stronger if you added data to support it (constructive). I'd be happy to help you revise the key points (support). Focus on behavior, not character. Say 'The report had errors' not 'You're careless.'"
+    },
+    {
+      "question": "What's the biggest communication mistake people make at work?",
+      "answer": "Assuming their message is clear. People think communication is about sending information, but it's actually about ensuring understanding. The fix: after explaining something important, ask 'Can you walk me through what you understood from what I said?' This simple check prevents countless misunderstandings."
+    },
+    {
+      "question": "How do I communicate with someone who has a completely different communication style?",
+      "answer": "Adapt to their style. If they're analytical, give data and facts. If they're expressive, focus on vision and possibilities. If they're driver-style, be direct and brief. If they're amiable, build rapport first. Watch how they communicate and mirror their energy level. The goal isn't to change them — it's to meet them where they are."
+    },
+    {
+      "question": "How do I say 'no' without damaging the relationship?",
+      "answer": "Use the 'yes, but' formula: 'I'd love to help (acknowledge the request), but I'm committed to [other priority] right now (honest reason). Could we [alternative] instead? (offer alternative).' Or: 'Let me check my schedule and get back to you' — this gives you time to think and avoids a knee-jerk 'yes' that you'll regret."
+    }
+  ]
+}

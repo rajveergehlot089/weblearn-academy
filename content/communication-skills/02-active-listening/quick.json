@@ -1,0 +1,34 @@
+{
+  "topicId": "02-active-listening",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What Is Active Listening?",
+      "body": "Active listening is a communication technique where you fully concentrate on what the speaker is saying, understand their message, and respond thoughtfully. Unlike passive hearing, active listening requires intentional effort — you're not just waiting for your turn to talk."
+    },
+    {
+      "heading": "The Three Levels of Listening",
+      "bulletPoints": [
+        "Level 1: Internal Listening — You hear words but your mind is on your own thoughts, judgments, or what you'll say next",
+        "Level 2: Focused Listening — You give full attention to the speaker, observing words, tone, and body language",
+        "Level 3: Global Listening — You pick up on emotions, unspoken concerns, and what's NOT being said"
+      ]
+    },
+    {
+      "heading": "Quick Active Listening Techniques",
+      "bulletPoints": [
+        "Paraphrase: 'So what you're saying is...' — confirms understanding",
+        "Ask clarifying questions: 'When you say X, do you mean Y?'",
+        "Reflect feelings: 'It sounds like you're frustrated about this'",
+        "Summarize: 'Let me make sure I've got this right...'"
+      ]
+    }
+  ],
+  "jargon": [
+    { "term": "Active Listening", "definition": "A technique where you fully engage with the speaker — mentally, emotionally, and verbally — rather than just passively hearing words." },
+    { "term": "Paraphrasing", "definition": "Restating what someone said in your own words to confirm understanding. Example: 'So you're saying the deadline moved up by a week?'" },
+    { "term": "Reflective Listening", "definition": "Mirroring the speaker's emotions back to them to show empathy. Example: 'That must have been really frustrating.'" }
+  ],
+  "summary": "Active listening means fully concentrating on the speaker rather than just hearing words. Use three techniques: paraphrase to confirm understanding, ask clarifying questions, and reflect emotions. The goal is to make the speaker feel heard and understood."
+}

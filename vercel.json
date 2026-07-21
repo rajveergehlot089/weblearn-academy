@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "buildCommand": "node scripts/build-content.js",
+  "outputDirectory": "public",
+  "routes": [
+    { "src": "/api/auth(/.*)?", "dest": "/api/auth.js" },
+    { "src": "/api/courses(/.*)?", "dest": "/api/courses.js" },
+    { "src": "/api/topics(/.*)?", "dest": "/api/topics.js" },
+    { "src": "/api/progress(/.*)?", "dest": "/api/progress.js" },
+    { "src": "/api/admin(/.*)?", "dest": "/api/admin.js" },
+    { "src": "/api/search(/.*)?", "dest": "/api/search.js" },
+    { "src": "/api/analysis(/.*)?", "dest": "/api/analysis.js" },
+    { "src": "/api/health", "dest": "/api/health.js" },
+    { "src": "/health", "dest": "/api/health.js" },
+    { "src": "/(.*\\.js)", "dest": "/public/$1" },
+    { "src": "/(.*\\.css)", "dest": "/public/$1" },
+    { "src": "/(.*\\.json)", "dest": "/public/$1" },
+    { "src": "/(.*\\.html)", "dest": "/public/$1" },
+    { "src": "/(.*\\.(png|jpg|svg|ico|woff|woff2|ttf|eot))", "dest": "/public/$1" },
+    { "src": "/styles/(.*)", "dest": "/public/styles/$1" },
+    { "src": "/(.*)", "dest": "/public/index.html" }
+  ]
+}

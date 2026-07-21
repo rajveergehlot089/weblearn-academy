@@ -1,0 +1,30 @@
+{
+  "topicId": "06-think-framework",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "How the THINK Framework Prevents Communication Disasters",
+      "body": "Most regrettable statements share one trait: they were spoken without a pause. The THINK framework inserts a deliberate pause — even just 2-3 seconds — between the impulse to speak and the actual words. That tiny gap is often the difference between a productive conversation and a relationship-damaging one.",
+      "code": {
+        "language": "example",
+        "snippet": "SCENARIO: Your colleague presents a flawed proposal in a meeting.\n\nIMPULSE (no THINK filter):\n'This won't work. The numbers are wrong and you didn't consider the budget constraints.'\n\nResult: Colleague feels attacked. Team dynamics suffer.\n\nTHINK FILTER:\nT — True? Yes, there are budget issues. But are the numbers wrong, or do I just see it differently?\nH — Helpful? Pointing out issues is helpful, but the delivery matters.\nI — Inspiring? No. This tears down without building up.\nN — Necessary? Yes, the budget issue needs to be addressed.\nK — Kind? No, not the way I was going to say it.\n\nScore: 2/5 — needs redesign.\n\nRETHINK:\n'I can see the vision here. One concern I have is how this aligns with our budget constraints. Can we discuss that piece?'",
+        "explanation": "Same message (budget concern), completely different impact. The THINK filter didn't change WHAT was said — it changed HOW it was said."
+      }
+    },
+    {
+      "heading": "Applying THINK to Each Filter in Depth",
+      "body": "Each filter serves a distinct purpose. Here's how to apply them in real situations:",
+      "code": {
+        "language": "example",
+        "snippet": "FILTER 1: TRUE\nAsk: Am I stating facts or opinions? Am I sure?\nBad: 'You always miss deadlines.' (Absolute, likely untrue)\nBetter: 'The last two reports were submitted after the deadline.' (Specific, factual)\n\nFILTER 2: HELPFUL\nAsk: Does this help the person or the situation?\nBad: 'That's a terrible idea.' (Criticism without direction)\nBetter: 'I see a risk in this approach — what if we tested it on a small group first?' (Problem + solution)\n\nFILTER 3: INSPIRING\nAsk: Does this lift someone up or tear them down?\nBad: 'You're not cut out for leadership.' (Demoralizing)\nBetter: 'Leadership requires skills you're developing. Here's one area to focus on.' (Honest + constructive)\n\nFILTER 4: NECESSARY\nAsk: Does this NEED to be said? By me? Right now?\nBad: 'I told you so.' (Never necessary)\nBetter: Stay silent. (Let the lesson speak for itself)\n\nFILTER 5: KIND\nAsk: Am I being respectful of the other person's dignity?\nBad: 'You made a stupid mistake.' (Personal attack)\nBetter: 'There was an error in the report. Here's how to fix it.' (Issue-focused, not person-focused)",
+        "explanation": "Kind doesn't mean sugarcoating — it means delivering hard truths with respect for the other person's humanity."
+      }
+    },
+    {
+      "heading": "When NOT to Apply THINK",
+      "body": "The THINK framework isn't for every situation. In emergencies, say what needs to be said immediately. In situations requiring spontaneity (complimenting a child, comforting a friend), don't over-filter. The framework is for: feedback, disagreements, social media posts, emails when frustrated, and public statements. If it takes more than 3 seconds to THINK through, it's probably complex enough to warrant the pause."
+    }
+  ],
+  "summary": "The THINK framework (True, Helpful, Inspiring, Necessary, Kind) inserts a crucial pause between impulse and speech. Apply it before feedback, disagreements, social media posts, and frustrated emails. Each filter serves a purpose: truth prevents inaccuracies, helpfulness adds value, inspiration builds up, necessity prevents noise, and kindness preserves dignity. Don't use it in emergencies or spontaneous genuine moments."
+}

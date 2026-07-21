@@ -1,0 +1,25 @@
+{
+  "topicId": "01-keyboard-overview",
+  "questions": [
+    {
+      "question": "What is Hindi Keyboard Layout Overview and why is it important?",
+      "answer": "Hindi Keyboard Layout Overview is a fundamental concept that Understanding the Hindi keyboard layout and Remington system. It's important because it forms the foundation for building robust and efficient applications. Understanding Hindi Keyboard Layout Overview allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Hindi Keyboard Layout Overview in a real project?",
+      "answer": "In practice, Hindi Keyboard Layout Overview is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Hindi Keyboard Layout Overview?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Hindi Keyboard Layout Overview to a beginner?",
+      "answer": "Hindi Keyboard Layout Overview is essentially about understanding the hindi keyboard layout and remington system. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

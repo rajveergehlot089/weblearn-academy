@@ -1,0 +1,26 @@
+{
+  "topicId": "07-vocabulary-builder",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Vocabulary Matters",
+      "body": "The average English speaker knows 20,000-35,000 word families. You need:\n• 1,000 words for basic daily conversation\n• 3,000 words for everyday reading (newspapers)\n• 5,000+ words for professional/academic use\n\nMore vocabulary = more precise expression = better communication."
+    },
+    {
+      "heading": "5 Techniques to Learn Words",
+      "body": "1. Word families: learn word + its forms\n   decide → decision → decisive → indecisive\n   help → helpful → helpless → helper\n\n2. Collocations: words that go together\n   make a decision (not 'do a decision')\n   heavy rain (not 'strong rain')\n   deep sleep (not 'big sleep')\n\n3. Context clues: guess meaning from the sentence\n   'The arid desert had no water for miles'\n   Arid = dry (the context tells you)\n\n4. Prefixes/Suffixes: break words into parts\n   un- = not (unhappy, unable, unusual)\n   -tion = noun (education, decision)\n   -ly = adverb (quickly, carefully)\n\n5. Spaced repetition: review at increasing intervals\n   Day 1 → Day 3 → Day 7 → Day 14 → Day 30"
+    },
+    {
+      "heading": "Essential Word Groups",
+      "body": "Transition words:\nHowever, therefore, moreover, furthermore, additionally, nevertheless, consequently\n\nDescribing people:\nAmbitious, reliable, creative, resourceful, empathetic, resilient, charismatic\n\nWork vocabulary:\nDeadline, milestone, collaborate, delegate, prioritize, implement, evaluate"
+    }
+  ],
+  "jargon": [
+    { "term": "Word Family", "definition": "A group of words derived from the same root. Example: create, creation, creative, creatively, recreate." },
+    { "term": "Collocation", "definition": "Words that naturally go together in English. Example: 'make a mistake' (not 'do a mistake'), 'heavy traffic' (not 'strong traffic')." },
+    { "term": "Prefix", "definition": "A group of letters added before a word to change its meaning. Examples: un- (not), re- (again), pre- (before), dis- (opposite)." },
+    { "term": "Suffix", "definition": "A group of letters added after a word root to change its form or meaning. Examples: -tion (noun), -ly (adverb), -able (adjective)." }
+  ],
+  "summary": "Build vocabulary strategically: learn word families, collocations, and use spaced repetition. Focus on high-frequency words first — 3,000 words cover 95% of everyday English."
+}

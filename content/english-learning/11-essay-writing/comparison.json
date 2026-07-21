@@ -1,0 +1,18 @@
+{
+  "topicId": "11-essay-writing",
+  "comparisons": [
+    {
+      "concept": "essay writing",
+      "javascript": {
+        "language": "english",
+        "code": "Technology has changed our lives in many ways."
+      },
+      "python": {
+        "language": "english",
+        "code": "In conclusion, learning English is essential for career growth."
+      },
+      "explanation": "English follows consistent patterns once you learn the rules."
+    }
+  ],
+  "keyInsight": "Understanding this concept is fundamental to English fluency."
+}

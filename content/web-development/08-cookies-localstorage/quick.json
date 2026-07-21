@@ -1,0 +1,34 @@
+{
+  "topicId": "08-cookies-localstorage",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Where Does the Browser Store Data?",
+      "body": "Your browser has two main places to store data: Cookies and LocalStorage. Think of cookies as a sticky note the server puts on your file — it's sent back to the server with every request. LocalStorage is like a private notebook — only your browser reads it, the server never sees it."
+    },
+    {
+      "heading": "Cookies",
+      "body": "Cookies are small text files (max 4KB) that the server asks your browser to store. They're sent with every HTTP request automatically. Use them for: session tokens, user preferences, tracking."
+    },
+    {
+      "heading": "LocalStorage",
+      "body": "LocalStorage is a key-value store in the browser (5-10MB). It's only accessible via JavaScript — the server never sees it. It persists until you manually clear it. Use it for: form drafts, UI state, cached data."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Cookie",
+      "definition": "Small data (max 4KB) stored by the browser, sent to the server with every HTTP request."
+    },
+    {
+      "term": "LocalStorage",
+      "definition": "A larger (5-10MB) key-value store in the browser, only accessible via JavaScript, never sent to the server automatically."
+    },
+    {
+      "term": "SessionStorage",
+      "definition": "Like LocalStorage but cleared when the browser tab is closed."
+    }
+  ],
+  "summary": "Cookies are small, sent to the server with every request (good for auth tokens). LocalStorage is larger, client-only (good for app state). Choose based on whether the server needs the data."
+}

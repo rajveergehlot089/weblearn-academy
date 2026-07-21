@@ -1,0 +1,57 @@
+{
+  "topicId": "02-text-elements",
+  "type": "interview",
+  "estimatedMinutes": 10,
+  "questions": [
+    {
+      "question": "What is the difference between <strong> and <b> tags?",
+      "answer": "<strong> is a semantic element that indicates serious importance or urgency. Screen readers may emphasize this text. <b> is a visual-only element that makes text bold without adding semantic meaning. Always prefer <strong> for important content as it improves accessibility.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How many h1 elements should a page have?",
+      "answer": "A page should have exactly one h1 element that describes the main content of the page. Multiple h1 elements can confuse screen readers and harm SEO. Use h2 for main sections, h3 for subsections, and so on.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "When would you use a description list (dl) instead of an unordered list (ul)?",
+      "answer": "Use a description list when you have term/definition pairs, key/value data, or glossary entries. The dl element contains dt (term) and dd (definition) elements. Use ul when you have a simple list of items without associated definitions or descriptions.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the purpose of the <pre> element?",
+      "answer": "The <pre> element preserves whitespace and line breaks exactly as written in the HTML source. It's typically used with the <code> element to display code snippets, poetry, ASCII art, or any content where formatting is important. Text inside <pre> is rendered in a monospace font by default.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "Explain the difference between <del> and <s> elements.",
+      "answer": "<del> indicates content that has been deleted from the document, often used with <ins> to show edits. It's semantic and meaningful. <s> indicates content that is no longer relevant or accurate but is kept for reference. Both render as strikethrough, but <del> has semantic meaning about document changes.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you create a multi-level nested list?",
+      "answer": "Place a new list (ul or ol) inside a list item (li) of the parent list. For example: <ul><li>Item<ul><li>Sub-item</li></ul></li></ul>. Each nesting level creates a new indentation. Most browsers add left padding/margin to nested lists.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the purpose of the <mark> element?",
+      "answer": "The <mark> element highlights text for reference or notation purposes, like highlighting search results or important passages. It renders with a yellow background by default but can be styled with CSS. It's semantic and indicates the text is highlighted for the reader's attention.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "When should you use <br> elements?",
+      "answer": "Use <br> sparingly for line breaks within text where the break is meaningful, such as:\n• Poetry or song lyrics\n• Addresses\n• Chemical formulas\n• Lines that must stay together\nDon't use <br> for spacing between elements - use CSS margins/padding instead.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you properly cite a source in HTML?",
+      "answer": "For block quotations, use <blockquote cite=\"URL\">. For inline quotations, use <q cite=\"URL\">. For the title of a work, use <cite>. The cite attribute provides a URL reference. For attribution, you can add a <footer> inside blockquote or a <cite> element after the quote.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are sub and superscript elements used for?",
+      "answer": "<sub> (subscript) displays text below the baseline, used for chemical formulas (H₂O), footnotes, and math. <sup> (superscript) displays text above the baseline, used for exponents (x²), ordinal numbers (1st), and footnotes. Both are inline elements that don't break the text flow.",
+      "difficulty": "easy"
+    }
+  ]
+}

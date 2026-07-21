@@ -1,0 +1,75 @@
+{
+  "topicId": "04-lists-tables",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Unordered Lists",
+      "body": "The ul element creates a list with bullet points. Each item is wrapped in an li element. Unordered lists are for items where order doesn't matter, like navigation menus or feature lists.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Basic unordered list -->\n<ul>\n    <li>HTML</li>\n    <li>CSS</li>\n    <li>JavaScript</li>\n</ul>\n\n<!-- Custom bullet style with CSS -->\n<ul style=\"list-style-type: square;\">\n    <li>Square bullets</li>\n    <li>For each item</li>\n</ul>\n\n<!-- No bullets -->\n<ul style=\"list-style: none; padding-left: 0;\">\n    <li>Plain list item</li>\n    <li>Used for navigation</li>\n</ul>",
+        "explanation": "Unordered lists default to disc bullets. You can customize with CSS list-style-type: square, circle, none, or use custom images."
+      }
+    },
+    {
+      "heading": "Ordered Lists",
+      "body": "The ol element creates a numbered list. Use it for sequential content like steps, rankings, or instructions. The numbering is automatic and updates if you add/remove items.",
+      "code": {
+        "language": "html",
+        "snippet": "<!-- Basic ordered list -->\n<ol>\n    <li>Preheat oven to 350°F</li>\n    <li>Mix ingredients</li>\n    <li>Bake for 25 minutes</li>\n</ol>\n\n<!-- Custom start number -->\n<ol start=\"5\">\n    <li>Fifth item</li>\n    <li>Sixth item</li>\n</ol>\n\n<!-- Reversed list -->\n<ol reversed>\n    <li>Third place</li>\n    <li>Second place</li>\n    <li>First place</li>\n</ol>\n\n<!-- Custom numbering type -->\n<ol type=\"A\">\n    <li>Letter A</li>\n    <li>Letter B</li>\n</ol>\n\n<ol type=\"i\">\n    <li>Roman numeral i</li>\n    <li>Roman numeral ii</li>\n</ol>",
+        "explanation": "Ordered lists support start, reversed, and type attributes for custom numbering. Type values: 1 (default), A (uppercase), a (lowercase), I (Roman), i (lowercase Roman)."
+      }
+    },
+    {
+      "heading": "Description Lists",
+      "body": "Description lists pair terms with their descriptions. Use dl as the container, dt for the term, and dd for the description. Perfect for glossaries, FAQs, or metadata displays.",
+      "code": {
+        "language": "html",
+        "snippet": "<dl>\n    <dt>HTML</dt>\n    <dd>HyperText Markup Language - structures web content</dd>\n    \n    <dt>CSS</dt>\n    <dd>Cascading Style Sheets - styles web content</dd>\n    \n    <dt>JavaScript</dt>\n    <dd>Programming language for web interactivity</dd>\n</dl>\n\n<!-- Multiple descriptions per term -->\n<dl>\n    <dt>Python</dt>\n    <dd>A high-level programming language</dd>\n    <dd>A large snake native to Asia and Africa</dd>\n</dl>",
+        "explanation": "Description lists are great for key-value data, glossaries, and metadata. A single dt can have multiple dd elements for multiple definitions."
+      }
+    },
+    {
+      "heading": "Nested Lists",
+      "body": "Lists can be nested by placing a new list inside a list item. This creates hierarchical structures like multi-level navigation or categorized content.",
+      "code": {
+        "language": "html",
+        "snippet": "<ul>\n    <li>Frontend Development\n        <ul>\n            <li>HTML</li>\n            <li>CSS</li>\n            <li>JavaScript</li>\n        </ul>\n    </li>\n    <li>Backend Development\n        <ul>\n            <li>Node.js</li>\n            <li>Python</li>\n            <li>Java</li>\n        </ul>\n    </li>\n</ul>\n\n<!-- Mixed list types -->\n<ol>\n    <li>Learn HTML\n        <ul>\n            <li>Elements</li>\n            <li>Attributes</li>\n        </ul>\n    </li>\n    <li>Learn CSS\n        <ol>\n            <li>Selectors</li>\n            <li>Properties</li>\n        </ol>\n    </li>\n</ol>",
+        "explanation": "Nesting creates hierarchy. The inner list is a child of the parent li element. Browsers add indentation automatically."
+      }
+    },
+    {
+      "heading": "Basic Tables",
+      "body": "Tables display data in rows and columns. Use table as the container, tr for rows, th for header cells, and td for data cells.",
+      "code": {
+        "language": "html",
+        "snippet": "<table>\n    <tr>\n        <th>Name</th>\n        <th>Age</th>\n        <th>City</th>\n    </tr>\n    <tr>\n        <td>Alice</td>\n        <td>28</td>\n        <td>New York</td>\n    </tr>\n    <tr>\n        <td>Bob</td>\n        <td>32</td>\n        <td>London</td>\n    </tr>\n</table>",
+        "explanation": "Tables are for tabular data only, not for layout. th elements are bold and centered by default. Always include headers for accessibility."
+      }
+    },
+    {
+      "heading": "Semantic Table Structure",
+      "body": "For complex tables, use semantic elements to improve accessibility and organization:\n• thead: Groups header rows\n• tbody: Groups body rows\n• tfoot: Groups footer rows\n• caption: Table title\n• scope: Defines header scope (col, row, colgroup, rowgroup)",
+      "code": {
+        "language": "html",
+        "snippet": "<table>\n    <caption>Employee Salaries</caption>\n    <thead>\n        <tr>\n            <th scope=\"col\">Name</th>\n            <th scope=\"col\">Department</th>\n            <th scope=\"col\">Salary</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <th scope=\"row\">Alice</th>\n            <td>Engineering</td>\n            <td>$85,000</td>\n        </tr>\n        <tr>\n            <th scope=\"row\">Bob</th>\n            <td>Marketing</td>\n            <td>$72,000</td>\n        </tr>\n    </tbody>\n    <tfoot>\n        <tr>\n            <td colspan=\"2\">Average</td>\n            <td>$78,500</td>\n        </tr>\n    </tfoot>\n</table>",
+        "explanation": "Semantic table elements help screen readers navigate complex tables. The scope attribute clarifies whether a header applies to a column or row."
+      }
+    },
+    {
+      "heading": "Table Styling",
+      "body": "Style tables with CSS for better readability. Common techniques include borders, padding, zebra striping, and responsive design.",
+      "code": {
+        "language": "html",
+        "snippet": "<style>\n    table {\n        border-collapse: collapse;\n        width: 100%;\n    }\n    th, td {\n        border: 1px solid #ddd;\n        padding: 12px;\n        text-align: left;\n    }\n    th {\n        background-color: #4CAF50;\n        color: white;\n    }\n    tr:nth-child(even) {\n        background-color: #f2f2f2;\n    }\n    tr:hover {\n        background-color: #ddd;\n    }\n</style>\n\n<table>\n    <thead>\n        <tr>\n            <th>Product</th>\n            <th>Price</th>\n            <th>Stock</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>Laptop</td>\n            <td>$999</td>\n            <td>45</td>\n        </tr>\n        <tr>\n            <td>Phone</td>\n            <td>$699</td>\n            <td>120</td>\n        </tr>\n    </tbody>\n</table>",
+        "explanation": "border-collapse merges cell borders. nth-child(even) creates zebra stripes. Hover effects improve usability. Always make tables responsive for mobile."
+      }
+    },
+    {
+      "heading": "Practice Task",
+      "body": "Create a page that demonstrates:\n• An unordered list with custom styling\n• An ordered list with reversed numbering\n• A description list for a glossary\n• A nested list for categories\n• A data table with proper headers\n• A styled table with zebra stripes"
+    }
+  ],
+  "summary": "Master HTML lists (ul, ol, dl) and tables (table, tr, th, td). Use semantic elements like thead, tbody, tfoot for complex tables. Style tables with CSS for better readability."
+}

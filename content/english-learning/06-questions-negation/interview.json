@@ -1,0 +1,9 @@
+{
+  "topicId": "06-questions-negation",
+  "questions": [
+    { "question": "How do you form a yes/no question in English?", "answer": "Move the auxiliary verb before the subject. With main verbs (other than be/have), add do/does/did. Example: 'She speaks French' → 'Does she speak French?' The main verb reverts to base form after do/does/did.", "difficulty": "easy" },
+    { "question": "What is the difference between 'Do you know where he lives?' and 'Where does he live?'", "answer": "Both ask for the same information, but 'Do you know where he lives?' is an indirect (polite) question — it uses statement word order after the question phrase. 'Where does he live?' is a direct question with inverted word order. Use indirect questions in formal situations or with strangers.", "difficulty": "medium" },
+    { "question": "Why are double negatives wrong in English?", "answer": "In standard English, two negatives cancel each other and create a positive meaning. 'I don't know nothing' technically means 'I know something.' While some dialects use double negatives for emphasis, standard English requires 'I don't know anything' or 'I know nothing.' Use 'any/anything/anyone' with negatives, not 'no/nothing/nobody.'", "difficulty": "medium" },
+    { "question": "When do we use tag questions?", "answer": "Tag questions seek confirmation of something you think is true. The rule: positive statement → negative tag ('You're a student, aren't you?'), negative statement → positive tag ('She doesn't work here, does she?'). Use falling intonation when you're fairly sure of the answer, rising intonation when you genuinely don't know.", "difficulty": "medium" }
+  ]
+}

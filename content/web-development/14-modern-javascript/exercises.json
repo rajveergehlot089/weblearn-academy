@@ -1,0 +1,33 @@
+{
+  "topicId": "14-modern-javascript",
+  "exercises": [
+    {
+      "title": "Convert to Modern Syntax",
+      "description": "Rewrite this old-style code using modern ES6+ features.",
+      "hints": [
+        "Use const instead of var",
+        "Use template literals",
+        "Use arrow functions"
+      ],
+      "solution": {
+        "language": "javascript",
+        "code": "const name = 'Raj';\nconst age = 25;\n\nconst greet = ({ name, age }) => \n  `Hello ${name}, you are ${age} years old`;\n\nconst items = [1, 2, 3];\nconst doubled = items.map(x => x * 2);"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Build an API Client with Fetch",
+      "description": "Create a reusable apiClient object with methods: get(url), post(url, data), put(url, data), delete(url).",
+      "hints": [
+        "Create a base function that handles common logic",
+        "Use spread operator for headers",
+        "Use async/await"
+      ],
+      "solution": {
+        "language": "javascript",
+        "code": "const apiClient = {\n  async request(url, options = {}) {\n    const res = await fetch(url, {\n      ...options,\n      headers: { 'Content-Type': 'application/json', ...options.headers },\n      body: options.body ? JSON.stringify(options.body) : undefined\n    });\n    if (!res.ok) throw new Error('HTTP ' + res.status);\n    return res.json();\n  },\n  get(url) { return this.request(url); },\n  post(url, data) { return this.request(url, { method: 'POST', body: data }); },\n  put(url, data) { return this.request(url, { method: 'PUT', body: data }); },\n  delete(url) { return this.request(url, { method: 'DELETE' }); }\n};"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "topicId": "08-work-life-balance",
+  "questions": [
+    {
+      "question": "How do I set boundaries without being seen as uncommitted?",
+      "answer": "Frame boundaries as productivity tools, not personal preferences. Say: 'I do my best work when I have clear focus time, so I'm protecting mornings for deep work.' Or: 'I've noticed I'm more creative after a proper rest, so I'm disconnecting at 5:30 to recharge for tomorrow.' Most managers respond positively to this framing because it's about WORK QUALITY, not personal laziness. The data supports you: developers who maintain boundaries produce higher quality work and stay at companies longer.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What if my company culture doesn't support work-life balance?",
+      "answer": "You have three options: (1) Set personal boundaries anyway and let your results speak for themselves. Often, one person modeling healthy behavior shifts the team. (2) Advocate for change — propose no-meeting mornings, async communication standards, or on-call rotation policies. (3) If the culture is deeply toxic and resistant to change, start looking for a new role. Your health isn't worth牺牲 for a company that doesn't value it. The tech industry has many companies with genuinely healthy cultures — they exist, you just need to find them.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I handle on-call without it destroying my personal life?",
+      "answer": "On-call is manageable with the right structure: (1) Limit rotations to max 1 week per month. (2) Ensure fair compensation (comp time, on-call pay, or both). (3) During on-call weeks, protect your sleep — go to bed early, avoid alcohol. (4) Set up proper alerting so you're only woken for genuinely critical issues. (5) During off-call weeks, be completely OFF — no checking systems 'just in case.' If on-call is每周轮换 or unlimited, that's a systemic problem to escalate. It's not sustainable.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I stop checking Slack/email after work?",
+      "answer": "Make it physically impossible, not just mentally disciplined. Options: (1) Delete Slack/email apps from your personal phone. (2) Use a separate work phone that you turn off at shutdown. (3) Use Focus modes (iOS) or Do Not Disturb (Android) to auto-block notifications after hours. (4) Tell your team: 'I'm offline after 5:30 PM — if something is urgent, call me.' This creates accountability AND filters out non-urgent noise. The first 3 days are hard. After that, you'll wonder why you ever checked Slack at 9 PM.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "I feel guilty when I'm not working. How do I fix this?",
+      "answer": "This is called 'productivity guilt' and it's extremely common in tech. Reframe: rest IS productivity — it's what enables sustained high performance. The math: working 40 focused hours beats 60 distracted hours. Remind yourself: (1) Your value isn't measured by hours worked. (2) Rest makes you MORE effective, not less. (3) Guilt is a feeling, not a fact — just because you feel guilty doesn't mean you're doing something wrong. (4) Track your output, not your hours. When you see you're productive during work hours, the guilt fades.",
+      "difficulty": "hard"
+    }
+  ]
+}

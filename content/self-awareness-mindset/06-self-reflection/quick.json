@@ -1,0 +1,25 @@
+{
+  "topicId": "06-self-reflection",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Self-Reflection Matters",
+      "body": "Self-reflection is the deliberate process of examining your experiences to gain insight and improve future behavior. Research shows that employees who spend 15 minutes at the end of the day reflecting on lessons learned performed 23% better than those who didn't. Reflection transforms experience into expertise — without it, you can have 20 years of experience or 1 year repeated 20 times."
+    },
+    {
+      "heading": "Three Core Reflection Practices",
+      "body": "1. Journaling: Writing about your thoughts and experiences. Studies show expressive writing for 20 minutes improves immune function, reduces anxiety, and increases clarity.\n\n2. Daily Reviews: End-of-day reflection asking: What went well? What could improve? What did I learn? This takes 5-10 minutes and builds self-awareness incrementally.\n\n3. Structured Frameworks: Using models like the Johari Window, Gibbs' Reflective Cycle, or 'What? So What? Now What?' to guide reflection and ensure depth."
+    },
+    {
+      "heading": "The Reflection-Action Gap",
+      "body": "Reflection without action is just rumination. Effective reflection follows a cycle: Experience → Reflect → Insight → Action → New Experience. The most important step is the last one — applying what you learned. Without action, reflection becomes a self-indulgent exercise that feels productive but changes nothing."
+    }
+  ],
+  "jargon": [
+    { "term": "Reflective Practice", "definition": "A structured approach to learning from experience. Involves examining what happened, why it happened, and what to do differently next time." },
+    { "term": "Gibbs' Reflective Cycle", "definition": "A six-stage framework: Description → Feelings → Evaluation → Analysis → Conclusion → Action Plan. Provides structure for deep reflection." },
+    { "term": "Metacognition", "definition": "Thinking about your thinking. The ability to observe your own thought processes and recognize patterns in how you learn and make decisions." }
+  ],
+  "summary": "Self-reflection is the deliberate examination of experiences to gain insight and improve. Three core practices: journaling (improves clarity and health), daily reviews (23% performance improvement), and structured frameworks (ensure depth). Reflection without action is rumination — always end with 'What will I do differently?'"
+}

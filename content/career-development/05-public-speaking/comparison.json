@@ -1,0 +1,42 @@
+{
+  "topicId": "05-public-speaking",
+  "comparisons": [
+    {
+      "concept": "Opening a talk",
+      "weak_opening": {
+        "label": "Weak Opening",
+        "code": "Hi everyone, um, my name is Alex and today I'm going to talk about React performance optimization. I've been a developer for 5 years and I work at..."
+      },
+      "strong_opening": {
+        "label": "Strong Opening",
+        "code": "What if I told you that one line of code was costing your users 3 extra seconds on every page load? Last quarter, I found that line in our production bundle — and removing it improved our Lighthouse score by 40 points."
+      },
+      "explanation": "Weak openings are forgettable — names and titles can wait. Strong openings hook the audience immediately with a problem, a surprising fact, or a relatable scenario. Earn the introduction after you've captured attention."
+    },
+    {
+      "concept": "Using slides",
+      "slides_as_script": {
+        "label": "Slides as Script",
+        "code": "Slide text: 'React.memo is a higher-order component that memoizes the result of a component. It only re-renders when props change. Use it when components render the same output given the same props...'"
+      },
+      "slides_as_support": {
+        "label": "Slides as Support",
+        "code": "Slide: Large code snippet showing React.memo with syntax highlighting\nBelow: 'When does this help?'\nBelow: 'When does this hurt?'\n[You explain the details verbally]"
+      },
+      "explanation": "Slides should support your words, not replace them. A wall of text makes the audience read instead of listen. Code snippets, diagrams, and short phrases keep attention on you while slides provide visual anchors."
+    },
+    {
+      "concept": "Practice approaches",
+      "silent_practice": {
+        "label": "Silent Practice",
+        "code": "Read through slides in your head. Think about what you'd say. Feel prepared."
+      },
+      "out_loud_practice": {
+        "label": "Out Loud Practice",
+        "code": "Stand up, present out loud to an empty room (or a friend). Time yourself. Record yourself. Do this 3-5 times minimum."
+      },
+      "explanation": "Silent practice is an illusion — it feels productive but doesn't prepare you for the actual experience of speaking. Out loud practice reveals timing issues, awkward phrasing, and sections that are too long. It's the only practice that counts."
+    }
+  ],
+  "keyInsight": "Great talks start with a hook, not an introduction. Slides should support your words, not replace them. Practice out loud — silent practice creates a false sense of readiness."
+}

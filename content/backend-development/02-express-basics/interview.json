@@ -1,0 +1,27 @@
+{
+  "topicId": "02-express-basics",
+  "type": "interview",
+  "questions": [
+    {
+      "question": "What is middleware in Express.js?",
+      "answer": "Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application's request-response cycle. They can execute code, modify req and res objects, end the request-response cycle, or call the next middleware. Middleware is executed in the order it's defined. Common uses include logging, authentication, parsing request bodies, error handling, and CORS setup. You can use built-in middleware like express.json(), third-party middleware like cors(), or create custom middleware functions."
+    },
+    {
+      "question": "How does routing work in Express?",
+      "answer": "Express routing determines how an application responds to a client request to a particular endpoint (URI) and HTTP method (GET, POST, etc.). You define routes using methods like app.get(), app.post(), app.put(), app.delete(). Routes can include parameters (/:id) for dynamic values and query strings for additional data. Express Router allows you to organize routes into modular, mountable route handlers. Routes are matched in the order they're defined, so more specific routes should come before general ones."
+    },
+    {
+      "question": "Explain the difference between app.use() and app.get() in Express.",
+      "answer": "app.use() is for mounting middleware functions that execute for ALL HTTP methods and ALL paths (or specific paths if provided). It's used for things like logging, authentication, and static file serving. app.get() is specifically for handling GET requests to a specific path. For example: app.use(express.json()) parses JSON bodies for all routes, while app.get('/users', handler) only handles GET requests to /users. You can also use app.use with a path prefix to apply middleware to specific route groups."
+    },
+    {
+      "question": "How do you handle errors in Express?",
+      "answer": "Express has several error handling approaches: 1) Try-catch blocks in async route handlers. 2) Next(err) to pass errors to error-handling middleware. 3) Error-handling middleware with four parameters (err, req, res, next) defined at the end of your middleware stack. 4) Using the express-async-errors package to automatically catch async errors. 5) For async/await, wrap route handlers in try-catch and call next(error). Always send appropriate status codes (4xx for client errors, 5xx for server errors) and avoid sending stack traces to clients in production."
+    },
+    {
+      "question": "What are the best practices for structuring an Express application?",
+      "answer": "Best practices include: 1) Separate concerns: routes, controllers, models, and middleware in different folders. 2) Use Router for modular route organization. 3) Keep route handlers thin - move business logic to controllers. 4) Centralize error handling middleware at the end. 5) Use environment variables for configuration. 6) Validate input data. 7) Write tests for routes and middleware. 8) Use a logging library like winston. 9) Implement proper security middleware (helmet, cors). 10) Document your API with Swagger/OpenAPI. A typical structure: /routes, /controllers, /models, /middleware, /config."
+    }
+  ],
+  "summary": "Express.js interview questions focus on middleware, routing, error handling, and application structure. Understanding these concepts is essential for building production-ready Express applications."
+}

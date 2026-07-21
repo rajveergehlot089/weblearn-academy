@@ -1,0 +1,30 @@
+{
+  "topicId": "06-questions-negation",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Yes/No Questions",
+      "body": "Move the auxiliary verb before the subject:\n\nStatement → Question:\nShe speaks English → Does she speak English?\nThey are ready → Are they ready?\nHe can swim → Can he swim?\nYou have finished → Have you finished?\n\nRule: Use Do/Does for main verbs, Be/Have/Can for their respective forms."
+    },
+    {
+      "heading": "Wh- Questions",
+      "body": "Add a question word at the beginning:\n\nWhat do you do? (asking about job)\nWhere do you live? (asking about place)\nWhen does the train leave? (asking about time)\nWhy are you late? (asking about reason)\nHow do you spell your name? (asking about method)\nWho is that person? (asking about identity)\nWhich one do you prefer? (asking about choice)\nHow much does it cost? (asking about price)"
+    },
+    {
+      "heading": "Negation Rules",
+      "body": "With main verbs: use don't/doesn't + base form\nI don't like coffee. She doesn't eat meat.\n\nWith 'be': add not after be\nHe is not (isn't) tired. They are not (aren't) ready.\n\nWith modal verbs: add not after the modal\nI cannot (can't) swim. She will not (won't) come.\n\nWith 'have': have not (haven't) or hasn't\nI haven't finished yet."
+    },
+    {
+      "heading": "Common Question Patterns",
+      "body": "Tag questions (seek confirmation):\nYou're a student, aren't you?\nShe doesn't work here, does she?\n\nChoice questions (offer options):\nWould you like tea or coffee?\nIs the meeting on Monday or Tuesday?\n\nIndirect questions (more polite):\nCould you tell me where the bank is?\nDo you know what time it starts?\nI was wondering if you could help me."
+    }
+  ],
+  "jargon": [
+    { "term": "Auxiliary Verb", "definition": "A helping verb used with the main verb to form questions and negatives. Examples: do, does, did, is, are, have, can, will." },
+    { "term": "Tag Question", "definition": "A short question added to the end of a statement to seek confirmation. Example: 'You're Italian, aren't you?'" },
+    { "term": "Wh- Word", "definition": "Question words that start information questions: what, where, when, why, who, which, how." },
+    { "term": "Negation", "definition": "Making a sentence negative by adding not (or its contraction n't). Example: 'She is not happy' or 'She isn't happy'." }
+  ],
+  "summary": "Questions invert the auxiliary and subject. Negation adds 'not' after the auxiliary. Master Do/Does/Did for main verbs and the Wh- question words for everyday English."
+}

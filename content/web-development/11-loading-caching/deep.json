@@ -1,0 +1,26 @@
+{
+  "topicId": "11-loading-caching",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Implementing Loading States",
+      "body": "Track loading status in your app:",
+      "code": {
+        "language": "javascript",
+        "snippet": "let loading = false;\nlet data = null;\nlet error = null;\n\nasync function fetchData() {\n  loading = true;\n  error = null;\n  showSpinner();\n\n  try {\n    const res = await fetch('/api/data');\n    if (!res.ok) throw new Error('Failed to load');\n    data = await res.json();\n    renderData(data);\n  } catch (err) {\n    error = err.message;\n    showError(err.message);\n  } finally {\n    loading = false;\n    hideSpinner();\n  }\n}",
+        "explanation": "Every async operation should have 3 states: loading (fetching), success (data loaded), error (something failed)."
+      }
+    },
+    {
+      "heading": "Browser Caching",
+      "body": "The browser caches resources automatically:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Server tells browser how to cache\napp.use(express.static('public', {\n  maxAge: '1d',  // Cache static files for 1 day\n  etag: true\n}));\n\n// Client-side caching with fetch\nasync function cachedFetch(url, ttl = 300000) {\n  const cached = sessionStorage.getItem(url);\n  if (cached) {\n    const { data, timestamp } = JSON.parse(cached);\n    if (Date.now() - timestamp < ttl) return data;\n  }\n  const res = await fetch(url);\n  const data = await res.json();\n  sessionStorage.setItem(url, JSON.stringify({ data, timestamp: Date.now() }));\n  return data;\n}",
+        "explanation": "Cache-Control header tells the browser how long to keep resources. Client-side caching prevents redundant API calls."
+      }
+    }
+  ],
+  "summary": "Track loading/error states for every async operation. Use browser caching headers to speed up repeat visits. Implement skeleton screens for better perceived performance."
+}

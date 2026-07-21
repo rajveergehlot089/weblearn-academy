@@ -1,0 +1,29 @@
+{
+  "topicId": "05-public-speaking",
+  "questions": [
+    {
+      "question": "I'm terrified of public speaking. How do I start?",
+      "body": "Start with the lowest-stakes environment possible: give a 5-minute lightning talk at your team meeting, record a screencast tutorial, or present at a small local meetup. The fear diminishes with exposure. Prepare thoroughly — confidence comes from knowing your material cold. Also, remember: the audience wants you to succeed. They're not judging you; they're there to learn from you.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do I handle forgetting my place during a talk?",
+      "answer": "Take a breath, glance at your notes, and pick up where you left off. The audience usually doesn't notice a brief pause. To minimize this risk: (1) Use clear slide transitions as section markers, (2) Keep 1-page bullet-point notes (not a script), (3) Practice enough that you know the overall flow even if you forget exact words. If you truly blank, say 'Let me step back for a moment' and recap the last point — this resets both you and the audience.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Should I do live demos?",
+      "answer": "Live demos are high-risk, high-reward. They're more engaging than screenshots but can fail spectacularly. If you do a live demo: (1) Have a pre-recorded backup ready, (2) Practice the demo at least 5 times, (3) Close unnecessary apps and notifications, (4) Test the setup on the actual presentation equipment beforehand. For your first few talks, screenshots or pre-recorded demos are safer choices.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How long should I prepare for a 30-minute conference talk?",
+      "answer": "Budget 20-40 hours of preparation total. Breakdown: ~5 hours for research and outlining, ~10 hours for slide creation and content development, ~10-15 hours for practice and refinement, ~5 hours for rehearsal with timing. Start at least 3-4 weeks before the event. The most common mistake is under-preparing — even experienced speakers rehearse extensively.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I get invited to speak at conferences?",
+      "answer": "Start with small events and build up: (1) Give 2-3 lightning talks at local meetups, (2) Record your talks and put them on YouTube, (3) Write blog posts about your talk topic — conference organizers search for content, (4) Submit to CFPs (Call for Proposals) — most conferences have open submission periods, (5) Network with other speakers who can recommend you. Conference organizers look for speakers with clear, specific topics and evidence they can deliver."
+    }
+  ]
+}

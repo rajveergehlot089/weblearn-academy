@@ -1,0 +1,18 @@
+{
+  "topicId": "04-status-codes",
+  "comparisons": [
+    {
+      "concept": "HTTP Status Codes Deep Dive",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to HTTP Status Codes Deep Dive\nconst result = {\n  concept: \"HTTP Status Codes Deep Dive\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to HTTP Status Codes Deep Dive\nresult = {\n    \"concept\": \"HTTP Status Codes Deep Dive\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of HTTP Status Codes Deep Dive is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about HTTP Status Codes Deep Dive is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

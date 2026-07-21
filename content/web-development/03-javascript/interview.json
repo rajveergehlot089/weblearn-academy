@@ -1,0 +1,25 @@
+{
+  "topicId": "03-javascript",
+  "questions": [
+    {
+      "question": "What is the difference between var, let, and const?",
+      "answer": "var is the old way — it's function-scoped and can be redeclared, which leads to bugs. let is block-scoped (confined to its curly braces) and can be reassigned but not redeclared. const is also block-scoped but cannot be reassigned at all. Use const by default, let when you need to reassign, and never use var in modern code.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the DOM?",
+      "answer": "The Document Object Model is a tree representation of your HTML that the browser builds in memory. Every HTML element becomes a JavaScript object you can interact with. JavaScript uses the DOM API to find elements (getElementById, querySelector), change their content (textContent, innerHTML), modify their styles (style property), and respond to events (addEventListener).",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is event delegation and why is it useful?",
+      "answer": "Event delegation is a technique where you attach one event listener to a parent element instead of individual listeners to each child. It works because events 'bubble up' from the child to the parent. It's useful for: (1) Better performance with many elements, (2) Automatically works for dynamically added elements, (3) Less memory usage.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "Explain the difference between == and === in JavaScript.",
+      "answer": "== performs type coercion before comparing — it tries to convert both values to the same type. For example, '5' == 5 is true because the string '5' is converted to number 5. === (strict equality) compares both value AND type without conversion. '5' === 5 is false. Always use === to avoid unexpected behavior.",
+      "difficulty": "medium"
+    }
+  ]
+}

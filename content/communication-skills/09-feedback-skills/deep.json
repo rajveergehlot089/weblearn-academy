@@ -1,0 +1,49 @@
+{
+  "topicId": "09-feedback-skills",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The SBI Feedback Model — Deep Dive",
+      "body": "The SBI model (Situation-Behavior-Impact) removes opinion and judgment from feedback, making it factual and actionable:",
+      "code": {
+        "language": "example",
+        "snippet": "VAGUE FEEDBACK:\n'You need to be more professional in meetings.'\n\nWhat the person hears: 'I'm unprofessional.' (Character attack)\nResponse: Defensiveness\n\nSBI FEEDBACK:\n[Situation] 'In yesterday's client meeting...'\n[Behavior] '...when the client shared their concerns, you looked at your phone and responded with a one-word answer...'\n[Impact] '...which made them seem less willing to share, and they ended the meeting early.'\n\nWhat the person hears: 'My behavior had a specific impact I didn't intend.'\nResponse: Curiosity and willingness to improve\n\nKEY RULES:\n- Be specific: Not 'you always' but 'last Tuesday at 2pm'\n- Be observable: Not 'you were rude' but 'you interrupted twice'\n- Be factual: Not 'you don't care' but 'you missed the last three deadlines'",
+        "explanation": "SBI removes the emotional charge. The person can't argue with facts — they can only discuss impact and solutions."
+      }
+    },
+    {
+      "heading": "The Sandwich Method — And Why It Fails",
+      "body": "The old 'feedback sandwich' (positive-negative-positive) is well-intentioned but often counterproductive:",
+      "code": {
+        "language": "example",
+        "snippet": "THE SANDWICH:\n1. 'Your presentations are always really well-prepared.' (Positive)\n2. 'But you tend to go over time, which frustrates the team.' (Negative)\n3. 'Anyway, great job overall.' (Positive)\n\nWHY IT FAILS:\n- The positive opener feels manipulative ('Here comes the bad news')\n- The 'but' negates everything before it\n- The closing positive feels insincere\n- The person focuses on the negative in the middle\n\nBETTER APPROACH — DIRECT + KIND:\n'I want to share something that will make your presentations even stronger. Your content is excellent — the last one had great data. One area to tighten: you went 10 minutes over, which cut into Q&A. Trimming the middle section by 2-3 slides would fix that. Your content quality is already there — the timing just needs adjustment.'\n\nWhat's different: Honest, specific, solution-focused, no manipulation.",
+        "explanation": "People respect direct feedback delivered with kindness more than sandwiched feedback. The sandwich signals you're hiding something."
+      }
+    },
+    {
+      "heading": "How to Receive Feedback Without Getting Defensive",
+      "body": "Receiving feedback is harder than giving it. Your brain treats criticism as a threat (literally — the amygdala activates). Here's how to override that response:",
+      "bulletPoints": [
+        "Pause before responding — Take a breath. Defensiveness is your first instinct, not your best one.",
+        "Listen for the signal, not the noise — The facts matter; the tone doesn't. Extract the useful part.",
+        "Ask for examples — 'Can you give me a specific instance?' This forces clarity.",
+        "Thank them — 'I appreciate you telling me this. It takes courage to give feedback.'",
+        "Reflect, then respond — Say 'Let me think about that' instead of defending yourself immediately.",
+        "Follow up — Show the feedback led to change. This encourages future feedback."
+      ]
+    },
+    {
+      "heading": "Creating a Feedback Culture",
+      "body": "Organizations that give and receive feedback well outperform those that don't. Here's how to build it:",
+      "bulletPoints": [
+        "Model vulnerability — Share your own mistakes and what you learned",
+        "Make feedback routine — Weekly 1:1s, retrospectives, peer reviews",
+        "Celebrate feedback given — Recognize people who speak up, not just those who perform",
+        "Separate feedback from evaluation — Feedback is for growth; evaluation is for decisions",
+        "Follow through — Nothing kills feedback culture faster than asking for feedback and ignoring it"
+      ]
+    }
+  ],
+  "summary": "The SBI model (Situation-Behavior-Impact) delivers feedback that's factual, specific, and non-threatening. Avoid the sandwich method — it signals manipulation. When receiving feedback: pause, listen for the signal, ask for examples, thank them, and follow up. Build feedback culture by modeling vulnerability and making it routine."
+}

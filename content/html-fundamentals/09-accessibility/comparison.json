@@ -1,0 +1,59 @@
+{
+  "topicId": "09-accessibility",
+  "type": "comparison",
+  "estimatedMinutes": 10,
+  "comparisons": [
+    {
+      "title": "Inaccessible vs Accessible Form",
+      "before": {
+        "code": "<form>\n    <div>Email: <input type=\"text\"></div>\n    <div>Password: <input type=\"text\"></div>\n    <div><input type=\"submit\" value=\"Login\"></div>\n</form>",
+        "description": "No labels, no input types, no error handling, no accessibility"
+      },
+      "after": {
+        "code": "<form>\n    <div>\n        <label for=\"email\">Email address</label>\n        <input type=\"email\" id=\"email\" name=\"email\" required aria-describedby=\"email-error\">\n        <span id=\"email-error\" role=\"alert\"></span>\n    </div>\n    <div>\n        <label for=\"password\">Password</label>\n        <input type=\"password\" id=\"password\" name=\"password\" required aria-describedby=\"password-error\">\n        <span id=\"password-error\" role=\"alert\"></span>\n    </div>\n    <button type=\"submit\">Login</button>\n</form>",
+        "description": "Proper labels, input types, error handling, accessibility attributes"
+      }
+    },
+    {
+      "title": "Poor vs Good Heading Hierarchy",
+      "before": {
+        "code": "<h1>Page Title</h1>\n<h4>Section</h4>\n<h2>Subsection</h2>\n<h3>Another Section</h3>",
+        "description": "Skipped heading levels, poor document outline for screen readers"
+      },
+      "after": {
+        "code": "<h1>Page Title</h1>\n<h2>Section</h2>\n<h3>Subsection</h3>\n<h2>Another Section</h2>",
+        "description": "Proper heading hierarchy for navigation and screen readers"
+      }
+    },
+    {
+      "title": "Color-Only vs Multi-Modal Error Indication",
+      "before": {
+        "code": "<p style=\"color: red;\">Invalid email</p>\n<p style=\"color: green;\">Success!</p>",
+        "description": "Relies on color alone - not accessible to colorblind users"
+      },
+      "after": {
+        "code": "<p role=\"alert\">\n    <span aria-hidden=\"true\">X</span>\n    <span style=\"color: red;\">Invalid email</span>\n</p>\n\n<p>\n    <span aria-hidden=\"true\">✓</span>\n    <span style=\"color: green;\">Success!</span>\n</p>",
+        "description": "Icons + color + text provide multiple cues for all users"
+      }
+    },
+    {
+      "title": "Missing vs Proper Image Alt Text",
+      "before": {
+        "code": "<img src=\"chart.png\">\n<img src=\"photo.jpg\" alt=\"image\">\n<img src=\"banner.jpg\" alt=\"Click here to see our banner image photo\">\n<img src=\"icon.svg\">",
+        "description": "Missing alt, meaningless alt, overly verbose alt, no alt"
+      },
+      "after": {
+        "code": "<img src=\"chart.png\" alt=\"Sales chart showing 40% growth\">\n<img src=\"photo.jpg\" alt=\"Team of 5 developers\">\n<img src=\"banner.jpg\" alt=\"\">\n<img src=\"icon.svg\" alt=\"Menu\">",
+        "description": "Meaningful alt text, proper empty alt for decorative images"
+      }
+    }
+  ],
+  "insights": [
+    "Always use semantic HTML first, ARIA second",
+    "Provide alt text for informative images, empty alt for decorative",
+    "Ensure all functionality is keyboard accessible",
+    "Don't rely on color alone to convey information",
+    "Maintain 4.5:1 color contrast ratio for normal text",
+    "Test with screen readers and keyboard-only navigation"
+  ]
+}

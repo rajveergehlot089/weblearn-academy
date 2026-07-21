@@ -1,0 +1,31 @@
+{
+  "topicId": "01-time-management",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Time Management Matters for Developers",
+      "body": "Developers who manage time well ship more code, make fewer mistakes, and experience less burnout. The difference between a junior and senior developer isn't just skill — it's how they allocate their attention across competing priorities."
+    },
+    {
+      "heading": "The Eisenhower Matrix",
+      "body": "Dwight Eisenhower used a simple 2x2 grid to decide what deserves your time. Split tasks by urgency and importance into four quadrants:",
+      "code": {
+        "language": "text",
+        "snippet": "                    URGENT              NOT URGENT\n              ┌─────────────────┬─────────────────┐\n  IMPORTANT   │   DO FIRST       │   SCHEDULE       │\n              │   Deadlines      │   Deep work      │\n              │   Production bugs│   Learning       │\n              │   Client calls   │   Architecture   │\n              ├─────────────────┼─────────────────┤\n  NOT         │   DELEGATE       │   ELIMINATE      │\n  IMPORTANT   │   Status meetings│   Scrolling      │\n              │   Some emails    │   Busywork       │\n              │   Admin tasks    │   Perfectionism  │\n              └─────────────────┴─────────────────┘",
+        "explanation": "Quadrant 1 (urgent + important): Handle immediately. Quadrant 2 (not urgent + important): This is where your career grows — schedule dedicated time. Quadrant 3 (urgent + not important): Delegate if possible. Quadrant 4 (neither): Eliminate ruthlessly."
+      }
+    },
+    {
+      "heading": "Time Blocking: Protect Your Calendar",
+      "body": "Time blocking means assigning every hour of your workday to a specific task or category. Instead of reacting to whatever comes up, you decide in advance what gets your attention. Block 2-4 hour chunks for deep coding work, and batch all meetings into a single afternoon slot. Google Calendar and Outlook both support recurring blocks — set them once and protect them weekly."
+    }
+  ],
+  "jargon": [
+    { "term": "Eisenhower Matrix", "definition": "A decision framework that categorizes tasks by urgency and importance into four quadrants, helping you prioritize what actually matters." },
+    { "term": "Time Blocking", "definition": "A scheduling method where you assign specific time periods to specific tasks, rather than working from a to-do list reactively." },
+    { "term": "Deep Work", "definition": "Cognitive-intensive work performed in a state of distraction-free concentration, typically lasting 2-4 hours." },
+    { "term": "Urgency vs Importance", "definition": "Urgent tasks demand immediate attention; important tasks contribute to long-term goals. Most people confuse the two." }
+  ],
+  "summary": "Use the Eisenhower Matrix to classify tasks by urgency and importance. Time block your calendar to protect deep work sessions from interruptions. Most developers spend too much time in Quadrant 1 (urgent + important) and not enough in Quadrant 2 (important but not urgent), which is where career growth happens."
+}

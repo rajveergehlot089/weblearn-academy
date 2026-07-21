@@ -1,0 +1,18 @@
+{
+  "topicId": "01-alphabet",
+  "comparisons": [
+    {
+      "concept": "English Alphabet & Sounds",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to English Alphabet & Sounds\nconst result = {\n  concept: \"English Alphabet & Sounds\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to English Alphabet & Sounds\nresult = {\n    \"concept\": \"English Alphabet & Sounds\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of English Alphabet & Sounds is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about English Alphabet & Sounds is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

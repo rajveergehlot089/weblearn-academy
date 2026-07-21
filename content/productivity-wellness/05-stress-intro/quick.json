@@ -1,0 +1,31 @@
+{
+  "topicId": "05-stress-intro",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Stress, Really?",
+      "body": "Stress isn't the enemy — it's a survival mechanism. Your body's stress response (cortisol, adrenaline) was designed to help you escape predators, not respond to Slack notifications. The problem is that modern work triggers the same response for emails and deadlines as our ancestors had for lions. Understanding this helps you manage stress rather than be managed by it."
+    },
+    {
+      "heading": "Acute vs Chronic Stress",
+      "body": "Understanding the difference between helpful and harmful stress:",
+      "code": {
+        "language": "text",
+        "snippet": "ACUTE STRESS (short-term, helpful):\n• Duration: Minutes to hours\n• Examples: Deadline pressure, debugging a crisis, presenting to leadership\n• Effect: Sharpens focus, increases energy, improves performance\n• Resolution: Ends when the event ends\n\nCHRONIC STRESS (long-term, harmful):\n• Duration: Weeks to years\n• Examples: Unclear job expectations, toxic work environment, debt, \n           never-ending on-call rotations\n• Effect: Weakens immune system, causes anxiety/depression, \n         impairs memory and decision-making\n• Resolution: Doesn't resolve on its own — requires intervention\n\nTHE KEY INSIGHT:\nAcute stress is your friend (it makes you perform).\nChronic stress is your enemy (it breaks you down).\n\nMost developer burnout comes from CHRONIC stress:\n• Constant context-switching between projects\n• Always-on Slack culture\n• Imposter syndrome that never resolves\n• Feeling of never being 'done' with work",
+        "explanation": "The stress response itself isn't bad — it's the DURATION that matters. Short bursts of stress help you perform. Long-term stress destroys your health, focus, and career."
+      }
+    },
+    {
+      "heading": "The Developer Stress Cycle",
+      "body": "Developers face unique stress triggers: ambiguous requirements, imposter syndrome, constant learning pressure, production incidents, and the gap between 'what I know' and 'what I should know.' Recognizing these triggers is the first step. The second is having tools to complete the stress cycle — to tell your body 'the threat is over, you can relax.'"
+    }
+  ],
+  "jargon": [
+    { "term": "Cortisol", "definition": "The primary stress hormone. Short bursts help you focus; elevated levels over weeks cause anxiety, weight gain, and immune suppression." },
+    { "term": "Fight-or-Flight Response", "definition": "Your body's automatic reaction to perceived threat: increased heart rate, rapid breathing, muscle tension. Designed for physical danger, triggered by modern work stress." },
+    { "term": "Burnout", "definition": "Chronic workplace stress that hasn't been successfully managed. Characterized by exhaustion, cynicism, and reduced professional efficacy." },
+    { "term": "Stress Cycle", "definition": "The full arc from stress trigger to resolution. The key is completing the cycle — moving from stress response back to baseline — before the next trigger hits." }
+  ],
+  "summary": "Stress is a survival mechanism, not inherently bad. Acute stress (short-term) sharpens performance; chronic stress (long-term) destroys health. Developer burnout comes from chronic stress: constant context-switching, always-on culture, imposter syndrome. The key is recognizing triggers and completing the stress cycle before the next trigger hits."
+}

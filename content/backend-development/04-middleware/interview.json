@@ -1,0 +1,27 @@
+{
+  "topicId": "04-middleware",
+  "type": "interview",
+  "questions": [
+    {
+      "question": "What is middleware in Express and why is it important?",
+      "answer": "Middleware functions are functions that have access to the request object (req), response object (res), and the next middleware function in the application's request-response cycle. They are important because: 1) They separate concerns - you can handle logging, authentication, validation in separate functions. 2) They promote code reuse - write once, use across multiple routes. 3) They make code more maintainable - each middleware does one thing well. 4) They enable composability - chain multiple middleware to build complex functionality. Without middleware, you'd have to duplicate code across every route handler."
+    },
+    {
+      "question": "How do you create custom middleware in Express?",
+      "answer": "Custom middleware is a function with three parameters: (req, res, next). You create it by defining a function that performs some operation and calls next() to pass control to the next middleware. Example: function logger(req, res, next) { console.log(req.method, req.url); next(); }. You can apply it globally with app.use(logger), to specific routes with app.get('/path', logger, handler), or to routers with router.use(logger). For error-handling middleware, use four parameters: (err, req, res, next). Always remember to call next() unless you're ending the response cycle."
+    },
+    {
+      "question": "What's the difference between app.use() and app.get() in terms of middleware?",
+      "answer": "app.use() is for mounting middleware that runs for ALL HTTP methods on a specific path (or all paths if no path is specified). app.get() is specifically for handling GET requests to a specific path and doesn't work as middleware mounting. For example: app.use(express.json()) parses JSON bodies for all requests, while app.get('/api', myMiddleware) only runs myMiddleware for GET requests to /api. app.use can also be used to mount routers and sub-applications, while app.get is strictly for route handlers."
+    },
+    {
+      "question": "How do you handle errors in middleware?",
+      "answer": "There are several approaches: 1) Try-catch blocks in async middleware: try { await something(); next(); } catch(err) { next(err); }. 2) Pass errors to next: next(new Error('Something failed')). 3) Create error-handling middleware with 4 parameters: app.use((err, req, res, next) => { res.status(500).json({ error: err.message }); }). 4) Use express-async-errors package to automatically catch async errors. 5) For route handlers, wrap in try-catch and call next(error). Always provide meaningful error messages and appropriate status codes."
+    },
+    {
+      "question": "What are common middleware patterns you should know?",
+      "answer": "Essential middleware patterns include: 1) Request logging - track all incoming requests. 2) Authentication/Authorization - verify tokens and permissions. 3) Input validation - sanitize and validate request data. 4) Rate limiting - prevent abuse by limiting requests per IP. 5) Error handling - catch and format errors consistently. 6) CORS - enable cross-origin requests. 7) Compression - reduce response size. 8) Static file serving - serve images, CSS, JS. 9) Request body parsing - parse JSON, URL-encoded data. 10) Response caching - cache responses for performance. Understanding these patterns helps you build secure, maintainable Express applications."
+    }
+  ],
+  "summary": "Middleware interview questions focus on creating custom middleware, error handling, execution order, and common patterns. Understanding these concepts is crucial for building well-structured Express applications."
+}

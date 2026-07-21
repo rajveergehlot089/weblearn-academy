@@ -1,0 +1,31 @@
+{
+  "topicId": "09-sentences",
+  "exercises": [
+    {
+      "title": "Basic Practice",
+      "description": "Type these words: main har din subah jaldi uthkar exercise karta hoon",
+      "hints": [
+        "Keep eyes on screen",
+        "Use proper finger placement"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "main har din subah jaldi uthkar exercise karta hoon"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Sentence Practice",
+      "description": "Type each sentence without looking at the keyboard.",
+      "hints": [
+        "Focus on accuracy",
+        "Use all fingers"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "main har din subah jaldi uthkar exercise karta hoon\nschool mein humein bahut kuch seekhne ko milta hai\nmeri family mein char log hain\nmujhe kitabein padhna bahut pasand hai\nhum sab milkar kaam karte hain\naaj ka din bahut achha hai\nmujhe apne desh par garv hai\nhumare ghar mein ek chhota bagicha hai\nbahar mausam bahut achha hai\nmujhe gaane sunna bahut pasand hai"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "topicId": "03-pronouns",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Pronouns?",
+      "body": "Personal, possessive, reflexive, and demonstrative pronouns. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "Pronouns is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind Pronouns is understanding how different components work together.\n\n2. Application: In practice, you'll use Pronouns every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most Pronouns implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding Pronouns is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Pronouns",
+      "definition": "A key concept in Pronouns. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Replacing",
+      "definition": "A key concept in Pronouns. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Nouns",
+      "definition": "A key concept in Pronouns. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "Pronouns is a core concept in grammar. Personal, possessive, reflexive, and demonstrative pronouns. Focus on understanding the fundamentals first, then practice applying them."
+}

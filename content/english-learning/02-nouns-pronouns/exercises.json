@@ -1,0 +1,44 @@
+{
+  "topicId": "02-nouns-pronouns",
+  "exercises": [
+    {
+      "title": "Noun Classification",
+      "description": "Classify each noun: London, happiness, team, water, computer, courage, children, information",
+      "hints": [
+        "Group by: proper/common, concrete/abstract, countable/uncountable, collective"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Proper: London\nAbstract: happiness, courage\nCollective: team, children\nUncountable: water, information\nConcrete common: computer"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Pronoun Replacement",
+      "description": "Replace the underlined nouns with correct pronouns:\n1. Ali went to school.\n2. Sarah likes cats.\n3. We helped the students.\n4. The teacher gave books to Maria and Tom.",
+      "hints": [
+        "Subject position: I, he, she, it, we, they",
+        "Object position: me, him, her, it, us, them"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "1. He went to school.\n2. She likes cats.\n3. We helped them.\n4. The teacher gave them books."
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Article Practice",
+      "description": "Fill in a, an, the, or no article:\n1. She is ___ teacher.\n2. I saw ___ elephant at ___ zoo.\n3. ___ water in this bottle is cold.\n4. He is ___ honest person.\n5. ___ sun rises in ___ east.",
+      "hints": [
+        "\"an\" before vowel sounds (not letters!)",
+        "\"the\" for specific things we both know about",
+        "No article for general statements"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "1. a teacher\n2. an elephant, the zoo\n3. The water\n4. an honest (silent h)\n5. The sun, the east"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "topicId": "10-career-assessment",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Assess Your Career Progress?",
+      "body": "Without assessment, you're flying blind. You might be improving in areas that don't matter while neglecting the ones that do. A career assessment helps you: (1) Measure your growth, (2) Identify remaining gaps, (3) Celebrate progress you might otherwise overlook, (4) Adjust your plan based on real data, not gut feelings."
+    },
+    {
+      "heading": "The 4 Competency Areas",
+      "body": "This course covered four key career development areas:\n\n1. **Personal Branding**: Can people find and understand your expertise?\n2. **Networking**: Do you have genuine professional relationships?\n3. **Public Speaking & Communication**: Can you present ideas clearly and confidently?\n4. **Career Planning**: Do you have a direction and a plan to get there?\n\nRate yourself honestly in each area from 1 (just starting) to 5 (strong and consistent)."
+    },
+    {
+      "heading": "Self-Assessment Framework",
+      "body": "For each competency, ask:\n- What's one thing I've improved at recently?\n- What's one area where I'm still struggling?\n- What's one specific action I'll take in the next 30 days?\n\nThis simple framework turns vague self-reflection into actionable growth."
+    },
+    {
+      "heading": "Tracking Progress Over Time",
+      "body": "Revisit this assessment every 3 months. Write down your ratings and reflections. Over time, you'll see clear patterns: where you're growing, where you're stalling, and what strategies work best for you. Career growth is a marathon — assessment is how you know you're still on the right path."
+    }
+  ],
+  "jargon": [
+    { "term": "Self-Assessment", "definition": "The process of evaluating your own skills, strengths, weaknesses, and progress against defined criteria or goals." },
+    { "term": "Competency", "definition": "A specific skill, knowledge area, or behavior that contributes to professional effectiveness. Can be measured and developed over time." },
+    { "term": "Growth Mindset", "definition": "The belief that abilities can be developed through dedication and hard work. Contrasts with a fixed mindset, which assumes abilities are static." }
+  ],
+  "summary": "Career assessment measures your growth across four areas: branding, networking, communication, and planning. Rate yourself 1-5 in each, identify one improvement and one gap, and commit to one action in the next 30 days. Revisit every 3 months to track patterns and adjust your approach."
+}

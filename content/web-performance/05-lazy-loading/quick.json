@@ -1,0 +1,34 @@
+{
+  "topicId": "05-lazy-loading",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Lazy Loading & Code Splitting?",
+      "body": "Load resources on demand, dynamic imports, and intersection observer. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "Lazy Loading & Code Splitting is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind Lazy Loading & Code Splitting is understanding how different components work together.\n\n2. Application: In practice, you'll use Lazy Loading & Code Splitting every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most Lazy Loading & Code Splitting implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding Lazy Loading & Code Splitting is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Lazy",
+      "definition": "A key concept in Lazy Loading & Code Splitting. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Loading",
+      "definition": "A key concept in Lazy Loading & Code Splitting. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Code",
+      "definition": "A key concept in Lazy Loading & Code Splitting. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "Lazy Loading & Code Splitting is a core concept in optimization. Load resources on demand, dynamic imports, and intersection observer. Focus on understanding the fundamentals first, then practice applying them."
+}

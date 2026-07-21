@@ -1,0 +1,26 @@
+{
+  "topicId": "01-html",
+  "exercises": [
+    {
+      "title": "Build a Business Card",
+      "description": "Create an HTML page that displays a business card with: name, job title, email (as a mailto link), phone number, and a profile image. Use semantic tags.",
+      "hints": ["Use <article> to wrap the card", "Use <h2> for the name, <p> for job title", "Use <a href='mailto:...'> for email link"],
+      "solution": { "language": "html", "code": "<article>\n  <img src='profile.jpg' alt='John Doe'>\n  <h2>John Doe</h2>\n  <p>Software Engineer</p>\n  <a href='mailto:john@example.com'>john@example.com</a>\n  <p>555-0123</p>\n</article>" },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Create a Navigation Menu",
+      "description": "Build a horizontal navigation bar with 4 links: Home, About, Projects, Contact. Wrap it in a <nav> element.",
+      "hints": ["Use <nav> as the container", "Use an unordered list <ul> with <li> items", "Each <li> contains an <a> tag"],
+      "solution": { "language": "html", "code": "<nav>\n  <ul>\n    <li><a href='/'>Home</a></li>\n    <li><a href='/about'>About</a></li>\n    <li><a href='/projects'>Projects</a></li>\n    <li><a href='/contact'>Contact</a></li>\n  </ul>\n</nav>" },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Build a Contact Form",
+      "description": "Create a form with fields for: name, email, subject (dropdown), and message (textarea). Include a submit button and proper labels.",
+      "hints": ["Use <form> with action and method", "Use <input type='text'> for name", "Use <select> with <option> for dropdown", "Use <textarea> for message"],
+      "solution": { "language": "html", "code": "<form action='/submit' method='POST'>\n  <label for='name'>Name:</label>\n  <input type='text' id='name' name='name' required>\n  <label for='email'>Email:</label>\n  <input type='email' id='email' name='email' required>\n  <label for='subject'>Subject:</label>\n  <select id='subject' name='subject'>\n    <option value='general'>General</option>\n    <option value='support'>Support</option>\n  </select>\n  <label for='message'>Message:</label>\n  <textarea id='message' name='message' required></textarea>\n  <button type='submit'>Send</button>\n</form>" },
+      "difficulty": "medium"
+    }
+  ]
+}

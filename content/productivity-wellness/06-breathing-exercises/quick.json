@@ -1,0 +1,34 @@
+{
+  "topicId": "06-breathing-exercises",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Why Breathing Exercises Work",
+      "body": "When you're stressed, your breathing becomes shallow and rapid — this signals danger to your brain, worsening anxiety. Controlled breathing does the opposite: it activates your parasympathetic nervous system ('rest and digest'), lowering heart rate, reducing cortisol, and calming your mind. It's the fastest evidence-based way to reduce acute stress — and it takes less than 2 minutes."
+    },
+    {
+      "heading": "4-7-8 Breathing (The Relaxation Breath)",
+      "body": "Developed by Dr. Andrew Weil, this technique is powerful for anxiety and sleep:",
+      "code": {
+        "language": "text",
+        "snippet": "4-7-8 BREATHING TECHNIQUE:\n\n1. Place tongue tip behind upper front teeth\n2. Exhale completely through mouth (whoosh sound)\n3. Close mouth, inhale through nose for 4 counts\n4. Hold breath for 7 counts\n5. Exhale through mouth for 8 counts\n6. Repeat 4 times\n\nPRACTICE SCHEDULE:\n• Week 1-2: 1 cycle, twice daily\n• Week 3-4: 2 cycles, twice daily  \n• Week 5+:  4 cycles, twice daily\n\nWHEN TO USE:\n• Before bed (fall asleep faster)\n• During anxiety (calm racing thoughts)\n• Before presentations (steady nerves)\n• During code review stress (reset focus)\n\nWHY IT WORKS:\nThe extended exhale (8 counts) stimulates the vagus nerve,\nactivating your parasympathetic nervous system.\nThe hold (7 counts) increases CO2 tolerance,\nwhich reduces anxiety sensitivity.",
+        "explanation": "The 4-7-8 ratio matters more than the absolute timing. As you practice, you can speed up (inhale 2 sec, hold 3.5 sec, exhale 4 sec) while keeping the same ratio."
+      }
+    },
+    {
+      "heading": "Box Breathing (Navy SEAL Technique)",
+      "body": "Used by Navy SEALs to stay calm under fire, this is perfect for high-pressure work moments:",
+      "code": {
+        "language": "text",
+        "snippet": "BOX BREATHING:\n\nInhale 4 counts → Hold 4 counts → Exhale 4 counts → Hold 4 counts\n\n    ┌──────────┐\n    │ Inhale 4 │\n    │          │\nHold│          │Hold\n  4 │          │ 4\n    │          │\n    └──────────┘\n    Exhale 4 counts\n\nREPEAT: 4 times (64 seconds total)\n\nUSE CASES:\n• During production incidents (stay calm while debugging)\n• Before difficult conversations\n• When overwhelmed by multiple tasks\n• During on-call nights (manage adrenaline)"
+      }
+    }
+  ],
+  "jargon": [
+    { "term": "Parasympathetic Nervous System", "definition": "The 'rest and digest' branch of your nervous system. Activated by slow breathing, it lowers heart rate, reduces cortisol, and promotes calm." },
+    { "term": "Vagus Nerve", "definition": "The longest cranial nerve, connecting brain to body. Stimulated by slow exhales, it triggers relaxation and reduces inflammation." },
+    { "term": "Cortisol", "definition": "The primary stress hormone. Short bursts are helpful; chronic elevation causes anxiety, weight gain, and immune suppression." }
+  ],
+  "summary": "Breathing exercises activate your parasympathetic nervous system, reducing stress in under 2 minutes. The 4-7-8 technique (inhale 4, hold 7, exhale 8) is best for anxiety and sleep. Box breathing (4-4-4-4) is best for high-pressure work moments. Practice daily to build the habit."
+}

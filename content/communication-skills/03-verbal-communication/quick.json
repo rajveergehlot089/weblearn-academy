@@ -1,0 +1,36 @@
+{
+  "topicId": "03-verbal-communication",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What Is Verbal Communication?",
+      "body": "Verbal communication is the use of words to share information. It includes both spoken and written language. While the words themselves carry only 7% of emotional meaning (per the 7-38-55 rule), how you choose and deliver those words dramatically impacts clarity and impact."
+    },
+    {
+      "heading": "The Five Pillars of Clear Verbal Communication",
+      "bulletPoints": [
+        "Clarity — Say exactly what you mean. Avoid jargon when talking to non-experts.",
+        "Conciseness — Remove filler words and unnecessary details. Get to the point.",
+        "Tone — Match your vocal tone to your message. Warmth for empathy, firmness for decisions.",
+        "Pace — Slow down for important points. Speed up for less critical details.",
+        "Volume — Speak loud enough to be heard, soft enough to draw people in."
+      ]
+    },
+    {
+      "heading": "Common Verbal Traps to Avoid",
+      "bulletPoints": [
+        "Filler words — 'um', 'like', 'you know' — they weaken your message",
+        "Hedging — 'I think maybe...' — sounds uncertain even when you're confident",
+        "Negatives — 'Don't forget' — brains process the forget first. Say 'Remember to...' instead",
+        "Qualifiers — 'Just a quick question' — minimizes your own request"
+      ]
+    }
+  ],
+  "jargon": [
+    { "term": "Vocal Variety", "definition": "Changes in pitch, pace, volume, and tone that make speech engaging. Monotone delivery kills listener attention." },
+    { "term": "Hedging", "definition": "Using softening language ('kind of', 'sort of', 'I think') that makes you sound uncertain. Use it intentionally, not habitually." },
+    { "term": "Power Words", "definition": "Strong, specific words that create impact. 'We achieved' is stronger than 'We kind of did okay with.'" }
+  ],
+  "summary": "Clear verbal communication requires clarity, conciseness, appropriate tone, pace, and volume. Eliminate filler words, hedging, and negatives. Use power words for impact. The goal is to make your message easy to understand and hard to forget."
+}

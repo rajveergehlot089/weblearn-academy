@@ -1,0 +1,32 @@
+{
+  "topicId": "05-sentence-structure",
+  "exercises": [
+    {
+      "title": "Sentence Building",
+      "description": "Arrange these words into correct SVO sentences:\n1. reads / Ali / books\n2. plays / She / guitar\n3. football / They / every day / play\n4. English / We / at school / study\n5. not / He / understand / the lesson",
+      "hints": [
+        "Remember SVO order: Subject first, then Verb, then Object",
+        "Time expressions usually go at the end"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "1. Ali reads books.\n2. She plays the guitar.\n3. They play football every day.\n4. We study English at school.\n5. He doesn't understand the lesson."
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Adjective/Adverb Placement",
+      "description": "Add the word in parentheses in the correct position:\n1. She speaks English. (fluently)\n2. This is a table. (wooden, round)\n3. He is late. (always)\n4. They live in Delhi. (happily)\n5. I wake up early. (usually)",
+      "hints": [
+        "Adverbs of manner go AFTER the verb",
+        "Adjectives go BEFORE the noun",
+        "Adverbs of frequency go BEFORE the main verb"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "1. She speaks English fluently.\n2. This is a round wooden table. (opinion before size before material)\n3. He is always late. (after \"be\")\n4. They live happily in Delhi.\n5. I usually wake up early."
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

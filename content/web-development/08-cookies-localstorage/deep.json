@@ -1,0 +1,35 @@
+{
+  "topicId": "08-cookies-localstorage",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Working with Cookies",
+      "body": "Cookies can be set by the server or JavaScript:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Server sets cookie (in Express)\nres.cookie('token', 'abc123', {\n  httpOnly: true,    // JavaScript can't read it (security!)\n  secure: true,      // Only sent over HTTPS\n  maxAge: 7 * 24 * 60 * 60 * 1000,  // 7 days\n  sameSite: 'strict' // Prevent CSRF attacks\n});\n\n// JavaScript reads cookies (non-httpOnly only)\nconsole.log(document.cookie);  // 'token=abc123; theme=dark'",
+        "explanation": "httpOnly cookies can't be read by JavaScript — this prevents XSS attacks from stealing tokens. secure ensures HTTPS only."
+      }
+    },
+    {
+      "heading": "Working with LocalStorage",
+      "body": "LocalStorage is simple key-value storage:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Save data\nlocalStorage.setItem('username', 'Rajveer');\nlocalStorage.setItem('settings', JSON.stringify({\n  theme: 'dark',\n  fontSize: 16\n}));\n\n// Read data\nconst name = localStorage.getItem('username');\nconst settings = JSON.parse(localStorage.getItem('settings'));\n\n// Remove data\nlocalStorage.removeItem('username');\n\n// Clear everything\nlocalStorage.clear();",
+        "explanation": "LocalStorage only stores strings, so use JSON.stringify/parse for objects. Data persists across browser restarts."
+      }
+    },
+    {
+      "heading": "Security Best Practices",
+      "body": "Never store sensitive data in localStorage:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// BAD: Storing JWT in localStorage\nlocalStorage.setItem('token', jwtToken);  // XSS can steal it!\n\n// GOOD: Storing JWT in httpOnly cookie\nres.cookie('token', jwtToken, {\n  httpOnly: true,\n  secure: true,\n  sameSite: 'strict'\n});  // JavaScript can't access it\n\n// GOOD: What to store in localStorage\nlocalStorage.setItem('theme', 'dark');          // Non-sensitive\nlocalStorage.setItem('language', 'en');        // Non-sensitive\nlocalStorage.setItem('lastVisit', Date.now()); // Non-sensitive",
+        "explanation": "localStorage is vulnerable to XSS attacks. httpOnly cookies are invisible to JavaScript, making them much safer for auth tokens."
+      }
+    }
+  ],
+  "summary": "Cookies (4KB) are sent to the server with every request — use httpOnly secure cookies for auth tokens. LocalStorage (5-10MB) stays in the browser — use for non-sensitive app state."
+}

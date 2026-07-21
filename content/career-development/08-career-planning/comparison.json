@@ -1,0 +1,42 @@
+{
+  "topicId": "08-career-planning",
+  "comparisons": [
+    {
+      "concept": "Career development approach",
+      "drifting": {
+        "label": "Drifting Approach",
+        "code": "Take whatever job comes along. Learn whatever's needed for the current task. Hope for the best. React to opportunities rather than creating them."
+      },
+      "intentional": {
+        "label": "Intentional Approach",
+        "code": "Define a direction. Identify skill gaps. Pursue specific projects and learning. Build relationships in your target area. Create opportunities through visibility and reputation."
+      },
+      "explanation": "Drifting feels easier in the short term but leads to career stagnation. Intentional planning requires upfront effort but creates compounding returns — each choice builds toward your goal."
+    },
+    {
+      "concept": "Skill development focus",
+      "single_skill": {
+        "label": "Single-Skill Focus",
+        "code": "Spend all learning time becoming a better React developer. Expertise in one tool."
+      },
+      "skill_stack": {
+        "label": "Skill Stack",
+        "code": "Combine React + accessibility + performance optimization + mentoring. Expertise in a unique combination."
+      },
+      "explanation": "Single-skill experts compete with millions of developers who know the same tool. Skill-stackers are rare — 'React developer' is common, 'React developer who makes apps accessible and fast' is rare and more valuable."
+    },
+    {
+      "concept": "Career conversations",
+      "no_discussion": {
+        "label": "No Career Discussions",
+        "code": "Don't talk to your manager about career goals. Assume they'll notice your hard work and promote you automatically."
+      },
+      "proactive_planning": {
+        "label": "Proactive Career Conversations",
+        "code": "Quarterly meeting with manager: 'Here's where I want to grow. What projects or opportunities align with that? What skills should I focus on?'"
+      },
+      "explanation": "Managers are not mind-readers. Regular career conversations ensure your growth aligns with organizational opportunities and that your ambitions are visible to decision-makers."
+    }
+  ],
+  "keyInsight": "Intentional career planning beats drifting. Build a skills stack (combine 2-3 complementary skills) rather than deepening a single skill. Have proactive career conversations with your manager quarterly — your growth depends on your advocacy."
+}

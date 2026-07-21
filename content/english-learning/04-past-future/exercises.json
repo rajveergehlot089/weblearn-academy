@@ -1,0 +1,30 @@
+{
+  "topicId": "04-past-future",
+  "exercises": [
+    {
+      "title": "Past Tense Practice",
+      "description": "Write the past tense of:\ngo, eat, see, study, make, have, play, run, take, write, come, give",
+      "hints": [
+        "Some are regular (add -ed), most are irregular",
+        "Think carefully about each one"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "went, ate, saw, studied, made,\nhad, played, ran, took, wrote,\ncame, gave"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Future Form Selection",
+      "description": "Choose will, going to, or present continuous:\n1. \"I ___ help you.\" (just decided)\n2. \"We ___ visit grandma next Sunday.\" (planned)\n3. \"The meeting ___ start at 3pm.\" (schedule)\n4. \"Look! That building ___ fall!\" (evidence)\n5. \"I ___ call you later.\" (promise)",
+      "hints": [
+        "Spontaneous = will, Planned = going to, Arranged = present continuous, Schedule = present simple"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "1. will (spontaneous decision)\n2. are going to visit (planned)\n3. starts (schedule)\n4. is going to fall (evidence-based prediction)\n5. will call (promise)"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "topicId": "02-upper-row-drills",
+  "comparisons": [
+    {
+      "concept": "Upper Row Practice Drills",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Upper Row Practice Drills\nconst result = {\n  concept: \"Upper Row Practice Drills\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Upper Row Practice Drills\nresult = {\n    \"concept\": \"Upper Row Practice Drills\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Upper Row Practice Drills is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Upper Row Practice Drills is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

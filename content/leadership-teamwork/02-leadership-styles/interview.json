@@ -1,0 +1,30 @@
+{
+  "topicId": "02-leadership-styles",
+  "questions": [
+    {
+      "question": "What is servant leadership and how does it differ from traditional leadership?",
+      "answer": "Servant leadership inverts the traditional hierarchy: the leader exists to serve the team, not the reverse. Instead of demanding results, servant leaders remove obstacles, provide resources, and prioritize people's growth. Traditional leadership focuses on directing and controlling. The key difference is orientation — servant leaders ask 'what do you need from me?' while traditional leaders ask 'what did you deliver for me?' Research shows servant leadership correlates with higher employee engagement, lower turnover, and stronger long-term performance.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you adapt your leadership style to different team members?",
+      "answer": "I use situational leadership principles. For a new hire (D1: enthusiastic but inexperienced), I provide clear direction and frequent check-ins. For someone who's capable but discouraged (D3), I shift to a supportive style — less instruction, more encouragement. For a senior expert (D4), I delegate fully and focus on removing organizational obstacles. The key is diagnosing each person's development level accurately and resisting the urge to use your default style with everyone.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "When should a leader be transformational vs. operational?",
+      "answer": "Be transformational during change — when the organization needs a new direction, when morale is low, or when people are stuck in outdated thinking. Be operational when stability matters — during execution phases, when processes need discipline, or when the team needs predictability. Most organizations need transformational leadership during strategic pivots and operational leadership during steady-state execution. The best leaders know which mode the situation demands.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "How do you handle a team member who resists your leadership style?",
+      "answer": "First, understand their resistance — is it about the style itself, a trust issue, or a communication gap? I have a direct conversation: 'I've noticed some tension. I want to understand your perspective.' Then I adapt. If they need more autonomy, I delegate more. If they need more structure, I provide it. The goal isn't to impose my style — it's to create conditions where they can do their best work. Sometimes the resistance is feedback that my approach isn't working for them.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What leadership style is most effective for remote teams?",
+      "answer": "Servant leadership works exceptionally well for remote teams because it prioritizes removing obstacles and building trust — both critical when you can't rely on hallway conversations. Combine it with outcome-based management: set clear expectations, measure results not hours, and create structured check-ins. Remote teams also need more intentional communication, so democratic elements (regular input cycles) help surface issues before they become crises.",
+      "difficulty": "medium"
+    }
+  ]
+}

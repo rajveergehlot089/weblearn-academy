@@ -1,0 +1,41 @@
+{
+  "topicId": "08-collaboration",
+  "comparisons": [
+    {
+      "concept": "Collaboration vs. Coordination vs. Cooperation",
+      "rows": [
+        { "dimension": "Definition", "collaboration": "Working jointly to create something new", "coordination": "Aligning activities to avoid conflict", "cooperation": "Working together toward a shared goal" },
+        { "dimension": "Integration level", "collaboration": "High — merging ideas and skills", "coordination": "Medium — aligning separate activities", "cooperation": "Low — parallel work toward same goal" },
+        { "dimension": "Example", "collaboration": "Design + engineering co-creating a product", "coordination": "Sales and support scheduling customer handoffs", "cooperation": "Two teams sharing a common resource" },
+        { "dimension": "Leader effort", "collaboration": "High — requires trust, shared vision, and structure", "coordination": "Medium — requires clear processes and communication", "cooperation": "Low — requires shared goals and goodwill" },
+        { "dimension": "Outcome quality", "collaboration": "Innovation — new solutions emerge", "coordination": "Efficiency — fewer conflicts and duplicates", "cooperation": "Effectiveness — goals are met" }
+      ],
+      "explanation": "All three are valuable. The key is knowing which level of integration the situation requires — don't over-collaborate on simple coordination needs."
+    },
+    {
+      "concept": "In-Person vs. Remote Collaboration",
+      "rows": [
+        { "dimension": "Communication richness", "in_person": "High — body language, tone, spontaneous", "remote": "Lower — depends on tool quality" },
+        { "dimension": "Spontaneity", "in_person": "Easy — hallway conversations, quick questions", "remote": "Hard — requires intentional scheduling" },
+        { "dimension": "Documentation", "in_person": "Often poor — decisions made verbally", "remote": "Often better — written by default" },
+        { "dimension": "Timezone flexibility", "in_person": "Limited to shared hours", "remote": "Enables async, but requires discipline" },
+        { "dimension": "Social bonding", "in_person": "Natural — shared meals, events", "remote": "Requires intentional effort" },
+        { "dimension": "Focus time", "in_person": "Interrupted frequently", "remote": "Easier to protect" }
+      ],
+      "explanation": "Neither is inherently better. The best teams combine both: async for deep work and documentation, sync for complex discussions and relationship building."
+    },
+    {
+      "concept": "Healthy Team vs. Siloed Team",
+      "rows": [
+        { "dimension": "Information flow", "healthy": "Open, shared by default", "siloed": "Hoarded, shared only when required" },
+        { "dimension": "Help-seeking", "healthy": "Normalized — people ask freely", "siloed": "Avoided — seen as weakness" },
+        { "dimension": "Cross-team work", "healthy": "Common and celebrated", "siloed": "Rare, done only under pressure" },
+        { "dimension": "Conflict", "healthy": "Addressed directly and early", "siloed": "Avoided or handled through politics" },
+        { "dimension": "Success definition", "healthy": "Team and org success", "siloed": "Departmental success only" },
+        { "dimension": "New hire onboarding", "healthy": "Introduced across functions", "siloed": "Stays within their team" }
+      ],
+      "explanation": "Silos are the #1 killer of collaboration in growing organizations. Leaders must actively break them through cross-functional work, shared goals, and open information."
+    }
+  ],
+  "keyInsight": "Collaboration is not about being nice — it's about being effective. The best collaborations combine diverse perspectives, challenge assumptions, and produce outcomes no individual could achieve alone."
+}

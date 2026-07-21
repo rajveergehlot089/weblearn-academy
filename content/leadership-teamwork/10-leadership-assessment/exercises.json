@@ -1,0 +1,47 @@
+{
+  "topicId": "10-leadership-assessment",
+  "exercises": [
+    {
+      "title": "Complete Leadership Self-Assessment",
+      "description": "Rate yourself on all 25 competencies (5 per category). Identify your top 3 strengths and bottom 3 development areas.",
+      "hints": [
+        "Be brutally honest — this is for your growth, not a performance review",
+        "Score based on evidence, not aspiration",
+        "Compare your self-rating to a trusted colleague's rating of you"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Leadership Self-Assessment Summary:\n\nSelf-Awareness: ___/25\nCommunication: ___/25\nDecision-Making: ___/25\nPeople Development: ___/25\nTeam Building: ___/25\nTotal: ___/125\n\nTop 3 Strengths (score 4-5):\n1. ___________\n2. ___________\n3. ___________\n\nBottom 3 Development Areas (score 1-2):\n1. ___________\n2. ___________\n3. ___________\n\nCompare with colleague feedback:\n- Where did I overrate myself? ___________\n- Where did I underrate myself? ___________\n- Biggest blind spot: ___________"
+      },
+      "difficulty": "easy"
+    },
+    {
+      "title": "90-Day Leadership Development Plan",
+      "description": "Choose your #1 development area and create a specific 90-day plan with SMART goals, learning activities, and accountability mechanisms.",
+      "hints": [
+        "Choose the area with the lowest score OR the area that would have the biggest impact",
+        "Set ONE specific behavior to practice, not a vague goal",
+        "Find an accountability partner — mentor, coach, or peer"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "90-Day Leadership Development Plan:\n\nDevelopment Area: ___________\nCurrent level (1-5): ___\nTarget level in 90 days: ___\n\nSMART Goal:\nSpecific: I will [specific behavior]\nMeasurable: Evidence of improvement: ___________\nAchievable: Resources needed: ___________\nRelevant: Why this matters to my team: ___________\nTime-bound: By [date], I will have [evidence]\n\nLearning Activities:\n1. Read: ___________\n2. Practice: [daily/weekly specific action]\n3. Get feedback: [from whom, how often]\n4. Mentor: [who, meeting cadence]\n\nProgress Tracking:\nWeek 4: Self-assess (1-5): ___\nWeek 8: Self-assess (1-5): ___\nWeek 12: Self-assess (1-5): ___ + external feedback\n\nAccountability:\nAccountability partner: ___________\nCheck-in frequency: ___________"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Leadership Growth Reflection",
+      "description": "Write a reflection on your leadership journey: where you started, key lessons learned, and where you're headed. Revisit this in 6 months.",
+      "hints": [
+        "Think about your biggest leadership challenge and what it taught you",
+        "Identify the leadership behaviors that have had the most impact",
+        "Be specific about what you'll do differently going forward"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Leadership Growth Reflection:\n\nDate: ___________\n\n1. Where I started:\nMy biggest leadership challenge was: ___________\nWhat it taught me: ___________\n\n2. Key lessons learned:\n- Lesson 1: ___________\n- Lesson 2: ___________\n- Lesson 3: ___________\n\n3. What's working:\n- Leadership behavior that has most impact: ___________\n- Team response: ___________\n\n4. What needs to change:\n- Behavior that's holding me back: ___________\n- Action to change it: ___________\n\n5. Where I'm headed:\n- My leadership vision: ___________\n- Focus area for next 90 days: ___________\n- How I'll measure progress: ___________\n\n6. Commitment:\nIn 6 months, I will: ___________\nRevisit date: ___________"
+      },
+      "difficulty": "hard"
+    }
+  ]
+}

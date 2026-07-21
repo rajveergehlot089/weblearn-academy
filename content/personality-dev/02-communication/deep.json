@@ -1,0 +1,36 @@
+{
+  "topicId": "02-communication",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "The Four Communication Styles",
+      "body": "Understanding communication styles helps you adapt to different people and situations:"
+    },
+    {
+      "heading": "1. Passive Communication",
+      "body": "Passive communicators avoid conflict and prioritize others' needs over their own. They struggle to say 'no' and often feel resentment.\n\n**Signs**: Apologizing excessively, avoiding eye contact, speaking softly, letting others make decisions.\n\n**When it happens**: When you're afraid of conflict, want to be liked, or feel your opinion doesn't matter.\n\n**How to improve**: Practice saying 'I need to think about that' instead of immediately agreeing. Start with low-stakes situations."
+    },
+    {
+      "heading": "2. Aggressive Communication",
+      "body": "Aggressive communicators prioritize their own needs over others'. They dominate conversations and often alienate people.\n\n**Signs**: Interrupting, raising voice, using 'you always' or 'you never', making demands.\n\n**When it happens**: When you feel threatened, unheard, or superior to others.\n\n**How to improve**: Replace 'You always...' with 'I feel... when... because...'. This expresses your needs without attacking."
+    },
+    {
+      "heading": "3. Passive-Aggressive Communication",
+      "body": "Passive-aggressive communicators appear passive but express anger indirectly through sarcasm, procrastination, or subtle sabotage.\n\n**Signs**: Sarcasm, silent treatment, backhanded compliments, procrastination on purpose.\n\n**When it happens**: When you're afraid of direct confrontation but feel angry or resentful.\n\n**How to improve**: Identify what you're actually feeling and express it directly. If you're angry, say so respectfully."
+    },
+    {
+      "heading": "4. Assertive Communication (The Goal)",
+      "body": "Assertive communicators express their needs clearly while respecting others. They're direct, honest, and considerate.\n\n**Signs**: Using 'I' statements, maintaining eye contact, speaking clearly, respecting boundaries.\n\n**How to practice**: Use the formula: 'I feel [emotion] when [situation] because [reason]. I need [specific request].'\n\n**Example**: 'I feel frustrated when meetings run over because I have other commitments. I need us to stick to the agenda.'"
+    },
+    {
+      "heading": "The Art of Asking Questions",
+      "body": "Great communicators ask great questions. Three types of questions transform conversations:\n\n1. **Open-ended questions** (start with What, How, Why): 'What do you think about this approach?' — invites deeper thinking.\n\n2. **Clarifying questions**: 'When you say it's urgent, what timeline are you thinking?' — prevents misunderstandings.\n\n3. **Probing questions**: 'What's behind that concern?' — uncovers root causes.\n\n**Avoid**: Yes/no questions (unless you want a simple answer) and leading questions ('Don't you think this is the right way?')."
+    },
+    {
+      "heading": "Communication in Difficult Situations",
+      "body": "When emotions run high, use the DEAR MAN technique from Dialectical Behavior Therapy:\n\n**D**escribe the situation factually (no judgment)\n**E**xpress how you feel about it\n**A**ssert what you want clearly\n**R**einforce why it benefits both parties\n\n**M**indful — stay focused on your goal\n**A**ppear confident — use clear voice and eye contact\n**N**egotiate — be willing to find middle ground\n\n**Example**: 'When the project deadline moved up (D), I felt overwhelmed (E). I need us to prioritize the three core features (A). This way we deliver something valuable on time (R). I'm open to discussing which features matter most (N).'"
+    }
+  ],
+  "summary": "Communication styles fall into four categories: passive, aggressive, passive-aggressive, and assertive. Assertive communication — expressing your needs while respecting others — is the goal. Master three question types (open-ended, clarifying, probing) to improve understanding. In difficult conversations, use the DEAR MAN technique: Describe, Express, Assert, Reinforce, Mindful, Appear confident, Negotiate."
+}

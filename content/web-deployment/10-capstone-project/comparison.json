@@ -1,0 +1,18 @@
+{
+  "topicId": "10-capstone-project",
+  "comparisons": [
+    {
+      "concept": "Capstone",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Capstone\nconst result = {\n  concept: \"Capstone\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Capstone\nresult = {\n    \"concept\": \"Capstone\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Capstone is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Capstone is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

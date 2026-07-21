@@ -1,0 +1,30 @@
+{
+  "topicId": "02-http-fundamentals",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is HTTP Fundamentals?",
+      "body": "Requests, responses, headers, methods, and status codes. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "HTTP Fundamentals is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind HTTP Fundamentals is understanding how different components work together.\n\n2. Application: In practice, you'll use HTTP Fundamentals every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most HTTP Fundamentals implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding HTTP Fundamentals is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "HTTP",
+      "definition": "A key concept in HTTP Fundamentals. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Fundamentals",
+      "definition": "A key concept in HTTP Fundamentals. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "HTTP Fundamentals is a core concept in fundamentals. Requests, responses, headers, methods, and status codes. Focus on understanding the fundamentals first, then practice applying them."
+}

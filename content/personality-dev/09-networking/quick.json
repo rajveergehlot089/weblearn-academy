@@ -1,0 +1,16 @@
+{
+  "topicId": "09-networking",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    { "heading": "Networking is Not About collecting Contacts", "body": "Networking = building genuine, mutually beneficial relationships.\n\nIt's NOT:\n• Collecting business cards\n• Asking for favors immediately\n• Talking only about yourself\n\nIt IS:\n• Being genuinely curious about others\n• Finding ways to help before asking for help\n• Building trust over time\n\nKey principle: Give first, ask later. The best networkers are givers, not takers." },
+    { "heading": "Where to Network", "body": "Online:\n• LinkedIn (professional updates, thoughtful comments)\n• Twitter/X (industry discussions)\n• Online communities (Slack groups, Discord servers)\n\nOffline:\n• Industry events and conferences\n• Meetups and workshops\n• Alumni events\n• Volunteering\n• Co-working spaces\n\nDaily:\n• Your current colleagues\n• Neighbors and community members\n• Parents at your kids' school\n• People at the gym or coffee shop" },
+    { "heading": "The Follow-Up Formula", "body": "Meeting someone new:\n1. Connect within 24 hours (LinkedIn or email)\n2. Reference something specific from your conversation\n3. Offer something of value (article, introduction, resource)\n4. Suggest a specific next step\n\nExample:\n'Hi [Name], it was great meeting you at [event]. I really enjoyed our conversation about [topic]. I found this article that might be useful: [link]. Would you be open to grabbing coffee sometime?'\n\nKeep in touch:\n• Share relevant articles occasionally\n• Congratulate on achievements\n• Check in every 2-3 months\n• Remember personal details (birthdays, hobbies)" }
+  ],
+  "jargon": [
+    { "term": "Networking", "definition": "Building and maintaining professional relationships for mutual benefit. Most opportunities come through personal connections, not job boards." },
+    { "term": "Elevator Pitch", "definition": "A 30-60 second summary of who you are, what you do, and what you're looking for. Named because it should fit in an elevator ride." },
+    { "term": "Weak Ties", "definition": "Acquaintances you don't know well. Research shows weak ties often provide the most job opportunities — they connect you to different networks." }
+  ],
+  "summary": "Networking is about building genuine relationships, not collecting contacts. Give value first, follow up consistently, and nurture connections over time. Most opportunities come through people."
+}

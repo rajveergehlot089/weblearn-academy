@@ -1,0 +1,26 @@
+{
+  "topicId": "03-growth-mindset",
+  "exercises": [
+    {
+      "title": "Fixed Mindset Thought Log",
+      "description": "For one week, keep a log of fixed-mindset thoughts as they occur. When you notice a thought like 'I'm not good at this' or 'They're just naturally talented,' write it down, then transform it into a growth-mindset reframe. Track how many fixed-mindset thoughts you catch and reframe each day.",
+      "hints": ["Carry a small notebook or use a notes app on your phone", "Common triggers: criticism, comparison, challenges, mistakes", "The goal isn't to never have fixed-mindset thoughts — it's to notice and reframe them"],
+      "solution": { "language": "text", "code": "Fixed Mindset Thought Log — Week Results:\n\nMonday:\n- Fixed: 'I'm terrible at public speaking' (after a presentation)\n- Reframe: 'I need more practice and better preparation strategies'\n- Action: Watched a TED talk on presentation skills\n\nWednesday:\n- Fixed: 'She's just naturally more organized than me' (comparing to colleague)\n- Reframe: 'She's likely developed systems and habits I haven't learned yet'\n- Action: Asked her about her organizational methods\n\nFriday:\n- Fixed: 'I'll never understand this technical concept' (studying)\n- Reframe: 'I need a different learning approach — maybe a video explanation'\n- Action: Found a tutorial that explained it differently; understood it in 20 minutes\n\nWeek summary:\n- Total fixed-mindset thoughts caught: 12\n- Successfully reframed: 10 (83%)\n- Most common trigger: comparison with others\n- Most effective reframe: 'I haven't practiced this yet'\n- Key insight: Fixed-mindset thoughts feel true in the moment but are rarely accurate when examined" },
+      "difficulty": "easy"
+    },
+    {
+      "title": "Process vs Person Praise Experiment",
+      "description": "For two weeks, consciously change how you give praise to others (and yourself). Replace person praise ('You're so smart/talented') with process praise ('Great strategy,' 'I noticed how hard you worked on that'). Track the responses you get and any changes in behavior or attitude.",
+      "hints": ["Start with low-stakes situations", "Notice how it feels different to give process praise", "Apply the same principle to your self-talk"],
+      "solution": { "language": "text", "code": "Process Praise Experiment — Week Results:\n\nColleague (project completion):\nBefore: 'You're amazing! You're a natural at this.'\nAfter: 'I noticed you tested three different approaches before finding the best one. That persistence paid off.'\nResponse: They seemed more engaged, asked questions about my approach too.\n\nChild/nephew (homework):\nBefore: 'You're so smart!'\nAfter: 'You tried a really creative approach to that problem.'\nResponse: They asked for a harder problem instead of stopping.\n\nSelf-talk (after completing task):\nBefore: 'I'm good at this'\nAfter: 'That approach worked well — I should remember this strategy'\nEffect: Felt more motivated to tackle the next challenge\n\nTeam meeting:\nBefore: 'Sarah is brilliant'\nAfter: 'Sarah's research process really showed — she found three sources no one else considered'\nEffect: Team started discussing processes rather than praising individuals\n\nKey observations:\n- Process praise feels more genuine and specific\n- Recipients are more likely to repeat the praised behavior\n- It normalizes effort and strategy as the path to success" },
+      "difficulty": "medium"
+    },
+    {
+      "title": "The Learning Challenge",
+      "description": "Choose a skill you've always wanted to learn but have avoided because 'you're not naturally good at it.' Spend 30 minutes daily for two weeks practicing it. Document: what you tried, what went wrong, what strategies you adjusted, and any improvement. At the end, compare your Day 1 performance to Day 14.",
+      "hints": ["Choose something with measurable progress (drawing, instrument, coding, language)", "Record yourself on Day 1 and Day 14 for comparison", "Focus on the PROCESS of learning, not just the outcome"],
+      "solution": { "language": "text", "code": "Learning Challenge: Learning to draw portraits\n\nDay 1: Drew a self-portrait from a mirror. Complete proportions wrong, features misaligned. Rated 2/10. Felt discouraged.\n\nDay 3: Watched tutorials on facial proportions. Drew using the Loomis method (grid-based approach). Better proportions but still awkward. Rated 3/10.\n\nDay 7: Started focusing on one feature at a time (eyes first, then nose). Discovered that drawing the shapes AROUND features (negative space) was easier. Rated 5/10.\n\nDay 10: Drew a friend from a photo. Used all techniques learned. Recognizable as a person! Rated 6/10.\n\nDay 14: Drew another self-portrait. Used grid, negative space, and feature-by-feature approach. Much improved. Rated 7/10.\n\nKey learnings:\n- Initial failure was not about 'lack of talent' — it was lack of specific techniques\n- Breaking the skill into sub-skills (proportions, shading, features) made it manageable\n- Recording progress made growth visible and motivating\n- The biggest improvement came from changing my approach, not just 'trying harder'\n\nMindset shift: 'I'm not artistic' → 'I haven't learned drawing techniques yet'" },
+      "difficulty": "hard"
+    }
+  ]
+}

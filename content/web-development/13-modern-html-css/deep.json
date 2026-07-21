@@ -1,0 +1,35 @@
+{
+  "topicId": "13-modern-html-css",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Flexbox Deep Dive",
+      "body": "Flexbox controls layout in one direction:",
+      "code": {
+        "language": "css",
+        "snippet": ".container {\n  display: flex;\n  flex-direction: row;     /* row | column */\n  justify-content: center;  /* main axis */\n  align-items: center;      /* cross axis */\n  flex-wrap: wrap;\n  gap: 16px;\n}\n\n.item {\n  flex-grow: 1;\n  flex-shrink: 0;\n  flex-basis: 200px;\n}\n\n/* Common patterns */\n.nav { display: flex; justify-content: space-between; }\n.center { display: flex; justify-content: center; align-items: center; }\n.sidebar-layout { display: flex; }\n.sidebar { width: 250px; }\n.main { flex: 1; }",
+        "explanation": "justify-content = horizontal. align-items = vertical. flex: 1 means 'take all available space'."
+      }
+    },
+    {
+      "heading": "CSS Grid Deep Dive",
+      "body": "Grid handles two-dimensional layouts:",
+      "code": {
+        "language": "css",
+        "snippet": ".grid {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 20px;\n}\n\n/* Responsive grid (no media queries!) */\n.auto-grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\n  gap: 20px;\n}\n\n/* Named areas */\n.layout {\n  display: grid;\n  grid-template-areas:\n    'header header header'\n    'sidebar main   aside'\n    'footer footer footer';\n  grid-template-columns: 200px 1fr 200px;\n}",
+        "explanation": "repeat(3, 1fr) creates 3 equal columns. auto-fit + minmax creates responsive grids automatically."
+      }
+    },
+    {
+      "heading": "CSS Variables",
+      "body": "Define and reuse values:",
+      "code": {
+        "language": "css",
+        "snippet": ":root {\n  --primary: #3b82f6;\n  --bg-dark: #0f172a;\n  --text: #f1f5f9;\n  --radius: 8px;\n}\n\n.button {\n  background: var(--primary);\n  color: var(--text);\n  border-radius: var(--radius);\n}\n\n/* Theme switching */\n[data-theme='dark'] {\n  --bg-dark: #0f172a;\n  --text: #f1f5f9;\n}\n\n[data-theme='light'] {\n  --bg-dark: #ffffff;\n  --text: #1e293b;\n}",
+        "explanation": "Define variables in :root. Reference with var(--name). Change themes by overriding variables."
+      }
+    }
+  ],
+  "summary": "Flexbox for 1D layouts, Grid for 2D layouts. CSS variables for reusable values and theming. auto-fit + minmax creates responsive grids without media queries."
+}

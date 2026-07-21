@@ -1,0 +1,20 @@
+{
+  "topicId": "06-routing-rest-graphql",
+  "questions": [
+    {
+      "question": "What makes an API 'RESTful'?",
+      "answer": "A RESTful API follows these constraints: (1) Client-server architecture, (2) Stateless — each request contains all info needed, (3) Uses standard HTTP methods (GET, POST, PUT, DELETE), (4) Resource-based URLs (/users, /posts), (5) Returns appropriate status codes, (6) Uses JSON for data exchange. The key is predictability.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What is the N+1 problem in REST APIs?",
+      "answer": "The N+1 problem occurs when fetching a list of items and then making individual requests for related data. Example: GET /posts returns 100 posts, then you make 100 separate GET /posts/:id/comments requests. That's 101 total requests. Solutions: use includes/joins in your database query, or batch endpoints.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "What are the advantages of GraphQL over REST?",
+      "answer": "(1) No over-fetching — clients get exactly the fields they need, (2) No under-fetching — related data in one request, (3) Single endpoint — simpler to manage, (4) Strongly typed schema — self-documenting, (5) Better for multiple clients (web/mobile need different data shapes).",
+      "difficulty": "medium"
+    }
+  ]
+}

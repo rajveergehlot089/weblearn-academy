@@ -1,0 +1,30 @@
+{
+  "topicId": "07-motivation",
+  "questions": [
+    {
+      "question": "How do you motivate a team during a difficult period?",
+      "answer": "First, acknowledge the difficulty honestly — don't sugarcoat. Then reconnect the team to purpose: 'This is hard, but here's why it matters.' Break the challenge into small, achievable milestones so people feel progress. Recognize effort, not just outcomes. Increase support — more check-ins, more resources, more listening. And protect the team from unnecessary external pressure. People can handle hard work if they feel supported and see meaning in it.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you motivate someone who seems disengaged?",
+      "answer": "I start by listening. 'I've noticed you seem less engaged lately. What's going on?' It could be burnout, personal issues, lack of challenge, or a values misalignment. Based on what I hear, I address the root cause. If it's challenge, I provide stretch assignments. If it's burnout, I reduce load. If it's values, I have an honest conversation about fit. I never assume — disengagement is a symptom, not a diagnosis.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What's the relationship between motivation and psychological safety?",
+      "answer": "They're deeply connected. Motivation requires risk-taking — trying new approaches, proposing ideas, admitting mistakes. If the environment punishes failure, people stop taking risks and disengage. Psychological safety creates the foundation for intrinsic motivation: people feel safe to be autonomous, experiment to build competence, and connect authentically with their team. Google's research confirms: safety is the #1 team performance predictor, and motivation follows directly.",
+      "difficulty": "hard"
+    },
+    {
+      "question": "How do you balance recognition with accountability?",
+      "answer": "Recognition and accountability aren't opposites — they're complementary. I recognize effort and specific contributions regularly, while holding people accountable to clear expectations. The key is separating the person from the performance: 'I value your contributions AND this result didn't meet our standard.' Both can coexist. When recognition feels earned and accountability feels fair, people stay motivated even through tough performance conversations.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you prevent top performers from burning out?",
+      "answer": "Top performers are at highest burnout risk because they take on more and struggle to say no. I proactively: (1) limit their workload — protect their time, (2) ensure they have variety — not just execution, (3) give them autonomy over how they work, (4) recognize their effort publicly so they feel valued, (5) have regular check-ins that go beyond status updates — 'How are you doing?' not just 'What did you do?' And I model sustainable work habits myself.",
+      "difficulty": "medium"
+    }
+  ]
+}

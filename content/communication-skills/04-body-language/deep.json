@@ -1,0 +1,46 @@
+{
+  "topicId": "04-body-language",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "Reading Body Language in Others",
+      "body": "Body language tells you what people are really thinking. Look for clusters of signals — one gesture alone can be misleading, but three matching signals are reliable:",
+      "code": {
+        "language": "example",
+        "snippet": "SIGNS SOMEONE IS DISCOMFORTABLE:\n- Leaning back / creating distance\n- Crossed arms or legs\n- Reduced eye contact\n- Fidgeting or touching face/neck\n- Feet pointed toward exit\n\nSIGNS SOMEONE IS ENGAGED:\n- Leaning forward\n- Uncrossed arms, open palms\n- Sustained eye contact\n- Nodding\n- Feet pointed toward you\n\nSIGNS SOMEONE IS ANXIOUS:\n- Self-soothing gestures (touching neck, rubbing hands)\n- Shallow breathing\n- Shifting weight from foot to foot\n- Avoiding eye contact\n- Voice pitch rising",
+        "explanation": "Never read a single gesture in isolation. Look for clusters of 3+ signals that tell a consistent story. Also consider context — crossed arms might just mean someone is cold."
+      }
+    },
+    {
+      "heading": "The Science of Eye Contact",
+      "body": "Eye contact is the most powerful nonverbal signal. It triggers the release of oxytocin (the bonding hormone) in both the speaker and listener. Here's how to get it right:",
+      "bulletPoints": [
+        "The 50/70 Rule: Make eye contact 50% of the time while speaking, 70% while listening",
+        "The Triangle Technique: When you need to look away, glance at the bridge of their nose or their forehead — it feels like eye contact to them",
+        "Break contact by looking down (shows thoughtfulness), not to the side (which signals distraction)",
+        "In groups: Give each person 3-5 seconds of eye contact before moving to the next"
+      ]
+    },
+    {
+      "heading": "Power and Status Through Posture",
+      "body": "Your posture signals your social position. High-power postures take up space; low-power postures contract:",
+      "code": {
+        "language": "example",
+        "snippet": "HIGH-POWER POSTURE (confidence, authority):\n- Standing tall with shoulders back\n- Hands on hips or steepling fingers\n- Taking up space (elbows out, legs apart)\n- Leaning back in chair with hands behind head\n\nLOW-POWER POSTURE (submission, uncertainty):\n- Slouching or hunching\n- Crossing arms tightly\n- Making yourself small (hugging self)\n- Fidgeting with objects\n\nNEUTRAL/ENGAGED POSTURE (best for collaboration):\n- Standing/sitting upright, relaxed\n- Arms uncrossed, hands visible\n- Slight forward lean\n- Feet planted, not shifting",
+        "explanation": "Match your posture to the situation. High-power for leading; engaged for collaborating; avoid low-power unless you're intentionally showing humility."
+      }
+    },
+    {
+      "heading": "Cultural Differences in Body Language",
+      "body": "Body language is not universal. What's normal in one culture can be offensive in another:",
+      "bulletPoints": [
+        "Eye contact: Direct eye contact = respect in Western cultures but disrespect in some Asian and Indigenous cultures",
+        "Personal space: Northern Europeans prefer 1.2m; Latin Americans and Middle Easterners prefer 0.5m",
+        "Gestures: Thumbs up = approval in the US, offensive in the Middle East. OK sign = fine in US, vulgar in Brazil",
+        "Touch: Brief touch on the arm = friendly in some cultures, inappropriate in others"
+      ]
+    }
+  ],
+  "summary": "Read body language through clusters of 3+ signals, never single gestures. Eye contact should be 50% when speaking, 70% when listening. Posture signals power level — match it to the situation. Always consider cultural differences when interpreting body language."
+}

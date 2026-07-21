@@ -1,0 +1,18 @@
+{
+  "topicId": "02-nouns",
+  "comparisons": [
+    {
+      "concept": "Nouns",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Nouns\nconst result = {\n  concept: \"Nouns\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Nouns\nresult = {\n    \"concept\": \"Nouns\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Nouns is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Nouns is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

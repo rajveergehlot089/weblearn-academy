@@ -1,0 +1,18 @@
+{
+  "topicId": "09-databases-crud",
+  "comparisons": [
+    {
+      "concept": "CRUD operations",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript (MongoDB)\nawait db.collection('users').insertOne({ name: 'Raj' });\nconst user = await db.collection('users').findOne({ name: 'Raj' });\nawait db.collection('users').updateOne({ name: 'Raj' }, { $set: { email: 'raj@example.com' } });\nawait db.collection('users').deleteOne({ name: 'Raj' });"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python (SQLAlchemy ORM)\nuser = User(name='Raj')\nsession.add(user)\nsession.commit()\n\nuser = session.query(User).filter_by(name='Raj').first()\nuser.email = 'raj@example.com'\nsession.commit()\n\nsession.delete(user)\nsession.commit()"
+      },
+      "explanation": "CRUD is universal: every language and database implements these 4 operations. The syntax differs but the concept is identical."
+    }
+  ],
+  "keyInsight": "CRUD is the FOUNDATION of all backend development. Whether you use SQL or NoSQL, JavaScript or Python, the 4 operations are always the same."
+}

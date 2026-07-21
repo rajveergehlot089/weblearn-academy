@@ -1,0 +1,30 @@
+{
+  "topicId": "03-goal-setting",
+  "questions": [
+    {
+      "question": "How do I set goals when I'm not sure what I want to achieve?",
+      "answer": "Start with exploration, not commitment. Set a 'discovery goal': 'In the next 4 weeks, I will explore 3 potential career directions by having 2 conversations each with someone in that field, reading 1 article about each, and spending 2 hours trying each.' This gives you data to make an informed decision. Don't wait for clarity before setting goals — clarity comes FROM action, not before it. The SMART framework works even for exploration: be specific about what you'll explore, measure how much you explored, and set a deadline.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What's the difference between a goal and a task?",
+      "answer": "A goal is a desired outcome (what you want to achieve). A task is a specific action (what you do today). Example: Goal = 'Become a senior developer.' Tasks = 'Complete system design course by Friday,' 'Lead the auth refactor project,' 'Mentor one junior developer.' Tasks are HOW you achieve the goal. If you only track tasks, you might stay busy without making progress toward any goal. If you only track goals, you'll feel overwhelmed without clear next steps. You need both: goals for direction, tasks for execution.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I stay motivated on long-term goals that take months?",
+      "answer": "Break long-term goals into milestones you can celebrate every 2-4 weeks. Motivation comes from PROGRESS, not from the goal itself. Track your process goals (what you do daily/weekly) because those are fully in your control. Use habit stacking to make progress automatic — link your goal behaviors to existing routines. Also, find an accountability partner: tell someone your goals and check in weekly. The social commitment makes you 65% more likely to follow through.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What do I do when I fail to meet a goal?",
+      "answer": "First, analyze: was the goal SMART, or was it vague? Did you track your process goals, or just hope for the outcome? Was the goal achievable given your constraints? Then adjust: if the goal was too ambitious, scope it down. If you didn't track, start tracking. If external factors changed, update the goal. Never use failure as evidence that 'goal-setting doesn't work' — use it as data to set better goals next time. The developers who improve fastest are the ones who learn from failed goals, not the ones who never set them.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I balance personal goals with work deadlines?",
+      "answer": "Use the 1-3-5 rule across both domains. Your '1 big goal' might be work-related (ship feature X by Q2). Your '3 medium goals' might mix: 1 work, 1 learning, 1 health. Your '5 small goals' are weekly actions across all areas. The key insight: personal goals make you better at work goals. Exercise improves focus. Learning new tech makes you more effective. Strong relationships prevent burnout. Don't sacrifice personal goals for work deadlines — invest in them as productivity infrastructure.",
+      "difficulty": "hard"
+    }
+  ]
+}

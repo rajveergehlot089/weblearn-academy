@@ -1,0 +1,25 @@
+{
+  "topicId": "03-growth-mindset",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Fixed Mindset vs Growth Mindset",
+      "body": "Psychologist Carol Dweck's decades of research at Stanford University identified two fundamental mindsets that shape how we approach challenges, failure, and learning:\n\nFixed Mindset: The belief that your abilities, intelligence, and talents are fixed traits. You're either smart or you're not. Success proves your innate talent; failure reveals your limitations.\n\nGrowth Mindset: The belief that abilities can be developed through dedication, hard work, and learning. Intelligence is like a muscle — it grows with exercise. Failure is feedback, not identity."
+    },
+    {
+      "heading": "The Power of 'Yet'",
+      "body": "One of Dweck's most impactful discoveries is the power of the word 'yet.' Fixed mindset says: 'I can't do this.' Growth mindset says: 'I can't do this YET.' This simple linguistic shift transforms a dead-end into a path forward.\n\nChildren who were taught 'yet' showed 34% greater resilience when facing difficult math problems. Adults who adopted 'yet' language reported 25% higher persistence in challenging projects."
+    },
+    {
+      "heading": "How Mindset Affects Achievement",
+      "body": "In Dweck's studies:\n• Students with growth mindset who received a difficult problem chose to work on it 40% longer than fixed-mindset peers.\n• Employees with growth mindset sought feedback 3x more frequently.\n• Athletes with growth mindset improved performance 40% more after setbacks.\n• Leaders with growth mindset built teams with 26% higher energy and 33% greater commitment.\n\nMindset is not just positive thinking — it's a framework that determines whether you interpret challenges as threats or opportunities."
+    }
+  ],
+  "jargon": [
+    { "term": "Growth Mindset", "definition": "The belief that abilities and intelligence can be developed through effort, good strategies, and input from others. Not about being positive — it's about being open to learning." },
+    { "term": "Fixed Mindset", "definition": "The belief that abilities are innate and unchangeable. This mindset leads to avoiding challenges, giving up easily, and seeing effort as pointless." },
+    { "term": "Neuroplasticity", "definition": "The brain's ability to form new neural connections throughout life. This is the biological basis for growth mindset — intelligence IS improvable." }
+  ],
+  "summary": "Carol Dweck's research shows two mindsets: fixed (abilities are static) and growth (abilities develop through effort). Growth mindset leads to greater persistence, learning, and achievement. The biological basis is neuroplasticity — your brain physically changes with practice. Start by noticing your fixed-mindset triggers, then practice adding 'yet' to limitations."
+}

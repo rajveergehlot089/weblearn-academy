@@ -1,0 +1,33 @@
+{
+  "topicId": "09-databases-crud",
+  "exercises": [
+    {
+      "title": "Design a Database Schema",
+      "description": "Design a database schema for a blog with: users, posts, and comments. A user has many posts, a post has many comments.",
+      "hints": [
+        "Each table needs a primary key",
+        "Posts need a foreign key to users (authorId)",
+        "Comments need foreign keys to both posts and users"
+      ],
+      "solution": {
+        "language": "text",
+        "code": "Users:\n  id (PK)\n  name\n  email (unique)\n  passwordHash\n  createdAt\n\nPosts:\n  id (PK)\n  title\n  content\n  authorId (FK -> Users.id)\n  createdAt\n\nComments:\n  id (PK)\n  text\n  postId (FK -> Posts.id)\n  authorId (FK -> Users.id)\n  createdAt"
+      },
+      "difficulty": "medium"
+    },
+    {
+      "title": "Build a CRUD API",
+      "description": "Write Express endpoints for a 'todos' resource with all CRUD operations using an in-memory array.",
+      "hints": [
+        "Use an array to store todos in memory",
+        "Use req.params.id to identify specific todos",
+        "Return proper status codes: 201 for creation, 404 for not found"
+      ],
+      "solution": {
+        "language": "javascript",
+        "code": "const todos = [];\nlet nextId = 1;\n\napp.get('/api/todos', (req, res) => res.json(todos));\napp.get('/api/todos/:id', (req, res) => {\n  const todo = todos.find(t => t.id === +req.params.id);\n  if (!todo) return res.status(404).json({ error: 'Not found' });\n  res.json(todo);\n});\napp.post('/api/todos', (req, res) => {\n  const todo = { id: nextId++, text: req.body.text, done: false };\n  todos.push(todo);\n  res.status(201).json(todo);\n});\napp.put('/api/todos/:id', (req, res) => {\n  const todo = todos.find(t => t.id === +req.params.id);\n  if (!todo) return res.status(404).json({ error: 'Not found' });\n  Object.assign(todo, req.body);\n  res.json(todo);\n});\napp.delete('/api/todos/:id', (req, res) => {\n  const index = todos.findIndex(t => t.id === +req.params.id);\n  if (index === -1) return res.status(404).json({ error: 'Not found' });\n  todos.splice(index, 1);\n  res.json({ success: true });\n});"
+      },
+      "difficulty": "medium"
+    }
+  ]
+}

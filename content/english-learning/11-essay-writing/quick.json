@@ -1,0 +1,16 @@
+{
+  "topicId": "11-essay-writing",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    { "heading": "Essay Structure", "body": "Every essay has 3 parts:\n\n1. Introduction (1 paragraph)\n   - Hook: grab attention with a fact, question, or quote\n   - Context: brief background\n   - Thesis: your main argument or point\n\n2. Body (2-4 paragraphs)\n   - Each paragraph = one main idea\n   - Topic sentence → Evidence/Example → Explanation\n   - Use linking words: however, furthermore, in addition\n\n3. Conclusion (1 paragraph)\n   - Restate thesis (different words)\n   - Summarize key points\n   - Final thought or call to action" },
+    { "heading": "Paragraph Writing", "body": "Each paragraph follows P.E.E.L:\n\nP - Point: State your main idea\n'Economic inequality is a growing global concern.'\n\nE - Evidence: Support with facts or examples\n'According to Oxfam, the richest 1% own more wealth than 99% of the world.'\n\nE - Explanation: Explain how the evidence supports your point\n'This statistic highlights the vast gap between the wealthy and the rest of society.'\n\nL - Link: Connect to the next paragraph\n'However, this issue is not limited to wealth alone.'\n\nTip: One paragraph = one idea. If you have two ideas, make two paragraphs." },
+    { "heading": "Common Essay Mistakes", "body": "1. No thesis statement → essay lacks direction\n2. Paragraphs too long → break them up (3-5 sentences each)\n3. No examples → opinions without evidence\n4. Repetition → say it once, say it well\n5. Informal language → avoid contractions and slang in essays\n6. Plagiarism → always cite your sources\n7. Weak conclusion → don't just repeat; synthesize" }
+  ],
+  "jargon": [
+    { "term": "Thesis Statement", "definition": "The main argument of your essay, stated in the introduction. It tells the reader what you'll argue. Example: 'Social media has more negative effects on teenagers than positive ones.'" },
+    { "term": "Topic Sentence", "definition": "The first sentence of a paragraph, stating the paragraph's main idea. It connects to the thesis. Example: 'One major benefit of exercise is improved mental health.'" },
+    { "term": "Linking Words", "definition": "Words that connect ideas: moreover, however, therefore, furthermore, additionally, consequently, in contrast, similarly." }
+  ],
+  "summary": "Essays follow a clear structure: Introduction (thesis) → Body (P.E.E.L paragraphs) → Conclusion (synthesize). One paragraph = one idea, supported by evidence."
+}

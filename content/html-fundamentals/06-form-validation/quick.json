@@ -1,0 +1,34 @@
+{
+  "topicId": "06-form-validation",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "HTML5 Form Validation",
+      "body": "HTML5 provides built-in form validation with attributes that check user input before submission. This improves user experience and reduces server load."
+    },
+    {
+      "heading": "Validation Attributes",
+      "body": "Key validation attributes:\n• required: Field must be filled\n• pattern: Regex pattern to match\n• min/max: Number/date constraints\n• minlength/maxlength: Text length limits\n• type: Email, URL, number validation"
+    },
+    {
+      "heading": "Custom Validation",
+      "body": "You can customize validation messages with JavaScript and style invalid inputs with CSS :invalid and :valid selectors."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Validation",
+      "definition": "Checking user input against rules before processing"
+    },
+    {
+      "term": "Pattern",
+      "definition": "A regular expression that input must match"
+    },
+    {
+      "term": "Constraint Validation API",
+      "definition": "JavaScript API for custom form validation"
+    }
+  ],
+  "summary": "HTML5 provides built-in form validation with attributes like required, pattern, min/max, and type. Customize with JavaScript and style with CSS for better UX."
+}

@@ -1,0 +1,44 @@
+{
+  "topicId": "10-productivity-test",
+  "comparisons": [
+    {
+      "concept": "Productivity System Archetypes",
+      "items": [
+        {
+          "name": "The Chaotic Coder",
+          "description": "Works on whatever feels urgent, no system, high stress, inconsistent output",
+          "symptoms": "Always busy but rarely productive, frequent context switching, no routines",
+          "score_range": "0-67/170",
+          "focus_areas": "Time management basics (Eisenhower Matrix) + sleep hygiene",
+          "first_habit": "Time block 2 hours of deep work tomorrow morning"
+        },
+        {
+          "name": "The Efficient Worker",
+          "description": "Has good time management but neglects wellness, eventually burns out",
+          "symptoms": "High output but declining energy, chronic stress, neglecting health",
+          "score_range": "68-101/170",
+          "focus_areas": "Stress management + work-life boundaries",
+          "first_habit": "Shutdown ritual at 5:30 PM daily"
+        },
+        {
+          "name": "The Balanced Professional",
+          "description": "Maintains both productivity AND wellness, sustainable high performance",
+          "symptoms": "Consistent output, good energy, healthy boundaries, continuous improvement",
+          "score_range": "102-135/170",
+          "focus_areas": "Optimization + advanced techniques (OKRs, deep work blocks)",
+          "first_habit": "Weekly review + quarterly goal setting"
+        },
+        {
+          "name": "The Productivity Master",
+          "description": "Has refined their system over years, mentors others, consistently high performance",
+          "symptoms": "Effortless productivity, strong boundaries, helping others improve",
+          "score_range": "136-170/170",
+          "focus_areas": "Maintenance + teaching others + continuous learning",
+          "first_habit": "Share your system with a junior developer"
+        }
+      ],
+      "insight": "Where you are NOW isn't where you'll be in 6 months. Most developers move from Chaotic Coder to Efficient Worker in 4-8 weeks, then to Balanced Professional in 3-6 months. The key is starting with ONE habit and building from there."
+    }
+  ],
+  "keyInsight": "Your diagnostic score tells you which archetype you are — not as a judgment, but as a starting point. Every master was once a chaotic coder. The difference is they started building one habit at a time."
+}

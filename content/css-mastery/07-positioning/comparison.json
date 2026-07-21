@@ -1,0 +1,18 @@
+{
+  "topicId": "07-positioning",
+  "comparisons": [
+    {
+      "concept": "Positioning & Stacking",
+      "javascript": {
+        "language": "javascript",
+        "code": "// JavaScript approach to Positioning & Stacking\nconst result = {\n  concept: \"Positioning & Stacking\",\n  approach: \"modern\",\n  complexity: \"moderate\"\n};\nconsole.log(result);"
+      },
+      "python": {
+        "language": "python",
+        "code": "# Python approach to Positioning & Stacking\nresult = {\n    \"concept\": \"Positioning & Stacking\",\n    \"approach\": \"pythonic\",\n    \"complexity\": \"moderate\"\n}\nprint(result)"
+      },
+      "explanation": "The core concept of Positioning & Stacking is the same across languages. The syntax differs, but the underlying principles are universal."
+    }
+  ],
+  "keyInsight": "The key insight about Positioning & Stacking is that understanding the fundamentals deeply will make advanced concepts feel natural. Don't rush through the basics — they're the foundation for everything else."
+}

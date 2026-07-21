@@ -1,0 +1,58 @@
+{
+  "topicId": "07-difficult-conversations",
+  "exercises": [
+    {
+      "title": "I-Statement Transformation",
+      "description": "Convert each blame statement into an I-statement using the formula: 'I feel [emotion] when [specific behavior] because [impact on you].'",
+      "hints": [
+        "Start with 'I feel...' not 'I think...' or 'I believe...'",
+        "Describe the BEHAVIOR, not the PERSON",
+        "Explain WHY it matters to you"
+      ],
+      "scenarios": [
+        "Original: 'You never listen to my ideas in meetings.'",
+        "Original: 'You're always late and it's so disrespectful.'",
+        "Original: 'You don't care about this project like I do.'",
+        "Original: 'You made that mistake on purpose to make me look bad.'"
+      ],
+      "solution": "Rewritten: (1) 'I feel unheard when my suggestions aren't acknowledged in meetings because I want to contribute to our team's success.' (2) 'I feel anxious when meetings start late because it impacts my schedule and I end up rushing.' (3) 'I feel concerned about the project timeline because I want us both to succeed and I need more collaboration.' (4) 'I feel frustrated by the error because it affects our client relationship — can we discuss what happened?'",
+      "difficulty": "medium"
+    },
+    {
+      "title": "The Difficult Conversation Prep Sheet",
+      "description": "Choose a real difficult conversation you need to have. Complete this preparation sheet before the conversation.",
+      "hints": [
+        "Be specific — vague preparation leads to vague conversations",
+        "Write it down — it helps organize your thoughts",
+        "Include their perspective, not just yours"
+      ],
+      "prepSheet": {
+        "situation": "[What specific behavior or situation needs to be addressed? Be factual.]",
+        "impact": "[What is the impact on you, the team, or the project? Facts + feelings.]",
+        "desiredOutcome": "[What do you want the result to be? Be specific.]",
+        "theirPerspective": "[What might they be feeling? What reasons might they have?]",
+        "openingLine": "[How will you start the conversation? Use an I-statement or common ground.]"
+      },
+      "solution": "Example completed sheet: Situation: 'The last three reports were submitted after the Friday deadline.' Impact: 'This delays the Monday leadership meeting and creates weekend work for me.' Desired outcome: 'Reports submitted by Thursday EOD.' Their perspective: 'Maybe they're overloaded, or unclear on the urgency, or the process needs streamlining.' Opening: 'I want to make sure we're aligned on the reporting timeline — can we discuss?'",
+      "difficulty": "hard"
+    },
+    {
+      "title": "De-escalation Role Play",
+      "description": "Practice de-escalation with a partner. One person plays a frustrated colleague; the other practices calming techniques. Switch roles after 3 minutes.",
+      "hints": [
+        "The 'frustrated' person should escalate — raise voice, use blame statements",
+        "The 'calm' person should use: acknowledgment, slow pacing, questions, finding agreement",
+        "Don't try to solve the problem until the emotional temperature drops"
+      ],
+      "deescalationScript": [
+        "Step 1: Acknowledge — 'I can see you're really frustrated about this.'",
+        "Step 2: Slow down — Lower your voice, speak slowly, pause between sentences.",
+        "Step 3: Find agreement — 'We both want this project to succeed.'",
+        "Step 4: Ask — 'Help me understand what's most concerning for you.'",
+        "Step 5: Collaborate — 'What would help? What can we do differently?'"
+      ],
+      "solution": "After 3 minutes, most 'frustrated' actors report feeling heard when the other person acknowledges their emotion first. The key insight: you can't solve a problem until the person feels understood. De-escalation isn't weakness — it's the fastest path to resolution.",
+      "difficulty": "hard"
+    }
+  ]
+}

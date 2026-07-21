@@ -1,0 +1,34 @@
+{
+  "topicId": "03-http-methods",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is HTTP Methods?",
+      "body": "GET, POST, PUT, DELETE, PATCH and when to use each. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "HTTP Methods is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind HTTP Methods is understanding how different components work together.\n\n2. Application: In practice, you'll use HTTP Methods every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most HTTP Methods implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding HTTP Methods is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "HTTP",
+      "definition": "A key concept in HTTP Methods. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Methods",
+      "definition": "A key concept in HTTP Methods. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "CRUD",
+      "definition": "A key concept in HTTP Methods. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "HTTP Methods is a core concept in fundamentals. GET, POST, PUT, DELETE, PATCH and when to use each. Focus on understanding the fundamentals first, then practice applying them."
+}

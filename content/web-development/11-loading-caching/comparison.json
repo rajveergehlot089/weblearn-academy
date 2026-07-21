@@ -1,0 +1,18 @@
+{
+  "topicId": "11-loading-caching",
+  "comparisons": [
+    {
+      "concept": "Async data fetching with loading state",
+      "javascript": {
+        "language": "javascript",
+        "code": "let loading = true;\nlet data = null;\ntry {\n  const res = await fetch('/api/data');\n  data = await res.json();\n} catch (e) {\n  console.error(e);\n} finally {\n  loading = false;\n}"
+      },
+      "python": {
+        "language": "python",
+        "code": "loading = True\ndata = None\ntry:\n    res = requests.get('/api/data')\n    data = res.json()\nexcept Exception as e:\n    print(e)\nfinally:\n    loading = False"
+      },
+      "explanation": "The pattern is identical: set loading=true, try to fetch, handle errors, set loading=false in finally. The 3-state pattern is universal."
+    }
+  ],
+  "keyInsight": "Loading states and caching are UNIVERSAL web concepts. The 3-state pattern (loading -> success/error) is the same everywhere."
+}

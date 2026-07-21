@@ -1,0 +1,41 @@
+{
+  "topicId": "05-team-dynamics",
+  "comparisons": [
+    {
+      "concept": "Tuckman's Team Stages",
+      "rows": [
+        { "dimension": "Focus", "forming": "Getting to know each other", "storming": "Resolving differences", "norming": "Establishing patterns", "performing": "Delivering results" },
+        { "dimension": "Energy", "forming": "Positive but tentative", "storming": "Tense, emotional", "norming": "Calm, cooperative", "performing": "High, focused, efficient" },
+        { "dimension": "Leader role", "forming": "Orient, set expectations", "storming": "Facilitate conflict, hold boundaries", "norming": "Delegate, reinforce norms", "performing": "Step back, remove obstacles" },
+        { "dimension": "Team behavior", "forming": "Polite, asking questions", "storming": "Debating, challenging, frustrated", "norming": "Agreeing on processes", "performing": "Self-organizing, collaborative" },
+        { "dimension": "Conflict level", "forming": "None (avoided)", "storming": "High (open disagreements)", "norming": "Low (managed)", "performing": "Healthy (task-focused)" },
+        { "dimension": "Duration", "forming": "Weeks 1-2", "storming": "Weeks 2-6", "norming": "Weeks 4-8", "performing": "Ongoing after norms settle" }
+      ],
+      "explanation": "Don't try to skip stages. Teams need to form, storm, and norm before they can perform. The leader's role changes at each stage."
+    },
+    {
+      "concept": "Healthy Team vs. Dysfunctional Team",
+      "rows": [
+        { "dimension": "Trust", "healthy": "Members admit mistakes and ask for help", "dysfunctional": "Everyone protects their image" },
+        { "dimension": "Conflict", "healthy": "Disagreements happen openly about ideas", "dysfunctional": "Conflict is avoided or personal" },
+        { "dimension": "Decisions", "healthy": "Decisions are made and committed to", "dysfunctional": "Decisions are made but not followed" },
+        { "dimension": "Accountability", "healthy": "Peers hold each other accountable", "dysfunctional": "Only the leader enforces standards" },
+        { "dimension": "Results", "healthy": "Team goals come first", "dysfunctional": "Individual agendas dominate" },
+        { "dimension": "Communication", "healthy": "Open, honest, frequent", "dysfunctional": "Siloed, political, guarded" }
+      ],
+      "explanation": "Use this as a diagnostic tool. Identify which 'dysfunctional' column describes your team and work on the corresponding root cause."
+    },
+    {
+      "concept": "Task Conflict vs. Relationship Conflict",
+      "rows": [
+        { "dimension": "What it is", "task": "Disagreement about ideas, methods, content", "relationship": "Personal friction, animosity, resentment" },
+        { "dimension": "Effect on performance", "task": "Improves decisions (when managed)", "relationship": "Destroys trust and collaboration" },
+        { "dimension": "Leader response", "task": "Encourage and facilitate", "relationship": "Address immediately and directly" },
+        { "dimension": "Root cause", "task": "Different perspectives, priorities, or expertise", "relationship": "Ego, disrespect, unmet needs, personal history" },
+        { "dimension": "Resolution", "task": "Structured debate, data, compromise", "relationship": "Private conversation, mediation, sometimes separation" }
+      ],
+      "explanation": "The goal is to maximize task conflict (productive debate) while eliminating relationship conflict (personal attacks). They look similar but require completely different responses."
+    }
+  ],
+  "keyInsight": "Team dynamics are not random — they follow predictable patterns. Leaders who understand these patterns can guide teams through challenges instead of being blindsided by them."
+}

@@ -1,0 +1,54 @@
+{
+  "topicId": "03-javascript",
+  "comparisons": [
+    {
+      "concept": "Variables and data types",
+      "javascript": {
+        "language": "javascript",
+        "code": "let name = 'Rajveer';\nlet age = 25;\nlet isStudent = true;\nconsole.log(name, age, isStudent);"
+      },
+      "python": {
+        "language": "python",
+        "code": "name = 'Rajveer'\nage = 25\nis_student = True\nprint(name, age, is_student)"
+      },
+      "explanation": "Same concept: store values in named containers. JavaScript needs 'let'/'const' to declare variables; Python doesn't. JavaScript uses camelCase (isStudent); Python uses snake_case (is_student). Both hold the same types: strings, numbers, booleans."
+    },
+    {
+      "concept": "If/else conditions",
+      "javascript": {
+        "language": "javascript",
+        "code": "let age = 18;\nif (age >= 18) {\n  console.log('Adult');\n} else {\n  console.log('Minor');\n}"
+      },
+      "python": {
+        "language": "python",
+        "code": "age = 18\nif age >= 18:\n    print('Adult')\nelse:\n    print('Minor')"
+      },
+      "explanation": "The logic is identical: check a condition, do one thing if true, another if false. The only difference is syntax: JavaScript uses curly braces {}, Python uses indentation."
+    },
+    {
+      "concept": "For loops",
+      "javascript": {
+        "language": "javascript",
+        "code": "let fruits = ['apple', 'banana', 'cherry'];\nfor (let fruit of fruits) {\n  console.log(fruit);\n}"
+      },
+      "python": {
+        "language": "python",
+        "code": "fruits = ['apple', 'banana', 'cherry']\nfor fruit in fruits:\n    print(fruit)"
+      },
+      "explanation": "Both loop through a list the same way conceptually. Python's 'for x in list' is simpler syntax. JavaScript's 'for...of' is the modern equivalent. The logic is identical."
+    },
+    {
+      "concept": "Functions",
+      "javascript": {
+        "language": "javascript",
+        "code": "function add(a, b) {\n  return a + b;\n}\nconsole.log(add(3, 5));  // 8"
+      },
+      "python": {
+        "language": "python",
+        "code": "def add(a, b):\n    return a + b\n\nprint(add(3, 5))  # 8"
+      },
+      "explanation": "Same concept: a reusable block that takes inputs, does something, returns a result. JavaScript uses 'function', Python uses 'def'. JavaScript uses curly braces; Python uses indentation. Both use 'return'."
+    }
+  ],
+  "keyInsight": "The LOGIC is always the same: variables store data, conditionals branch, loops repeat, functions encapsulate. Only the syntax (how you write it) changes between languages. Once you learn programming logic in one language, learning a second language is mostly learning new syntax."
+}

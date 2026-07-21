@@ -1,0 +1,41 @@
+{
+  "topicId": "01-node-intro",
+  "type": "comparison",
+  "tables": [
+    {
+      "title": "Node.js vs Traditional Backend Technologies",
+      "headers": ["Feature", "Node.js", "PHP", "Python (Django)", "Java (Spring)"],
+      "rows": [
+        ["Language", "JavaScript", "PHP", "Python", "Java"],
+        ["Execution Model", "Event-driven, non-blocking", "Synchronous per request", "Synchronous with async options", "Thread-per-request"],
+        ["Performance", "High for I/O-bound tasks", "Moderate", "Moderate", "High for CPU-bound tasks"],
+        ["Learning Curve", "Low (if you know JS)", "Low", "Moderate", "High"],
+        ["Ecosystem", "npm (largest)", "Composer", "pip", "Maven"],
+        ["Best For", "Real-time apps, APIs, microservices", "Traditional web apps", "Data science, web apps", "Enterprise applications"]
+      ]
+    },
+    {
+      "title": "CommonJS vs ES Modules",
+      "headers": ["Feature", "CommonJS", "ES Modules"],
+      "rows": [
+        ["Syntax", "require() / module.exports", "import / export"],
+        ["Loading", "Synchronous", "Asynchronous"],
+        ["Environment", "Node.js (default)", "Browsers and modern Node.js"],
+        ["File Extensions", ".js", ".mjs or with \"type\": \"module\" in package.json"],
+        ["Tree Shaking", "Not supported", "Supported (dead code elimination)"],
+        ["Dynamic Imports", "require() can be called anywhere", "import() returns a Promise"]
+      ]
+    },
+    {
+      "title": "Node.js Runtime Environments",
+      "headers": ["Environment", "Description", "Use Case"],
+      "rows": [
+        ["Node.js", "The original runtime built on V8", "General server-side JavaScript"],
+        ["Deno", "Secure runtime by Node.js creator with TypeScript support", "Security-focused apps, TypeScript projects"],
+        ["Bun", "Fast all-in-one runtime with built-in bundler", "High-performance apps, modern tooling"],
+        ["Electron", "Uses Node.js for desktop apps", "Cross-platform desktop applications"]
+      ]
+    }
+  ],
+  "summary": "Node.js offers a unique event-driven, non-blocking model that excels at I/O-bound tasks. It uses JavaScript, making it accessible to frontend developers. Modern alternatives like Deno and Bun provide enhanced security and performance."
+}

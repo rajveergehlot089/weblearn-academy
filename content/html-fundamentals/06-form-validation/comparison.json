@@ -1,0 +1,59 @@
+{
+  "topicId": "06-form-validation",
+  "type": "comparison",
+  "estimatedMinutes": 10,
+  "comparisons": [
+    {
+      "title": "Basic vs Comprehensive Validation",
+      "before": {
+        "code": "<input type=\"text\" name=\"email\">\n<input type=\"text\" name=\"password\">\n<input type=\"text\" name=\"age\">\n<button type=\"submit\">Submit</button>",
+        "description": "No validation - accepts any input"
+      },
+      "after": {
+        "code": "<input type=\"email\" name=\"email\" required placeholder=\"you@example.com\">\n<input type=\"password\" name=\"password\" required minlength=\"8\">\n<input type=\"number\" name=\"age\" min=\"18\" max=\"120\" required>\n<button type=\"submit\">Submit</button>",
+        "description": "Proper input types with validation attributes"
+      }
+    },
+    {
+      "title": "No vs Custom Error Messages",
+      "before": {
+        "code": "<input type=\"email\" name=\"email\" required>\n<!-- Shows browser's default message -->",
+        "description": "Default browser error messages"
+      },
+      "after": {
+        "code": "<input type=\"email\" name=\"email\" required oninvalid=\"this.setCustomValidity('Please enter a valid email address')\">\n<!-- Shows custom message -->",
+        "description": "Custom, user-friendly error messages"
+      }
+    },
+    {
+      "title": "No vs Visual Validation Feedback",
+      "before": {
+        "code": "<!-- No visual feedback -->\n<input type=\"text\" name=\"username\" required>\n<input type=\"email\" name=\"email\" required>",
+        "description": "No visual indication of valid/invalid state"
+      },
+      "after": {
+        "code": "<style>\ninput:invalid {\n    border-color: #ff4444;\n    background-color: #fff5f5;\n}\ninput:valid {\n    border-color: #4CAF50;\n    background-color: #f5fff5;\n}\n</style>\n<input type=\"text\" name=\"username\" required minlength=\"3\">\n<input type=\"email\" name=\"email\" required>",
+        "description": "Clear visual feedback for valid/invalid states"
+      }
+    },
+    {
+      "title": "Text vs Pattern Validation",
+      "before": {
+        "code": "<!-- No format validation -->\n<input type=\"text\" name=\"phone\">\n<input type=\"text\" name=\"zip\">\n<input type=\"text\" name=\"username\">",
+        "description": "Accepts any text format"
+      },
+      "after": {
+        "code": "<!-- Pattern validation -->\n<input type=\"tel\" name=\"phone\" pattern=\"[0-9]{3}-[0-9]{3}-[0-9]{4}\" required>\n<input type=\"text\" name=\"zip\" pattern=\"[0-9]{5}(-[0-9]{4})?\" required>\n<input type=\"text\" name=\"username\" pattern=\"[a-zA-Z0-9]{3,16}\" required>",
+        "description": "Pattern matching for specific formats"
+      }
+    }
+  ],
+  "insights": [
+    "Always use required for mandatory fields",
+    "Choose the right input type for automatic validation",
+    "Use pattern for custom format validation (phone, postal code)",
+    "Provide custom validation messages for better UX",
+    "Style invalid/valid states with CSS for visual feedback",
+    "Always validate on both client and server side"
+  ]
+}

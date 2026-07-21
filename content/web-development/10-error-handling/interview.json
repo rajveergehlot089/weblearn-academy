@@ -1,0 +1,20 @@
+{
+  "topicId": "10-error-handling",
+  "questions": [
+    {
+      "question": "What is the difference between operational and programming errors?",
+      "answer": "Operational errors are expected failures (network timeout, invalid input, file not found) — handle them gracefully. Programming errors (bugs) are unexpected (null reference, type errors) — fix them. Operational errors get user-friendly messages; programming errors get logged for debugging.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do you handle errors in async JavaScript?",
+      "answer": "Use try/catch with async/await (cleanest approach). For Express, wrap async handlers with an asyncHandler utility. For promises, use .catch(). Always handle rejections — unhandled promise rejections crash Node.js.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What should a good error response contain?",
+      "answer": "(1) A machine-readable error code, (2) A human-readable message, (3) Details about what went wrong, (4) Appropriate HTTP status code, (5) For rate limits: retry timing. Never expose stack traces in production.",
+      "difficulty": "medium"
+    }
+  ]
+}

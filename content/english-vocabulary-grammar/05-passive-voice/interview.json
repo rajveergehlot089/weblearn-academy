@@ -1,0 +1,25 @@
+{
+  "topicId": "05-passive-voice",
+  "questions": [
+    {
+      "question": "What is Passive Voice and why is it important?",
+      "answer": "Passive Voice is a fundamental concept that When and how to use passive voice constructions. It's important because it forms the foundation for building robust and efficient applications. Understanding Passive Voice allows developers to make better architectural decisions and write cleaner code.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "How do you apply Passive Voice in a real project?",
+      "answer": "In practice, Passive Voice is applied by following established patterns and best practices. Start with the simplest implementation, test thoroughly, and iterate. The key is to understand the underlying principles so you can adapt to different scenarios.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "What are common mistakes when working with Passive Voice?",
+      "answer": "Common mistakes include: not understanding the fundamentals before applying advanced patterns, ignoring edge cases, not testing adequately, and over-engineering solutions. The best approach is to start simple and add complexity only when needed.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How would you explain Passive Voice to a beginner?",
+      "answer": "Passive Voice is essentially about when and how to use passive voice constructions. Think of it as a building block — once you understand this concept, you can combine it with other concepts to build complex applications.",
+      "difficulty": "easy"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "topicId": "capstone",
+  "milestones": [
+    {
+      "index": 0,
+      "title": "HTML Structure",
+      "description": "Build the HTML foundation for DevBlog: header with navigation, main content area, sidebar, and footer.",
+      "topics": [
+        "01-html",
+        "13-modern-html-css"
+      ],
+      "acceptanceCriteria": [
+        "Uses <header>, <nav>, <main>, <article>, <footer>",
+        "Has a post list section",
+        "Includes navigation bar"
+      ]
+    },
+    {
+      "index": 1,
+      "title": "CSS Styling",
+      "description": "Style DevBlog with modern CSS: Flexbox/Grid, CSS variables, responsive design, dark theme.",
+      "topics": [
+        "02-css",
+        "13-modern-html-css"
+      ],
+      "acceptanceCriteria": [
+        "Uses CSS Grid or Flexbox",
+        "Has CSS variables",
+        "Responsive on mobile",
+        "Dark theme"
+      ]
+    },
+    {
+      "index": 2,
+      "title": "Client Interactivity",
+      "description": "Add JavaScript: theme toggle, form validation, post creation modal.",
+      "topics": [
+        "03-javascript",
+        "14-modern-javascript"
+      ],
+      "acceptanceCriteria": [
+        "Theme toggle works",
+        "Form validates input",
+        "Modal opens/closes"
+      ]
+    },
+    {
+      "index": 3,
+      "title": "REST API Backend",
+      "description": "Build Express backend with REST endpoints for users and posts.",
+      "topics": [
+        "04-http-https",
+        "06-routing-rest-graphql",
+        "09-databases-crud"
+      ],
+      "acceptanceCriteria": [
+        "GET /api/posts returns all posts",
+        "POST /api/posts creates a post",
+        "PUT/DELETE work",
+        "Proper status codes"
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Authentication",
+      "description": "Add JWT authentication: register, login, protected routes.",
+      "topics": [
+        "07-auth",
+        "08-cookies-localstorage"
+      ],
+      "acceptanceCriteria": [
+        "Register creates account",
+        "Login returns JWT",
+        "Protected routes require token"
+      ]
+    },
+    {
+      "index": 5,
+      "title": "Loading & Error States",
+      "description": "Add loading spinners, error messages, graceful error handling.",
+      "topics": [
+        "10-error-handling",
+        "11-loading-caching"
+      ],
+      "acceptanceCriteria": [
+        "Spinner shows during API calls",
+        "Error messages display",
+        "Try/catch wraps async ops"
+      ]
+    },
+    {
+      "index": 6,
+      "title": "Polish & Deploy",
+      "description": "Rate limiting, CORS, environment variables, deployment.",
+      "topics": [
+        "05-api-gateway",
+        "12-deployment"
+      ],
+      "acceptanceCriteria": [
+        "Rate limiting on auth",
+        "CORS configured",
+        "Secrets in env vars",
+        "Deployed"
+      ]
+    }
+  ]
+}

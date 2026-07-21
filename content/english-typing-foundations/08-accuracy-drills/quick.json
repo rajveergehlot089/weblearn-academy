@@ -1,0 +1,30 @@
+{
+  "topicId": "08-accuracy-drills",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Accuracy-First Drills?",
+      "body": "Slow, accurate typing to build correct habits. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "Accuracy-First Drills is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind Accuracy-First Drills is understanding how different components work together.\n\n2. Application: In practice, you'll use Accuracy-First Drills every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most Accuracy-First Drills implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding Accuracy-First Drills is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Accuracy-First",
+      "definition": "A key concept in Accuracy-First Drills. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Drills",
+      "definition": "A key concept in Accuracy-First Drills. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "Accuracy-First Drills is a core concept in practice. Slow, accurate typing to build correct habits. Focus on understanding the fundamentals first, then practice applying them."
+}

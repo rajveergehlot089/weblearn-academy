@@ -1,0 +1,34 @@
+{
+  "topicId": "07-interview-intro",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Interview Preparation Basics?",
+      "body": "Tell me about yourself, common questions, and first impressions. This lesson covers the essential concepts you need to understand to get started effectively."
+    },
+    {
+      "heading": "Key Concepts",
+      "body": "Interview Preparation Basics is a fundamental concept that every developer needs to master. Here are the core ideas:\n\n1. Core Principle: The main idea behind Interview Preparation Basics is understanding how different components work together.\n\n2. Application: In practice, you'll use Interview Preparation Basics every day when building applications. It's one of those skills that becomes second nature.\n\n3. Common Patterns: Most Interview Preparation Basics implementations follow predictable patterns. Once you recognize them, you can apply them quickly."
+    },
+    {
+      "heading": "Why This Matters",
+      "body": "Understanding Interview Preparation Basics is crucial because it builds the foundation for everything that follows. Master this topic and you'll find subsequent concepts much easier to learn."
+    }
+  ],
+  "jargon": [
+    {
+      "term": "Interview",
+      "definition": "A key concept in Interview Preparation Basics. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Preparation",
+      "definition": "A key concept in Interview Preparation Basics. Understanding this term is essential for mastering the topic."
+    },
+    {
+      "term": "Basics",
+      "definition": "A key concept in Interview Preparation Basics. Understanding this term is essential for mastering the topic."
+    }
+  ],
+  "summary": "Interview Preparation Basics is a core concept in professional. Tell me about yourself, common questions, and first impressions. Focus on understanding the fundamentals first, then practice applying them."
+}

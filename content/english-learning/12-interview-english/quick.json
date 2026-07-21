@@ -1,0 +1,16 @@
+{
+  "topicId": "12-interview-english",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    { "heading": "Tell Me About Yourself", "answer": "Use the Present-Past-Future formula:\n\nPresent: 'I'm a software developer with 3 years of experience at a fintech company, specializing in backend systems.'\n\nPast: 'Before that, I graduated with a CS degree and worked as an intern at a startup, where I built my first production app.'\n\nFuture: 'I'm now looking to bring my skills to a larger team where I can work on scalable systems and grow as an engineer.'\n\nKeep it 60-90 seconds. Focus on professional, not personal." },
+    { "heading": "Common Interview Questions", "body": "Why do you want this job?\n→ Show you've researched the company. Connect your skills to their needs.\n'Your company's focus on sustainable tech aligns with my passion for building eco-friendly solutions.'\n\nWhat are your strengths?\n→ Give a strength + example\n'I'm highly organized. At my last job, I managed a project tracker that kept our 10-person team on schedule.'\n\nWhat is your weakness?\n→ Be honest + show improvement\n'I used to struggle with public speaking, so I joined Toastmasters and now I present at team meetings regularly.'\n\nWhere do you see yourself in 5 years?\n→ Show ambition + alignment\n'I aim to lead a development team and contribute to products that impact millions of users.'" },
+    { "heading": "Closing the Interview", "body": "Ask questions:\nWhat does a typical day look like in this role?\nWhat are the biggest challenges the team is facing?\nHow do you measure success for this position?\nWhat are the next steps in the hiring process?\n\nClosing statement:\n'Thank you for your time. I'm very excited about this opportunity and confident I can contribute to your team.'\n\nFollow up:\nSend a thank-you email within 24 hours\nReference something specific from the conversation\nReiterate your interest" }
+  ],
+  "jargon": [
+    { "term": "Interview", "definition": "A formal meeting where an employer evaluates a candidate for a job. Includes questions about skills, experience, and personality." },
+    { "term": "Resume/CV", "definition": "A document summarizing your education, work experience, and skills. CV (Curriculum Vitae) is longer and more detailed; resume is 1-2 pages." },
+    { "term": "STAR Method", "definition": "Answering behavioral questions: Situation, Task, Action, Result. Structure your answer around a specific example." }
+  ],
+  "summary": "Interview English is about structured communication. Use the STAR method for behavioral questions, research the company, and always ask thoughtful questions at the end."
+}

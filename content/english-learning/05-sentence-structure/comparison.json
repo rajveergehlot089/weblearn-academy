@@ -1,0 +1,18 @@
+{
+  "topicId": "05-sentence-structure",
+  "comparisons": [
+    {
+      "concept": "sentence structure",
+      "javascript": {
+        "language": "english",
+        "code": "The dog chased the cat."
+      },
+      "python": {
+        "language": "english",
+        "code": "She wrote a letter to her friend."
+      },
+      "explanation": "English follows consistent patterns once you learn the rules."
+    }
+  ],
+  "keyInsight": "Understanding this concept is fundamental to English fluency."
+}

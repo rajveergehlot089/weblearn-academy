@@ -1,0 +1,35 @@
+{
+  "topicId": "05-api-gateway",
+  "type": "deep",
+  "estimatedMinutes": 15,
+  "sections": [
+    {
+      "heading": "How an API Gateway Works",
+      "body": "The gateway sits between clients and multiple backend services:",
+      "code": {
+        "language": "javascript",
+        "snippet": "/*\n  Client Request Flow:\n\n  Browser -> API Gateway -> Auth Service\n                         -> User Service\n                         -> Product Service\n                         -> Order Service\n\n  The gateway:\n  1. Receives the request\n  2. Authenticates the user (check token)\n  3. Rate limits (check request count)\n  4. Routes to the correct service\n  5. Returns the response to the client\n*/",
+        "explanation": "In real companies, your request might hit 5-10 different services. The gateway abstracts this complexity — the client just sees one URL."
+      }
+    },
+    {
+      "heading": "Rate Limiting Implementation",
+      "body": "A simple but effective rate limiter:",
+      "code": {
+        "language": "javascript",
+        "snippet": "const rateLimiter = {};\n\nfunction isAllowed(ip, maxRequests = 100, windowMs = 60000) {\n  const now = Date.now();\n  \n  if (!rateLimiter[ip]) {\n    rateLimiter[ip] = { count: 1, windowStart: now };\n    return true;\n  }\n  \n  const record = rateLimiter[ip];\n  \n  // Reset if window expired\n  if (now - record.windowStart > windowMs) {\n    record.count = 1;\n    record.windowStart = now;\n    return true;\n  }\n  \n  // Check limit\n  if (record.count >= maxRequests) {\n    return false;  // Rate limited!\n  }\n  \n  record.count++;\n  return true;\n}",
+        "explanation": "This tracks requests per IP per time window. If a client exceeds the limit, they get a 429 (Too Many Requests) response."
+      }
+    },
+    {
+      "heading": "Rate Limit Headers",
+      "body": "Good APIs tell clients about their limits:",
+      "code": {
+        "language": "javascript",
+        "snippet": "// Add these headers to your response:\nres.set({\n  'X-RateLimit-Limit': '100',        // Max requests per window\n  'X-RateLimit-Remaining': '67',     // How many left\n  'X-RateLimit-Reset': '1626000000', // When window resets\n  'Retry-After': '30'                // Seconds to wait (when limited)\n});",
+        "explanation": "Rate limit headers help clients be good citizens. They can slow down before hitting the limit, and know exactly when to retry."
+      }
+    }
+  ],
+  "summary": "An API Gateway is the single entry point that routes requests, authenticates users, applies rate limits, and logs activity. Rate limiting tracks requests per client per time window and returns 429 when exceeded."
+}

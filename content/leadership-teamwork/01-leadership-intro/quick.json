@@ -1,0 +1,30 @@
+{
+  "topicId": "01-leadership-intro",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "What is Leadership?",
+      "body": "Leadership is the ability to influence others toward a shared goal. It's not about your job title or corner office — it's about action. A leader is anyone who takes responsibility for a team's direction and results. Research shows that the most effective leaders share one trait: they make people around them better."
+    },
+    {
+      "heading": "Leadership vs. Management",
+      "body": "Leadership and management are complementary but distinct:\n\n• **Leaders** inspire vision, challenge the status quo, and align people toward change.\n• **Managers** plan work, organize resources, and control outcomes.\n\nYou need both. A manager who can't lead produces compliance but not commitment. A leader who can't manage produces excitement but not results."
+    },
+    {
+      "heading": "Influence vs. Authority",
+      "body": "Authority comes from your position — people follow you because they have to. Influence comes from trust, competence, and relationships — people follow you because they want to. The best leaders build influence first. They earn credibility by listening, delivering on promises, and showing genuine concern for their team."
+    },
+    {
+      "heading": "Your Leadership Baseline",
+      "body": "Everyone already leads in some capacity — at work, in a community, or within a family. Leadership is a skill you can develop, not a trait you're born with. The key is self-awareness: understanding your natural tendencies, strengths, and blind spots."
+    }
+  ],
+  "jargon": [
+    { "term": "Servant Leadership", "definition": "A philosophy where the leader's primary role is to serve the team — removing obstacles, providing resources, and helping people grow." },
+    { "term": "Emotional Intelligence (EQ)", "definition": "The ability to recognize and manage your own emotions and those of others. High EQ correlates strongly with effective leadership." },
+    { "term": "Situational Leadership", "definition": "Adapting your leadership style based on the competence and commitment level of the people you're leading." },
+    { "term": "Transformational Leadership", "definition": "A style focused on inspiring and motivating followers to achieve extraordinary outcomes by appealing to their values and sense of purpose." }
+  ],
+  "summary": "Leadership is influence, not authority. It's a learnable skill based on self-awareness, emotional intelligence, and the ability to bring out the best in others. The most effective leaders combine vision with execution."
+}

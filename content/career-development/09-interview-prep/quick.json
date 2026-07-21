@@ -1,0 +1,29 @@
+{
+  "topicId": "09-interview-prep",
+  "type": "quick",
+  "estimatedMinutes": 5,
+  "sections": [
+    {
+      "heading": "Interviews Are a Two-Way Street",
+      "body": "Remember: you're not just being evaluated — you're evaluating them. The best interviews feel like conversations, not interrogations. You're both trying to determine if this is a good fit. Go in curious about the company, the team, and the role — not just trying to 'impress' them."
+    },
+    {
+      "heading": "The STAR Method",
+      "body": "For behavioral questions ('Tell me about a time when...'), use STAR:\n\n- **Situation**: Set the context. What was happening?\n- **Task**: What was your responsibility or challenge?\n- **Action**: What specific steps did YOU take? (Not 'we' — 'I')\n- **Result**: What happened? Include numbers if possible.\n\nExample: 'In my last role (S), our checkout had a 40% drop-off rate (T). I analyzed the funnel, identified a confusing payment step, and redesigned it with a progress indicator (A). Drop-off decreased to 22%, adding $80K in monthly revenue (R).'"
+    },
+    {
+      "heading": "Questions to Ask Them",
+      "body": "Always prepare 3-5 questions for the interviewer. These show genuine interest and help you evaluate the company:\n\n- 'What does success look like in this role in the first 90 days?'\n- 'What's the biggest challenge the team is facing right now?'\n- 'How do you approach professional development for engineers?'\n- 'What's the team's deployment and code review process like?'\n- 'Why is this position open?'"
+    },
+    {
+      "heading": "The Day Before",
+      "body": "- Research the company: product, mission, recent news, competitors\n- Review the job description line by line — prepare an example for each requirement\n- Prepare your STAR stories (at least 5 covering different competencies)\n- Plan your outfit and route (or test your video setup for remote)\n- Get a good night's sleep — tired brains don't perform well"
+    }
+  ],
+  "jargon": [
+    { "term": "STAR Method", "definition": "A structured way to answer behavioral interview questions: Situation, Task, Action, Result. It ensures your answers are specific, evidence-based, and memorable." },
+    { "term": "Behavioral Interview", "definition": "An interview format where candidates are asked about past experiences ('Tell me about a time when...') to predict future performance." },
+    { "term": "Technical Screen", "definition": "An interview stage where candidates solve coding problems, system design challenges, or take-home assignments to demonstrate technical competence." }
+  ],
+  "summary": "Interviews are two-way evaluations. Use the STAR method for behavioral questions: Situation → Task → Action → Result. Always prepare 3-5 questions for the interviewer. Research the company, review the job description, and prepare examples for each requirement. Get good sleep — it matters more than last-minute cramming."
+}

@@ -1,0 +1,29 @@
+{
+  "topicId": "09-interview-prep",
+  "questions": [
+    {
+      "question": "How many STAR stories should I prepare?",
+      "answer": "Prepare 5-8 stories that cover different competencies: technical problem-solving, conflict resolution, leadership, failure/learning, collaboration, initiative, working under ambiguity, and your biggest achievement. Each story should be adaptable — you can often use the same story for multiple question types by emphasizing different aspects. Practice each until you can tell it naturally in 2-3 minutes.",
+      "difficulty": "easy"
+    },
+    {
+      "question": "What if I don't have enough experience for the role?",
+      "answer": "Focus on transferable skills and potential. Highlight related projects (even personal ones), demonstrate learning agility, and show genuine enthusiasm for the domain. Many companies value a growth mindset over exact experience. Say: 'While I haven't done X professionally, here's how I've practiced it...' Then show a personal project, open-source contribution, or learning initiative."
+    },
+    {
+      "question": "How should I handle a coding interview I'm struggling with?",
+      "answer": "Don't panic. Communicate your thinking process: 'I'm considering approach X, but I'm concerned about the time complexity.' Interviewers often provide hints when they see good thinking. If you're stuck, say: 'I'd like to think about this for a moment' — silence is better than rambling. Start with a brute-force solution and optimize. Showing your thought process matters more than getting the perfect answer.",
+      "difficulty": "medium"
+    },
+    {
+      "question": "Should I negotiate my salary?",
+      "answer": "Almost always, yes. Most companies expect negotiation and have budget room. Research market rates on Glassdoor, Levels.fyi, or Payscale. When you receive an offer, say: 'Thank you! I'm excited about this. I'd like to discuss the compensation — based on my research and experience, I was expecting [range]. Is there flexibility?' Be polite, be specific, and negotiate the total package (salary, equity, bonus, PTO, remote work).",
+      "difficulty": "medium"
+    },
+    {
+      "question": "How do I handle the 'What's your salary expectation?' question early in the process?",
+      "answer": "If possible, defer: 'I'd love to learn more about the role before discussing compensation — could we revisit this after the interviews?' If pressed, give a range based on research: 'Based on my research and experience, I'm targeting [range], but I'm flexible depending on the total package.' Never give a number without context — always anchor it to market data and your qualifications.",
+      "difficulty": "hard"
+    }
+  ]
+}
