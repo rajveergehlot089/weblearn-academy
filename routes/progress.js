@@ -9,10 +9,9 @@ const db = require('../utils/db');
 const rateLimit = require('../middleware/rateLimit');
 const { validate, topicProgressSchema, typingScoreSchema, interviewAttemptSchema, exerciseAttemptSchema, dailyLogSchema } = require('../middleware/validate');
 
-function loadCourseTopics(courseId) {
+async function loadCourseTopics(courseId) {
   try {
-    const coursesData = db.readJSON('courses.json');
-    const course = coursesData.courses?.[courseId];
+    const course = await db.getCourseById(courseId);
     if (!course) return [];
     const idx = require(path.join(__dirname, '..', 'content', course.contentDir, 'index.js'));
     return Array.isArray(idx) ? idx : [];
@@ -23,7 +22,7 @@ function loadCourseTopics(courseId) {
 router.get('/summary', auth, async (req, res) => {
   try {
     const courseId = req.query.courseId || await db.getActiveCourse(req.user.id) || 'web-development';
-    const topics = loadCourseTopics(courseId);
+    const topics = await loadCourseTopics(courseId);
     const mode = req.user.mode || 'fast-track';
 
     const allProgress = await db.getAllTopicProgress(req.user.id, courseId);

@@ -54,7 +54,7 @@ async function requireAdmin(req, res) {
 
 // CORS headers for all API responses
 function setCorsHeaders(res) {
-  const origin = process.env.ALLOWED_ORIGINS || '*';
+  const origin = process.env.ALLOWED_ORIGINS || (process.env.NODE_ENV === 'production' ? '' : '*');
   res.setHeader('Access-Control-Allow-Origin', origin);
   res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type,Authorization,X-CSRF-Token');

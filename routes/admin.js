@@ -106,31 +106,15 @@ router.get('/users', adminAuth, async (req, res) => {
 router.get('/stats', adminAuth, async (req, res) => {
   try {
     const stats = await db.getAdminStats();
-    const allUsers = await db.getAllUsers();
 
-    const dailyActive = {};
-    for (const user of allUsers) {
-      const logs = await db.getDailyLog(user.id);
-      logs.forEach(log => {
-        const logDate = new Date(log.date);
-        if (logDate > new Date(Date.now() - 30 * 24 * 60 * 60 * 1000)) {
-          dailyActive[log.date] = (dailyActive[log.date] || 0) + 1;
-        }
-      });
-    }
+    const dailyActive = await db.getDailyActiveLast30Days();
 
+    const courses = await db.getAllCourses();
     const topicStats = [];
-    const coursesContent = require('../content/index');
-    for (const [courseId, topics] of Object.entries(coursesContent)) {
-      if (Array.isArray(topics)) {
-        for (const t of topics) {
-          let completions = 0;
-          for (const user of allUsers) {
-            const tp = await db.getTopicProgress(user.id, courseId, t.id);
-            if (tp && tp.quickDone && tp.deepDone) completions++;
-          }
-          topicStats.push({ id: t.id, title: t.title, courseId, completions });
-        }
+    for (const course of courses) {
+      const courseTopics = await db.getCourseTopicCompletions(course.id);
+      for (const t of courseTopics) {
+        topicStats.push({ id: t.topicId, title: t.topicId, courseId: course.id, completions: parseInt(t.completions) || 0 });
       }
     }
 

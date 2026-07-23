@@ -11,6 +11,7 @@ const auth = require('../middleware/auth');
 const rateLimit = require('../middleware/rateLimit');
 const db = require('../utils/db');
 const { validate, registerSchema, loginSchema, preferencesSchema, forgotPasswordSchema, resetPasswordSchema } = require('../middleware/validate');
+const { sendVerificationEmail, sendPasswordResetEmail } = require('../utils/email');
 
 const MAX_FAILED_ATTEMPTS = 5;
 const LOCKOUT_MINUTES = 15;
@@ -41,10 +42,14 @@ router.post('/register', rateLimit(10, 15 * 60 * 1000), validate(registerSchema)
       { expiresIn: '7d' }
     );
 
+    // Send verification email (non-blocking)
+    sendVerificationEmail(email, verifyToken).catch(err => {
+      console.error('Failed to send verification email:', err.message);
+    });
+
     res.json({
       token,
       user: { id, name, email, role: 'customer', emailVerified: false },
-      verificationLink: `/verify-email?token=${verifyToken}`,
     });
   } catch (error) {
     console.error('Register error:', error);
@@ -145,9 +150,10 @@ router.post('/forgot-password', rateLimit(3, 15 * 60 * 1000), validate(forgotPas
     const expiresAt = new Date(Date.now() + 60 * 60 * 1000).toISOString();
     await db.saveResetToken(resetToken, user.id, user.email, expiresAt);
 
-    // TODO: Send email via Resend when email service is configured
-    // For now, log the reset link (remove in production)
-    console.log(`Password reset for ${email}: /reset-password?token=${resetToken}`);
+    // Send password reset email (non-blocking)
+    sendPasswordResetEmail(user.email, resetToken).catch(err => {
+      console.error('Failed to send password reset email:', err.message);
+    });
 
     res.json({ success: true, message: 'If the email exists, a reset link has been sent' });
   } catch (error) {

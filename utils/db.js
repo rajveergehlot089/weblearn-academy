@@ -284,6 +284,24 @@ async function getAdminStats() {
   };
 }
 
+async function getDailyActiveLast30Days() {
+  const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString();
+  const rows = await all(
+    'SELECT date, COUNT(DISTINCT "userId") as count FROM daily_log WHERE date >= $1 GROUP BY date ORDER BY date',
+    [thirtyDaysAgo]
+  );
+  const result = {};
+  rows.forEach(r => { result[r.date] = parseInt(r.count); });
+  return result;
+}
+
+async function getCourseTopicCompletions(courseId) {
+  return all(
+    'SELECT "topicId", COUNT(*) as completions FROM topic_progress WHERE "courseId" = $1 AND "quickDone" = 1 AND "deepDone" = 1 GROUP BY "topicId"',
+    [courseId]
+  );
+}
+
 // ============================================
 // SECURITY: TOKEN MANAGEMENT
 // ============================================
@@ -408,80 +426,6 @@ async function deleteCourse(courseId) {
   await run('UPDATE courses SET "isActive" = 0 WHERE id = $1', [courseId]);
 }
 
-// ============================================
-// LEGACY JSON COMPAT (for courses.json)
-// ============================================
-const fs = require('fs');
-const path = require('path');
-const DATA_DIR = path.join(__dirname, '..', 'data');
-
-function readJSON(filename) {
-  const filePath = path.join(DATA_DIR, filename);
-  if (!fs.existsSync(filePath)) {
-    if (filename === 'courses.json') {
-      return generateCoursesJSON();
-    }
-    return {};
-  }
-  try { return JSON.parse(fs.readFileSync(filePath, 'utf-8')); } catch { return {}; }
-}
-
-function writeJSON(filename, data) {
-  if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
-  const filePath = path.join(DATA_DIR, filename);
-  fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
-}
-
-function generateCoursesJSON() {
-  const CONTENT_DIR = path.join(__dirname, '..', 'content');
-  const courses = {};
-
-  try {
-    const contentIndex = require(path.join(CONTENT_DIR, 'index.js'));
-    for (const [courseId, topics] of Object.entries(contentIndex)) {
-      if (!Array.isArray(topics) || topics.length === 0) continue;
-      const maxFast = Math.max(...topics.map(t => t.day_fast_track || 1));
-      const maxFull = Math.max(...topics.map(t => t.day_full_course || 1));
-
-      let category = 'technology';
-      if (courseId.includes('hindi') || courseId.includes('english')) category = 'language';
-      if (courseId.includes('typing')) category = 'typing';
-      if (courseId.includes('self-awareness') || courseId.includes('communication') || courseId.includes('productivity') || courseId.includes('leadership') || courseId.includes('career') || courseId.includes('personality')) category = 'soft-skills';
-      if (courseId === 'web-development') category = 'technology';
-
-      const isTyping = courseId.includes('typing');
-
-      courses[courseId] = {
-        id: courseId,
-        title: courseId.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
-        description: `${topics.length} learning topics`,
-        icon: isTyping ? 'fas fa-keyboard' : 'fas fa-book',
-        emoji: isTyping ? '\u2328\ufe0f' : '\ud83d\udcda',
-        category,
-        difficulty: 'beginner',
-        color: '#667eea',
-        contentDir: courseId,
-        hasTypingPractice: isTyping,
-        typingLayout: courseId.includes('hindi') ? 'remington' : 'qwerty',
-        modes: ['fast-track', 'full-course'],
-        totalDays: { 'fast-track': maxFast, 'full-course': maxFull },
-        isActive: true,
-        createdAt: new Date().toISOString(),
-      };
-    }
-  } catch (err) {
-    console.error('Failed to generate courses.json from content:', err.message);
-  }
-
-  const result = { courses };
-  try {
-    if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
-    fs.writeFileSync(path.join(DATA_DIR, 'courses.json'), JSON.stringify(result, null, 2), 'utf-8');
-  } catch { /* read-only filesystem, that's ok */ }
-
-  return result;
-}
-
 module.exports = {
   getUserByEmail, getUserById, createUser, updateUserPreferences, getAllUsers,
   deleteUser, updateUser, updateUserRole,
@@ -492,8 +436,7 @@ module.exports = {
   recordInterviewAttempt, getInterviewProgress,
   recordExerciseAttempt, getExerciseProgress,
   saveAnalysis, getAnalysisById, getAnalysisHistory, deleteAnalysis,
-  getAdminStats,
-  readJSON, writeJSON,
+  getAdminStats, getDailyActiveLast30Days, getCourseTopicCompletions,
   // Security
   saveVerificationToken, getVerificationToken, deleteVerificationToken,
   saveResetToken, getResetToken, deleteResetToken,

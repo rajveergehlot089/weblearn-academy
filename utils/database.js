@@ -168,6 +168,54 @@ async function initDb() {
     await client.query('CREATE INDEX IF NOT EXISTS idx_analysis_user ON analysis_history("userId");');
 
     console.log('PostgreSQL tables initialized');
+
+    // Seed courses from content directory if courses table is empty
+    const { rows: existingCourses } = await client.query('SELECT COUNT(*) as count FROM courses');
+    if (parseInt(existingCourses[0].count) === 0) {
+      console.log('Seeding courses from content directory...');
+      const path = require('path');
+      const CONTENT_DIR = path.join(__dirname, '..', 'content');
+      try {
+        const contentIndex = require(path.join(CONTENT_DIR, 'index.js'));
+        for (const [courseId, topics] of Object.entries(contentIndex)) {
+          if (!Array.isArray(topics) || topics.length === 0) continue;
+          const maxFast = Math.max(...topics.map(t => t.day_fast_track || 1));
+          const maxFull = Math.max(...topics.map(t => t.day_full_course || 1));
+
+          let category = 'technology';
+          if (courseId.includes('hindi') || courseId.includes('english')) category = 'language';
+          if (courseId.includes('typing')) category = 'typing';
+          if (courseId.includes('self-awareness') || courseId.includes('communication') || courseId.includes('productivity') || courseId.includes('leadership') || courseId.includes('career') || courseId.includes('personality')) category = 'soft-skills';
+
+          const isTyping = courseId.includes('typing');
+
+          await client.query(
+            `INSERT INTO courses (id, title, description, icon, emoji, category, difficulty, color, "contentDir", "hasTypingPractice", "typingLayout", modes, "totalDays", "isActive", "createdAt")
+             VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15) ON CONFLICT (id) DO NOTHING`,
+            [
+              courseId,
+              courseId.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
+              `${topics.length} learning topics`,
+              isTyping ? 'fas fa-keyboard' : 'fas fa-book',
+              isTyping ? '\u2328\ufe0f' : '\ud83d\udcda',
+              category,
+              'beginner',
+              '#667eea',
+              courseId,
+              isTyping ? 1 : 0,
+              courseId.includes('hindi') ? 'remington' : 'qwerty',
+              JSON.stringify(['fast-track', 'full-course']),
+              JSON.stringify({ 'fast-track': maxFast, 'full-course': maxFull }),
+              1,
+              new Date().toISOString(),
+            ]
+          );
+        }
+        console.log('Courses seeded successfully');
+      } catch (err) {
+        console.error('Failed to seed courses:', err.message);
+      }
+    }
   } finally {
     client.release();
   }

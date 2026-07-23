@@ -20,13 +20,22 @@ function invalidateContentCache(courseContentDir) {
   delete require.cache[indexPath];
 }
 
+function parseCourseJsonFields(course) {
+  if (!course) return null;
+  const parsed = { ...course };
+  try { parsed.modes = typeof course.modes === 'string' ? JSON.parse(course.modes) : course.modes; } catch { parsed.modes = ['fast-track', 'full-course']; }
+  try { parsed.totalDays = typeof course.totalDays === 'string' ? JSON.parse(course.totalDays) : course.totalDays; } catch { parsed.totalDays = { 'fast-track': 10, 'full-course': 20 }; }
+  parsed.isActive = !!course.isActive;
+  parsed.hasTypingPractice = !!course.hasTypingPractice;
+  return parsed;
+}
+
 // ============================================
 // GET /api/courses - List all active courses
 // ============================================
 router.get('/', auth, async (req, res) => {
   try {
-    const coursesData = db.readJSON('courses.json');
-    const courses = Object.values(coursesData.courses || {}).filter(c => c.isActive);
+    const courses = (await db.getAllCourses()).map(parseCourseJsonFields);
 
     const allEnrollments = await db.getEnrollments(req.user.id);
     const enrolledIds = new Set(allEnrollments.map(e => e.courseId));
@@ -69,8 +78,8 @@ router.get('/', auth, async (req, res) => {
 router.put('/active-course', auth, async (req, res) => {
   try {
     const { courseId } = req.body;
-    const coursesData = db.readJSON('courses.json');
-    if (!coursesData.courses?.[courseId]) return res.status(404).json({ error: 'Course not found' });
+    const course = await db.getCourseById(courseId);
+    if (!course) return res.status(404).json({ error: 'Course not found' });
 
     await db.setActiveCourse(req.user.id, courseId);
     res.json({ success: true, activeCourse: courseId });
@@ -88,8 +97,8 @@ router.post('/admin/create', adminAuth, validate(createCourseSchema), async (req
     const { id, title, description, icon, emoji, category, difficulty, color } = req.body;
     if (!id || !title) return res.status(400).json({ error: 'id and title are required' });
 
-    const coursesData = db.readJSON('courses.json');
-    if (coursesData.courses?.[id]) return res.status(400).json({ error: 'Course ID already exists' });
+    const existing = await db.getCourseById(id);
+    if (existing) return res.status(400).json({ error: 'Course ID already exists' });
 
     const newCourse = {
       id, title, description: description || '', icon: icon || 'fas fa-book',
@@ -100,9 +109,7 @@ router.post('/admin/create', adminAuth, validate(createCourseSchema), async (req
       isActive: true, createdAt: new Date().toISOString(),
     };
 
-    if (!coursesData.courses) coursesData.courses = {};
-    coursesData.courses[id] = newCourse;
-    db.writeJSON('courses.json', coursesData);
+    await db.createCourse(newCourse);
 
     const contentDir = path.join(__dirname, '..', 'content', id);
     if (!fs.existsSync(contentDir)) fs.mkdirSync(contentDir, { recursive: true });
@@ -120,8 +127,7 @@ router.post('/admin/create', adminAuth, validate(createCourseSchema), async (req
 // ============================================
 router.get('/:courseId', auth, async (req, res) => {
   try {
-    const coursesData = db.readJSON('courses.json');
-    const course = coursesData.courses?.[req.params.courseId];
+    const course = parseCourseJsonFields(await db.getCourseById(req.params.courseId));
     if (!course) return res.status(404).json({ error: 'Course not found' });
 
     const contentIndex = require(path.join(__dirname, '..', 'content', course.contentDir, 'index.js'));
@@ -152,8 +158,7 @@ router.get('/:courseId', auth, async (req, res) => {
 // ============================================
 router.get('/:courseId/topics', auth, async (req, res) => {
   try {
-    const coursesData = db.readJSON('courses.json');
-    const course = coursesData.courses?.[req.params.courseId];
+    const course = parseCourseJsonFields(await db.getCourseById(req.params.courseId));
     if (!course) return res.status(404).json({ error: 'Course not found' });
 
     const contentIndex = require(path.join(__dirname, '..', 'content', course.contentDir, 'index.js'));
@@ -183,8 +188,7 @@ router.get('/:courseId/topics', auth, async (req, res) => {
 // ============================================
 router.get('/:courseId/topics/:topicId', auth, async (req, res) => {
   try {
-    const coursesData = db.readJSON('courses.json');
-    const course = coursesData.courses?.[req.params.courseId];
+    const course = parseCourseJsonFields(await db.getCourseById(req.params.courseId));
     if (!course) return res.status(404).json({ error: 'Course not found' });
 
     const topicDir = path.join(__dirname, '..', 'content', course.contentDir, req.params.topicId);
@@ -214,8 +218,7 @@ router.get('/:courseId/topics/:topicId', auth, async (req, res) => {
 // ============================================
 router.post('/:courseId/enroll', auth, async (req, res) => {
   try {
-    const coursesData = db.readJSON('courses.json');
-    const course = coursesData.courses?.[req.params.courseId];
+    const course = await db.getCourseById(req.params.courseId);
     if (!course) return res.status(404).json({ error: 'Course not found' });
 
     await db.enrollUser(req.user.id, course.id);
@@ -238,14 +241,12 @@ router.post('/:courseId/enroll', auth, async (req, res) => {
 // ============================================
 router.put('/admin/:courseId', adminAuth, validate(updateCourseSchema), async (req, res) => {
   try {
-    const coursesData = db.readJSON('courses.json');
-    if (!coursesData.courses?.[req.params.courseId]) return res.status(404).json({ error: 'Course not found' });
+    const existing = await db.getCourseById(req.params.courseId);
+    if (!existing) return res.status(404).json({ error: 'Course not found' });
 
-    const updates = req.body;
-    const course = coursesData.courses[req.params.courseId];
-    Object.assign(course, updates, { id: course.id, contentDir: course.contentDir });
-    db.writeJSON('courses.json', coursesData);
-    res.json({ success: true, course });
+    await db.updateCourse(req.params.courseId, req.body);
+    const updated = parseCourseJsonFields(await db.getCourseById(req.params.courseId));
+    res.json({ success: true, course: updated });
   } catch (err) {
     console.error('Update course error:', err);
     res.status(500).json({ error: 'Failed to update course' });
@@ -257,11 +258,10 @@ router.put('/admin/:courseId', adminAuth, validate(updateCourseSchema), async (r
 // ============================================
 router.delete('/admin/:courseId', adminAuth, async (req, res) => {
   try {
-    const coursesData = db.readJSON('courses.json');
-    if (!coursesData.courses?.[req.params.courseId]) return res.status(404).json({ error: 'Course not found' });
+    const existing = await db.getCourseById(req.params.courseId);
+    if (!existing) return res.status(404).json({ error: 'Course not found' });
 
-    coursesData.courses[req.params.courseId].isActive = false;
-    db.writeJSON('courses.json', coursesData);
+    await db.deleteCourse(req.params.courseId);
     res.json({ success: true });
   } catch (err) {
     console.error('Delete course error:', err);
@@ -274,8 +274,7 @@ router.delete('/admin/:courseId', adminAuth, async (req, res) => {
 // ============================================
 router.post('/admin/:courseId/topics', adminAuth, validate(createTopicSchema), async (req, res) => {
   try {
-    const coursesData = db.readJSON('courses.json');
-    const course = coursesData.courses?.[req.params.courseId];
+    const course = parseCourseJsonFields(await db.getCourseById(req.params.courseId));
     if (!course) return res.status(404).json({ error: 'Course not found' });
 
     const { id, title, group, icon, description, prerequisites } = req.body;
@@ -324,8 +323,7 @@ router.post('/admin/:courseId/topics', adminAuth, validate(createTopicSchema), a
 // ============================================
 router.put('/admin/:courseId/topics/:topicId', adminAuth, async (req, res) => {
   try {
-    const coursesData = db.readJSON('courses.json');
-    const course = coursesData.courses?.[req.params.courseId];
+    const course = parseCourseJsonFields(await db.getCourseById(req.params.courseId));
     if (!course) return res.status(404).json({ error: 'Course not found' });
 
     const topicDir = path.join(__dirname, '..', 'content', course.contentDir, req.params.topicId);
@@ -347,8 +345,7 @@ router.put('/admin/:courseId/topics/:topicId', adminAuth, async (req, res) => {
 // ============================================
 router.delete('/admin/:courseId/topics/:topicId', adminAuth, async (req, res) => {
   try {
-    const coursesData = db.readJSON('courses.json');
-    const course = coursesData.courses?.[req.params.courseId];
+    const course = parseCourseJsonFields(await db.getCourseById(req.params.courseId));
     if (!course) return res.status(404).json({ error: 'Course not found' });
 
     const topicDir = path.join(__dirname, '..', 'content', course.contentDir, req.params.topicId);

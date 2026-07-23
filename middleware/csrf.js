@@ -13,15 +13,18 @@ function generateCsrfToken() {
 
 // Set CSRF cookie on GET requests (page loads)
 function csrfInit(req, res, next) {
-  if (req.method === 'GET' && !req.cookies?.csrf_token) {
-    const token = generateCsrfToken();
-    res.cookie('csrf_token', token, {
-      httpOnly: true,
-      sameSite: 'strict',
-      secure: process.env.NODE_ENV === 'production',
-      path: '/',
-    });
-    // Also set the token in a response header so the client JS can read it
+  if (req.method === 'GET') {
+    let token = req.cookies?.csrf_token;
+    if (!token) {
+      token = generateCsrfToken();
+      res.cookie('csrf_token', token, {
+        httpOnly: true,
+        sameSite: 'strict',
+        secure: process.env.NODE_ENV === 'production',
+        path: '/',
+      });
+    }
+    // Always set header so client JS can read the token
     res.setHeader('X-CSRF-Token', token);
   }
   next();
