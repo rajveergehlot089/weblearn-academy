@@ -8,12 +8,10 @@ module.exports = async (req, res) => {
       || `postgresql://${c(process.env.PGUSER)}:${c(process.env.PGPASSWORD)}@${c(process.env.PGHOST)}:${c(process.env.PGPORT, '5432')}/${c(process.env.PGDATABASE)}?sslmode=require`;
     const sql = neon(connStr);
     const start = Date.now();
-    // Test 1: tagged template
-    const r1 = await sql`SELECT current_database() as db`;
-    // Test 2: sql.query() with $1 params
-    const r2 = await sql.query('SELECT current_database() as db');
+    // Test schema exists
+    const tables = await sql`SELECT tablename FROM pg_tables WHERE schemaname = 'public'`;
     const ms = Date.now() - start;
-    res.json({ ok: true, ms, tagged: r1[0], query: r2[0] });
+    res.json({ ok: true, ms, tables: tables.map(t => t.tablename) });
   } catch (err) {
     res.status(500).json({ ok: false, error: err.message, code: err.code });
   }
