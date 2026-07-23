@@ -9,10 +9,14 @@ neonConfig.fetchConnectionCache = true;
 
 let sql;
 
+function clean(val, fallback) {
+  return String(val || fallback).replace(/^\uFEFF/, '').replace(/\uFEFF/g, '').trim();
+}
+
 function getSql() {
   if (!sql) {
     const connectionString = process.env.DATABASE_URL
-      || `postgresql://${process.env.PGUSER}:${process.env.PGPASSWORD}@${process.env.PGHOST}:${process.env.PGPORT || 5432}/${process.env.PGDATABASE}?sslmode=require`;
+      || `postgresql://${clean(process.env.PGUSER)}:${clean(process.env.PGPASSWORD)}@${clean(process.env.PGHOST)}:${clean(process.env.PGPORT, '5432')}/${clean(process.env.PGDATABASE)}?sslmode=require`;
     sql = neon(connectionString);
   }
   return sql;
