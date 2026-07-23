@@ -1,7 +1,7 @@
 // Consolidated Progress API — handles all /api/progress/* routes
-const db = require('./lib/db');
-const { requireAuth, setCorsHeaders, handleOptions } = require('./lib/auth');
-const { getCourseTopics } = require('./lib/content');
+const db = require('../serverless-lib/db');
+const { requireAuth, setCorsHeaders, handleOptions } = require('../serverless-lib/auth');
+const { getCourseTopics } = require('../serverless-lib/content');
 
 module.exports = async (req, res) => {
   setCorsHeaders(res);

@@ -1,9 +1,9 @@
 // ============================================
 // Courses API — Vercel Serverless (full feature parity)
 // ============================================
-const db = require('./lib/db');
-const { requireAuth, requireAdmin, setCorsHeaders, handleOptions } = require('./lib/auth');
-const { getCoursesMetadata, getCourseTopics, getTopicContent, getCourseMetadata } = require('./lib/content');
+const db = require('../serverless-lib/db');
+const { requireAuth, requireAdmin, setCorsHeaders, handleOptions } = require('../serverless-lib/auth');
+const { getCoursesMetadata, getCourseTopics, getTopicContent, getCourseMetadata } = require('../serverless-lib/content');
 
 module.exports = async (req, res) => {
   await db.initSchema();

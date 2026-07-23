@@ -1,9 +1,9 @@
 // ============================================
 // Topics API — lists all topics across courses
 // ============================================
-const db = require('./lib/db');
-const { requireAuth, setCorsHeaders, handleOptions } = require('./lib/auth');
-const { getCoursesMetadata, getCourseTopics, getTopicContent } = require('./lib/content');
+const db = require('../serverless-lib/db');
+const { requireAuth, setCorsHeaders, handleOptions } = require('../serverless-lib/auth');
+const { getCoursesMetadata, getCourseTopics, getTopicContent } = require('../serverless-lib/content');
 
 module.exports = async (req, res) => {
   setCorsHeaders(res);

@@ -1,9 +1,9 @@
 // ============================================
 // Admin API — handles all /api/admin/* routes
 // ============================================
-const db = require('./lib/db');
-const { requireAdmin, setCorsHeaders, handleOptions } = require('./lib/auth');
-const { getCourseTopics, getCoursesMetadata } = require('./lib/content');
+const db = require('../serverless-lib/db');
+const { requireAdmin, setCorsHeaders, handleOptions } = require('../serverless-lib/auth');
+const { getCourseTopics, getCoursesMetadata } = require('../serverless-lib/content');
 
 module.exports = async (req, res) => {
   await db.initSchema();

@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 
 const CONTENT_DIR = path.join(__dirname, '..', 'content');
-const OUTPUT_DIR = path.join(__dirname, '..', 'api', 'lib');
+const OUTPUT_DIR = path.join(__dirname, '..', 'serverless-lib');
 
 console.log('Building content bundle...');
 

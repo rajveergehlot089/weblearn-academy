@@ -6,8 +6,8 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');
 const crypto = require('crypto');
 const { v4: uuidv4 } = require('uuid');
-const db = require('./lib/db');
-const { requireAuth, setCorsHeaders, handleOptions } = require('./lib/auth');
+const db = require('../serverless-lib/db');
+const { requireAuth, setCorsHeaders, handleOptions } = require('../serverless-lib/auth');
 
 const MAX_FAILED_ATTEMPTS = 5;
 const LOCKOUT_MINUTES = 15;

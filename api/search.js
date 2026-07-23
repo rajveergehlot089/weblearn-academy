@@ -1,8 +1,8 @@
 // ============================================
 // Search API — web search with research engine
 // ============================================
-const db = require('./lib/db');
-const { requireAuth, setCorsHeaders, handleOptions } = require('./lib/auth');
+const db = require('../serverless-lib/db');
+const { requireAuth, setCorsHeaders, handleOptions } = require('../serverless-lib/auth');
 
 module.exports = async (req, res) => {
   setCorsHeaders(res);

@@ -1,8 +1,8 @@
 // ============================================
 // Analysis API — career analysis with research engine
 // ============================================
-const db = require('./lib/db');
-const { requireAuth, setCorsHeaders, handleOptions } = require('./lib/auth');
+const db = require('../serverless-lib/db');
+const { requireAuth, setCorsHeaders, handleOptions } = require('../serverless-lib/auth');
 
 // Inline analysis engine (portable, no filesystem dependencies)
 const SKILL_DB = {
