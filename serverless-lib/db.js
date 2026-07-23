@@ -53,19 +53,8 @@ async function query(sqlStr, params = []) {
     const result = await s(sqlStr);
     return result;
   }
-  // Use neon's tagged template: sql(strings, ...values)
-  const parts = [];
-  const values = [];
-  let remaining = sqlStr;
-  for (let i = 1; i <= params.length; i++) {
-    const idx = remaining.indexOf(`$${i}`);
-    if (idx === -1) break;
-    parts.push(remaining.slice(0, idx));
-    values.push(params[i - 1]);
-    remaining = remaining.slice(idx + `$${i}`.length);
-  }
-  parts.push(remaining);
-  const result = await s(parts, ...values);
+  // Use sql.query() for $1 parameterized queries
+  const result = await s.query(sqlStr, params);
   return result;
 }
 
