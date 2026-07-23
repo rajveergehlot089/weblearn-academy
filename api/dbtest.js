@@ -4,7 +4,7 @@ function c(v, fb) { return String(v || fb).replace(/\uFEFF/g, '').trim(); }
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   try {
-    const connStr = process.env.DATABASE_URL
+    const connStr = c(process.env.DATABASE_URL)
       || `postgresql://${c(process.env.PGUSER)}:${c(process.env.PGPASSWORD)}@${c(process.env.PGHOST)}:${c(process.env.PGPORT, '5432')}/${c(process.env.PGDATABASE)}?sslmode=require`;
     const sql = neon(connStr);
     const start = Date.now();

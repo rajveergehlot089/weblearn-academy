@@ -13,7 +13,7 @@ function clean(val, fallback) {
 
 function getSql() {
   if (!sql) {
-    const connStr = process.env.DATABASE_URL
+    const connStr = clean(process.env.DATABASE_URL)
       || `postgresql://${clean(process.env.PGUSER)}:${clean(process.env.PGPASSWORD)}@${clean(process.env.PGHOST)}:${clean(process.env.PGPORT, '5432')}/${clean(process.env.PGDATABASE)}?sslmode=require`;
     sql = neon(connStr);
   }
