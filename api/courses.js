@@ -6,7 +6,7 @@ const { requireAuth, requireAdmin, setCorsHeaders, handleOptions } = require('..
 const { getCoursesMetadata, getCourseTopics, getTopicContent, getCourseMetadata } = require('../serverless-lib/content');
 
 module.exports = async (req, res) => {
-  await db.initSchema();
+  // await db.initSchema();
   setCorsHeaders(res);
   if (handleOptions(req, res)) return;
 

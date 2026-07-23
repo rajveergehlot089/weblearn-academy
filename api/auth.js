@@ -16,8 +16,8 @@ module.exports = async (req, res) => {
   setCorsHeaders(res);
   if (handleOptions(req, res)) return;
 
-  // Ensure schema exists
-  await db.initSchema();
+  // Ensure schema exists (skip for now — schema created via dbtest)
+  // await db.initSchema();
 
   const url = new URL(req.url, 'http://localhost');
   const pathParts = url.pathname.replace('/api/auth', '').split('/').filter(Boolean);
