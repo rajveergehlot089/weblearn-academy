@@ -16,6 +16,7 @@
     { "src": "/api/search(/.*)?", "dest": "/api/search.js" },
     { "src": "/api/analysis(/.*)?", "dest": "/api/analysis.js" },
     { "src": "/api/health", "dest": "/api/health.js" },
+    { "src": "/api/dbtest", "dest": "/api/dbtest.js" },
     { "src": "/health", "dest": "/api/health.js" },
     { "src": "/(.*\\.js)", "dest": "/public/$1" },
     { "src": "/(.*\\.css)", "dest": "/public/$1" },
