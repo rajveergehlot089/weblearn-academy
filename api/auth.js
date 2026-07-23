@@ -13,15 +13,17 @@ const MAX_FAILED_ATTEMPTS = 5;
 const LOCKOUT_MINUTES = 15;
 
 module.exports = async (req, res) => {
+  console.log('AUTH handler started:', req.method, req.url);
   setCorsHeaders(res);
   if (handleOptions(req, res)) return;
 
-  // Ensure schema exists (skip for now — schema created via dbtest)
-  // await db.initSchema();
+  try {
+    // Ensure schema exists (skip for now — schema created via dbtest)
+    // await db.initSchema();
 
-  const url = new URL(req.url, 'http://localhost');
-  const pathParts = url.pathname.replace('/api/auth', '').split('/').filter(Boolean);
-  const action = pathParts[0] || '';
+    const url = new URL(req.url, 'http://localhost');
+    const pathParts = url.pathname.replace('/api/auth', '').split('/').filter(Boolean);
+    const action = pathParts[0] || '';
 
   try {
     // ============================================
