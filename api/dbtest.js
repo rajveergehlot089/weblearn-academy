@@ -10,10 +10,10 @@ module.exports = async (req, res) => {
     const start = Date.now();
     // Test 1: tagged template
     const r1 = await sql`SELECT current_database() as db`;
-    // Test 2: $1 parameterized
-    const r2 = await sql('SELECT current_database() as db');
+    // Test 2: sql.query() with $1 params
+    const r2 = await sql.query('SELECT current_database() as db');
     const ms = Date.now() - start;
-    res.json({ ok: true, ms, tagged: r1[0], param: r2[0] });
+    res.json({ ok: true, ms, tagged: r1[0], query: r2[0] });
   } catch (err) {
     res.status(500).json({ ok: false, error: err.message, code: err.code });
   }
