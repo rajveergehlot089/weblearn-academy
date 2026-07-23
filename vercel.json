@@ -2,6 +2,11 @@
   "version": 2,
   "buildCommand": "node scripts/build-content.js",
   "outputDirectory": "public",
+  "functions": {
+    "api/**/*.js": {
+      "maxDuration": 30
+    }
+  },
   "routes": [
     { "src": "/api/auth(/.*)?", "dest": "/api/auth.js" },
     { "src": "/api/courses(/.*)?", "dest": "/api/courses.js" },
