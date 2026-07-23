@@ -8,6 +8,7 @@ const { neon, neonConfig } = require('@neondatabase/serverless');
 neonConfig.fetchConnectionCache = true;
 
 let sql;
+let schemaReady = false;
 
 function clean(val, fallback) {
   return String(val || fallback).replace(/^\uFEFF/, '').replace(/\uFEFF/g, '').trim();
@@ -41,6 +42,7 @@ async function run(sqlStr, params = []) {
 // Schema initialization (idempotent)
 // ============================================
 async function initSchema() {
+  if (schemaReady) return;
   const s = getSql();
   await s`CREATE TABLE IF NOT EXISTS users (
     id TEXT PRIMARY KEY,
@@ -160,6 +162,7 @@ async function initSchema() {
   const now = new Date().toISOString();
   await s`DELETE FROM verification_tokens WHERE "expiresAt" < ${now}`;
   await s`DELETE FROM reset_tokens WHERE "expiresAt" < ${now}`;
+  schemaReady = true;
 }
 
 module.exports = { query, one, run, initSchema };
