@@ -20,8 +20,11 @@ function getPool() {
       password: process.env.PGPASSWORD ? clean(process.env.PGPASSWORD, '') : undefined,
       max: 5,
       idleTimeoutMillis: 30000,
-      connectionTimeoutMillis: 15000,
-      ssl: { rejectUnauthorized: false },
+      connectionTimeoutMillis: 20000,
+      ssl: {
+        rejectUnauthorized: false,
+        minVersion: 'TLSv1.2',
+      },
     };
     pool = new Pool(config);
     pool.on('error', (err) => console.error('Pool error:', err));
