@@ -40,32 +40,40 @@ if (!process.env.JWT_SECRET || process.env.JWT_SECRET.length < 32) {
 // ============================================
 // Middleware
 // ============================================
-app.use(helmet({
-  contentSecurityPolicy: {
-    directives: {
-      defaultSrc: ["'self'"],
-      // TODO: Remove 'unsafe-inline' by migrating onclick handlers to addEventListener
-      // and inline styles to CSS classes
-      scriptSrc: ["'self'", "'unsafe-inline'", "https://cdnjs.cloudflare.com", "https://cdn.jsdelivr.net"],
-      styleSrc: ["'self'", "'unsafe-inline'", "https://cdnjs.cloudflare.com", "https://cdn.jsdelivr.net", "https://fonts.googleapis.com"],
-      fontSrc: ["'self'", "https://cdnjs.cloudflare.com", "https://fonts.gstatic.com"],
-      imgSrc: ["'self'", "data:", "https:"],
-      connectSrc: ["'self'"],
-      frameSrc: ["'none'"],
-      objectSrc: ["'none'"],
-      baseUri: ["'self'"],
-      formAction: ["'self'"],
-      ...(isProd ? { upgradeInsecureRequests: [] } : {}),
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        defaultSrc: ["'self'"],
+        // TODO: Remove 'unsafe-inline' by migrating onclick handlers to addEventListener
+        // and inline styles to CSS classes
+        scriptSrc: ["'self'", "'unsafe-inline'", 'https://cdnjs.cloudflare.com', 'https://cdn.jsdelivr.net'],
+        styleSrc: [
+          "'self'",
+          "'unsafe-inline'",
+          'https://cdnjs.cloudflare.com',
+          'https://cdn.jsdelivr.net',
+          'https://fonts.googleapis.com',
+        ],
+        fontSrc: ["'self'", 'https://cdnjs.cloudflare.com', 'https://fonts.gstatic.com'],
+        imgSrc: ["'self'", 'data:', 'https:'],
+        connectSrc: ["'self'"],
+        frameSrc: ["'none'"],
+        objectSrc: ["'none'"],
+        baseUri: ["'self'"],
+        formAction: ["'self'"],
+        ...(isProd ? { upgradeInsecureRequests: [] } : {}),
+      },
     },
-  },
-  crossOriginEmbedderPolicy: false,
-}));
-app.use(cors({
-  origin: process.env.ALLOWED_ORIGINS
-    ? process.env.ALLOWED_ORIGINS.split(',')
-    : isProd ? false : '*',
-  credentials: true,
-}));
+    crossOriginEmbedderPolicy: false,
+  }),
+);
+app.use(
+  cors({
+    origin: process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(',') : isProd ? false : '*',
+    credentials: true,
+  }),
+);
 app.use(compression());
 app.use(requestLogger);
 app.use(cookieParser());
@@ -91,7 +99,9 @@ app.get('/health', async (req, res) => {
     await getPool().query('SELECT 1');
     res.json({ status: 'ok', uptime: process.uptime(), db: 'connected', timestamp: new Date().toISOString() });
   } catch (err) {
-    res.status(503).json({ status: 'error', uptime: process.uptime(), db: 'disconnected', timestamp: new Date().toISOString() });
+    res
+      .status(503)
+      .json({ status: 'error', uptime: process.uptime(), db: 'disconnected', timestamp: new Date().toISOString() });
   }
 });
 app.get('/api/health', async (req, res) => {
@@ -100,7 +110,9 @@ app.get('/api/health', async (req, res) => {
     await getPool().query('SELECT 1');
     res.json({ status: 'ok', uptime: process.uptime(), db: 'connected', timestamp: new Date().toISOString() });
   } catch (err) {
-    res.status(503).json({ status: 'error', uptime: process.uptime(), db: 'disconnected', timestamp: new Date().toISOString() });
+    res
+      .status(503)
+      .json({ status: 'error', uptime: process.uptime(), db: 'disconnected', timestamp: new Date().toISOString() });
   }
 });
 
@@ -184,7 +196,6 @@ async function start() {
     };
     process.on('SIGTERM', () => shutdown('SIGTERM'));
     process.on('SIGINT', () => shutdown('SIGINT'));
-
   } catch (err) {
     logger.fatal({ err }, 'Failed to start server');
     process.exit(1);

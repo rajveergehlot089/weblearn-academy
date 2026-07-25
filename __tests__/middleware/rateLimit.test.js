@@ -17,9 +17,17 @@ function createRes() {
     statusCode: null,
     body: null,
     headers: {},
-    set(name, value) { this.headers[name] = value; },
-    status(code) { this.statusCode = code; return this; },
-    json(data) { this.body = data; return this; },
+    set(name, value) {
+      this.headers[name] = value;
+    },
+    status(code) {
+      this.statusCode = code;
+      return this;
+    },
+    json(data) {
+      this.body = data;
+      return this;
+    },
   };
   return res;
 }
@@ -31,7 +39,9 @@ describe('Rate Limit Middleware', () => {
     const res = createRes();
     let nextCalled = false;
 
-    limiter(req, res, () => { nextCalled = true; });
+    limiter(req, res, () => {
+      nextCalled = true;
+    });
 
     expect(nextCalled).toBe(true);
     expect(res.headers['X-RateLimit-Limit']).toBe('5');
@@ -52,7 +62,9 @@ describe('Rate Limit Middleware', () => {
     const req3 = createReq();
     const res3 = createRes();
     let nextCalled = false;
-    limiter(req3, res3, () => { nextCalled = true; });
+    limiter(req3, res3, () => {
+      nextCalled = true;
+    });
 
     expect(nextCalled).toBe(false);
     expect(res3.statusCode).toBe(429);
@@ -69,7 +81,9 @@ describe('Rate Limit Middleware', () => {
     const req2 = createReq({ path: '/api/b' });
     const res2 = createRes();
     let nextCalled = false;
-    limiter(req2, res2, () => { nextCalled = true; });
+    limiter(req2, res2, () => {
+      nextCalled = true;
+    });
 
     expect(nextCalled).toBe(true);
   });
@@ -83,7 +97,9 @@ describe('Rate Limit Middleware', () => {
     const req2 = createReq({ ip: 'other-ip' });
     const res2 = createRes();
     let nextCalled = false;
-    limiter(req2, res2, () => { nextCalled = true; });
+    limiter(req2, res2, () => {
+      nextCalled = true;
+    });
 
     expect(nextCalled).toBe(true);
   });

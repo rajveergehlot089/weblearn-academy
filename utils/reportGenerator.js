@@ -11,16 +11,27 @@ class ReportGenerator {
       success: '#10b981',
       warning: '#f59e0b',
       danger: '#ef4444',
-      info: '#3b82f6'
+      info: '#3b82f6',
     };
   }
 
   // Generate HTML report
   generateHTMLReport(analysis) {
-    const { meta, roleAnalysis, marketDemand, skillMatrix, missingSkills, 
-            missingTools, competitorBenchmark, futureForecast, gapAnalysis, 
-            implementationRoadmap, projectRecommendations, aiOpportunities, 
-            strategicReport } = analysis;
+    const {
+      meta,
+      roleAnalysis,
+      marketDemand,
+      skillMatrix,
+      missingSkills,
+      missingTools,
+      competitorBenchmark,
+      futureForecast,
+      gapAnalysis,
+      implementationRoadmap,
+      projectRecommendations,
+      aiOpportunities,
+      strategicReport,
+    } = analysis;
 
     return `<!DOCTYPE html>
 <html lang="en">
@@ -103,9 +114,9 @@ class ReportGenerator {
         <div class="card"><h4>Growth Potential</h4><p>${marketDemand.growthPotential}</p></div>
       </div>
       <h3>Opportunities</h3>
-      ${marketDemand.opportunities.map(o => `<div class="list-item"><i class="fas fa-check-circle"></i><span>${o}</span></div>`).join('')}
+      ${marketDemand.opportunities.map((o) => `<div class="list-item"><i class="fas fa-check-circle"></i><span>${o}</span></div>`).join('')}
       <h3>Risk Factors</h3>
-      ${marketDemand.riskFactors.map(r => `<div class="list-item"><i class="fas fa-exclamation-triangle" style="color:#f59e0b"></i><span>${r}</span></div>`).join('')}
+      ${marketDemand.riskFactors.map((r) => `<div class="list-item"><i class="fas fa-exclamation-triangle" style="color:#f59e0b"></i><span>${r}</span></div>`).join('')}
     </div>
 
     <!-- 3. Skill Matrix -->
@@ -114,12 +125,12 @@ class ReportGenerator {
       <h3>Technical Skills</h3>
       <table>
         <tr><th>Skill</th><th>Current Importance</th><th>Future Importance</th><th>Level Required</th></tr>
-        ${skillMatrix.technical.map(s => `<tr><td>${s.skill}</td><td>${s.current}</td><td>${s.future}</td><td>${s.level}</td></tr>`).join('')}
+        ${skillMatrix.technical.map((s) => `<tr><td>${s.skill}</td><td>${s.current}</td><td>${s.future}</td><td>${s.level}</td></tr>`).join('')}
       </table>
       <h3>Business Skills</h3>
       <table>
         <tr><th>Skill</th><th>Current Importance</th><th>Future Importance</th><th>Level Required</th></tr>
-        ${skillMatrix.business.map(s => `<tr><td>${s.skill}</td><td>${s.current}</td><td>${s.future}</td><td>${s.level}</td></tr>`).join('')}
+        ${skillMatrix.business.map((s) => `<tr><td>${s.skill}</td><td>${s.current}</td><td>${s.future}</td><td>${s.level}</td></tr>`).join('')}
       </table>
     </div>
 
@@ -128,7 +139,13 @@ class ReportGenerator {
       <h2><i class="fas fa-exclamation-circle"></i> 4. Missing Skills Identification</h2>
       <table>
         <tr><th>Skill</th><th>Why It Matters</th><th>Priority</th><th>Difficulty</th></tr>
-        ${missingSkills.slice(0, 10).map(s => `<tr><td><strong>${s.skill}</strong></td><td>${s.whyItMatters}</td><td><span class="badge badge-${s.priority}">${s.priority}</span></td><td>${s.difficulty}</td></tr>`).join('')}
+        ${missingSkills
+          .slice(0, 10)
+          .map(
+            (s) =>
+              `<tr><td><strong>${s.skill}</strong></td><td>${s.whyItMatters}</td><td><span class="badge badge-${s.priority}">${s.priority}</span></td><td>${s.difficulty}</td></tr>`,
+          )
+          .join('')}
       </table>
     </div>
 
@@ -136,7 +153,13 @@ class ReportGenerator {
     <div class="section">
       <h2><i class="fas fa-tools"></i> 5. Missing Tools & Technologies</h2>
       <div class="grid-2">
-        ${missingTools.slice(0, 8).map(t => `<div class="card"><h4><i class="fas fa-wrench"></i> ${t.name}</h4><p><strong>Purpose:</strong> ${t.purpose}<br><strong>Priority:</strong> ${t.priority}<br><strong>Difficulty:</strong> ${t.difficulty}</p></div>`).join('')}
+        ${missingTools
+          .slice(0, 8)
+          .map(
+            (t) =>
+              `<div class="card"><h4><i class="fas fa-wrench"></i> ${t.name}</h4><p><strong>Purpose:</strong> ${t.purpose}<br><strong>Priority:</strong> ${t.priority}<br><strong>Difficulty:</strong> ${t.difficulty}</p></div>`,
+          )
+          .join('')}
       </div>
     </div>
 
@@ -145,7 +168,7 @@ class ReportGenerator {
       <h2><i class="fas fa-building"></i> 6. Competitor Benchmark Analysis</h2>
       <table>
         <tr><th>Company</th><th>Features</th><th>Technology</th><th>Strength</th><th>Opportunity</th></tr>
-        ${competitorBenchmark.map(c => `<tr><td><strong>${c.company}</strong></td><td>${c.features}</td><td>${c.technology}</td><td>${c.strength}</td><td>${c.opportunity}</td></tr>`).join('')}
+        ${competitorBenchmark.map((c) => `<tr><td><strong>${c.company}</strong></td><td>${c.features}</td><td>${c.technology}</td><td>${c.strength}</td><td>${c.opportunity}</td></tr>`).join('')}
       </table>
     </div>
 
@@ -154,16 +177,16 @@ class ReportGenerator {
       <h2><i class="fas fa-rocket"></i> 7. Future Skill Forecast (2026-2030)</h2>
       <div class="grid-2">
         <div class="card"><h4><i class="fas fa-bolt" style="color:#fbbf24"></i> Learn NOW</h4>
-          ${futureForecast.now.map(s => `<div class="list-item"><i class="fas fa-play"></i><span>${s}</span></div>`).join('')}
+          ${futureForecast.now.map((s) => `<div class="list-item"><i class="fas fa-play"></i><span>${s}</span></div>`).join('')}
         </div>
         <div class="card"><h4><i class="fas fa-clock" style="color:#3b82f6"></i> Learn in 6-12 months</h4>
-          ${futureForecast.next6to12.map(s => `<div class="list-item"><i class="fas fa-forward"></i><span>${s}</span></div>`).join('')}
+          ${futureForecast.next6to12.map((s) => `<div class="list-item"><i class="fas fa-forward"></i><span>${s}</span></div>`).join('')}
         </div>
         <div class="card"><h4><i class="fas fa-rocket" style="color:#8b5cf6"></i> Prepare for 2-5 years</h4>
-          ${futureForecast.next2to5.map(s => `<div class="list-item"><i class="fas fa-rocket"></i><span>${s}</span></div>`).join('')}
+          ${futureForecast.next2to5.map((s) => `<div class="list-item"><i class="fas fa-rocket"></i><span>${s}</span></div>`).join('')}
         </div>
         <div class="card"><h4><i class="fas fa-exclamation-triangle" style="color:#ef4444"></i> Becoming Outdated</h4>
-          ${futureForecast.becomingOutdated.map(s => `<div class="list-item"><i class="fas fa-times-circle" style="color:#ef4444"></i><span>${s}</span></div>`).join('')}
+          ${futureForecast.becomingOutdated.map((s) => `<div class="list-item"><i class="fas fa-times-circle" style="color:#ef4444"></i><span>${s}</span></div>`).join('')}
         </div>
       </div>
     </div>
@@ -178,24 +201,28 @@ class ReportGenerator {
       <h3>Gaps Identified</h3>
       <table>
         <tr><th>Area</th><th>Current</th><th>Target</th><th>Gap</th></tr>
-        ${gapAnalysis.gaps.map(g => `<tr><td>${g.area}</td><td>${g.current}/3</td><td>${g.target}/3</td><td>${g.gap}</td></tr>`).join('')}
+        ${gapAnalysis.gaps.map((g) => `<tr><td>${g.area}</td><td>${g.current}/3</td><td>${g.target}/3</td><td>${g.gap}</td></tr>`).join('')}
       </table>
       <h3>What's Stopping Growth</h3>
-      ${gapAnalysis.whatIsStoppingGrowth.map(g => `<div class="list-item"><i class="fas fa-ban" style="color:#ef4444"></i><span>${g}</span></div>`).join('')}
+      ${gapAnalysis.whatIsStoppingGrowth.map((g) => `<div class="list-item"><i class="fas fa-ban" style="color:#ef4444"></i><span>${g}</span></div>`).join('')}
     </div>
 
     <!-- 9. Implementation Roadmap -->
     <div class="section">
       <h2><i class="fas fa-map"></i> 9. Implementation Roadmap</h2>
       <div class="timeline">
-        ${Object.values(implementationRoadmap).map(phase => `
+        ${Object.values(implementationRoadmap)
+          .map(
+            (phase) => `
           <div class="timeline-item">
             <h4>${phase.name} (${phase.duration})</h4>
             <p><strong>Tasks:</strong> ${phase.tasks.join(' → ')}</p>
             <p style="margin-top:8px"><strong>Skills:</strong> ${phase.skills.join(', ')}</p>
             <p style="margin-top:8px;color:#6ee7b7"><strong>Result:</strong> ${phase.expectedResult}</p>
           </div>
-        `).join('')}
+        `,
+          )
+          .join('')}
       </div>
     </div>
 
@@ -203,14 +230,18 @@ class ReportGenerator {
     <div class="section">
       <h2><i class="fas fa-project-diagram"></i> 10. Project Recommendations</h2>
       <div class="grid-2">
-        ${projectRecommendations.map(p => `
+        ${projectRecommendations
+          .map(
+            (p) => `
           <div class="card">
             <h4>${p.name}</h4>
             <p>${p.purpose}</p>
             <p style="margin-top:8px"><strong>Tech:</strong> ${p.techStack}</p>
             <p><strong>Difficulty:</strong> ${p.difficulty} | <strong>Value:</strong> ${p.industryValue}</p>
           </div>
-        `).join('')}
+        `,
+          )
+          .join('')}
       </div>
     </div>
 
@@ -218,10 +249,10 @@ class ReportGenerator {
     <div class="section">
       <h2><i class="fas fa-robot"></i> 11. AI Transformation Opportunities</h2>
       <div class="grid-2">
-        <div class="card"><h4>Automation</h4>${aiOpportunities.automation.map(a => `<div class="list-item"><i class="fas fa-cog"></i><span>${a}</span></div>`).join('')}</div>
-        <div class="card"><h4>AI Agents</h4>${aiOpportunities.agents.map(a => `<div class="list-item"><i class="fas fa-robot"></i><span>${a}</span></div>`).join('')}</div>
-        <div class="card"><h4>Machine Learning</h4>${aiOpportunities.machineLearning.map(a => `<div class="list-item"><i class="fas fa-brain"></i><span>${a}</span></div>`).join('')}</div>
-        <div class="card"><h4>Process Optimization</h4>${aiOpportunities.processOptimization.map(a => `<div class="list-item"><i class="fas fa-chart-line"></i><span>${a}</span></div>`).join('')}</div>
+        <div class="card"><h4>Automation</h4>${aiOpportunities.automation.map((a) => `<div class="list-item"><i class="fas fa-cog"></i><span>${a}</span></div>`).join('')}</div>
+        <div class="card"><h4>AI Agents</h4>${aiOpportunities.agents.map((a) => `<div class="list-item"><i class="fas fa-robot"></i><span>${a}</span></div>`).join('')}</div>
+        <div class="card"><h4>Machine Learning</h4>${aiOpportunities.machineLearning.map((a) => `<div class="list-item"><i class="fas fa-brain"></i><span>${a}</span></div>`).join('')}</div>
+        <div class="card"><h4>Process Optimization</h4>${aiOpportunities.processOptimization.map((a) => `<div class="list-item"><i class="fas fa-chart-line"></i><span>${a}</span></div>`).join('')}</div>
       </div>
     </div>
 
@@ -231,24 +262,24 @@ class ReportGenerator {
       <div class="grid-2">
         <div class="card">
           <h4><i class="fas fa-exclamation-circle" style="color:#ef4444"></i> Top 10 Missing Things</h4>
-          <ol>${strategicReport.top10MissingThings.map(s => `<li>${s}</li>`).join('')}</ol>
+          <ol>${strategicReport.top10MissingThings.map((s) => `<li>${s}</li>`).join('')}</ol>
         </div>
         <div class="card">
           <h4><i class="fas fa-graduation-cap" style="color:#8b5cf6"></i> Top 10 Skills to Learn</h4>
-          <ol>${strategicReport.top10SkillsToLearn.map(s => `<li>${s}</li>`).join('')}</ol>
+          <ol>${strategicReport.top10SkillsToLearn.map((s) => `<li>${s}</li>`).join('')}</ol>
         </div>
         <div class="card">
           <h4><i class="fas fa-wrench" style="color:#3b82f6"></i> Top 10 Tools to Master</h4>
-          <ol>${strategicReport.top10ToolsToMaster.map(s => `<li>${s}</li>`).join('')}</ol>
+          <ol>${strategicReport.top10ToolsToMaster.map((s) => `<li>${s}</li>`).join('')}</ol>
         </div>
         <div class="card">
           <h4><i class="fas fa-bolt" style="color:#f59e0b"></i> Top 10 Actions Now</h4>
-          <ol>${strategicReport.top10Actions.map(s => `<li>${s}</li>`).join('')}</ol>
+          <ol>${strategicReport.top10Actions.map((s) => `<li>${s}</li>`).join('')}</ol>
         </div>
       </div>
       <div class="grid-2" style="margin-top:20px">
-        <div class="card"><h4><i class="fas fa-trophy" style="color:#10b981"></i> Biggest Opportunities</h4>${strategicReport.biggestOpportunities.map(o => `<div class="list-item"><i class="fas fa-check-circle" style="color:#10b981"></i><span>${o}</span></div>`).join('')}</div>
-        <div class="card"><h4><i class="fas fa-exclamation-triangle" style="color:#ef4444"></i> Biggest Risks</h4>${strategicReport.biggestRisks.map(r => `<div class="list-item"><i class="fas fa-times-circle" style="color:#ef4444"></i><span>${r}</span></div>`).join('')}</div>
+        <div class="card"><h4><i class="fas fa-trophy" style="color:#10b981"></i> Biggest Opportunities</h4>${strategicReport.biggestOpportunities.map((o) => `<div class="list-item"><i class="fas fa-check-circle" style="color:#10b981"></i><span>${o}</span></div>`).join('')}</div>
+        <div class="card"><h4><i class="fas fa-exclamation-triangle" style="color:#ef4444"></i> Biggest Risks</h4>${strategicReport.biggestRisks.map((r) => `<div class="list-item"><i class="fas fa-times-circle" style="color:#ef4444"></i><span>${r}</span></div>`).join('')}</div>
       </div>
     </div>
 
@@ -263,10 +294,21 @@ class ReportGenerator {
 
   // Generate Markdown report
   generateMarkdownReport(analysis) {
-    const { meta, roleAnalysis, marketDemand, skillMatrix, missingSkills, 
-            missingTools, competitorBenchmark, futureForecast, gapAnalysis, 
-            implementationRoadmap, projectRecommendations, aiOpportunities, 
-            strategicReport } = analysis;
+    const {
+      meta,
+      roleAnalysis,
+      marketDemand,
+      skillMatrix,
+      missingSkills,
+      missingTools,
+      competitorBenchmark,
+      futureForecast,
+      gapAnalysis,
+      implementationRoadmap,
+      projectRecommendations,
+      aiOpportunities,
+      strategicReport,
+    } = analysis;
 
     return `# Strategic Analysis Report
 ## ${meta.role} | ${meta.industry || 'Multi-Industry'} | ${meta.region || 'Global'}
@@ -293,10 +335,10 @@ class ReportGenerator {
 - **Growth Potential:** ${marketDemand.growthPotential}
 
 ### Opportunities
-${marketDemand.opportunities.map(o => `- ${o}`).join('\n')}
+${marketDemand.opportunities.map((o) => `- ${o}`).join('\n')}
 
 ### Risk Factors
-${marketDemand.riskFactors.map(r => `- ${r}`).join('\n')}
+${marketDemand.riskFactors.map((r) => `- ${r}`).join('\n')}
 
 ---
 
@@ -305,12 +347,12 @@ ${marketDemand.riskFactors.map(r => `- ${r}`).join('\n')}
 ### Technical Skills
 | Skill | Current | Future | Level |
 |-------|---------|--------|-------|
-${skillMatrix.technical.map(s => `| ${s.skill} | ${s.current} | ${s.future} | ${s.level} |`).join('\n')}
+${skillMatrix.technical.map((s) => `| ${s.skill} | ${s.current} | ${s.future} | ${s.level} |`).join('\n')}
 
 ### Business Skills
 | Skill | Current | Future | Level |
 |-------|---------|--------|-------|
-${skillMatrix.business.map(s => `| ${s.skill} | ${s.current} | ${s.future} | ${s.level} |`).join('\n')}
+${skillMatrix.business.map((s) => `| ${s.skill} | ${s.current} | ${s.future} | ${s.level} |`).join('\n')}
 
 ---
 
@@ -318,13 +360,19 @@ ${skillMatrix.business.map(s => `| ${s.skill} | ${s.current} | ${s.future} | ${s
 
 | Skill | Why It Matters | Priority | Difficulty |
 |-------|----------------|----------|------------|
-${missingSkills.slice(0, 10).map(s => `| ${s.skill} | ${s.whyItMatters} | ${s.priority} | ${s.difficulty} |`).join('\n')}
+${missingSkills
+  .slice(0, 10)
+  .map((s) => `| ${s.skill} | ${s.whyItMatters} | ${s.priority} | ${s.difficulty} |`)
+  .join('\n')}
 
 ---
 
 ## 5. Missing Tools & Technologies
 
-${missingTools.slice(0, 8).map(t => `- **${t.name}**: ${t.purpose} (${t.priority} priority, ${t.difficulty})`).join('\n')}
+${missingTools
+  .slice(0, 8)
+  .map((t) => `- **${t.name}**: ${t.purpose} (${t.priority} priority, ${t.difficulty})`)
+  .join('\n')}
 
 ---
 
@@ -332,23 +380,23 @@ ${missingTools.slice(0, 8).map(t => `- **${t.name}**: ${t.purpose} (${t.priority
 
 | Company | Technology | Strength | Opportunity |
 |---------|------------|----------|-------------|
-${competitorBenchmark.map(c => `| ${c.company} | ${c.technology} | ${c.strength} | ${c.opportunity} |`).join('\n')}
+${competitorBenchmark.map((c) => `| ${c.company} | ${c.technology} | ${c.strength} | ${c.opportunity} |`).join('\n')}
 
 ---
 
 ## 7. Future Skill Forecast (2026-2030)
 
 ### Learn NOW
-${futureForecast.now.map(s => `- ${s}`).join('\n')}
+${futureForecast.now.map((s) => `- ${s}`).join('\n')}
 
 ### Learn in 6-12 months
-${futureForecast.next6to12.map(s => `- ${s}`).join('\n')}
+${futureForecast.next6to12.map((s) => `- ${s}`).join('\n')}
 
 ### Prepare for 2-5 years
-${futureForecast.next2to5.map(s => `- ${s}`).join('\n')}
+${futureForecast.next2to5.map((s) => `- ${s}`).join('\n')}
 
 ### Becoming Outdated
-${futureForecast.becomingOutdated.map(s => `- ${s}`).join('\n')}
+${futureForecast.becomingOutdated.map((s) => `- ${s}`).join('\n')}
 
 ---
 
@@ -359,43 +407,51 @@ ${futureForecast.becomingOutdated.map(s => `- ${s}`).join('\n')}
 
 | Area | Current | Target | Gap |
 |------|---------|--------|-----|
-${gapAnalysis.gaps.map(g => `| ${g.area} | ${g.current}/3 | ${g.target}/3 | ${g.gap} |`).join('\n')}
+${gapAnalysis.gaps.map((g) => `| ${g.area} | ${g.current}/3 | ${g.target}/3 | ${g.gap} |`).join('\n')}
 
 ---
 
 ## 9. Implementation Roadmap
 
-${Object.values(implementationRoadmap).map(phase => `
+${Object.values(implementationRoadmap)
+  .map(
+    (phase) => `
 ### ${phase.name} (${phase.duration})
 - **Tasks:** ${phase.tasks.join(' → ')}
 - **Skills:** ${phase.skills.join(', ')}
 - **Result:** ${phase.expectedResult}
-`).join('\n')}
+`,
+  )
+  .join('\n')}
 
 ---
 
 ## 10. Project Recommendations
 
-${projectRecommendations.map(p => `
+${projectRecommendations
+  .map(
+    (p) => `
 ### ${p.name}
 - **Purpose:** ${p.purpose}
 - **Tech Stack:** ${p.techStack}
 - **Difficulty:** ${p.difficulty}
 - **Value:** ${p.industryValue}
-`).join('\n')}
+`,
+  )
+  .join('\n')}
 
 ---
 
 ## 11. AI Transformation Opportunities
 
 ### Automation
-${aiOpportunities.automation.map(a => `- ${a}`).join('\n')}
+${aiOpportunities.automation.map((a) => `- ${a}`).join('\n')}
 
 ### AI Agents
-${aiOpportunities.agents.map(a => `- ${a}`).join('\n')}
+${aiOpportunities.agents.map((a) => `- ${a}`).join('\n')}
 
 ### Machine Learning
-${aiOpportunities.machineLearning.map(a => `- ${a}`).join('\n')}
+${aiOpportunities.machineLearning.map((a) => `- ${a}`).join('\n')}
 
 ---
 
@@ -414,10 +470,10 @@ ${strategicReport.top10ToolsToMaster.map((s, i) => `${i + 1}. ${s}`).join('\n')}
 ${strategicReport.top10Actions.map((s, i) => `${i + 1}. ${s}`).join('\n')}
 
 ### Biggest Opportunities
-${strategicReport.biggestOpportunities.map(o => `- ${o}`).join('\n')}
+${strategicReport.biggestOpportunities.map((o) => `- ${o}`).join('\n')}
 
 ### Biggest Risks
-${strategicReport.biggestRisks.map(r => `- ${r}`).join('\n')}
+${strategicReport.biggestRisks.map((r) => `- ${r}`).join('\n')}
 
 ---
 

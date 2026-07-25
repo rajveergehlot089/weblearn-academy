@@ -35,7 +35,8 @@ async function cleanupStaleDailyLogs(daysToKeep = 90) {
 async function cleanupOldAnalysisHistory(maxPerUser = 50) {
   const pool = getPool();
 
-  const result = await pool.query(`
+  const result = await pool.query(
+    `
     DELETE FROM analysis_history
     WHERE id IN (
       SELECT id FROM (
@@ -45,7 +46,9 @@ async function cleanupOldAnalysisHistory(maxPerUser = 50) {
       ) ranked
       WHERE rn > $1
     )
-  `, [maxPerUser]);
+  `,
+    [maxPerUser],
+  );
 
   if (result.rowCount > 0) {
     logger.info({ deleted: result.rowCount, maxPerUser }, 'Cleaned up old analysis history');

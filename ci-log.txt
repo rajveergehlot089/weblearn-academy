@@ -1,0 +1,683 @@
+﻿Lint	Set up job	﻿2026-07-25T04:35:22.4866259Z Current runner version: '2.336.0'
+Lint	Set up job	2026-07-25T04:35:22.4891131Z ##[group]Runner Image Provisioner
+Lint	Set up job	2026-07-25T04:35:22.4892145Z Hosted Compute Agent
+Lint	Set up job	2026-07-25T04:35:22.4892755Z Version: 20260707.563
+Lint	Set up job	2026-07-25T04:35:22.4893379Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+Lint	Set up job	2026-07-25T04:35:22.4894248Z Build Date: 2026-07-07T19:33:50Z
+Lint	Set up job	2026-07-25T04:35:22.4894940Z Worker ID: {23ef04a0-4b0a-4921-a73f-c5d3d17e3818}
+Lint	Set up job	2026-07-25T04:35:22.4896119Z Azure Region: westus
+Lint	Set up job	2026-07-25T04:35:22.4896744Z ##[endgroup]
+Lint	Set up job	2026-07-25T04:35:22.4898250Z ##[group]Operating System
+Lint	Set up job	2026-07-25T04:35:22.4899029Z Ubuntu
+Lint	Set up job	2026-07-25T04:35:22.4899568Z 24.04.4
+Lint	Set up job	2026-07-25T04:35:22.4900077Z LTS
+Lint	Set up job	2026-07-25T04:35:22.4900661Z ##[endgroup]
+Lint	Set up job	2026-07-25T04:35:22.4901211Z ##[group]Runner Image
+Lint	Set up job	2026-07-25T04:35:22.4901874Z Image: ubuntu-24.04
+Lint	Set up job	2026-07-25T04:35:22.4902465Z Version: 20260720.247.2
+Lint	Set up job	2026-07-25T04:35:22.4903567Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260720.247/images/ubuntu/Ubuntu2404-Readme.md
+Lint	Set up job	2026-07-25T04:35:22.4905579Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260720.247
+Lint	Set up job	2026-07-25T04:35:22.4906697Z ##[endgroup]
+Lint	Set up job	2026-07-25T04:35:22.4907878Z ##[group]GITHUB_TOKEN Permissions
+Lint	Set up job	2026-07-25T04:35:22.4909720Z Contents: read
+Lint	Set up job	2026-07-25T04:35:22.4910478Z Metadata: read
+Lint	Set up job	2026-07-25T04:35:22.4911062Z Packages: read
+Lint	Set up job	2026-07-25T04:35:22.4911706Z ##[endgroup]
+Lint	Set up job	2026-07-25T04:35:22.4913783Z Secret source: Actions
+Lint	Set up job	2026-07-25T04:35:22.4915747Z Prepare workflow directory
+Lint	Set up job	2026-07-25T04:35:22.5256957Z Prepare all required actions
+Lint	Set up job	2026-07-25T04:35:22.5321842Z Getting action download info
+Lint	Set up job	2026-07-25T04:35:22.8760466Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Lint	Set up job	2026-07-25T04:35:23.3003387Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+Lint	Set up job	2026-07-25T04:35:23.4975864Z Complete job name: Lint
+Lint	Run actions/checkout@v4	﻿2026-07-25T04:35:23.5824515Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.5833756Z ##[group]Run actions/checkout@v4
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.5834546Z with:
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.5835450Z   repository: rajveergehlot089/weblearn-academy
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.5839410Z   token: ***
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.5839856Z   ssh-strict: true
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.5840307Z   ssh-user: git
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.5840774Z   persist-credentials: true
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.5841284Z   clean: true
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.5841752Z   sparse-checkout-cone-mode: true
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.5842301Z   fetch-depth: 1
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.5842749Z   fetch-tags: false
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.5843207Z   show-progress: true
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.5843667Z   lfs: false
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.5844098Z   submodules: false
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.5844598Z   set-safe-directory: true
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.5845273Z   allow-unsafe-pr-checkout: false
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.5846137Z ##[endgroup]
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.6865723Z Syncing repository: rajveergehlot089/weblearn-academy
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.6869150Z ##[group]Getting Git version info
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.6870447Z Working directory is '/home/runner/work/weblearn-academy/weblearn-academy'
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.6872394Z [command]/usr/bin/git version
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.6950429Z git version 2.54.0
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7009070Z ##[endgroup]
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7024935Z Temporarily overriding HOME='/home/runner/work/_temp/731de104-4000-4974-9511-21123ce207ab' before making global git config changes
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7027583Z Adding repository directory to the temporary git global config as a safe directory
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7032382Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/weblearn-academy/weblearn-academy
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7092402Z Deleting the contents of '/home/runner/work/weblearn-academy/weblearn-academy'
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7097430Z ##[group]Initializing the repository
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7103082Z [command]/usr/bin/git init /home/runner/work/weblearn-academy/weblearn-academy
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7225389Z hint: Using 'master' as the name for the initial branch. This default branch name
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7227090Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7228624Z hint: to use in all of your new repositories, which will suppress this warning,
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7231293Z hint: call:
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7244304Z hint:
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7245523Z hint: 	git config --global init.defaultBranch <name>
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7246537Z hint:
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7247473Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7248819Z hint: 'development'. The just-created branch can be renamed via this command:
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7249574Z hint:
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7250034Z hint: 	git branch -m <name>
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7250536Z hint:
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7251184Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7252306Z Initialized empty Git repository in /home/runner/work/weblearn-academy/weblearn-academy/.git/
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7254101Z [command]/usr/bin/git remote add origin https://github.com/rajveergehlot089/weblearn-academy
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7302294Z ##[endgroup]
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7303558Z ##[group]Disabling automatic garbage collection
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7308384Z [command]/usr/bin/git config --local gc.auto 0
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7341750Z ##[endgroup]
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7342983Z ##[group]Setting up auth
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7349634Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7397774Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7806743Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.7845690Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.8077390Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.8116723Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.8342619Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.8381731Z ##[endgroup]
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.8382622Z ##[group]Fetching the repository
+Lint	Run actions/checkout@v4	2026-07-25T04:35:23.8394200Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5c22461e746efee41f9734a6ea57b9a724934f5a:refs/remotes/origin/main
+Lint	Run actions/checkout@v4	2026-07-25T04:35:24.5179669Z From https://github.com/rajveergehlot089/weblearn-academy
+Lint	Run actions/checkout@v4	2026-07-25T04:35:24.5181563Z  * [new ref]         5c22461e746efee41f9734a6ea57b9a724934f5a -> origin/main
+Lint	Run actions/checkout@v4	2026-07-25T04:35:24.5218002Z ##[endgroup]
+Lint	Run actions/checkout@v4	2026-07-25T04:35:24.5219904Z ##[group]Determining the checkout info
+Lint	Run actions/checkout@v4	2026-07-25T04:35:24.5222110Z ##[endgroup]
+Lint	Run actions/checkout@v4	2026-07-25T04:35:24.5226488Z [command]/usr/bin/git sparse-checkout disable
+Lint	Run actions/checkout@v4	2026-07-25T04:35:24.5279936Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Lint	Run actions/checkout@v4	2026-07-25T04:35:24.5314894Z ##[group]Checking out the ref
+Lint	Run actions/checkout@v4	2026-07-25T04:35:24.5320062Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Lint	Run actions/checkout@v4	2026-07-25T04:35:24.6285350Z Switched to a new branch 'main'
+Lint	Run actions/checkout@v4	2026-07-25T04:35:24.6287247Z branch 'main' set up to track 'origin/main'.
+Lint	Run actions/checkout@v4	2026-07-25T04:35:24.6297448Z ##[endgroup]
+Lint	Run actions/checkout@v4	2026-07-25T04:35:24.6346895Z [command]/usr/bin/git log -1 --format=%H
+Lint	Run actions/checkout@v4	2026-07-25T04:35:24.6373208Z 5c22461e746efee41f9734a6ea57b9a724934f5a
+Lint	Run actions/setup-node@v4	﻿2026-07-25T04:35:24.6750537Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:24.6756518Z ##[group]Run actions/setup-node@v4
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:24.6758027Z with:
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:24.6758955Z   node-version: 20
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:24.6759792Z   cache: npm
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:24.6760605Z   always-auth: false
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:24.6761508Z   check-latest: false
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:24.6771771Z   token: ***
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:24.6772582Z ##[endgroup]
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:24.8197220Z Attempting to download 20...
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:24.8319450Z (node:2280) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:24.8323032Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:25.5277787Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:25.9983339Z Extracting ...
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:26.0108615Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/e83b8aca-d6b6-412b-999a-12f301a0f7d1 -f /home/runner/work/_temp/c1cd2226-3f02-463f-bbde-8e09a0ca0a6e
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:27.0528823Z Adding to the cache ...
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:28.9515912Z ##[group]Environment details
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:29.1747559Z node: v20.20.2
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:29.1819443Z npm: 10.8.2
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:29.1820138Z yarn: 1.22.22
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:29.1820959Z ##[endgroup]
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:29.1821525Z [command]/opt/hostedtoolcache/node/20.20.2/x64/bin/npm config get cache
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:29.2822130Z /home/runner/.npm
+Lint	Run actions/setup-node@v4	2026-07-25T04:35:29.5332273Z npm cache is not found
+Lint	Run npm ci	﻿2026-07-25T04:35:29.5522580Z ##[group]Run npm ci
+Lint	Run npm ci	2026-07-25T04:35:29.5522898Z ^[[36;1mnpm ci^[[0m
+Lint	Run npm ci	2026-07-25T04:35:29.5574676Z shell: /usr/bin/bash -e {0}
+Lint	Run npm ci	2026-07-25T04:35:29.5575306Z ##[endgroup]
+Lint	Run npm ci	2026-07-25T04:35:31.9529417Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+Lint	Run npm ci	2026-07-25T04:35:32.3702001Z npm warn deprecated npmlog@5.0.1: This package is no longer supported.
+Lint	Run npm ci	2026-07-25T04:35:32.6385765Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+Lint	Run npm ci	2026-07-25T04:35:33.0025282Z npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+Lint	Run npm ci	2026-07-25T04:35:33.1974725Z npm warn deprecated gauge@3.0.2: This package is no longer supported.
+Lint	Run npm ci	2026-07-25T04:35:33.2955520Z npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+Lint	Run npm ci	2026-07-25T04:35:33.5787112Z npm warn deprecated tar@6.2.1: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+Lint	Run npm ci	2026-07-25T04:35:34.2367502Z npm warn deprecated uuid@9.0.1: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
+Lint	Run npm ci	2026-07-25T04:35:34.5856062Z npm warn deprecated glob@11.1.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+Lint	Run npm ci	2026-07-25T04:35:34.6124253Z npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+Lint	Run npm ci	2026-07-25T04:35:34.6157112Z npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+Lint	Run npm ci	2026-07-25T04:35:34.6419406Z npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+Lint	Run npm ci	2026-07-25T04:35:39.2223062Z 
+Lint	Run npm ci	2026-07-25T04:35:39.2224088Z added 665 packages, and audited 666 packages in 10s
+Lint	Run npm ci	2026-07-25T04:35:39.2224678Z 
+Lint	Run npm ci	2026-07-25T04:35:39.2225213Z 103 packages are looking for funding
+Lint	Run npm ci	2026-07-25T04:35:39.2225617Z   run `npm fund` for details
+Lint	Run npm ci	2026-07-25T04:35:39.2674999Z 
+Lint	Run npm ci	2026-07-25T04:35:39.2675808Z 24 vulnerabilities (1 moderate, 22 high, 1 critical)
+Lint	Run npm ci	2026-07-25T04:35:39.2676343Z 
+Lint	Run npm ci	2026-07-25T04:35:39.2676592Z To address issues that do not require attention, run:
+Lint	Run npm ci	2026-07-25T04:35:39.2676943Z   npm audit fix
+Lint	Run npm ci	2026-07-25T04:35:39.2677119Z 
+Lint	Run npm ci	2026-07-25T04:35:39.2677346Z To address all issues (including breaking changes), run:
+Lint	Run npm ci	2026-07-25T04:35:39.2677725Z   npm audit fix --force
+Lint	Run npm ci	2026-07-25T04:35:39.2677913Z 
+Lint	Run npm ci	2026-07-25T04:35:39.2678060Z Run `npm audit` for details.
+Lint	Run npm run lint	﻿2026-07-25T04:35:39.2969216Z ##[group]Run npm run lint
+Lint	Run npm run lint	2026-07-25T04:35:39.2969525Z ^[[36;1mnpm run lint^[[0m
+Lint	Run npm run lint	2026-07-25T04:35:39.3016144Z shell: /usr/bin/bash -e {0}
+Lint	Run npm run lint	2026-07-25T04:35:39.3016415Z ##[endgroup]
+Lint	Run npm run lint	2026-07-25T04:35:39.4164461Z 
+Lint	Run npm run lint	2026-07-25T04:35:39.4165140Z > weblearn-academy@1.0.0 lint
+Lint	Run npm run lint	2026-07-25T04:35:39.4165948Z > eslint .
+Lint	Run npm run lint	2026-07-25T04:35:39.4166213Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3512005Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3513113Z /home/runner/work/weblearn-academy/weblearn-academy/__tests__/routes/auth.test.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3540886Z ##[warning]  28:7  warning  'db' is assigned a value but never used. Allowed unused vars must match /^_/u  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3549453Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3549962Z /home/runner/work/weblearn-academy/weblearn-academy/__tests__/routes/courses.test.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3551404Z ##[warning]   7:7  warning  'path' is assigned a value but never used. Allowed unused vars must match /^_/u  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3553244Z ##[warning]  29:7  warning  'db' is assigned a value but never used. Allowed unused vars must match /^_/u    no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3554225Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3554548Z /home/runner/work/weblearn-academy/weblearn-academy/api/analysis.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3556006Z ##[warning]  147:9  warning  'id' is assigned a value but never used. Allowed unused vars must match /^_/u  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3556947Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3557269Z /home/runner/work/weblearn-academy/weblearn-academy/api/auth.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3557880Z   20:3  error  Parsing error: Missing catch or finally clause
+Lint	Run npm run lint	2026-07-25T04:35:40.3558156Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3558444Z /home/runner/work/weblearn-academy/weblearn-academy/api/courses.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3559601Z ##[warning]  210:41  warning  'userMode' is assigned a value but never used. Allowed unused vars must match /^_/u  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3560582Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3560877Z /home/runner/work/weblearn-academy/weblearn-academy/api/lib/db.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3561848Z ##[warning]  44:1  warning  Async function 'run' has no 'await' expression  require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3562734Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3563079Z /home/runner/work/weblearn-academy/weblearn-academy/api/search.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3563869Z ##[warning]  61:12  warning  'error' is defined but never used  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3564670Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3564969Z /home/runner/work/weblearn-academy/weblearn-academy/api/topics.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3566996Z ##[warning]  6:9  warning  'getCoursesMetadata' is assigned a value but never used. Allowed unused vars must match /^_/u  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3568153Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3568504Z /home/runner/work/weblearn-academy/weblearn-academy/middleware/admin.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3569443Z ##[warning]  27:12  warning  'err' is defined but never used  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3570294Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3570634Z /home/runner/work/weblearn-academy/weblearn-academy/middleware/auth.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3571454Z ##[warning]  34:12  warning  'err' is defined but never used  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3572244Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3572576Z /home/runner/work/weblearn-academy/weblearn-academy/routes/admin.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3573923Z ##[warning]  8:59  warning  'paginationSchema' is assigned a value but never used. Allowed unused vars must match /^_/u  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3575253Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3575645Z /home/runner/work/weblearn-academy/weblearn-academy/routes/analysis.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3576922Z ##[warning]   6:13  warning  'uuidv4' is assigned a value but never used. Allowed unused vars must match /^_/u  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3578746Z ##[warning]  53:79  warning  Async arrow function has no 'await' expression                                     require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3579744Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3580061Z /home/runner/work/weblearn-academy/weblearn-academy/routes/search.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3580872Z ##[warning]  18:12  warning  'error' is defined but never used  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3581712Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3582311Z /home/runner/work/weblearn-academy/weblearn-academy/server.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3583305Z ##[warning]   76:12  warning  'err' is defined but never used                                         no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3584933Z ##[warning]   85:12  warning  'err' is defined but never used                                         no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3586800Z ##[warning]  111:25  warning  'next' is defined but never used. Allowed unused args must match /^_/u  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3588481Z ##[warning]  143:37  warning  Async arrow function has no 'await' expression                          require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3589418Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3589784Z /home/runner/work/weblearn-academy/weblearn-academy/serverless-lib/db.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3591073Z ##[warning]  25:10  warning  'toTagged' is defined but never used. Allowed unused vars must match /^_/u           no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3592959Z ##[warning]  43:9   warning  'template' is assigned a value but never used. Allowed unused vars must match /^_/u  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3594762Z ##[warning]  66:1   warning  Async function 'run' has no 'await' expression                                       require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3595965Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3596333Z /home/runner/work/weblearn-academy/weblearn-academy/utils/analysisEngine.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3597777Z ##[warning]  126:3   warning  Async method 'generateAnalysis' has no 'await' expression                                   require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3599818Z ##[warning]  159:21  warning  'industry' is defined but never used. Allowed unused args must match /^_/u                  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3601815Z ##[warning]  214:23  warning  'role' is defined but never used. Allowed unused args must match /^_/u                      no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3603713Z ##[warning]  214:29  warning  'industry' is defined but never used. Allowed unused args must match /^_/u                  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3606026Z ##[warning]  214:39  warning  'region' is defined but never used. Allowed unused args must match /^_/u                    no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3608152Z ##[warning]  237:20  warning  'role' is defined but never used. Allowed unused args must match /^_/u                      no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3610937Z ##[warning]  237:26  warning  'industry' is defined but never used. Allowed unused args must match /^_/u                  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3613961Z ##[warning]  264:51  warning  'experienceLevel' is assigned a value but never used. Allowed unused args must match /^_/u  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3616485Z ##[warning]  285:40  warning  'currentSkills' is assigned a value but never used. Allowed unused args must match /^_/u    no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3618675Z ##[warning]  300:24  warning  'role' is defined but never used. Allowed unused args must match /^_/u                      no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3620825Z ##[warning]  300:30  warning  'industry' is defined but never used. Allowed unused args must match /^_/u                  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3622924Z ##[warning]  338:18  warning  'role' is defined but never used. Allowed unused args must match /^_/u                      no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3624606Z ##[warning]  338:24  warning  'industry' is defined but never used. Allowed unused args must match /^_/u                  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3627438Z ##[warning]  401:17  warning  'role' is defined but never used. Allowed unused args must match /^_/u                      no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3629328Z ##[warning]  401:23  warning  'experienceLevel' is defined but never used. Allowed unused args must match /^_/u           no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3631010Z ##[warning]  401:40  warning  'goal' is defined but never used. Allowed unused args must match /^_/u                      no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3632957Z ##[warning]  458:44  warning  'currentSkills' is assigned a value but never used. Allowed unused args must match /^_/u    no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3634610Z ##[warning]  504:27  warning  'role' is defined but never used. Allowed unused args must match /^_/u                      no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3637122Z ##[warning]  504:33  warning  'industry' is defined but never used. Allowed unused args must match /^_/u                  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3638042Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3638321Z /home/runner/work/weblearn-academy/weblearn-academy/utils/db.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3639208Z ##[warning]   19:1  warning  Async function 'run' has no 'await' expression                        require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3641197Z ##[warning]   26:1  warning  Async function 'getUserByEmail' has no 'await' expression             require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3643626Z ##[warning]   30:1  warning  Async function 'getUserById' has no 'await' expression                require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3646302Z ##[warning]   45:1  warning  Async function 'getAllUsers' has no 'await' expression                require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3648732Z ##[warning]   81:1  warning  Async function 'getEnrollments' has no 'await' expression             require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3651360Z ##[warning]  115:1  warning  Async function 'getTopicProgress' has no 'await' expression           require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3653756Z ##[warning]  119:1  warning  Async function 'getAllTopicProgress' has no 'await' expression        require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3655601Z ##[warning]  150:1  warning  Async function 'getDailyLog' has no 'await' expression                require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3657139Z ##[warning]  178:1  warning  Async function 'getTypingScores' has no 'await' expression            require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3658628Z ##[warning]  223:1  warning  Async function 'getInterviewProgress' has no 'await' expression       require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3660108Z ##[warning]  245:1  warning  Async function 'getExerciseProgress' has no 'await' expression        require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3661563Z ##[warning]  259:1  warning  Async function 'getAnalysisById' has no 'await' expression            require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3663001Z ##[warning]  263:1  warning  Async function 'getAnalysisHistory' has no 'await' expression         require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3664679Z ##[warning]  298:1  warning  Async function 'getCourseTopicCompletions' has no 'await' expression  require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3666483Z ##[warning]  315:1  warning  Async function 'getVerificationToken' has no 'await' expression       require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3667909Z ##[warning]  330:1  warning  Async function 'getResetToken' has no 'await' expression              require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3669314Z ##[warning]  387:1  warning  Async function 'getAllCourses' has no 'await' expression              require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3670712Z ##[warning]  391:1  warning  Async function 'getCourseById' has no 'await' expression              require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3671536Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3671808Z /home/runner/work/weblearn-academy/weblearn-academy/utils/email.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3672704Z ##[warning]  41:1  warning  Async function 'sendVerificationEmail' has no 'await' expression   require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3674107Z ##[warning]  70:1  warning  Async function 'sendPasswordResetEmail' has no 'await' expression  require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3674925Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3675450Z /home/runner/work/weblearn-academy/weblearn-academy/utils/hash.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3676319Z ##[warning]  16:1  warning  Async function 'hashPassword' has no 'await' expression     require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3677694Z ##[warning]  24:1  warning  Async function 'comparePassword' has no 'await' expression  require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3678506Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3678817Z /home/runner/work/weblearn-academy/weblearn-academy/utils/researchEngine.js
+Lint	Run npm run lint	2026-07-25T04:35:40.3680029Z ##[warning]   17:3   warning  Async method 'fetchWithTimeout' has no 'await' expression                          require-await
+Lint	Run npm run lint	2026-07-25T04:35:40.3681542Z ##[warning]  151:14  warning  'error' is defined but never used                                                  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3683043Z ##[warning]  227:11  warning  'trends' is assigned a value but never used. Allowed unused vars must match /^_/u  no-unused-vars
+Lint	Run npm run lint	2026-07-25T04:35:40.3683903Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3684306Z ✖ 66 problems (1 error, 65 warnings)
+Lint	Run npm run lint	2026-07-25T04:35:40.3684507Z 
+Lint	Run npm run lint	2026-07-25T04:35:40.3717847Z ##[error]Process completed with exit code 1.
+Lint	Post Run actions/checkout@v4	﻿2026-07-25T04:35:40.3859916Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Lint	Post Run actions/checkout@v4	2026-07-25T04:35:40.3861185Z Post job cleanup.
+Lint	Post Run actions/checkout@v4	2026-07-25T04:35:40.4715991Z [command]/usr/bin/git version
+Lint	Post Run actions/checkout@v4	2026-07-25T04:35:40.4750094Z git version 2.54.0
+Lint	Post Run actions/checkout@v4	2026-07-25T04:35:40.4797757Z Temporarily overriding HOME='/home/runner/work/_temp/590a5ab3-db0f-4655-a62c-3b847de3aaf4' before making global git config changes
+Lint	Post Run actions/checkout@v4	2026-07-25T04:35:40.4799311Z Adding repository directory to the temporary git global config as a safe directory
+Lint	Post Run actions/checkout@v4	2026-07-25T04:35:40.4803587Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/weblearn-academy/weblearn-academy
+Lint	Post Run actions/checkout@v4	2026-07-25T04:35:40.4844073Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Lint	Post Run actions/checkout@v4	2026-07-25T04:35:40.4880239Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Lint	Post Run actions/checkout@v4	2026-07-25T04:35:40.5161403Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Lint	Post Run actions/checkout@v4	2026-07-25T04:35:40.5189801Z http.https://github.com/.extraheader
+Lint	Post Run actions/checkout@v4	2026-07-25T04:35:40.5209537Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Lint	Post Run actions/checkout@v4	2026-07-25T04:35:40.5251720Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Lint	Post Run actions/checkout@v4	2026-07-25T04:35:40.5518379Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Lint	Post Run actions/checkout@v4	2026-07-25T04:35:40.5558161Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Lint	Complete job	﻿2026-07-25T04:35:40.5975759Z Cleaning up orphan processes
+Lint	Complete job	2026-07-25T04:35:40.6322362Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Test	Set up job	﻿2026-07-25T04:35:20.9697264Z Current runner version: '2.336.0'
+Test	Set up job	2026-07-25T04:35:20.9723818Z ##[group]Runner Image Provisioner
+Test	Set up job	2026-07-25T04:35:20.9725116Z Hosted Compute Agent
+Test	Set up job	2026-07-25T04:35:20.9726197Z Version: 20260707.563
+Test	Set up job	2026-07-25T04:35:20.9726887Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+Test	Set up job	2026-07-25T04:35:20.9728041Z Build Date: 2026-07-07T19:33:50Z
+Test	Set up job	2026-07-25T04:35:20.9728830Z Worker ID: {82843b3b-9d69-49d2-9e52-8b83baf64cca}
+Test	Set up job	2026-07-25T04:35:20.9729620Z Azure Region: eastus
+Test	Set up job	2026-07-25T04:35:20.9730237Z ##[endgroup]
+Test	Set up job	2026-07-25T04:35:20.9731782Z ##[group]Operating System
+Test	Set up job	2026-07-25T04:35:20.9732516Z Ubuntu
+Test	Set up job	2026-07-25T04:35:20.9733078Z 24.04.4
+Test	Set up job	2026-07-25T04:35:20.9733586Z LTS
+Test	Set up job	2026-07-25T04:35:20.9734211Z ##[endgroup]
+Test	Set up job	2026-07-25T04:35:20.9734774Z ##[group]Runner Image
+Test	Set up job	2026-07-25T04:35:20.9736082Z Image: ubuntu-24.04
+Test	Set up job	2026-07-25T04:35:20.9736799Z Version: 20260720.247.2
+Test	Set up job	2026-07-25T04:35:20.9737886Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260720.247/images/ubuntu/Ubuntu2404-Readme.md
+Test	Set up job	2026-07-25T04:35:20.9739676Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260720.247
+Test	Set up job	2026-07-25T04:35:20.9740682Z ##[endgroup]
+Test	Set up job	2026-07-25T04:35:20.9741876Z ##[group]GITHUB_TOKEN Permissions
+Test	Set up job	2026-07-25T04:35:20.9744088Z Contents: read
+Test	Set up job	2026-07-25T04:35:20.9744757Z Metadata: read
+Test	Set up job	2026-07-25T04:35:20.9745345Z Packages: read
+Test	Set up job	2026-07-25T04:35:20.9746262Z ##[endgroup]
+Test	Set up job	2026-07-25T04:35:20.9748655Z Secret source: Actions
+Test	Set up job	2026-07-25T04:35:20.9750055Z Prepare workflow directory
+Test	Set up job	2026-07-25T04:35:21.0187750Z Prepare all required actions
+Test	Set up job	2026-07-25T04:35:21.0230929Z Getting action download info
+Test	Set up job	2026-07-25T04:35:21.2050217Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+Test	Set up job	2026-07-25T04:35:21.4225921Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+Test	Set up job	2026-07-25T04:35:21.6261480Z Complete job name: Test
+Test	Initialize containers	﻿2026-07-25T04:35:21.6851911Z ##[group]Checking docker version
+Test	Initialize containers	2026-07-25T04:35:21.6864976Z ##[command]/usr/bin/docker version --format '{{.Server.APIVersion}}'
+Test	Initialize containers	2026-07-25T04:35:21.8103187Z '1.48'
+Test	Initialize containers	2026-07-25T04:35:21.8120747Z Docker daemon API version: '1.48'
+Test	Initialize containers	2026-07-25T04:35:21.8121544Z ##[command]/usr/bin/docker version --format '{{.Client.APIVersion}}'
+Test	Initialize containers	2026-07-25T04:35:21.8282818Z '1.48'
+Test	Initialize containers	2026-07-25T04:35:21.8296218Z Docker client API version: '1.48'
+Test	Initialize containers	2026-07-25T04:35:21.8302411Z ##[endgroup]
+Test	Initialize containers	2026-07-25T04:35:21.8307310Z ##[group]Clean up resources from previous jobs
+Test	Initialize containers	2026-07-25T04:35:21.8313598Z ##[command]/usr/bin/docker ps --all --quiet --no-trunc --filter "label=296542"
+Test	Initialize containers	2026-07-25T04:35:21.8455736Z ##[command]/usr/bin/docker network prune --force --filter "label=296542"
+Test	Initialize containers	2026-07-25T04:35:21.8585054Z ##[endgroup]
+Test	Initialize containers	2026-07-25T04:35:21.8585917Z ##[group]Create local container network
+Test	Initialize containers	2026-07-25T04:35:21.8596679Z ##[command]/usr/bin/docker network create --label 296542 github_network_4895112ad9e74c41aaed5d2998bcbf51
+Test	Initialize containers	2026-07-25T04:35:21.9091897Z 08e1f5ceb0543163e2ab2e7e9c5fda49469fccbdee92952dca74ab659c55b5fc
+Test	Initialize containers	2026-07-25T04:35:21.9112751Z ##[endgroup]
+Test	Initialize containers	2026-07-25T04:35:21.9138455Z ##[group]Starting postgres service container
+Test	Initialize containers	2026-07-25T04:35:21.9159770Z ##[command]/usr/bin/docker pull postgres:16-alpine
+Test	Initialize containers	2026-07-25T04:35:22.1589221Z 16-alpine: Pulling from library/postgres
+Test	Initialize containers	2026-07-25T04:35:22.2297550Z 55afa1ecc21d: Already exists
+Test	Initialize containers	2026-07-25T04:35:22.2331249Z 0749aef11dca: Pulling fs layer
+Test	Initialize containers	2026-07-25T04:35:22.2332630Z 2d3064b8615b: Pulling fs layer
+Test	Initialize containers	2026-07-25T04:35:22.2333770Z ef6ab46d98b2: Pulling fs layer
+Test	Initialize containers	2026-07-25T04:35:22.2334877Z 689a434e3a86: Pulling fs layer
+Test	Initialize containers	2026-07-25T04:35:22.2335571Z 2f537278bc74: Pulling fs layer
+Test	Initialize containers	2026-07-25T04:35:22.2336089Z 4096c457dc0d: Pulling fs layer
+Test	Initialize containers	2026-07-25T04:35:22.2337103Z c86ab38aa6db: Pulling fs layer
+Test	Initialize containers	2026-07-25T04:35:22.2337751Z 713473b5b92b: Pulling fs layer
+Test	Initialize containers	2026-07-25T04:35:22.2338343Z 7af924000309: Pulling fs layer
+Test	Initialize containers	2026-07-25T04:35:22.2338915Z cc7fa208b8a7: Pulling fs layer
+Test	Initialize containers	2026-07-25T04:35:22.2339571Z c86ab38aa6db: Waiting
+Test	Initialize containers	2026-07-25T04:35:22.2340313Z 713473b5b92b: Waiting
+Test	Initialize containers	2026-07-25T04:35:22.2341219Z 689a434e3a86: Waiting
+Test	Initialize containers	2026-07-25T04:35:22.2341825Z 2f537278bc74: Waiting
+Test	Initialize containers	2026-07-25T04:35:22.2342272Z 7af924000309: Waiting
+Test	Initialize containers	2026-07-25T04:35:22.2342848Z cc7fa208b8a7: Waiting
+Test	Initialize containers	2026-07-25T04:35:22.2343297Z 4096c457dc0d: Waiting
+Test	Initialize containers	2026-07-25T04:35:22.2724001Z 0749aef11dca: Download complete
+Test	Initialize containers	2026-07-25T04:35:22.2733631Z ef6ab46d98b2: Verifying Checksum
+Test	Initialize containers	2026-07-25T04:35:22.2734690Z ef6ab46d98b2: Download complete
+Test	Initialize containers	2026-07-25T04:35:22.2829361Z 2d3064b8615b: Verifying Checksum
+Test	Initialize containers	2026-07-25T04:35:22.2835772Z 2d3064b8615b: Download complete
+Test	Initialize containers	2026-07-25T04:35:22.3044465Z 689a434e3a86: Verifying Checksum
+Test	Initialize containers	2026-07-25T04:35:22.3046124Z 689a434e3a86: Download complete
+Test	Initialize containers	2026-07-25T04:35:22.3097664Z 4096c457dc0d: Verifying Checksum
+Test	Initialize containers	2026-07-25T04:35:22.3099699Z 4096c457dc0d: Download complete
+Test	Initialize containers	2026-07-25T04:35:22.3362201Z c86ab38aa6db: Verifying Checksum
+Test	Initialize containers	2026-07-25T04:35:22.3363522Z c86ab38aa6db: Download complete
+Test	Initialize containers	2026-07-25T04:35:22.3376150Z 713473b5b92b: Verifying Checksum
+Test	Initialize containers	2026-07-25T04:35:22.3377077Z 713473b5b92b: Download complete
+Test	Initialize containers	2026-07-25T04:35:22.3648682Z 7af924000309: Verifying Checksum
+Test	Initialize containers	2026-07-25T04:35:22.3649783Z 7af924000309: Download complete
+Test	Initialize containers	2026-07-25T04:35:22.3660200Z cc7fa208b8a7: Verifying Checksum
+Test	Initialize containers	2026-07-25T04:35:22.3661504Z cc7fa208b8a7: Download complete
+Test	Initialize containers	2026-07-25T04:35:22.7941066Z 2f537278bc74: Verifying Checksum
+Test	Initialize containers	2026-07-25T04:35:22.7942219Z 2f537278bc74: Download complete
+Test	Initialize containers	2026-07-25T04:35:25.4183050Z 0749aef11dca: Pull complete
+Test	Initialize containers	2026-07-25T04:35:25.4556990Z 2d3064b8615b: Pull complete
+Test	Initialize containers	2026-07-25T04:35:25.4700300Z ef6ab46d98b2: Pull complete
+Test	Initialize containers	2026-07-25T04:35:25.4804166Z 689a434e3a86: Pull complete
+Test	Initialize containers	2026-07-25T04:35:27.9210033Z 2f537278bc74: Pull complete
+Test	Initialize containers	2026-07-25T04:35:27.9370040Z 4096c457dc0d: Pull complete
+Test	Initialize containers	2026-07-25T04:35:27.9502512Z c86ab38aa6db: Pull complete
+Test	Initialize containers	2026-07-25T04:35:27.9660073Z 713473b5b92b: Pull complete
+Test	Initialize containers	2026-07-25T04:35:27.9802296Z 7af924000309: Pull complete
+Test	Initialize containers	2026-07-25T04:35:27.9927380Z cc7fa208b8a7: Pull complete
+Test	Initialize containers	2026-07-25T04:35:27.9985779Z Digest: sha256:57c72fd2a128e416c7fcc499958864df5301e940bca0a56f58fddf30ffc07777
+Test	Initialize containers	2026-07-25T04:35:28.0000608Z Status: Downloaded newer image for postgres:16-alpine
+Test	Initialize containers	2026-07-25T04:35:28.0011172Z docker.io/library/postgres:16-alpine
+Test	Initialize containers	2026-07-25T04:35:28.0074264Z ##[command]/usr/bin/docker create --name 745aad5028c9472e8f53da5eec9de93d_postgres16alpine_5bdc36 --label 296542 --network github_network_4895112ad9e74c41aaed5d2998bcbf51 --network-alias postgres -p 5432:5432 --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5 -e "POSTGRES_USER=postgres" -e "POSTGRES_PASSWORD=postgres" -e "POSTGRES_DB=weblearn_academy_test" -e GITHUB_ACTIONS=true -e CI=true postgres:16-alpine
+Test	Initialize containers	2026-07-25T04:35:28.0368562Z 00cf6ff5b1676db16ec4a38166eb5718f33d0e9c8d9cae1a902741cce13cf73e
+Test	Initialize containers	2026-07-25T04:35:28.0397947Z ##[command]/usr/bin/docker start 00cf6ff5b1676db16ec4a38166eb5718f33d0e9c8d9cae1a902741cce13cf73e
+Test	Initialize containers	2026-07-25T04:35:28.2718843Z 00cf6ff5b1676db16ec4a38166eb5718f33d0e9c8d9cae1a902741cce13cf73e
+Test	Initialize containers	2026-07-25T04:35:28.2743806Z ##[command]/usr/bin/docker ps --all --filter id=00cf6ff5b1676db16ec4a38166eb5718f33d0e9c8d9cae1a902741cce13cf73e --filter status=running --no-trunc --format "{{.ID}} {{.Status}}"
+Test	Initialize containers	2026-07-25T04:35:28.2870940Z 00cf6ff5b1676db16ec4a38166eb5718f33d0e9c8d9cae1a902741cce13cf73e Up Less than a second (health: starting)
+Test	Initialize containers	2026-07-25T04:35:28.2892147Z ##[command]/usr/bin/docker port 00cf6ff5b1676db16ec4a38166eb5718f33d0e9c8d9cae1a902741cce13cf73e
+Test	Initialize containers	2026-07-25T04:35:28.3026251Z 5432/tcp -> 0.0.0.0:5432
+Test	Initialize containers	2026-07-25T04:35:28.3026758Z 5432/tcp -> [::]:5432
+Test	Initialize containers	2026-07-25T04:35:28.3074832Z ##[endgroup]
+Test	Initialize containers	2026-07-25T04:35:28.3083598Z ##[group]Waiting for all services to be ready
+Test	Initialize containers	2026-07-25T04:35:28.3098660Z ##[command]/usr/bin/docker inspect --format="{{if .Config.Healthcheck}}{{print .State.Health.Status}}{{end}}" 00cf6ff5b1676db16ec4a38166eb5718f33d0e9c8d9cae1a902741cce13cf73e
+Test	Initialize containers	2026-07-25T04:35:28.3228356Z starting
+Test	Initialize containers	2026-07-25T04:35:28.3252908Z postgres service is starting, waiting 2 seconds before checking again.
+Test	Initialize containers	2026-07-25T04:35:30.3264950Z ##[command]/usr/bin/docker inspect --format="{{if .Config.Healthcheck}}{{print .State.Health.Status}}{{end}}" 00cf6ff5b1676db16ec4a38166eb5718f33d0e9c8d9cae1a902741cce13cf73e
+Test	Initialize containers	2026-07-25T04:35:30.3398542Z starting
+Test	Initialize containers	2026-07-25T04:35:30.3413530Z postgres service is starting, waiting 4 seconds before checking again.
+Test	Initialize containers	2026-07-25T04:35:34.4114105Z ##[command]/usr/bin/docker inspect --format="{{if .Config.Healthcheck}}{{print .State.Health.Status}}{{end}}" 00cf6ff5b1676db16ec4a38166eb5718f33d0e9c8d9cae1a902741cce13cf73e
+Test	Initialize containers	2026-07-25T04:35:34.4283131Z starting
+Test	Initialize containers	2026-07-25T04:35:34.4298850Z postgres service is starting, waiting 8 seconds before checking again.
+Test	Initialize containers	2026-07-25T04:35:42.9250673Z ##[command]/usr/bin/docker inspect --format="{{if .Config.Healthcheck}}{{print .State.Health.Status}}{{end}}" 00cf6ff5b1676db16ec4a38166eb5718f33d0e9c8d9cae1a902741cce13cf73e
+Test	Initialize containers	2026-07-25T04:35:42.9402453Z healthy
+Test	Initialize containers	2026-07-25T04:35:42.9430925Z postgres service is healthy.
+Test	Initialize containers	2026-07-25T04:35:42.9431696Z ##[endgroup]
+Test	Run actions/checkout@v4	﻿2026-07-25T04:35:42.9726331Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9734501Z ##[group]Run actions/checkout@v4
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9734945Z with:
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9735194Z   repository: rajveergehlot089/weblearn-academy
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9737953Z   token: ***
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9738161Z   ssh-strict: true
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9738367Z   ssh-user: git
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9738570Z   persist-credentials: true
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9738810Z   clean: true
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9739020Z   sparse-checkout-cone-mode: true
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9739277Z   fetch-depth: 1
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9739473Z   fetch-tags: false
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9739674Z   show-progress: true
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9739875Z   lfs: false
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9740055Z   submodules: false
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9740326Z   set-safe-directory: true
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9740567Z   allow-unsafe-pr-checkout: false
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9741084Z env:
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9741274Z   PGHOST: localhost
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9741471Z   PGPORT: 5432
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9741682Z   PGUSER: postgres
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9741885Z   PGPASSWORD: postgres
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9742105Z   PGDATABASE: weblearn_academy_test
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9742503Z   JWT_SECRET: test-secret-key-that-is-at-least-32-chars-long-for-ci!!
+Test	Run actions/checkout@v4	2026-07-25T04:35:42.9742878Z ##[endgroup]
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.0928571Z Syncing repository: rajveergehlot089/weblearn-academy
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.0930691Z ##[group]Getting Git version info
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.0931426Z Working directory is '/home/runner/work/weblearn-academy/weblearn-academy'
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.0932448Z [command]/usr/bin/git version
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.0986882Z git version 2.54.0
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1008614Z ##[endgroup]
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1034223Z Temporarily overriding HOME='/home/runner/work/_temp/0fccfe4e-e872-4759-9f2c-589306094734' before making global git config changes
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1036249Z Adding repository directory to the temporary git global config as a safe directory
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1037742Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/weblearn-academy/weblearn-academy
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1110057Z Deleting the contents of '/home/runner/work/weblearn-academy/weblearn-academy'
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1115827Z ##[group]Initializing the repository
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1120543Z [command]/usr/bin/git init /home/runner/work/weblearn-academy/weblearn-academy
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1261102Z hint: Using 'master' as the name for the initial branch. This default branch name
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1262305Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1263053Z hint: to use in all of your new repositories, which will suppress this warning,
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1263514Z hint: call:
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1263971Z hint:
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1264337Z hint: 	git config --global init.defaultBranch <name>
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1264715Z hint:
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1265054Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1265925Z hint: 'development'. The just-created branch can be renamed via this command:
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1266386Z hint:
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1266612Z hint: 	git branch -m <name>
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1266875Z hint:
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1267238Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1271030Z Initialized empty Git repository in /home/runner/work/weblearn-academy/weblearn-academy/.git/
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1284793Z [command]/usr/bin/git remote add origin https://github.com/rajveergehlot089/weblearn-academy
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1350097Z ##[endgroup]
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1351012Z ##[group]Disabling automatic garbage collection
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1355873Z [command]/usr/bin/git config --local gc.auto 0
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1390837Z ##[endgroup]
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1391405Z ##[group]Setting up auth
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1399211Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1443044Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1893601Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.1934520Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.2174129Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.2213877Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.2455083Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.2508686Z ##[endgroup]
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.2509369Z ##[group]Fetching the repository
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.2524793Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +5c22461e746efee41f9734a6ea57b9a724934f5a:refs/remotes/origin/main
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.6164377Z From https://github.com/rajveergehlot089/weblearn-academy
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.6165034Z  * [new ref]         5c22461e746efee41f9734a6ea57b9a724934f5a -> origin/main
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.6203998Z ##[endgroup]
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.6204437Z ##[group]Determining the checkout info
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.6207298Z ##[endgroup]
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.6213406Z [command]/usr/bin/git sparse-checkout disable
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.6266377Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.6299476Z ##[group]Checking out the ref
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.6304087Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.7289128Z Switched to a new branch 'main'
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.7289934Z branch 'main' set up to track 'origin/main'.
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.7300220Z ##[endgroup]
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.7354062Z [command]/usr/bin/git log -1 --format=%H
+Test	Run actions/checkout@v4	2026-07-25T04:35:43.7385590Z 5c22461e746efee41f9734a6ea57b9a724934f5a
+Test	Run actions/setup-node@v4	﻿2026-07-25T04:35:43.7660008Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Test	Run actions/setup-node@v4	2026-07-25T04:35:43.7662047Z ##[group]Run actions/setup-node@v4
+Test	Run actions/setup-node@v4	2026-07-25T04:35:43.7662323Z with:
+Test	Run actions/setup-node@v4	2026-07-25T04:35:43.7662523Z   node-version: 20
+Test	Run actions/setup-node@v4	2026-07-25T04:35:43.7662735Z   cache: npm
+Test	Run actions/setup-node@v4	2026-07-25T04:35:43.7663137Z   always-auth: false
+Test	Run actions/setup-node@v4	2026-07-25T04:35:43.7663360Z   check-latest: false
+Test	Run actions/setup-node@v4	2026-07-25T04:35:43.7665984Z   token: ***
+Test	Run actions/setup-node@v4	2026-07-25T04:35:43.7666198Z env:
+Test	Run actions/setup-node@v4	2026-07-25T04:35:43.7666387Z   PGHOST: localhost
+Test	Run actions/setup-node@v4	2026-07-25T04:35:43.7666605Z   PGPORT: 5432
+Test	Run actions/setup-node@v4	2026-07-25T04:35:43.7666808Z   PGUSER: postgres
+Test	Run actions/setup-node@v4	2026-07-25T04:35:43.7667027Z   PGPASSWORD: postgres
+Test	Run actions/setup-node@v4	2026-07-25T04:35:43.7667260Z   PGDATABASE: weblearn_academy_test
+Test	Run actions/setup-node@v4	2026-07-25T04:35:43.7667636Z   JWT_SECRET: test-secret-key-that-is-at-least-32-chars-long-for-ci!!
+Test	Run actions/setup-node@v4	2026-07-25T04:35:43.7668077Z ##[endgroup]
+Test	Run actions/setup-node@v4	2026-07-25T04:35:43.9186924Z Attempting to download 20...
+Test	Run actions/setup-node@v4	2026-07-25T04:35:43.9297431Z (node:2572) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Test	Run actions/setup-node@v4	2026-07-25T04:35:43.9298322Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Test	Run actions/setup-node@v4	2026-07-25T04:35:44.2757098Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+Test	Run actions/setup-node@v4	2026-07-25T04:35:44.5965290Z Extracting ...
+Test	Run actions/setup-node@v4	2026-07-25T04:35:44.6111863Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/08366f6d-b410-49a2-9eb2-f19b2bdd570f -f /home/runner/work/_temp/98cf9a9d-0837-416d-9880-f008d0d637a2
+Test	Run actions/setup-node@v4	2026-07-25T04:35:45.6376646Z Adding to the cache ...
+Test	Run actions/setup-node@v4	2026-07-25T04:35:47.4253929Z ##[group]Environment details
+Test	Run actions/setup-node@v4	2026-07-25T04:35:47.6584742Z node: v20.20.2
+Test	Run actions/setup-node@v4	2026-07-25T04:35:47.6585222Z npm: 10.8.2
+Test	Run actions/setup-node@v4	2026-07-25T04:35:47.6585897Z yarn: 1.22.22
+Test	Run actions/setup-node@v4	2026-07-25T04:35:47.6586691Z ##[endgroup]
+Test	Run actions/setup-node@v4	2026-07-25T04:35:47.6606322Z [command]/opt/hostedtoolcache/node/20.20.2/x64/bin/npm config get cache
+Test	Run actions/setup-node@v4	2026-07-25T04:35:47.7671221Z /home/runner/.npm
+Test	Run actions/setup-node@v4	2026-07-25T04:35:47.8368886Z npm cache is not found
+Test	Run npm ci	﻿2026-07-25T04:35:47.8564712Z ##[group]Run npm ci
+Test	Run npm ci	2026-07-25T04:35:47.8565014Z ^[[36;1mnpm ci^[[0m
+Test	Run npm ci	2026-07-25T04:35:47.8617115Z shell: /usr/bin/bash -e {0}
+Test	Run npm ci	2026-07-25T04:35:47.8617422Z env:
+Test	Run npm ci	2026-07-25T04:35:47.8617627Z   PGHOST: localhost
+Test	Run npm ci	2026-07-25T04:35:47.8617879Z   PGPORT: 5432
+Test	Run npm ci	2026-07-25T04:35:47.8618094Z   PGUSER: postgres
+Test	Run npm ci	2026-07-25T04:35:47.8618318Z   PGPASSWORD: postgres
+Test	Run npm ci	2026-07-25T04:35:47.8618571Z   PGDATABASE: weblearn_academy_test
+Test	Run npm ci	2026-07-25T04:35:47.8618978Z   JWT_SECRET: test-secret-key-that-is-at-least-32-chars-long-for-ci!!
+Test	Run npm ci	2026-07-25T04:35:47.8619407Z ##[endgroup]
+Test	Run npm ci	2026-07-25T04:35:50.5644136Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+Test	Run npm ci	2026-07-25T04:35:50.7336446Z npm warn deprecated npmlog@5.0.1: This package is no longer supported.
+Test	Run npm ci	2026-07-25T04:35:51.0581783Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+Test	Run npm ci	2026-07-25T04:35:51.2928382Z npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+Test	Run npm ci	2026-07-25T04:35:51.5183177Z npm warn deprecated tar@6.2.1: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+Test	Run npm ci	2026-07-25T04:35:51.5559394Z npm warn deprecated gauge@3.0.2: This package is no longer supported.
+Test	Run npm ci	2026-07-25T04:35:51.7301470Z npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+Test	Run npm ci	2026-07-25T04:35:52.5250186Z npm warn deprecated uuid@9.0.1: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
+Test	Run npm ci	2026-07-25T04:35:53.1532691Z npm warn deprecated glob@11.1.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+Test	Run npm ci	2026-07-25T04:35:53.1816533Z npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+Test	Run npm ci	2026-07-25T04:35:53.1849425Z npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+Test	Run npm ci	2026-07-25T04:35:53.1948061Z npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+Test	Run npm ci	2026-07-25T04:35:57.8063952Z 
+Test	Run npm ci	2026-07-25T04:35:57.8064744Z added 665 packages, and audited 666 packages in 10s
+Test	Run npm ci	2026-07-25T04:35:57.8065159Z 
+Test	Run npm ci	2026-07-25T04:35:57.8065635Z 103 packages are looking for funding
+Test	Run npm ci	2026-07-25T04:35:57.8066131Z   run `npm fund` for details
+Test	Run npm ci	2026-07-25T04:35:57.8510093Z 
+Test	Run npm ci	2026-07-25T04:35:57.8511131Z 24 vulnerabilities (1 moderate, 22 high, 1 critical)
+Test	Run npm ci	2026-07-25T04:35:57.8511712Z 
+Test	Run npm ci	2026-07-25T04:35:57.8512063Z To address issues that do not require attention, run:
+Test	Run npm ci	2026-07-25T04:35:57.8512491Z   npm audit fix
+Test	Run npm ci	2026-07-25T04:35:57.8512653Z 
+Test	Run npm ci	2026-07-25T04:35:57.8512938Z To address all issues (including breaking changes), run:
+Test	Run npm ci	2026-07-25T04:35:57.8513363Z   npm audit fix --force
+Test	Run npm ci	2026-07-25T04:35:57.8513541Z 
+Test	Run npm ci	2026-07-25T04:35:57.8513693Z Run `npm audit` for details.
+Test	Run npm run db:migrate	﻿2026-07-25T04:35:57.8794191Z ##[group]Run npm run db:migrate
+Test	Run npm run db:migrate	2026-07-25T04:35:57.8794527Z ^[[36;1mnpm run db:migrate^[[0m
+Test	Run npm run db:migrate	2026-07-25T04:35:57.8842415Z shell: /usr/bin/bash -e {0}
+Test	Run npm run db:migrate	2026-07-25T04:35:57.8842707Z env:
+Test	Run npm run db:migrate	2026-07-25T04:35:57.8842903Z   PGHOST: localhost
+Test	Run npm run db:migrate	2026-07-25T04:35:57.8843121Z   PGPORT: 5432
+Test	Run npm run db:migrate	2026-07-25T04:35:57.8843320Z   PGUSER: postgres
+Test	Run npm run db:migrate	2026-07-25T04:35:57.8843528Z   PGPASSWORD: postgres
+Test	Run npm run db:migrate	2026-07-25T04:35:57.8843757Z   PGDATABASE: weblearn_academy_test
+Test	Run npm run db:migrate	2026-07-25T04:35:57.8844136Z   JWT_SECRET: test-secret-key-that-is-at-least-32-chars-long-for-ci!!
+Test	Run npm run db:migrate	2026-07-25T04:35:57.8844534Z ##[endgroup]
+Test	Run npm run db:migrate	2026-07-25T04:35:57.9996027Z 
+Test	Run npm run db:migrate	2026-07-25T04:35:57.9996708Z > weblearn-academy@1.0.0 db:migrate
+Test	Run npm run db:migrate	2026-07-25T04:35:57.9997559Z > knex migrate:latest --knexfile knexfile.js
+Test	Run npm run db:migrate	2026-07-25T04:35:57.9998023Z 
+Test	Run npm run db:migrate	2026-07-25T04:35:58.0762541Z ^[[31mError: No configuration file found and no commandline connection parameters passed
+Test	Run npm run db:migrate	2026-07-25T04:35:58.0764697Z     at checkConfigurationOptions (/home/runner/work/weblearn-academy/weblearn-academy/node_modules/knex/bin/utils/cli-config-utils.js:109:11)
+Test	Run npm run db:migrate	2026-07-25T04:35:58.0767057Z     at initKnex (/home/runner/work/weblearn-academy/weblearn-academy/node_modules/knex/bin/cli.js:70:5)
+Test	Run npm run db:migrate	2026-07-25T04:35:58.0768891Z     at Command.<anonymous> (/home/runner/work/weblearn-academy/weblearn-academy/node_modules/knex/bin/cli.js:267:32)
+Test	Run npm run db:migrate	2026-07-25T04:35:58.0770190Z     at Command.listener [as _actionHandler] (/home/runner/work/weblearn-academy/weblearn-academy/node_modules/commander/lib/command.js:482:17)
+Test	Run npm run db:migrate	2026-07-25T04:35:58.0771356Z     at /home/runner/work/weblearn-academy/weblearn-academy/node_modules/commander/lib/command.js:1283:65
+Test	Run npm run db:migrate	2026-07-25T04:35:58.0772455Z     at Command._chainOrCall (/home/runner/work/weblearn-academy/weblearn-academy/node_modules/commander/lib/command.js:1177:12)
+Test	Run npm run db:migrate	2026-07-25T04:35:58.0773674Z     at Command._parseCommand (/home/runner/work/weblearn-academy/weblearn-academy/node_modules/commander/lib/command.js:1283:27)
+Test	Run npm run db:migrate	2026-07-25T04:35:58.0774834Z     at /home/runner/work/weblearn-academy/weblearn-academy/node_modules/commander/lib/command.js:1081:27
+Test	Run npm run db:migrate	2026-07-25T04:35:58.0776419Z     at Command._chainOrCall (/home/runner/work/weblearn-academy/weblearn-academy/node_modules/commander/lib/command.js:1177:12)
+Test	Run npm run db:migrate	2026-07-25T04:35:58.0779168Z     at Command._dispatchSubcommand (/home/runner/work/weblearn-academy/weblearn-academy/node_modules/commander/lib/command.js:1077:23)^[[39m
+Test	Run npm run db:migrate	2026-07-25T04:35:58.0906862Z ##[error]Process completed with exit code 1.
+Test	Post Run actions/checkout@v4	﻿2026-07-25T04:35:58.1066091Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Test	Post Run actions/checkout@v4	2026-07-25T04:35:58.1067418Z Post job cleanup.
+Test	Post Run actions/checkout@v4	2026-07-25T04:35:58.1979203Z [command]/usr/bin/git version
+Test	Post Run actions/checkout@v4	2026-07-25T04:35:58.2027509Z git version 2.54.0
+Test	Post Run actions/checkout@v4	2026-07-25T04:35:58.2074835Z Temporarily overriding HOME='/home/runner/work/_temp/4a718172-c0a1-4037-a115-4d51f3cd40ba' before making global git config changes
+Test	Post Run actions/checkout@v4	2026-07-25T04:35:58.2076221Z Adding repository directory to the temporary git global config as a safe directory
+Test	Post Run actions/checkout@v4	2026-07-25T04:35:58.2081885Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/weblearn-academy/weblearn-academy
+Test	Post Run actions/checkout@v4	2026-07-25T04:35:58.2127409Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Test	Post Run actions/checkout@v4	2026-07-25T04:35:58.2165645Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Test	Post Run actions/checkout@v4	2026-07-25T04:35:58.2426620Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Test	Post Run actions/checkout@v4	2026-07-25T04:35:58.2458303Z http.https://github.com/.extraheader
+Test	Post Run actions/checkout@v4	2026-07-25T04:35:58.2474726Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Test	Post Run actions/checkout@v4	2026-07-25T04:35:58.2537756Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Test	Post Run actions/checkout@v4	2026-07-25T04:35:58.2836167Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Test	Post Run actions/checkout@v4	2026-07-25T04:35:58.2878804Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Test	Stop containers	﻿2026-07-25T04:35:58.3279655Z Print service container logs: 745aad5028c9472e8f53da5eec9de93d_postgres16alpine_5bdc36
+Test	Stop containers	2026-07-25T04:35:58.3284353Z ##[command]/usr/bin/docker logs --details 00cf6ff5b1676db16ec4a38166eb5718f33d0e9c8d9cae1a902741cce13cf73e
+Test	Stop containers	2026-07-25T04:35:58.3423159Z  sh: locale: not found
+Test	Stop containers	2026-07-25T04:35:58.3423661Z  The files belonging to this database system will be owned by user "postgres".
+Test	Stop containers	2026-07-25T04:35:58.3424240Z  2026-07-25 04:35:28.991 UTC [35] WARNING:  no usable system locales were found
+Test	Stop containers	2026-07-25T04:35:58.3424724Z  initdb: warning: enabling "trust" authentication for local connections
+Test	Stop containers	2026-07-25T04:35:58.3425664Z  initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+Test	Stop containers	2026-07-25T04:35:58.3426613Z  2026-07-25 04:35:29.827 UTC [1] LOG:  starting PostgreSQL 16.14 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+Test	Stop containers	2026-07-25T04:35:58.3427307Z  2026-07-25 04:35:29.828 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+Test	Stop containers	2026-07-25T04:35:58.3427857Z  2026-07-25 04:35:29.828 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+Test	Stop containers	2026-07-25T04:35:58.3428382Z  2026-07-25 04:35:29.830 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+Test	Stop containers	2026-07-25T04:35:58.3428962Z  2026-07-25 04:35:29.833 UTC [57] LOG:  database system was shut down at 2026-07-25 04:35:29 UTC
+Test	Stop containers	2026-07-25T04:35:58.3429508Z  2026-07-25 04:35:29.839 UTC [1] LOG:  database system is ready to accept connections
+Test	Stop containers	2026-07-25T04:35:58.3429982Z  2026-07-25 04:35:38.309 UTC [67] FATAL:  role "root" does not exist
+Test	Stop containers	2026-07-25T04:35:58.3430384Z  2026-07-25 04:35:48.355 UTC [73] FATAL:  role "root" does not exist
+Test	Stop containers	2026-07-25T04:35:58.3431073Z  This user must also own the server process.
+Test	Stop containers	2026-07-25T04:35:58.3431356Z  
+Test	Stop containers	2026-07-25T04:35:58.3431643Z  The database cluster will be initialized with locale "en_US.utf8".
+Test	Stop containers	2026-07-25T04:35:58.3432085Z  The default database encoding has accordingly been set to "UTF8".
+Test	Stop containers	2026-07-25T04:35:58.3432515Z  The default text search configuration will be set to "english".
+Test	Stop containers	2026-07-25T04:35:58.3432846Z  
+Test	Stop containers	2026-07-25T04:35:58.3433047Z  Data page checksums are disabled.
+Test	Stop containers	2026-07-25T04:35:58.3433295Z  
+Test	Stop containers	2026-07-25T04:35:58.3433584Z  fixing permissions on existing directory /var/lib/postgresql/data ... ok
+Test	Stop containers	2026-07-25T04:35:58.3434303Z  creating subdirectories ... ok
+Test	Stop containers	2026-07-25T04:35:58.3435058Z  selecting dynamic shared memory implementation ... posix
+Test	Stop containers	2026-07-25T04:35:58.3435822Z  selecting default max_connections ... 100
+Test	Stop containers	2026-07-25T04:35:58.3436329Z  selecting default shared_buffers ... 128MB
+Test	Stop containers	2026-07-25T04:35:58.3436816Z  selecting default time zone ... UTC
+Test	Stop containers	2026-07-25T04:35:58.3437271Z  creating configuration files ... ok
+Test	Stop containers	2026-07-25T04:35:58.3437736Z  running bootstrap script ... ok
+Test	Stop containers	2026-07-25T04:35:58.3438222Z  performing post-bootstrap initialization ... ok
+Test	Stop containers	2026-07-25T04:35:58.3438734Z  syncing data to disk ... ok
+Test	Stop containers	2026-07-25T04:35:58.3439109Z  
+Test	Stop containers	2026-07-25T04:35:58.3439387Z  
+Test	Stop containers	2026-07-25T04:35:58.3439719Z  Success. You can now start the database server using:
+Test	Stop containers	2026-07-25T04:35:58.3440033Z  
+Test	Stop containers	2026-07-25T04:35:58.3440276Z      pg_ctl -D /var/lib/postgresql/data -l logfile start
+Test	Stop containers	2026-07-25T04:35:58.3440581Z  
+Test	Stop containers	2026-07-25T04:35:58.3441138Z  waiting for server to start....2026-07-25 04:35:29.555 UTC [41] LOG:  starting PostgreSQL 16.14 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+Test	Stop containers	2026-07-25T04:35:58.3441944Z  2026-07-25 04:35:29.557 UTC [41] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+Test	Stop containers	2026-07-25T04:35:58.3442521Z  2026-07-25 04:35:29.561 UTC [44] LOG:  database system was shut down at 2026-07-25 04:35:29 UTC
+Test	Stop containers	2026-07-25T04:35:58.3443047Z  2026-07-25 04:35:29.566 UTC [41] LOG:  database system is ready to accept connections
+Test	Stop containers	2026-07-25T04:35:58.3443429Z   done
+Test	Stop containers	2026-07-25T04:35:58.3443622Z  server started
+Test	Stop containers	2026-07-25T04:35:58.3443823Z  CREATE DATABASE
+Test	Stop containers	2026-07-25T04:35:58.3444031Z  
+Test	Stop containers	2026-07-25T04:35:58.3444205Z  
+Test	Stop containers	2026-07-25T04:35:58.3444526Z  /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+Test	Stop containers	2026-07-25T04:35:58.3445208Z  
+Test	Stop containers	2026-07-25T04:35:58.3445924Z  waiting for server to shut down....2026-07-25 04:35:29.704 UTC [41] LOG:  received fast shutdown request
+Test	Stop containers	2026-07-25T04:35:58.3446526Z  2026-07-25 04:35:29.705 UTC [41] LOG:  aborting any active transactions
+Test	Stop containers	2026-07-25T04:35:58.3447140Z  2026-07-25 04:35:29.709 UTC [41] LOG:  background worker "logical replication launcher" (PID 47) exited with exit code 1
+Test	Stop containers	2026-07-25T04:35:58.3447694Z  2026-07-25 04:35:29.709 UTC [42] LOG:  shutting down
+Test	Stop containers	2026-07-25T04:35:58.3448093Z  2026-07-25 04:35:29.710 UTC [42] LOG:  checkpoint starting: shutdown immediate
+Test	Stop containers	2026-07-25T04:35:58.3449203Z  2026-07-25 04:35:29.727 UTC [42] LOG:  checkpoint complete: wrote 926 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.013 s, sync=0.003 s, total=0.019 s; sync files=301, longest=0.001 s, average=0.001 s; distance=4283 kB, estimate=4283 kB; lsn=0/1925D70, redo lsn=0/1925D70
+Test	Stop containers	2026-07-25T04:35:58.3450300Z  2026-07-25 04:35:29.735 UTC [41] LOG:  database system is shut down
+Test	Stop containers	2026-07-25T04:35:58.3450643Z   done
+Test	Stop containers	2026-07-25T04:35:58.3450833Z  server stopped
+Test	Stop containers	2026-07-25T04:35:58.3451034Z  
+Test	Stop containers	2026-07-25T04:35:58.3451274Z  PostgreSQL init process complete; ready for start up.
+Test	Stop containers	2026-07-25T04:35:58.3451588Z  
+Test	Stop containers	2026-07-25T04:35:58.3457850Z Stop and remove container: 745aad5028c9472e8f53da5eec9de93d_postgres16alpine_5bdc36
+Test	Stop containers	2026-07-25T04:35:58.3463132Z ##[command]/usr/bin/docker rm --force 00cf6ff5b1676db16ec4a38166eb5718f33d0e9c8d9cae1a902741cce13cf73e
+Test	Stop containers	2026-07-25T04:35:59.5753578Z 00cf6ff5b1676db16ec4a38166eb5718f33d0e9c8d9cae1a902741cce13cf73e
+Test	Stop containers	2026-07-25T04:35:59.5783908Z Remove container network: github_network_4895112ad9e74c41aaed5d2998bcbf51
+Test	Stop containers	2026-07-25T04:35:59.5788899Z ##[command]/usr/bin/docker network rm github_network_4895112ad9e74c41aaed5d2998bcbf51
+Test	Stop containers	2026-07-25T04:35:59.6746545Z github_network_4895112ad9e74c41aaed5d2998bcbf51
+Test	Complete job	﻿2026-07-25T04:35:59.6823081Z Cleaning up orphan processes
+Test	Complete job	2026-07-25T04:35:59.7231160Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

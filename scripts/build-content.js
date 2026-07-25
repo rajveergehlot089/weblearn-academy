@@ -13,7 +13,7 @@ console.log('Building content bundle...');
 
 // 1. Load course topic listings from content directories
 const coursesContent = {};
-const courseDirs = fs.readdirSync(CONTENT_DIR).filter(d => {
+const courseDirs = fs.readdirSync(CONTENT_DIR).filter((d) => {
   const full = path.join(CONTENT_DIR, d);
   return fs.statSync(full).isDirectory() && fs.existsSync(path.join(full, 'index.js'));
 });
@@ -33,19 +33,30 @@ console.log(`  Loaded topic listings for ${Object.keys(coursesContent).length} c
 const coursesMetadata = {};
 for (const [courseId, topics] of Object.entries(coursesContent)) {
   if (!Array.isArray(topics) || topics.length === 0) continue;
-  const maxFast = Math.max(...topics.map(t => t.day_fast_track || 1));
-  const maxFull = Math.max(...topics.map(t => t.day_full_course || 1));
+  const maxFast = Math.max(...topics.map((t) => t.day_fast_track || 1));
+  const maxFull = Math.max(...topics.map((t) => t.day_full_course || 1));
 
   let category = 'technology';
   if (courseId.includes('hindi') || courseId.includes('english')) category = 'language';
   if (courseId.includes('typing')) category = 'typing';
-  if (courseId.includes('self-awareness') || courseId.includes('communication') || courseId.includes('productivity') || courseId.includes('leadership') || courseId.includes('career') || courseId.includes('personality')) category = 'soft-skills';
+  if (
+    courseId.includes('self-awareness') ||
+    courseId.includes('communication') ||
+    courseId.includes('productivity') ||
+    courseId.includes('leadership') ||
+    courseId.includes('career') ||
+    courseId.includes('personality')
+  )
+    category = 'soft-skills';
 
   const isTyping = courseId.includes('typing');
 
   coursesMetadata[courseId] = {
     id: courseId,
-    title: courseId.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
+    title: courseId
+      .split('-')
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(' '),
     description: `${topics.length} learning topics`,
     icon: isTyping ? 'fas fa-keyboard' : 'fas fa-book',
     emoji: isTyping ? '\u2328\ufe0f' : '\ud83d\udcda',

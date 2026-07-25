@@ -24,7 +24,7 @@ router.post('/generate', auth, validate(analysisGenerateSchema), async (req, res
     const [jobMarket, industryTrends, techLandscape] = await Promise.all([
       researchEngine.searchJobMarket(role, region).catch(() => null),
       researchEngine.searchIndustryTrends(industry || role).catch(() => null),
-      researchEngine.searchTechLandscape(role).catch(() => null)
+      researchEngine.searchTechLandscape(role).catch(() => null),
     ]);
 
     const analysis = await analysisEngine.generateAnalysis({
@@ -33,7 +33,7 @@ router.post('/generate', auth, validate(analysisGenerateSchema), async (req, res
       currentSkills: currentSkills || [],
       experienceLevel: experienceLevel || 'intermediate',
       goal,
-      region: region || 'global'
+      region: region || 'global',
     });
 
     if (jobMarket) analysis.researchData = { jobMarket };
@@ -86,7 +86,7 @@ router.post('/report', auth, validate(analysisReportSchema), async (req, res) =>
 router.get('/history', auth, async (req, res) => {
   try {
     const history = await db.getAnalysisHistory(req.user.id);
-    const formatted = history.map(h => ({
+    const formatted = history.map((h) => ({
       id: h.id,
       analysis: JSON.parse(h.analysis),
       timestamp: h.createdAt,

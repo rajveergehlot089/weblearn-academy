@@ -1,6 +1,8 @@
 node_modules/
 public/
 content/
+content-data/
 data/
 api/lib/content-bundle.json
 package-lock.json
+generate-*.js

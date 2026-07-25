@@ -13,8 +13,11 @@ const logger = require('../utils/logger');
 const { mediumCache } = require('../middleware/cacheHeaders');
 
 function readContentJSON(filePath) {
-  try { return JSON.parse(fs.readFileSync(filePath, 'utf8')); }
-  catch { return null; }
+  try {
+    return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  } catch {
+    return null;
+  }
 }
 
 function invalidateContentCache(courseContentDir) {
@@ -25,8 +28,16 @@ function invalidateContentCache(courseContentDir) {
 function parseCourseJsonFields(course) {
   if (!course) return null;
   const parsed = { ...course };
-  try { parsed.modes = typeof course.modes === 'string' ? JSON.parse(course.modes) : course.modes; } catch { parsed.modes = ['fast-track', 'full-course']; }
-  try { parsed.totalDays = typeof course.totalDays === 'string' ? JSON.parse(course.totalDays) : course.totalDays; } catch { parsed.totalDays = { 'fast-track': 10, 'full-course': 20 }; }
+  try {
+    parsed.modes = typeof course.modes === 'string' ? JSON.parse(course.modes) : course.modes;
+  } catch {
+    parsed.modes = ['fast-track', 'full-course'];
+  }
+  try {
+    parsed.totalDays = typeof course.totalDays === 'string' ? JSON.parse(course.totalDays) : course.totalDays;
+  } catch {
+    parsed.totalDays = { 'fast-track': 10, 'full-course': 20 };
+  }
   parsed.isActive = !!course.isActive;
   parsed.hasTypingPractice = !!course.hasTypingPractice;
   return parsed;
@@ -40,8 +51,8 @@ router.get('/', auth, mediumCache, async (req, res) => {
     const courses = (await db.getAllCourses()).map(parseCourseJsonFields);
 
     const allEnrollments = await db.getEnrollments(req.user.id);
-    const enrolledIds = new Set(allEnrollments.map(e => e.courseId));
-    const activeEntry = allEnrollments.find(e => e.activeCourse);
+    const enrolledIds = new Set(allEnrollments.map((e) => e.courseId));
+    const activeEntry = allEnrollments.find((e) => e.activeCourse);
     const active = activeEntry ? activeEntry.activeCourse : 'web-development';
 
     const enriched = [];
@@ -50,9 +61,11 @@ router.get('/', auth, mediumCache, async (req, res) => {
       const topics = Array.isArray(contentIndex) ? contentIndex : [];
       const topicProgress = await db.getAllTopicProgress(req.user.id, c.id);
       const progressMap = {};
-      topicProgress.forEach(p => { progressMap[p.topicId] = p; });
+      topicProgress.forEach((p) => {
+        progressMap[p.topicId] = p;
+      });
 
-      const completed = topics.filter(t => {
+      const completed = topics.filter((t) => {
         const tp = progressMap[t.id];
         return tp && tp.quickDone && tp.deepDone;
       }).length;
@@ -103,12 +116,20 @@ router.post('/admin/create', adminAuth, validate(createCourseSchema), async (req
     if (existing) return res.status(400).json({ error: 'Course ID already exists' });
 
     const newCourse = {
-      id, title, description: description || '', icon: icon || 'fas fa-book',
-      emoji: emoji || '\ud83d\udcda', category: category || 'general',
-      difficulty: difficulty || 'beginner', color: color || '#667eea',
-      contentDir: id, hasTypingPractice: false, modes: ['fast-track', 'full-course'],
+      id,
+      title,
+      description: description || '',
+      icon: icon || 'fas fa-book',
+      emoji: emoji || '\ud83d\udcda',
+      category: category || 'general',
+      difficulty: difficulty || 'beginner',
+      color: color || '#667eea',
+      contentDir: id,
+      hasTypingPractice: false,
+      modes: ['fast-track', 'full-course'],
       totalDays: { 'fast-track': 10, 'full-course': 20 },
-      isActive: true, createdAt: new Date().toISOString(),
+      isActive: true,
+      createdAt: new Date().toISOString(),
     };
 
     await db.createCourse(newCourse);
@@ -141,15 +162,17 @@ router.get('/:courseId', auth, mediumCache, async (req, res) => {
     const topics = Array.isArray(contentIndex) ? contentIndex : [];
     const topicProgress = await db.getAllTopicProgress(req.user.id, course.id);
     const progressMap = {};
-    topicProgress.forEach(p => { progressMap[p.topicId] = p; });
+    topicProgress.forEach((p) => {
+      progressMap[p.topicId] = p;
+    });
 
-    const enrichedTopics = topics.map(t => {
+    const enrichedTopics = topics.map((t) => {
       const tp = progressMap[t.id];
       return {
         ...t,
         quickDone: tp ? !!tp.quickDone : false,
         deepDone: tp ? !!tp.deepDone : false,
-        completed: tp ? (!!tp.quickDone && !!tp.deepDone) : false,
+        completed: tp ? !!tp.quickDone && !!tp.deepDone : false,
       };
     });
 
@@ -172,7 +195,7 @@ router.get('/:courseId/topics', auth, mediumCache, async (req, res) => {
     const topics = Array.isArray(contentIndex) ? contentIndex : [];
     const mode = req.user.mode || 'fast-track';
 
-    const enriched = topics.map(t => ({
+    const enriched = topics.map((t) => ({
       id: t.id,
       title: t.title,
       group: t.group,
@@ -203,7 +226,7 @@ router.get('/:courseId/topics/:topicId', auth, mediumCache, async (req, res) => 
 
     const contentIndex = require(path.join(__dirname, '..', 'content', course.contentDir, 'index.js'));
     const topics = Array.isArray(contentIndex) ? contentIndex : [];
-    const meta = topics.find(t => t.id === req.params.topicId);
+    const meta = topics.find((t) => t.id === req.params.topicId);
 
     res.json({
       meta: meta || {},
@@ -234,7 +257,7 @@ router.post('/:courseId/enroll', auth, async (req, res) => {
 
     res.json({
       success: true,
-      enrolled: enrollments.map(e => e.courseId),
+      enrolled: enrollments.map((e) => e.courseId),
       activeCourse: active,
     });
   } catch (err) {
@@ -290,9 +313,13 @@ router.post('/admin/:courseId/topics', adminAuth, validate(createTopicSchema), a
     const topicDir = path.join(__dirname, '..', 'content', course.contentDir, id);
 
     const newTopic = {
-      id, title, group: group || 'general',
-      day_fast_track: 1, day_full_course: 1,
-      icon: icon || '\ud83d\udcdd', description: description || '',
+      id,
+      title,
+      group: group || 'general',
+      day_fast_track: 1,
+      day_full_course: 1,
+      icon: icon || '\ud83d\udcdd',
+      description: description || '',
       prerequisites: prerequisites || [],
     };
 
@@ -306,21 +333,26 @@ router.post('/admin/:courseId/topics', adminAuth, validate(createTopicSchema), a
       try {
         invalidateContentCache(course.contentDir);
         topics = require(indexPath);
-      } catch { topics = []; }
+      } catch {
+        topics = [];
+      }
       if (!Array.isArray(topics)) topics = [];
 
       newTopic.day_fast_track = topics.length + 1;
       newTopic.day_full_course = topics.length + 1;
 
-      const existingIdx = topics.findIndex(t => t.id === id);
+      const existingIdx = topics.findIndex((t) => t.id === id);
       if (existingIdx >= 0) topics[existingIdx] = newTopic;
       else topics.push(newTopic);
 
       fs.writeFileSync(indexPath, `module.exports = ${JSON.stringify(topics, null, 2)};`);
       invalidateContentCache(course.contentDir);
 
-      ['quick.json', 'deep.json', 'exercises.json', 'interview.json', 'comparison.json'].forEach(f => {
-        fs.writeFileSync(path.join(topicDir, f), JSON.stringify({ topicId: id, type: f.replace('.json', ''), sections: [] }, null, 2));
+      ['quick.json', 'deep.json', 'exercises.json', 'interview.json', 'comparison.json'].forEach((f) => {
+        fs.writeFileSync(
+          path.join(topicDir, f),
+          JSON.stringify({ topicId: id, type: f.replace('.json', ''), sections: [] }, null, 2),
+        );
       });
     } catch (fsErr) {
       logger.warn({ err: fsErr }, 'Filesystem not writable (expected in serverless). Topic created in memory only.');
@@ -378,10 +410,12 @@ router.delete('/admin/:courseId/topics/:topicId', adminAuth, async (req, res) =>
       try {
         invalidateContentCache(course.contentDir);
         topics = require(indexPath);
-      } catch { topics = []; }
+      } catch {
+        topics = [];
+      }
       if (!Array.isArray(topics)) topics = [];
 
-      const filtered = topics.filter(t => t.id !== req.params.topicId);
+      const filtered = topics.filter((t) => t.id !== req.params.topicId);
       fs.writeFileSync(indexPath, `module.exports = ${JSON.stringify(filtered, null, 2)};`);
       invalidateContentCache(course.contentDir);
     } catch (fsErr) {

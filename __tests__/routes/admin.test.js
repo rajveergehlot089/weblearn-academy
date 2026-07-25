@@ -52,9 +52,9 @@ describe('GET /api/admin/dashboard', () => {
     mockQuery.mockResolvedValueOnce({ rows: [{ id: 'admin-1', role: 'admin' }] });
     // getAdminStats
     mockQuery
-      .mockResolvedValueOnce({ rows: [{ count: 10 }] })   // totalUsers
-      .mockResolvedValueOnce({ rows: [{ count: 2 }] })    // adminCount
-      .mockResolvedValueOnce({ rows: [{ count: 50 }] });  // totalCompletions
+      .mockResolvedValueOnce({ rows: [{ count: 10 }] }) // totalUsers
+      .mockResolvedValueOnce({ rows: [{ count: 2 }] }) // adminCount
+      .mockResolvedValueOnce({ rows: [{ count: 50 }] }); // totalCompletions
     // getAllUsers
     mockQuery.mockResolvedValueOnce({
       rows: [{ id: 'u1', name: 'A', email: 'a@b.com', role: 'customer', createdAt: '2026-01-01' }],
@@ -62,9 +62,7 @@ describe('GET /api/admin/dashboard', () => {
     // getEnrollments (per user)
     mockQuery.mockResolvedValueOnce({ rows: [] });
 
-    const res = await request(createApp())
-      .get('/api/admin/dashboard')
-      .set('Authorization', `Bearer ${token}`);
+    const res = await request(createApp()).get('/api/admin/dashboard').set('Authorization', `Bearer ${token}`);
 
     expect(res.status).toBe(200);
     expect(res.body).toHaveProperty('studentCount');
@@ -77,9 +75,7 @@ describe('GET /api/admin/dashboard', () => {
     mockQuery.mockResolvedValueOnce({ rows: [{ tokenVersion: 0 }] });
     mockQuery.mockResolvedValueOnce({ rows: [{ id: 'user-1', role: 'customer' }] });
 
-    const res = await request(createApp())
-      .get('/api/admin/dashboard')
-      .set('Authorization', `Bearer ${token}`);
+    const res = await request(createApp()).get('/api/admin/dashboard').set('Authorization', `Bearer ${token}`);
 
     expect(res.status).toBe(403);
     expect(res.body.error).toBe('Admin access required');
@@ -127,9 +123,7 @@ describe('GET /api/admin/users', () => {
     mockQuery.mockResolvedValueOnce({ rows: [] });
     mockQuery.mockResolvedValueOnce({ rows: [] });
 
-    const res = await request(createApp())
-      .get('/api/admin/users?search=alice')
-      .set('Authorization', `Bearer ${token}`);
+    const res = await request(createApp()).get('/api/admin/users?search=alice').set('Authorization', `Bearer ${token}`);
 
     expect(res.status).toBe(200);
     expect(res.body.users).toHaveLength(1);
@@ -180,9 +174,7 @@ describe('DELETE /api/admin/users/:id', () => {
     mockQuery.mockResolvedValueOnce({ rows: [{ tokenVersion: 0 }] });
     mockQuery.mockResolvedValueOnce({ rows: [{ id: 'admin-1', role: 'admin' }] });
 
-    const res = await request(createApp())
-      .delete('/api/admin/users/admin-1')
-      .set('Authorization', `Bearer ${token}`);
+    const res = await request(createApp()).delete('/api/admin/users/admin-1').set('Authorization', `Bearer ${token}`);
 
     expect(res.status).toBe(400);
     expect(res.body.error).toContain('Cannot delete');

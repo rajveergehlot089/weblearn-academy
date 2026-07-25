@@ -61,11 +61,13 @@ describe('sendEmail', () => {
     const { sendEmail } = require('../../utils/email');
     mockSend.mockResolvedValue({ error: { message: 'Invalid API key' } });
 
-    await expect(sendEmail({
-      to: 'user@example.com',
-      subject: 'Test',
-      html: '<p>Hello</p>',
-    })).rejects.toThrow('Invalid API key');
+    await expect(
+      sendEmail({
+        to: 'user@example.com',
+        subject: 'Test',
+        html: '<p>Hello</p>',
+      }),
+    ).rejects.toThrow('Invalid API key');
   });
 });
 
@@ -82,7 +84,7 @@ describe('sendVerificationEmail', () => {
         to: 'user@example.com',
         subject: expect.stringContaining('Verify'),
         html: expect.stringContaining('https://example.com/verify-email?token=verify-token-123'),
-      })
+      }),
     );
   });
 });
@@ -100,7 +102,7 @@ describe('sendPasswordResetEmail', () => {
         to: 'user@example.com',
         subject: expect.stringContaining('Reset'),
         html: expect.stringContaining('https://example.com/reset-password?token=reset-token-456'),
-      })
+      }),
     );
   });
 

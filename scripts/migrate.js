@@ -16,9 +16,7 @@ const config = {
     user: process.env.PGUSER,
     database: process.env.PGDATABASE,
     password: process.env.PGPASSWORD,
-    ssl: process.env.PGSSL === 'true' || env === 'production'
-      ? { rejectUnauthorized: false }
-      : false,
+    ssl: process.env.PGSSL === 'true' || env === 'production' ? { rejectUnauthorized: false } : false,
   },
   migrations: {
     directory: path.join(__dirname, '..', 'migrations'),

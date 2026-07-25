@@ -11,8 +11,14 @@ function createRes() {
   const res = {
     statusCode: null,
     body: null,
-    status(code) { this.statusCode = code; return this; },
-    json(data) { this.body = data; return this; },
+    status(code) {
+      this.statusCode = code;
+      return this;
+    },
+    json(data) {
+      this.body = data;
+      return this;
+    },
   };
   return res;
 }
@@ -28,7 +34,9 @@ describe('Validate Middleware', () => {
     const res = createRes();
     let nextCalled = false;
 
-    middleware(req, res, () => { nextCalled = true; });
+    middleware(req, res, () => {
+      nextCalled = true;
+    });
 
     expect(nextCalled).toBe(true);
     expect(req.body.name).toBe('Test User');
@@ -60,7 +68,9 @@ describe('Validate Middleware', () => {
     const res = createRes();
     let nextCalled = false;
 
-    middleware(req, res, () => { nextCalled = true; });
+    middleware(req, res, () => {
+      nextCalled = true;
+    });
 
     expect(nextCalled).toBe(true);
     expect(req.body.email).toBe('test@example.com');

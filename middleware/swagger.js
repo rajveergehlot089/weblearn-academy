@@ -12,9 +12,7 @@ const options = {
       version: '1.0.0',
       description: 'Interactive web learning platform API',
     },
-    servers: [
-      { url: '/api', description: 'API Server' },
-    ],
+    servers: [{ url: '/api', description: 'API Server' }],
     components: {
       securitySchemes: {
         bearerAuth: {
@@ -32,10 +30,14 @@ const options = {
 const swaggerSpec = swaggerJsdoc(options);
 
 function setupSwagger(app) {
-  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
-    customCss: '.swagger-ui .topbar { display: none }',
-    customSiteTitle: 'WebLearn Academy API Docs',
-  }));
+  app.use(
+    '/api-docs',
+    swaggerUi.serve,
+    swaggerUi.setup(swaggerSpec, {
+      customCss: '.swagger-ui .topbar { display: none }',
+      customSiteTitle: 'WebLearn Academy API Docs',
+    }),
+  );
   app.get('/api-docs.json', (req, res) => res.json(swaggerSpec));
 }
 

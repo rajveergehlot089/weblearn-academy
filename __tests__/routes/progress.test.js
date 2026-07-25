@@ -64,9 +64,7 @@ describe('GET /api/progress/summary', () => {
     // getTypingScores
     mockQuery.mockResolvedValueOnce({ rows: [] });
 
-    const res = await request(createApp())
-      .get('/api/progress/summary')
-      .set('Authorization', `Bearer ${token}`);
+    const res = await request(createApp()).get('/api/progress/summary').set('Authorization', `Bearer ${token}`);
 
     expect(res.status).toBe(200);
     expect(res.body).toHaveProperty('courseId');

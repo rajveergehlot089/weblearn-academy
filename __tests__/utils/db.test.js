@@ -49,10 +49,15 @@ describe('User Operations', () => {
       mockQuery.mockResolvedValue({ rows: [] });
 
       await db.createUser('id-1', 'John', 'john@example.com', 'hashedpass', 'customer');
-      expect(mockQuery).toHaveBeenCalledWith(
-        expect.stringContaining('INSERT INTO users'),
-        ['id-1', 'John', 'john@example.com', 'hashedpass', 'customer', '{}', expect.any(String)]
-      );
+      expect(mockQuery).toHaveBeenCalledWith(expect.stringContaining('INSERT INTO users'), [
+        'id-1',
+        'John',
+        'john@example.com',
+        'hashedpass',
+        'customer',
+        '{}',
+        expect.any(String),
+      ]);
     });
   });
 
@@ -61,20 +66,14 @@ describe('User Operations', () => {
       mockQuery.mockResolvedValue({ rows: [] });
 
       await db.updateUser('user-1', { name: 'New Name' });
-      expect(mockQuery).toHaveBeenCalledWith(
-        expect.stringContaining('name = $1'),
-        ['New Name', 'user-1']
-      );
+      expect(mockQuery).toHaveBeenCalledWith(expect.stringContaining('name = $1'), ['New Name', 'user-1']);
     });
 
     it('updates passwordHash field', async () => {
       mockQuery.mockResolvedValue({ rows: [] });
 
       await db.updateUser('user-1', { passwordHash: 'newhash' });
-      expect(mockQuery).toHaveBeenCalledWith(
-        expect.stringContaining('"passwordHash" = $1'),
-        ['newhash', 'user-1']
-      );
+      expect(mockQuery).toHaveBeenCalledWith(expect.stringContaining('"passwordHash" = $1'), ['newhash', 'user-1']);
     });
 
     it('does nothing when no fields provided', async () => {
@@ -85,7 +84,10 @@ describe('User Operations', () => {
 
   describe('getAllUsers', () => {
     it('returns all users', async () => {
-      const users = [{ id: '1', name: 'A' }, { id: '2', name: 'B' }];
+      const users = [
+        { id: '1', name: 'A' },
+        { id: '2', name: 'B' },
+      ];
       mockQuery.mockResolvedValue({ rows: users });
 
       const result = await db.getAllUsers();
@@ -130,15 +132,13 @@ describe('Enrollment Operations', () => {
       await db.setActiveCourse('user-1', 'course-2');
       expect(mockQuery).toHaveBeenCalledTimes(2);
       // First: clear all active
-      expect(mockQuery).toHaveBeenNthCalledWith(1,
-        expect.stringContaining('SET "activeCourse" = NULL'),
-        ['user-1']
-      );
+      expect(mockQuery).toHaveBeenNthCalledWith(1, expect.stringContaining('SET "activeCourse" = NULL'), ['user-1']);
       // Second: set new active
-      expect(mockQuery).toHaveBeenNthCalledWith(2,
-        expect.stringContaining('SET "activeCourse" = $1'),
-        ['course-2', 'user-1', 'course-2']
-      );
+      expect(mockQuery).toHaveBeenNthCalledWith(2, expect.stringContaining('SET "activeCourse" = $1'), [
+        'course-2',
+        'user-1',
+        'course-2',
+      ]);
     });
   });
 });
@@ -153,9 +153,10 @@ describe('Topic Progress Operations', () => {
 
       await db.upsertTopicProgress('user-1', 'course-1', 'topic-1', { quickDone: true, deepDone: false });
       expect(mockQuery).toHaveBeenCalledTimes(2);
-      expect(mockQuery).toHaveBeenNthCalledWith(2,
+      expect(mockQuery).toHaveBeenNthCalledWith(
+        2,
         expect.stringContaining('INSERT INTO topic_progress'),
-        expect.arrayContaining(['user-1', 'course-1', 'topic-1', 1, 0])
+        expect.arrayContaining(['user-1', 'course-1', 'topic-1', 1, 0]),
       );
     });
 
@@ -169,9 +170,10 @@ describe('Topic Progress Operations', () => {
 
       await db.upsertTopicProgress('user-1', 'course-1', 'topic-1', { deepDone: true });
       expect(mockQuery).toHaveBeenCalledTimes(2);
-      expect(mockQuery).toHaveBeenNthCalledWith(2,
+      expect(mockQuery).toHaveBeenNthCalledWith(
+        2,
         expect.stringContaining('UPDATE topic_progress'),
-        expect.arrayContaining([0, 1])
+        expect.arrayContaining([0, 1]),
       );
     });
   });
@@ -183,10 +185,12 @@ describe('Token Management', () => {
       mockQuery.mockResolvedValue({ rows: [] });
 
       await db.saveVerificationToken('tok-123', 'user-1', 'test@example.com', '2026-12-31');
-      expect(mockQuery).toHaveBeenCalledWith(
-        expect.stringContaining('INSERT INTO verification_tokens'),
-        ['tok-123', 'user-1', 'test@example.com', '2026-12-31']
-      );
+      expect(mockQuery).toHaveBeenCalledWith(expect.stringContaining('INSERT INTO verification_tokens'), [
+        'tok-123',
+        'user-1',
+        'test@example.com',
+        '2026-12-31',
+      ]);
     });
   });
 
@@ -215,7 +219,7 @@ describe('Security Operations', () => {
       await db.incrementFailedLogin('user-1');
       expect(mockQuery).toHaveBeenCalledWith(
         expect.stringContaining('"failedLoginAttempts" = "failedLoginAttempts" + 1'),
-        ['user-1']
+        ['user-1'],
       );
     });
   });
@@ -226,10 +230,7 @@ describe('Security Operations', () => {
       const until = '2026-07-23T16:00:00.000Z';
 
       await db.lockAccount('user-1', until);
-      expect(mockQuery).toHaveBeenCalledWith(
-        expect.stringContaining('"lockedUntil" = $1'),
-        [until, 'user-1']
-      );
+      expect(mockQuery).toHaveBeenCalledWith(expect.stringContaining('"lockedUntil" = $1'), [until, 'user-1']);
     });
   });
 
@@ -238,10 +239,9 @@ describe('Security Operations', () => {
       mockQuery.mockResolvedValue({ rows: [] });
 
       await db.incrementTokenVersion('user-1');
-      expect(mockQuery).toHaveBeenCalledWith(
-        expect.stringContaining('"tokenVersion" = "tokenVersion" + 1'),
-        ['user-1']
-      );
+      expect(mockQuery).toHaveBeenCalledWith(expect.stringContaining('"tokenVersion" = "tokenVersion" + 1'), [
+        'user-1',
+      ]);
     });
   });
 });
@@ -254,10 +254,7 @@ describe('Course Operations', () => {
 
       const result = await db.getAllCourses();
       expect(result).toEqual(courses);
-      expect(mockQuery).toHaveBeenCalledWith(
-        expect.stringContaining('WHERE "isActive" = 1'),
-        []
-      );
+      expect(mockQuery).toHaveBeenCalledWith(expect.stringContaining('WHERE "isActive" = 1'), []);
     });
   });
 
@@ -283,7 +280,7 @@ describe('Course Operations', () => {
 
       expect(mockQuery).toHaveBeenCalledWith(
         expect.stringContaining('INSERT INTO courses'),
-        expect.arrayContaining(['new-course', 'New Course', 'A test course'])
+        expect.arrayContaining(['new-course', 'New Course', 'A test course']),
       );
     });
   });
@@ -293,10 +290,7 @@ describe('Course Operations', () => {
       mockQuery.mockResolvedValue({ rows: [] });
 
       await db.deleteCourse('course-1');
-      expect(mockQuery).toHaveBeenCalledWith(
-        expect.stringContaining('"isActive" = 0'),
-        ['course-1']
-      );
+      expect(mockQuery).toHaveBeenCalledWith(expect.stringContaining('"isActive" = 0'), ['course-1']);
     });
   });
 });
@@ -305,9 +299,9 @@ describe('Admin Stats', () => {
   describe('getAdminStats', () => {
     it('returns aggregated stats', async () => {
       mockQuery
-        .mockResolvedValueOnce({ rows: [{ count: 10 }] })   // totalUsers
-        .mockResolvedValueOnce({ rows: [{ count: 2 }] })    // adminCount
-        .mockResolvedValueOnce({ rows: [{ count: 50 }] });  // totalCompletions
+        .mockResolvedValueOnce({ rows: [{ count: 10 }] }) // totalUsers
+        .mockResolvedValueOnce({ rows: [{ count: 2 }] }) // adminCount
+        .mockResolvedValueOnce({ rows: [{ count: 50 }] }); // totalCompletions
 
       const stats = await db.getAdminStats();
       expect(stats).toEqual({

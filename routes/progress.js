@@ -7,7 +7,14 @@ const path = require('path');
 const auth = require('../middleware/auth');
 const db = require('../utils/db');
 const rateLimit = require('../middleware/rateLimit');
-const { validate, topicProgressSchema, typingScoreSchema, interviewAttemptSchema, exerciseAttemptSchema, dailyLogSchema } = require('../middleware/validate');
+const {
+  validate,
+  topicProgressSchema,
+  typingScoreSchema,
+  interviewAttemptSchema,
+  exerciseAttemptSchema,
+  dailyLogSchema,
+} = require('../middleware/validate');
 const logger = require('../utils/logger');
 const { shortCache } = require('../middleware/cacheHeaders');
 
@@ -17,56 +24,72 @@ async function loadCourseTopics(courseId) {
     if (!course) return [];
     const idx = require(path.join(__dirname, '..', 'content', course.contentDir, 'index.js'));
     return Array.isArray(idx) ? idx : [];
-  } catch { return []; }
+  } catch {
+    return [];
+  }
 }
 
 // GET /api/progress/summary
 router.get('/summary', auth, shortCache, async (req, res) => {
   try {
-    const courseId = req.query.courseId || await db.getActiveCourse(req.user.id) || 'web-development';
+    const courseId = req.query.courseId || (await db.getActiveCourse(req.user.id)) || 'web-development';
     const topics = await loadCourseTopics(courseId);
     const mode = req.user.mode || 'fast-track';
 
     const allProgress = await db.getAllTopicProgress(req.user.id, courseId);
     const progressMap = {};
-    allProgress.forEach(p => { progressMap[p.topicId] = p; });
+    allProgress.forEach((p) => {
+      progressMap[p.topicId] = p;
+    });
 
     const totalTopics = topics.length;
-    const completedTopics = topics.filter(t => {
+    const completedTopics = topics.filter((t) => {
       const p = progressMap[t.id];
       return p && p.quickDone && p.deepDone;
     }).length;
     const percentComplete = totalTopics > 0 ? Math.round((completedTopics / totalTopics) * 100) : 0;
 
-    const currentTopicId = allProgress.length > 0
-      ? allProgress.sort((a, b) => (b.lastAccessed || '').localeCompare(a.lastAccessed || ''))[0]?.topicId
-      : (topics[0]?.id || '');
-    const currentTopic = topics.find(t => t.id === currentTopicId);
+    const currentTopicId =
+      allProgress.length > 0
+        ? allProgress.sort((a, b) => (b.lastAccessed || '').localeCompare(a.lastAccessed || ''))[0]?.topicId
+        : topics[0]?.id || '';
+    const currentTopic = topics.find((t) => t.id === currentTopicId);
     const currentDay = currentTopic
-      ? (mode === 'fast-track' ? currentTopic.day_fast_track : currentTopic.day_full_course)
+      ? mode === 'fast-track'
+        ? currentTopic.day_fast_track
+        : currentTopic.day_full_course
       : 1;
 
-    const totalDays = mode === 'fast-track'
-      ? (topics.length > 0 ? Math.max(...topics.map(t => t.day_fast_track || 1)) : 10)
-      : (topics.length > 0 ? Math.max(...topics.map(t => t.day_full_course || 1)) : 20);
+    const totalDays =
+      mode === 'fast-track'
+        ? topics.length > 0
+          ? Math.max(...topics.map((t) => t.day_fast_track || 1))
+          : 10
+        : topics.length > 0
+          ? Math.max(...topics.map((t) => t.day_full_course || 1))
+          : 20;
 
     const dailyLogs = await db.getDailyLog(req.user.id);
-    const logDates = new Set(dailyLogs.map(d => d.date));
+    const logDates = new Set(dailyLogs.map((d) => d.date));
     let streak = 0;
     const today = new Date().toISOString().split('T')[0];
     let checkDate = new Date(today);
     while (true) {
       const dateStr = checkDate.toISOString().split('T')[0];
-      if (logDates.has(dateStr)) { streak++; checkDate.setDate(checkDate.getDate() - 1); }
-      else break;
+      if (logDates.has(dateStr)) {
+        streak++;
+        checkDate.setDate(checkDate.getDate() - 1);
+      } else break;
     }
 
     const typingScoresList = await db.getTypingScores(req.user.id, courseId);
     const typingScores = {};
-    typingScoresList.forEach(s => { typingScores[s.topicId] = s; });
+    typingScoresList.forEach((s) => {
+      typingScores[s.topicId] = s;
+    });
 
     const topicsFormatted = {};
-    allProgress.forEach(p => {
+    allProgress.forEach((p) => {
       topicsFormatted[p.topicId] = {
         quickDone: !!p.quickDone,
         deepDone: !!p.deepDone,
@@ -75,10 +98,17 @@ router.get('/summary', auth, shortCache, async (req, res) => {
     });
 
     res.json({
-      mode, courseId, currentDay, totalDays,
-      percentComplete, completedTopics, totalTopics,
-      streak, topics: topicsFormatted,
-      currentTopicId, typingScores,
+      mode,
+      courseId,
+      currentDay,
+      totalDays,
+      percentComplete,
+      completedTopics,
+      totalTopics,
+      streak,
+      topics: topicsFormatted,
+      currentTopicId,
+      typingScores,
     });
   } catch (err) {
     logger.error({ err, requestId: req.id }, 'Progress summary error');
@@ -90,7 +120,7 @@ router.get('/summary', auth, shortCache, async (req, res) => {
 router.post('/topic/:id', auth, validate(topicProgressSchema), async (req, res) => {
   try {
     const topicId = req.params.id;
-    const courseId = req.body.courseId || await db.getActiveCourse(req.user.id) || 'web-development';
+    const courseId = req.body.courseId || (await db.getActiveCourse(req.user.id)) || 'web-development';
 
     const extraData = { ...req.body };
     delete extraData.courseId;
@@ -131,7 +161,7 @@ router.post('/topic/:id/interview', auth, validate(interviewAttemptSchema), asyn
   try {
     const { questionIndex, correct, courseId } = req.body;
     const topicId = req.params.id;
-    const cid = courseId || await db.getActiveCourse(req.user.id) || 'web-development';
+    const cid = courseId || (await db.getActiveCourse(req.user.id)) || 'web-development';
 
     await db.recordInterviewAttempt(req.user.id, cid, topicId, questionIndex, correct);
     res.json({ ok: true });
@@ -146,7 +176,7 @@ router.post('/topic/:id/exercise', auth, validate(exerciseAttemptSchema), async 
   try {
     const { exerciseIndex, correct, courseId } = req.body;
     const topicId = req.params.id;
-    const cid = courseId || await db.getActiveCourse(req.user.id) || 'web-development';
+    const cid = courseId || (await db.getActiveCourse(req.user.id)) || 'web-development';
 
     await db.recordExerciseAttempt(req.user.id, cid, topicId, exerciseIndex, correct);
     res.json({ ok: true });

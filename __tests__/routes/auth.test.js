@@ -55,13 +55,11 @@ describe('POST /api/auth/register', () => {
     // Save verification token
     mockQuery.mockResolvedValueOnce({ rows: [] });
 
-    const res = await request(createApp())
-      .post('/api/auth/register')
-      .send({
-        name: 'Test User',
-        email: 'test@example.com',
-        password: 'SecurePass1!',
-      });
+    const res = await request(createApp()).post('/api/auth/register').send({
+      name: 'Test User',
+      email: 'test@example.com',
+      password: 'SecurePass1!',
+    });
 
     expect(res.status).toBe(200);
     expect(res.body).toHaveProperty('token');
@@ -79,13 +77,11 @@ describe('POST /api/auth/register', () => {
     // Check existing user - found
     mockQuery.mockResolvedValueOnce({ rows: [{ id: 'existing' }] });
 
-    const res = await request(createApp())
-      .post('/api/auth/register')
-      .send({
-        name: 'Test User',
-        email: 'existing@example.com',
-        password: 'SecurePass1!',
-      });
+    const res = await request(createApp()).post('/api/auth/register').send({
+      name: 'Test User',
+      email: 'existing@example.com',
+      password: 'SecurePass1!',
+    });
 
     expect(res.status).toBe(400);
     expect(res.body.error).toBe('Email already registered');
@@ -93,25 +89,21 @@ describe('POST /api/auth/register', () => {
 
   it('rejects invalid email format', async () => {
     // Zod validation returns 400, or unhandled error returns 500
-    const res = await request(createApp())
-      .post('/api/auth/register')
-      .send({
-        name: 'Test User',
-        email: 'not-an-email',
-        password: 'SecurePass1!',
-      });
+    const res = await request(createApp()).post('/api/auth/register').send({
+      name: 'Test User',
+      email: 'not-an-email',
+      password: 'SecurePass1!',
+    });
 
     expect(res.status).toBeGreaterThanOrEqual(400);
   });
 
   it('rejects weak password', async () => {
-    const res = await request(createApp())
-      .post('/api/auth/register')
-      .send({
-        name: 'Test User',
-        email: 'test@example.com',
-        password: 'weak',
-      });
+    const res = await request(createApp()).post('/api/auth/register').send({
+      name: 'Test User',
+      email: 'test@example.com',
+      password: 'weak',
+    });
 
     expect(res.status).toBeGreaterThanOrEqual(400);
   });
@@ -124,7 +116,16 @@ describe('POST /api/auth/login', () => {
 
     // Find user
     mockQuery.mockResolvedValueOnce({
-      rows: [{ id: 'user-1', name: 'Test', email: 'test@example.com', passwordHash: hash, role: 'customer', tokenVersion: 0 }],
+      rows: [
+        {
+          id: 'user-1',
+          name: 'Test',
+          email: 'test@example.com',
+          passwordHash: hash,
+          role: 'customer',
+          tokenVersion: 0,
+        },
+      ],
     });
     // Reset failed login
     mockQuery.mockResolvedValueOnce({ rows: [] });
@@ -207,9 +208,7 @@ describe('POST /api/auth/forgot-password', () => {
     // User not found
     mockQuery.mockResolvedValueOnce({ rows: [] });
 
-    const res = await request(createApp())
-      .post('/api/auth/forgot-password')
-      .send({ email: 'nobody@example.com' });
+    const res = await request(createApp()).post('/api/auth/forgot-password').send({ email: 'nobody@example.com' });
 
     expect(res.status).toBe(200);
     expect(res.body.success).toBe(true);
@@ -223,9 +222,7 @@ describe('POST /api/auth/forgot-password', () => {
     // Save reset token
     mockQuery.mockResolvedValueOnce({ rows: [] });
 
-    const res = await request(createApp())
-      .post('/api/auth/forgot-password')
-      .send({ email: 'test@example.com' });
+    const res = await request(createApp()).post('/api/auth/forgot-password').send({ email: 'test@example.com' });
 
     expect(res.status).toBe(200);
     expect(res.body.success).toBe(true);
@@ -282,8 +279,21 @@ describe('POST /api/auth/reset-password', () => {
 
 describe('GET /api/auth/profile', () => {
   it('returns user profile with valid token', async () => {
-    const token = makeToken({ id: 'user-1', name: 'Test', email: 'test@example.com', role: 'customer', tokenVersion: 0 });
-    const userRow = { id: 'user-1', name: 'Test', email: 'test@example.com', role: 'customer', emailVerified: 1, preferences: '{"theme":"dark"}' };
+    const token = makeToken({
+      id: 'user-1',
+      name: 'Test',
+      email: 'test@example.com',
+      role: 'customer',
+      tokenVersion: 0,
+    });
+    const userRow = {
+      id: 'user-1',
+      name: 'Test',
+      email: 'test@example.com',
+      role: 'customer',
+      emailVerified: 1,
+      preferences: '{"theme":"dark"}',
+    };
 
     // Auth middleware: getTokenVersion
     mockQuery.mockResolvedValueOnce({ rows: [{ tokenVersion: 0 }] });
@@ -292,9 +302,7 @@ describe('GET /api/auth/profile', () => {
     // Profile route: getUserById
     mockQuery.mockResolvedValueOnce({ rows: [userRow] });
 
-    const res = await request(createApp())
-      .get('/api/auth/profile')
-      .set('Authorization', `Bearer ${token}`);
+    const res = await request(createApp()).get('/api/auth/profile').set('Authorization', `Bearer ${token}`);
 
     expect(res.status).toBe(200);
     expect(res.body.user).toMatchObject({
@@ -318,9 +326,7 @@ describe('GET /api/auth/profile', () => {
     // Current version is 1 (revoked)
     mockQuery.mockResolvedValueOnce({ rows: [{ tokenVersion: 1 }] });
 
-    const res = await request(createApp())
-      .get('/api/auth/profile')
-      .set('Authorization', `Bearer ${token}`);
+    const res = await request(createApp()).get('/api/auth/profile').set('Authorization', `Bearer ${token}`);
 
     expect(res.status).toBe(401);
     expect(res.body.error).toContain('revoked');

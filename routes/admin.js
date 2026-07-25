@@ -18,9 +18,7 @@ router.get('/dashboard', adminAuth, async (req, res) => {
     const totalUsers = allUsers.length;
     const studentCount = totalUsers - stats.adminCount;
 
-    const recentUsers = allUsers
-      .sort((a, b) => (b.createdAt || '').localeCompare(a.createdAt || ''))
-      .slice(0, 10);
+    const recentUsers = allUsers.sort((a, b) => (b.createdAt || '').localeCompare(a.createdAt || '')).slice(0, 10);
 
     let totalCompleted = 0;
     for (const user of allUsers) {
@@ -28,7 +26,7 @@ router.get('/dashboard', adminAuth, async (req, res) => {
       if (enrollments.length > 0) {
         const courseId = enrollments[0].courseId;
         const progress = await db.getAllTopicProgress(user.id, courseId);
-        totalCompleted += progress.filter(p => p.quickDone && p.deepDone).length;
+        totalCompleted += progress.filter((p) => p.quickDone && p.deepDone).length;
       }
     }
 
@@ -58,9 +56,8 @@ router.get('/users', adminAuth, async (req, res) => {
     let allUsers = await db.getAllUsers();
 
     if (search) {
-      allUsers = allUsers.filter(u =>
-        u.name.toLowerCase().includes(search) ||
-        u.email.toLowerCase().includes(search)
+      allUsers = allUsers.filter(
+        (u) => u.name.toLowerCase().includes(search) || u.email.toLowerCase().includes(search),
       );
     }
 
@@ -78,7 +75,7 @@ router.get('/users', adminAuth, async (req, res) => {
       if (enrollments.length > 0) {
         const courseId = enrollments[0].courseId;
         const progress = await db.getAllTopicProgress(u.id, courseId);
-        const completed = progress.filter(p => p.quickDone && p.deepDone).length;
+        const completed = progress.filter((p) => p.quickDone && p.deepDone).length;
         percentComplete = progress.length > 0 ? Math.round((completed / progress.length) * 100) : 0;
       }
       enriched.push({
@@ -115,7 +112,12 @@ router.get('/stats', adminAuth, async (req, res) => {
     for (const course of courses) {
       const courseTopics = await db.getCourseTopicCompletions(course.id);
       for (const t of courseTopics) {
-        topicStats.push({ id: t.topicId, title: t.topicId, courseId: course.id, completions: parseInt(t.completions) || 0 });
+        topicStats.push({
+          id: t.topicId,
+          title: t.topicId,
+          courseId: course.id,
+          completions: parseInt(t.completions) || 0,
+        });
       }
     }
 

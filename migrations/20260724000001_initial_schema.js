@@ -1,11 +1,9 @@
 // ============================================
 // Initial Schema Migration
 // ============================================
-// Captures the existing schema from database.js initDb()
 
 exports.up = function (knex) {
   return knex.schema
-    // Users table
     .createTable('users', (table) => {
       table.text('id').primary();
       table.text('name').notNullable();
@@ -19,31 +17,24 @@ exports.up = function (knex) {
       table.text('lockedUntil');
       table.integer('tokenVersion').defaultTo(0);
     })
-    .then(() => knex.raw('CREATE INDEX IF NOT EXISTS idx_users_email ON users(email)'))
-
-    // Verification tokens
     .createTable('verification_tokens', (table) => {
       table.text('token').primary();
       table.text('userId').notNullable();
       table.text('email').notNullable();
       table.text('expiresAt').notNullable();
     })
-
-    // Reset tokens
     .createTable('reset_tokens', (table) => {
       table.text('token').primary();
       table.text('userId').notNullable();
       table.text('email').notNullable();
       table.text('expiresAt').notNullable();
     })
-
-    // Courses
     .createTable('courses', (table) => {
       table.text('id').primary();
       table.text('title').notNullable();
       table.text('description').defaultTo('');
       table.text('icon').defaultTo('fas fa-book');
-      table.text('emoji').defaultTo('📚');
+      table.text('emoji').defaultTo('\ud83d\udcda');
       table.text('category').defaultTo('general');
       table.text('difficulty').defaultTo('beginner');
       table.text('color').defaultTo('#667eea');
@@ -55,16 +46,12 @@ exports.up = function (knex) {
       table.integer('isActive').defaultTo(1);
       table.text('createdAt').notNullable();
     })
-
-    // Enrollments
     .createTable('enrollments', (table) => {
       table.text('userId').notNullable();
       table.text('courseId').notNullable();
       table.text('activeCourse');
       table.unique(['userId', 'courseId']);
     })
-
-    // Topic progress
     .createTable('topic_progress', (table) => {
       table.text('userId').notNullable();
       table.text('courseId').notNullable();
@@ -75,9 +62,6 @@ exports.up = function (knex) {
       table.text('lastAccessed');
       table.unique(['userId', 'courseId', 'topicId']);
     })
-    .then(() => knex.raw('CREATE INDEX IF NOT EXISTS idx_progress_user_course ON topic_progress("userId", "courseId")'))
-
-    // Daily log
     .createTable('daily_log', (table) => {
       table.text('userId').notNullable();
       table.text('date').notNullable();
@@ -85,8 +69,6 @@ exports.up = function (knex) {
       table.text('topicsVisited').defaultTo('[]');
       table.unique(['userId', 'date']);
     })
-
-    // Typing scores
     .createTable('typing_scores', (table) => {
       table.text('userId').notNullable();
       table.text('courseId').notNullable();
@@ -100,8 +82,6 @@ exports.up = function (knex) {
       table.text('lastAttempt');
       table.unique(['userId', 'courseId', 'topicId']);
     })
-
-    // Interview progress
     .createTable('interview_progress', (table) => {
       table.text('userId').notNullable();
       table.text('courseId').notNullable();
@@ -110,8 +90,6 @@ exports.up = function (knex) {
       table.integer('correct').defaultTo(0);
       table.unique(['userId', 'courseId', 'topicId', 'questionIndex']);
     })
-
-    // Exercise progress
     .createTable('exercise_progress', (table) => {
       table.text('userId').notNullable();
       table.text('courseId').notNullable();
@@ -120,15 +98,19 @@ exports.up = function (knex) {
       table.integer('correct').defaultTo(0);
       table.unique(['userId', 'courseId', 'topicId', 'exerciseIndex']);
     })
-
-    // Analysis history
     .createTable('analysis_history', (table) => {
       table.text('id').primary();
       table.text('userId').notNullable();
       table.text('analysis').notNullable();
       table.text('createdAt').notNullable();
     })
-    .then(() => knex.raw('CREATE INDEX IF NOT EXISTS idx_analysis_user ON analysis_history("userId")'));
+    .then(() =>
+      Promise.all([
+        knex.raw('CREATE INDEX IF NOT EXISTS idx_users_email ON users(email)'),
+        knex.raw('CREATE INDEX IF NOT EXISTS idx_progress_user_course ON topic_progress("userId", "courseId")'),
+        knex.raw('CREATE INDEX IF NOT EXISTS idx_analysis_user ON analysis_history("userId")'),
+      ]),
+    );
 };
 
 exports.down = function (knex) {

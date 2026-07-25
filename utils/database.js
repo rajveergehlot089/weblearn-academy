@@ -14,9 +14,7 @@ const pool = new Pool({
   max: 20,
   idleTimeoutMillis: 30000,
   connectionTimeoutMillis: 5000,
-  ssl: process.env.PGSSL === 'true' || process.env.NODE_ENV === 'production'
-    ? { rejectUnauthorized: false }
-    : false,
+  ssl: process.env.PGSSL === 'true' || process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false,
 });
 
 pool.on('error', (err) => {
@@ -87,8 +85,8 @@ async function initDb() {
     `);
 
     // Cleanup expired tokens on startup
-    await client.query("DELETE FROM verification_tokens WHERE \"expiresAt\" < $1", [new Date().toISOString()]);
-    await client.query("DELETE FROM reset_tokens WHERE \"expiresAt\" < $1", [new Date().toISOString()]);
+    await client.query('DELETE FROM verification_tokens WHERE "expiresAt" < $1', [new Date().toISOString()]);
+    await client.query('DELETE FROM reset_tokens WHERE "expiresAt" < $1', [new Date().toISOString()]);
 
     await client.query(`
       CREATE TABLE IF NOT EXISTS enrollments (
@@ -183,13 +181,21 @@ async function initDb() {
         const contentIndex = require(path.join(CONTENT_DIR, 'index.js'));
         for (const [courseId, topics] of Object.entries(contentIndex)) {
           if (!Array.isArray(topics) || topics.length === 0) continue;
-          const maxFast = Math.max(...topics.map(t => t.day_fast_track || 1));
-          const maxFull = Math.max(...topics.map(t => t.day_full_course || 1));
+          const maxFast = Math.max(...topics.map((t) => t.day_fast_track || 1));
+          const maxFull = Math.max(...topics.map((t) => t.day_full_course || 1));
 
           let category = 'technology';
           if (courseId.includes('hindi') || courseId.includes('english')) category = 'language';
           if (courseId.includes('typing')) category = 'typing';
-          if (courseId.includes('self-awareness') || courseId.includes('communication') || courseId.includes('productivity') || courseId.includes('leadership') || courseId.includes('career') || courseId.includes('personality')) category = 'soft-skills';
+          if (
+            courseId.includes('self-awareness') ||
+            courseId.includes('communication') ||
+            courseId.includes('productivity') ||
+            courseId.includes('leadership') ||
+            courseId.includes('career') ||
+            courseId.includes('personality')
+          )
+            category = 'soft-skills';
 
           const isTyping = courseId.includes('typing');
 
@@ -198,7 +204,10 @@ async function initDb() {
              VALUES ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15) ON CONFLICT (id) DO NOTHING`,
             [
               courseId,
-              courseId.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
+              courseId
+                .split('-')
+                .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+                .join(' '),
               `${topics.length} learning topics`,
               isTyping ? 'fas fa-keyboard' : 'fas fa-book',
               isTyping ? '\u2328\ufe0f' : '\ud83d\udcda',
@@ -212,7 +221,7 @@ async function initDb() {
               JSON.stringify({ 'fast-track': maxFast, 'full-course': maxFull }),
               1,
               new Date().toISOString(),
-            ]
+            ],
           );
         }
         logger.info('Courses seeded successfully');

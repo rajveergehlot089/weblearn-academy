@@ -6,7 +6,9 @@ const { Pool } = require('pg');
 let pool;
 
 function clean(val, fallback) {
-  return String(val || fallback).replace(/^\uFEFF/, '').trim();
+  return String(val || fallback)
+    .replace(/^\uFEFF/, '')
+    .trim();
 }
 
 function getPool() {
@@ -194,8 +196,8 @@ async function initSchema() {
     `);
 
     // Cleanup expired tokens
-    await client.query("DELETE FROM verification_tokens WHERE \"expiresAt\" < $1", [new Date().toISOString()]);
-    await client.query("DELETE FROM reset_tokens WHERE \"expiresAt\" < $1", [new Date().toISOString()]);
+    await client.query('DELETE FROM verification_tokens WHERE "expiresAt" < $1', [new Date().toISOString()]);
+    await client.query('DELETE FROM reset_tokens WHERE "expiresAt" < $1', [new Date().toISOString()]);
   } finally {
     client.release();
   }

@@ -8,13 +8,16 @@ let sql;
 let schemaReady = false;
 
 function clean(val, fallback) {
-  return String(val || fallback).replace(/\uFEFF/g, '').trim();
+  return String(val || fallback)
+    .replace(/\uFEFF/g, '')
+    .trim();
 }
 
 function getSql() {
   if (!sql) {
-    const connStr = clean(process.env.DATABASE_URL)
-      || `postgresql://${clean(process.env.PGUSER)}:${clean(process.env.PGPASSWORD)}@${clean(process.env.PGHOST)}:${clean(process.env.PGPORT, '5432')}/${clean(process.env.PGDATABASE)}?sslmode=require`;
+    const connStr =
+      clean(process.env.DATABASE_URL) ||
+      `postgresql://${clean(process.env.PGUSER)}:${clean(process.env.PGPASSWORD)}@${clean(process.env.PGHOST)}:${clean(process.env.PGPORT, '5432')}/${clean(process.env.PGDATABASE)}?sslmode=require`;
     sql = neon(connStr);
   }
   return sql;

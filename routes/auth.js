@@ -10,7 +10,14 @@ const { hashPassword, comparePassword } = require('../utils/hash');
 const auth = require('../middleware/auth');
 const rateLimit = require('../middleware/rateLimit');
 const db = require('../utils/db');
-const { validate, registerSchema, loginSchema, preferencesSchema, forgotPasswordSchema, resetPasswordSchema } = require('../middleware/validate');
+const {
+  validate,
+  registerSchema,
+  loginSchema,
+  preferencesSchema,
+  forgotPasswordSchema,
+  resetPasswordSchema,
+} = require('../middleware/validate');
 const { sendVerificationEmail, sendPasswordResetEmail } = require('../utils/email');
 const logger = require('../utils/logger');
 
@@ -58,14 +65,12 @@ router.post('/register', rateLimit(10, 15 * 60 * 1000), validate(registerSchema)
     await db.saveVerificationToken(verifyToken, id, email, expiresAt);
 
     // Include tokenVersion in JWT
-    const token = jwt.sign(
-      { id, name, email, role: 'customer', tokenVersion: 0 },
-      process.env.JWT_SECRET,
-      { expiresIn: '7d' }
-    );
+    const token = jwt.sign({ id, name, email, role: 'customer', tokenVersion: 0 }, process.env.JWT_SECRET, {
+      expiresIn: '7d',
+    });
 
     // Send verification email (non-blocking)
-    sendVerificationEmail(email, verifyToken).catch(err => {
+    sendVerificationEmail(email, verifyToken).catch((err) => {
       logger.error({ err, email }, 'Failed to send verification email');
     });
 
@@ -130,7 +135,9 @@ router.post('/login', rateLimit(20, 15 * 60 * 1000), validate(loginSchema), asyn
       if (updatedUser.failedLoginAttempts >= MAX_FAILED_ATTEMPTS) {
         const lockUntil = new Date(Date.now() + LOCKOUT_MINUTES * 60 * 1000).toISOString();
         await db.lockAccount(user.id, lockUntil);
-        return res.status(423).json({ error: `Too many failed attempts. Account locked for ${LOCKOUT_MINUTES} minutes.` });
+        return res
+          .status(423)
+          .json({ error: `Too many failed attempts. Account locked for ${LOCKOUT_MINUTES} minutes.` });
       }
 
       return res.status(401).json({ error: 'Invalid credentials' });
@@ -140,9 +147,15 @@ router.post('/login', rateLimit(20, 15 * 60 * 1000), validate(loginSchema), asyn
     await db.resetFailedLogin(user.id);
 
     const token = jwt.sign(
-      { id: user.id, name: user.name, email: user.email, role: user.role || 'customer', tokenVersion: user.tokenVersion || 0 },
+      {
+        id: user.id,
+        name: user.name,
+        email: user.email,
+        role: user.role || 'customer',
+        tokenVersion: user.tokenVersion || 0,
+      },
       process.env.JWT_SECRET,
-      { expiresIn: '7d' }
+      { expiresIn: '7d' },
     );
 
     res.json({ token, user: { id: user.id, name: user.name, email: user.email, role: user.role || 'customer' } });
@@ -194,7 +207,7 @@ router.post('/forgot-password', rateLimit(3, 15 * 60 * 1000), validate(forgotPas
     await db.saveResetToken(resetToken, user.id, user.email, expiresAt);
 
     // Send password reset email (non-blocking)
-    sendPasswordResetEmail(user.email, resetToken).catch(err => {
+    sendPasswordResetEmail(user.email, resetToken).catch((err) => {
       logger.error({ err, email: user.email }, 'Failed to send password reset email');
     });
 
@@ -245,8 +258,15 @@ router.post('/change-password', auth, rateLimit(5, 15 * 60 * 1000), async (req, 
     if (newPassword.length < 8) {
       return res.status(400).json({ error: 'New password must be at least 8 characters' });
     }
-    if (!/[A-Z]/.test(newPassword) || !/[a-z]/.test(newPassword) || !/[0-9]/.test(newPassword) || !/[^A-Za-z0-9]/.test(newPassword)) {
-      return res.status(400).json({ error: 'New password must include uppercase, lowercase, number, and special character' });
+    if (
+      !/[A-Z]/.test(newPassword) ||
+      !/[a-z]/.test(newPassword) ||
+      !/[0-9]/.test(newPassword) ||
+      !/[^A-Za-z0-9]/.test(newPassword)
+    ) {
+      return res
+        .status(400)
+        .json({ error: 'New password must include uppercase, lowercase, number, and special character' });
     }
 
     const user = await db.getUserById(req.user.id);

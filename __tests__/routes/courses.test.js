@@ -56,22 +56,30 @@ describe('GET /api/courses', () => {
     mockQuery.mockResolvedValueOnce({ rows: [{ id: 'user-1' }] });
     // getAllCourses
     mockQuery.mockResolvedValueOnce({
-      rows: [{
-        id: 'web-development', title: 'Web Development', description: 'Learn web dev',
-        icon: 'fas fa-code', emoji: '🌐', category: 'technology', difficulty: 'beginner',
-        color: '#667eea', contentDir: 'web-development', hasTypingPractice: 0,
-        modes: '["fast-track","full-course"]', totalDays: '{"fast-track":10,"full-course":20}',
-        isActive: 1,
-      }],
+      rows: [
+        {
+          id: 'web-development',
+          title: 'Web Development',
+          description: 'Learn web dev',
+          icon: 'fas fa-code',
+          emoji: '🌐',
+          category: 'technology',
+          difficulty: 'beginner',
+          color: '#667eea',
+          contentDir: 'web-development',
+          hasTypingPractice: 0,
+          modes: '["fast-track","full-course"]',
+          totalDays: '{"fast-track":10,"full-course":20}',
+          isActive: 1,
+        },
+      ],
     });
     // getEnrollments
     mockQuery.mockResolvedValueOnce({ rows: [{ courseId: 'web-development' }] });
     // getAllTopicProgress
     mockQuery.mockResolvedValueOnce({ rows: [] });
 
-    const res = await request(createApp())
-      .get('/api/courses')
-      .set('Authorization', `Bearer ${token}`);
+    const res = await request(createApp()).get('/api/courses').set('Authorization', `Bearer ${token}`);
 
     expect(res.status).toBe(200);
     expect(res.body.courses).toHaveLength(1);

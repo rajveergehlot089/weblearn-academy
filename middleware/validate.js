@@ -9,7 +9,7 @@ function validate(schema) {
     const result = schema.safeParse(req.body);
     if (!result.success) {
       const issues = result.error.issues || result.error.errors || [];
-      const errors = issues.map(e => `${e.path.join('.')}: ${e.message}`);
+      const errors = issues.map((e) => `${e.path.join('.')}: ${e.message}`);
       return res.status(400).json({ error: 'Validation failed', details: errors });
     }
     req.body = result.data;
@@ -23,7 +23,8 @@ function validate(schema) {
 const registerSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters').max(100).trim(),
   email: z.string().trim().email('Invalid email address').toLowerCase(),
-  password: z.string()
+  password: z
+    .string()
     .min(8, 'Password must be at least 8 characters')
     .max(128, 'Password must be at most 128 characters')
     .regex(/[A-Z]/, 'Password must contain at least one uppercase letter')
@@ -37,10 +38,12 @@ const loginSchema = z.object({
   password: z.string().min(1, 'Password is required'),
 });
 
-const preferencesSchema = z.object({
-  mode: z.enum(['fast-track', 'full-course']).optional(),
-  theme: z.enum(['light', 'dark']).optional(),
-}).refine(data => Object.keys(data).length > 0, { message: 'At least one preference must be provided' });
+const preferencesSchema = z
+  .object({
+    mode: z.enum(['fast-track', 'full-course']).optional(),
+    theme: z.enum(['light', 'dark']).optional(),
+  })
+  .refine((data) => Object.keys(data).length > 0, { message: 'At least one preference must be provided' });
 
 // ============================================
 // Course Schemas
@@ -50,29 +53,46 @@ const courseIdSchema = z.object({
 });
 
 const createCourseSchema = z.object({
-  id: z.string().regex(/^[a-z0-9-]+$/, 'Course ID must be lowercase alphanumeric with hyphens').min(3).max(50),
+  id: z
+    .string()
+    .regex(/^[a-z0-9-]+$/, 'Course ID must be lowercase alphanumeric with hyphens')
+    .min(3)
+    .max(50),
   title: z.string().min(2).max(200).trim(),
   description: z.string().max(2000).optional().default(''),
   icon: z.string().max(50).optional().default('fas fa-book'),
   emoji: z.string().max(4).optional().default('\ud83d\udcda'),
   category: z.enum(['technology', 'typing', 'language', 'soft-skills', 'general']).optional().default('general'),
   difficulty: z.enum(['beginner', 'intermediate', 'advanced']).optional().default('beginner'),
-  color: z.string().regex(/^#[0-9A-Fa-f]{6}$/).optional().default('#667eea'),
+  color: z
+    .string()
+    .regex(/^#[0-9A-Fa-f]{6}$/)
+    .optional()
+    .default('#667eea'),
 });
 
-const updateCourseSchema = z.object({
-  title: z.string().min(2).max(200).trim().optional(),
-  description: z.string().max(2000).optional(),
-  icon: z.string().max(50).optional(),
-  emoji: z.string().max(4).optional(),
-  category: z.enum(['technology', 'typing', 'language', 'soft-skills', 'general']).optional(),
-  difficulty: z.enum(['beginner', 'intermediate', 'advanced']).optional(),
-  color: z.string().regex(/^#[0-9A-Fa-f]{6}$/).optional(),
-  isActive: z.boolean().optional(),
-}).refine(data => Object.keys(data).length > 0, { message: 'At least one field must be provided' });
+const updateCourseSchema = z
+  .object({
+    title: z.string().min(2).max(200).trim().optional(),
+    description: z.string().max(2000).optional(),
+    icon: z.string().max(50).optional(),
+    emoji: z.string().max(4).optional(),
+    category: z.enum(['technology', 'typing', 'language', 'soft-skills', 'general']).optional(),
+    difficulty: z.enum(['beginner', 'intermediate', 'advanced']).optional(),
+    color: z
+      .string()
+      .regex(/^#[0-9A-Fa-f]{6}$/)
+      .optional(),
+    isActive: z.boolean().optional(),
+  })
+  .refine((data) => Object.keys(data).length > 0, { message: 'At least one field must be provided' });
 
 const createTopicSchema = z.object({
-  id: z.string().regex(/^[a-z0-9-]+$/, 'Topic ID must be lowercase alphanumeric with hyphens').min(3).max(50),
+  id: z
+    .string()
+    .regex(/^[a-z0-9-]+$/, 'Topic ID must be lowercase alphanumeric with hyphens')
+    .min(3)
+    .max(50),
   title: z.string().min(2).max(200).trim(),
   group: z.string().max(100).optional().default('general'),
   icon: z.string().max(4).optional().default('\ud83d\udcdd'),
@@ -83,13 +103,21 @@ const createTopicSchema = z.object({
 // ============================================
 // Progress Schemas
 // ============================================
-const topicProgressSchema = z.object({
-  courseId: z.string().min(1).max(100).optional(),
-  quickDone: z.boolean().optional(),
-  deepDone: z.boolean().optional(),
-}).refine(data => data.quickDone !== undefined || data.deepDone !== undefined || Object.keys(data).filter(k => k !== 'courseId').length > 0, {
-  message: 'At least one progress field must be provided',
-});
+const topicProgressSchema = z
+  .object({
+    courseId: z.string().min(1).max(100).optional(),
+    quickDone: z.boolean().optional(),
+    deepDone: z.boolean().optional(),
+  })
+  .refine(
+    (data) =>
+      data.quickDone !== undefined ||
+      data.deepDone !== undefined ||
+      Object.keys(data).filter((k) => k !== 'courseId').length > 0,
+    {
+      message: 'At least one progress field must be provided',
+    },
+  );
 
 const typingScoreSchema = z.object({
   courseId: z.string().min(1, 'Course ID is required'),
@@ -119,11 +147,13 @@ const dailyLogSchema = z.object({
 // ============================================
 // Admin Schemas
 // ============================================
-const adminUpdateUserSchema = z.object({
-  name: z.string().min(2).max(100).trim().optional(),
-  email: z.string().trim().email().toLowerCase().optional(),
-  role: z.enum(['customer', 'admin']).optional(),
-}).refine(data => Object.keys(data).length > 0, { message: 'At least one field must be provided' });
+const adminUpdateUserSchema = z
+  .object({
+    name: z.string().min(2).max(100).trim().optional(),
+    email: z.string().trim().email().toLowerCase().optional(),
+    role: z.enum(['customer', 'admin']).optional(),
+  })
+  .refine((data) => Object.keys(data).length > 0, { message: 'At least one field must be provided' });
 
 const adminRoleSchema = z.object({
   role: z.enum(['customer', 'admin']),
@@ -172,7 +202,8 @@ const forgotPasswordSchema = z.object({
 
 const resetPasswordSchema = z.object({
   token: z.string().min(1),
-  password: z.string()
+  password: z
+    .string()
     .min(8, 'Password must be at least 8 characters')
     .max(128)
     .regex(/[A-Z]/, 'Password must contain at least one uppercase letter')

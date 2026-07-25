@@ -9,12 +9,15 @@ const logger = require('../utils/logger');
 // --- In-memory fallback ---
 const attempts = new Map();
 
-setInterval(() => {
-  const now = Date.now();
-  for (const [key, record] of attempts) {
-    if (now > record.resetAt) attempts.delete(key);
-  }
-}, 5 * 60 * 1000);
+setInterval(
+  () => {
+    const now = Date.now();
+    for (const [key, record] of attempts) {
+      if (now > record.resetAt) attempts.delete(key);
+    }
+  },
+  5 * 60 * 1000,
+);
 
 // --- Redis backend (Upstash) ---
 let redisLimiter = null;

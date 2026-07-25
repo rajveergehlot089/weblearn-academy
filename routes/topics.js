@@ -22,7 +22,7 @@ function readContentJSON(filePath) {
 // GET /api/topics - List all topics for active course
 router.get('/', auth, mediumCache, async (req, res) => {
   try {
-    const courseId = req.query.courseId || await db.getActiveCourse(req.user.id) || 'web-development';
+    const courseId = req.query.courseId || (await db.getActiveCourse(req.user.id)) || 'web-development';
     const course = await db.getCourseById(courseId);
     if (!course) return res.status(404).json({ error: 'Course not found' });
 
@@ -30,7 +30,7 @@ router.get('/', auth, mediumCache, async (req, res) => {
     const topics = Array.isArray(contentIndex) ? contentIndex : [];
     const mode = req.user.mode || 'fast-track';
 
-    const topicList = topics.map(t => ({
+    const topicList = topics.map((t) => ({
       id: t.id,
       title: t.title,
       description: t.description,
@@ -55,13 +55,13 @@ router.get('/', auth, mediumCache, async (req, res) => {
 // GET /api/topics/:id - Get single topic content
 router.get('/:id', auth, mediumCache, async (req, res) => {
   try {
-    const courseId = await db.getActiveCourse(req.user.id) || 'web-development';
+    const courseId = (await db.getActiveCourse(req.user.id)) || 'web-development';
     const course = await db.getCourseById(courseId);
     if (!course) return res.status(404).json({ error: 'Course not found' });
 
     const contentIndex = require(path.join(__dirname, '..', 'content', course.contentDir, 'index.js'));
     const topics = Array.isArray(contentIndex) ? contentIndex : [];
-    const topic = topics.find(t => t.id === req.params.id);
+    const topic = topics.find((t) => t.id === req.params.id);
     if (!topic) return res.status(404).json({ error: 'Topic not found' });
 
     const contentDir = path.join(__dirname, '..', 'content', course.contentDir, req.params.id);

@@ -19,11 +19,23 @@ function createRes() {
     body: null,
     headers: {},
     _cookies: [],
-    setHeader(name, value) { this.headers[name] = value; },
-    set(name, value) { this.headers[name] = value; },
-    cookie(name, value, opts) { this._cookies.push({ name, value, opts }); },
-    status(code) { this.statusCode = code; return this; },
-    json(data) { this.body = data; return this; },
+    setHeader(name, value) {
+      this.headers[name] = value;
+    },
+    set(name, value) {
+      this.headers[name] = value;
+    },
+    cookie(name, value, opts) {
+      this._cookies.push({ name, value, opts });
+    },
+    status(code) {
+      this.statusCode = code;
+      return this;
+    },
+    json(data) {
+      this.body = data;
+      return this;
+    },
   };
   return res;
 }
@@ -35,7 +47,9 @@ describe('CSRF Middleware', () => {
       const res = createRes();
       let nextCalled = false;
 
-      csrfInit(req, res, () => { nextCalled = true; });
+      csrfInit(req, res, () => {
+        nextCalled = true;
+      });
 
       expect(nextCalled).toBe(true);
       expect(res._cookies.length).toBe(1);
@@ -48,7 +62,9 @@ describe('CSRF Middleware', () => {
       const res = createRes();
       let nextCalled = false;
 
-      csrfInit(req, res, () => { nextCalled = true; });
+      csrfInit(req, res, () => {
+        nextCalled = true;
+      });
 
       expect(nextCalled).toBe(true);
       expect(res._cookies.length).toBe(0);
@@ -60,7 +76,9 @@ describe('CSRF Middleware', () => {
       const res = createRes();
       let nextCalled = false;
 
-      csrfInit(req, res, () => { nextCalled = true; });
+      csrfInit(req, res, () => {
+        nextCalled = true;
+      });
 
       expect(nextCalled).toBe(true);
       expect(res._cookies.length).toBe(0);
@@ -74,7 +92,9 @@ describe('CSRF Middleware', () => {
       const res = createRes();
       let nextCalled = false;
 
-      csrfProtect(req, res, () => { nextCalled = true; });
+      csrfProtect(req, res, () => {
+        nextCalled = true;
+      });
 
       expect(nextCalled).toBe(true);
     });
@@ -84,7 +104,9 @@ describe('CSRF Middleware', () => {
       const res = createRes();
       let nextCalled = false;
 
-      csrfProtect(req, res, () => { nextCalled = true; });
+      csrfProtect(req, res, () => {
+        nextCalled = true;
+      });
 
       expect(nextCalled).toBe(true);
     });
@@ -94,7 +116,9 @@ describe('CSRF Middleware', () => {
       const res = createRes();
       let nextCalled = false;
 
-      csrfProtect(req, res, () => { nextCalled = true; });
+      csrfProtect(req, res, () => {
+        nextCalled = true;
+      });
 
       expect(nextCalled).toBe(true);
     });
@@ -137,7 +161,9 @@ describe('CSRF Middleware', () => {
       const res = createRes();
       let nextCalled = false;
 
-      csrfProtect(req, res, () => { nextCalled = true; });
+      csrfProtect(req, res, () => {
+        nextCalled = true;
+      });
 
       expect(nextCalled).toBe(true);
     });
