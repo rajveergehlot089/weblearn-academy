@@ -10,19 +10,23 @@ function clean(val, fallback) {
   return String(val || fallback).replace(/^\uFEFF/, '').trim();
 }
 
-function needsSSL() {
-  return (
-    process.env.PGSSL === 'true' ||
-    process.env.NODE_ENV === 'production' ||
-    (process.env.PGHOST || '').includes('neon')
-  );
+function shouldUseSSL() {
+  // Always use SSL on Vercel (Neon requires it)
+  if (process.env.VERCEL || process.env.VERCEL_ENV) return true;
+  // Explicit SSL requested
+  if (process.env.PGSSL === 'true') return true;
+  // Production environment
+  if (process.env.NODE_ENV === 'production') return true;
+  // Neon host detected
+  if ((process.env.PGHOST || '').includes('neon')) return true;
+  return false;
 }
 
 function buildConnection() {
   if (process.env.DATABASE_URL) {
     let url = process.env.DATABASE_URL;
     // Ensure sslmode=require for Neon connections
-    if (needsSSL() && !url.includes('sslmode=')) {
+    if (shouldUseSSL() && !url.includes('sslmode=')) {
       url += (url.includes('?') ? '&' : '?') + 'sslmode=require';
     }
     return url;
@@ -34,7 +38,7 @@ function buildConnection() {
     user: process.env.PGUSER,
     database: process.env.PGDATABASE,
     password: process.env.PGPASSWORD,
-    ssl: needsSSL() ? { rejectUnauthorized: false } : false,
+    ssl: shouldUseSSL() ? { rejectUnauthorized: false } : false,
   };
 }
 
@@ -52,6 +56,7 @@ async function migrate() {
     process.exit(0);
   }
 
+  console.log(`Running migrations (SSL: ${shouldUseSSL() ? 'enabled' : 'disabled'})...`);
   const db = knex(config);
   try {
     const [batchNo, migrations] = await db.migrate.latest();
