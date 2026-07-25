@@ -6,25 +6,43 @@
 const knex = require('knex');
 const path = require('path');
 
-const env = process.env.NODE_ENV || 'production';
+function clean(val, fallback) {
+  return String(val || fallback).replace(/^\uFEFF/, '').trim();
+}
 
-const config = {
-  client: 'pg',
-  connection: {
+// Support both individual PG* vars and DATABASE_URL (Neon)
+let connection;
+if (process.env.DATABASE_URL) {
+  connection = {
+    connectionString: process.env.DATABASE_URL,
+    ssl: { rejectUnauthorized: false },
+  };
+} else {
+  connection = {
     host: process.env.PGHOST,
-    port: parseInt(process.env.PGPORT || '5432'),
+    port: parseInt(clean(process.env.PGPORT, '5432'), 10),
     user: process.env.PGUSER,
     database: process.env.PGDATABASE,
     password: process.env.PGPASSWORD,
-    ssl: process.env.PGSSL === 'true' || env === 'production' ? { rejectUnauthorized: false } : false,
-  },
+    ssl:
+      process.env.PGSSL === 'true' ||
+      process.env.NODE_ENV === 'production' ||
+      (process.env.PGHOST || '').includes('neon')
+        ? { rejectUnauthorized: false }
+        : false,
+  };
+}
+
+const config = {
+  client: 'pg',
+  connection,
   migrations: {
     directory: path.join(__dirname, '..', 'migrations'),
   },
 };
 
 async function migrate() {
-  if (!process.env.PGHOST || !process.env.PGDATABASE) {
+  if (!process.env.DATABASE_URL && (!process.env.PGHOST || !process.env.PGDATABASE)) {
     console.log('Skipping migrations: database environment variables not set');
     process.exit(0);
   }
