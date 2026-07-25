@@ -23,6 +23,7 @@
     { "src": "/(.*\\.html)", "dest": "/public/$1" },
     { "src": "/(.*\\.(png|jpg|svg|ico|woff|woff2|ttf|eot))", "dest": "/public/$1" },
     { "src": "/styles/(.*)", "dest": "/public/styles/$1" },
+    { "src": "/analysis", "dest": "/public/analysis.html" },
     { "src": "/(.*)", "dest": "/public/index.html" }
   ]
 }

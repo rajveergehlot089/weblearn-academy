@@ -136,6 +136,11 @@ app.use('/api/analysis', require('./routes/analysis'));
 // ============================================
 // SPA Catch-All (must be after API routes)
 // ============================================
+// Serve analysis.html for /analysis route
+app.get('/analysis', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'analysis.html'));
+});
+
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });

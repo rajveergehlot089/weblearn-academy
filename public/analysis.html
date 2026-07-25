@@ -681,6 +681,30 @@
     let currentTab = 'overview';
     let skills = [];
 
+    // Auth helper — reads token and CSRF from server
+    let _csrfToken = '';
+    const _token = localStorage.getItem('wla_token');
+
+    async function apiFetch(path, options = {}) {
+      const headers = { 'Content-Type': 'application/json', ...options.headers };
+      if (_token) headers['Authorization'] = `Bearer ${_token}`;
+      if (!['GET', 'HEAD'].includes(options.method || 'GET')) {
+        headers['X-CSRF-Token'] = _csrfToken;
+      }
+      const res = await fetch(path, { ...options, headers, credentials: 'same-origin' });
+      const newCsrf = res.headers.get('X-CSRF-Token');
+      if (newCsrf) _csrfToken = newCsrf;
+      return res;
+    }
+
+    // Redirect to login if no token, otherwise fetch CSRF cookie via GET
+    if (!_token) {
+      window.location.href = '/';
+    } else {
+      // Make a GET request so the server sets the CSRF cookie and returns the token in header
+      apiFetch('/api/auth/profile').then(r => {}).catch(() => {});
+    }
+
     // Skills input handler
     document.getElementById('skillInput').addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
@@ -724,7 +748,7 @@
       showLoading();
 
       try {
-        const response = await fetch('/api/analysis/generate', {
+        const response = await apiFetch('/api/analysis/generate', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -1055,7 +1079,7 @@
       if (!currentAnalysis) return;
 
       try {
-        const response = await fetch('/api/analysis/report', {
+        const response = await apiFetch('/api/analysis/report', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ analysis: currentAnalysis, format })

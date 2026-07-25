@@ -938,7 +938,9 @@ function initThreeBackground() {
     transparent: true, side: THREE.DoubleSide, depthWrite: false, blending: THREE.AdditiveBlending });
   const ribbon = new THREE.Mesh(rGeo, rMat); ribbon.position.set(0, -5, -10); ribbon.rotation.x = -0.3; scene.add(ribbon);
   document.addEventListener('mousemove', (e) => { mouse.x = (e.clientX / window.innerWidth) * 2 - 1; mouse.y = -(e.clientY / window.innerHeight) * 2 + 1; });
+  let _threeActive = true;
   (function animate() {
+    if (!_threeActive) return;
     requestAnimationFrame(animate);
     const t = clock.getElapsedTime();
     floatingObjects.forEach(o => { o.mesh.rotation.x += o.rotSpeed.x; o.mesh.rotation.y += o.rotSpeed.y; o.mesh.rotation.z += o.rotSpeed.z; o.mesh.position.y = o.origY + Math.sin(t * o.floatSpeed + o.phase) * o.floatAmp; });
@@ -951,6 +953,14 @@ function initThreeBackground() {
     pl2.position.x = Math.cos(t * 0.4) * 15; pl2.position.y = Math.sin(t * 0.3) * 10;
     renderer.render(scene, camera);
   })();
+
+  // Pause animation when login screen is hidden
+  const observer = new MutationObserver(() => {
+    const loginScreen = document.getElementById('login-screen');
+    _threeActive = loginScreen && !loginScreen.classList.contains('hidden');
+  });
+  const loginScreen = document.getElementById('login-screen');
+  if (loginScreen) observer.observe(loginScreen, { attributes: true, attributeFilter: ['class'] });
   window.addEventListener('resize', () => { camera.aspect = window.innerWidth / window.innerHeight; camera.updateProjectionMatrix(); renderer.setSize(window.innerWidth, window.innerHeight); });
 }
 
