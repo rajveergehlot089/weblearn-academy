@@ -10,41 +10,49 @@ function clean(val, fallback) {
   return String(val || fallback).replace(/^\uFEFF/, '').trim();
 }
 
-function shouldUseSSL() {
-  if (process.env.VERCEL || process.env.VERCEL_ENV) return true;
-  if (process.env.PGSSL === 'true') return true;
-  if (process.env.NODE_ENV === 'production') return true;
-  if ((process.env.PGHOST || '').includes('neon')) return true;
-  return false;
-}
+function buildConnection() {
+  // Use DATABASE_URL when available (Neon provides this with sslmode embedded)
+  const dbUrl = process.env.DATABASE_URL || process.env.DATABASE_URL_UNPOOLED;
+  if (dbUrl) {
+    // Ensure sslmode=require is present
+    let url = dbUrl;
+    if (!url.includes('sslmode=')) {
+      url += (url.includes('?') ? '&' : '?') + 'sslmode=require';
+    }
+    return url;
+  }
 
-// Always use individual PG* vars with explicit SSL config
-// (connection string SSL handling is unreliable with knex/pg)
-const useSSL = shouldUseSSL();
-const connection = {
-  host: process.env.PGHOST,
-  port: parseInt(clean(process.env.PGPORT, '5432'), 10),
-  user: process.env.PGUSER,
-  database: process.env.PGDATABASE,
-  password: process.env.PGPASSWORD,
-  ssl: useSSL ? { rejectUnauthorized: false } : false,
-};
+  // Fall back to individual PG* vars
+  const useSSL =
+    process.env.PGSSL === 'true' ||
+    process.env.NODE_ENV === 'production' ||
+    (process.env.PGHOST || '').includes('neon');
+
+  return {
+    host: process.env.PGHOST,
+    port: parseInt(clean(process.env.PGPORT, '5432'), 10),
+    user: process.env.PGUSER,
+    database: process.env.PGDATABASE,
+    password: process.env.PGPASSWORD,
+    ssl: useSSL ? { rejectUnauthorized: false } : false,
+  };
+}
 
 const config = {
   client: 'pg',
-  connection,
+  connection: buildConnection(),
   migrations: {
     directory: path.join(__dirname, '..', 'migrations'),
   },
 };
 
 async function migrate() {
-  if (!process.env.PGHOST || !process.env.PGDATABASE) {
+  if (!process.env.DATABASE_URL && !process.env.PGHOST) {
     console.log('Skipping migrations: database environment variables not set');
     process.exit(0);
   }
 
-  console.log(`Running migrations (SSL: ${useSSL ? 'enabled' : 'disabled'}, host: ${process.env.PGHOST})...`);
+  console.log('Running migrations...');
   const db = knex(config);
   try {
     const [batchNo, migrations] = await db.migrate.latest();
