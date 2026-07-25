@@ -13,10 +13,7 @@ function clean(val, fallback) {
 // Support both individual PG* vars and DATABASE_URL (Neon)
 let connection;
 if (process.env.DATABASE_URL) {
-  connection = {
-    connectionString: process.env.DATABASE_URL,
-    ssl: { rejectUnauthorized: false },
-  };
+  connection = process.env.DATABASE_URL;
 } else {
   connection = {
     host: process.env.PGHOST,
