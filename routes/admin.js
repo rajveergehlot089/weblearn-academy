@@ -6,6 +6,7 @@ const router = express.Router();
 const adminAuth = require('../middleware/admin');
 const db = require('../utils/db');
 const { validate, adminUpdateUserSchema, adminRoleSchema, paginationSchema } = require('../middleware/validate');
+const logger = require('../utils/logger');
 
 // ============================================
 // GET /api/admin/dashboard
@@ -40,7 +41,7 @@ router.get('/dashboard', adminAuth, async (req, res) => {
       avgCompletion,
     });
   } catch (err) {
-    console.error('Admin dashboard error:', err);
+    logger.error({ err, requestId: req.id }, 'Admin dashboard error');
     res.status(500).json({ error: 'Failed to load dashboard' });
   }
 });
@@ -95,7 +96,7 @@ router.get('/users', adminAuth, async (req, res) => {
       pagination: { page, limit, total, totalPages },
     });
   } catch (err) {
-    console.error('Admin users error:', err);
+    logger.error({ err, requestId: req.id }, 'Admin users error');
     res.status(500).json({ error: 'Failed to load users' });
   }
 });
@@ -125,7 +126,7 @@ router.get('/stats', adminAuth, async (req, res) => {
       totalTopics: topicStats.length,
     });
   } catch (err) {
-    console.error('Admin stats error:', err);
+    logger.error({ err, requestId: req.id }, 'Admin stats error');
     res.status(500).json({ error: 'Failed to load stats' });
   }
 });
@@ -147,7 +148,7 @@ router.get('/users/:id', adminAuth, async (req, res) => {
       progressCount: progress.length,
     });
   } catch (err) {
-    console.error('Admin get user error:', err);
+    logger.error({ err, requestId: req.id }, 'Admin get user error');
     res.status(500).json({ error: 'Failed to get user' });
   }
 });
@@ -165,7 +166,7 @@ router.put('/users/:id', adminAuth, validate(adminUpdateUserSchema), async (req,
 
     res.json({ success: true });
   } catch (err) {
-    console.error('Admin update user error:', err);
+    logger.error({ err, requestId: req.id }, 'Admin update user error');
     res.status(500).json({ error: 'Failed to update user' });
   }
 });
@@ -186,7 +187,7 @@ router.put('/users/:id/role', adminAuth, validate(adminRoleSchema), async (req, 
     await db.updateUserRole(req.params.id, role);
     res.json({ success: true });
   } catch (err) {
-    console.error('Admin update role error:', err);
+    logger.error({ err, requestId: req.id }, 'Admin update role error');
     res.status(500).json({ error: 'Failed to update role' });
   }
 });
@@ -208,7 +209,7 @@ router.delete('/users/:id', adminAuth, async (req, res) => {
     await db.deleteUser(req.params.id);
     res.json({ success: true });
   } catch (err) {
-    console.error('Admin delete user error:', err);
+    logger.error({ err, requestId: req.id }, 'Admin delete user error');
     res.status(500).json({ error: 'Failed to delete user' });
   }
 });

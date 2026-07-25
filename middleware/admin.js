@@ -3,6 +3,7 @@
 // ============================================
 const jwt = require('jsonwebtoken');
 const db = require('../utils/db');
+const logger = require('../utils/logger');
 
 async function adminAuth(req, res, next) {
   const token = req.headers.authorization?.split(' ')[1];

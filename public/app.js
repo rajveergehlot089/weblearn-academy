@@ -51,7 +51,7 @@ const App = {
   },
 
   show(name) {
-    ['login', 'course-select', 'dashboard', 'admin'].forEach(s => {
+    ['login', 'course-select', 'dashboard', 'admin', 'error'].forEach(s => {
       const el = document.getElementById(s + '-screen');
       if (el) el.classList.add('hidden');
     });
@@ -68,7 +68,11 @@ const App = {
         if (user.role === 'admin') { showAdminDashboard(); return; }
         if (this.state.courseId) { showDashboard(); } else { showCourseSelection(); }
         return;
-      } catch {
+      } catch (err) {
+        if (err.message && err.message.includes('Failed to fetch')) {
+          this.show('error');
+          return;
+        }
         localStorage.removeItem('wla_token');
         this.state.token = null;
       }

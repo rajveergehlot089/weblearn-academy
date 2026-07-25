@@ -1,0 +1,15 @@
+node_modules/
+__tests__/
+.git/
+*.log
+.DS_Store
+Thumbs.db
+.vercel/
+data/
+check-project.js
+generate-*.js
+generate-*.py
+WebLearn_Academy_Documentation.pdf
+WebLearn_Academy_Visual_Documentation.pdf
+api/auth-test.js
+api/dbtest.js

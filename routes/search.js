@@ -3,6 +3,7 @@ const router = express.Router();
 const auth = require('../middleware/auth');
 const rateLimit = require('../middleware/rateLimit');
 const researchEngine = require('../utils/researchEngine');
+const logger = require('../utils/logger');
 
 // GET /api/search?q=<query>&context=<topicId>
 router.get('/', auth, rateLimit(20, 60 * 1000), async (req, res) => {

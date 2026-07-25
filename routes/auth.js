@@ -12,10 +12,32 @@ const rateLimit = require('../middleware/rateLimit');
 const db = require('../utils/db');
 const { validate, registerSchema, loginSchema, preferencesSchema, forgotPasswordSchema, resetPasswordSchema } = require('../middleware/validate');
 const { sendVerificationEmail, sendPasswordResetEmail } = require('../utils/email');
+const logger = require('../utils/logger');
 
 const MAX_FAILED_ATTEMPTS = 5;
 const LOCKOUT_MINUTES = 15;
 
+/**
+ * @swagger
+ * /auth/register:
+ *   post:
+ *     tags: [Auth]
+ *     summary: Register a new user
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [name, email, password]
+ *             properties:
+ *               name: { type: string, minLength: 2 }
+ *               email: { type: string, format: email }
+ *               password: { type: string, minLength: 8 }
+ *     responses:
+ *       200: { description: Registration successful, returns JWT }
+ *       400: { description: Email already registered or validation error }
+ */
 // POST /api/auth/register
 router.post('/register', rateLimit(10, 15 * 60 * 1000), validate(registerSchema), async (req, res) => {
   try {
@@ -44,7 +66,7 @@ router.post('/register', rateLimit(10, 15 * 60 * 1000), validate(registerSchema)
 
     // Send verification email (non-blocking)
     sendVerificationEmail(email, verifyToken).catch(err => {
-      console.error('Failed to send verification email:', err.message);
+      logger.error({ err, email }, 'Failed to send verification email');
     });
 
     res.json({
@@ -52,11 +74,32 @@ router.post('/register', rateLimit(10, 15 * 60 * 1000), validate(registerSchema)
       user: { id, name, email, role: 'customer', emailVerified: false },
     });
   } catch (error) {
-    console.error('Register error:', error);
+    logger.error({ err: error, requestId: req.id }, 'Register error');
     res.status(500).json({ error: 'Server error' });
   }
 });
 
+/**
+ * @swagger
+ * /auth/login:
+ *   post:
+ *     tags: [Auth]
+ *     summary: Login with email and password
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required: [email, password]
+ *             properties:
+ *               email: { type: string, format: email }
+ *               password: { type: string }
+ *     responses:
+ *       200: { description: Login successful, returns JWT and user }
+ *       401: { description: Invalid credentials }
+ *       423: { description: Account locked }
+ */
 // POST /api/auth/login
 router.post('/login', rateLimit(20, 15 * 60 * 1000), validate(loginSchema), async (req, res) => {
   try {
@@ -104,7 +147,7 @@ router.post('/login', rateLimit(20, 15 * 60 * 1000), validate(loginSchema), asyn
 
     res.json({ token, user: { id: user.id, name: user.name, email: user.email, role: user.role || 'customer' } });
   } catch (error) {
-    console.error('Login error:', error);
+    logger.error({ err: error, requestId: req.id }, 'Login error');
     res.status(500).json({ error: 'Server error' });
   }
 });
@@ -130,7 +173,7 @@ router.post('/verify-email', async (req, res) => {
     await db.deleteVerificationToken(token);
     res.json({ success: true, message: 'Email verified successfully' });
   } catch (error) {
-    console.error('Verify email error:', error);
+    logger.error({ err: error, requestId: req.id }, 'Verify email error');
     res.status(500).json({ error: 'Server error' });
   }
 });
@@ -152,12 +195,12 @@ router.post('/forgot-password', rateLimit(3, 15 * 60 * 1000), validate(forgotPas
 
     // Send password reset email (non-blocking)
     sendPasswordResetEmail(user.email, resetToken).catch(err => {
-      console.error('Failed to send password reset email:', err.message);
+      logger.error({ err, email: user.email }, 'Failed to send password reset email');
     });
 
     res.json({ success: true, message: 'If the email exists, a reset link has been sent' });
   } catch (error) {
-    console.error('Forgot password error:', error);
+    logger.error({ err: error, requestId: req.id }, 'Forgot password error');
     res.status(500).json({ error: 'Server error' });
   }
 });
@@ -186,7 +229,7 @@ router.post('/reset-password', rateLimit(5, 15 * 60 * 1000), validate(resetPassw
     await db.deleteResetToken(token);
     res.json({ success: true, message: 'Password reset successfully' });
   } catch (error) {
-    console.error('Reset password error:', error);
+    logger.error({ err: error, requestId: req.id }, 'Reset password error');
     res.status(500).json({ error: 'Server error' });
   }
 });
@@ -222,22 +265,45 @@ router.post('/change-password', auth, rateLimit(5, 15 * 60 * 1000), async (req, 
 
     res.json({ success: true, message: 'Password changed successfully' });
   } catch (error) {
-    console.error('Change password error:', error);
+    logger.error({ err: error, requestId: req.id }, 'Change password error');
     res.status(500).json({ error: 'Server error' });
   }
 });
 
+/**
+ * @swagger
+ * /auth/logout:
+ *   post:
+ *     tags: [Auth]
+ *     summary: Logout (revoke current token)
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200: { description: Logged out successfully }
+ */
 // POST /api/auth/logout (revoke current token)
 router.post('/logout', auth, async (req, res) => {
   try {
     await db.incrementTokenVersion(req.user.id);
     res.json({ success: true, message: 'Logged out successfully' });
   } catch (error) {
-    console.error('Logout error:', error);
+    logger.error({ err: error, requestId: req.id }, 'Logout error');
     res.status(500).json({ error: 'Server error' });
   }
 });
 
+/**
+ * @swagger
+ * /auth/profile:
+ *   get:
+ *     tags: [Auth]
+ *     summary: Get current user profile
+ *     security:
+ *       - bearerAuth: []
+ *     responses:
+ *       200: { description: User profile }
+ *       401: { description: Not authenticated }
+ */
 // GET /api/auth/profile
 router.get('/profile', auth, async (req, res) => {
   try {
@@ -255,7 +321,7 @@ router.get('/profile', auth, async (req, res) => {
       },
     });
   } catch (error) {
-    console.error('Profile error:', error);
+    logger.error({ err: error, requestId: req.id }, 'Profile error');
     res.status(500).json({ error: 'Server error' });
   }
 });
@@ -272,7 +338,7 @@ router.put('/preferences', auth, validate(preferencesSchema), async (req, res) =
 
     res.json({ ok: true });
   } catch (error) {
-    console.error('Preferences error:', error);
+    logger.error({ err: error, requestId: req.id }, 'Preferences error');
     res.status(500).json({ error: 'Server error' });
   }
 });

@@ -8,7 +8,8 @@ function validate(schema) {
   return (req, res, next) => {
     const result = schema.safeParse(req.body);
     if (!result.success) {
-      const errors = result.error.errors.map(e => `${e.path.join('.')}: ${e.message}`);
+      const issues = result.error.issues || result.error.errors || [];
+      const errors = issues.map(e => `${e.path.join('.')}: ${e.message}`);
       return res.status(400).json({ error: 'Validation failed', details: errors });
     }
     req.body = result.data;
@@ -21,7 +22,7 @@ function validate(schema) {
 // ============================================
 const registerSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters').max(100).trim(),
-  email: z.string().email('Invalid email address').toLowerCase().trim(),
+  email: z.string().trim().email('Invalid email address').toLowerCase(),
   password: z.string()
     .min(8, 'Password must be at least 8 characters')
     .max(128, 'Password must be at most 128 characters')
@@ -32,7 +33,7 @@ const registerSchema = z.object({
 });
 
 const loginSchema = z.object({
-  email: z.string().email('Invalid email address').toLowerCase().trim(),
+  email: z.string().trim().email('Invalid email address').toLowerCase(),
   password: z.string().min(1, 'Password is required'),
 });
 
@@ -120,7 +121,7 @@ const dailyLogSchema = z.object({
 // ============================================
 const adminUpdateUserSchema = z.object({
   name: z.string().min(2).max(100).trim().optional(),
-  email: z.string().email().toLowerCase().trim().optional(),
+  email: z.string().trim().email().toLowerCase().optional(),
   role: z.enum(['customer', 'admin']).optional(),
 }).refine(data => Object.keys(data).length > 0, { message: 'At least one field must be provided' });
 
@@ -166,7 +167,7 @@ const paginationSchema = z.object({
 // Password Reset Schemas (for future use)
 // ============================================
 const forgotPasswordSchema = z.object({
-  email: z.string().email('Invalid email address').toLowerCase().trim(),
+  email: z.string().trim().email('Invalid email address').toLowerCase(),
 });
 
 const resetPasswordSchema = z.object({

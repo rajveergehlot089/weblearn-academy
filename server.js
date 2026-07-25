@@ -1,22 +1,39 @@
 require('dotenv').config();
+
+// Sentry error tracking (must be first)
+if (process.env.SENTRY_DSN) {
+  const Sentry = require('@sentry/node');
+  Sentry.init({
+    dsn: process.env.SENTRY_DSN,
+    environment: process.env.NODE_ENV || 'development',
+    tracesSampleRate: process.env.NODE_ENV === 'production' ? 0.1 : 1.0,
+  });
+}
+
 const express = require('express');
 const path = require('path');
 const helmet = require('helmet');
 const cors = require('cors');
 const compression = require('compression');
-const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
 const { initDb } = require('./utils/database');
 const { csrfInit, csrfProtect } = require('./middleware/csrf');
 const { globalLimiter } = require('./middleware/rateLimit');
+const requestLogger = require('./middleware/requestLogger');
+const logger = require('./utils/logger');
+const { runAllCleanups } = require('./utils/cleanup');
+const { setupSwagger } = require('./middleware/swagger');
 
 const app = express();
 const PORT = process.env.PORT || 2007;
 const isProd = process.env.NODE_ENV === 'production';
 
+// Trust first proxy (for correct IP detection behind Vercel/load balancer)
+if (isProd) app.set('trust proxy', 1);
+
 // Validate critical env vars
 if (!process.env.JWT_SECRET || process.env.JWT_SECRET.length < 32) {
-  console.error('FATAL: JWT_SECRET must be set and at least 32 characters');
+  logger.fatal('JWT_SECRET must be set and at least 32 characters');
   process.exit(1);
 }
 
@@ -50,7 +67,7 @@ app.use(cors({
   credentials: true,
 }));
 app.use(compression());
-app.use(morgan(isProd ? 'combined' : 'dev'));
+app.use(requestLogger);
 app.use(cookieParser());
 app.use(express.json({ limit: isProd ? '1mb' : '5mb' }));
 app.use(express.urlencoded({ extended: true, limit: '1mb' }));
@@ -88,6 +105,11 @@ app.get('/api/health', async (req, res) => {
 });
 
 // ============================================
+// API Documentation (Swagger)
+// ============================================
+setupSwagger(app);
+
+// ============================================
 // API Routes
 // ============================================
 app.use('/api/auth', require('./routes/auth'));
@@ -108,8 +130,13 @@ app.get('*', (req, res) => {
 // ============================================
 // Error Handler
 // ============================================
+if (process.env.SENTRY_DSN) {
+  const Sentry = require('@sentry/node');
+  app.use(Sentry.Handlers.errorHandler());
+}
+
 app.use((err, req, res, next) => {
-  console.error('Unhandled error:', err);
+  logger.error({ err, requestId: req.id }, 'unhandled error');
   res.status(500).json({ error: 'Internal server error' });
 });
 
@@ -119,7 +146,10 @@ app.use((err, req, res, next) => {
 async function start() {
   try {
     await initDb();
-    console.log('Database initialized');
+    logger.info('Database initialized');
+
+    // Run data cleanup on startup
+    await runAllCleanups();
 
     // Create admin from environment variables if ADMIN_EMAIL is set
     if (process.env.ADMIN_EMAIL && process.env.ADMIN_PASSWORD) {
@@ -131,21 +161,21 @@ async function start() {
         const adminId = uuidv4();
         const adminHash = await hashPassword(process.env.ADMIN_PASSWORD);
         await db.createUser(adminId, 'Admin', process.env.ADMIN_EMAIL, adminHash, 'admin');
-        console.log(`Admin user created: ${process.env.ADMIN_EMAIL}`);
+        logger.info({ email: process.env.ADMIN_EMAIL }, 'Admin user created');
       }
     }
 
     const server = app.listen(PORT, () => {
-      console.log(`WebLearn Academy: http://localhost:${PORT}`);
+      logger.info({ port: PORT }, 'Server started');
     });
 
     // Graceful shutdown
     const shutdown = async (signal) => {
-      console.log(`\n${signal} received. Shutting down gracefully...`);
+      logger.info({ signal }, 'Shutting down gracefully...');
       server.close(() => {
         const { closeDb } = require('./utils/database');
         closeDb().then(() => {
-          console.log('Database connection closed.');
+          logger.info('Database connection closed');
           process.exit(0);
         });
       });
@@ -156,7 +186,7 @@ async function start() {
     process.on('SIGINT', () => shutdown('SIGINT'));
 
   } catch (err) {
-    console.error('Failed to start server:', err);
+    logger.fatal({ err }, 'Failed to start server');
     process.exit(1);
   }
 }

@@ -10,6 +10,7 @@ const analysisEngine = require('../utils/analysisEngine');
 const reportGenerator = require('../utils/reportGenerator');
 const db = require('../utils/db');
 const { validate, analysisGenerateSchema, analysisReportSchema } = require('../middleware/validate');
+const logger = require('../utils/logger');
 
 // POST /api/analysis/generate
 router.post('/generate', auth, validate(analysisGenerateSchema), async (req, res) => {
@@ -44,7 +45,7 @@ router.post('/generate', auth, validate(analysisGenerateSchema), async (req, res
 
     res.json({ id, analysis });
   } catch (error) {
-    console.error('Analysis generation error:', error);
+    logger.error({ err: error, requestId: req.id }, 'Analysis generation error');
     res.status(500).json({ error: 'Failed to generate analysis' });
   }
 });
@@ -76,7 +77,7 @@ router.post('/report', auth, validate(analysisReportSchema), async (req, res) =>
     res.setHeader('Content-Disposition', `attachment; filename="analysis-report.${extension}"`);
     res.send(report);
   } catch (error) {
-    console.error('Report generation error:', error);
+    logger.error({ err: error, requestId: req.id }, 'Report generation error');
     res.status(500).json({ error: 'Failed to generate report' });
   }
 });
@@ -92,7 +93,7 @@ router.get('/history', auth, async (req, res) => {
     }));
     res.json({ history: formatted });
   } catch (error) {
-    console.error('Analysis history error:', error);
+    logger.error({ err: error, requestId: req.id }, 'Analysis history error');
     res.status(500).json({ error: 'Failed to load history' });
   }
 });
@@ -110,7 +111,7 @@ router.get('/:id', auth, async (req, res) => {
       timestamp: item.createdAt,
     });
   } catch (error) {
-    console.error('Get analysis error:', error);
+    logger.error({ err: error, requestId: req.id }, 'Get analysis error');
     res.status(500).json({ error: 'Failed to get analysis' });
   }
 });
@@ -125,7 +126,7 @@ router.delete('/:id', auth, async (req, res) => {
     await db.deleteAnalysis(req.params.id);
     res.json({ success: true });
   } catch (error) {
-    console.error('Delete analysis error:', error);
+    logger.error({ err: error, requestId: req.id }, 'Delete analysis error');
     res.status(500).json({ error: 'Failed to delete analysis' });
   }
 });

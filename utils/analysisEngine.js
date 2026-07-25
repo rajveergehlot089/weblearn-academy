@@ -3,6 +3,8 @@
 // ============================================
 // Processes research data and generates strategic analysis
 
+const logger = require('./logger');
+
 class AnalysisEngine {
   constructor() {
     this.skillDatabase = this.loadSkillDatabase();

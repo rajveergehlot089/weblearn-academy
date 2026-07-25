@@ -8,6 +8,8 @@ const auth = require('../middleware/auth');
 const db = require('../utils/db');
 const rateLimit = require('../middleware/rateLimit');
 const { validate, topicProgressSchema, typingScoreSchema, interviewAttemptSchema, exerciseAttemptSchema, dailyLogSchema } = require('../middleware/validate');
+const logger = require('../utils/logger');
+const { shortCache } = require('../middleware/cacheHeaders');
 
 async function loadCourseTopics(courseId) {
   try {
@@ -19,7 +21,7 @@ async function loadCourseTopics(courseId) {
 }
 
 // GET /api/progress/summary
-router.get('/summary', auth, async (req, res) => {
+router.get('/summary', auth, shortCache, async (req, res) => {
   try {
     const courseId = req.query.courseId || await db.getActiveCourse(req.user.id) || 'web-development';
     const topics = await loadCourseTopics(courseId);
@@ -79,7 +81,7 @@ router.get('/summary', auth, async (req, res) => {
       currentTopicId, typingScores,
     });
   } catch (err) {
-    console.error('Progress summary error:', err);
+    logger.error({ err, requestId: req.id }, 'Progress summary error');
     res.status(500).json({ error: 'Failed to load progress' });
   }
 });
@@ -105,7 +107,7 @@ router.post('/topic/:id', auth, validate(topicProgressSchema), async (req, res) 
 
     res.json({ ok: true });
   } catch (err) {
-    console.error('Update topic progress error:', err);
+    logger.error({ err, requestId: req.id }, 'Update topic progress error');
     res.status(500).json({ error: 'Failed to update progress' });
   }
 });
@@ -119,7 +121,7 @@ router.post('/typing-score', auth, rateLimit(30, 60 * 1000), validate(typingScor
     const score = await db.saveTypingScore(req.user.id, courseId, topicId, wpm, accuracy, timeLimit);
     res.json({ ok: true, score });
   } catch (err) {
-    console.error('Save typing score error:', err);
+    logger.error({ err, requestId: req.id }, 'Save typing score error');
     res.status(500).json({ error: 'Failed to save typing score' });
   }
 });
@@ -134,7 +136,7 @@ router.post('/topic/:id/interview', auth, validate(interviewAttemptSchema), asyn
     await db.recordInterviewAttempt(req.user.id, cid, topicId, questionIndex, correct);
     res.json({ ok: true });
   } catch (err) {
-    console.error('Record interview error:', err);
+    logger.error({ err, requestId: req.id }, 'Record interview error');
     res.status(500).json({ error: 'Failed to record interview attempt' });
   }
 });
@@ -149,7 +151,7 @@ router.post('/topic/:id/exercise', auth, validate(exerciseAttemptSchema), async 
     await db.recordExerciseAttempt(req.user.id, cid, topicId, exerciseIndex, correct);
     res.json({ ok: true });
   } catch (err) {
-    console.error('Record exercise error:', err);
+    logger.error({ err, requestId: req.id }, 'Record exercise error');
     res.status(500).json({ error: 'Failed to record exercise attempt' });
   }
 });
@@ -162,7 +164,7 @@ router.post('/log', auth, validate(dailyLogSchema), async (req, res) => {
     await db.logDailyActivity(req.user.id, today, minutes || 0, topicId);
     res.json({ ok: true });
   } catch (err) {
-    console.error('Log activity error:', err);
+    logger.error({ err, requestId: req.id }, 'Log activity error');
     res.status(500).json({ error: 'Failed to log activity' });
   }
 });

@@ -9,6 +9,8 @@ const auth = require('../middleware/auth');
 const adminAuth = require('../middleware/admin');
 const db = require('../utils/db');
 const { validate, createCourseSchema, updateCourseSchema, createTopicSchema } = require('../middleware/validate');
+const logger = require('../utils/logger');
+const { mediumCache } = require('../middleware/cacheHeaders');
 
 function readContentJSON(filePath) {
   try { return JSON.parse(fs.readFileSync(filePath, 'utf8')); }
@@ -33,7 +35,7 @@ function parseCourseJsonFields(course) {
 // ============================================
 // GET /api/courses - List all active courses
 // ============================================
-router.get('/', auth, async (req, res) => {
+router.get('/', auth, mediumCache, async (req, res) => {
   try {
     const courses = (await db.getAllCourses()).map(parseCourseJsonFields);
 
@@ -67,7 +69,7 @@ router.get('/', auth, async (req, res) => {
 
     res.json({ courses: enriched, activeCourse: active });
   } catch (err) {
-    console.error('Courses list error:', err);
+    logger.error({ err, requestId: req.id }, 'Courses list error');
     res.status(500).json({ error: 'Failed to load courses' });
   }
 });
@@ -84,7 +86,7 @@ router.put('/active-course', auth, async (req, res) => {
     await db.setActiveCourse(req.user.id, courseId);
     res.json({ success: true, activeCourse: courseId });
   } catch (err) {
-    console.error('Set active course error:', err);
+    logger.error({ err, requestId: req.id }, 'Set active course error');
     res.status(500).json({ error: 'Failed to set active course' });
   }
 });
@@ -111,13 +113,18 @@ router.post('/admin/create', adminAuth, validate(createCourseSchema), async (req
 
     await db.createCourse(newCourse);
 
-    const contentDir = path.join(__dirname, '..', 'content', id);
-    if (!fs.existsSync(contentDir)) fs.mkdirSync(contentDir, { recursive: true });
-    fs.writeFileSync(path.join(contentDir, 'index.js'), 'module.exports = [];');
+    // Filesystem operations - graceful fallback for serverless
+    try {
+      const contentDir = path.join(__dirname, '..', 'content', id);
+      if (!fs.existsSync(contentDir)) fs.mkdirSync(contentDir, { recursive: true });
+      fs.writeFileSync(path.join(contentDir, 'index.js'), 'module.exports = [];');
+    } catch (fsErr) {
+      logger.warn({ err: fsErr }, 'Filesystem not writable (expected in serverless). Course created in DB only.');
+    }
 
     res.json({ success: true, course: newCourse });
   } catch (err) {
-    console.error('Create course error:', err);
+    logger.error({ err, requestId: req.id }, 'Create course error');
     res.status(500).json({ error: 'Failed to create course' });
   }
 });
@@ -125,7 +132,7 @@ router.post('/admin/create', adminAuth, validate(createCourseSchema), async (req
 // ============================================
 // GET /api/courses/:courseId - Get course details
 // ============================================
-router.get('/:courseId', auth, async (req, res) => {
+router.get('/:courseId', auth, mediumCache, async (req, res) => {
   try {
     const course = parseCourseJsonFields(await db.getCourseById(req.params.courseId));
     if (!course) return res.status(404).json({ error: 'Course not found' });
@@ -148,7 +155,7 @@ router.get('/:courseId', auth, async (req, res) => {
 
     res.json({ course, topics: enrichedTopics });
   } catch (err) {
-    console.error('Get course error:', err);
+    logger.error({ err, requestId: req.id }, 'Get course error');
     res.status(500).json({ error: 'Failed to load course' });
   }
 });
@@ -156,7 +163,7 @@ router.get('/:courseId', auth, async (req, res) => {
 // ============================================
 // GET /api/courses/:courseId/topics - List topics
 // ============================================
-router.get('/:courseId/topics', auth, async (req, res) => {
+router.get('/:courseId/topics', auth, mediumCache, async (req, res) => {
   try {
     const course = parseCourseJsonFields(await db.getCourseById(req.params.courseId));
     if (!course) return res.status(404).json({ error: 'Course not found' });
@@ -178,7 +185,7 @@ router.get('/:courseId/topics', auth, async (req, res) => {
     enriched.sort((a, b) => a.dayNumber - b.dayNumber);
     res.json({ mode, topics: enriched, courseId: req.params.courseId });
   } catch (err) {
-    console.error('Get topics error:', err);
+    logger.error({ err, requestId: req.id }, 'Get topics error');
     res.status(500).json({ error: 'Failed to load topics' });
   }
 });
@@ -186,7 +193,7 @@ router.get('/:courseId/topics', auth, async (req, res) => {
 // ============================================
 // GET /api/courses/:courseId/topics/:topicId - Get topic content
 // ============================================
-router.get('/:courseId/topics/:topicId', auth, async (req, res) => {
+router.get('/:courseId/topics/:topicId', auth, mediumCache, async (req, res) => {
   try {
     const course = parseCourseJsonFields(await db.getCourseById(req.params.courseId));
     if (!course) return res.status(404).json({ error: 'Course not found' });
@@ -208,7 +215,7 @@ router.get('/:courseId/topics/:topicId', auth, async (req, res) => {
       courseId: req.params.courseId,
     });
   } catch (err) {
-    console.error('Get topic content error:', err);
+    logger.error({ err, requestId: req.id }, 'Get topic content error');
     res.status(500).json({ error: 'Failed to load topic content' });
   }
 });
@@ -231,7 +238,7 @@ router.post('/:courseId/enroll', auth, async (req, res) => {
       activeCourse: active,
     });
   } catch (err) {
-    console.error('Enroll error:', err);
+    logger.error({ err, requestId: req.id }, 'Enroll error');
     res.status(500).json({ error: 'Failed to enroll' });
   }
 });
@@ -248,7 +255,7 @@ router.put('/admin/:courseId', adminAuth, validate(updateCourseSchema), async (r
     const updated = parseCourseJsonFields(await db.getCourseById(req.params.courseId));
     res.json({ success: true, course: updated });
   } catch (err) {
-    console.error('Update course error:', err);
+    logger.error({ err, requestId: req.id }, 'Update course error');
     res.status(500).json({ error: 'Failed to update course' });
   }
 });
@@ -264,7 +271,7 @@ router.delete('/admin/:courseId', adminAuth, async (req, res) => {
     await db.deleteCourse(req.params.courseId);
     res.json({ success: true });
   } catch (err) {
-    console.error('Delete course error:', err);
+    logger.error({ err, requestId: req.id }, 'Delete course error');
     res.status(500).json({ error: 'Failed to delete course' });
   }
 });
@@ -281,39 +288,47 @@ router.post('/admin/:courseId/topics', adminAuth, validate(createTopicSchema), a
     if (!id || !title) return res.status(400).json({ error: 'id and title required' });
 
     const topicDir = path.join(__dirname, '..', 'content', course.contentDir, id);
-    if (fs.existsSync(topicDir)) return res.status(400).json({ error: 'Topic already exists' });
-
-    fs.mkdirSync(topicDir, { recursive: true });
-
-    const indexPath = path.join(__dirname, '..', 'content', course.contentDir, 'index.js');
-    let topics = [];
-    try {
-      invalidateContentCache(course.contentDir);
-      topics = require(indexPath);
-    } catch { topics = []; }
-    if (!Array.isArray(topics)) topics = [];
 
     const newTopic = {
       id, title, group: group || 'general',
-      day_fast_track: topics.length + 1, day_full_course: topics.length + 1,
+      day_fast_track: 1, day_full_course: 1,
       icon: icon || '\ud83d\udcdd', description: description || '',
       prerequisites: prerequisites || [],
     };
 
-    const existingIdx = topics.findIndex(t => t.id === id);
-    if (existingIdx >= 0) topics[existingIdx] = newTopic;
-    else topics.push(newTopic);
+    // Filesystem operations - graceful fallback for serverless
+    try {
+      if (fs.existsSync(topicDir)) return res.status(400).json({ error: 'Topic already exists' });
+      fs.mkdirSync(topicDir, { recursive: true });
 
-    fs.writeFileSync(indexPath, `module.exports = ${JSON.stringify(topics, null, 2)};`);
-    invalidateContentCache(course.contentDir);
+      const indexPath = path.join(__dirname, '..', 'content', course.contentDir, 'index.js');
+      let topics = [];
+      try {
+        invalidateContentCache(course.contentDir);
+        topics = require(indexPath);
+      } catch { topics = []; }
+      if (!Array.isArray(topics)) topics = [];
 
-    ['quick.json', 'deep.json', 'exercises.json', 'interview.json', 'comparison.json'].forEach(f => {
-      fs.writeFileSync(path.join(topicDir, f), JSON.stringify({ topicId: id, type: f.replace('.json', ''), sections: [] }, null, 2));
-    });
+      newTopic.day_fast_track = topics.length + 1;
+      newTopic.day_full_course = topics.length + 1;
+
+      const existingIdx = topics.findIndex(t => t.id === id);
+      if (existingIdx >= 0) topics[existingIdx] = newTopic;
+      else topics.push(newTopic);
+
+      fs.writeFileSync(indexPath, `module.exports = ${JSON.stringify(topics, null, 2)};`);
+      invalidateContentCache(course.contentDir);
+
+      ['quick.json', 'deep.json', 'exercises.json', 'interview.json', 'comparison.json'].forEach(f => {
+        fs.writeFileSync(path.join(topicDir, f), JSON.stringify({ topicId: id, type: f.replace('.json', ''), sections: [] }, null, 2));
+      });
+    } catch (fsErr) {
+      logger.warn({ err: fsErr }, 'Filesystem not writable (expected in serverless). Topic created in memory only.');
+    }
 
     res.json({ success: true, topic: newTopic });
   } catch (err) {
-    console.error('Create topic error:', err);
+    logger.error({ err, requestId: req.id }, 'Create topic error');
     res.status(500).json({ error: 'Failed to create topic' });
   }
 });
@@ -326,16 +341,21 @@ router.put('/admin/:courseId/topics/:topicId', adminAuth, async (req, res) => {
     const course = parseCourseJsonFields(await db.getCourseById(req.params.courseId));
     if (!course) return res.status(404).json({ error: 'Course not found' });
 
-    const topicDir = path.join(__dirname, '..', 'content', course.contentDir, req.params.topicId);
-    if (!fs.existsSync(topicDir)) return res.status(404).json({ error: 'Topic not found' });
-
     const { section, data } = req.body;
     if (!section || !data) return res.status(400).json({ error: 'section and data required' });
 
-    fs.writeFileSync(path.join(topicDir, `${section}.json`), JSON.stringify(data, null, 2));
+    // Filesystem operations - graceful fallback for serverless
+    try {
+      const topicDir = path.join(__dirname, '..', 'content', course.contentDir, req.params.topicId);
+      if (!fs.existsSync(topicDir)) return res.status(404).json({ error: 'Topic not found' });
+      fs.writeFileSync(path.join(topicDir, `${section}.json`), JSON.stringify(data, null, 2));
+    } catch (fsErr) {
+      logger.warn({ err: fsErr }, 'Filesystem not writable (expected in serverless). Update skipped.');
+    }
+
     res.json({ success: true });
   } catch (err) {
-    console.error('Update topic error:', err);
+    logger.error({ err, requestId: req.id }, 'Update topic error');
     res.status(500).json({ error: 'Failed to update topic' });
   }
 });
@@ -348,24 +368,29 @@ router.delete('/admin/:courseId/topics/:topicId', adminAuth, async (req, res) =>
     const course = parseCourseJsonFields(await db.getCourseById(req.params.courseId));
     if (!course) return res.status(404).json({ error: 'Course not found' });
 
-    const topicDir = path.join(__dirname, '..', 'content', course.contentDir, req.params.topicId);
-    if (fs.existsSync(topicDir)) fs.rmSync(topicDir, { recursive: true });
-
-    const indexPath = path.join(__dirname, '..', 'content', course.contentDir, 'index.js');
-    let topics = [];
+    // Filesystem operations - graceful fallback for serverless
     try {
-      invalidateContentCache(course.contentDir);
-      topics = require(indexPath);
-    } catch { topics = []; }
-    if (!Array.isArray(topics)) topics = [];
+      const topicDir = path.join(__dirname, '..', 'content', course.contentDir, req.params.topicId);
+      if (fs.existsSync(topicDir)) fs.rmSync(topicDir, { recursive: true });
 
-    const filtered = topics.filter(t => t.id !== req.params.topicId);
-    fs.writeFileSync(indexPath, `module.exports = ${JSON.stringify(filtered, null, 2)};`);
-    invalidateContentCache(course.contentDir);
+      const indexPath = path.join(__dirname, '..', 'content', course.contentDir, 'index.js');
+      let topics = [];
+      try {
+        invalidateContentCache(course.contentDir);
+        topics = require(indexPath);
+      } catch { topics = []; }
+      if (!Array.isArray(topics)) topics = [];
+
+      const filtered = topics.filter(t => t.id !== req.params.topicId);
+      fs.writeFileSync(indexPath, `module.exports = ${JSON.stringify(filtered, null, 2)};`);
+      invalidateContentCache(course.contentDir);
+    } catch (fsErr) {
+      logger.warn({ err: fsErr }, 'Filesystem not writable (expected in serverless). Delete skipped.');
+    }
 
     res.json({ success: true });
   } catch (err) {
-    console.error('Delete topic error:', err);
+    logger.error({ err, requestId: req.id }, 'Delete topic error');
     res.status(500).json({ error: 'Failed to delete topic' });
   }
 });

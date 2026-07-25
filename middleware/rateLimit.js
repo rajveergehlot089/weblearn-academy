@@ -1,12 +1,14 @@
 // ============================================
-// Rate Limiting Middleware (Improved)
+// Rate Limiting Middleware
 // ============================================
-// Prevents abuse by limiting requests per IP.
+// Redis-backed when UPSTASH_REDIS_REST_URL is set, otherwise in-memory.
 // Returns 429 Too Many Requests with Retry-After header.
 
+const logger = require('../utils/logger');
+
+// --- In-memory fallback ---
 const attempts = new Map();
 
-// Cleanup expired entries every 5 minutes
 setInterval(() => {
   const now = Date.now();
   for (const [key, record] of attempts) {
@@ -14,11 +16,80 @@ setInterval(() => {
   }
 }, 5 * 60 * 1000);
 
+// --- Redis backend (Upstash) ---
+let redisLimiter = null;
+
+function getRedisLimiter() {
+  if (redisLimiter !== null) return redisLimiter;
+
+  if (process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN) {
+    try {
+      const { Ratelimit } = require('@upstash/ratelimit');
+      const { Redis } = require('@upstash/redis');
+
+      const redis = new Redis({
+        url: process.env.UPSTASH_REDIS_REST_URL,
+        token: process.env.UPSTASH_REDIS_REST_TOKEN,
+      });
+
+      redisLimiter = new Ratelimit({
+        redis,
+        limiter: Ratelimit.slidingWindow(10, '10s'),
+        analytics: true,
+      });
+      logger.info('Redis rate limiter initialized');
+    } catch (err) {
+      logger.warn({ err }, 'Failed to init Redis rate limiter, using in-memory');
+      redisLimiter = false;
+    }
+  } else {
+    redisLimiter = false;
+  }
+
+  return redisLimiter;
+}
+
 function getClientIp(req) {
   return req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.ip || req.connection?.remoteAddress || 'unknown';
 }
 
 function rateLimit(maxAttempts = 10, windowMs = 15 * 60 * 1000) {
+  const redis = getRedisLimiter();
+
+  if (redis) {
+    // Async Redis-based rate limiter
+    return async (req, res, next) => {
+      const ip = getClientIp(req);
+      const key = `${ip}:${req.path}`;
+
+      try {
+        const { success, limit, remaining, reset } = await redis.limit(key, {
+          maxAttempts,
+          window: windowMs,
+        });
+
+        res.set('X-RateLimit-Limit', String(limit));
+        res.set('X-RateLimit-Remaining', String(Math.max(0, remaining)));
+        res.set('X-RateLimit-Reset', String(Math.ceil(reset / 1000)));
+
+        if (!success) {
+          const retryAfter = Math.ceil((reset - Date.now()) / 1000);
+          res.set('Retry-After', String(retryAfter));
+          return res.status(429).json({
+            error: 'Too many requests. Please try again later.',
+            retryAfter,
+          });
+        }
+
+        next();
+      } catch (err) {
+        logger.warn({ err }, 'Redis rate limit failed, falling through');
+        next();
+      }
+    };
+  }
+
+  // In-memory fallback
   return (req, res, next) => {
     const ip = getClientIp(req);
     const key = `${ip}:${req.path}`;
@@ -32,7 +103,6 @@ function rateLimit(maxAttempts = 10, windowMs = 15 * 60 * 1000) {
     record.count++;
     attempts.set(key, record);
 
-    // Set rate limit headers
     res.set('X-RateLimit-Limit', String(maxAttempts));
     res.set('X-RateLimit-Remaining', String(Math.max(0, maxAttempts - record.count)));
     res.set('X-RateLimit-Reset', String(Math.ceil(record.resetAt / 1000)));
