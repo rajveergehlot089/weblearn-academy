@@ -6,3 +6,6 @@ data/
 Thumbs.db
 .vercel
 check-project.js
+api/lib/content-bundle.json
+serverless-lib/content-bundle.json
+public/courses-metadata.json

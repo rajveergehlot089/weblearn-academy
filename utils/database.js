@@ -2,6 +2,7 @@
 // PostgreSQL Database Pool & Schema Initialization
 // ============================================
 const { Pool } = require('pg');
+const logger = require('./logger');
 require('dotenv').config();
 
 const pool = new Pool({
@@ -13,10 +14,13 @@ const pool = new Pool({
   max: 20,
   idleTimeoutMillis: 30000,
   connectionTimeoutMillis: 5000,
+  ssl: process.env.PGSSL === 'true' || process.env.NODE_ENV === 'production'
+    ? { rejectUnauthorized: false }
+    : false,
 });
 
 pool.on('error', (err) => {
-  console.error('Unexpected error on idle client', err);
+  logger.error({ err }, 'Unexpected error on idle client');
 });
 
 async function initDb() {
@@ -167,12 +171,12 @@ async function initDb() {
     `);
     await client.query('CREATE INDEX IF NOT EXISTS idx_analysis_user ON analysis_history("userId");');
 
-    console.log('PostgreSQL tables initialized');
+    logger.info('PostgreSQL tables initialized');
 
     // Seed courses from content directory if courses table is empty
     const { rows: existingCourses } = await client.query('SELECT COUNT(*) as count FROM courses');
     if (parseInt(existingCourses[0].count) === 0) {
-      console.log('Seeding courses from content directory...');
+      logger.info('Seeding courses from content directory...');
       const path = require('path');
       const CONTENT_DIR = path.join(__dirname, '..', 'content');
       try {
@@ -211,9 +215,9 @@ async function initDb() {
             ]
           );
         }
-        console.log('Courses seeded successfully');
+        logger.info('Courses seeded successfully');
       } catch (err) {
-        console.error('Failed to seed courses:', err.message);
+        logger.error({ err }, 'Failed to seed courses');
       }
     }
   } finally {

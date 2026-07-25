@@ -2,9 +2,14 @@
 // Email Service (Resend)
 // ============================================
 const { Resend } = require('resend');
+const logger = require('./logger');
 
 const FROM_EMAIL = process.env.EMAIL_FROM || 'WebLearn Academy <onboarding@resend.dev>';
-const APP_URL = process.env.APP_URL || 'http://localhost:2007';
+const APP_URL = process.env.APP_URL || (process.env.NODE_ENV === 'production' ? null : 'http://localhost:2007');
+
+if (process.env.NODE_ENV === 'production' && !process.env.APP_URL) {
+  console.warn('WARNING: APP_URL is not set. Email links will not work. Set APP_URL in your environment variables.');
+}
 
 function getClient() {
   if (!process.env.RESEND_API_KEY) return null;
@@ -14,7 +19,7 @@ function getClient() {
 async function sendEmail({ to, subject, html }) {
   const client = getClient();
   if (!client) {
-    console.log(`[Email] Resend not configured. Would send to ${to}: ${subject}`);
+    logger.info({ to, subject }, 'Resend not configured, email skipped');
     return { id: 'skipped', skipped: true };
   }
 
@@ -26,7 +31,7 @@ async function sendEmail({ to, subject, html }) {
   });
 
   if (error) {
-    console.error('[Email] Send failed:', error);
+    logger.error({ err: error, to, subject }, 'Email send failed');
     throw new Error(error.message || 'Email send failed');
   }
 
@@ -34,6 +39,10 @@ async function sendEmail({ to, subject, html }) {
 }
 
 async function sendVerificationEmail(to, token) {
+  if (!APP_URL) {
+    logger.warn('Cannot send verification email: APP_URL is not configured');
+    return { id: 'skipped', skipped: true };
+  }
   const link = `${APP_URL}/verify-email?token=${token}`;
   return sendEmail({
     to,
@@ -59,6 +68,10 @@ async function sendVerificationEmail(to, token) {
 }
 
 async function sendPasswordResetEmail(to, token) {
+  if (!APP_URL) {
+    logger.warn('Cannot send password reset email: APP_URL is not configured');
+    return { id: 'skipped', skipped: true };
+  }
   const link = `${APP_URL}/reset-password?token=${token}`;
   return sendEmail({
     to,
