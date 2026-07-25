@@ -10,29 +10,37 @@ function clean(val, fallback) {
   return String(val || fallback).replace(/^\uFEFF/, '').trim();
 }
 
-// Support both individual PG* vars and DATABASE_URL (Neon)
-let connection;
-if (process.env.DATABASE_URL) {
-  connection = process.env.DATABASE_URL;
-} else {
-  connection = {
+function needsSSL() {
+  return (
+    process.env.PGSSL === 'true' ||
+    process.env.NODE_ENV === 'production' ||
+    (process.env.PGHOST || '').includes('neon')
+  );
+}
+
+function buildConnection() {
+  if (process.env.DATABASE_URL) {
+    let url = process.env.DATABASE_URL;
+    // Ensure sslmode=require for Neon connections
+    if (needsSSL() && !url.includes('sslmode=')) {
+      url += (url.includes('?') ? '&' : '?') + 'sslmode=require';
+    }
+    return url;
+  }
+
+  return {
     host: process.env.PGHOST,
     port: parseInt(clean(process.env.PGPORT, '5432'), 10),
     user: process.env.PGUSER,
     database: process.env.PGDATABASE,
     password: process.env.PGPASSWORD,
-    ssl:
-      process.env.PGSSL === 'true' ||
-      process.env.NODE_ENV === 'production' ||
-      (process.env.PGHOST || '').includes('neon')
-        ? { rejectUnauthorized: false }
-        : false,
+    ssl: needsSSL() ? { rejectUnauthorized: false } : false,
   };
 }
 
 const config = {
   client: 'pg',
-  connection,
+  connection: buildConnection(),
   migrations: {
     directory: path.join(__dirname, '..', 'migrations'),
   },
