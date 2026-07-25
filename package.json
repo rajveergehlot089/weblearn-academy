@@ -14,10 +14,10 @@
     "format:check": "prettier --check .",
     "test": "jest --forceExit --detectOpenHandles",
     "test:coverage": "jest --coverage --forceExit --detectOpenHandles",
-    "db:migrate": "knex migrate:latest",
-    "db:migrate:rollback": "knex migrate:rollback",
+    "db:migrate": "knex migrate:latest --knexfile knexfile.js",
+    "db:migrate:rollback": "knex migrate:rollback --knexfile knexfile.js",
     "vercel-migrate": "node scripts/migrate.js",
-    "db:migrate:make": "knex migrate:make"
+    "db:migrate:make": "knex migrate:make --knexfile knexfile.js"
   },
   "engines": {
     "node": ">=20"
