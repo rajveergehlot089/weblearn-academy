@@ -3,9 +3,18 @@
 // ============================================
 // Wraps an Express route into a Vercel serverless handler
 
+const { initDb } = require('../utils/database');
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
+
+let dbInitialized = false;
+async function ensureDb() {
+  if (!dbInitialized) {
+    await initDb();
+    dbInitialized = true;
+  }
+}
 
 function createHandler(routeMiddleware, basePath = '') {
   const app = express();
@@ -25,7 +34,10 @@ function createHandler(routeMiddleware, basePath = '') {
 
   app.use(basePath, routeMiddleware);
 
-  return (req, res) => app(req, res);
+  return async (req, res) => {
+    await ensureDb();
+    app(req, res);
+  };
 }
 
 module.exports = { createHandler };
