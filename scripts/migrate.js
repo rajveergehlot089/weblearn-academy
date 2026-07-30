@@ -13,15 +13,19 @@ function clean(val, fallback) {
 function buildConnection() {
   const dbUrl = process.env.DATABASE_URL || process.env.DATABASE_URL_UNPOOLED;
   if (dbUrl) {
-    const u = new URL(dbUrl);
-    return {
-      host: u.hostname,
-      port: parseInt(u.port || '5432'),
-      user: decodeURIComponent(u.username),
-      database: u.pathname.slice(1).split('?')[0],
-      password: decodeURIComponent(u.password),
-      ssl: { rejectUnauthorized: false },
-    };
+    try {
+      const u = new URL(dbUrl);
+      return {
+        host: u.hostname,
+        port: parseInt(u.port || '5432'),
+        user: decodeURIComponent(u.username),
+        database: u.pathname.slice(1).split('?')[0],
+        password: decodeURIComponent(u.password),
+        ssl: { rejectUnauthorized: false },
+      };
+    } catch {
+      console.warn('Warning: Invalid DATABASE_URL, falling back to PG* vars');
+    }
   }
 
   const useSSL =
@@ -30,22 +34,14 @@ function buildConnection() {
     (process.env.PGHOST || '').includes('neon');
 
   return {
-    host: process.env.PGHOST,
-    port: parseInt(clean(process.env.PGPORT, '5432'), 10),
-    user: process.env.PGUSER,
-    database: process.env.PGDATABASE,
-    password: process.env.PGPASSWORD,
+    host: process.env.PGHOST || 'localhost',
+    port: parseInt(clean(process.env.PGPORT, '5432'), 10) || 5432,
+    user: process.env.PGUSER || 'postgres',
+    database: clean(process.env.PGDATABASE, 'weblearn_academy'),
+    password: process.env.PGPASSWORD || undefined,
     ssl: useSSL ? { rejectUnauthorized: false } : false,
   };
 }
-
-const config = {
-  client: 'pg',
-  connection: buildConnection(),
-  migrations: {
-    directory: path.join(__dirname, '..', 'migrations'),
-  },
-};
 
 async function migrate() {
   if (!process.env.DATABASE_URL && !process.env.PGHOST) {
@@ -54,8 +50,17 @@ async function migrate() {
   }
 
   console.log('Running migrations...');
-  const db = knex(config);
+
+  let db;
   try {
+    const config = {
+      client: 'pg',
+      connection: buildConnection(),
+      migrations: {
+        directory: path.join(__dirname, '..', 'migrations'),
+      },
+    };
+    db = knex(config);
     const [batchNo, migrations] = await db.migrate.latest();
     if (migrations.length === 0) {
       console.log('Database is already up to date');
@@ -67,7 +72,7 @@ async function migrate() {
     console.error('Migration failed:', err.message);
     console.log('Schema will be initialized at runtime');
   } finally {
-    await db.destroy();
+    if (db) await db.destroy();
   }
 }
 
