@@ -5,17 +5,26 @@ const { Pool } = require('pg');
 const logger = require('./logger');
 require('dotenv').config();
 
-const pool = new Pool({
-  host: process.env.PGHOST || 'localhost',
-  port: parseInt(process.env.PGPORT || '5432'),
-  user: process.env.PGUSER || 'postgres',
-  database: process.env.PGDATABASE || 'weblearn_academy',
-  password: process.env.PGPASSWORD || undefined,
-  max: 20,
-  idleTimeoutMillis: 30000,
-  connectionTimeoutMillis: 5000,
-  ssl: process.env.PGSSL === 'true' || process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false,
-});
+const dbUrl = process.env.DATABASE_URL || process.env.DATABASE_URL_UNPOOLED;
+const pool = dbUrl
+  ? new Pool({
+      connectionString: dbUrl,
+      ssl: { rejectUnauthorized: false },
+      max: 20,
+      idleTimeoutMillis: 30000,
+      connectionTimeoutMillis: 5000,
+    })
+  : new Pool({
+      host: process.env.PGHOST || 'localhost',
+      port: parseInt(process.env.PGPORT || '5432'),
+      user: process.env.PGUSER || 'postgres',
+      database: process.env.PGDATABASE || 'weblearn_academy',
+      password: process.env.PGPASSWORD || undefined,
+      max: 20,
+      idleTimeoutMillis: 30000,
+      connectionTimeoutMillis: 5000,
+      ssl: process.env.PGSSL === 'true' || process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false,
+    });
 
 pool.on('error', (err) => {
   logger.error({ err }, 'Unexpected error on idle client');

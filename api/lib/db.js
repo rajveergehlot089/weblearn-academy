@@ -13,20 +13,35 @@ function clean(val, fallback) {
 
 function getPool() {
   if (!pool) {
-    const port = parseInt(clean(process.env.PGPORT, '5432'), 10) || 5432;
-    const config = {
-      host: clean(process.env.PGHOST, 'localhost'),
-      port,
-      user: clean(process.env.PGUSER, 'postgres'),
-      database: clean(process.env.PGDATABASE, 'weblearn_academy'),
-      password: process.env.PGPASSWORD ? clean(process.env.PGPASSWORD, '') : undefined,
-      max: 5,
-      idleTimeoutMillis: 30000,
-      connectionTimeoutMillis: 10000,
-    };
-    if (process.env.PGSSL === 'true' || process.env.NODE_ENV === 'production') {
-      config.ssl = { rejectUnauthorized: false };
+    const dbUrl = process.env.DATABASE_URL || process.env.DATABASE_URL_UNPOOLED;
+    if (dbUrl) {
+      pool = new Pool({
+        connectionString: dbUrl,
+        ssl: { rejectUnauthorized: false },
+        max: 5,
+        idleTimeoutMillis: 30000,
+        connectionTimeoutMillis: 10000,
+      });
+    } else {
+      const port = parseInt(clean(process.env.PGPORT, '5432'), 10) || 5432;
+      const config = {
+        host: clean(process.env.PGHOST, 'localhost'),
+        port,
+        user: clean(process.env.PGUSER, 'postgres'),
+        database: clean(process.env.PGDATABASE, 'weblearn_academy'),
+        password: process.env.PGPASSWORD ? clean(process.env.PGPASSWORD, '') : undefined,
+        max: 5,
+        idleTimeoutMillis: 30000,
+        connectionTimeoutMillis: 10000,
+      };
+      if (process.env.PGSSL === 'true' || process.env.NODE_ENV === 'production') {
+        config.ssl = { rejectUnauthorized: false };
+      }
+      pool = new Pool(config);
     }
+  }
+  return pool;
+}
     pool = new Pool(config);
     pool.on('error', (err) => console.error('Pool error:', err));
   }

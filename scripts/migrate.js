@@ -11,18 +11,14 @@ function clean(val, fallback) {
 }
 
 function buildConnection() {
-  // Use DATABASE_URL when available (Neon provides this with sslmode embedded)
   const dbUrl = process.env.DATABASE_URL || process.env.DATABASE_URL_UNPOOLED;
   if (dbUrl) {
-    // Ensure sslmode=require is present
-    let url = dbUrl;
-    if (!url.includes('sslmode=')) {
-      url += (url.includes('?') ? '&' : '?') + 'sslmode=require';
-    }
-    return url;
+    return {
+      connectionString: dbUrl,
+      ssl: { rejectUnauthorized: false },
+    };
   }
 
-  // Fall back to individual PG* vars
   const useSSL =
     process.env.PGSSL === 'true' ||
     process.env.NODE_ENV === 'production' ||
