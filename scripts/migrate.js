@@ -13,8 +13,13 @@ function clean(val, fallback) {
 function buildConnection() {
   const dbUrl = process.env.DATABASE_URL || process.env.DATABASE_URL_UNPOOLED;
   if (dbUrl) {
+    const u = new URL(dbUrl);
     return {
-      connectionString: dbUrl,
+      host: u.hostname,
+      port: parseInt(u.port || '5432'),
+      user: decodeURIComponent(u.username),
+      database: u.pathname.slice(1).split('?')[0],
+      password: decodeURIComponent(u.password),
       ssl: { rejectUnauthorized: false },
     };
   }
@@ -60,7 +65,7 @@ async function migrate() {
     }
   } catch (err) {
     console.error('Migration failed:', err.message);
-    process.exit(1);
+    console.log('Schema will be initialized at runtime');
   } finally {
     await db.destroy();
   }

@@ -123,10 +123,9 @@ const outputPath = path.join(OUTPUT_DIR, 'content-bundle.json');
 fs.writeFileSync(outputPath, JSON.stringify(bundle));
 console.log(`  Written to ${outputPath} (${(fs.statSync(outputPath).size / 1024 / 1024).toFixed(2)} MB)`);
 
-// 6. Also write a smaller courses-metadata.json to public/ (for client-side)
-const publicOutput = path.join(__dirname, '..', 'public', 'courses-metadata.json');
-fs.mkdirSync(path.dirname(publicOutput), { recursive: true });
-fs.writeFileSync(publicOutput, JSON.stringify({ courses: coursesMetadata }));
-console.log(`  Written courses metadata to ${publicOutput}`);
+// 6. Also write a smaller courses-metadata.json to serverless-lib/ (for API use)
+const metadataOutput = path.join(OUTPUT_DIR, 'courses-metadata.json');
+fs.writeFileSync(metadataOutput, JSON.stringify({ courses: coursesMetadata }));
+console.log(`  Written courses metadata to ${metadataOutput}`);
 
 console.log('\nContent bundle built successfully!');
